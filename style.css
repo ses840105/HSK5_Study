@@ -1555,7 +1555,7 @@ body.theme-ielts {
 @media (max-width: 600px) {
   body {
     padding: 0;
-    height: 100dvh; /* Use dynamic viewport height for mobile browsers */
+    height: 100dvh;
   }
   .app-container {
     height: 100dvh;
@@ -1565,23 +1565,48 @@ body.theme-ielts {
   }
   .app-header {
     flex-direction: column;
-    align-items: center;
-    gap: 12px;
+    align-items: stretch;
+    padding: 12px;
+    gap: 10px;
   }
-  .header-left, .header-right {
+  .header-left {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     width: 100%;
+  }
+  .title-wrap {
+    flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
+  }
+  #app-title {
+    font-size: 1.1rem; /* 모바일에서 텍스트 크기 축소 */
+  }
+  .header-right {
+    width: 100%;
+    justify-content: space-between; /* 양쪽 끝으로 버튼과 인사말 배치 */
+    flex-wrap: wrap;
+    margin-top: 4px;
+    padding-top: 8px;
+    border-top: 1px dashed var(--gray-200);
+  }
+  .user-greeting {
+    margin-right: 0;
+    padding-left: 0;
+    font-size: 0.85rem;
   }
   .lang-switcher {
     width: 100%;
+  }
+  .lang-tab {
+    flex: 1; /* 버튼 반반씩 차지 */
     justify-content: center;
   }
-  .title-wrap {
-    margin-top: 8px;
-    justify-content: center;
+  .view-section {
+    padding: 16px 12px;
   }
-  .user-greeting {
-    margin-right: auto; /* Push to left */
-    padding-left: 10px;
+  .chinese-text {
+    font-size: 1.5rem;
   }
 }
