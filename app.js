@@ -31,8 +31,18 @@ document.addEventListener("DOMContentLoaded", () => {
   let isListeningPaused = false;
   let dialogueTimer = null;
 
-  const STORAGE_KEY = "polyglot_quiz_history";
-  const MASTERY_KEY = "polyglot_quiz_mastery";
+  
+  // 사용자별 독립적인 데이터 저장을 위한 키 생성 함수
+  function getStorageKey() {
+    const user = localStorage.getItem("loggedInUser") || "guest";
+    return "polyglot_quiz_history_" + user;
+  }
+
+  function getMasteryKey() {
+    const user = localStorage.getItem("loggedInUser") || "guest";
+    return "polyglot_quiz_mastery_" + user;
+  }
+
 
   // DOM 요소 캐싱
   const langHskBtn = document.getElementById("lang-hsk-btn");
@@ -198,7 +208,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 2. 스마트 오답/마스터(SRS) 진행 상태 관리
   function getMasteryState() {
     try {
-      const raw = localStorage.getItem(MASTERY_KEY);
+      const raw = localStorage.getItem(getMasteryKey());
       return raw ? JSON.parse(raw) : {};
     } catch (e) {
       return {};
@@ -230,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mastery[key] = entry;
 
     try {
-      localStorage.setItem(MASTERY_KEY, JSON.stringify(mastery));
+      localStorage.setItem(getMasteryKey(), JSON.stringify(mastery));
     } catch (e) {}
 
     updateSrsDashboard();
@@ -282,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
           delete mastery[k];
         }
       });
-      localStorage.setItem(MASTERY_KEY, JSON.stringify(mastery));
+      localStorage.setItem(getMasteryKey(), JSON.stringify(mastery));
       updateSrsDashboard();
       alert("학습 진도가 초기화되었습니다. 모든 문제가 다시 출제됩니다.");
     }
@@ -1278,7 +1288,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 8. 학습 기록(History) 모듈
   function getHistory() {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const raw = localStorage.getItem(getStorageKey());
       return raw ? JSON.parse(raw) : [];
     } catch (e) {
       return [];
@@ -1312,7 +1322,7 @@ document.addEventListener("DOMContentLoaded", () => {
     history.unshift(newEntry);
     if (history.length > 100) history.pop();
 
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(history));
+    localStorage.setItem(getStorageKey(), JSON.stringify(history));
   }
 
   function renderHistoryModal() {
@@ -1375,7 +1385,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function clearHistory() {
     if (confirm("정말로 모든 학습 기록을 삭제하시겠습니까?")) {
-      localStorage.removeItem(STORAGE_KEY);
+      localStorage.removeItem(getStorageKey());
       renderHistoryModal();
     }
   }
