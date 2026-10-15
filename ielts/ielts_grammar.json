@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "difficulty": "하",
+    "category": "Relative Clauses (관계대명사)",
+    "question": "Choose the most grammatically accurate sentence for Academic Writing:",
+    "options": [
+      "The researchers studied individuals whose immune responses were weakened by prolonged chronic stress.",
+      "The researchers studied individuals which immune responses were weakened by prolonged chronic stress.",
+      "The researchers studied individuals that their immune responses were weakened by prolonged chronic stress.",
+      "The researchers studied individuals who immune responses were weakened by prolonged chronic stress."
+    ],
+    "answer": 1,
+    "explanation": "선행사(individuals)의 소유격 관계를 나타낼 때는 소유격 관계대명사 'whose'가 유일하게 적합합니다. ('that their'나 'which'는 비문법적)"
+  },
+  {
+    "id": 2,
+    "difficulty": "중",
+    "category": "Conditionals (가정법 과거완료)",
+    "question": "Which sentence correctly expresses a past counterfactual condition?",
+    "options": [
+      "Had environmental authorities acted sooner, the regional ecological catastrophe could have been averted.",
+      "If environmental authorities acted sooner, the regional ecological catastrophe would be averted.",
+      "Had environmental authorities act sooner, the catastrophe could have been averted.",
+      "Were environmental authorities to act sooner, the catastrophe had been averted."
+    ],
+    "answer": 1,
+    "explanation": "가정법 과거완료의 if 생략 도치 구문인 'Had + 주어 + p.p., 주어 + could have p.p.'가 완벽하게 적용된 문장입니다. IELTS 라이팅 Band 7.0+ 도치 구문입니다."
+  },
+  {
+    "id": 3,
+    "difficulty": "상",
+    "category": "Negative Inversion (부정어 도치 구문)",
+    "question": "Identify the grammatically flawless sentence featuring negative adverbial inversion:",
+    "options": [
+      "Rarely does a single scientific discovery fundamentally overturn centuries of accepted biological dogma.",
+      "Rarely a single scientific discovery does fundamentally overturn accepted dogma.",
+      "Rarely fundamentally overturns a single scientific discovery accepted dogma.",
+      "Rarely do a single scientific discovery overturns accepted biological dogma."
+    ],
+    "answer": 1,
+    "explanation": "문두에 부정 부사구 'Rarely'가 위치할 때 의문문 어순으로 '조동사(does) + 단수 주어(a discovery) + 본동사 원형(overturn)' 도치가 일어납니다."
+  },
+  {
+    "id": 4,
+    "difficulty": "하",
+    "category": "Concession Clauses (양보 구문)",
+    "question": "Which option correctly uses a prepositional phrase of concession?",
+    "options": [
+      "Despite facing persistent regulatory hurdles, the green startup secured substantial private venture capital.",
+      "Although facing persistent regulatory hurdles, but the green startup secured capital.",
+      "Despite of facing persistent regulatory hurdles, the startup secured capital.",
+      "In spite facing persistent regulatory hurdles, the startup secured capital."
+    ],
+    "answer": 1,
+    "explanation": "'Despite'는 전치사이므로 바로 명사 상당어구(facing hurdles)가 오며 'of'를 붙이지 않습니다. ('In spite of'와 혼동 주의)"
+  },
+  {
+    "id": 5,
+    "difficulty": "중",
+    "category": "Participle Clauses (분사구문)",
+    "question": "Choose the sentence that correctly utilizes an introductory participle clause:",
+    "options": [
+      "Having analyzed the survey results meticulously, the committee drafted a revised urban transportation policy.",
+      "Having analyzing the survey results meticulously, the committee drafted a policy.",
+      "Analyzed the survey results meticulously, the committee drafting a policy.",
+      "Having been analyzed the survey results, the committee drafted a policy."
+    ],
+    "answer": 1,
+    "explanation": "주절의 주어(the committee)가 능동적으로 앞선 시점에 분석을 마쳤으므로 완료분사구문 'Having analyzed ~'가 정확합니다."
+  },
+  {
+    "id": 6,
+    "difficulty": "상",
+    "category": "Nominalization & Passive Voice (명사화 및 학술 수동태)",
+    "question": "Which sentence demonstrates the most formal academic tone typical of IELTS Band 8+ writing?",
+    "options": [
+      "It is widely argued that the implementation of stricter emission standards will stimulate technological innovation.",
+      "People everywhere argue that if we make strict rules it will make good technology happen.",
+      "It is widely argue that stricter emission standards will be made by technology.",
+      "There is widely argued which stricter emission standards make innovation."
+    ],
+    "answer": 1,
+    "explanation": "'It is widely argued that + 주어 + 동사' 가주어-진주어 수동태와 'implementation' 명사화 구조가 결합되어 가장 세련된 아카데믹 문체를 보여줍니다."
+  }
+]

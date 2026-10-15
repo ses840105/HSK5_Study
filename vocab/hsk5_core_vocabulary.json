@@ -1,0 +1,252 @@
+[
+  {
+    "word": "兼职",
+    "pinyin": "jiānzhí",
+    "pos": "동사/명사",
+    "meaning": "아르바이트하다, 겸직하다",
+    "example": "很多大学生利用假期做兼职积累社会经验。",
+    "difficulty": "중"
+  },
+  {
+    "word": "概念",
+    "pinyin": "gàiniàn",
+    "pos": "명사",
+    "meaning": "개념",
+    "example": "这是一个非常新颖的商业概念。",
+    "difficulty": "하"
+  },
+  {
+    "word": "缓解",
+    "pinyin": "huǎnjiě",
+    "pos": "동사",
+    "meaning": "완화시키다, 늦추다",
+    "example": "听轻音乐有助于缓解工作带来的压力。",
+    "difficulty": "중"
+  },
+  {
+    "word": "逻辑",
+    "pinyin": "luóji",
+    "pos": "명사",
+    "meaning": "논리",
+    "example": "他的发言条理清晰，逻辑非常严密。",
+    "difficulty": "중"
+  },
+  {
+    "word": "犹豫",
+    "pinyin": "yóuyù",
+    "pos": "동사/형용사",
+    "meaning": "망설이다, 주저하다",
+    "example": "面对难得的机遇，你不要再犹豫了。",
+    "difficulty": "중"
+  },
+  {
+    "word": "彻底",
+    "pinyin": "chèdǐ",
+    "pos": "형용사/부사",
+    "meaning": "철저하다, 완전히",
+    "example": "我们需要彻底调查这件事情的真正原因。",
+    "difficulty": "중"
+  },
+  {
+    "word": "启发",
+    "pinyin": "qǐfā",
+    "pos": "동사/명사",
+    "meaning": "영감을 주다, 계발하다",
+    "example": "这部纪录片给了我们很多深刻的启发。",
+    "difficulty": "중"
+  },
+  {
+    "word": "原则",
+    "pinyin": "yuánzé",
+    "pos": "명사",
+    "meaning": "원칙",
+    "example": "在原则问题上，我们决不能轻易妥协。",
+    "difficulty": "중"
+  },
+  {
+    "word": "耽误",
+    "pinyin": "dānwu",
+    "pos": "동사",
+    "meaning": "(시간을) 지체하다, 늦추다",
+    "example": "路上堵车耽误了很多时间。",
+    "difficulty": "하"
+  },
+  {
+    "word": "克服",
+    "pinyin": "kèfú",
+    "pos": "동사",
+    "meaning": "극복하다, 이겨내다",
+    "example": "只要大家团结一致，就一定能克服一切困难。",
+    "difficulty": "중"
+  },
+  {
+    "word": "效率",
+    "pinyin": "xiàolǜ",
+    "pos": "명사",
+    "meaning": "효율",
+    "example": "合理安排作息时间可以显著提高工作效率。",
+    "difficulty": "중"
+  },
+  {
+    "word": "赞成",
+    "pinyin": "zànchéng",
+    "pos": "동사",
+    "meaning": "찬성하다, 동의하다",
+    "example": "对于这个提议，大家纷纷表示赞成。",
+    "difficulty": "중"
+  },
+  {
+    "word": "独特",
+    "pinyin": "dútè",
+    "pos": "형용사",
+    "meaning": "독특하다",
+    "example": "这位设计师拥有非常独特的设计风格。",
+    "difficulty": "중"
+  },
+  {
+    "word": "趋势",
+    "pinyin": "qūshì",
+    "pos": "명사",
+    "meaning": "추세, 트렌드",
+    "example": "随着科技的发展，数字化已成为必然趋势。",
+    "difficulty": "중"
+  },
+  {
+    "word": "繁荣",
+    "pinyin": "fánróng",
+    "pos": "형용사/동사",
+    "meaning": "번영하다, 번창하다",
+    "example": "经济的快速发展带来了城市的繁荣。",
+    "difficulty": "중"
+  },
+  {
+    "word": "珍惜",
+    "pinyin": "zhēnxī",
+    "pos": "동사",
+    "meaning": "소중히 여기다, 아끼다",
+    "example": "我们应该珍惜眼前来之不易的幸福生活。",
+    "difficulty": "중"
+  },
+  {
+    "word": "承担",
+    "pinyin": "chéngdān",
+    "pos": "동사",
+    "meaning": "맡다, 감당하다, 떠안다",
+    "example": "勇于承担责任是成熟的标志。",
+    "difficulty": "하"
+  },
+  {
+    "word": "敏锐",
+    "pinyin": "mǐnruì",
+    "pos": "형용사",
+    "meaning": "예민하다, 날카롭다",
+    "example": "优秀的企业家通常拥有敏锐的市场洞察力。",
+    "difficulty": "중"
+  },
+  {
+    "word": "挑战",
+    "pinyin": "tiǎozhàn",
+    "pos": "명사/동사",
+    "meaning": "도전, 도전하다",
+    "example": "我们要勇于迎接生活中的各种挑战。",
+    "difficulty": "중"
+  },
+  {
+    "word": "循序渐进",
+    "pinyin": "xún xù jiàn jìn",
+    "pos": "성어",
+    "meaning": "순서를 따라 차근차근 나아가다",
+    "example": "学习外语是一个循序渐进的过程。",
+    "difficulty": "하"
+  },
+  {
+    "id": "v_101",
+    "word": "把握",
+    "pinyin": "bǎwò",
+    "meaning": "파악하다, 장악하다",
+    "pos": "동사",
+    "difficulty": "중",
+    "example": "把握机会。"
+  },
+  {
+    "id": "v_102",
+    "word": "包含",
+    "pinyin": "bāohán",
+    "meaning": "포함하다",
+    "pos": "동사",
+    "difficulty": "상",
+    "example": "这包含了很多内容。"
+  },
+  {
+    "id": "v_103",
+    "word": "必然",
+    "pinyin": "bìrán",
+    "meaning": "필연적인",
+    "pos": "형용사",
+    "difficulty": "중",
+    "example": "这是必然的结果。"
+  },
+  {
+    "id": "v_104",
+    "word": "财产",
+    "pinyin": "cáichǎn",
+    "meaning": "재산",
+    "pos": "명사",
+    "difficulty": "중",
+    "example": "保护个人财产。"
+  },
+  {
+    "id": "v_105",
+    "word": "采取",
+    "pinyin": "cǎiqǔ",
+    "meaning": "채택하다, 취하다",
+    "pos": "동사",
+    "difficulty": "상",
+    "example": "采取有效措施。"
+  },
+  {
+    "id": "v_106",
+    "word": "导致",
+    "pinyin": "dǎozhì",
+    "meaning": "초래하다, 야기하다",
+    "pos": "동사",
+    "difficulty": "상",
+    "example": "导致严重的后果。"
+  },
+  {
+    "id": "v_107",
+    "word": "繁荣",
+    "pinyin": "fánróng",
+    "meaning": "번영하다",
+    "pos": "형용사",
+    "difficulty": "상",
+    "example": "经济繁荣。"
+  },
+  {
+    "id": "v_108",
+    "word": "妨碍",
+    "pinyin": "fáng'ài",
+    "meaning": "방해하다",
+    "pos": "동사",
+    "difficulty": "상",
+    "example": "不要妨碍别人。"
+  },
+  {
+    "id": "v_109",
+    "word": "广泛",
+    "pinyin": "guǎngfàn",
+    "meaning": "광범위한",
+    "pos": "형용사",
+    "difficulty": "중",
+    "example": "广泛的兴趣。"
+  },
+  {
+    "id": "v_110",
+    "word": "核心",
+    "pinyin": "héxīn",
+    "meaning": "핵심",
+    "pos": "명사",
+    "difficulty": "중",
+    "example": "核心问题。"
+  }
+]

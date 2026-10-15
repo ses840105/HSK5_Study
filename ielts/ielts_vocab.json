@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "difficulty": "하",
+    "word": "abundant",
+    "pos": "adj.",
+    "meaning": "풍부한, 많은",
+    "synonym": "plentiful, ample",
+    "example": "The region possesses abundant natural resources, including timber and water.",
+    "translation": "그 지역은 목재와 수자원을 포함한 풍부한 천연자원을 보유하고 있다."
+  },
+  {
+    "id": 2,
+    "difficulty": "하",
+    "word": "crucial",
+    "pos": "adj.",
+    "meaning": "결정적인, 중대한",
+    "synonym": "vital, critical, essential",
+    "example": "Early intervention plays a crucial role in preventing long-term complications.",
+    "translation": "조기 개입은 장기적인 합병증을 예방하는 데 결정적인 역할을 한다."
+  },
+  {
+    "id": 3,
+    "difficulty": "중",
+    "word": "deteriorate",
+    "pos": "v.",
+    "meaning": "악화되다, 저하시키다",
+    "synonym": "worsen, decline, degenerate",
+    "example": "Living conditions continued to deteriorate rapidly as the conflict escalated.",
+    "translation": "분쟁이 격화되면서 생활 여건이 급속도로 악화되기 시작했다."
+  },
+  {
+    "id": 4,
+    "difficulty": "중",
+    "word": "feasible",
+    "pos": "adj.",
+    "meaning": "실행 가능한, 타당한",
+    "synonym": "viable, practicable, achievable",
+    "example": "It is not financially feasible to construct a high-speed railway in such mountainous terrain.",
+    "translation": "그런 산악 지형에 고속철도를 건설하는 것은 재정적으로 타당하지 않다."
+  },
+  {
+    "id": 5,
+    "difficulty": "상",
+    "word": "ubiquitous",
+    "pos": "adj.",
+    "meaning": "어디에나 존재하는, 보편적인",
+    "synonym": "omnipresent, pervasive, universal",
+    "example": "Smartphones have become ubiquitous across all age groups in modern urban societies.",
+    "translation": "스마트폰은 현대 도시 사회의 모든 연령대에서 어디에나 존재하는 필수가 되었다."
+  },
+  {
+    "id": 6,
+    "difficulty": "상",
+    "word": "exacerbate",
+    "pos": "v.",
+    "meaning": "(문제를) 악화시키다, 가중시키다",
+    "synonym": "aggravate, worsen, inflame",
+    "example": "The ongoing heatwave is likely to exacerbate existing droughts and agricultural strains.",
+    "translation": "지속되는 폭염은 기존의 가뭄과 농업적 부담을 더욱 가중시킬 가능성이 높다."
+  },
+  {
+    "id": 7,
+    "difficulty": "하",
+    "word": "diminish",
+    "pos": "v.",
+    "meaning": "줄어들다, 감소시키다",
+    "synonym": "decrease, reduce, lessen",
+    "example": "Her enthusiasm did not diminish even after facing multiple initial setbacks.",
+    "translation": "그녀의 열정은 몇 번의 초기 좌절을 겪은 후에도 줄어들지 않았다."
+  },
+  {
+    "id": 8,
+    "difficulty": "중",
+    "word": "plausible",
+    "pos": "adj.",
+    "meaning": "그럴듯한, 이치에 맞는",
+    "synonym": "believable, reasonable, credible",
+    "example": "Scientists have proposed a plausible hypothesis explaining the sudden mass extinction.",
+    "translation": "과학자들은 갑작스러운 대멸종을 설명하는 그럴듯한 가설을 제시했다."
+  },
+  {
+    "id": 9,
+    "difficulty": "상",
+    "word": "ephemeral",
+    "pos": "adj.",
+    "meaning": "수명이 짧은, 덧없는",
+    "synonym": "transient, fleeting, momentary",
+    "example": "Social media popularity is often ephemeral, fading as quickly as it emerges.",
+    "translation": "소셜 미디어에서의 인기는 종종 일시적이어서, 나타나는 것만큼 빠르게 사라진다."
+  },
+  {
+    "id": 10,
+    "difficulty": "중",
+    "word": "mitigate",
+    "pos": "v.",
+    "meaning": "완화하다, 경감시키다",
+    "synonym": "alleviate, ease, relieve",
+    "example": "Effective urban planning can help mitigate the adverse impacts of flash flooding.",
+    "translation": "효과적인 도시 계획은 갑작스러운 홍수의 악영향을 완화하는 데 도움을 줄 수 있다."
+  }
+]

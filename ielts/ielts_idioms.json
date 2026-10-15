@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "difficulty": "하",
+    "idiom": "a double-edged sword",
+    "meaning": "양날의 검 (이점과 위험이 공존하는 것)",
+    "sentence": "Rapid artificial intelligence integration is ____, offering immense productivity yet threatening conventional employment.",
+    "example": "Rapid artificial intelligence integration is a double-edged sword, offering immense productivity yet threatening conventional employment.",
+    "translation": "인공지능의 급격한 도입은 양날의 검으로, 엄청난 생산성을 제공하지만 기존 고용을 위협하기도 한다."
+  },
+  {
+    "id": 2,
+    "difficulty": "중",
+    "idiom": "play a pivotal role in",
+    "meaning": "~에서 중추적인 역할을 하다",
+    "sentence": "Renewable energy adoption will ____ mitigating global greenhouse gas emissions over the next two decades.",
+    "example": "Renewable energy adoption will play a pivotal role in mitigating global greenhouse gas emissions over the next two decades.",
+    "translation": "재생에너지 도입은 향후 20년 동안 전 세계 온실가스 배출을 완화하는 데 중추적인 역할을 할 것이다."
+  },
+  {
+    "id": 3,
+    "difficulty": "상",
+    "idiom": "at the expense of",
+    "meaning": "~을 희생하여, 대가를 치르고",
+    "sentence": "Unregulated industrial expansion frequently occurs ____ long-term environmental sustainability and public health.",
+    "example": "Unregulated industrial expansion frequently occurs at the expense of long-term environmental sustainability and public health.",
+    "translation": "규제 없는 산업 확장은 종종 장기적인 환경 지속가능성과 공공 보건을 희생시키며 일어난다."
+  },
+  {
+    "id": 4,
+    "difficulty": "하",
+    "idiom": "think outside the box",
+    "meaning": "틀에서 벗어나 창의적으로 생각하다",
+    "sentence": "To resolve intricate socio-economic disparities, policymakers must encourage researchers to ____.",
+    "example": "To resolve intricate socio-economic disparities, policymakers must encourage researchers to think outside the box.",
+    "translation": "복잡한 사회경제적 불평등을 해결하기 위해 정책 입안자들은 연구자들이 기존의 틀에서 벗어나 창의적으로 생각하도록 장려해야 한다."
+  },
+  {
+    "id": 5,
+    "difficulty": "중",
+    "idiom": "tip the scales in favor of",
+    "meaning": "~에게 유리하도록 균형을 기울이다 (결정적 영향을 주다)",
+    "sentence": "Her extensive international volunteering experience helped ____ during the fiercely competitive scholarship selection.",
+    "example": "Her extensive international volunteering experience helped tip the scales in favor of during the fiercely competitive scholarship selection.",
+    "translation": "그녀의 폭넓은 해외 봉사 경험은 치열한 장학금 선발 과정에서 그녀에게 유리하도록 작용했다."
+  },
+  {
+    "id": 6,
+    "difficulty": "상",
+    "idiom": "pave the way for",
+    "meaning": "~을 위한 길을 열다, 발판을 마련하다",
+    "sentence": "Breakthroughs in genetic sequencing will undoubtedly ____ personalized therapies for previously incurable genetic disorders.",
+    "example": "Breakthroughs in genetic sequencing will undoubtedly pave the way for personalized therapies for previously incurable genetic disorders.",
+    "translation": "유전자 서열 분석의 획기적인 발전은 의심할 여지 없이 이전에는 불치였던 유전 질환에 대한 맞춤형 치료의 발판을 마련할 것이다."
+  }
+]

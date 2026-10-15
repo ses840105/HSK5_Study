@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌐 다국어 마스터 퀴즈 (🇨🇳 HSK 5급 & 🇬🇧 IELTS 영어)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- 헤더 -->
+    <header class="app-header">
+      <div class="header-left">
+        <!-- 언어 전환 스위처 탭 -->
+        <div class="lang-switcher">
+          <button id="lang-hsk-btn" class="lang-tab active" data-lang="hsk">
+            <span>🇨🇳</span> HSK 5급
+          </button>
+          <button id="lang-ielts-btn" class="lang-tab" data-lang="ielts">
+            <span>🇬🇧</span> IELTS 영어
+          </button>
+        </div>
+        <div class="title-wrap">
+          <span id="logo-badge" class="logo-badge">HSK 5</span>
+          <h1 id="app-title">HSK 5급 스마트 퀴즈</h1>
+        </div>
+      </div>
+      <div class="header-right">
+        <!-- 학습 기록 버튼 -->
+        <button id="open-history-btn" class="header-action-btn" title="나의 학습 기록 및 성적 리스트 보기">
+          📜 학습 기록
+        </button>
+        <!-- TTS 자동 재생 토글 -->
+        <label class="tts-toggle" title="문제 전환 시 원어민 발음을 자동으로 재생합니다">
+          <input type="checkbox" id="auto-tts-toggle" checked>
+          <span class="toggle-slider"></span>
+          <span class="toggle-label">🔊 자동 발음</span>
+        </label>
+        <!-- 발음 속도 조절 -->
+        <select id="tts-speed" class="speed-select" title="발음 재생 속도">
+          <option value="0.8">0.8x (느리게)</option>
+          <option value="1.0" selected>1.0x (보통)</option>
+          <option value="1.2">1.2x (빠르게)</option>
+        </select>
+        <!-- 음성 엔진 선택 (Google / Apple 등) -->
+        <select id="tts-voice-select" class="speed-select voice-select" title="고음질 원어민 음성 선택">
+          <option value="auto">✨ 최적 고음질 음성 (자동)</option>
+        </select>
+      </div>
+    </header>
+
+    <!-- 1. 설정 / 메뉴 화면 -->
+    <section id="setup-view" class="view-section active">
+      <div id="intro-card" class="intro-card">
+        <h2 id="intro-title">실전 HSK 5급 학습 모드를 선택하세요</h2>
+        <p id="intro-desc">어휘 암기, 사자성어 문맥 완성, 독해 1부분 搭配 배합, 필수 문법, 그리고 실전 듣기(听力)까지 원어민 음성으로 정복하세요.</p>
+      </div>
+
+      <!-- 스마트 반복 학습 (SRS) 진도 현황 카드 -->
+      <div class="srs-status-card">
+        <div class="srs-header">
+          <div class="srs-title-wrap">
+            <span class="srs-icon">🧠</span>
+            <div>
+              <div class="srs-title">스마트 반복 학습 (SRS) 현황</div>
+              <div class="srs-subtitle">맞춘 문제는 자동 졸업(출제 제외), 틀린 문제는 맞출 때까지 다음 시도에 반복 출제됩니다.</div>
+            </div>
+          </div>
+          <button id="reset-progress-btn" class="text-btn srs-reset-btn" title="현재 과목의 마스터 및 오답 기록을 초기화합니다">
+            🔄 진도 초기화
+          </button>
+        </div>
+        <div class="srs-stats-grid">
+          <div class="srs-stat-box green">
+            <div class="srs-stat-num" id="srs-mastered-count">0</div>
+            <div class="srs-stat-label">🎓 마스터 (맞춘 문제)</div>
+          </div>
+          <div class="srs-stat-box red">
+            <div class="srs-stat-num" id="srs-review-count">0</div>
+            <div class="srs-stat-label">🔁 복습 대기 (틀린 문제)</div>
+          </div>
+          <div class="srs-stat-box gray">
+            <div class="srs-stat-num" id="srs-new-count">0</div>
+            <div class="srs-stat-label">⏳ 미도전 문제</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title">1. 학습 모드 선택</div>
+      <div id="mode-grid" class="mode-grid">
+        <div class="mode-card active" data-mode="vocab">
+          <div class="mode-icon">🎯</div>
+          <div class="mode-info">
+            <div class="mode-name">필수 어휘 퀴즈</div>
+            <div class="mode-desc">한자/병음 ➔ 한국어 뜻 및 핵심 예문</div>
+          </div>
+        </div>
+
+        <div class="mode-card" data-mode="listening">
+          <div class="mode-icon">🎧</div>
+          <div class="mode-info">
+            <div class="mode-name">실전 듣기(听力) 퀴즈</div>
+            <div class="mode-desc">남녀 2마디 대화 & 단문 청취 후 질문 풀이</div>
+          </div>
+        </div>
+
+        <div class="mode-card" data-mode="chengyu">
+          <div class="mode-icon">🀄</div>
+          <div class="mode-info">
+            <div class="mode-name">사자성어(成语) 퀴즈</div>
+            <div class="mode-desc">문맥 빈칸 채우기 & 빈출 30선 의미 파악</div>
+          </div>
+        </div>
+
+        <div class="mode-card" data-mode="cloze">
+          <div class="mode-icon">🔗</div>
+          <div class="mode-info">
+            <div class="mode-name">독해 1부분 실전 빈칸</div>
+            <div class="mode-desc">3초 컷! 고정 짝꿍 호응(搭配) 훈련</div>
+          </div>
+        </div>
+
+        <div class="mode-card" data-mode="grammar">
+          <div class="mode-icon">📑</div>
+          <div class="mode-info">
+            <div class="mode-name">필수 문법 & 어순 배열</div>
+            <div class="mode-desc">把/被자문, 존현문, 접속사 공식 및 쓰기</div>
+          </div>
+        </div>
+
+        <div class="mode-card" data-mode="mixed">
+          <div class="mode-icon">🎲</div>
+          <div class="mode-info">
+            <div class="mode-name">종합 실전 모의고사</div>
+            <div class="mode-desc">듣기, 어휘, 성어, 빈칸, 문법 전 영역 통합 출제</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-title">2. 문제 수 선택</div>
+      <div class="count-selector">
+        <button class="count-btn active" data-count="5">5문제 (퀵)</button>
+        <button class="count-btn" data-count="10">10문제 (추천)</button>
+        <button class="count-btn" data-count="15">15문제 (집중)</button>
+        <button class="count-btn" data-count="all">전체 풀기</button>
+      </div>
+
+      <div class="section-title">3. 난이도 선택</div>
+      <div class="difficulty-selector">
+        <button class="diff-btn" data-diff="하">
+          <div class="diff-top">
+            <span class="diff-badge green">🟢 하 (기본)</span>
+          </div>
+          <div class="diff-desc">짧고 명확한 기초 어휘 & 일상 2마디 대화</div>
+        </button>
+        <button class="diff-btn active" data-diff="중">
+          <div class="diff-top">
+            <span class="diff-badge yellow">🟡 중 (실전)</span>
+          </div>
+          <div class="diff-desc">5급 표준 문맥, 반전 함정 청취, 빈출 짝꿍</div>
+        </button>
+        <button class="diff-btn" data-diff="상">
+          <div class="diff-top">
+            <span class="diff-badge red">🔴 상 (심화)</span>
+          </div>
+          <div class="diff-desc">길고 복잡한 장문 설명문, 심화 추론 & 어순</div>
+        </button>
+      </div>
+
+      <div class="action-wrap">
+        <button id="start-btn" class="primary-btn">퀴즈 시작하기 🚀</button>
+      </div>
+    </section>
+
+    <!-- 2. 퀴즈 진행 화면 -->
+    <section id="quiz-view" class="view-section">
+      <div class="quiz-status-bar">
+        <div class="status-left">
+          <span id="quiz-mode-tag" class="tag">모드</span>
+          <span id="quiz-diff-tag" class="diff-status-tag yellow">🟡 중</span>
+          <span id="progress-text" class="progress-indicator">문제 1 / 5</span>
+        </div>
+        <div class="status-right">
+          <span class="score-badge">현재 점수: <b id="current-score">0</b></span>
+          <button id="quit-btn" class="text-btn">그만하기</button>
+        </div>
+      </div>
+
+      <!-- 진행 바 -->
+      <div class="progress-bar-bg">
+        <div id="progress-bar-fill" class="progress-bar-fill" style="width: 20%;"></div>
+      </div>
+
+      <!-- 퀴즈 카드 -->
+      <div class="quiz-card">
+        <div class="question-header">
+          <div class="header-tags-group">
+            <span id="question-category" class="question-category">어휘</span>
+            <span id="question-srs-badge" class="srs-badge review hidden">🔁 오답 복습</span>
+          </div>
+          <button id="tts-btn" class="audio-btn" title="원어민 발음 다시 듣기">
+            <span class="audio-icon">🔊</span> 발음 듣기
+          </button>
+        </div>
+
+        <!-- 듣기 모드 전용 오디오 플레이어 UI -->
+        <div id="listening-player-box" class="listening-player-box hidden">
+          <div class="audio-waves-wrap" id="audio-waves-wrap">
+            <div class="audio-wave"></div>
+            <div class="audio-wave"></div>
+            <div class="audio-wave"></div>
+            <div class="audio-wave"></div>
+            <div class="audio-wave"></div>
+          </div>
+          <div id="listening-status-text" class="listening-instruction">🎧 대화를 주의 깊게 듣고 질문에 답하세요</div>
+          <div id="listening-subtext" class="listening-subtext">(실전 시험과 같이 문제는 음성으로만 출제됩니다)</div>
+          
+          <!-- 일시정지, 이어듣기, 처음부터 컨트롤 바 -->
+          <div class="listening-controls-bar">
+            <button id="listening-play-pause-btn" class="primary-btn player-ctrl-btn" title="재생 또는 일시정지">
+              <span id="play-pause-icon">⏸️</span>
+              <span id="play-pause-label">일시정지</span>
+            </button>
+            <button id="listening-restart-btn" class="secondary-btn player-ctrl-btn" title="대화를 처음부터 다시 듣습니다">
+              <span>🔄 처음부터</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 메인 문제 텍스트 (어휘/성어/빈칸/문법 모드에서 사용) -->
+        <div id="standard-question-body" class="question-body">
+          <div id="main-chinese" class="chinese-text">采取措施</div>
+          <div id="main-pinyin" class="pinyin-text">cǎiqǔ cuòshī</div>
+          <div id="sub-prompt" class="sub-prompt">다음 단어의 올바른 한국어 뜻은 무엇일까요?</div>
+        </div>
+
+        <!-- 4지선다 옵션 목록 -->
+        <div id="options-list" class="options-grid">
+          <!-- JS에서 동적 생성 -->
+        </div>
+
+        <!-- 해설 및 피드백 패널 (정답 선택 후 노출) -->
+        <div id="explanation-box" class="explanation-box hidden">
+          <div id="feedback-banner" class="feedback-banner">🎉 정답입니다!</div>
+          
+          <div class="explanation-content">
+            <div id="exp-collocation" class="exp-row">
+              <span class="exp-label">💡 핵심 搭配/포인트:</span>
+              <span id="exp-colloc-val" class="exp-val">采取措施 (조치를 취하다)</span>
+            </div>
+            <div id="exp-detail" class="exp-row">
+              <span class="exp-label">📌 출제 공략 해설:</span>
+              <span id="exp-detail-val" class="exp-val">동사 采取 뒤에는 보통 措施가 호응합니다.</span>
+            </div>
+          </div>
+
+          <!-- 듣기 모드 전용: 대화 원문 스크립트 카드 -->
+          <div id="listening-transcript-card" class="transcript-card hidden">
+            <div class="transcript-header">
+              <span class="transcript-title">📜 듣기 원문 녹취록 (대화 스크립트)</span>
+              <button id="transcript-audio-btn" class="audio-btn mini" title="원문 다시 듣기">
+                <span class="audio-icon">🔊</span> 원문 다시 듣기
+              </button>
+            </div>
+            <div id="transcript-dialogue-list" class="dialogue-list">
+              <!-- JS에서 대화 동적 생성 -->
+            </div>
+            <div id="transcript-question" class="transcript-question">
+              <span class="question-badge">❓ 질문</span>
+              <span id="transcript-question-text">女人的行李箱为什么很重？</span>
+            </div>
+            <div id="transcript-translation" class="transcript-translation">
+              <!-- 한국어 번역 -->
+            </div>
+          </div>
+
+          <!-- 상세 예문 카드 & 예문 오디오 재생 (어휘/성어/빈칸/문법 모드용) -->
+          <div id="standard-example-card" class="example-card">
+            <div class="example-card-header">
+              <span class="example-card-title">📝 실전 활용 상세 예문</span>
+              <button id="exp-audio-btn" class="audio-btn mini" title="예문 중국어 발음 듣기">
+                <span class="audio-icon">🔊</span> 예문 듣기
+              </button>
+            </div>
+            <div id="exp-example-cn" class="example-cn">政府必须采取有效措施来保护生态环境。</div>
+            <div id="exp-example-kr" class="example-kr">정부는 생태 환경을 보호하기 위해 반드시 유효한 조치를 취해야 한다.</div>
+          </div>
+
+          <button id="next-btn" class="primary-btn next-btn">다음 문제 ➔</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 결과 화면 -->
+    <section id="result-view" class="view-section">
+      <div class="result-card">
+        <div class="result-top-badges">
+          <span id="result-badge" class="result-badge pass">합격 🏆</span>
+          <span id="result-diff-badge" class="result-diff-badge yellow">난이도: 🟡 중</span>
+        </div>
+        <h2>퀴즈가 완료되었습니다!</h2>
+        <div class="result-score-wrap">
+          <div class="score-circle">
+            <span id="final-score" class="score-number">4</span>
+            <span class="score-total">/ <span id="final-total">5</span></span>
+          </div>
+          <div id="score-percentage" class="score-percentage">80%</div>
+        </div>
+
+        <p id="result-message" class="result-message">훌륭합니다! 5급 합격 안정권 점수입니다.</p>
+
+        <div class="result-actions">
+          <button id="retry-btn" class="primary-btn">다시 풀기 🔄</button>
+          <button id="view-history-btn" class="secondary-btn">📜 학습 기록 보기</button>
+          <button id="home-btn" class="secondary-btn">메인 메뉴 🏠</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. 학습 기록(History) 모달 팝업 -->
+    <div id="history-modal" class="modal-overlay hidden">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-icon">📜</span>
+            <h3>나의 HSK 5급 학습 기록</h3>
+          </div>
+          <button id="close-history-btn" class="modal-close-btn" title="닫기">&times;</button>
+        </div>
+
+        <!-- 요약 통계 -->
+        <div class="history-stats">
+          <div class="stat-box">
+            <div class="stat-num" id="stat-total-count">0</div>
+            <div class="stat-label">총 학습 횟수</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num" id="stat-avg-score">0%</div>
+            <div class="stat-label">평균 정답률</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-num" id="stat-pass-count">0</div>
+            <div class="stat-label">합격(60%↑) 횟수</div>
+          </div>
+        </div>
+
+        <!-- 기록 리스트 -->
+        <div class="history-list-header">
+          <span>학습 내역 리스트</span>
+          <button id="clear-history-btn" class="danger-text-btn">기록 전체 삭제</button>
+        </div>
+        <div id="history-list" class="history-list">
+          <!-- JS에서 동적 렌더링 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="app-footer">
+      <span>HSK 5급 고득점 올인원 스마트 러닝</span>
+      <span>•</span>
+      <span>Web Speech API 중국어 간체(zh-CN) 발음 지원</span>
+    </footer>
+  </div>
+
+  <script src="vocab_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

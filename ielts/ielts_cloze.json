@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "difficulty": "하",
+    "sentence": "Regular cardiovascular physical exercise can significantly reduce the ____ of developing chronic metabolic diseases.",
+    "answer": "risk",
+    "options": ["risk", "danger", "hazard", "threat"],
+    "collocation": "reduce the risk of (위험을 줄이다)",
+    "translation": "규칙적인 유산소 신체 운동은 만성 대사 질환이 발생할 위험을 현저히 줄여줄 수 있다.",
+    "explanation": "'위험을 낮추다'라는 의학 및 아카데믹 맥락에서 동사 reduce 뒤에는 'risk'가 가장 자연스러운 콜로케이션입니다."
+  },
+  {
+    "id": 2,
+    "difficulty": "중",
+    "sentence": "The international committee failed to reach a unanimous ____ regarding targeted carbon taxation policies.",
+    "answer": "consensus",
+    "options": ["consensus", "agreement", "harmony", "bargain"],
+    "collocation": "reach a consensus (합의에 도달하다)",
+    "translation": "국제위원회는 탄소세 부과 정책과 관련하여 만장일치의 합의에 도달하지 못했다.",
+    "explanation": "'reach a unanimous consensus'는 학술 에세이 및 공식 회의 보고서에서 만장일치의 합의를 나타내는 대표적 표현입니다."
+  },
+  {
+    "id": 3,
+    "difficulty": "상",
+    "sentence": "Excessive reliance on automated algorithmic decisions poses a serious ____ to professional accountability.",
+    "answer": "threat",
+    "options": ["threat", "peril", "crisis", "warning"],
+    "collocation": "pose a threat to (~에 위협이 되다)",
+    "translation": "자동화된 알고리즘 판단에 대한 지나친 의존은 전문적 책임성에 심각한 위협을 가한다.",
+    "explanation": "동사 'pose'와 전치사 'to' 사이에서 '위협을 제기하다'는 뜻을 만드는 고정 명사 배합은 'threat'입니다."
+  },
+  {
+    "id": 4,
+    "difficulty": "하",
+    "sentence": "Governments must ____ decisive measures to curb soaring youth unemployment rates.",
+    "answer": "take",
+    "options": ["take", "make", "do", "hold"],
+    "collocation": "take measures (조치를 취하다)",
+    "translation": "정부는 치솟는 청년 실업률을 억제하기 위해 결단력 있는 조치를 취해야 한다.",
+    "explanation": "'조치를 취하다'는 관용적 배합으로 'take measures' 또는 'adopt measures'를 사용합니다."
+  },
+  {
+    "id": 5,
+    "difficulty": "중",
+    "sentence": "Technological advancements have had a profound ____ on the contemporary global entertainment landscape.",
+    "answer": "impact",
+    "options": ["impact", "result", "outcome", "reaction"],
+    "collocation": "have a profound impact on (~에 지대한 영향을 미치다)",
+    "translation": "기술 발전은 현대 글로벌 엔터테인먼트 환경에 지대한 영향을 미쳐왔다.",
+    "explanation": "'have an impact/influence on' 구조에서 형용사 'profound'와 긴밀하게 호응하는 명사는 'impact'입니다."
+  },
+  {
+    "id": 6,
+    "difficulty": "상",
+    "sentence": "The recent archaeological excavations shed new ____ on the sophisticated trade networks of prehistoric civilizations.",
+    "answer": "light",
+    "options": ["light", "vision", "insight", "glance"],
+    "collocation": "shed light on (~을 명확히 밝히다/새로운 정보를 주다)",
+    "translation": "최근의 고고학적 발굴은 선사시대 문명의 정교한 교역 네트워크를 새롭게 밝혀주었다.",
+    "explanation": "동사 'shed'와 전치사 'on'과 결합하여 '빛을 비추다, 규명하다'의 의미를 형성하는 이디엄은 'shed light on'입니다."
+  }
+]
