@@ -1542,3 +1542,46 @@ body.theme-ielts {
 .auth-switch span:hover {
   text-decoration: underline;
 }
+
+/* User Greeting */
+.user-greeting {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--primary);
+  margin-right: 12px;
+}
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    height: 100dvh; /* Use dynamic viewport height for mobile browsers */
+  }
+  .app-container {
+    height: 100dvh;
+    max-height: 100dvh;
+    border-radius: 0;
+    border: none;
+  }
+  .app-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .header-left, .header-right {
+    width: 100%;
+    justify-content: center;
+  }
+  .lang-switcher {
+    width: 100%;
+    justify-content: center;
+  }
+  .title-wrap {
+    margin-top: 8px;
+    justify-content: center;
+  }
+  .user-greeting {
+    margin-right: auto; /* Push to left */
+    padding-left: 10px;
+  }
+}

@@ -21,13 +21,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // 상태 확인
   function checkAuth() {
     const user = localStorage.getItem("loggedInUser");
+    const userGreeting = document.getElementById("user-greeting");
+    
     if (user) {
       authContainer.style.display = "none";
       appContainer.style.display = "flex";
-      // 환영 메시지 등 추가 가능
+      if (userGreeting) userGreeting.innerText = `${user}님 반갑습니다!`;
     } else {
       authContainer.style.display = "flex";
       appContainer.style.display = "none";
+      if (userGreeting) userGreeting.innerText = "";
     }
   }
 
