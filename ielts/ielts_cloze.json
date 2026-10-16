@@ -1,62 +1,302 @@
 [
   {
-    "id": 1,
+    "id": "ic_01",
     "difficulty": "하",
-    "sentence": "Regular cardiovascular physical exercise can significantly reduce the ____ of developing chronic metabolic diseases.",
+    "sentence": "Regular cardiovascular aerobic exercise can significantly reduce the ____ of developing metabolic syndrome.",
     "answer": "risk",
-    "options": ["risk", "danger", "hazard", "threat"],
+    "options": [
+      "risk",
+      "danger",
+      "hazard",
+      "threat"
+    ],
     "collocation": "reduce the risk of (위험을 줄이다)",
-    "translation": "규칙적인 유산소 신체 운동은 만성 대사 질환이 발생할 위험을 현저히 줄여줄 수 있다.",
-    "explanation": "'위험을 낮추다'라는 의학 및 아카데믹 맥락에서 동사 reduce 뒤에는 'risk'가 가장 자연스러운 콜로케이션입니다."
+    "translation": "규칙적인 유산소 운동은 대사 증후군이 발생할 위험을 현저히 줄여줄 수 있다.",
+    "explanation": "의학 및 건강 연구에서 질병 발생 확률을 낮출 때 동사 reduce 뒤에는 'risk'가 가장 전형적인 콜로케이션입니다."
   },
   {
-    "id": 2,
-    "difficulty": "중",
-    "sentence": "The international committee failed to reach a unanimous ____ regarding targeted carbon taxation policies.",
-    "answer": "consensus",
-    "options": ["consensus", "agreement", "harmony", "bargain"],
-    "collocation": "reach a consensus (합의에 도달하다)",
-    "translation": "국제위원회는 탄소세 부과 정책과 관련하여 만장일치의 합의에 도달하지 못했다.",
-    "explanation": "'reach a unanimous consensus'는 학술 에세이 및 공식 회의 보고서에서 만장일치의 합의를 나타내는 대표적 표현입니다."
-  },
-  {
-    "id": 3,
-    "difficulty": "상",
-    "sentence": "Excessive reliance on automated algorithmic decisions poses a serious ____ to professional accountability.",
-    "answer": "threat",
-    "options": ["threat", "peril", "crisis", "warning"],
-    "collocation": "pose a threat to (~에 위협이 되다)",
-    "translation": "자동화된 알고리즘 판단에 대한 지나친 의존은 전문적 책임성에 심각한 위협을 가한다.",
-    "explanation": "동사 'pose'와 전치사 'to' 사이에서 '위협을 제기하다'는 뜻을 만드는 고정 명사 배합은 'threat'입니다."
-  },
-  {
-    "id": 4,
+    "id": "ic_02",
     "difficulty": "하",
-    "sentence": "Governments must ____ decisive measures to curb soaring youth unemployment rates.",
+    "sentence": "National governments must ____ decisive measures to curb soaring metropolitan carbon emissions.",
     "answer": "take",
-    "options": ["take", "make", "do", "hold"],
+    "options": [
+      "take",
+      "make",
+      "do",
+      "hold"
+    ],
     "collocation": "take measures (조치를 취하다)",
-    "translation": "정부는 치솟는 청년 실업률을 억제하기 위해 결단력 있는 조치를 취해야 한다.",
-    "explanation": "'조치를 취하다'는 관용적 배합으로 'take measures' 또는 'adopt measures'를 사용합니다."
+    "translation": "중앙정부는 치솟는 대도시 탄소 배출량을 억제하기 위해 결단력 있는 조치를 취해야 한다.",
+    "explanation": "'조치를 취하다'는 관용적 학술 표현으로 'take measures' 또는 'adopt measures'를 사용합니다."
   },
   {
-    "id": 5,
-    "difficulty": "중",
-    "sentence": "Technological advancements have had a profound ____ on the contemporary global entertainment landscape.",
+    "id": "ic_03",
+    "difficulty": "하",
+    "sentence": "Primary school curricula should ____ emphasis on developing foundational literacy and numeracy skills.",
+    "answer": "place",
+    "options": [
+      "place",
+      "give",
+      "put",
+      "set"
+    ],
+    "collocation": "place emphasis on (~에 역점을 두다/강조하다)",
+    "translation": "초등학교 교육과정은 기초 문해력과 수리력 기술을 발달시키는 데 역점을 두어야 한다.",
+    "explanation": "'~에 역점을 두다, 강조하다'의 격식 있는 표현으로 'place emphasis on'이 가장 자연스럽습니다."
+  },
+  {
+    "id": "ic_04",
+    "difficulty": "하",
+    "sentence": "Advanced automation and artificial intelligence will have a profound ____ on modern labor markets.",
     "answer": "impact",
-    "options": ["impact", "result", "outcome", "reaction"],
+    "options": [
+      "impact",
+      "result",
+      "outcome",
+      "product"
+    ],
     "collocation": "have a profound impact on (~에 지대한 영향을 미치다)",
-    "translation": "기술 발전은 현대 글로벌 엔터테인먼트 환경에 지대한 영향을 미쳐왔다.",
-    "explanation": "'have an impact/influence on' 구조에서 형용사 'profound'와 긴밀하게 호응하는 명사는 'impact'입니다."
+    "translation": "첨단 자동화와 인공지능은 현대 노동 시장에 지대한 영향을 미칠 것이다.",
+    "explanation": "'지대한 영향을 미치다'는 형용사 profound와 전치사 on 사이에 명사 'impact'가 호응합니다."
   },
   {
-    "id": 6,
+    "id": "ic_05",
+    "difficulty": "하",
+    "sentence": "Sociologists frequently ____ surveys to evaluate public perceptions regarding nuclear power generation.",
+    "answer": "conduct",
+    "options": [
+      "conduct",
+      "operate",
+      "practice",
+      "perform"
+    ],
+    "collocation": "conduct a survey (설문조사를 실시하다)",
+    "translation": "사회학자들은 원자력 발전에 관한 대중의 인식을 평가하기 위해 설문조사를 자주 실시한다.",
+    "explanation": "연구/설문/조사를 격식 있게 수행할 때 'conduct a survey/study'를 씁니다."
+  },
+  {
+    "id": "ic_06",
+    "difficulty": "하",
+    "sentence": "Many university graduates struggle to ____ a steady balance between intense career duties and personal wellness.",
+    "answer": "strike",
+    "options": [
+      "strike",
+      "catch",
+      "hit",
+      "seize"
+    ],
+    "collocation": "strike a balance (균형을 맞추다/유지하다)",
+    "translation": "많은 대학 졸업생들은 치열한 직무와 개인 건강 사이에서 안정적인 균형을 맞추기 위해 고군분투한다.",
+    "explanation": "두 가지 상충하는 가치 사이에서 균형을 잡을 때 대표적인 관용구는 'strike a balance'입니다."
+  },
+  {
+    "id": "ic_07",
+    "difficulty": "중",
+    "sentence": "The multinational climate delegation failed to reach a unanimous ____ on mandatory emission reduction quotas.",
+    "answer": "consensus",
+    "options": [
+      "consensus",
+      "agreement",
+      "compromise",
+      "treaty"
+    ],
+    "collocation": "reach a consensus (만장일치의 합의에 도달하다)",
+    "translation": "다국적 기후 대표단은 의무적 배출 감축 할당량에 대해 만장일치의 합의에 도달하지 못했다.",
+    "explanation": "국제회의 보고서와 아카데믹 에세이에서 만장일치의 합의는 'reach a unanimous consensus'를 씁니다."
+  },
+  {
+    "id": "ic_08",
+    "difficulty": "중",
+    "sentence": "Unregulated corporate industrial waste disposal poses a severe ____ to downstream freshwater ecosystems.",
+    "answer": "threat",
+    "options": [
+      "threat",
+      "peril",
+      "crisis",
+      "distress"
+    ],
+    "collocation": "pose a threat to (~에 위협이 되다)",
+    "translation": "규제되지 않는 기업의 산업 폐기물 처리는 하류 담수 생태계에 심각한 위협이 된다.",
+    "explanation": "동사 'pose'와 전치사 'to' 사이에서 '위협을 가하다'를 구성하는 명사는 'threat'입니다."
+  },
+  {
+    "id": "ic_09",
+    "difficulty": "중",
+    "sentence": "Recent geological deep-sea core samples have cast ____ on previous assertions regarding prehistoric ocean temperatures.",
+    "answer": "doubt",
+    "options": [
+      "doubt",
+      "suspicion",
+      "mistrust",
+      "skepticism"
+    ],
+    "collocation": "cast doubt on (~에 의구심을 던지다/의문을 제기하다)",
+    "translation": "최근의 지질학적 심해 코어 샘플은 선사시대 해수 온도에 대한 기존의 주장에 의구심을 던졌다.",
+    "explanation": "학술 가설이나 기존 이론에 의문을 제기할 때 쓰는 필수 연어는 'cast doubt on'입니다."
+  },
+  {
+    "id": "ic_10",
+    "difficulty": "중",
+    "sentence": "Governments should ____ priorities carefully between military modernization and public healthcare infrastructure.",
+    "answer": "set",
+    "options": [
+      "set",
+      "make",
+      "do",
+      "impose"
+    ],
+    "collocation": "set priorities (우선순위를 정하다)",
+    "translation": "정부는 군 현대화와 공공 의료 인프라 사이에서 우선순위를 신중하게 정해야 한다.",
+    "explanation": "정책 목표의 우선순위를 정하고 설정할 때는 'set priorities'가 표준적 표현입니다."
+  },
+  {
+    "id": "ic_11",
+    "difficulty": "중",
+    "sentence": "Peer reviewers confirmed that the observational findings are fully ____ with established evolutionary models.",
+    "answer": "consistent",
+    "options": [
+      "consistent",
+      "compatible",
+      "congruent",
+      "identical"
+    ],
+    "collocation": "consistent with (~와 일치하는/부합하는)",
+    "translation": "동료 심사위원들은 관찰된 연구 결과가 기존 진화 모델과 전적으로 부합함을 확인했다.",
+    "explanation": "연구 결과가 기존 이론/데이터와 상치되지 않고 일치할 때 'consistent with'를 씁니다."
+  },
+  {
+    "id": "ic_12",
+    "difficulty": "중",
+    "sentence": "Technological globalization has played a key role in raising the ____ of living for millions across emerging markets.",
+    "answer": "standard",
+    "options": [
+      "standard",
+      "level",
+      "quality",
+      "scale"
+    ],
+    "collocation": "standard of living (생활 수준)",
+    "translation": "기술 세계화는 신흥 시장 수백만 명의 생활 수준을 향상시키는 데 핵심적인 역할을 했다.",
+    "explanation": "국민의 전반적인 물질적 복지와 경제적 삶의 질을 가리키는 정형 표현은 'standard of living'입니다."
+  },
+  {
+    "id": "ic_13",
+    "difficulty": "중",
+    "sentence": "University students must learn to ____ critical judgments regarding the validity of online statistical assertions.",
+    "answer": "exercise",
+    "options": [
+      "exercise",
+      "practice",
+      "apply",
+      "exert"
+    ],
+    "collocation": "exercise judgment (신중하게 판단력을 발휘하다)",
+    "translation": "대학생들은 온라인 통계 주장의 타당성에 대해 비판적 판단력을 발휘하는 법을 배워야 한다.",
+    "explanation": "판단력(judgment), 주의(caution), 권한(power) 등을 발휘하고 행사할 때 동사 'exercise'를 씁니다."
+  },
+  {
+    "id": "ic_14",
+    "difficulty": "중",
+    "sentence": "The new trade agreement will facilitate ____ access to overseas markets for small regional enterprises.",
+    "answer": "greater",
+    "options": [
+      "greater",
+      "higher",
+      "taller",
+      "bigger"
+    ],
+    "collocation": "greater access to (~에 대한 더 넓은 접근성)",
+    "translation": "새로운 무역 협정은 소규모 지역 기업들에게 해외 시장에 대한 더 넓은 접근성을 촉진할 것이다.",
+    "explanation": "시장, 정보, 자원 등에 대한 접근성을 확장할 때 전형적으로 형용사 'greater'가 호응합니다."
+  },
+  {
+    "id": "ic_15",
     "difficulty": "상",
-    "sentence": "The recent archaeological excavations shed new ____ on the sophisticated trade networks of prehistoric civilizations.",
+    "sentence": "The latest genome sequencing study sheds new ____ on how ancient hominids adapted to glacial climates.",
     "answer": "light",
-    "options": ["light", "vision", "insight", "glance"],
-    "collocation": "shed light on (~을 명확히 밝히다/새로운 정보를 주다)",
-    "translation": "최근의 고고학적 발굴은 선사시대 문명의 정교한 교역 네트워크를 새롭게 밝혀주었다.",
-    "explanation": "동사 'shed'와 전치사 'on'과 결합하여 '빛을 비추다, 규명하다'의 의미를 형성하는 이디엄은 'shed light on'입니다."
+    "options": [
+      "light",
+      "insight",
+      "vision",
+      "clarity"
+    ],
+    "collocation": "shed light on (~을 규명하다/새로운 정보를 밝히다)",
+    "translation": "최신 게놈 서열 분석 연구는 고대 인류가 빙하기 기후에 어떻게 적응했는지를 새롭게 규명해 준다.",
+    "explanation": "동사 'shed'와 전치사 'on'과 결합하여 의문점을 밝히는 학술 배합은 'shed light on'입니다."
+  },
+  {
+    "id": "ic_16",
+    "difficulty": "상",
+    "sentence": "The sudden withdrawal of institutional venture capital dealt a devastating ____ to the green energy startup.",
+    "answer": "blow",
+    "options": [
+      "blow",
+      "hit",
+      "strike",
+      "crash"
+    ],
+    "collocation": "deal a blow to (~에 치명타를 입히다)",
+    "translation": "기관 벤처 캐피털의 갑작스러운 철수는 친환경 에너지 스타트업에 치명타를 입혔다.",
+    "explanation": "사업, 계획, 조직 등에 심각한 타격이나 좌절을 안길 때 'deal a devastating blow to'를 사용합니다."
+  },
+  {
+    "id": "ic_17",
+    "difficulty": "상",
+    "sentence": "The proposed tax incentives are intended to ____ private investment toward sustainable municipal transport.",
+    "answer": "channel",
+    "options": [
+      "channel",
+      "conduct",
+      "direct",
+      "lead"
+    ],
+    "collocation": "channel investment toward (~로 투자를 유도하다/돌리다)",
+    "translation": "제안된 세제 혜택은 민간 투자를 지속 가능한 도시 대중교통 쪽으로 유도하기 위한 것이다.",
+    "explanation": "자금이나 노력을 특정 목표 방향으로 집중 투입하고 유도할 때 'channel investment/resources toward'를 씁니다."
+  },
+  {
+    "id": "ic_18",
+    "difficulty": "상",
+    "sentence": "Extensive metallurgical testing revealed that the structural steel did not meet minimum safety ____.",
+    "answer": "specifications",
+    "options": [
+      "specifications",
+      "descriptions",
+      "explanations",
+      "definitions"
+    ],
+    "collocation": "meet safety specifications (안전 규격/사양을 충족하다)",
+    "translation": "광범위한 금속공학 테스트 결과, 해당 구조용 강철은 최소 안전 규격을 충족하지 못한 것으로 드러났다.",
+    "explanation": "공학 및 산업 맥락에서 기술적 규격 사양을 나타내는 전문 어휘는 'specifications'입니다."
+  },
+  {
+    "id": "ic_19",
+    "difficulty": "상",
+    "sentence": "The newly ratified international treaty places legally ____ obligations on signatory industrialized nations.",
+    "answer": "binding",
+    "options": [
+      "binding",
+      "holding",
+      "tying",
+      "locking"
+    ],
+    "collocation": "legally binding (법적 구속력이 있는)",
+    "translation": "새롭게 비준된 국제 조약은 조약 체결 선진국들에 법적 구속력이 있는 의무를 부과한다.",
+    "explanation": "국제법 및 계약 문서에서 법적 강제성을 나타내는 연어 배합은 'legally binding obligations'입니다."
+  },
+  {
+    "id": "ic_20",
+    "difficulty": "상",
+    "sentence": "The university professor presented a compelling body of ____ demonstrating the efficacy of cognitive behavioral therapy.",
+    "answer": "evidence",
+    "options": [
+      "evidence",
+      "proofs",
+      "facts",
+      "clues"
+    ],
+    "collocation": "a compelling body of evidence (설득력 있는 다수의 증거 자료)",
+    "translation": "대학교수는 인지 행동 치료의 효능을 입증하는 설득력 있는 다수의 증거 자료를 제시했다.",
+    "explanation": "학술 논문에서 풍부하고 설득력 있는 실증 자료군을 지칭할 때 'a compelling body of evidence'를 씁니다."
   }
 ]

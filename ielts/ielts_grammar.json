@@ -1,86 +1,282 @@
 [
   {
-    "id": 1,
+    "id": "ig_01",
     "difficulty": "하",
-    "category": "Relative Clauses (관계대명사)",
+    "category": "Relative Clauses (관계대명사 소유격)",
     "question": "Choose the most grammatically accurate sentence for Academic Writing:",
     "options": [
-      "The researchers studied individuals whose immune responses were weakened by prolonged chronic stress.",
-      "The researchers studied individuals which immune responses were weakened by prolonged chronic stress.",
-      "The researchers studied individuals that their immune responses were weakened by prolonged chronic stress.",
-      "The researchers studied individuals who immune responses were weakened by prolonged chronic stress."
+      "The clinical researchers tracked patients which immune systems were suppressed by targeted chemotherapy.",
+      "The clinical researchers tracked patients whose immune systems were suppressed by targeted chemotherapy.",
+      "The clinical researchers tracked patients that their immune systems were suppressed by targeted chemotherapy.",
+      "The clinical researchers tracked patients who immune systems were suppressed by targeted chemotherapy."
     ],
-    "answer": 1,
-    "explanation": "선행사(individuals)의 소유격 관계를 나타낼 때는 소유격 관계대명사 'whose'가 유일하게 적합합니다. ('that their'나 'which'는 비문법적)"
+    "answer": 2,
+    "explanation": "선행사(patients)의 소유격 관계를 나타낼 때는 소유격 관계대명사 'whose'가 정확합니다. (which는 사람 불가, that their는 중복 대명사 오류)."
   },
   {
-    "id": 2,
-    "difficulty": "중",
-    "category": "Conditionals (가정법 과거완료)",
-    "question": "Which sentence correctly expresses a past counterfactual condition?",
-    "options": [
-      "Had environmental authorities acted sooner, the regional ecological catastrophe could have been averted.",
-      "If environmental authorities acted sooner, the regional ecological catastrophe would be averted.",
-      "Had environmental authorities act sooner, the catastrophe could have been averted.",
-      "Were environmental authorities to act sooner, the catastrophe had been averted."
-    ],
-    "answer": 1,
-    "explanation": "가정법 과거완료의 if 생략 도치 구문인 'Had + 주어 + p.p., 주어 + could have p.p.'가 완벽하게 적용된 문장입니다. IELTS 라이팅 Band 7.0+ 도치 구문입니다."
-  },
-  {
-    "id": 3,
-    "difficulty": "상",
-    "category": "Negative Inversion (부정어 도치 구문)",
-    "question": "Identify the grammatically flawless sentence featuring negative adverbial inversion:",
-    "options": [
-      "Rarely does a single scientific discovery fundamentally overturn centuries of accepted biological dogma.",
-      "Rarely a single scientific discovery does fundamentally overturn accepted dogma.",
-      "Rarely fundamentally overturns a single scientific discovery accepted dogma.",
-      "Rarely do a single scientific discovery overturns accepted biological dogma."
-    ],
-    "answer": 1,
-    "explanation": "문두에 부정 부사구 'Rarely'가 위치할 때 의문문 어순으로 '조동사(does) + 단수 주어(a discovery) + 본동사 원형(overturn)' 도치가 일어납니다."
-  },
-  {
-    "id": 4,
+    "id": "ig_02",
     "difficulty": "하",
-    "category": "Concession Clauses (양보 구문)",
-    "question": "Which option correctly uses a prepositional phrase of concession?",
+    "category": "Concession Clauses (양보 구문: Despite vs Although)",
+    "question": "Identify the grammatically correct sentence expressing concession:",
     "options": [
-      "Despite facing persistent regulatory hurdles, the green startup secured substantial private venture capital.",
-      "Although facing persistent regulatory hurdles, but the green startup secured capital.",
-      "Despite of facing persistent regulatory hurdles, the startup secured capital.",
-      "In spite facing persistent regulatory hurdles, the startup secured capital."
+      "Despite facing severe budgetary constraints, the municipal clinic maintained 24-hour emergency services.",
+      "Although facing severe budgetary constraints, but the municipal clinic maintained emergency services.",
+      "Despite of facing severe budgetary constraints, the municipal clinic maintained emergency services.",
+      "In spite facing severe budgetary constraints, the municipal clinic maintained emergency services."
     ],
     "answer": 1,
-    "explanation": "'Despite'는 전치사이므로 바로 명사 상당어구(facing hurdles)가 오며 'of'를 붙이지 않습니다. ('In spite of'와 혼동 주의)"
+    "explanation": "'Despite'는 전치사로 뒤에 동명사구(facing constraints)가 오며 'of'를 쓰지 않습니다. (Although와 but의 중복 사용, In spite of에서 of 누락은 빈출 오류입니다)."
   },
   {
-    "id": 5,
+    "id": "ig_03",
+    "difficulty": "하",
+    "category": "Subject-Verb Agreement (주어-동사 수일치)",
+    "question": "Which sentence exhibits flawless subject-verb agreement for complex academic subjects?",
+    "options": [
+      "The proliferation of automated surveillance algorithms have raised grave privacy concerns.",
+      "The proliferation of automated surveillance algorithms were raising grave privacy concerns.",
+      "The proliferation of automated surveillance algorithms has raised grave privacy concerns.",
+      "The proliferation of automated surveillance algorithms are raising grave privacy concerns."
+    ],
+    "answer": 3,
+    "explanation": "핵심 주어는 복수형 전치사구의 명사(algorithms)가 아니라 단수 핵심 명사인 'The proliferation'이므로 단수 동사 'has raised'가 일치합니다."
+  },
+  {
+    "id": "ig_04",
+    "difficulty": "하",
+    "category": "Parallel Structure (병렬 구조)",
+    "question": "Choose the sentence that correctly preserves grammatical parallelism:",
+    "options": [
+      "Effective corporate managers must communicate transparently, delegate responsibilities fairly, and to inspire team morale.",
+      "Effective corporate managers must communicate transparently, delegating responsibilities fairly, and inspire team morale.",
+      "Effective corporate managers must communicate transparently, delegate responsibilities fairly, and inspire team morale.",
+      "Effective corporate managers must communication transparently, delegate responsibilities, and inspire team morale."
+    ],
+    "answer": 3,
+    "explanation": "조동사 must 뒤에 원형 동사 3개(communicate, delegate, inspire)가 접속사 and로 대등하게 병렬 연결되어야 합니다."
+  },
+  {
+    "id": "ig_05",
+    "difficulty": "하",
+    "category": "Comparatives (비교 구문 정확성)",
+    "question": "Which comparative structure is written with academic precision?",
+    "options": [
+      "The energy density of lithium-sulfur batteries is significantly higher than conventional lead-acid cells.",
+      "The energy density of lithium-sulfur batteries is significantly higher than that of conventional lead-acid cells.",
+      "The energy density of lithium-sulfur batteries is significantly higher than those of conventional lead-acid cells.",
+      "The energy density of lithium-sulfur batteries is significantly more higher than lead-acid cells."
+    ],
+    "answer": 2,
+    "explanation": "비교 대상은 전지가 아니라 '에너지 밀도(The energy density)'이므로, 단수 대명사 'that of'를 사용하여 논리적 비교 대상을 정확히 일치시켜야 합니다."
+  },
+  {
+    "id": "ig_06",
+    "difficulty": "하",
+    "category": "Passive Voice (학술 수동태 어순)",
+    "question": "Select the sentence that properly uses formal passive voice in academic methodology:",
+    "options": [
+      "The water samples were collected hourly and analyzed for chemical residues using spectrometry.",
+      "The water samples was collected hourly and analyzed for chemical residues using spectrometry.",
+      "The water samples collected hourly and analyzing for chemical residues using spectrometry.",
+      "The water samples been collected hourly and analyzed for chemical residues using spectrometry."
+    ],
+    "answer": 1,
+    "explanation": "복수 주어(The water samples)에 맞추어 복수 과거 수동태 'were collected and analyzed'가 완벽하게 호응합니다."
+  },
+  {
+    "id": "ig_07",
     "difficulty": "중",
-    "category": "Participle Clauses (분사구문)",
-    "question": "Choose the sentence that correctly utilizes an introductory participle clause:",
+    "category": "Conditionals (가정법 과거완료 도치)",
+    "question": "Which sentence correctly demonstrates inverted conditional structure in academic argumentation?",
     "options": [
-      "Having analyzed the survey results meticulously, the committee drafted a revised urban transportation policy.",
-      "Having analyzing the survey results meticulously, the committee drafted a policy.",
-      "Analyzed the survey results meticulously, the committee drafting a policy.",
-      "Having been analyzed the survey results, the committee drafted a policy."
+      "If environmental regulators had acted sooner, the ecological disaster would be prevented yesterday.",
+      "Had environmental regulators acted sooner, the catastrophic ecological disaster could have been averted.",
+      "Had environmental regulators act sooner, the catastrophic ecological disaster could have been averted.",
+      "Were environmental regulators had acted sooner, the ecological disaster could have been averted."
     ],
-    "answer": 1,
-    "explanation": "주절의 주어(the committee)가 능동적으로 앞선 시점에 분석을 마쳤으므로 완료분사구문 'Having analyzed ~'가 정확합니다."
+    "answer": 2,
+    "explanation": "가정법 과거완료 if 생략 도치는 'Had + 주어 + p.p., 주어 + could/would have p.p.' 구조입니다. IELTS 라이팅 고득점을 보장하는 전형적 고급 구문입니다."
   },
   {
-    "id": 6,
-    "difficulty": "상",
-    "category": "Nominalization & Passive Voice (명사화 및 학술 수동태)",
+    "id": "ig_08",
+    "difficulty": "중",
+    "category": "Participle Clauses (완료 분사구문)",
+    "question": "Choose the sentence that correctly utilizes an introductory perfect participle clause:",
+    "options": [
+      "Having analyzed the field survey results meticulously, a revised urban transit policy was drafted by the board.",
+      "Analyzing the field survey results meticulously, a revised urban transit policy was drafted.",
+      "Having analyzing the field survey results meticulously, the board drafted a revised urban transit policy.",
+      "Having analyzed the field survey results meticulously, the municipal board drafted a revised urban transit policy."
+    ],
+    "answer": 4,
+    "explanation": "분사구문의 의미상 주어는 주절의 주어와 일치해야 합니다. 설문 결과를 능동적으로 분석한 주체는 위원회(the municipal board)이므로 4번이 유일하게 현수분사(Dangling participle) 오류가 없는 완벽한 문장입니다."
+  },
+  {
+    "id": "ig_09",
+    "difficulty": "중",
+    "category": "Subjunctive Mood (요구/제안 동사 당위성 가정법)",
+    "question": "Which sentence strictly observes the subjunctive mood required in formal academic proposals?",
+    "options": [
+      "The advisory panel recommended that the government implements strict emissions penalties immediately.",
+      "The advisory panel recommended that the government implement strict emissions penalties immediately.",
+      "The advisory panel recommended that the government will implement strict emissions penalties immediately.",
+      "The advisory panel recommended that the government would implemented emissions penalties."
+    ],
+    "answer": 2,
+    "explanation": "recommend, suggest, propose, mandate 등 요구/제안 동사 뒤의 that절에는 '(should +) 동사원형' 형태인 원형(implement)이 옵니다."
+  },
+  {
+    "id": "ig_10",
+    "difficulty": "중",
+    "category": "Cleft Sentences (It 강조 구문)",
+    "question": "Identify the sentence that correctly employs an 'It-cleft' structure to emphasize a causal factor:",
+    "options": [
+      "It is through relentless cross-disciplinary research that groundbreaking pharmaceutical treatments are developed.",
+      "It is through relentless cross-disciplinary research which groundbreaking treatments are developed.",
+      "It is through relentless cross-disciplinary research what groundbreaking treatments are developed.",
+      "There is through relentless cross-disciplinary research that groundbreaking treatments develop."
+    ],
+    "answer": 1,
+    "explanation": "'It is [강조 대상] that [문장 성분]' 구조로 전치사구(through research)를 강조할 때는 접속사 that을 사용해야 합니다 (which, what 불가)."
+  },
+  {
+    "id": "ig_11",
+    "difficulty": "중",
+    "category": "Adverbial Clauses (양보 및 대조: Whereas / While)",
+    "question": "Select the grammatically correct sentence contrasting two sociological trends:",
+    "options": [
+      "Developed economies exhibit aging demographic pyramids, whereas birth rates in emerging economies remain substantially higher.",
+      "Developed economies exhibit aging demographic pyramids, whereas but birth rates remain higher.",
+      "Despite developed economies exhibit aging pyramids, emerging economies have higher birth rates.",
+      "Developed economies exhibit aging pyramids, while that birth rates in emerging economies remain higher."
+    ],
+    "answer": 1,
+    "explanation": "'whereas'는 두 대조적인 절을 연결하는 접속사이므로 바로 주어-동사가 오며 but과 중복되지 않습니다."
+  },
+  {
+    "id": "ig_12",
+    "difficulty": "중",
+    "category": "Inversion with Little (부정 부사 도치)",
+    "question": "Which sentence correctly executes negative adverbial inversion with 'Little'?",
+    "options": [
+      "Little the early industrialists realized that their emissions would alter the global climate forever.",
+      "Little did the early industrialists realize that their emissions would alter the global climate forever.",
+      "Little did the early industrialists realized that their emissions would alter the global climate forever.",
+      "Little early industrialists did realize that their emissions alter the global climate forever."
+    ],
+    "answer": 2,
+    "explanation": "부정 부사 'Little'이 문두에 올 때 의문문 어순으로 'did + 주어 + 동사원형(realize)' 도치가 일어납니다."
+  },
+  {
+    "id": "ig_13",
+    "difficulty": "중",
+    "category": "Not only ... but also (상관접속사 도치)",
+    "question": "Choose the sentence featuring correct fronted inversion with 'Not only':",
+    "options": [
+      "Not only does excessive deforestation destroy biodiversity, but it also accelerates global climate warming.",
+      "Not only excessive deforestation destroys biodiversity, but it also accelerates global climate warming.",
+      "Not only does excessive deforestation destroys biodiversity, but it also accelerates climate warming.",
+      "Not only excessive deforestation does destroy biodiversity, but it accelerates climate warming."
+    ],
+    "answer": 1,
+    "explanation": "'Not only'가 문두로 이동하면 첫 번째 절에 'does + 주어 + 동사원형' 도치가 발생하며, 뒤에는 'but it also + 동사'가 연결됩니다."
+  },
+  {
+    "id": "ig_14",
+    "difficulty": "중",
+    "category": "Nominalization (학술 명사화 구문)",
     "question": "Which sentence demonstrates the most formal academic tone typical of IELTS Band 8+ writing?",
     "options": [
-      "It is widely argued that the implementation of stricter emission standards will stimulate technological innovation.",
-      "People everywhere argue that if we make strict rules it will make good technology happen.",
-      "It is widely argue that stricter emission standards will be made by technology.",
-      "There is widely argued which stricter emission standards make innovation."
+      "Because the government quickly adopted renewable energy sources, regional air quality improved significantly.",
+      "The government bought new solar panels rapidly and then air quality in the region was much nicer.",
+      "The rapid adoption of renewable energy sources resulted in a significant improvement in regional air quality.",
+      "Air quality became better because they quickly started adopting renewable energy everywhere."
+    ],
+    "answer": 3,
+    "explanation": "동사적 표현(adopted, improved)을 학술 명사화(The rapid adoption ~, resulted in a significant improvement ~)로 변환하여 세련된 객관적 학술 문체를 완성했습니다."
+  },
+  {
+    "id": "ig_15",
+    "difficulty": "상",
+    "category": "Negative Inversion (Rarely/Seldom 도치)",
+    "question": "Identify the grammatically flawless sentence featuring negative adverbial inversion:",
+    "options": [
+      "Rarely a single empirical discovery fundamentally overturns centuries of established medical dogma.",
+      "Rarely does a single empirical discovery fundamentally overturn centuries of established medical dogma.",
+      "Rarely fundamentally overturns a single empirical discovery established medical dogma.",
+      "Rarely do a single empirical discovery overturns established medical dogma."
+    ],
+    "answer": 2,
+    "explanation": "부정 부사 'Rarely'가 문두에 올 때 '조동사(does) + 단수 주어(a discovery) + 본동사 원형(overturn)'의 어순으로 도치됩니다."
+  },
+  {
+    "id": "ig_16",
+    "difficulty": "상",
+    "category": "Only when / Only after (조건 도치)",
+    "question": "Which option accurately constructs inversion following an introductory 'Only after' clause?",
+    "options": [
+      "Only after clinical trials were successfully completed did regulatory agencies grant commercial market authorization.",
+      "Only after clinical trials were successfully completed regulatory agencies granted commercial market authorization.",
+      "Only after did clinical trials complete successfully, regulatory agencies granted commercial market authorization.",
+      "Only after clinical trials were completed, did regulatory agencies granted commercial authorization."
     ],
     "answer": 1,
-    "explanation": "'It is widely argued that + 주어 + 동사' 가주어-진주어 수동태와 'implementation' 명사화 구조가 결합되어 가장 세련된 아카데믹 문체를 보여줍니다."
+    "explanation": "'Only after + 부사절'이 문두에 올 때, 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다 (부사절 내부가 아니라 주절이 도치됨에 유의)."
+  },
+  {
+    "id": "ig_17",
+    "difficulty": "상",
+    "category": "No sooner ... than (시간 도치 구문)",
+    "question": "Select the grammatically correct sentence expressing immediate sequence of events:",
+    "options": [
+      "No sooner the central bank had lowered interest rates when consumer borrowing spiked dramatically.",
+      "No sooner had the central bank lowered interest rates than consumer borrowing spiked dramatically.",
+      "No sooner had the central bank lowered interest rates when consumer borrowing did spike dramatically.",
+      "Hardly had the central bank lowered interest rates than consumer borrowing spiked dramatically."
+    ],
+    "answer": 2,
+    "explanation": "'No sooner had + 주어 + p.p. than + 주어 + 과거동사' 호응이 완벽하게 성립합니다 (Hardly/Scarcely는 when/before와 호응하며, No sooner는 than과 호응)."
+  },
+  {
+    "id": "ig_18",
+    "difficulty": "상",
+    "category": "Double Comparative (The 비교급 ..., the 비교급 ...)",
+    "question": "Choose the sentence that correctly formats the correlative double comparative structure:",
+    "options": [
+      "The more sophisticated machine learning models become, the harder it is to interpret their decision parameters.",
+      "The more sophisticated machine learning models become, more harder it is to interpret their parameters.",
+      "The more sophisticated do machine learning models become, the harder it is to interpret their parameters.",
+      "The most sophisticated machine learning models become, the hardest it is to interpret parameters."
+    ],
+    "answer": 1,
+    "explanation": "'The + 비교급(more sophisticated) + S + V, the + 비교급(harder) + S + V' 구조로 일반 평서문 어순을 유지해야 합니다 (의문문 도치 불가)."
+  },
+  {
+    "id": "ig_19",
+    "difficulty": "상",
+    "category": "Hypothetical Inversion (Were to 도치)",
+    "question": "Which sentence demonstrates correct hypothetical conditional inversion without 'if'?",
+    "options": [
+      "Were global temperatures to rise by another two degrees, coastal metropolitan settlements would face permanent flooding.",
+      "Were global temperatures will rise by another two degrees, coastal settlements would face permanent flooding.",
+      "Were global temperatures rise by two degrees, coastal metropolitan settlements would face permanent flooding.",
+      "Were global temperatures to rose by two degrees, coastal settlements will face permanent flooding."
+    ],
+    "answer": 1,
+    "explanation": "미래의 실현 가능성이 희박한 가정을 나타내는 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 부정사원형'으로 완벽하게 도치됩니다."
+  },
+  {
+    "id": "ig_20",
+    "difficulty": "상",
+    "category": "Complex Passive Nominalization (형식주어 It + 학술 진주어)",
+    "question": "Which sentence reflects the highest degree of formal academic objectivity for thesis statements?",
+    "options": [
+      "It is widely acknowledged that stringent regulatory enforcement serves as an indispensable prerequisite for industrial safety.",
+      "People widely acknowledge that if governments enforce rules strictly, industrial safety will definitely happen.",
+      "It widely acknowledges that stringent regulatory enforcement serves as a prerequisite for safety.",
+      "There is widely acknowledged that stringent regulations serve as prerequisites for industrial safety."
+    ],
+    "answer": 1,
+    "explanation": "'It is widely acknowledged that + 완전한 절' 가주어-진주어 수동태 구조와 'indispensable prerequisite(필수불가결한 전제조건)' 학술 배합이 결합된 Band 8.5+ 모범 문장입니다."
   }
 ]

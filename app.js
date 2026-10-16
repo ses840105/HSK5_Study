@@ -916,27 +916,52 @@ document.addEventListener("DOMContentLoaded", () => {
       // IELTS 영어 분기
       if (mode === "vocab") {
         const filtered = filterByDifficultyAndSrs(ieltsData.vocab, diff, count);
-        rawItems = filtered.map(item => {
-          const wrongPool = ieltsData.vocab.filter(v => v.meaning !== item.meaning).map(v => v.meaning);
-          const options = shuffle([item.meaning, ...sampleArray(wrongPool, 3)]);
-          return {
-            type: "vocab",
-            rawItem: item,
-            isReview: Boolean(item._isReview),
-            difficulty: item.difficulty || diff,
-            category: `IELTS Academic Vocab (${item.pos})`,
-            chinese: item.word,
-            pinyin: `Synonyms: ${item.synonym || "-"}`,
-            speechText: item.word,
-            prompt: "Select the correct Korean meaning for this academic word:",
-            options: options,
-            answer: item.meaning,
-            collocation: `Word: ${item.word} (${item.pos}) | Synonyms: ${item.synonym || "-"}`,
-            detail: "Essential Academic Vocabulary for IELTS Reading & Writing Band 7.0+",
-            exampleCn: item.example,
-            exampleKr: item.translation
-          };
+        let items = [];
+        filtered.forEach(item => {
+          const isReverse = Math.random() < 0.5;
+          if (isReverse) {
+            const wrongPool = ieltsData.vocab.filter(v => v.word !== item.word).map(v => v.word);
+            const options = shuffle([item.word, ...sampleArray(wrongPool, 3)]);
+            items.push({
+              type: "vocab",
+              rawItem: item,
+              isReview: Boolean(item._isReview),
+              difficulty: item.difficulty || diff,
+              category: `IELTS Academic Vocab (${item.pos || "word"}) [뜻➔단어]`,
+              chinese: item.meaning,
+              pinyin: `Synonyms: ${item.synonym || "-"}`,
+              speechText: item.word,
+              prompt: "Select the correct academic word that matches the meaning:",
+              options: options,
+              answer: item.word,
+              collocation: `Word: ${item.word} (${item.pos}) | Synonyms: ${item.synonym || "-"}`,
+              detail: "Essential Academic Vocabulary for IELTS Reading & Writing Band 7.0+",
+              exampleCn: item.example,
+              exampleKr: item.translation
+            });
+          } else {
+            const wrongPool = ieltsData.vocab.filter(v => v.meaning !== item.meaning).map(v => v.meaning);
+            const options = shuffle([item.meaning, ...sampleArray(wrongPool, 3)]);
+            items.push({
+              type: "vocab",
+              rawItem: item,
+              isReview: Boolean(item._isReview),
+              difficulty: item.difficulty || diff,
+              category: `IELTS Academic Vocab (${item.pos || "word"}) [단어➔뜻]`,
+              chinese: item.word,
+              pinyin: `Synonyms: ${item.synonym || "-"}`,
+              speechText: item.word,
+              prompt: "Select the correct Korean meaning for this academic word:",
+              options: options,
+              answer: item.meaning,
+              collocation: `Word: ${item.word} (${item.pos}) | Synonyms: ${item.synonym || "-"}`,
+              detail: "Essential Academic Vocabulary for IELTS Reading & Writing Band 7.0+",
+              exampleCn: item.example,
+              exampleKr: item.translation
+            });
+          }
         });
+        rawItems = items;
       } else if (mode === "listening") {
         const filtered = filterByDifficultyAndSrs(ieltsData.listening, diff, count);
         rawItems = filtered.map(item => {
@@ -963,26 +988,49 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       } else if (mode === "chengyu") {
         const filtered = filterByDifficultyAndSrs(ieltsData.idioms, diff, count);
-        rawItems = filtered.map(item => {
-          const wrongPool = ieltsData.idioms.filter(c => c.idiom !== item.idiom).map(c => c.idiom);
-          const options = shuffle([item.idiom, ...sampleArray(wrongPool, 3)]);
-          return {
-            type: "chengyu_cloze",
-            rawItem: item,
-            isReview: Boolean(item._isReview),
-            difficulty: item.difficulty || diff,
-            category: "IELTS Idioms & Phrases",
-            chinese: item.sentence,
-            pinyin: `Answer: ${item.idiom}`,
-            speechText: item.idiom,
-            prompt: "Choose the most appropriate idiom to fill in the blank [ ____ ]:",
-            options: options,
-            answer: item.idiom,
-            collocation: `Idiom: ${item.idiom}`,
-            detail: `Meaning: ${item.meaning} (High-scoring expression for IELTS Speaking & Writing)`,
-            exampleCn: item.example,
-            exampleKr: item.translation
-          };
+        rawItems = filtered.map((item, idx) => {
+          const isCloze = (idx % 2 === 0);
+          if (isCloze && item.sentence) {
+            const wrongPool = ieltsData.idioms.filter(c => c.idiom !== item.idiom).map(c => c.idiom);
+            const options = shuffle([item.idiom, ...sampleArray(wrongPool, 3)]);
+            return {
+              type: "chengyu_cloze",
+              rawItem: item,
+              isReview: Boolean(item._isReview),
+              difficulty: item.difficulty || diff,
+              category: "IELTS Idioms & Phrases (Context)",
+              chinese: item.sentence,
+              pinyin: `Target Idiom: ${item.idiom}`,
+              speechText: item.idiom,
+              prompt: "Choose the most appropriate idiom to fill in the blank [ ____ ]:",
+              options: options,
+              answer: item.idiom,
+              collocation: `Idiom: ${item.idiom}`,
+              detail: `Meaning: ${item.meaning} (High-scoring expression for IELTS Speaking & Writing)`,
+              exampleCn: item.example || item.sentence.replace("____", item.idiom),
+              exampleKr: item.translation || `의미: ${item.meaning}`
+            };
+          } else {
+            const wrongPool = ieltsData.idioms.filter(c => c.meaning !== item.meaning).map(c => c.meaning);
+            const options = shuffle([item.meaning, ...sampleArray(wrongPool, 3)]);
+            return {
+              type: "chengyu_meaning",
+              rawItem: item,
+              isReview: Boolean(item._isReview),
+              difficulty: item.difficulty || diff,
+              category: "IELTS Idioms & Phrases (Meaning)",
+              chinese: item.idiom,
+              pinyin: "",
+              speechText: item.idiom,
+              prompt: "Select the correct Korean meaning for this academic idiom:",
+              options: options,
+              answer: item.meaning,
+              collocation: `Idiom: ${item.idiom}`,
+              detail: "High-scoring expression for IELTS Speaking & Writing Band 7.0+",
+              exampleCn: item.example,
+              exampleKr: item.translation || item.meaning
+            };
+          }
         });
       } else if (mode === "cloze") {
         const filtered = filterByDifficultyAndSrs(ieltsData.cloze, diff, count);

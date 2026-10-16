@@ -1,102 +1,522 @@
 [
   {
-    "id": 1,
+    "id": "iv_01",
     "difficulty": "하",
     "word": "abundant",
     "pos": "adj.",
     "meaning": "풍부한, 많은",
-    "synonym": "plentiful, ample",
-    "example": "The region possesses abundant natural resources, including timber and water.",
-    "translation": "그 지역은 목재와 수자원을 포함한 풍부한 천연자원을 보유하고 있다."
+    "synonym": "plentiful, ample, bountiful",
+    "example": "The region possesses abundant natural resources, including timber and fresh water.",
+    "translation": "그 지역은 목재와 담수를 포함한 풍부한 천연자원을 보유하고 있다."
   },
   {
-    "id": 2,
+    "id": "iv_02",
     "difficulty": "하",
     "word": "crucial",
     "pos": "adj.",
     "meaning": "결정적인, 중대한",
     "synonym": "vital, critical, essential",
-    "example": "Early intervention plays a crucial role in preventing long-term complications.",
-    "translation": "조기 개입은 장기적인 합병증을 예방하는 데 결정적인 역할을 한다."
+    "example": "Early nutritional intervention plays a crucial role in preventing chronic childhood illnesses.",
+    "translation": "초기 영양 공급 개입은 소아 만성 질환을 예방하는 데 결정적인 역할을 한다."
   },
   {
-    "id": 3,
-    "difficulty": "중",
-    "word": "deteriorate",
-    "pos": "v.",
-    "meaning": "악화되다, 저하시키다",
-    "synonym": "worsen, decline, degenerate",
-    "example": "Living conditions continued to deteriorate rapidly as the conflict escalated.",
-    "translation": "분쟁이 격화되면서 생활 여건이 급속도로 악화되기 시작했다."
-  },
-  {
-    "id": 4,
-    "difficulty": "중",
-    "word": "feasible",
-    "pos": "adj.",
-    "meaning": "실행 가능한, 타당한",
-    "synonym": "viable, practicable, achievable",
-    "example": "It is not financially feasible to construct a high-speed railway in such mountainous terrain.",
-    "translation": "그런 산악 지형에 고속철도를 건설하는 것은 재정적으로 타당하지 않다."
-  },
-  {
-    "id": 5,
-    "difficulty": "상",
-    "word": "ubiquitous",
-    "pos": "adj.",
-    "meaning": "어디에나 존재하는, 보편적인",
-    "synonym": "omnipresent, pervasive, universal",
-    "example": "Smartphones have become ubiquitous across all age groups in modern urban societies.",
-    "translation": "스마트폰은 현대 도시 사회의 모든 연령대에서 어디에나 존재하는 필수가 되었다."
-  },
-  {
-    "id": 6,
-    "difficulty": "상",
-    "word": "exacerbate",
-    "pos": "v.",
-    "meaning": "(문제를) 악화시키다, 가중시키다",
-    "synonym": "aggravate, worsen, inflame",
-    "example": "The ongoing heatwave is likely to exacerbate existing droughts and agricultural strains.",
-    "translation": "지속되는 폭염은 기존의 가뭄과 농업적 부담을 더욱 가중시킬 가능성이 높다."
-  },
-  {
-    "id": 7,
+    "id": "iv_03",
     "difficulty": "하",
     "word": "diminish",
     "pos": "v.",
     "meaning": "줄어들다, 감소시키다",
     "synonym": "decrease, reduce, lessen",
-    "example": "Her enthusiasm did not diminish even after facing multiple initial setbacks.",
-    "translation": "그녀의 열정은 몇 번의 초기 좌절을 겪은 후에도 줄어들지 않았다."
+    "example": "Consumer demand for fossil-fuel vehicles began to diminish as electric options emerged.",
+    "translation": "전기차 옵션이 등장함에 따라 화석연료 차량에 대한 소비자 수요는 감소하기 시작했다."
   },
   {
-    "id": 8,
+    "id": "iv_04",
+    "difficulty": "하",
+    "word": "advocate",
+    "pos": "v.",
+    "meaning": "지지하다, 옹호하다",
+    "synonym": "support, champion, endorse",
+    "example": "Many environmental scientists advocate strict global limits on single-use plastic manufacturing.",
+    "translation": "많은 환경 과학자들은 일회용 플라스틱 제조에 대한 엄격한 글로벌 제한을 지지한다."
+  },
+  {
+    "id": "iv_05",
+    "difficulty": "하",
+    "word": "allocate",
+    "pos": "v.",
+    "meaning": "할당하다, 배분하다",
+    "synonym": "assign, distribute, designate",
+    "example": "Municipal authorities agreed to allocate more municipal funds to upgrade public transport.",
+    "translation": "시 당국은 대중교통을 개선하기 위해 더 많은 시 예산을 배분하기로 합의했다."
+  },
+  {
+    "id": "iv_06",
+    "difficulty": "하",
+    "word": "acquire",
+    "pos": "v.",
+    "meaning": "습득하다, 획득하다",
+    "synonym": "obtain, gain, master",
+    "example": "Students must acquire critical thinking skills early during university coursework.",
+    "translation": "학생들은 대학교 학업 과정 초기에 비판적 사고 능력을 습득해야 한다."
+  },
+  {
+    "id": "iv_07",
+    "difficulty": "하",
+    "word": "coherent",
+    "pos": "adj.",
+    "meaning": "일관성 있는, 조리 있는",
+    "synonym": "logical, consistent, lucid",
+    "example": "Candidates must organize their IELTS essays into clear, coherent body paragraphs.",
+    "translation": "응시자들은 자신의 IELTS 에세이를 명확하고 일관성 있는 본문 단락들로 구성해야 한다."
+  },
+  {
+    "id": "iv_08",
+    "difficulty": "하",
+    "word": "domestic",
+    "pos": "adj.",
+    "meaning": "국내의, 가정의",
+    "synonym": "national, internal, household",
+    "example": "Higher tariffs significantly influenced domestic consumer expenditure on imported electronics.",
+    "translation": "인상된 관세는 수입 전자기기에 대한 국내 소비자 지출에 상당한 영향을 미쳤다."
+  },
+  {
+    "id": "iv_09",
+    "difficulty": "하",
+    "word": "establish",
+    "pos": "v.",
+    "meaning": "확립하다, 설립하다",
+    "synonym": "found, institute, set up",
+    "example": "The research institute was founded to establish sustainable agricultural standards.",
+    "translation": "그 연구소는 지속 가능한 농업 표준을 확립하기 위해 설립되었다."
+  },
+  {
+    "id": "iv_10",
+    "difficulty": "하",
+    "word": "fundamental",
+    "pos": "adj.",
+    "meaning": "근본적인, 핵심적인",
+    "synonym": "basic, foundational, primary",
+    "example": "Access to clean drinking water is recognized as a fundamental human right.",
+    "translation": "깨끗한 식수에 대한 접근성은 근본적인 인권으로 인정받는다."
+  },
+  {
+    "id": "iv_11",
+    "difficulty": "하",
+    "word": "generate",
+    "pos": "v.",
+    "meaning": "생성하다, 발생시키다",
+    "synonym": "produce, create, yield",
+    "example": "Offshore wind farms generate substantial clean electrical energy for coastal provinces.",
+    "translation": "해상 풍력 발전소는 해안 지방을 위한 상당한 청정 전기 에너지를 생성한다."
+  },
+  {
+    "id": "iv_12",
+    "difficulty": "하",
+    "word": "integrate",
+    "pos": "v.",
+    "meaning": "통합하다, 융합하다",
+    "synonym": "combine, merge, assimilate",
+    "example": "Schools seek to integrate cutting-edge multimedia technology into daily pedagogical methods.",
+    "translation": "학교들은 최첨단 멀티미디어 기술을 일상적인 교육 방법에 통합하고자 한다."
+  },
+  {
+    "id": "iv_13",
+    "difficulty": "하",
+    "word": "modify",
+    "pos": "v.",
+    "meaning": "수정하다, 변경하다",
+    "synonym": "alter, adjust, adapt",
+    "example": "Architects had to modify their building design to adhere to modern seismic safety codes.",
+    "translation": "건축가들은 현대 내진 안전 규정을 준수하기 위해 건물 설계를 수정해야 했다."
+  },
+  {
+    "id": "iv_14",
+    "difficulty": "하",
+    "word": "perceive",
+    "pos": "v.",
+    "meaning": "인식하다, 감지하다",
+    "synonym": "discern, regard, view",
+    "example": "Urban citizens frequently perceive automated delivery vehicles as safer than manual cars.",
+    "translation": "도시 시민들은 자동 배달 차량을 수동 운전 차량보다 안전하다고 인식하는 경우가 많다."
+  },
+  {
+    "id": "iv_15",
+    "difficulty": "하",
+    "word": "restrict",
+    "pos": "v.",
+    "meaning": "제한하다, 한정하다",
+    "synonym": "limit, constrain, confine",
+    "example": "Strict local conservation laws restrict commercial construction along natural wetlands.",
+    "translation": "엄격한 지역 보존법은 자연 습지를 따른 상업적 건축을 제한한다."
+  },
+  {
+    "id": "iv_16",
+    "difficulty": "하",
+    "word": "transform",
+    "pos": "v.",
+    "meaning": "변모시키다, 탈바꿈하다",
+    "synonym": "convert, revolutionize, reshape",
+    "example": "Digital commerce platforms continue to transform conventional global retail models.",
+    "translation": "디지털 상거래 플랫폼은 전통적인 글로벌 유통 모델을 계속해서 변모시키고 있다."
+  },
+  {
+    "id": "iv_17",
+    "difficulty": "중",
+    "word": "deteriorate",
+    "pos": "v.",
+    "meaning": "악화되다, 저하시키다",
+    "synonym": "worsen, decline, degenerate",
+    "example": "Living conditions continued to deteriorate rapidly as the regional conflict escalated.",
+    "translation": "지역 분쟁이 격화되면서 생활 여건이 급속도로 악화되기 시작했다."
+  },
+  {
+    "id": "iv_18",
+    "difficulty": "중",
+    "word": "feasible",
+    "pos": "adj.",
+    "meaning": "실행 가능한, 타당한",
+    "synonym": "viable, practicable, achievable",
+    "example": "It is not financially feasible to construct a high-speed railway in such rugged terrain.",
+    "translation": "그런 험준한 지형에 고속철도를 건설하는 것은 재정적으로 타당하지 않다."
+  },
+  {
+    "id": "iv_19",
     "difficulty": "중",
     "word": "plausible",
     "pos": "adj.",
     "meaning": "그럴듯한, 이치에 맞는",
     "synonym": "believable, reasonable, credible",
-    "example": "Scientists have proposed a plausible hypothesis explaining the sudden mass extinction.",
-    "translation": "과학자들은 갑작스러운 대멸종을 설명하는 그럴듯한 가설을 제시했다."
+    "example": "Biologists have proposed a plausible hypothesis explaining the sudden avian migration shift.",
+    "translation": "생물학자들은 조류의 갑작스러운 이동 경로 변화를 설명하는 그럴듯한 가설을 제시했다."
   },
   {
-    "id": 9,
+    "id": "iv_20",
+    "difficulty": "중",
+    "word": "mitigate",
+    "pos": "v.",
+    "meaning": "완화하다, 경감시키다",
+    "synonym": "alleviate, ease, moderate",
+    "example": "Effective urban drainage planning can mitigate the adverse impacts of flash flooding.",
+    "translation": "효과적인 도시 배수 계획은 갑작스러운 홍수의 악영향을 완화할 수 있다."
+  },
+  {
+    "id": "iv_21",
+    "difficulty": "중",
+    "word": "commence",
+    "pos": "v.",
+    "meaning": "시작하다, 개시하다",
+    "synonym": "begin, initiate, embark on",
+    "example": "Field operations will commence as soon as regulatory environmental permits are issued.",
+    "translation": "규제 환경 허가가 발급되는 즉시 현장 작업이 시작될 것이다."
+  },
+  {
+    "id": "iv_22",
+    "difficulty": "중",
+    "word": "comprehensive",
+    "pos": "adj.",
+    "meaning": "포괄적인, 종합적인",
+    "synonym": "thorough, exhaustive, extensive",
+    "example": "The committee published a comprehensive assessment regarding metropolitan air pollution.",
+    "translation": "위원회는 대도시 대기 오염에 관한 포괄적인 평가 보고서를 발표했다."
+  },
+  {
+    "id": "iv_23",
+    "difficulty": "중",
+    "word": "deviate",
+    "pos": "v.",
+    "meaning": "벗어나다, 일탈하다",
+    "synonym": "diverge, stray, depart from",
+    "example": "Engineers must ensure manufactured parts do not deviate from millimeter tolerances.",
+    "translation": "엔지니어들은 제조된 부품이 밀리미터 단위의 공차에서 벗어나지 않도록 해야 한다."
+  },
+  {
+    "id": "iv_24",
+    "difficulty": "중",
+    "word": "empirical",
+    "pos": "adj.",
+    "meaning": "실증적인, 경험에 근거한",
+    "synonym": "observational, experimental, factual",
+    "example": "Academic theses require robust empirical data rather than speculative theories.",
+    "translation": "학술 논문은 추측성 이론보다는 탄탄한 실증적 데이터를 요구한다."
+  },
+  {
+    "id": "iv_25",
+    "difficulty": "중",
+    "word": "fluctuate",
+    "pos": "v.",
+    "meaning": "변동하다, 오르내리다",
+    "synonym": "oscillate, vary, alternate",
+    "example": "Global crude oil prices fluctuate unpredictably in response to geopolitical instability.",
+    "translation": "세계 원유 가격은 지정학적 불안정에 대응하여 예측 불가능하게 변동한다."
+  },
+  {
+    "id": "iv_26",
+    "difficulty": "중",
+    "word": "inevitable",
+    "pos": "adj.",
+    "meaning": "불가피한, 필연적인",
+    "synonym": "unavoidable, inescapable, inexorable",
+    "example": "Rapid metropolitan expansion makes increased traffic congestion almost inevitable.",
+    "translation": "급속한 대도시 확장은 교통 혼잡의 증가를 거의 불가피하게 만든다."
+  },
+  {
+    "id": "iv_27",
+    "difficulty": "중",
+    "word": "lucrative",
+    "pos": "adj.",
+    "meaning": "수익성이 좋은, 돈벌이가 되는",
+    "synonym": "profitable, rewarding, gainful",
+    "example": "Biotech startups represent a highly lucrative yet risky investment proposition.",
+    "translation": "생명공학 스타트업은 수익성이 매우 높지만 위험 부담이 큰 투자처이다."
+  },
+  {
+    "id": "iv_28",
+    "difficulty": "중",
+    "word": "mandatory",
+    "pos": "adj.",
+    "meaning": "의무적인, 강제적인",
+    "synonym": "compulsory, obligatory, statutory",
+    "example": "Passing the national clinical examination is mandatory for practicing physicians.",
+    "translation": "국가 임상 시험을 통과하는 것은 의사 면허를 취득하는 데 의무적이다."
+  },
+  {
+    "id": "iv_29",
+    "difficulty": "중",
+    "word": "notable",
+    "pos": "adj.",
+    "meaning": "주목할 만한, 현저한",
+    "synonym": "remarkable, prominent, conspicuous",
+    "example": "The university made notable advancements in developing renewable synthetic polymers.",
+    "translation": "그 대학교는 재생 가능한 합성 고분자를 개발하는 데 주목할 만한 진전을 이루었다."
+  },
+  {
+    "id": "iv_30",
+    "difficulty": "중",
+    "word": "obscure",
+    "pos": "adj.",
+    "meaning": "모호한, 잘 알려지지 않은",
+    "synonym": "unclear, ambiguous, vague",
+    "example": "The motives behind the ancient king’s architectural monuments remain obscure.",
+    "translation": "고대 왕의 건축 기념물 이면에 숨겨진 동기는 여전히 모호하다."
+  },
+  {
+    "id": "iv_31",
+    "difficulty": "중",
+    "word": "prevail",
+    "pos": "v.",
+    "meaning": "만연하다, 우세하다",
+    "synonym": "predominate, triumph, persist",
+    "example": "Optimistic economic sentiments continue to prevail among venture capital firms.",
+    "translation": "벤처 캐피털 기업들 사이에서는 낙관적인 경제 심리가 계속 우세하다."
+  },
+  {
+    "id": "iv_32",
+    "difficulty": "중",
+    "word": "reinforce",
+    "pos": "v.",
+    "meaning": "강화하다, 보강하다",
+    "synonym": "strengthen, fortify, bolster",
+    "example": "Empirical case studies were incorporated to reinforce the researcher’s core hypothesis.",
+    "translation": "연구자의 핵심 가설을 강화하기 위해 실증적인 사례 연구들이 포함되었다."
+  },
+  {
+    "id": "iv_33",
+    "difficulty": "중",
+    "word": "subsequent",
+    "pos": "adj.",
+    "meaning": "그 다음의, 차후의",
+    "synonym": "following, ensuing, consecutive",
+    "example": "Initial lab tests failed, but subsequent trials demonstrated remarkable clinical efficacy.",
+    "translation": "초기 실험실 검사는 실패했으나, 그 이후의 임상 시험들은 놀라운 효능을 보여주었다."
+  },
+  {
+    "id": "iv_34",
+    "difficulty": "중",
+    "word": "undermine",
+    "pos": "v.",
+    "meaning": "약화시키다, 훼손하다",
+    "synonym": "weaken, subvert, compromise",
+    "example": "Persistent budgetary deficits threaten to undermine national fiscal stability.",
+    "translation": "지속적인 재정 적자는 국가 재정 안정성을 약화시킬 위협이 있다."
+  },
+  {
+    "id": "iv_35",
+    "difficulty": "중",
+    "word": "validity",
+    "pos": "n.",
+    "meaning": "타당성, 유효성",
+    "synonym": "soundness, legitimacy, authenticity",
+    "example": "External peer reviewers rigorously verified the methodological validity of the findings.",
+    "translation": "외부 동료 심사위원들은 연구 결과의 방법론적 타당성을 엄격히 검증했다."
+  },
+  {
+    "id": "iv_36",
+    "difficulty": "중",
+    "word": "widespread",
+    "pos": "adj.",
+    "meaning": "광범위한, 널리 퍼진",
+    "synonym": "pervasive, extensive, common",
+    "example": "Remote telecommuting has gained widespread social acceptance across major industries.",
+    "translation": "원격 재택근무는 주요 산업 전반에서 광범위한 사회적 수용을 얻었다."
+  },
+  {
+    "id": "iv_37",
+    "difficulty": "상",
+    "word": "ubiquitous",
+    "pos": "adj.",
+    "meaning": "어디에나 존재하는, 편재하는",
+    "synonym": "omnipresent, pervasive, universal",
+    "example": "Smartphones and handheld digital screens have become ubiquitous in metropolitan life.",
+    "translation": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다."
+  },
+  {
+    "id": "iv_38",
+    "difficulty": "상",
+    "word": "exacerbate",
+    "pos": "v.",
+    "meaning": "(문제를) 악화시키다, 격화시키다",
+    "synonym": "aggravate, worsen, inflame",
+    "example": "Prolonged summer heatwaves threaten to exacerbate existing agricultural water deficits.",
+    "translation": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다."
+  },
+  {
+    "id": "iv_39",
     "difficulty": "상",
     "word": "ephemeral",
     "pos": "adj.",
     "meaning": "수명이 짧은, 덧없는",
     "synonym": "transient, fleeting, momentary",
-    "example": "Social media popularity is often ephemeral, fading as quickly as it emerges.",
-    "translation": "소셜 미디어에서의 인기는 종종 일시적이어서, 나타나는 것만큼 빠르게 사라진다."
+    "example": "Viral fame generated on social networking sites is notoriously ephemeral and volatile.",
+    "translation": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다."
   },
   {
-    "id": 10,
-    "difficulty": "중",
-    "word": "mitigate",
+    "id": "iv_40",
+    "difficulty": "상",
+    "word": "disparity",
+    "pos": "n.",
+    "meaning": "불균형, 격차",
+    "synonym": "discrepancy, inequality, imbalance",
+    "example": "Economic globalization has inadvertently widened the income disparity between urban and rural areas.",
+    "translation": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다."
+  },
+  {
+    "id": "iv_41",
+    "difficulty": "상",
+    "word": "corroborate",
     "pos": "v.",
-    "meaning": "완화하다, 경감시키다",
-    "synonym": "alleviate, ease, relieve",
-    "example": "Effective urban planning can help mitigate the adverse impacts of flash flooding.",
-    "translation": "효과적인 도시 계획은 갑작스러운 홍수의 악영향을 완화하는 데 도움을 줄 수 있다."
+    "meaning": "(증거로) 뒷받침하다, 입증하다",
+    "synonym": "confirm, substantiate, authenticate",
+    "example": "Satellite sensory telemetry was required to corroborate the meteorological simulation results.",
+    "translation": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다."
+  },
+  {
+    "id": "iv_42",
+    "difficulty": "상",
+    "word": "deleterious",
+    "pos": "adj.",
+    "meaning": "해로운, 유해한",
+    "synonym": "detrimental, harmful, pernicious",
+    "example": "Excessive sedentary screen time exercises deleterious physiological impacts on adolescents.",
+    "translation": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다."
+  },
+  {
+    "id": "iv_43",
+    "difficulty": "상",
+    "word": "indispensable",
+    "pos": "adj.",
+    "meaning": "필수불가결한, 없어서는 안 될",
+    "synonym": "essential, crucial, requisite",
+    "example": "Cross-disciplinary collaboration is indispensable for solving intricate climate crises.",
+    "translation": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다."
+  },
+  {
+    "id": "iv_44",
+    "difficulty": "상",
+    "word": "anomaly",
+    "pos": "n.",
+    "meaning": "변칙, 이례적인 것",
+    "synonym": "irregularity, aberration, abnormality",
+    "example": "Statisticians scrutinized the laboratory output to determine if the result was a genuine anomaly.",
+    "translation": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다."
+  },
+  {
+    "id": "iv_45",
+    "difficulty": "상",
+    "word": "proliferate",
+    "pos": "v.",
+    "meaning": "급증하다, 확산되다",
+    "synonym": "multiply, mushroom, burgeon",
+    "example": "Autonomous digital commerce applications continue to proliferate across developing economies.",
+    "translation": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다."
+  },
+  {
+    "id": "iv_46",
+    "difficulty": "상",
+    "word": "meticulous",
+    "pos": "adj.",
+    "meaning": "꼼꼼한, 세심한",
+    "synonym": "thorough, scrupulous, punctilious",
+    "example": "Forensic historians performed meticulous archival analyses on ancient trade treaties.",
+    "translation": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다."
+  },
+  {
+    "id": "iv_47",
+    "difficulty": "상",
+    "word": "juxtapose",
+    "pos": "v.",
+    "meaning": "병치하다, 나란히 놓다",
+    "synonym": "collocate, contrast, compare",
+    "example": "The museum curators juxtaposed classical oil paintings with contemporary digital sculptures.",
+    "translation": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다."
+  },
+  {
+    "id": "iv_48",
+    "difficulty": "상",
+    "word": "paradigm",
+    "pos": "n.",
+    "meaning": "패러다임, 전형적인 틀",
+    "synonym": "model, framework, archetype",
+    "example": "Quantum computational theory triggers a profound paradigm shift in modern cryptography.",
+    "translation": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다."
+  },
+  {
+    "id": "iv_49",
+    "difficulty": "상",
+    "word": "concomitant",
+    "pos": "adj.",
+    "meaning": "수반되는, 부수적인",
+    "synonym": "accompanying, associated, attendant",
+    "example": "Rapid industrial expansion brings concomitant risks of hazardous ecological degradation.",
+    "translation": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다."
+  },
+  {
+    "id": "iv_49_b",
+    "difficulty": "상",
+    "word": "tenuous",
+    "pos": "adj.",
+    "meaning": "빈약한, 보잘것없는",
+    "synonym": "flimsy, weak, fragile",
+    "example": "The historical connection between the two isolated dynasties remains tenuous at best.",
+    "translation": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다."
+  },
+  {
+    "id": "iv_50",
+    "difficulty": "상",
+    "word": "pragmatic",
+    "pos": "adj.",
+    "meaning": "실용적인, 실무적인",
+    "synonym": "practical, realistic, utilitarian",
+    "example": "Diplomats adopted a pragmatic negotiating framework to resolve transnational border disputes.",
+    "translation": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다."
+  },
+  {
+    "id": "iv_51",
+    "difficulty": "상",
+    "word": "substantiate",
+    "pos": "v.",
+    "meaning": "실증하다, 구체화하다",
+    "synonym": "validate, prove, authenticate",
+    "example": "Economists gathered decadal macroeconomic indicators to substantiate their monetary thesis.",
+    "translation": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다."
   }
 ]
