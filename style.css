@@ -106,6 +106,46 @@ body {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* UI 언어 전환 스위처 (중국어 / 한국어 / 영어) */
+.ui-lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  background: var(--gray-100);
+  padding: 3px;
+  border-radius: 20px;
+  border: 1px solid var(--gray-300);
+  gap: 2px;
+}
+
+.ui-lang-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 5px 10px;
+  border-radius: 16px;
+  border: none;
+  background: transparent;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.ui-lang-tab:hover {
+  color: var(--gray-900);
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.ui-lang-tab.active {
+  background: #ffffff;
+  color: var(--primary);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+  font-weight: 700;
+}
+
 .title-wrap {
   display: flex;
   align-items: center;
@@ -159,7 +199,8 @@ body.theme-ielts {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .header-action-btn {
@@ -759,6 +800,10 @@ body.theme-ielts {
   color: var(--primary);
   font-weight: 500;
   margin-bottom: 12px;
+}
+
+.pinyin-text:empty {
+  display: none;
 }
 
 .sub-prompt {
@@ -1503,6 +1548,23 @@ body.theme-ielts {
   box-shadow: 0 0 0 3px var(--primary-light);
 }
 
+.action-btn {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
 .w-100 {
   width: 100%;
   padding: 14px;
@@ -1529,67 +1591,7 @@ body.theme-ielts {
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--primary);
-  margin-right: 12px;
-}
-
-/* Mobile Responsiveness Improvements */
-@media (max-width: 600px) {
-  body {
-    padding: 0;
-    height: 100dvh;
-  }
-  .app-container {
-    height: 100dvh;
-    max-height: 100dvh;
-    border-radius: 0;
-    border: none;
-  }
-  .app-header {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 12px;
-    gap: 10px;
-  }
-  .header-left {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-  }
-  .title-wrap {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-  }
-  #app-title {
-    font-size: 1.1rem; /* 모바일에서 텍스트 크기 축소 */
-  }
-  .header-right {
-    width: 100%;
-    justify-content: space-between; /* 양쪽 끝으로 버튼과 인사말 배치 */
-    flex-wrap: wrap;
-    margin-top: 4px;
-    padding-top: 8px;
-    border-top: 1px dashed var(--gray-200);
-  }
-  .user-greeting {
-    margin-right: 0;
-    padding-left: 0;
-    font-size: 0.85rem;
-  }
-  .lang-switcher {
-    width: 100%;
-  }
-  .lang-tab {
-    flex: 1; /* 버튼 반반씩 차지 */
-    justify-content: center;
-  }
-  .view-section {
-    padding: 16px 12px;
-  }
-  .chinese-text {
-    font-size: 1.5rem;
-  }
+  margin-right: 4px;
 }
 
 /* Responsive Fluid Layout for Mobile Devices */
@@ -1600,7 +1602,7 @@ body.theme-ielts {
     width: 100vw;
     overflow: hidden;
   }
-  
+
   .app-container {
     height: 100dvh;
     max-height: 100dvh;
@@ -1611,30 +1613,32 @@ body.theme-ielts {
     display: flex;
     flex-direction: column;
   }
-  
+
   .app-header {
     flex-direction: column;
-    padding: 2vh 4vw; /* Viewport relative padding */
-    gap: 1.5vh;
+    align-items: stretch;
+    padding: 12px 14px;
+    gap: 10px;
     width: 100%;
     box-sizing: border-box;
   }
 
   .header-left {
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    gap: 1vh;
+    gap: 8px;
   }
-  
+
   .lang-switcher {
     width: 100%;
     display: flex;
   }
-  
+
   .lang-tab {
-    flex: 1 1 50%; /* Strictly 50% width each */
+    flex: 1 1 50%;
     justify-content: center;
-    padding: 1vh 0; /* Vertical padding by ratio */
+    padding: 8px 0;
     font-size: 0.9rem;
   }
 
@@ -1642,23 +1646,37 @@ body.theme-ielts {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2vw;
+    text-align: center;
+    gap: 8px;
   }
-  
+
   #app-title {
-    font-size: clamp(1rem, 4vw, 1.25rem); /* Fluid typography */
+    font-size: clamp(1rem, 4vw, 1.25rem);
   }
 
   .header-right {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
     border-top: 1px dashed var(--gray-200);
-    padding-top: 1.5vh;
-    margin-top: 0.5vh;
+    padding-top: 10px;
+    margin-top: 4px;
     box-sizing: border-box;
   }
-  
+
+  .ui-lang-switcher {
+    width: 100%;
+    margin-bottom: 4px;
+    display: flex;
+  }
+
+  .ui-lang-tab {
+    flex: 1;
+    justify-content: center;
+  }
+
   .user-greeting {
     font-size: clamp(0.75rem, 3vw, 0.9rem);
     margin: 0;
@@ -1666,46 +1684,46 @@ body.theme-ielts {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 40vw; /* Prevent long names from breaking layout */
+    max-width: 40vw;
   }
 
   .header-action-btn {
-    padding: 1vh 2.5vw;
+    padding: 6px 10px;
     font-size: clamp(0.75rem, 3vw, 0.85rem);
   }
 
+  .difficulty-selector {
+    grid-template-columns: 1fr;
+  }
+
   .view-section {
-    padding: 2.5vh 4vw;
-    flex: 1; /* Take up remaining height */
+    padding: 18px 14px;
+    flex: 1;
     overflow-y: auto;
   }
-  
+
   .chinese-text {
-    font-size: clamp(1.5rem, 8vw, 2.5rem);
+    font-size: clamp(1.4rem, 6vw, 2rem);
   }
-  
+
   .pinyin-text {
-    font-size: clamp(0.9rem, 4.5vw, 1.25rem);
+    font-size: clamp(0.9rem, 4vw, 1.15rem);
   }
-  
-  .meaning-text {
-    font-size: clamp(1rem, 5vw, 1.3rem);
-  }
-  
+
   .auth-card {
-    width: 90%; /* 90% of screen width */
+    width: 90%;
     max-width: none;
-    padding: 4vh 6vw;
+    padding: 32px 24px;
   }
-  
+
   .result-actions {
     flex-direction: column;
     width: 100%;
-    gap: 2vh;
+    gap: 10px;
   }
-  
+
   .action-btn {
     width: 100%;
-    padding: 1.5vh 0;
+    padding: 14px 0;
   }
 }

@@ -5,7 +5,7 @@
     "pos": "동사/명사",
     "meaning": "아르바이트하다, 겸직하다",
     "example": "很多大学生利用假期做兼职积累社会经验。",
-    "difficulty": "중",
+    "difficulty": "하",
     "id": "hv_01",
     "translation": "많은 대학생들은 방학을 이용해 아르바이트를 하며 사회 경험을 쌓는다."
   },
@@ -17,7 +17,7 @@
     "example": "这是一个非常新颖的商业概念。",
     "difficulty": "하",
     "id": "hv_02",
-    "translation": "概念 예문 해석입니다."
+    "translation": "이것은 매우 참신한 비즈니스 개념이다."
   },
   {
     "word": "缓解",
@@ -27,7 +27,7 @@
     "example": "听轻音乐有助于缓解工作带来的压力。",
     "difficulty": "중",
     "id": "hv_03",
-    "translation": "缓解 예문 해석입니다."
+    "translation": "경음악을 듣는 것은 업무로 인한 스트레스를 완화하는 데 도움이 된다."
   },
   {
     "word": "逻辑",
@@ -37,7 +37,7 @@
     "example": "他的发言条理清晰，逻辑非常严密。",
     "difficulty": "중",
     "id": "hv_04",
-    "translation": "그의 말과 행동에는 엄밀한 논리가 결여되어 있어 사람들을 설득하기 어렵다."
+    "translation": "그의 발언은 조리가 명확하고 논리가 매우 치밀하다."
   },
   {
     "word": "犹豫",
@@ -45,9 +45,9 @@
     "pos": "동사/형용사",
     "meaning": "망설이다, 주저하다",
     "example": "面对难得的机遇，你不要再犹豫了。",
-    "difficulty": "중",
+    "difficulty": "하",
     "id": "hv_05",
-    "translation": "犹豫 예문 해석입니다."
+    "translation": "얻기 힘든 기회에 직면했으니 더 이상 망설이지 마라."
   },
   {
     "word": "彻底",
@@ -57,7 +57,7 @@
     "example": "我们需要彻底调查这件事情的真正原因。",
     "difficulty": "중",
     "id": "hv_06",
-    "translation": "우리는 문제를 덮어두지 말고 근본적으로 철저히 해결해야 한다."
+    "translation": "우리는 이 사건의 진정한 원인을 철저히 조사해야 한다."
   },
   {
     "word": "启发",
@@ -67,7 +67,7 @@
     "example": "这部纪录片给了我们很多深刻的启发。",
     "difficulty": "중",
     "id": "hv_07",
-    "translation": "스승님의 따뜻한 격려와 가르침은 나에게 큰 영감을 주었다."
+    "translation": "이 다큐멘터리는 우리에게 많은 깊은 영감을 주었다."
   },
   {
     "word": "原则",
@@ -75,9 +75,9 @@
     "pos": "명사",
     "meaning": "원칙",
     "example": "在原则问题上，我们决不能轻易妥协。",
-    "difficulty": "중",
+    "difficulty": "하",
     "id": "hv_08",
-    "translation": "原则 예문 해석입니다."
+    "translation": "원칙적인 문제에 있어서 우리는 결코 쉽게 타협해서는 안 된다."
   },
   {
     "word": "耽误",
@@ -87,7 +87,7 @@
     "example": "路上堵车耽误了很多时间。",
     "difficulty": "하",
     "id": "hv_09",
-    "translation": "불필요한 잡담으로 소중한 공부 시간을 지체하지 마라."
+    "translation": "길에서 차가 막혀 많은 시간을 지체했다."
   },
   {
     "word": "克服",
@@ -95,9 +95,9 @@
     "pos": "동사",
     "meaning": "극복하다, 이겨내다",
     "example": "只要大家团结一致，就一定能克服一切困难。",
-    "difficulty": "중",
+    "difficulty": "하",
     "id": "hv_10",
-    "translation": "강인한 의지로 눈앞의 신체적 한계와 고통을 극복해 냈다."
+    "translation": "모두가 하나로 단결하기만 하면 반드시 모든 어려움을 극복할 수 있다."
   },
   {
     "word": "效率",
@@ -105,9 +105,9 @@
     "pos": "명사",
     "meaning": "효율",
     "example": "合理安排作息时间可以显著提高工作效率。",
-    "difficulty": "중",
+    "difficulty": "하",
     "id": "hv_11",
-    "translation": "업무 방식을 개선하면 생산 및 사무 효율을 크게 높일 수 있다."
+    "translation": "일과와 휴식 시간을 합리적으로 배분하면 업무 효율을 현저히 높일 수 있다."
   },
   {
     "word": "赞成",
@@ -115,9 +115,9 @@
     "pos": "동사",
     "meaning": "찬성하다, 동의하다",
     "example": "对于这个提议，大家纷纷表示赞成。",
-    "difficulty": "중",
+    "difficulty": "하",
     "id": "hv_12",
-    "translation": "모든 팀원이 그의 혁신적인 마케팅 제안에 찬성표를 던졌다."
+    "translation": "이 제안에 대해 모두가 앞다투어 찬성의 뜻을 표했다."
   },
   {
     "word": "独特",
@@ -127,7 +127,7 @@
     "example": "这位设计师拥有非常独特的设计风格。",
     "difficulty": "중",
     "id": "hv_13",
-    "translation": "이 고대 건축물은 매우 독특한 문화적 양식과 매력을 지니고 있다."
+    "translation": "이 디자이너는 매우 독특한 디자인 스타일을 가지고 있다."
   },
   {
     "word": "趋势",
@@ -137,7 +137,7 @@
     "example": "随着科技的发展，数字化已成为必然趋势。",
     "difficulty": "중",
     "id": "hv_14",
-    "translation": "친환경 전기차의 발전은 미래 자동차 산업의 필연적 추세이다."
+    "translation": "과학기술이 발전함에 따라 디지털화는 이미 필연적인 추세가 되었다."
   },
   {
     "word": "繁荣",
@@ -147,7 +147,7 @@
     "example": "经济的快速发展带来了城市的繁荣。",
     "difficulty": "중",
     "id": "hv_15",
-    "translation": "繁荣 예문 해석입니다."
+    "translation": "경제의 빠른 발전은 도시의 번영을 가져왔다."
   },
   {
     "word": "珍惜",
@@ -155,9 +155,9 @@
     "pos": "동사",
     "meaning": "소중히 여기다, 아끼다",
     "example": "我们应该珍惜眼前来之不易的幸福生活。",
-    "difficulty": "중",
+    "difficulty": "하",
     "id": "hv_16",
-    "translation": "시간은 금과 같으니 매 순간 주어지는 기회를 소중히 여겨야 한다."
+    "translation": "우리는 눈앞의 어렵게 얻은 행복한 삶을 소중히 여겨야 한다."
   },
   {
     "word": "承担",
@@ -167,7 +167,7 @@
     "example": "勇于承担责任是成熟的标志。",
     "difficulty": "하",
     "id": "hv_17",
-    "translation": "承担 예문 해석입니다."
+    "translation": "용기 있게 책임을 지는 것은 성숙함의 상징이다."
   },
   {
     "word": "敏锐",
@@ -175,9 +175,9 @@
     "pos": "형용사",
     "meaning": "예민하다, 날카롭다",
     "example": "优秀的企业家通常拥有敏锐的市场洞察力。",
-    "difficulty": "중",
+    "difficulty": "상",
     "id": "hv_18",
-    "translation": "敏锐 예문 해석입니다."
+    "translation": "우수한 기업가는 대개 예리한 시장 통찰력을 지니고 있다."
   },
   {
     "word": "挑战",
@@ -187,7 +187,7 @@
     "example": "我们要勇于迎接生活中的各种挑战。",
     "difficulty": "중",
     "id": "hv_19",
-    "translation": "挑战 예문 해석입니다."
+    "translation": "우리는 삶 속의 온갖 도전을 용기 있게 맞이해야 한다."
   },
   {
     "word": "循序渐进",
@@ -195,39 +195,39 @@
     "pos": "성어",
     "meaning": "순서를 따라 차근차근 나아가다",
     "example": "学习外语是一个循序渐进的过程。",
-    "difficulty": "하",
+    "difficulty": "상",
     "id": "hv_20",
-    "translation": "循序渐进 예문 해석입니다."
+    "translation": "외국어를 배우는 것은 순서를 따라 차근차근 나아가는 과정이다."
   },
   {
     "id": "hv_21",
     "word": "把握",
     "pinyin": "bǎwò",
-    "meaning": "파악하다, 장악하다",
-    "pos": "동사",
+    "meaning": "파악하다, 장악하다, 확신",
+    "pos": "동사/명사",
     "difficulty": "중",
-    "example": "把握机会。",
-    "translation": "把握 예문 해석입니다."
+    "example": "我们必须牢牢把握这次难得的发展机会。",
+    "translation": "우리는 이번 얻기 힘든 발전의 기회를 단단히 잡아야 한다."
   },
   {
     "id": "hv_22",
     "word": "包含",
     "pinyin": "bāohán",
-    "meaning": "포함하다",
+    "meaning": "포함하다, 내포하다",
     "pos": "동사",
     "difficulty": "상",
-    "example": "这包含了很多内容。",
-    "translation": "包含 예문 해석입니다."
+    "example": "这首简短的诗歌里包含了作者深厚的情感。",
+    "translation": "이 짧은 시 속에는 작가의 깊은 감정이 담겨 있다."
   },
   {
     "id": "hv_23",
     "word": "必然",
     "pinyin": "bìrán",
-    "meaning": "필연적인",
-    "pos": "형용사",
+    "meaning": "필연적인, 반드시 ~하다",
+    "pos": "형용사/부사",
     "difficulty": "중",
-    "example": "这是必然的结果。",
-    "translation": "必然 예문 해석입니다."
+    "example": "长期熬夜必然会对身体健康造成损害。",
+    "translation": "장기간 밤을 새우면 필연적으로 신체 건강에 해를 끼치게 된다."
   },
   {
     "id": "hv_24",
@@ -236,18 +236,18 @@
     "meaning": "재산",
     "pos": "명사",
     "difficulty": "중",
-    "example": "保护个人财产。",
-    "translation": "财产 예문 해석입니다."
+    "example": "法律严格保护每一位公民的合法私人财产。",
+    "translation": "법률은 모든 시민의 합법적인 개인 재산을 엄격히 보호한다."
   },
   {
     "id": "hv_25",
     "word": "采取",
     "pinyin": "cǎiqǔ",
-    "meaning": "채택하다, 취하다",
+    "meaning": "채택하다, (조치를) 취하다",
     "pos": "동사",
     "difficulty": "상",
-    "example": "采取有效措施。",
-    "translation": "采取 예문 해석입니다."
+    "example": "面对突发状况，管理部门立即采取了有效措施。",
+    "translation": "돌발 상황에 직면하여 관리 부서는 즉시 유효한 조치를 취했다."
   },
   {
     "id": "hv_26",
@@ -256,47 +256,47 @@
     "meaning": "초래하다, 야기하다",
     "pos": "동사",
     "difficulty": "상",
-    "example": "导致严重的后果。",
-    "translation": "导致 예문 해석입니다."
+    "example": "操作失误导致整条生产线停工了两个小时。",
+    "translation": "조작 실수로 인해 전체 생산 라인이 두 시간 동안 가동 중단되었다."
   },
   {
     "id": "hv_27",
-    "word": "繁荣",
-    "pinyin": "fánróng",
-    "meaning": "번영하다",
-    "pos": "형용사",
+    "word": "贯彻",
+    "pinyin": "guànchè",
+    "meaning": "관철하다, 철저히 실행하다",
+    "pos": "동사",
     "difficulty": "상",
-    "example": "经济繁荣。",
-    "translation": "繁荣 예문 해석입니다."
+    "example": "各部门必须全面贯彻落实公司的新安全规定。",
+    "translation": "각 부서는 회사의 새로운 안전 규정을 전면적으로 관철하여 실행해야 한다."
   },
   {
     "id": "hv_28",
     "word": "妨碍",
     "pinyin": "fáng'ài",
-    "meaning": "방해하다",
+    "meaning": "방해하다, 지장을 주다",
     "pos": "동사",
     "difficulty": "상",
-    "example": "不要妨碍别人。",
-    "translation": "妨碍 예문 해석입니다."
+    "example": "在图书馆大声喧哗会妨碍其他人正常学习。",
+    "translation": "도서관에서 큰 소리로 떠드는 것은 다른 사람의 정상적인 공부를 방해한다."
   },
   {
     "id": "hv_29",
     "word": "广泛",
     "pinyin": "guǎngfàn",
-    "meaning": "광범위한",
+    "meaning": "광범위하다, 폭넓다",
     "pos": "형용사",
     "difficulty": "중",
-    "example": "广泛的兴趣。",
-    "translation": "广泛 예문 해석입니다."
+    "example": "人工智能技术已经在医疗领域得到了广泛的应用。",
+    "translation": "인공지능 기술은 이미 의료 분야에서 광범위하게 응용되고 있다."
   },
   {
     "id": "hv_30",
     "word": "核心",
     "pinyin": "héxīn",
-    "meaning": "핵심",
+    "meaning": "핵심, 중심",
     "pos": "명사",
-    "difficulty": "중",
-    "example": "核心问题。",
-    "translation": "팀워크와 상호 신뢰야말로 우리 프로젝트 성공의 핵심 원동력이다."
+    "difficulty": "상",
+    "example": "掌握核心技术是企业保持竞争力的关键。",
+    "translation": "핵심 기술을 확보하는 것이 기업이 경쟁력을 유지하는 열쇠이다."
   }
 ]

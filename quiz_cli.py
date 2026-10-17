@@ -87,35 +87,33 @@ def filter_items_by_diff_and_srs(items, diff, count, lang):
         return []
     target = normalize_diff(diff)
     exact = [it for it in items if it.get("difficulty") == target]
-    pool = exact if len(exact) >= count else items
+    others = [it for it in items if it.get("difficulty") != target]
 
     progress = load_progress()
 
-    review_list = []
-    new_list = []
-    mastered_list = []
+    def prioritize_srs(pool):
+        rev, fresh, mast = [], [], []
+        for it in pool:
+            k = get_item_key(lang, it)
+            st = progress.get(k, {}).get("status", "new")
+            if st == "review":
+                rev.append((it, True))
+            elif st == "mastered":
+                mast.append((it, False))
+            else:
+                fresh.append((it, False))
+        random.shuffle(rev)
+        random.shuffle(fresh)
+        random.shuffle(mast)
+        return rev + fresh + mast
 
-    for it in pool:
-        k = get_item_key(lang, it)
-        st = progress.get(k, {}).get("status", "new")
-        if st == "review":
-            review_list.append((it, True))
-        elif st == "mastered":
-            mastered_list.append((it, False))
-        else:
-            new_list.append((it, False))
+    ordered = prioritize_srs(exact)
+    if len(ordered) < count:
+        ordered.extend(prioritize_srs(others))
 
-    # 틀린 문제 우선, 그 다음 미도전 문제 채움, 맞춘 문제는 제외
-    candidates = review_list[:]
-    if len(candidates) < count:
-        candidates.extend(new_list)
-
-    # 모든 문제를 마스터한 경우 마스터된 문제를 순환 보충
-    if len(candidates) < count and mastered_list:
-        candidates.extend(mastered_list)
-
-    random.shuffle(candidates)
-    return candidates[:count]
+    selected = ordered[:count]
+    random.shuffle(selected)
+    return selected
 
 def load_all_data(lang="hsk"):
     if lang == "ielts":
@@ -282,12 +280,13 @@ def run_chengyu_quiz(chengyu_list, count=5, diff="중", lang="hsk"):
             if is_cloze:
                 print(f"\n[문제 {idx}/{len(candidates)}] [{d_tag}]{review_tag} 다음 문맥의 빈칸 [ ____ ] 에 가장 알맞은 사자성어는?")
                 print(f"👉 \"{q['sentence']}\"")
+                play_mac_tts(q['sentence'], lang="hsk")
                 correct_val = f"{q['chengyu']} ({q['pinyin']})"
                 wrong_pool = [f"{c['chengyu']} ({c['pinyin']})" for c in chengyu_list if c['chengyu'] != q['chengyu']]
                 options = random.sample(wrong_pool, min(3, len(wrong_pool))) + [correct_val]
                 random.shuffle(options)
                 correct_idx = options.index(correct_val) + 1
-                exp = f"      - 뜻: {q['meaning']}\n      - 완성 예문: {q['example']}"
+                exp = f"      - 정답 성어: {q['chengyu']} ({q['pinyin']}) — {q['meaning']}\n      - 완성 예문: {q['example']}\n      - 해석: {q.get('translation', '')}"
             else:
                 print(f"\n[문제 {idx}/{len(candidates)}] [{d_tag}]{review_tag} 다음 사자성어의 의미로 올바른 것은?")
                 print(f"👉 【 {q['chengyu']} 】 (병음: {q['pinyin']})")
@@ -297,10 +296,11 @@ def run_chengyu_quiz(chengyu_list, count=5, diff="중", lang="hsk"):
                 options = random.sample(wrong_pool, min(3, len(wrong_pool))) + [correct_val]
                 random.shuffle(options)
                 correct_idx = options.index(correct_val) + 1
-                exp = f"      - 활용 예문: {q.get('example', '')}"
+                exp = f"      - 활용 예문: {q.get('example', '')}\n      - 해석: {q.get('translation', '')}"
         else:
             print(f"\n[문제 {idx}/{len(candidates)}] [{d_tag}]{review_tag} Choose the most appropriate idiom for the blank [ ____ ]:")
             print(f"👉 \"{q['sentence']}\"")
+            play_mac_tts(q['sentence'], lang="ielts")
             correct_val = q['idiom']
             wrong_pool = [c['idiom'] for c in chengyu_list if c['idiom'] != q['idiom']]
             options = random.sample(wrong_pool, min(3, len(wrong_pool))) + [correct_val]
@@ -361,7 +361,12 @@ def run_grammar_quiz(grammar_list, count=5, diff="중", lang="hsk"):
         options = list(q['options'])
         random.shuffle(options)
         correct_idx = options.index(correct_val) + 1
-        exp = f"      {q['explanation']}"
+        exp_lines = [f"      {q['explanation']}"]
+        if q.get('example'):
+            exp_lines.append(f"      - 완성 문장: {q['example']}")
+        if q.get('translation'):
+            exp_lines.append(f"      - 해석: {q['translation']}")
+        exp = "\n".join(exp_lines)
 
         result = prompt_answer(options, correct_idx, exp, item=q, lang=lang)
         if result is None:
@@ -380,12 +385,13 @@ def run_mixed_quiz(vocab, listening, chengyu, cloze, grammar, count=8, diff="중
     print("듣기, 어휘, 성어/숙어, 독해 빈칸, 문법 문제가 종합 출제됩니다.")
     print("=" * 60)
     
+    per_cat = max(2, (count + 4) // 5)
     items = []
-    items.extend([("listening", it, rev) for it, rev in filter_items_by_diff_and_srs(listening, target, 2, lang)])
-    items.extend([("vocab", it, rev) for it, rev in filter_items_by_diff_and_srs(vocab, target, 2, lang)])
-    items.extend([("chengyu", it, rev) for it, rev in filter_items_by_diff_and_srs(chengyu, target, 2, lang)])
-    items.extend([("cloze", it, rev) for it, rev in filter_items_by_diff_and_srs(cloze, target, 2, lang)])
-    items.extend([("grammar", it, rev) for it, rev in filter_items_by_diff_and_srs(grammar, target, 2, lang)])
+    items.extend([("listening", it, rev) for it, rev in filter_items_by_diff_and_srs(listening, target, per_cat, lang)])
+    items.extend([("vocab", it, rev) for it, rev in filter_items_by_diff_and_srs(vocab, target, per_cat, lang)])
+    items.extend([("chengyu", it, rev) for it, rev in filter_items_by_diff_and_srs(chengyu, target, per_cat, lang)])
+    items.extend([("cloze", it, rev) for it, rev in filter_items_by_diff_and_srs(cloze, target, per_cat, lang)])
+    items.extend([("grammar", it, rev) for it, rev in filter_items_by_diff_and_srs(grammar, target, per_cat, lang)])
 
     random.shuffle(items)
     items = items[:count]
@@ -398,6 +404,7 @@ def run_mixed_quiz(vocab, listening, chengyu, cloze, grammar, count=8, diff="중
             print(f"\n[문제 {idx}/{len(items)}] [듣기 {d_tag}{review_tag} - {q['category']}] 🎧 대화를 주의 깊게 듣고 답을 고르세요.")
             play_mac_tts(q['audioText'], lang=lang)
             options = list(q['options'])
+            random.shuffle(options)
             correct_idx = options.index(q['answer']) + 1
             dialogue_text = "\n".join([f"      • {d['speaker']}: {d['text']}" for d in q['dialogue']])
             exp = f"      [녹취록]\n{dialogue_text}\n      • ❓ 질문: {q['question']}\n      📌 공략: {q['tip']}"
@@ -408,14 +415,16 @@ def run_mixed_quiz(vocab, listening, chengyu, cloze, grammar, count=8, diff="중
             options = random.sample(wrong_options, min(3, len(wrong_options))) + [q['meaning']]
             random.shuffle(options)
             correct_idx = options.index(q['meaning']) + 1
-            exp = f"      - 예문: {q.get('example', '')}"
+            exp = f"      - 예문: {q.get('example', '')}\n      - 해석: {q.get('translation', '')}"
         elif q_type == "chengyu":
             if lang == "hsk":
                 print(f"\n[문제 {idx}/{len(items)}] [사자성어 {d_tag}{review_tag}] 빈칸 [ ____ ] 에 알맞은 성어는?\n👉 \"{q['sentence']}\"")
+                play_mac_tts(q['sentence'], lang="hsk")
                 correct_val = f"{q['chengyu']} ({q['pinyin']})"
                 wrong_pool = [f"{c['chengyu']} ({c['pinyin']})" for c in chengyu if c['chengyu'] != q['chengyu']]
             else:
                 print(f"\n[문제 {idx}/{len(items)}] [Idiom {d_tag}{review_tag}] 빈칸 [ ____ ] 에 알맞은 숙어는?\n👉 \"{q['sentence']}\"")
+                play_mac_tts(q['sentence'], lang="ielts")
                 correct_val = q['idiom']
                 wrong_pool = [c['idiom'] for c in chengyu if c['idiom'] != q['idiom']]
             options = random.sample(wrong_pool, min(3, len(wrong_pool))) + [correct_val]
@@ -424,13 +433,17 @@ def run_mixed_quiz(vocab, listening, chengyu, cloze, grammar, count=8, diff="중
             exp = f"      - 의미: {q['meaning']} | 예문: {q['example']}"
         elif q_type == "cloze":
             print(f"\n[문제 {idx}/{len(items)}] [독해 빈칸 {d_tag}{review_tag}] 빈칸에 가장 알맞은 단어는?\n👉 \"{q['sentence']}\"")
+            play_mac_tts(q['sentence'], lang=lang)
             options = list(q['options'])
+            random.shuffle(options)
             correct_idx = options.index(q['answer']) + 1
             exp = f"      - 짝꿍(搭配): {q['collocation']} | 해석: {q['translation']}"
         elif q_type == "grammar":
             print(f"\n[문제 {idx}/{len(items)}] [문법 {d_tag}{review_tag} - {q['category']}]\n{q['question']}")
-            options = q['options']
-            correct_idx = q['answer']
+            correct_val = q['options'][q['answer'] - 1] if isinstance(q['answer'], int) else q['answer']
+            options = list(q['options'])
+            random.shuffle(options)
+            correct_idx = options.index(correct_val) + 1
             exp = f"      {q['explanation']}"
 
         result = prompt_answer(options, correct_idx, exp, item=q, lang=lang)

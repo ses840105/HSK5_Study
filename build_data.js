@@ -34,7 +34,11 @@ const outObj = {
   }
 };
 
-const fileStr = 'window.APP_DATA = ' + JSON.stringify(outObj, null, 2) + ';';
+const fileStr =
+  '// HSK 5급 & IELTS 통합 다국어 데이터 번들 (CORS 제한 없는 즉시 로딩 지원)\n' +
+  'window.HSK5_DATA = ' + JSON.stringify(outObj.hsk, null, 2) + ';\n' +
+  'window.IELTS_DATA = ' + JSON.stringify(outObj.ielts, null, 2) + ';\n' +
+  'window.APP_DATA = ' + JSON.stringify(outObj, null, 2) + ';\n';
 fs.writeFileSync(path.join(__dirname, 'vocab_data.js'), fileStr, 'utf8');
 
 console.log('✅ vocab_data.js successfully rebuilt with complete HSK & IELTS datasets!');
