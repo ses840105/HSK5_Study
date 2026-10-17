@@ -8,6 +8,7 @@ const hskGrammar = JSON.parse(fs.readFileSync(path.join(__dirname, 'vocab', 'hsk
 const hskCloze = JSON.parse(fs.readFileSync(path.join(__dirname, 'vocab', 'hsk5_cloze.json'), 'utf8'));
 const hskChengyu = JSON.parse(fs.readFileSync(path.join(__dirname, 'vocab', 'hsk5_chengyu.json'), 'utf8'));
 const hskListening = JSON.parse(fs.readFileSync(path.join(__dirname, 'vocab', 'hsk5_listening.json'), 'utf8'));
+const hskDictation = JSON.parse(fs.readFileSync(path.join(__dirname, 'vocab', 'hsk5_dictation.json'), 'utf8'));
 
 // 2. IELTS 영어 데이터 로딩
 const ieltsVocab = JSON.parse(fs.readFileSync(path.join(__dirname, 'ielts', 'ielts_vocab.json'), 'utf8'));
@@ -15,6 +16,7 @@ const ieltsListening = JSON.parse(fs.readFileSync(path.join(__dirname, 'ielts', 
 const ieltsIdioms = JSON.parse(fs.readFileSync(path.join(__dirname, 'ielts', 'ielts_idioms.json'), 'utf8'));
 const ieltsCloze = JSON.parse(fs.readFileSync(path.join(__dirname, 'ielts', 'ielts_cloze.json'), 'utf8'));
 const ieltsGrammar = JSON.parse(fs.readFileSync(path.join(__dirname, 'ielts', 'ielts_grammar.json'), 'utf8'));
+const ieltsDictation = JSON.parse(fs.readFileSync(path.join(__dirname, 'ielts', 'ielts_dictation.json'), 'utf8'));
 
 const outObj = {
   hsk: {
@@ -23,14 +25,16 @@ const outObj = {
     grammar: hskGrammar,
     cloze: hskCloze,
     chengyu: hskChengyu,
-    listening: hskListening
+    listening: hskListening,
+    dictation: hskDictation
   },
   ielts: {
     vocab: ieltsVocab,
     listening: ieltsListening,
     idioms: ieltsIdioms,
     cloze: ieltsCloze,
-    grammar: ieltsGrammar
+    grammar: ieltsGrammar,
+    dictation: ieltsDictation
   }
 };
 
@@ -43,5 +47,5 @@ fs.writeFileSync(path.join(__dirname, 'vocab_data.js'), fileStr, 'utf8');
 
 console.log('✅ vocab_data.js successfully rebuilt with complete HSK & IELTS datasets!');
 console.log(`📊 Stats:`);
-console.log(`   [HSK] Vocab: ${hskVocab.length}, Colloc: ${hskColloc.length}, Grammar: ${hskGrammar.length}, Cloze: ${hskCloze.length}, Chengyu: ${hskChengyu.length}, Listening: ${hskListening.length}`);
-console.log(`   [IELTS] Vocab: ${ieltsVocab.length}, Listening: ${ieltsListening.length}, Idioms: ${ieltsIdioms.length}, Cloze: ${ieltsCloze.length}, Grammar: ${ieltsGrammar.length}`);
+console.log(`   [HSK] Vocab: ${hskVocab.length}, Colloc: ${hskColloc.length}, Grammar: ${hskGrammar.length}, Cloze: ${hskCloze.length}, Chengyu: ${hskChengyu.length}, Listening: ${hskListening.length}, Dictation: ${hskDictation.length}`);
+console.log(`   [IELTS] Vocab: ${ieltsVocab.length}, Listening: ${ieltsListening.length}, Idioms: ${ieltsIdioms.length}, Cloze: ${ieltsCloze.length}, Grammar: ${ieltsGrammar.length}, Dictation: ${ieltsDictation.length}`);

@@ -1,0 +1,362 @@
+[
+  {
+    "id": "hd_01",
+    "sentence": "航班临时取消了。",
+    "pinyin": "Hángbān línshí qǔxiāo le.",
+    "translation": "항공편이 임시로 취소되었다.",
+    "keyPoint": "[5급 듣기 1부분 기출] 航班(항공편) + 临时(임시로) + 取消(취소하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_02",
+    "sentence": "他的语气很温柔。",
+    "pinyin": "Tā de yǔqì hěn wēnróu.",
+    "translation": "그의 말투는 매우 부드럽다.",
+    "keyPoint": "[5급 듣기·어휘 기출] 语气(말투/어조) + 温柔(온화하다/부드럽다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_03",
+    "sentence": "合同已经签字了。",
+    "pinyin": "Hétong yǐjīng qiānzì le.",
+    "translation": "계약서에 이미 서명했다.",
+    "keyPoint": "[5급 듣기 1부분 기출] 合同(계약서) + 签字(서명하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_04",
+    "sentence": "请勿随地扔垃圾。",
+    "pinyin": "Qǐng wù suídì rēng lājī.",
+    "translation": "아무 데나 쓰레기를 버리지 마시오.",
+    "keyPoint": "[5급 독해·듣기 기출] 请勿(~하지 마시오) + 随地(아무 데나)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_05",
+    "sentence": "她的身材很苗条。",
+    "pinyin": "Tā de shēncái hěn miáotiao.",
+    "translation": "그녀는 몸매가 매우 날씬하다.",
+    "keyPoint": "[5급 쓰기 1부분 기출搭配] 身材(몸매) + 苗条(날씬하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_06",
+    "sentence": "双方达成了共识。",
+    "pinyin": "Shuāngfāng dáchéngle gòngshí.",
+    "translation": "양측은 합의(공감대)에 도달했다.",
+    "keyPoint": "[5급 독해 1부분 최빈출 기출] 达成共识(합의/공감대를 이루다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_07",
+    "sentence": "我们要节约能源。",
+    "pinyin": "Wǒmen yào jiéyuē néngyuán.",
+    "translation": "우리는 에너지를 절약해야 한다.",
+    "keyPoint": "[5급 쓰기·독해 기출搭配] 节约能源(에너지를 절약하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_08",
+    "sentence": "他的精神很振奋。",
+    "pinyin": "Tā de jīngshén hěn zhènfèn.",
+    "translation": "그는 사기가 매우 진작되었다(활기차다).",
+    "keyPoint": "[5급 필수 어휘 기출] 精神(정신/기운) + 振奋(진작되다/분발하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_09",
+    "sentence": "请你立刻去办理。",
+    "pinyin": "Qǐng nǐ lìkè qù bànlǐ.",
+    "translation": "즉시 가서 수속을 밟으세요.",
+    "keyPoint": "[5급 듣기 1부분 기출] 立刻(즉시) + 办理(수속을 밟다/처리하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_10",
+    "sentence": "这批货物很齐全。",
+    "pinyin": "Zhè pī huòwù hěn qíquán.",
+    "translation": "이번 화물(물품)들은 매우 완비되어 있다.",
+    "keyPoint": "[5급 양사·어휘 기출] 批(양사: 묶음) + 货物(화물) + 齐全(완비되다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_11",
+    "sentence": "我彻底放弃幻想了。",
+    "pinyin": "Wǒ chèdǐ fàngqì huànxiǎng le.",
+    "translation": "나는 환상을 완전히 버렸다.",
+    "keyPoint": "[5급 어휘 기출] 彻底(철저히/완전히) + 放弃幻想(환상을 버리다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_12",
+    "sentence": "故宫有着悠久历史。",
+    "pinyin": "Gùgōng yǒuzhe yōujiǔ lìshǐ.",
+    "translation": "고궁은 유구한 역사를 지니고 있다.",
+    "keyPoint": "[5급 쓰기 1부분 최빈출 기출] 悠久历史(유구한 역사)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_13",
+    "sentence": "大家纷纷表示赞同。",
+    "pinyin": "Dàjiā fēnfēn biǎoshì zàntóng.",
+    "translation": "모두가 앞다투어 찬성을 표했다.",
+    "keyPoint": "[5급 독해·쓰기 기출] 纷纷(잇달아/앞다투어) + 赞同(찬성하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_14",
+    "sentence": "目前形势非常严峻。",
+    "pinyin": "Mùqián xíngshì fēicháng yánjùn.",
+    "translation": "현재 정세(상황)가 매우 엄중하다.",
+    "keyPoint": "[5급 독해 1부분 기출搭配] 目前(현재) + 形势严峻(형세가 엄중하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_15",
+    "sentence": "他找借口推辞了。",
+    "pinyin": "Tā zhǎo jièkǒu tuīcí le.",
+    "translation": "그는 핑계를 대고 사양(거절)했다.",
+    "keyPoint": "[5급 듣기 1부분 기출] 找借口(핑계를 대다) + 推辞(사양/거절하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "hd_16",
+    "sentence": "运动有助于缓解工作压力。",
+    "pinyin": "Yùndòng yǒuzhùyú huǎnjiě gōngzuò yālì.",
+    "translation": "운동은 업무 스트레스를 완화하는 데 도움이 된다.",
+    "keyPoint": "[5급 쓰기 1부분 기출] 有助于(~에 도움이 되다) + 缓解压力(스트레스 완화)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_17",
+    "sentence": "请你把重要文件交给秘书。",
+    "pinyin": "Qǐng nǐ bǎ zhòngyào wénjiàn jiāo gěi mìshū.",
+    "translation": "중요한 서류를 비서에게 건네주세요.",
+    "keyPoint": "[5급 쓰기 1부분 把자문 기출] 把 + 文件(서류) + 交给(건네다) + 秘书(비서)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_18",
+    "sentence": "由于大雾，高速公路封闭了。",
+    "pinyin": "Yóuyú dàwù, gāosù gōnglù fēngbì le.",
+    "translation": "짙은 안개로 인해 고속도로가 폐쇄되었다.",
+    "keyPoint": "[5급 듣기 1부분 기출] 由于(~로 인해) + 封闭(폐쇄하다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_19",
+    "sentence": "他终于克服了重重困难。",
+    "pinyin": "Tā zhōngyú kèfúle chóngchóng kùnnán.",
+    "translation": "그는 마침내 거듭된 어려움을 극복했다.",
+    "keyPoint": "[5급 쓰기 1부분 기출搭配] 克服困难(어려움을 극복하다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_20",
+    "sentence": "这个方案还存在明显漏洞。",
+    "pinyin": "Zhège fāng'àn hái cúnzài míngxiǎn lòudòng.",
+    "translation": "이 방안에는 아직 뚜렷한 허점(결함)이 존재한다.",
+    "keyPoint": "[5급 독해 1부분 기출] 方案(방안) + 存在漏洞(허점이 존재하다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_21",
+    "sentence": "政府已采取措施控制房价。",
+    "pinyin": "Zhèngfǔ yǐ cǎiqǔ cuòshī kòngzhì fángjià.",
+    "translation": "정부는 이미 집값을 통제하기 위해 조치를 취했다.",
+    "keyPoint": "[5급 쓰기 1부분 기출] 采取措施(조치를 취하다) + 控制(통제하다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_22",
+    "sentence": "良好的习惯让人受益匪浅。",
+    "pinyin": "Liánghǎo de xíguàn ràng rén shòuyìfěiqiǎn.",
+    "translation": "좋은 습관은 사람에게 큰 유익을 준다.",
+    "keyPoint": "[5급 성어·독해 기출] 良好(양호한) + 受益匪浅(얻는 바가 매우 크다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_23",
+    "sentence": "他凭着经验解决了这个难题。",
+    "pinyin": "Tā píngzhe jīngyàn jiějuéle zhège nántí.",
+    "translation": "그는 경험에 힘입어 이 난제를 해결했다.",
+    "keyPoint": "[5급 쓰기 1부분 기출] 凭着(~에 힘입어) + 解决难题(난제를 해결하다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_24",
+    "sentence": "这部纪录片引起了广泛关注。",
+    "pinyin": "Zhè bù jìlùpiàn yǐnqǐle guǎngfàn guānzhù.",
+    "translation": "이 다큐멘터리는 폭넓은 관심을 불러일으켰다.",
+    "keyPoint": "[5급 쓰기 1부분 기출] 纪录片(다큐멘터리) + 引起广泛关注(관심을 끌다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_25",
+    "sentence": "请不要在公共场所大声喧哗。",
+    "pinyin": "Qǐng búyào zài gōnggòng chǎngsuǒ dàshēng xuānhuá.",
+    "translation": "공공장소에서 큰 소리로 떠들지 마세요.",
+    "keyPoint": "[5급 듣기·독해 기출] 公共场所(공공장소) + 大声喧哗(소란스럽게 떠들다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_26",
+    "sentence": "他对这个领域的知识很熟悉。",
+    "pinyin": "Tā duì zhège lǐngyù de zhīshi hěn shúxī.",
+    "translation": "그는 이 분야의 지식에 매우 정통하다(익숙하다).",
+    "keyPoint": "[5급 쓰기 1부분 기출] 领域(분야/영역) + 对...熟悉(~을 잘 알다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_27",
+    "sentence": "新产品的销量超出了预期。",
+    "pinyin": "Xīn chǎnpǐn de xiāoliàng chāochūle yùqī.",
+    "translation": "신제품의 판매량이 예상을 뛰어넘었다.",
+    "keyPoint": "[5급 듣기 1부분 기출] 销量(판매량) + 超出预期(예상을 뛰어넘다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_28",
+    "sentence": "我们必须遵守交通规则。",
+    "pinyin": "Wǒmen bìxū zūnshǒu jiāotōng guīzé.",
+    "translation": "우리는 반드시 교통 규칙을 준수해야 한다.",
+    "keyPoint": "[5급 쓰기 1부분 최빈출 기출] 遵守规则(규칙을 준수하다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_29",
+    "sentence": "他的演讲赢得了热烈的掌声。",
+    "pinyin": "Tā de yǎnjiǎng yíngdéle rèliè de zhǎngshēng.",
+    "translation": "그의 강연은 열렬한 박수갈채를 얻었다.",
+    "keyPoint": "[5급 쓰기 1부분 기출] 演讲(강연) + 赢得掌声(박수를 얻다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_30",
+    "sentence": "那家餐厅的服务非常周到。",
+    "pinyin": "Nà jiā cāntīng de fúwù fēicháng zhōudào.",
+    "translation": "그 식당의 서비스는 매우 세심(주도면밀)하다.",
+    "keyPoint": "[5급 듣기 1부분 기출搭配] 服务周到(서비스가 세심하다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "hd_31",
+    "sentence": "只有不断积累经验，才能提高能力。",
+    "pinyin": "Zhǐyǒu bùduàn jīlěi jīngyàn, cáinéng tígāo nénglì.",
+    "translation": "오직 끊임없이 경험을 쌓아야만 능력을 높일 수 있다.",
+    "keyPoint": "[5급 쓰기·독해 기출 복문] 只有...才...(오직 ~해야만) + 积累经验(경험 축적)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_32",
+    "sentence": "与其事后后悔，不如事前做好准备。",
+    "pinyin": "Yǔqí shìhòu hòuhuǐ, bùrú shìqián zuòhǎo zhǔnbèi.",
+    "translation": "일이 끝난 뒤 후회하느니 사전에 준비를 잘하는 편이 낫다.",
+    "keyPoint": "[5급 독해 1부분 기출 구문] 与其...不如...(~하느니 차라리 ...하는 편이 낫다)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_33",
+    "sentence": "良好的沟通能够消除彼此的误会。",
+    "pinyin": "Liánghǎo de gōutōng nénggòu xiāochú bǐcǐ de wùhuì.",
+    "translation": "원활한 소통은 서로의 오해를 해소할 수 있다.",
+    "keyPoint": "[5급 쓰기 1부분 기출] 沟通(소통) + 消除误会(오해를 없애다) + 彼此(서로)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_34",
+    "sentence": "双方通过友好谈判达成了合作协议。",
+    "pinyin": "Shuāngfāng tōngguò yǒuhǎo tánpàn dáchéngle hézuò xiéyì.",
+    "translation": "양측은 우호적인 협상을 통해 협력 합의에 도달했다.",
+    "keyPoint": "[5급 독해·쓰기 기출] 通过谈判(협상을 통해) + 达成协议(합의를 타결하다)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_35",
+    "sentence": "我们在制定计划时要考虑到风险。",
+    "pinyin": "Wǒmen zài zhìdìng jìhuà shí yào kǎolǜ dào fēngxiǎn.",
+    "translation": "우리는 계획을 수립할 때 위험 요소를 고려해야 한다.",
+    "keyPoint": "[5급 쓰기 1부분 기출] 制定计划(계획을 수립하다) + 风险(위험/리스크)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_36",
+    "sentence": "面对突发危机，他依然保持着冷静。",
+    "pinyin": "Miànduì tūfā wēijī, tā yīrán bǎochízhe lěngjìng.",
+    "translation": "갑작스러운 위기에 직면하여 그는 여전히 냉정함을 유지하고 있다.",
+    "keyPoint": "[5급 독해 1부분 기출] 面对危机(위기에 직면하다) + 保持冷静(냉정함 유지)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_37",
+    "sentence": "阅读优秀作品有助于培养思考能力。",
+    "pinyin": "Yuèdú yōuxiù zuòpǐn yǒuzhùyú péiyǎng sīkǎo nénglì.",
+    "translation": "우수한 작품을 읽는 것은 사고력을 기르는 데 도움이 된다.",
+    "keyPoint": "[5급 쓰기 1부분 기출] 有助于(~에 도움이 되다) + 培养能力(능력을 기르다)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_38",
+    "sentence": "这项新政策将大大缓解交通拥堵。",
+    "pinyin": "Zhè xiàng xīn zhèngcè jiāng dàdà huǎnjiě jiāotōng yōngdǔ.",
+    "translation": "이 새로운 정책은 교통 체증을 크게 완화할 것이다.",
+    "keyPoint": "[5급 독해·듣기 기출] 项(정책 양사) + 缓解交通拥堵(교통 체증 완화)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_39",
+    "sentence": "把理论应用到实践中才能发挥价值。",
+    "pinyin": "Bǎ lǐlùn yìngyòng dào shíjiàn zhōng cáinéng fāhuī jiàzhí.",
+    "translation": "이론을 실천에 응용해야만 가치를 발휘할 수 있다.",
+    "keyPoint": "[5급 쓰기 1부분 把자문 기출] 应用到(~에 응용하다) + 发挥价值(가치 발휘)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_40",
+    "sentence": "如果缺乏创新，就很难在竞争中生存。",
+    "pinyin": "Rúguǒ quēfá chuàngxīn, jiù hěn nán zài jìngzhēng zhōng shēngcún.",
+    "translation": "만약 혁신이 부족하면 경쟁 속에서 살아남기 어렵다.",
+    "keyPoint": "[5급 독해 2부분 기출] 缺乏创新(혁신 부족) + 在竞争中生存(경쟁에서 생존)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_41",
+    "sentence": "既然已经做出了决定，就不要再犹豫。",
+    "pinyin": "Jìrán yǐjīng zuòchūle juédìng, jiù búyào zài yóuyù.",
+    "translation": "이미 결정을 내렸으니 더 이상 망설이지 마라.",
+    "keyPoint": "[5급 어법·독해 기출] 既然...就...(~한 이상) + 做出决定(결정을 내리다) + 犹豫(망설이다)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_42",
+    "sentence": "哪怕遇到再大的挫折，他也从不灰心。",
+    "pinyin": "Nǎpà yùdào zài dà de cuòzhé, tā yě cóng bù huīxīn.",
+    "translation": "설령 아무리 큰 좌절을 겪더라도 그는 결코 낙담하지 않는다.",
+    "keyPoint": "[5급 어법·독해 기출] 哪怕...也...(설령 ~라도) + 挫折(좌절) + 灰心(낙담하다)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_43",
+    "sentence": "这幅画惟妙惟肖，简直像真的一样。",
+    "pinyin": "Zhè fú huà wéimiàowéixiào, jiǎnzhí xiàng zhēn de yíyàng.",
+    "translation": "이 그림은 실물처럼 생생해서 마치 진짜 같다.",
+    "keyPoint": "[5급 사자성어·부사 기출] 幅(그림 양사) + 惟妙惟肖(실물과 꼭 닮다) + 简直(그야말로)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_44",
+    "sentence": "专家建议消费者仔细阅读说明书。",
+    "pinyin": "Zhuānjiā jiànyì xiāofèizhě zǐxì yuèdú shuōmíngshū.",
+    "translation": "전문가는 소비자가 설명서를 꼼꼼히 읽을 것을 권장한다.",
+    "keyPoint": "[5급 쓰기 1부분 겸어문 기출] 消费者(소비자) + 说明书(설명서)",
+    "difficulty": "상"
+  },
+  {
+    "id": "hd_45",
+    "sentence": "保护传统文化并不意味着拒绝现代文明。",
+    "pinyin": "Bǎohù chuántǒng wénhuà bìng bù yìwèizhe jùjué xiàndài wénmíng.",
+    "translation": "전통문화를 보호한다는 것이 현대 문명을 거부함을 의미하지는 않는다.",
+    "keyPoint": "[5급 독해 2부분 기출] 并不意味着(결코 ~을 의미하지 않는다) + 拒绝(거부하다)",
+    "difficulty": "상"
+  }
+]

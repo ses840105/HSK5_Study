@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // 데이터 저장소
   let currentLanguage = "hsk"; // "hsk" | "ielts"
 
-  let hskData = { vocab: [], colloc: [], chengyu: [], cloze: [], grammar: [], listening: [] };
-  let ieltsData = { vocab: [], listening: [], idioms: [], cloze: [], grammar: [] };
+  let hskData = { vocab: [], colloc: [], chengyu: [], cloze: [], grammar: [], listening: [], dictation: [] };
+  let ieltsData = { vocab: [], listening: [], idioms: [], cloze: [], grammar: [], dictation: [] };
 
   // 앱 상태
   let currentMode = "vocab";
@@ -32,6 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
   let isListeningPlaying = false;
   let isListeningPaused = false;
   let dialogueTimer = null;
+
+  // 딕테이션(말하기) 음성 인식 상태
+  let speechRecognition = null;
+  let isRecordingDictation = false;
+  let dictationFinalTranscript = "";
 
   // 사용자별 독립적인 데이터 저장을 위한 키 생성 함수
   function getStorageKey() {
@@ -145,6 +150,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const subPrompt = document.getElementById("sub-prompt");
   const optionsList = document.getElementById("options-list");
 
+  // 딕테이션(말하기/따라말하기) 컨트롤러
+  const dictationBox = document.getElementById("dictation-box");
+  const dictationListenBtn = document.getElementById("dictation-listen-btn");
+  const dictationListenLabel = document.getElementById("dictation-listen-label");
+  const dictationSlowBtn = document.getElementById("dictation-slow-btn");
+  const dictationSlowLabel = document.getElementById("dictation-slow-label");
+  const dictationHintBtn = document.getElementById("dictation-hint-btn");
+  const dictationHintLabel = document.getElementById("dictation-hint-label");
+  const dictationMeaningLine = document.getElementById("dictation-meaning-line");
+  const dictationGuideLine = document.getElementById("dictation-guide-line");
+  const dictationDiffChips = document.querySelectorAll(".dictation-diff-chip");
+  const dictationHintBox = document.getElementById("dictation-hint-box");
+  const dictationHintSentence = document.getElementById("dictation-hint-sentence");
+  const dictationHintSub = document.getElementById("dictation-hint-sub");
+  const dictationMicBtn = document.getElementById("dictation-mic-btn");
+  const dictationMicIcon = document.getElementById("dictation-mic-icon");
+  const dictationMicLabel = document.getElementById("dictation-mic-label");
+  const dictationMicStatus = document.getElementById("dictation-mic-status");
+  const dictationInput = document.getElementById("dictation-input");
+  const dictationClearBtn = document.getElementById("dictation-clear-btn");
+  const dictationSubmitBtn = document.getElementById("dictation-submit-btn");
+  const dictationDiffCard = document.getElementById("dictation-diff-card");
+  const dictationDiffTitle = document.getElementById("dictation-diff-title");
+  const dictationAccuracyBadge = document.getElementById("dictation-accuracy-badge");
+  const dictationTargetLabel = document.getElementById("dictation-target-label");
+  const dictationDiffTarget = document.getElementById("dictation-diff-target");
+  const dictationSpokenLabel = document.getElementById("dictation-spoken-label");
+  const dictationDiffSpoken = document.getElementById("dictation-diff-spoken");
+  const dictationDiagnosisLabel = document.getElementById("dictation-Diagnosis-label");
+  const dictationDiffSummary = document.getElementById("dictation-diff-summary");
+
   const explanationBox = document.getElementById("explanation-box");
   const feedbackBanner = document.getElementById("feedback-banner");
   const expCollocLabel = document.getElementById("exp-colloc-label");
@@ -228,20 +264,27 @@ document.addEventListener("DOMContentLoaded", () => {
           chengyu: { name: "사자성어(成语) 퀴즈", desc: "문맥 빈칸 채우기 & 빈출 30선 의미 파악" },
           cloze: { name: "독해 1부분 실전 빈칸", desc: "3초 컷! 고정 짝꿍 호응(搭配) 훈련" },
           grammar: { name: "필수 문법 & 어순 배열", desc: "把/被자문, 존현문, 접속사 공식 및 쓰기" },
-          mixed: { name: "종합 실전 모의고사", desc: "듣기, 어휘, 성어, 빈칸, 문법 전 영역 통합 출제" }
+          dictation: { name: "말하기 딕테이션 (口语)", desc: "원어민 문장 듣고 똑같이 말하기 & 틀린 글자 정밀 비교" },
+          mixed: { name: "종합 실전 모의고사", desc: "듣기, 어휘, 성어, 빈칸, 문법, 말하기 통합 출제" }
         }
       },
       ielts: {
         title: "IELTS 영어 마스터 퀴즈",
-        introTitle: "IELTS Academic & General 시험 대비 모드를 선택하세요",
-        introDesc: "Band 7.0+ 아카데믹 어휘, Section 1~4 리스닝, 고득점 숙어(Idioms), 리딩 콜로케이션, 라이팅 복합 문법까지 미국식(US) 원어민 발음으로 마스터하세요.",
+        introTitle: "IELTS Academic & General 목표 점수별 학습 모드를 선택하세요",
+        introDesc: "하(Band 5.0 기초) · 중(Band 5.5~6.5 실전) · 상(Band 6.5~8.0 고득점) 단계별 어휘, 리스닝, 숙어(Idioms), 리딩 콜로케이션, 라이팅 문법, 스피킹 딕테이션을 원어민 발음으로 마스터하세요.",
+        diffLabels: {
+          "하": { label: "🟢 하 (Band 5.0)", chip: "하 (Band 5.0)", desc: "Band 5.0 기초 필수 어휘, 일상 회화(Part 1/Sec 1) 및 기본 문법" },
+          "중": { label: "🟡 중 (Band 5.5~6.5)", chip: "중 (Band 5.5~6.5)", desc: "Band 5.5~6.5 실전 빈출 콜로케이션, 복문 및 패러프레이징" },
+          "상": { label: "🔴 상 (Band 6.5~8.0)", chip: "상 (Band 6.5~8.0)", desc: "Band 6.5~8.0 고득점 아카데믹 어휘, 도치/분사구문 및 학술 강의" }
+        },
         modes: {
-          vocab: { name: "IELTS 핵심 어휘", desc: "Band 6.5~7.5+ 아카데믹 필수 어휘 & 유의어" },
-          listening: { name: "실전 리스닝(Listening)", desc: "대화 및 학술 강의 청취 후 질문 풀이" },
+          vocab: { name: "IELTS 핵심 어휘", desc: "Band 5.0 기초부터 Band 8.0 아카데믹 필수 어휘 & 유의어" },
+          listening: { name: "실전 리스닝(Listening)", desc: "Section 1 일상 대화부터 Section 4 학술 강의 청취" },
           chengyu: { name: "숙어 및 관용구(Idioms)", desc: "스피킹 & 라이팅 점수 부스팅 필수 관용 표현" },
-          cloze: { name: "리딩 Collocation 빈칸", desc: "아카데믹 빈출 고정 어휘 배합 완성" },
-          grammar: { name: "라이팅 필수 문법 & 구문", desc: "도치, 가정법, 분사구문 등 Band 7+ 복합 구문" },
-          mixed: { name: "종합 실전 모의고사", desc: "리스닝, 어휘, 숙어, 콜로케이션, 문법 통합 출제" }
+          cloze: { name: "리딩 Collocation 빈칸", desc: "Band 점수대별 빈출 고정 어휘 배합(연어) 완성" },
+          grammar: { name: "라이팅 필수 문법 & 구문", desc: "기초 시제/수동태부터 Band 7+ 도치·분사구문까지" },
+          dictation: { name: "스피킹 딕테이션 (Speaking)", desc: "Band 5.0 / 5.5~6.5 / 6.5~8.0 문장 듣고 따라 말하기" },
+          mixed: { name: "종합 실전 모의고사", desc: "리스닝, 어휘, 숙어, 콜로케이션, 문법, 스피킹 통합 출제" }
         }
       },
 
@@ -391,20 +434,27 @@ document.addEventListener("DOMContentLoaded", () => {
           chengyu: { name: "常用成语测验", desc: "语境选词填空与高频30成语含义掌握" },
           cloze: { name: "阅读第一部分填空", desc: "3秒速答！高频固定搭配强化训练" },
           grammar: { name: "必备语法与语序", desc: "把/被字句、存现句、关联词及句型排序" },
-          mixed: { name: "综合全真模拟考试", desc: "听力、词汇、成语、填空、语法全方位模拟" }
+          dictation: { name: "口语听写跟读", desc: "听母语原音跟读句子，智能比对发音与错字" },
+          mixed: { name: "综合全真模拟考试", desc: "听力、词汇、成语、填空、语法、口语全方位模拟" }
         }
       },
       ielts: {
         title: "雅思 (IELTS) 英语大师测试",
-        introTitle: "请选择雅思 (IELTS) 备考冲刺模式",
-        introDesc: "覆盖 Band 7.0+ 学术词汇、Section 1~4 听力、高分习语、阅读搭配及写作复杂语法，纯正发音助力备考。",
+        introTitle: "请选择雅思 (IELTS) 分数段备考模式",
+        introDesc: "按 Band 5.0 基础、Band 5.5~6.5 实战、Band 6.5~8.0 高分分级训练词汇、听力、习语、搭配、语法及口语跟读。",
+        diffLabels: {
+          "하": { label: "🟢 基础 (Band 5.0)", chip: "基础 (Band 5.0)", desc: "Band 5.0 基础核心词汇、Part 1/Sec 1 日常对话与基础语法" },
+          "중": { label: "🟡 实战 (Band 5.5~6.5)", chip: "实战 (Band 5.5~6.5)", desc: "Band 5.5~6.5 实战高频搭配、复合句与同义改写" },
+          "상": { label: "🔴 进阶 (Band 6.5~8.0)", chip: "进阶 (Band 6.5~8.0)", desc: "Band 6.5~8.0 高分学术词汇、倒装/分词结构与学术讲座" }
+        },
         modes: {
-          vocab: { name: "雅思核心词汇", desc: "Band 6.5~7.5+ 学术必备词汇与同义替换" },
+          vocab: { name: "雅思核心词汇", desc: "Band 5.0~8.0 分级学术必备词汇与同义替换" },
           listening: { name: "实战听力训练", desc: "日常对话与学术讲座听力理解及问答" },
           chengyu: { name: "高分习语与短语", desc: "口语与写作提分必备地道惯用表达" },
           cloze: { name: "阅读搭配填空", desc: "学术高频固定词汇搭配 (Collocations)" },
-          grammar: { name: "写作高分语法句型", desc: "倒装、虚拟、分词等 Band 7+ 复合句" },
-          mixed: { name: "综合全真模拟考试", desc: "听力、词汇、习语、搭配、语法全方位模拟" }
+          grammar: { name: "写作高分语法句型", desc: "基础句型至倒装、虚拟、分词等高分复合句" },
+          dictation: { name: "口语听写跟读 (Speaking)", desc: "按 Band 5.0 / 5.5~6.5 / 6.5~8.0 听原音跟读句子" },
+          mixed: { name: "综合全真模拟考试", desc: "听力、词汇、习语、搭配、语法、口语全方位模拟" }
         }
       },
 
@@ -554,20 +604,27 @@ document.addEventListener("DOMContentLoaded", () => {
           chengyu: { name: "Four-Character Idioms", desc: "Contextual cloze & essential top 30 idioms" },
           cloze: { name: "Reading Part 1 Cloze", desc: "Quick answer! Standard collocations training" },
           grammar: { name: "Grammar & Word Order", desc: "Ba/Bei sentences, existential verbs & syntax" },
-          mixed: { name: "Comprehensive Mock Exam", desc: "Full simulation covering all 5 sections" }
+          dictation: { name: "Speaking Dictation", desc: "Listen & repeat Chinese sentences with character diff" },
+          mixed: { name: "Comprehensive Mock Exam", desc: "Full simulation covering all sections" }
         }
       },
       ielts: {
         title: "IELTS Master Quiz",
-        introTitle: "Select IELTS Academic & General Prep Mode",
-        introDesc: "Master Band 7.0+ academic vocabulary, Section 1~4 listening, high-scoring idioms, reading collocations, and writing grammar with native audio.",
+        introTitle: "Select IELTS Band 5.0 ~ 8.0 Graded Prep Mode",
+        introDesc: "Master IELTS across graded difficulty levels: Easy (Band 5.0), Medium (Band 5.5~6.5), and Hard (Band 6.5~8.0) across vocab, listening, idioms, cloze, grammar, and speaking dictation.",
         modes: {
-          vocab: { name: "IELTS Core Vocab", desc: "Band 6.5~7.5+ academic vocabulary & synonyms" },
-          listening: { name: "Listening Practice", desc: "Conversations & lectures listening comprehension" },
-          chengyu: { name: "Idioms & Phrases", desc: "High-scoring natural expressions for Speaking & Writing" },
-          cloze: { name: "Collocation Cloze", desc: "Academic frequent fixed collocations" },
-          grammar: { name: "Writing Grammar & Syntax", desc: "Inversion, conditionals & Band 7+ complex structures" },
-          mixed: { name: "Comprehensive Mock Exam", desc: "All-in-one test covering listening, vocab & grammar" }
+          vocab: { name: "IELTS Core Vocab", desc: "Band 5.0 / 5.5~6.5 / 6.5~8.0 graded vocabulary & examples" },
+          listening: { name: "Listening Practice", desc: "Section 1~4 conversations & lectures by Band level" },
+          chengyu: { name: "Idioms & Phrases", desc: "Band 5.0~8.0 natural expressions for Speaking & Writing" },
+          cloze: { name: "Collocation Cloze", desc: "Band-graded frequent fixed collocations" },
+          grammar: { name: "Writing Grammar & Syntax", desc: "Band 5.0 basics to Band 6.5~8.0 inversion & conditionals" },
+          dictation: { name: "Speaking Dictation", desc: "Band 5.0 / 5.5~6.5 / 6.5~8.0 speaking & listening dictation" },
+          mixed: { name: "Comprehensive Mock Exam", desc: "All-in-one test covering listening, vocab, grammar & speaking" }
+        },
+        diffLabels: {
+          "하": { label: "🟢 Easy (Band 5.0)", chip: "Easy (Band 5.0)", desc: "Band 5.0 essential daily vocab, Section 1 dialogue & short sentences" },
+          "중": { label: "🟡 Medium (Band 5.5~6.5)", chip: "Med (Band 5.5~6.5)", desc: "Band 5.5~6.5 core collocations, Section 2~3 listening & practical grammar" },
+          "상": { label: "🔴 Hard (Band 6.5~8.0)", chip: "Hard (Band 6.5~8.0)", desc: "Band 6.5~8.0 advanced academic vocabulary, Section 4 lectures & inversion" }
         }
       },
 
@@ -698,8 +755,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const conf = t[sub];
     const badges = { hsk: "HSK 5", ielts: "IELTS" };
     const icons = {
-      hsk: { vocab: "🎯", listening: "🎧", chengyu: "🀄", cloze: "🔗", grammar: "📑", mixed: "🎲" },
-      ielts: { vocab: "🎯", listening: "🎧", chengyu: "💡", cloze: "🔗", grammar: "📑", mixed: "🎲" }
+      hsk: { vocab: "🎯", listening: "🎧", chengyu: "🀄", cloze: "🔗", grammar: "📑", dictation: "🎙️", mixed: "🎲" },
+      ielts: { vocab: "🎯", listening: "🎧", chengyu: "💡", cloze: "🔗", grammar: "📑", dictation: "🎙️", mixed: "🎲" }
     };
     const modes = {};
     if (conf && conf.modes) {
@@ -729,7 +786,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const d = diff || "중";
     const lang = uiLang || currentUiLang || "ko";
     const t = I18N[lang] || I18N.ko;
-    const item = (t.diffLabels && t.diffLabels[d]) || { label: "🟡 중 (실전)", chip: "중 (실전)", desc: "" };
+    const subConf = (currentLanguage === "ielts" && t.ielts && t.ielts.diffLabels) ? t.ielts.diffLabels : t.diffLabels;
+    const item = (subConf && subConf[d]) || (t.diffLabels && t.diffLabels[d]) || { label: "🟡 중 (실전)", chip: "중 (실전)", desc: "" };
     const clsMap = { "하": "green", "중": "yellow", "상": "red" };
     return {
       label: item.label,
@@ -953,22 +1011,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const [hv, hc, hch, hcl, hg, hl, iv, il, ii, ic, ig] = await Promise.all([
+      const [hv, hc, hch, hcl, hg, hl, hd, iv, il, ii, ic, ig, idic] = await Promise.all([
         fetch("vocab/hsk5_core_vocabulary.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_collocations.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_chengyu.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_cloze.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_grammar.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_listening.json").then(r => r.json()).catch(() => []),
+        fetch("vocab/hsk5_dictation.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_vocab.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_listening.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_idioms.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_cloze.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_grammar.json").then(r => r.json()).catch(() => [])
+        fetch("ielts/ielts_grammar.json").then(r => r.json()).catch(() => []),
+        fetch("ielts/ielts_dictation.json").then(r => r.json()).catch(() => [])
       ]);
 
-      hskData = { vocab: hv, colloc: hc, chengyu: hch, cloze: hcl, grammar: hg, listening: hl };
-      ieltsData = { vocab: iv, listening: il, idioms: ii, cloze: ic, grammar: ig };
+      hskData = { vocab: hv, colloc: hc, chengyu: hch, cloze: hcl, grammar: hg, listening: hl, dictation: hd };
+      ieltsData = { vocab: iv, listening: il, idioms: ii, cloze: ic, grammar: ig, dictation: idic };
     } catch (err) {
       console.error("데이터 로딩 중 오류 발생:", err);
     }
@@ -1024,13 +1084,15 @@ document.addEventListener("DOMContentLoaded", () => {
                         (hskData.listening?.length || 0) +
                         (hskData.chengyu?.length || 0) +
                         (hskData.cloze?.length || 0) +
-                        (hskData.grammar?.length || 0);
+                        (hskData.grammar?.length || 0) +
+                        (hskData.dictation?.length || 0);
     } else {
       totalItemsCount = (ieltsData.vocab?.length || 0) +
                         (ieltsData.listening?.length || 0) +
                         (ieltsData.idioms?.length || 0) +
                         (ieltsData.cloze?.length || 0) +
-                        (ieltsData.grammar?.length || 0);
+                        (ieltsData.grammar?.length || 0) +
+                        (ieltsData.dictation?.length || 0);
     }
 
     let mastered = 0;
@@ -1191,13 +1253,20 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll(".mode-card").forEach(c => c.classList.remove("active"));
         card.classList.add("active");
         currentMode = key;
+        // 딕테이션 모드 선택 시 입문 부담을 줄이기 위해 기본 난이도를 '하(초급)'로 자동 세팅 (언제든 중/상으로 변경 가능)
+        if (key === "dictation") {
+          currentDifficulty = "하";
+          diffBtns.forEach(b => {
+            b.classList.toggle("active", b.getAttribute("data-diff") === "하");
+          });
+        }
       });
       modeGrid.appendChild(card);
     });
   }
 
   // 발음 재생 (빈칸 기호 제거 및 세션 토큰으로 충돌 방지)
-  function playAudio(text, targetBtn) {
+  function playAudio(text, targetBtn, customRate) {
     if (!text || !("speechSynthesis" in window)) return;
 
     stopListeningAudio();
@@ -1208,7 +1277,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const utterance = new SpeechSynthesisUtterance(cleanText);
     utterance.lang = (currentLanguage === "hsk") ? "zh-CN" : "en-US";
-    utterance.rate = ttsSpeed;
+    utterance.rate = customRate || ttsSpeed;
     if (selectedVoice) utterance.voice = selectedVoice;
 
     const btn = targetBtn || ttsBtn;
@@ -1412,8 +1481,11 @@ document.addEventListener("DOMContentLoaded", () => {
     isListeningPaused = false;
     clearTimeout(dialogueTimer);
     clearTimeout(autoTtsTimer);
+    stopDictationRecording(false);
     if (ttsBtn) ttsBtn.classList.remove("playing");
     if (expAudioBtn) expAudioBtn.classList.remove("playing");
+    if (dictationListenBtn) dictationListenBtn.classList.remove("playing");
+    if (dictationSlowBtn) dictationSlowBtn.classList.remove("playing");
     if ("speechSynthesis" in window) {
       window.speechSynthesis.cancel();
     }
@@ -1490,11 +1562,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const s2 = splitBySrs(tier2);
     const s3 = splitBySrs(tier3);
 
-    // '전체 풀기' 선택 시: 선택된 난이도(tier1)의 미마스터 문제를 우선 출제하고, 모두 마스터했다면 tier1 전체 출제
+    // '전체 풀기' 선택 시: 선택된 난이도(tier1) 문제를 우선 출제하여 다른 난이도가 섞여 난이도가 급상승하는 현상 방지
     if (requestedCount === "all") {
-      let allPool = [...s1.review, ...s1.fresh, ...s2.review, ...s2.fresh, ...s3.review, ...s3.fresh];
+      let allPool = [...s1.review, ...s1.fresh, ...s1.mastered];
       if (allPool.length === 0) {
-        allPool = [...s1.mastered, ...s2.mastered, ...s3.mastered];
+        allPool = [...s2.review, ...s2.fresh, ...s3.review, ...s3.fresh, ...s2.mastered, ...s3.mastered];
       }
       const uniqueAll = [];
       const seenAll = new Set();
@@ -1510,20 +1582,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const need = requestedCount;
 
-    // 우선순위 큐:
-    // 1순위: 선택 난이도 오답 복습(review) -> 2순위: 선택 난이도 신규(fresh)
-    // 3순위: 인접 난이도 오답 복습 -> 4순위: 인접 난이도 신규
-    // 5순위: 기타 난이도 오답 복습 -> 6순위: 기타 난이도 신규
-    // 7순위(모두 마스터한 경우): 선택 난이도 마스터 -> 인접 난이도 마스터 -> 기타 난이도 마스터
+    // 우선순위 큐: 선택된 난이도(tier1) 내에서 복습 -> 신규 -> 마스터 순으로 먼저 채우고,
+    // 해당 난이도 전체 문항 수가 요청 개수보다 부족할 때만 인접 난이도(tier2)로 확장
     const priorityBuckets = [
       s1.review,
       s1.fresh,
+      s1.mastered,
       s2.review,
       s2.fresh,
+      s2.mastered,
       s3.review,
       s3.fresh,
-      s1.mastered,
-      s2.mastered,
       s3.mastered
     ];
 
@@ -1742,14 +1811,40 @@ document.addEventListener("DOMContentLoaded", () => {
             exampleKr: modelTranslation
           };
         });
+      } else if (mode === "dictation") {
+        const pool = (hskData.dictation && hskData.dictation.length > 0) ? hskData.dictation : hskData.vocab;
+        const filtered = filterByDifficultyAndSrs(pool, diff, count);
+        rawItems = filtered.map(item => {
+          const targetSentence = item.sentence || item.example || item.word;
+          const pinyin = item.pinyin || "";
+          const translation = item.translation || item.meaning || "";
+          return {
+            type: "dictation",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: "🎙️ 중국어 말하기 딕테이션 (口语跟读)",
+            chinese: targetSentence,
+            pinyin: pinyin,
+            translation: translation,
+            speechText: targetSentence,
+            options: [],
+            answer: targetSentence,
+            collocation: `핵심 표현: ${item.keyPoint || pinyin || targetSentence}`,
+            detail: `병음: ${pinyin} — 원어민 발음과 성조를 듣고 똑같이 따라 말해 보세요.`,
+            exampleCn: targetSentence,
+            exampleKr: `${translation} (${pinyin})`
+          };
+        });
       } else if (mode === "mixed") {
-        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 5) + 1);
+        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 6) + 1);
         const l = buildQuestions("hsk", "listening", perMode, diff);
         const v = buildQuestions("hsk", "vocab", perMode, diff);
         const ch = buildQuestions("hsk", "chengyu", perMode, diff);
         const cl = buildQuestions("hsk", "cloze", perMode, diff);
         const g = buildQuestions("hsk", "grammar", perMode, diff);
-        const combined = [...l, ...v, ...ch, ...cl, ...g];
+        const d = buildQuestions("hsk", "dictation", perMode, diff);
+        const combined = [...l, ...v, ...ch, ...cl, ...g, ...d];
         // 오답 복습(isReview) 문제를 최우선 배치하고 나머지를 무작위 셔플
         const rev = shuffle(combined.filter(q => q.isReview));
         const rest = shuffle(combined.filter(q => !q.isReview));
@@ -1939,14 +2034,40 @@ document.addEventListener("DOMContentLoaded", () => {
             exampleKr: modelTranslation
           };
         });
+      } else if (mode === "dictation") {
+        const pool = (ieltsData.dictation && ieltsData.dictation.length > 0) ? ieltsData.dictation : ieltsData.vocab;
+        const filtered = filterByDifficultyAndSrs(pool, diff, count);
+        rawItems = filtered.map(item => {
+          const targetSentence = item.sentence || item.example || item.word;
+          const phonetics = item.phonetics || item.keyPoint || "";
+          const translation = item.translation || item.meaning || "";
+          return {
+            type: "dictation",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: "🎙️ IELTS Speaking Dictation",
+            chinese: targetSentence,
+            pinyin: phonetics,
+            translation: translation,
+            speechText: targetSentence,
+            options: [],
+            answer: targetSentence,
+            collocation: `Key Expression: ${item.keyPoint || phonetics || targetSentence}`,
+            detail: `핵심 구문: ${phonetics} — 원어민 억양과 강세를 듣고 똑같이 따라 말해 보세요.`,
+            exampleCn: targetSentence,
+            exampleKr: translation
+          };
+        });
       } else if (mode === "mixed") {
-        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 5) + 1);
+        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 6) + 1);
         const l = buildQuestions("ielts", "listening", perMode, diff);
         const v = buildQuestions("ielts", "vocab", perMode, diff);
         const id = buildQuestions("ielts", "chengyu", perMode, diff);
         const cl = buildQuestions("ielts", "cloze", perMode, diff);
         const g = buildQuestions("ielts", "grammar", perMode, diff);
-        const combined = [...l, ...v, ...id, ...cl, ...g];
+        const d = buildQuestions("ielts", "dictation", perMode, diff);
+        const combined = [...l, ...v, ...id, ...cl, ...g, ...d];
         const rev = shuffle(combined.filter(q => q.isReview));
         const rest = shuffle(combined.filter(q => !q.isReview));
         rawItems = [...rev, ...rest];
@@ -2036,15 +2157,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     questionCategory.textContent = q.category;
 
-    // 듣기 모드 vs 일반 모드 UI 분기
+    // 듣기 모드 vs 딕테이션 모드 vs 일반 모드 UI 분기
     if (q.type === "listening") {
       listeningPlayerBox.classList.remove("hidden");
       standardQuestionBody.classList.add("hidden");
+      if (dictationBox) dictationBox.classList.add("hidden");
+      optionsList.classList.remove("hidden");
       ttsBtn.style.display = "none";
       prepareListening(q);
+    } else if (q.type === "dictation") {
+      listeningPlayerBox.classList.add("hidden");
+      standardQuestionBody.classList.add("hidden");
+      if (dictationBox) dictationBox.classList.remove("hidden");
+      optionsList.classList.add("hidden");
+      ttsBtn.style.display = "inline-flex";
+      prepareDictation(q);
     } else {
       listeningPlayerBox.classList.add("hidden");
+      if (dictationBox) dictationBox.classList.add("hidden");
       standardQuestionBody.classList.remove("hidden");
+      optionsList.classList.remove("hidden");
       // 문제 풀이 전 발음이 정답을 노출하는 경우(역방향 어휘, 문법)에는 정답 선택 전까지 발음 버튼 숨김
       ttsBtn.style.display = currentSpeechText ? "inline-flex" : "none";
 
@@ -2057,33 +2189,551 @@ document.addEventListener("DOMContentLoaded", () => {
     listeningTranscriptCard.classList.add("hidden");
     standardExampleCard.classList.remove("hidden");
 
-    // 4지선다 보기 무작위 셔플 보장
-    if (!q._shuffled) {
-      q.options = shuffle([...q.options]);
-      q._shuffled = true;
-    }
+    if (q.type !== "dictation") {
+      // 4지선다 보기 무작위 셔플 보장
+      if (!q._shuffled) {
+        q.options = shuffle([...q.options]);
+        q._shuffled = true;
+      }
 
-    optionsList.innerHTML = "";
-    q.options.forEach((optText, idx) => {
-      const btn = document.createElement("button");
-      btn.className = "option-btn";
-      btn.innerHTML = `
-        <span class="opt-idx">${idx + 1}</span>
-        <span class="opt-text">${escapeHtml(optText)}</span>
-      `;
-      btn.addEventListener("click", () => handleSelectOption(btn, optText, q));
-      optionsList.appendChild(btn);
-    });
+      optionsList.innerHTML = "";
+      q.options.forEach((optText, idx) => {
+        const btn = document.createElement("button");
+        btn.className = "option-btn";
+        btn.innerHTML = `
+          <span class="opt-idx">${idx + 1}</span>
+          <span class="opt-text">${escapeHtml(optText)}</span>
+        `;
+        btn.addEventListener("click", () => handleSelectOption(btn, optText, q));
+        optionsList.appendChild(btn);
+      });
+    } else {
+      optionsList.innerHTML = "";
+    }
 
     if (autoTTS) {
       autoTtsTimer = setTimeout(() => {
         if (answered) return;
         if (q.type === "listening") {
           playListeningFromCurrent();
+        } else if (q.type === "dictation") {
+          const qDiff = q.difficulty || currentDifficulty || "하";
+          const rateFactor = qDiff === "하" ? 0.9 : (qDiff === "중" ? 0.95 : 1.0);
+          playAudio(currentSpeechText, dictationListenBtn, Math.max(0.7, ttsSpeed * rateFactor));
         } else if (currentSpeechText) {
           playAudio(currentSpeechText, ttsBtn);
         }
       }, 300);
+    }
+  }
+
+  // ==========================================
+  // 7-B. 말하기 딕테이션 (SpeechRecognition & LCS 정밀 비교 엔진)
+  // ==========================================
+  function getDictationPassThreshold(diff) {
+    if (diff === "하") return 70;
+    if (diff === "중") return 75;
+    return 80;
+  }
+
+  function buildDictationGuideText(q) {
+    const qDiff = q.difficulty || currentDifficulty || "하";
+    const threshold = getDictationPassThreshold(qDiff);
+    const rawSentence = q.chinese || "";
+
+    if (currentLanguage === "hsk") {
+      const cleanChars = Array.from(rawSentence.replace(/[，。！？、；：“”‘’（）().,!?;:"'\s]+/g, ""));
+      const len = cleanChars.length;
+      const rawKeyPoint = (q.rawItem && q.rawItem.keyPoint) ? q.rawItem.keyPoint : "";
+      const tagMatch = rawKeyPoint.match(/^\[[^\]]+\]/);
+      const examTag = tagMatch ? tagMatch[0] : "[HSK 5급 기출]";
+      if (qDiff === "하") {
+        const revealCount = Math.min(2, Math.max(1, Math.floor(len / 3)));
+        const prefix = cleanChars.slice(0, revealCount).join("");
+        const blanks = cleanChars.slice(revealCount).map(() => "◯").join(" ");
+        return `🌱 ${examTag} (${len}글자 · 첫 글자 힌트): ${prefix} ${blanks}  |  통과 기준: ${threshold}%↑`;
+      } else if (qDiff === "중") {
+        const keyHint = rawKeyPoint || (q.pinyin || "");
+        return `🌿 중급 (${len}글자) · ${keyHint}  |  통과 기준: ${threshold}%↑`;
+      } else {
+        return `🌳 ${examTag} (${len}글자) · 원어민 음성에 집중해 한 호흡으로 말해보세요! (막히면 👁️ 힌트 보기)  |  통과 기준: ${threshold}%↑`;
+      }
+    } else {
+      const words = rawSentence.trim().split(/\s+/).filter(Boolean);
+      const len = words.length;
+      const rawKeyPoint = (q.rawItem && q.rawItem.keyPoint) ? q.rawItem.keyPoint : "";
+      const tagMatch = rawKeyPoint.match(/^\[[^\]]+\]/);
+      const bandTag = tagMatch ? tagMatch[0] : (qDiff === "하" ? "[Band 5.0]" : qDiff === "중" ? "[Band 5.5~6.5]" : "[Band 6.5~8.0]");
+      if (qDiff === "하") {
+        const revealCount = Math.min(2, Math.max(1, Math.floor(len / 3)));
+        const prefix = words.slice(0, revealCount).map(w => w.replace(/[.,!?]+$/g, "")).join(" ");
+        const blanks = words.slice(revealCount).map(() => "____").join(" ");
+        return `🌱 ${bandTag} (${len}단어 · 첫 단어 힌트): ${prefix} ${blanks}  |  통과 기준: ${threshold}%↑`;
+      } else if (qDiff === "중") {
+        const keyHint = rawKeyPoint || ((q.rawItem && q.rawItem.phonetics) ? q.rawItem.phonetics : (q.pinyin || ""));
+        return `🌿 ${ keyHint } (${len}단어)  |  통과 기준: ${threshold}%↑`;
+      } else {
+        const keyHint = rawKeyPoint || bandTag;
+        return `🌳 ${keyHint} (${len}단어) · 원어민 억양에 집중해 한 호흡으로 말해보세요! (막히면 👁️ 힌트 보기)  |  통과 기준: ${threshold}%↑`;
+      }
+    }
+  }
+
+  function prepareDictation(q) {
+    stopDictationRecording(false);
+    dictationFinalTranscript = "";
+    const activeDiff = q.difficulty || currentDifficulty || "하";
+
+    if (dictationDiffChips && dictationDiffChips.length > 0) {
+      dictationDiffChips.forEach(chip => {
+        const chipDiff = chip.getAttribute("data-dict-diff");
+        chip.classList.toggle("active", chipDiff === activeDiff);
+        if (currentLanguage === "ielts") {
+          if (chipDiff === "하") chip.textContent = "🌱 하 (Band 5.0 · 6~7단어)";
+          else if (chipDiff === "중") chip.textContent = "🌿 중 (Band 5.5~6.5 · 7~9단어)";
+          else if (chipDiff === "상") chip.textContent = "🌳 상 (Band 6.5~8.0 · 9~11단어)";
+        } else {
+          if (chipDiff === "하") chip.textContent = "🌱 하 (기초 · 짧은 문장)";
+          else if (chipDiff === "중") chip.textContent = "🌿 중 (보통 · 핵심 표현)";
+          else if (chipDiff === "상") chip.textContent = "🌳 상 (실전 · 긴 문장)";
+        }
+      });
+    }
+
+    if (dictationInput) {
+      dictationInput.value = "";
+      dictationInput.placeholder = (currentLanguage === "hsk")
+        ? "🎤 마이크로 중국어 문장을 말하면 여기에 자동 입력됩니다 (직접 타이핑도 가능)"
+        : "🎤 Speak the English sentence into your mic or type it here";
+    }
+    if (dictationMeaningLine) {
+      dictationMeaningLine.textContent = `🇰🇷 의미: ${q.translation || "-"}`;
+    }
+    if (dictationGuideLine) {
+      dictationGuideLine.textContent = buildDictationGuideText(q);
+    }
+    if (dictationHintSentence) {
+      dictationHintSentence.textContent = q.chinese || "";
+    }
+    if (dictationHintSub) {
+      dictationHintSub.textContent = q.pinyin || "";
+    }
+    if (dictationHintBox) {
+      dictationHintBox.classList.add("hidden");
+    }
+    if (dictationHintLabel) {
+      dictationHintLabel.textContent = (currentLanguage === "hsk")
+        ? "원문/병음 힌트 보기"
+        : "영문 스크립트 힌트 보기";
+    }
+    if (dictationDiffCard) {
+      dictationDiffCard.classList.add("hidden");
+    }
+    updateDictationMicUI(false);
+  }
+
+  function updateDictationMicUI(recording, customStatus) {
+    if (!dictationMicBtn || !dictationMicStatus) return;
+    if (recording) {
+      dictationMicBtn.classList.add("recording");
+      if (dictationMicIcon) dictationMicIcon.textContent = "⏹️";
+      if (dictationMicLabel) dictationMicLabel.textContent = "말하기 완료 (누르면 즉시 채점)";
+      dictationMicStatus.classList.add("recording");
+      dictationMicStatus.textContent = customStatus || (
+        currentLanguage === "hsk"
+          ? "🔴 듣고 있습니다... 중국어 문장을 또박또박 말해보세요!"
+          : "🔴 Listening... Speak the English sentence clearly!"
+      );
+    } else {
+      dictationMicBtn.classList.remove("recording");
+      if (dictationMicIcon) dictationMicIcon.textContent = "🎤";
+      if (dictationMicLabel) dictationMicLabel.textContent = "마이크 누르고 따라 말하기";
+      dictationMicStatus.classList.remove("recording");
+      dictationMicStatus.textContent = customStatus || "원어민 음성을 들은 뒤 마이크 버튼을 누르고 똑같이 말해보세요 (직접 입력도 가능)";
+    }
+  }
+
+  function startDictationRecording() {
+    const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRec) {
+      updateDictationMicUI(false, "⚠️ 현재 브라우저에서 음성 인식을 지원하지 않습니다. 아래 입력창에 직접 입력하거나 키보드 받아쓰기(Fn+Fn)를 사용해 주세요.");
+      if (dictationInput) dictationInput.focus();
+      return;
+    }
+
+    // TTS가 재생 중이면 중단하여 스피커 소리가 마이크로 들어가는 현상 방지
+    if ("speechSynthesis" in window) {
+      window.speechSynthesis.cancel();
+    }
+    clearTimeout(autoTtsTimer);
+
+    try {
+      if (speechRecognition) {
+        speechRecognition.onend = null;
+        speechRecognition.abort();
+      }
+    } catch (e) {}
+
+    speechRecognition = new SpeechRec();
+    speechRecognition.lang = (currentLanguage === "hsk") ? "zh-CN" : "en-US";
+    speechRecognition.interimResults = true;
+    speechRecognition.continuous = true;
+    speechRecognition.maxAlternatives = 1;
+
+    dictationFinalTranscript = dictationInput ? dictationInput.value.trim() : "";
+    if (dictationFinalTranscript && answered) {
+      // 이미 채점된 상태에서 다시 말하기를 누른 경우 새로 시작
+      dictationFinalTranscript = "";
+      if (dictationInput) dictationInput.value = "";
+    }
+
+    isRecordingDictation = true;
+    updateDictationMicUI(true);
+
+    speechRecognition.onresult = (event) => {
+      let interimTranscript = "";
+      let finalChunk = "";
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const transcript = event.results[i][0].transcript;
+        if (event.results[i].isFinal) {
+          finalChunk += transcript;
+        } else {
+          interimTranscript += transcript;
+        }
+      }
+      if (finalChunk) {
+        const sep = (currentLanguage === "ielts" && dictationFinalTranscript) ? " " : "";
+        dictationFinalTranscript += sep + finalChunk.trim();
+      }
+      if (dictationInput) {
+        const sep = (currentLanguage === "ielts" && dictationFinalTranscript && interimTranscript) ? " " : "";
+        dictationInput.value = (dictationFinalTranscript + sep + interimTranscript).trim();
+      }
+    };
+
+    speechRecognition.onerror = (event) => {
+      if (event.error === "no-speech") {
+        updateDictationMicUI(false, "⚠️ 음성이 감지되지 않았습니다. 마이크 가까이에서 다시 말해보세요.");
+      } else if (event.error === "not-allowed" || event.error === "service-not-allowed") {
+        updateDictationMicUI(false, "⚠️ 마이크 권한이 거부되었습니다. 브라우저 주소창에서 마이크 권한을 허용하거나 직접 입력해 주세요.");
+      } else if (event.error !== "aborted") {
+        updateDictationMicUI(false, `⚠️ 음성 인식 알림 (${event.error}): 다시 시도하거나 텍스트로 입력해 주세요.`);
+      }
+      isRecordingDictation = false;
+    };
+
+    speechRecognition.onend = () => {
+      const wasRecording = isRecordingDictation;
+      isRecordingDictation = false;
+      updateDictationMicUI(false);
+      if (wasRecording && dictationInput && dictationInput.value.trim().length > 0) {
+        evaluateDictation();
+      }
+    };
+
+    try {
+      speechRecognition.start();
+    } catch (e) {
+      isRecordingDictation = false;
+      updateDictationMicUI(false, "⚠️ 마이크 시작 중 오류가 발생했습니다. 다시 눌러주세요.");
+    }
+  }
+
+  function stopDictationRecording(shouldEvaluate = true) {
+    if (!isRecordingDictation && !speechRecognition) return;
+    isRecordingDictation = false;
+    try {
+      if (speechRecognition) {
+        speechRecognition.onend = null;
+        speechRecognition.stop();
+      }
+    } catch (e) {}
+    updateDictationMicUI(false);
+    if (shouldEvaluate && dictationInput && dictationInput.value.trim().length > 0) {
+      evaluateDictation();
+    }
+  }
+
+  function toggleDictationRecording() {
+    if (isRecordingDictation) {
+      stopDictationRecording(true);
+    } else {
+      startDictationRecording();
+    }
+  }
+
+  // 중국어(글자 단위) 및 영어(단어 단위) LCS 정밀 비교 알고리즘
+  function computeDictationDiff(targetStr, spokenStr, lang, difficulty) {
+    const passThreshold = getDictationPassThreshold(difficulty || currentDifficulty || "하");
+
+    if (lang === "hsk") {
+      const cleanPunct = (s) => (s || "").replace(/[，。！？、；：“”‘’（）().,!?;:"'\s]+/g, "");
+      const normTarget = cleanPunct(targetStr);
+      let normSpoken = cleanPunct(spokenStr);
+
+      // 중국어 음성인식기 숫자(2 -> 两/二 등) 스마트 정규화
+      const numMap = [
+        ["2", normTarget.includes("两") ? "两" : "二"],
+        ["1", "一"], ["3", "三"], ["4", "四"], ["5", "五"],
+        ["6", "六"], ["7", "七"], ["8", "八"], ["9", "九"], ["10", "十"]
+      ];
+      numMap.forEach(([digit, hanzi]) => {
+        if (normTarget.includes(hanzi) && normSpoken.includes(digit)) {
+          normSpoken = normSpoken.split(digit).join(hanzi);
+        }
+      });
+
+      // 음성 인식기(STT) 동음이의어 정규화 (발음이 100% 동일한 글자는 정답으로 인정)
+      const normalizeZhHomophone = (ch) => {
+        if (ch === "她" || ch === "它") return "他";
+        if (ch === "地" || ch === "得") return "的";
+        if (ch === "作") return "做";
+        return ch;
+      };
+
+      const tTokens = Array.from(normTarget);
+      const sTokens = Array.from(normSpoken);
+      const tCompare = tTokens.map(normalizeZhHomophone);
+      const sCompare = sTokens.map(normalizeZhHomophone);
+      return buildLcsAlignment(tTokens, tCompare, sTokens, sCompare, "hsk", passThreshold);
+    } else {
+      // 영어 단어 단위 토크나이징 (축약형, 하이픈, 숫자, 영/미 철자 정규화)
+      const expandContractions = (s) => (s || "")
+        .replace(/’/g, "'")
+        .replace(/\bdon't\b/gi, "do not")
+        .replace(/\bdoesn't\b/gi, "does not")
+        .replace(/\bdidn't\b/gi, "did not")
+        .replace(/\bwon't\b/gi, "will not")
+        .replace(/\bcan't\b/gi, "cannot")
+        .replace(/\bit's\b/gi, "it is")
+        .replace(/\bi'm\b/gi, "i am")
+        .replace(/\bthey're\b/gi, "they are")
+        .replace(/\bwe're\b/gi, "we are")
+        .replace(/\byou're\b/gi, "you are");
+
+      const normalizeEnWord = (w) => {
+        const map = {
+          "1": "one", "2": "two", "3": "three", "4": "four", "5": "five",
+          "6": "six", "7": "seven", "8": "eight", "9": "nine", "10": "ten",
+          "travelling": "traveling",
+          "practise": "practice",
+          "programme": "program",
+          "organisation": "organization",
+          "colour": "color",
+          "favourite": "favorite",
+          "transport": "transportation",
+          "transportation": "transportation"
+        };
+        return map[w] || w;
+      };
+
+      const tokenizeEn = (raw) => {
+        const expanded = expandContractions(raw).replace(/-/g, " ");
+        const rawWords = expanded.trim().split(/\s+/).filter(Boolean);
+        const display = [];
+        const compare = [];
+        rawWords.forEach(w => {
+          const clean = w.replace(/^[^a-zA-Z0-9]+|[^a-zA-Z0-9]+$/g, "").toLowerCase();
+          if (clean) {
+            display.push(w.replace(/[.,!?;:"“”()]+$/g, ""));
+            compare.push(normalizeEnWord(clean));
+          }
+        });
+        return { display, compare };
+      };
+
+      const tObj = tokenizeEn(targetStr);
+      const sObj = tokenizeEn(spokenStr);
+      return buildLcsAlignment(tObj.display, tObj.compare, sObj.display, sObj.compare, "ielts", passThreshold);
+    }
+  }
+
+  function buildLcsAlignment(tDisplay, tCompare, sDisplay, sCompare, lang, passThreshold = 75) {
+    const n = tCompare.length;
+    const m = sCompare.length;
+    const dp = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0));
+
+    for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= m; j++) {
+        if (tCompare[i - 1] === sCompare[j - 1]) {
+          dp[i][j] = dp[i - 1][j - 1] + 1;
+        } else {
+          dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+        }
+      }
+    }
+
+    // 역추적(Backtrack)하여 정렬 연산 추출
+    const ops = [];
+    let i = n;
+    let j = m;
+    while (i > 0 || j > 0) {
+      if (i > 0 && j > 0 && tCompare[i - 1] === sCompare[j - 1]) {
+        ops.push({ op: "match", tTok: tDisplay[i - 1], sTok: sDisplay[j - 1] });
+        i--;
+        j--;
+      } else if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
+        ops.push({ op: "extra", sTok: sDisplay[j - 1] });
+        j--;
+      } else {
+        ops.push({ op: "missing", tTok: tDisplay[i - 1] });
+        i--;
+      }
+    }
+    ops.reverse();
+
+    const matchedCount = ops.filter(o => o.op === "match").length;
+    const denom = Math.max(n, m, 1);
+    const accuracy = Math.round((matchedCount / denom) * 100);
+
+    // 1. 정답 원문 기준 HTML
+    const targetHtml = ops
+      .filter(o => o.op === "match" || o.op === "missing")
+      .map(o => o.op === "match"
+        ? `<span class="diff-token match">${escapeHtml(o.tTok)}</span>`
+        : `<span class="diff-token missing" title="누락되거나 다르게 발음됨">${escapeHtml(o.tTok)}</span>`)
+      .join("");
+
+    // 2. 내 발음 기준 HTML
+    const spokenHtml = ops
+      .filter(o => o.op === "match" || o.op === "extra")
+      .map(o => o.op === "match"
+        ? `<span class="diff-token match">${escapeHtml(o.sTok)}</span>`
+        : `<span class="diff-token wrong" title="원문과 다른 발음">${escapeHtml(o.sTok)}</span>`)
+      .join("");
+
+    // 3. 연속된 불일치 구간을 묶어 무엇이 어떻게 틀렸는지 상세 진단 생성
+    const issues = [];
+    const joinSep = (lang === "hsk") ? "" : " ";
+    let curMissing = [];
+    let curExtra = [];
+
+    function flushChunk() {
+      if (curMissing.length > 0 && curExtra.length > 0) {
+        issues.push(
+          `<div class="diff-issue-item">❌ <b>틀린 부분(발음 오차)</b>: 원문 <b style="color:#2b8a3e;">[ ${escapeHtml(curMissing.join(joinSep))} ]</b> ➔ 내 발음 <b style="color:#e03131;">[ ${escapeHtml(curExtra.join(joinSep))} ]</b></div>`
+        );
+      } else if (curMissing.length > 0) {
+        issues.push(
+          `<div class="diff-issue-item">⚠️ <b>빠진 표현(누락)</b>: <b style="color:#e03131;">[ ${escapeHtml(curMissing.join(joinSep))} ]</b> 부분이 인식되지 않았습니다.</div>`
+        );
+      } else if (curExtra.length > 0) {
+        issues.push(
+          `<div class="diff-issue-item">➕ <b>불필요하게 추가된 표현</b>: <b style="color:#c2255c;">[ ${escapeHtml(curExtra.join(joinSep))} ]</b></div>`
+        );
+      }
+      curMissing = [];
+      curExtra = [];
+    }
+
+    ops.forEach(o => {
+      if (o.op === "match") {
+        flushChunk();
+      } else if (o.op === "missing") {
+        curMissing.push(o.tTok);
+      } else if (o.op === "extra") {
+        curExtra.push(o.sTok);
+      }
+    });
+    flushChunk();
+
+    const summaryHtml = issues.length === 0
+      ? `<div class="diff-issue-item" style="color:#2b8a3e;">🎉 <b>완벽합니다!</b> 원어민 문장과 모든 ${lang === "hsk" ? "한자" : "단어"}가 100% 일치합니다!</div>`
+      : issues.join("");
+
+    return {
+      accuracy,
+      passThreshold,
+      isPass: accuracy >= passThreshold,
+      targetHtml,
+      spokenHtml: spokenHtml || `<span style="color:#868e96;">(인식된 문장이 없습니다)</span>`,
+      summaryHtml
+    };
+  }
+
+  function evaluateDictation() {
+    const q = questions[currentIndex];
+    if (!q || q.type !== "dictation") return;
+
+    const spokenText = dictationInput ? dictationInput.value.trim() : "";
+    if (!spokenText) {
+      updateDictationMicUI(false, "⚠️ 먼저 마이크로 문장을 말하거나 입력창에 문장을 입력해 주세요!");
+      if (dictationInput) dictationInput.focus();
+      return;
+    }
+
+    stopDictationRecording(false);
+
+    const qDiff = q.difficulty || currentDifficulty || "하";
+    const diffRes = computeDictationDiff(q.chinese, spokenText, currentLanguage, qDiff);
+
+    // 원문/병음 힌트 박스를 함께 열어 원문과 병음을 바로 확인할 수 있게 함
+    if (dictationHintBox) {
+      dictationHintBox.classList.remove("hidden");
+    }
+
+    // 정밀 비교 카드 업데이트 및 표시
+    if (dictationDiffCard) {
+      dictationDiffCard.classList.remove("hidden");
+    }
+    if (dictationAccuracyBadge) {
+      dictationAccuracyBadge.textContent = diffRes.accuracy === 100
+        ? `정확도 100% 🎯 완벽 일치!`
+        : (diffRes.isPass
+          ? `정확도 ${diffRes.accuracy}% ✅ 통과 (기준 ${diffRes.passThreshold}%↑)`
+          : `정확도 ${diffRes.accuracy}% ❌ 재도전 필요 (기준 ${diffRes.passThreshold}%↑)`);
+      dictationAccuracyBadge.className = `dictation-accuracy-badge ${diffRes.isPass ? "pass" : "fail"}`;
+    }
+    if (dictationDiffTarget) {
+      dictationDiffTarget.innerHTML = diffRes.targetHtml;
+    }
+    if (dictationDiffSpoken) {
+      dictationDiffSpoken.innerHTML = diffRes.spokenHtml;
+    }
+    if (dictationDiffSummary) {
+      dictationDiffSummary.innerHTML = diffRes.summaryHtml;
+    }
+
+    // 첫 채점 시에만 점수 및 SRS 마스터/복습 상태 반영 (이후 재녹음 연습 시에는 비교표만 실시간 갱신)
+    if (!answered) {
+      answered = true;
+      updateItemMastery(currentLanguage, q.rawItem, diffRes.isPass);
+
+      if (diffRes.isPass) {
+        playCorrectSound();
+        score++;
+        currentScoreElem.textContent = score;
+        feedbackBanner.textContent = diffRes.accuracy === 100
+          ? "🎉 완벽한 발음입니다! 원어민 문장과 100% 일치합니다!"
+          : `✅ 정답(통과)입니다! (발음 정확도 ${diffRes.accuracy}% — 위 비교표에서 미세한 차이를 확인해 보세요)`;
+        feedbackBanner.className = "feedback-banner correct";
+      } else {
+        playWrongSound();
+        feedbackBanner.textContent = `❌ 아쉽습니다! (발음 정확도 ${diffRes.accuracy}%) 위 정밀 비교표에서 틀리거나 빠진 부분을 확인하고 다시 말해보세요!`;
+        feedbackBanner.className = "feedback-banner wrong";
+      }
+
+      expCollocVal.textContent = q.collocation || "-";
+      expDetailVal.textContent = q.detail || "-";
+      listeningTranscriptCard.classList.add("hidden");
+      standardExampleCard.classList.remove("hidden");
+      expExampleCn.textContent = q.exampleCn || q.chinese;
+      expExampleKr.textContent = q.exampleKr || q.translation;
+      currentExampleSpeechText = q.exampleCn || q.chinese;
+      explanationBox.classList.remove("hidden");
+    } else {
+      // 이미 채점한 뒤 다시 말하기 연습을 한 경우 피드백 배너도 최신 정확도로 업데이트
+      if (diffRes.isPass) {
+        playCorrectSound();
+        feedbackBanner.textContent = diffRes.accuracy === 100
+          ? "🎉 재도전 성공! 원어민 문장과 100% 완벽히 일치합니다!"
+          : `✅ 재도전 통과! (발음 정확도 ${diffRes.accuracy}%)`;
+        feedbackBanner.className = "feedback-banner correct";
+      } else {
+        playWrongSound();
+        feedbackBanner.textContent = `❌ 발음 정확도 ${diffRes.accuracy}% — 빨간색으로 표시된 부분을 의식하며 다시 한번 말해보세요!`;
+        feedbackBanner.className = "feedback-banner wrong";
+      }
     }
   }
 
@@ -2410,6 +3060,96 @@ document.addEventListener("DOMContentLoaded", () => {
   expAudioBtn.addEventListener("click", () => {
     playAudio(currentExampleSpeechText, expAudioBtn);
   });
+
+  // 딕테이션(말하기) 난이도 즉시 전환 칩(하/중/상) 이벤트 바인딩
+  if (dictationDiffChips && dictationDiffChips.length > 0) {
+    dictationDiffChips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        const selectedDiff = chip.getAttribute("data-dict-diff") || "하";
+        currentDifficulty = selectedDiff;
+
+        // 메인 설정 화면의 난이도 버튼 상태도 동기화
+        diffBtns.forEach(b => {
+          b.classList.toggle("active", b.getAttribute("data-diff") === selectedDiff);
+        });
+
+        // 현재 딕테이션 모드 진행 중이면 선택한 난이도로 즉시 문제 재구성
+        if (currentMode === "dictation") {
+          questions = buildQuestions(currentLanguage, "dictation", questionCount, currentDifficulty);
+          currentIndex = 0;
+          score = 0;
+          renderCurrentQuestion();
+        } else {
+          // 종합 모의고사(mixed) 내 딕테이션 문항인 경우 현재 문항만 해당 난이도로 교체
+          const replacement = buildQuestions(currentLanguage, "dictation", 1, currentDifficulty);
+          if (replacement && replacement.length > 0) {
+            questions[currentIndex] = replacement[0];
+            renderCurrentQuestion();
+          }
+        }
+      });
+    });
+  }
+
+  // 딕테이션(말하기) 버튼 이벤트 바인딩
+  if (dictationListenBtn) {
+    dictationListenBtn.addEventListener("click", () => {
+      const q = questions[currentIndex];
+      const qDiff = (q && q.difficulty) || currentDifficulty || "하";
+      const rateFactor = qDiff === "하" ? 0.9 : (qDiff === "중" ? 0.95 : 1.0);
+      playAudio(currentSpeechText, dictationListenBtn, Math.max(0.7, ttsSpeed * rateFactor));
+    });
+  }
+
+  if (dictationSlowBtn) {
+    dictationSlowBtn.addEventListener("click", () => {
+      playAudio(currentSpeechText, dictationSlowBtn, 0.72);
+    });
+  }
+
+  if (dictationHintBtn) {
+    dictationHintBtn.addEventListener("click", () => {
+      if (!dictationHintBox) return;
+      dictationHintBox.classList.toggle("hidden");
+      const isHidden = dictationHintBox.classList.contains("hidden");
+      if (dictationHintLabel) {
+        dictationHintLabel.textContent = isHidden
+          ? (currentLanguage === "hsk" ? "원문/병음 힌트 보기" : "영문 스크립트 힌트 보기")
+          : "힌트 숨기기";
+      }
+    });
+  }
+
+  if (dictationMicBtn) {
+    dictationMicBtn.addEventListener("click", toggleDictationRecording);
+  }
+
+  if (dictationClearBtn) {
+    dictationClearBtn.addEventListener("click", () => {
+      stopDictationRecording(false);
+      dictationFinalTranscript = "";
+      if (dictationInput) {
+        dictationInput.value = "";
+        dictationInput.focus();
+      }
+      updateDictationMicUI(false, "입력창이 초기화되었습니다. 마이크 버튼을 누르고 다시 말해보세요!");
+    });
+  }
+
+  if (dictationSubmitBtn) {
+    dictationSubmitBtn.addEventListener("click", () => {
+      evaluateDictation();
+    });
+  }
+
+  if (dictationInput) {
+    dictationInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        evaluateDictation();
+      }
+    });
+  }
 
   autoTtsToggle.addEventListener("change", (e) => {
     autoTTS = e.target.checked;

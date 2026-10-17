@@ -2,122 +2,122 @@
   {
     "id": "il_01",
     "difficulty": "하",
-    "category": "Section 1 (Accommodation Booking)",
+    "category": "Section 1 (Band 5.0 · Hotel Room Booking)",
     "dialogue": [
       {
         "speaker": "Receptionist",
-        "text": "Good morning, city student accommodation. How can I assist you today?"
+        "text": "Good morning, Grand City Hotel. How can I help you today?"
       },
       {
-        "speaker": "Student",
-        "text": "Hello, I am looking for a single en-suite room for the upcoming autumn semester starting in September."
+        "speaker": "Guest",
+        "text": "Hello, I would like to book a single room with breakfast for three nights starting this Friday."
       }
     ],
-    "question": "What type of room is the student inquiring about?",
+    "question": "What type of room does the guest want to book?",
     "options": [
-      "A single en-suite room",
-      "A twin shared bedroom",
-      "A private studio flat",
-      "A homestay family house"
+      "A single room with breakfast",
+      "A double room without meals",
+      "A family suite for a week",
+      "A shared dormitory bed"
     ],
-    "answer": "A single en-suite room",
-    "audioText": "Receptionist: Good morning, city student accommodation. How can I assist you today? Student: Hello, I am looking for a single en-suite room for the upcoming autumn semester starting in September. Question: What type of room is the student inquiring about?",
-    "translation": "안내원: 안녕하세요, 시티 학생 기숙사입니다. 오늘 무엇을 도와드릴까요?\n학생: 안녕하세요, 9월에 시작하는 이번 가을 학기에 혼자 쓸 수 있는 개인 욕실 딸린 방(single en-suite room)을 찾고 있습니다.\n질문: 학생이 문의하고 있는 방의 유형은 무엇인가?",
-    "tip": "핵심 명사구 \"single en-suite room\"을 직접 청취하면 바로 답을 고를 수 있는 Section 1 전형적 문제입니다."
+    "answer": "A single room with breakfast",
+    "audioText": "Receptionist: Good morning, Grand City Hotel. How can I help you today? Guest: Hello, I would like to book a single room with breakfast for three nights starting this Friday. Question: What type of room does the guest want to book?",
+    "translation": "직원: 안녕하세요, 그랜드 시티 호텔입니다. 무엇을 도와드릴까요?\n투숙객: 안녕하세요, 이번 주 금요일부터 3박 동안 조식이 포함된 싱글룸(a single room with breakfast)을 예약하고 싶습니다.\n질문: 투숙객이 예약하고 싶어 하는 방은 어떤 유형인가?",
+    "tip": "[Band 5.0 · Listening Sec 1] 핵심 명사구 \"a single room with breakfast\"를 그대로 듣고 답을 고르는 기초 문제입니다."
   },
   {
     "id": "il_02",
     "difficulty": "하",
-    "category": "Section 1 (Library Registration)",
+    "category": "Section 1 (Band 5.0 · Library Card Registration)",
     "dialogue": [
       {
         "speaker": "Librarian",
-        "text": "To activate your digital university library card, we need to verify your proof of address. A utility bill or tenancy agreement will suffice."
+        "text": "To make a new library card, I need to see an ID with your photo, such as a passport or student card."
       },
       {
         "speaker": "Student",
-        "text": "I have brought my official tenancy contract right here in my folder."
+        "text": "Here is my university student card right in my wallet."
       }
     ],
-    "question": "Which document has the student brought to verify his address?",
+    "question": "What does the student show to the librarian?",
     "options": [
-      "A tenancy contract",
-      "An electricity utility bill",
+      "A university student card",
+      "An electricity bill",
       "A bank statement",
-      "A driver’s license"
+      "A train ticket"
     ],
-    "answer": "A tenancy contract",
-    "audioText": "Librarian: To activate your digital university library card, we need to verify your proof of address. A utility bill or tenancy agreement will suffice. Student: I have brought my official tenancy contract right here in my folder. Question: Which document has the student brought to verify his address?",
-    "translation": "사서: 디지털 대학 도서관 카드를 활성화하려면 주소 증명 서류를 확인해야 합니다. 공과금 청구서나 임대 계약서면 충분합니다.\n학생: 제 서류철에 공식 임대 계약서(tenancy contract)를 바로 챙겨왔습니다.\n질문: 학생이 주소를 확인하기 위해 가져온 서류는 무엇인가?",
-    "tip": "\"official tenancy contract\"를 그대로 언급하고 있으므로 직접 매칭하여 정답을 고릅니다."
+    "answer": "A university student card",
+    "audioText": "Librarian: To make a new library card, I need to see an ID with your photo, such as a passport or student card. Student: Here is my university student card right in my wallet. Question: What does the student show to the librarian?",
+    "translation": "사서: 새 도서관 카드를 만들려면 여권이나 학생증처럼 사진이 있는 신분증을 보여주셔야 합니다.\n학생: 제 지갑에 대학교 학생증(university student card)이 여기 있습니다.\n질문: 학생이 사서에게 보여준 것은 무엇인가?",
+    "tip": "[Band 5.0 · Listening Sec 1] 사서가 예시로 든 여권/학생증 중 학생이 실제로 제시한 \"university student card\"를 선택합니다."
   },
   {
     "id": "il_03",
     "difficulty": "하",
-    "category": "Section 1 (Car Rental Reservation)",
+    "category": "Section 1 (Band 5.0 · Car Rental Inquiry)",
     "dialogue": [
       {
         "speaker": "Agent",
-        "text": "We have a compact hatchback available for sixty pounds per day, or a full-size SUV for ninety."
+        "text": "We have a small city car for forty dollars a day, or a large van for seventy dollars."
       },
       {
         "speaker": "Customer",
-        "text": "Since we have four heavy suitcases, we will definitely take the SUV."
+        "text": "We have four big suitcases, so we definitely need the large van."
       }
     ],
-    "question": "Why did the customer choose the larger vehicle?",
+    "question": "Why did the customer choose the large van?",
     "options": [
-      "They have four heavy pieces of luggage",
-      "The compact car was already reserved",
-      "The SUV had a special weekend discount",
-      "They plan to drive across muddy mountain roads"
+      "They have four big suitcases",
+      "The small car was already booked",
+      "The van had a special discount",
+      "They are traveling with eight people"
     ],
-    "answer": "They have four heavy pieces of luggage",
-    "audioText": "Agent: We have a compact hatchback available for sixty pounds per day, or a full-size SUV for ninety. Customer: Since we have four heavy suitcases, we will definitely take the SUV. Question: Why did the customer choose the larger vehicle?",
-    "translation": "직원: 하루 60파운드의 소형 해치백이나 90파운드의 대형 SUV를 이용하실 수 있습니다.\n고객: 무거운 여행가방이 4개나 있어서, 확실히 SUV로 하겠습니다.\n질문: 고객이 더 큰 차량을 선택한 이유는 무엇인가?",
-    "tip": "\"four heavy suitcases\"가 선택지에서 \"four heavy pieces of luggage\"로 패러프레이징(Paraphrasing)된 형태입니다."
+    "answer": "They have four big suitcases",
+    "audioText": "Agent: We have a small city car for forty dollars a day, or a large van for seventy dollars. Customer: We have four big suitcases, so we definitely need the large van. Question: Why did the customer choose the large van?",
+    "translation": "직원: 하루 40달러짜리 소형 시내 차량과 70달러짜리 대형 밴이 있습니다.\n고객: 큰 여행가방이 4개나 있어서 무조건 대형 밴이 필요합니다.\n질문: 고객이 대형 밴을 선택한 이유는 무엇인가?",
+    "tip": "[Band 5.0 · Listening Sec 1] 이유를 나타내는 \"We have four big suitcases, so ~\" 부분을 정확히 청취합니다."
   },
   {
     "id": "il_04",
     "difficulty": "하",
-    "category": "Section 1 (Sports Club Membership)",
+    "category": "Section 1 (Band 5.0 · Swimming Lesson Schedule)",
     "dialogue": [
       {
-        "speaker": "Instructor",
-        "text": "Our peak membership allows unlimited access anytime, whereas off-peak access ends at three in the afternoon."
+        "speaker": "Receptionist",
+        "text": "We have beginner swimming classes on Tuesday evenings and Saturday mornings."
       },
       {
         "speaker": "Member",
-        "text": "I work until five, so the peak membership is the only viable option for me."
+        "text": "I work late on weekdays, so the Saturday morning class is best for me."
       }
     ],
-    "question": "Which membership plan will the customer sign up for?",
+    "question": "When will the member attend the swimming class?",
     "options": [
-      "The peak membership plan",
-      "The off-peak membership plan",
-      "A weekend-only family pass",
-      "A trial one-week guest pass"
+      "On Saturday mornings",
+      "On Tuesday evenings",
+      "On Friday afternoons",
+      "Every weekday morning"
     ],
-    "answer": "The peak membership plan",
-    "audioText": "Instructor: Our peak membership allows unlimited access anytime, whereas off-peak access ends at three in the afternoon. Member: I work until five, so the peak membership is the only viable option for me. Question: Which membership plan will the customer sign up for?",
-    "translation": "강사: 피크 회원권은 언제든 무제한 이용 가능하지만, 오프피크는 오후 3시에 입장이 마감됩니다.\n회원: 제가 5시까지 일하므로, 피크 회원권만이 제게 유일하게 가능한 선택이네요.\n질문: 고객이 가입할 회원권 플랜은 무엇인가?",
-    "tip": "퇴근 시간(5시)을 고려하여 \"peak membership\"을 선택한 결론부를 포착합니다."
+    "answer": "On Saturday mornings",
+    "audioText": "Receptionist: We have beginner swimming classes on Tuesday evenings and Saturday mornings. Member: I work late on weekdays, so the Saturday morning class is best for me. Question: When will the member attend the swimming class?",
+    "translation": "안내원: 초급 수영 수업은 화요일 저녁과 토요일 오전에 있습니다.\n회원: 평일에는 늦게까지 일해서 토요일 오전 수업이 저에게 가장 좋겠네요.\n질문: 회원은 언제 수영 수업에 참석할 예정인가?",
+    "tip": "[Band 5.0 · Listening Sec 1] 평일 야근 때문에 선택한 \"Saturday morning class\"를 포착합니다."
   },
   {
     "id": "il_05",
     "difficulty": "하",
-    "category": "Section 1 (Guided City Tour)",
+    "category": "Section 1 (Band 5.0 · City Walking Tour)",
     "dialogue": [
       {
         "speaker": "Tour Guide",
-        "text": "The morning walking tour begins outside the cathedral at nine-thirty sharp. Please ensure you arrive ten minutes prior."
+        "text": "The walking tour starts at the main square at nine-thirty, so please meet us ten minutes early at nine-twenty."
       },
       {
         "speaker": "Tourist",
-        "text": "Understood, we will gather outside the main cathedral doors at nine-twenty."
+        "text": "Okay, we will be at the main square at nine-twenty."
       }
     ],
-    "question": "What time should tourists assemble at the meeting point?",
+    "question": "What time should the tourists meet at the main square?",
     "options": [
       "At 9:20 AM",
       "At 9:30 AM",
@@ -125,14 +125,14 @@
       "At 10:00 AM"
     ],
     "answer": "At 9:20 AM",
-    "audioText": "Tour Guide: The morning walking tour begins outside the cathedral at nine-thirty sharp. Please ensure you arrive ten minutes prior. Tourist: Understood, we will gather outside the main cathedral doors at nine-twenty. Question: What time should tourists assemble at the meeting point?",
-    "translation": "가이드: 오전 워킹 투어는 대성당 밖에서 정각 9시 30분에 시작합니다. 10분 전에 도착해 주시기 바랍니다.\n관광객: 알겠습니다, 9시 20분에 대성당 정문 밖에 모이겠습니다.\n질문: 관광객들이 집결 장소에 모여야 하는 시간은 언제인가?",
-    "tip": "시작 시간(9:30)과 10분 전 집결 시간(9:20)을 구분하는 시간 함정 문제입니다."
+    "audioText": "Tour Guide: The walking tour starts at the main square at nine-thirty, so please meet us ten minutes early at nine-twenty. Tourist: Okay, we will be at the main square at nine-twenty. Question: What time should the tourists meet at the main square?",
+    "translation": "가이드: 워킹 투어는 중앙 광장에서 9시 30분에 출발하니, 10분 일찍 9시 20분에 모여 주세요.\n관광객: 네, 9시 20분까지 중앙 광장으로 가겠습니다.\n질문: 관광객들이 중앙 광장에 모여야 하는 시간은 언제인가?",
+    "tip": "[Band 5.0 · Listening Sec 1] 출발 시간(9:30)과 모이는 시간(9:20)을 구분하는 전형적인 시간 청취 문제입니다."
   },
   {
     "id": "il_06",
     "difficulty": "중",
-    "category": "Section 2 (Campus Tour & Facility Guidance)",
+    "category": "Section 2 (Band 5.5~6.5 · Campus Sports Center)",
     "dialogue": [
       {
         "speaker": "Guide",
@@ -157,37 +157,37 @@
     "answer": "The Olympic swimming pool",
     "audioText": "Guide: Now, turning to our university sports complex. Please note that while the gymnasium is open seven days a week, the Olympic swimming pool is currently closed for urgent maintenance. Visitor: When is the pool expected to reopen to registered members? Guide: Technicians estimate work will finish by next Thursday morning. Question: Which facility is temporarily unavailable to visitors?",
     "translation": "가이드: 이제 대학 스포츠 콤플렉스로 가보겠습니다. 체육관은 주 7일 운영되지만, 올림픽 규격 수영장은 현재 긴급 보수 공사로 문을 닫았으니 유의하시기 바랍니다.\n방문객: 등록 회원들에게 수영장이 언제 다시 열릴 예정인가요?\n가이드: 기사분들께서는 다음 주 목요일 아침까지 작업이 끝날 것으로 예상하고 있습니다.\n질문: 방문객이 현재 일시적으로 이용할 수 없는 시설은 무엇인가?",
-    "tip": "\"currently closed for urgent maintenance\" 앞뒤의 주어 \"Olympic swimming pool\"을 포착하는 것이 정답 단서입니다."
+    "tip": "[Band 5.5~6.5 · Listening Sec 2] \"currently closed for urgent maintenance\"가 질문의 \"temporarily unavailable\"로 패러프레이징되었습니다."
   },
   {
     "id": "il_07",
     "difficulty": "중",
-    "category": "Section 3 (Academic Discussion - Dissertation Review)",
+    "category": "Section 3 (Band 5.5~6.5 · Research Project Discussion)",
     "dialogue": [
       {
         "speaker": "Tutor",
-        "text": "Your literature review is comprehensive, David, but your data collection methodology relies too heavily on small qualitative surveys."
+        "text": "Your project outline looks good, David, but interviewing only ten students is too small a sample."
       },
       {
         "speaker": "David",
-        "text": "Would you suggest conducting a broader quantitative questionnaire to reinforce empirical validity?"
+        "text": "Should I send out an online survey to at least one hundred students instead?"
       },
       {
         "speaker": "Tutor",
-        "text": "Precisely. Incorporating at least two hundred respondents will render your statistical analysis significantly more robust."
+        "text": "Exactly. A larger online survey will make your final results much more reliable."
       }
     ],
-    "question": "What modification does the tutor recommend for David’s dissertation?",
+    "question": "What does the tutor advise David to do for his project?",
     "options": [
-      "Expanding the sample size via quantitative questionnaires",
-      "Rewriting the theoretical literature review section",
-      "Changing the research topic entirely before submission",
-      "Omitting statistical modeling from the final paper"
+      "Survey a larger number of students online",
+      "Rewrite the introduction of his paper",
+      "Change his research topic completely",
+      "Cancel the student interviews immediately"
     ],
-    "answer": "Expanding the sample size via quantitative questionnaires",
-    "audioText": "Tutor: Your literature review is comprehensive, David, but your data collection methodology relies too heavily on small qualitative surveys. David: Would you suggest conducting a broader quantitative questionnaire to reinforce empirical validity? Tutor: Precisely. Incorporating at least two hundred respondents will render your statistical analysis significantly more robust. Question: What modification does the tutor recommend for David’s dissertation?",
-    "translation": "지도교수: 데이비드, 문헌 고찰은 매우 포괄적이지만, 데이터 수집 방법론이 소규모 정성 설문조사에 너무 크게 의존하고 있네.\n데이비드: 실증적 타당성을 강화하기 위해 더 광범위한 정량적 설문지를 진행하는 것이 좋을까요?\n지도교수: 정확해. 최소 200명의 응답자를 확보하면 통계 분석이 훨씬 더 견고해질 걸세.\n질문: 지도교수는 데이비드의 논문에 어떤 수정을 권고하는가?",
-    "tip": "\"broader quantitative questionnaire\"와 \"incorporating at least two hundred respondents\"를 통한 표본 확대 권고를 파악합니다."
+    "answer": "Survey a larger number of students online",
+    "audioText": "Tutor: Your project outline looks good, David, but interviewing only ten students is too small a sample. David: Should I send out an online survey to at least one hundred students instead? Tutor: Exactly. A larger online survey will make your final results much more reliable. Question: What does the tutor advise David to do for his project?",
+    "translation": "지도교수: 데이비드, 프로젝트 개요는 좋지만 학생 10명만 인터뷰하는 건 표본이 너무 작네.\n데이비드: 대신 최소 100명의 학생에게 온라인 설문지를 보내는 게 좋을까요?\n지도교수: 맞아. 더 큰 규모의 온라인 설문조사를 하면 최종 결과가 훨씬 더 신뢰할 만해질 거야.\n질문: 지도교수는 데이비드에게 프로젝트를 위해 무엇을 하라고 조언하는가?",
+    "tip": "[Band 5.5~6.5 · Listening Sec 3] \"send out an online survey to at least one hundred students\"와 \"A larger online survey\"를 연결합니다."
   },
   {
     "id": "il_08",

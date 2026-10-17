@@ -1,0 +1,362 @@
+[
+  {
+    "id": "id_01",
+    "sentence": "I usually take the bus to work.",
+    "phonetics": "take the bus to work (버스를 타고 출근하다)",
+    "translation": "나는 보통 버스를 타고 출근한다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] 빈도부사 usually + take the bus",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_02",
+    "sentence": "My hometown is famous for fresh seafood.",
+    "phonetics": "be famous for (~로 유명하다)",
+    "translation": "내 고향은 신선한 해산물로 유명하다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] be famous for + 명사",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_03",
+    "sentence": "I enjoy reading books in my free time.",
+    "phonetics": "in my free time (여가 시간에)",
+    "translation": "나는 여가 시간에 책 읽는 것을 즐긴다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] enjoy + 동명사(-ing)",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_04",
+    "sentence": "Listening to quiet music helps me relax.",
+    "phonetics": "help me relax (긴장을 푸는 데 도움이 되다)",
+    "translation": "조용한 음악을 듣는 것은 내가 긴장을 푸는 데 도움이 된다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] 동명사 주어 + help + 동사원형",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_05",
+    "sentence": "We booked a double room at the hotel.",
+    "phonetics": "book a double room (더블룸을 예약하다)",
+    "translation": "우리는 호텔에 더블룸을 예약했다.",
+    "keyPoint": "[Band 5.0 · Listening Sec 1] 호텔 예약 필수 표현 book a room",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_06",
+    "sentence": "The train station is very close to here.",
+    "phonetics": "be close to (~에서 가까운)",
+    "translation": "기차역은 여기에서 매우 가깝다.",
+    "keyPoint": "[Band 5.0 · Listening Sec 1] 위치·거리 표현 be close to",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_07",
+    "sentence": "Children should eat fresh fruit every day.",
+    "phonetics": "eat fresh fruit (신선한 과일을 먹다)",
+    "translation": "아이들은 매일 신선한 과일을 먹어야 한다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] 건강·식습관 기초 조동사 should",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_08",
+    "sentence": "Online shopping saves a lot of time.",
+    "phonetics": "save a lot of time (시간을 많이 절약하다)",
+    "translation": "온라인 쇼핑은 많은 시간을 절약해 준다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] save time (시간을 아끼다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_09",
+    "sentence": "She works part-time at a local cafe.",
+    "phonetics": "work part-time (아르바이트/시간제로 일하다)",
+    "translation": "그녀는 동네 카페에서 시간제 아르바이트를 한다.",
+    "keyPoint": "[Band 5.0 · Listening Sec 1] work part-time at + 장소",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_10",
+    "sentence": "Many tourists visit this museum every summer.",
+    "phonetics": "visit this museum (이 박물관을 방문하다)",
+    "translation": "매년 여름 많은 관광객들이 이 박물관을 방문한다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] 지역 명소·관광 기초 묘사",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_11",
+    "sentence": "Walking in the park is good for health.",
+    "phonetics": "be good for health (건강에 좋다)",
+    "translation": "공원에서 산책하는 것은 건강에 좋다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] be good for (~에 유익하다)",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_12",
+    "sentence": "I prefer cooking dinner at home with family.",
+    "phonetics": "prefer cooking at home (집에서 요리하는 것을 선호하다)",
+    "translation": "나는 가족과 함께 집에서 저녁을 요리하는 것을 선호한다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] prefer + 동명사(-ing)",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_13",
+    "sentence": "The city library opens at nine every morning.",
+    "phonetics": "open at nine (9시에 문을 열다)",
+    "translation": "시립 도서관은 매일 아침 9시에 문을 연다.",
+    "keyPoint": "[Band 5.0 · Listening Sec 1] 공공시설 운영 시간 안내",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_14",
+    "sentence": "Learning English helps us make new friends.",
+    "phonetics": "make new friends (새로운 친구를 사귀다)",
+    "translation": "영어를 배우는 것은 우리가 새로운 친구를 사귀는 데 도움이 된다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] help + 목적어 + 동사원형",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_15",
+    "sentence": "It is important to get enough sleep.",
+    "phonetics": "get enough sleep (충분한 수면을 취하다)",
+    "translation": "충분한 수면을 취하는 것은 중요하다.",
+    "keyPoint": "[Band 5.0 · Speaking Part 1] 가주어 It is important to + V",
+    "difficulty": "하"
+  },
+  {
+    "id": "id_16",
+    "sentence": "Public transport is both convenient and affordable for commuters.",
+    "phonetics": "convenient and affordable (편리하고 가격 부담이 없는)",
+    "translation": "대중교통은 통근자들에게 편리하면서도 가격 부담이 없다.",
+    "keyPoint": "[Band 5.5~6.5 · Urban] both A and B + affordable",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_17",
+    "sentence": "Regular exercise plays a key role in reducing stress.",
+    "phonetics": "play a key role in (~에서 핵심적인 역할을 하다)",
+    "translation": "규칙적인 운동은 스트레스를 줄이는 데 핵심적인 역할을 한다.",
+    "keyPoint": "[Band 5.5~6.5 · Health] play a key role in + 동명사(-ing)",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_18",
+    "sentence": "Working from home offers employees much greater flexibility.",
+    "phonetics": "offer greater flexibility (더 큰 유연성을 제공하다)",
+    "translation": "재택근무는 직원들에게 훨씬 더 큰 유연성을 제공한다.",
+    "keyPoint": "[Band 5.5~6.5 · Work] work from home + offer flexibility",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_19",
+    "sentence": "Learning a foreign language broadens our cultural horizons.",
+    "phonetics": "broaden our cultural horizons (문화적 시야를 넓히다)",
+    "translation": "외국어를 배우는 것은 우리의 문화적 시야를 넓혀준다.",
+    "keyPoint": "[Band 5.5~6.5 · Education] broaden one's horizons (안목을 넓히다)",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_20",
+    "sentence": "Governments should invest more money in renewable energy.",
+    "phonetics": "invest in renewable energy (재생 에너지에 투자하다)",
+    "translation": "정부는 재생 에너지에 더 많은 자금을 투자해야 한다.",
+    "keyPoint": "[Band 5.5~6.5 · Environment] invest in + renewable energy",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_21",
+    "sentence": "Social media has completely changed the way we communicate.",
+    "phonetics": "change the way we communicate (소통 방식을 바꾸다)",
+    "translation": "소셜 미디어는 우리가 소통하는 방식을 완전히 바꾸어 놓았다.",
+    "keyPoint": "[Band 5.5~6.5 · Media] 현재완료 has changed + the way S + V",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_22",
+    "sentence": "A balanced diet can help prevent many chronic illnesses.",
+    "phonetics": "a balanced diet / chronic illnesses (균형 잡힌 식단 / 만성 질환)",
+    "translation": "균형 잡힌 식단은 많은 만성 질환을 예방하는 데 도움이 된다.",
+    "keyPoint": "[Band 5.5~6.5 · Health] a balanced diet + prevent illnesses",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_23",
+    "sentence": "Traffic congestion has become a serious problem in cities.",
+    "phonetics": "traffic congestion (교통 체증)",
+    "translation": "교통 체증은 도시에서 심각한 문제가 되었다.",
+    "keyPoint": "[Band 5.5~6.5 · Urban] traffic congestion + serious problem",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_24",
+    "sentence": "Studying abroad gives young people valuable life experience.",
+    "phonetics": "valuable life experience (귀중한 인생 경험)",
+    "translation": "해외 유학은 젊은이들에게 귀중한 인생 경험을 준다.",
+    "keyPoint": "[Band 5.5~6.5 · Education] Studying abroad + valuable experience",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_25",
+    "sentence": "Recycling plastic waste helps protect our marine environment.",
+    "phonetics": "protect our marine environment (해양 환경을 보호하다)",
+    "translation": "플라스틱 쓰레기를 재활용하는 것은 해양 환경을 보호하는 데 도움이 된다.",
+    "keyPoint": "[Band 5.5~6.5 · Environment] recycle plastic waste + marine environment",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_26",
+    "sentence": "Good communication skills are essential in the modern workplace.",
+    "phonetics": "essential in the workplace (직장에서 필수적인)",
+    "translation": "원활한 의사소통 능력은 현대 직장에서 필수적이다.",
+    "keyPoint": "[Band 5.5~6.5 · Career] communication skills + be essential in",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_27",
+    "sentence": "Tourism brings major economic benefits to local communities.",
+    "phonetics": "bring economic benefits to (~에 경제적 이익을 가져오다)",
+    "translation": "관광 산업은 지역 사회에 큰 경제적 이익을 가져온다.",
+    "keyPoint": "[Band 5.5~6.5 · Economy] bring economic benefits to + 명사",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_28",
+    "sentence": "Parents have a strong influence on children's reading habits.",
+    "phonetics": "have a strong influence on (~에 강한 영향을 미치다)",
+    "translation": "부모는 자녀의 독서 습관에 강한 영향을 미친다.",
+    "keyPoint": "[Band 5.5~6.5 · Family] have a strong influence on",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_29",
+    "sentence": "Historic buildings should be preserved for future generations.",
+    "phonetics": "be preserved for future generations (미래 세대를 위해 보존되다)",
+    "translation": "역사적 건축물은 미래 세대를 위해 보존되어야 한다.",
+    "keyPoint": "[Band 5.5~6.5 · Culture] 조동사 수동태 should be preserved",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_30",
+    "sentence": "Online courses allow students to learn at their own pace.",
+    "phonetics": "at their own pace (자신의 속도에 맞춰)",
+    "translation": "온라인 강좌는 학생들이 자신의 속도에 맞춰 학습할 수 있게 해준다.",
+    "keyPoint": "[Band 5.5~6.5 · Education] allow A to B + at one's own pace",
+    "difficulty": "중"
+  },
+  {
+    "id": "id_31",
+    "sentence": "Rapid urbanization has led to severe housing shortages in major cities.",
+    "phonetics": "rapid urbanization / housing shortages (급격한 도시화 / 주택 부족)",
+    "translation": "급격한 도시화는 주요 대도시에서 심각한 주택 부족을 초래했다.",
+    "keyPoint": "[Band 6.5~8.0 · Urbanization] lead to + severe housing shortages",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_32",
+    "sentence": "Strict environmental regulations must be enforced to curb carbon emissions.",
+    "phonetics": "enforce regulations / curb emissions (규제를 시행하다 / 배출을 억제하다)",
+    "translation": "탄소 배출을 억제하기 위해 엄격한 환경 규제가 시행되어야 한다.",
+    "keyPoint": "[Band 6.5~8.0 · Environment] be enforced to + curb carbon emissions",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_33",
+    "sentence": "Economic growth should never come at the expense of nature.",
+    "phonetics": "at the expense of (~을 희생하면서, ~을 대가로)",
+    "translation": "경제 성장이 결코 자연을 희생하면서 이루어져서는 안 된다.",
+    "keyPoint": "[Band 6.5~8.0 · Writing Task 2] come at the expense of",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_34",
+    "sentence": "Exposure to diverse cultures fosters mutual understanding and social tolerance.",
+    "phonetics": "foster mutual understanding (상호 이해를 증진하다)",
+    "translation": "다양한 문화에 대한 노출은 상호 이해와 사회적 관용을 증진한다.",
+    "keyPoint": "[Band 6.5~8.0 · Globalization] Exposure to + foster understanding",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_35",
+    "sentence": "Medical advances have significantly extended average life expectancy worldwide.",
+    "phonetics": "extend average life expectancy (평균 기대 수명을 연장하다)",
+    "translation": "의학의 발전은 전 세계적으로 평균 기대 수명을 크게 연장시켰다.",
+    "keyPoint": "[Band 6.5~8.0 · Healthcare] Medical advances + life expectancy",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_36",
+    "sentence": "While automation boosts productivity, it may displace traditional manual workers.",
+    "phonetics": "boost productivity / displace workers (생산성을 높이다 / 노동자를 대체하다)",
+    "translation": "자동화는 생산성을 높이는 반면, 전통적인 육체노동자들을 대체할 수도 있다.",
+    "keyPoint": "[Band 6.5~8.0 · Technology] While 반전절 + boost productivity",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_37",
+    "sentence": "Equal access to quality education promotes social mobility for everyone.",
+    "phonetics": "equal access to / social mobility (평등한 접근 / 사회적 이동성)",
+    "translation": "양질의 교육에 대한 평등한 접근은 모두를 위한 사회적 이동성을 촉진한다.",
+    "keyPoint": "[Band 6.5~8.0 · Society] equal access to + promote social mobility",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_38",
+    "sentence": "An aging population places heavy financial pressure on healthcare systems.",
+    "phonetics": "place heavy financial pressure on (~에 막대한 재정적 부담을 주다)",
+    "translation": "고령화 인구는 의료 시스템에 막대한 재정적 부담을 준다.",
+    "keyPoint": "[Band 6.5~8.0 · Demographics] An aging population + place pressure on",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_39",
+    "sentence": "Excessive reliance on smartphones can undermine face-to-face interpersonal skills.",
+    "phonetics": "excessive reliance on / undermine (지나친 의존 / 약화시키다)",
+    "translation": "스마트폰에 대한 지나친 의존은 대면 대인관계 기술을 약화시킬 수 있다.",
+    "keyPoint": "[Band 6.5~8.0 · Media] reliance on + undermine interpersonal skills",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_40",
+    "sentence": "Governments must strike a balance between economic development and sustainability.",
+    "phonetics": "strike a balance between A and B (A와 B 사이의 균형을 맞추다)",
+    "translation": "정부는 경제 발전과 지속 가능성 사이에서 균형을 잡아야 한다.",
+    "keyPoint": "[Band 6.5~8.0 · Policy] strike a balance between A and B",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_41",
+    "sentence": "International cooperation is indispensable for tackling global climate change effectively.",
+    "phonetics": "indispensable for tackling (~을 해결하는 데 필수불가결한)",
+    "translation": "지구 기후 변화를 효과적으로 해결하기 위해 국제 협력은 필수불가결하다.",
+    "keyPoint": "[Band 6.5~8.0 · Global Issues] be indispensable for + tackling",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_42",
+    "sentence": "Financial incentives can encourage corporations to adopt sustainable green practices.",
+    "phonetics": "financial incentives / adopt practices (재정적 인센티브 / 관행을 채택하다)",
+    "translation": "재정적 인센티브는 기업들이 지속 가능한 친환경 관행을 채택하도록 장려할 수 있다.",
+    "keyPoint": "[Band 6.5~8.0 · Business] financial incentives + adopt practices",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_43",
+    "sentence": "Investing in early childhood education yields substantial long-term social benefits.",
+    "phonetics": "yield substantial long-term benefits (상당한 장기적 혜택을 낳다)",
+    "translation": "조기 유아 교육에 투자하는 것은 상당한 장기적 사회적 혜택을 낳는다.",
+    "keyPoint": "[Band 6.5~8.0 · Education] Investing in + yield substantial benefits",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_44",
+    "sentence": "Preserving architectural heritage helps maintain our unique national cultural identity.",
+    "phonetics": "architectural heritage / cultural identity (건축 유산 / 문화적 정체성)",
+    "translation": "건축 유산을 보존하는 것은 우리의 고유한 국가 문화적 정체성을 유지하는 데 도움이 된다.",
+    "keyPoint": "[Band 6.5~8.0 · Heritage] Preserving heritage + cultural identity",
+    "difficulty": "상"
+  },
+  {
+    "id": "id_45",
+    "sentence": "Technological innovation has fundamentally transformed modern global business operations.",
+    "phonetics": "fundamentally transform (근본적으로 변모시키다)",
+    "translation": "기술 혁신은 현대 글로벌 비즈니스 운영 방식을 근본적으로 변모시켰다.",
+    "keyPoint": "[Band 6.5~8.0 · Innovation] fundamentally transform + business operations",
+    "difficulty": "상"
+  }
+]

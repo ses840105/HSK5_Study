@@ -162,6 +162,14 @@
           </div>
         </div>
 
+        <div class="mode-card" data-mode="dictation">
+          <div class="mode-icon">🎙️</div>
+          <div class="mode-info">
+            <div class="mode-name">말하기 딕테이션 (口语)</div>
+            <div class="mode-desc">원어민 문장 듣고 똑같이 말하기 &amp; 틀린 글자/단어 정밀 비교</div>
+          </div>
+        </div>
+
         <div class="mode-card" data-mode="mixed">
           <div class="mode-icon">🎲</div>
           <div class="mode-info">
@@ -266,6 +274,79 @@
           <div id="main-chinese" class="chinese-text">采取措施</div>
           <div id="main-pinyin" class="pinyin-text">cǎiqǔ cuòshī</div>
           <div id="sub-prompt" class="sub-prompt">다음 단어의 올바른 한국어 뜻은 무엇일까요?</div>
+        </div>
+
+        <!-- 딕테이션(말하기/따라말하기) 전용 UI -->
+        <div id="dictation-box" class="dictation-box hidden">
+          <!-- 딕테이션 전용 난이도 즉시 전환 바 -->
+          <div class="dictation-diff-bar" id="dictation-diff-bar">
+            <span class="dictation-diff-bar-label" id="dictation-diff-bar-label">🎚️ 딕테이션 난이도:</span>
+            <div class="dictation-diff-btns">
+              <button type="button" class="dictation-diff-chip" data-dict-diff="하" id="dict-diff-easy">🟢 하 (초급 · 짧은 문장)</button>
+              <button type="button" class="dictation-diff-chip" data-dict-diff="중" id="dict-diff-mid">🟡 중 (중급 · 표준 단문)</button>
+              <button type="button" class="dictation-diff-chip" data-dict-diff="상" id="dict-diff-hard">🔴 상 (고급 · 실전 구문)</button>
+            </div>
+          </div>
+
+          <div class="dictation-audio-bar">
+            <button type="button" id="dictation-listen-btn" class="primary-btn dictation-ctrl-btn">
+              <span>🔊</span> <span id="dictation-listen-label">원어민 문장 듣기</span>
+            </button>
+            <button type="button" id="dictation-slow-btn" class="secondary-btn dictation-ctrl-btn">
+              <span>🐢</span> <span id="dictation-slow-label">천천히 듣기 (0.75x)</span>
+            </button>
+            <button type="button" id="dictation-hint-btn" class="secondary-btn dictation-ctrl-btn">
+              <span>👁️</span> <span id="dictation-hint-label">원문/병음 힌트 보기</span>
+            </button>
+          </div>
+
+          <div class="dictation-prompt-card">
+            <div class="dictation-meaning-line" id="dictation-meaning-line">🇰🇷 의미 힌트: 잠시만 기다려 주세요.</div>
+            <div class="dictation-guide-line" id="dictation-guide-line">🌱 초급 가이드 (5글자): 请 ◯ ◯ ◯ ◯</div>
+            <div id="dictation-hint-box" class="dictation-hint-box hidden">
+              <div id="dictation-hint-sentence" class="dictation-hint-sentence">请稍等一下。</div>
+              <div id="dictation-hint-sub" class="dictation-hint-sub">Qǐng shāo děng yíxià.</div>
+            </div>
+          </div>
+
+          <div class="dictation-mic-section">
+            <button type="button" id="dictation-mic-btn" class="dictation-mic-btn">
+              <span class="mic-icon" id="dictation-mic-icon">🎤</span>
+              <span id="dictation-mic-label">마이크 누르고 따라 말하기</span>
+            </button>
+            <div id="dictation-mic-status" class="dictation-mic-status">원어민 음성을 들은 뒤 버튼을 누르고 똑같이 말해보세요 (직접 타이핑도 가능)</div>
+          </div>
+
+          <div class="dictation-input-wrap">
+            <textarea id="dictation-input" class="dictation-input" rows="2" placeholder="마이크로 말하면 여기에 인식된 문장이 표시됩니다. (직접 입력 후 채점도 가능합니다)"></textarea>
+            <div class="dictation-action-row">
+              <button type="button" id="dictation-clear-btn" class="secondary-btn dictation-sub-btn">🔄 지우기 / 다시 말하기</button>
+              <button type="button" id="dictation-submit-btn" class="primary-btn dictation-sub-btn">✅ 발음 채점 및 비교하기</button>
+            </div>
+          </div>
+
+          <!-- 채점 후 정밀 비교(Diff) 결과 카드 -->
+          <div id="dictation-diff-card" class="dictation-diff-card hidden">
+            <div class="dictation-diff-header">
+              <span id="dictation-diff-title" class="dictation-diff-title">🔍 원문 vs 내 발음 정밀 비교 분석</span>
+              <span id="dictation-accuracy-badge" class="dictation-accuracy-badge pass">정확도 100%</span>
+            </div>
+
+            <div class="dictation-diff-row">
+              <div class="dictation-diff-label" id="dictation-target-label">🎯 정답 원문 (초록=일치, 빨강 밑줄=누락/오차):</div>
+              <div id="dictation-diff-target" class="dictation-diff-content"></div>
+            </div>
+
+            <div class="dictation-diff-row">
+              <div class="dictation-diff-label" id="dictation-spoken-label">🗣️ 내가 말한 문장 (초록=정확, 빨강 취소선=틀린 발음):</div>
+              <div id="dictation-diff-spoken" class="dictation-diff-content"></div>
+            </div>
+
+            <div class="dictation-diff-row">
+              <div class="dictation-diff-label" id="dictation-Diagnosis-label">📌 틀린 부분 상세 진단:</div>
+              <div id="dictation-diff-summary" class="dictation-diff-summary"></div>
+            </div>
+          </div>
         </div>
 
         <!-- 4지선다 옵션 목록 -->

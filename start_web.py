@@ -27,14 +27,16 @@ def sync_vocab_bundle():
             "chengyu": "hsk5_chengyu.json",
             "cloze": "hsk5_cloze.json",
             "grammar": "hsk5_grammar.json",
-            "listening": "hsk5_listening.json"
+            "listening": "hsk5_listening.json",
+            "dictation": "hsk5_dictation.json"
         }
         ielts_files = {
             "vocab": "ielts_vocab.json",
             "listening": "ielts_listening.json",
             "idioms": "ielts_idioms.json",
             "cloze": "ielts_cloze.json",
-            "grammar": "ielts_grammar.json"
+            "grammar": "ielts_grammar.json",
+            "dictation": "ielts_dictation.json"
         }
 
         bundle = {"hsk": {}, "ielts": {}}

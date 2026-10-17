@@ -25,6 +25,7 @@ HSK_CHENGYU = os.path.join(BASE_DIR, "vocab", "hsk5_chengyu.json")
 HSK_CLOZE = os.path.join(BASE_DIR, "vocab", "hsk5_cloze.json")
 HSK_GRAMMAR = os.path.join(BASE_DIR, "vocab", "hsk5_grammar.json")
 HSK_LISTENING = os.path.join(BASE_DIR, "vocab", "hsk5_listening.json")
+HSK_DICTATION = os.path.join(BASE_DIR, "vocab", "hsk5_dictation.json")
 
 # IELTS 파일 경로
 IELTS_VOCAB = os.path.join(BASE_DIR, "ielts", "ielts_vocab.json")
@@ -32,6 +33,7 @@ IELTS_LISTENING = os.path.join(BASE_DIR, "ielts", "ielts_listening.json")
 IELTS_IDIOMS = os.path.join(BASE_DIR, "ielts", "ielts_idioms.json")
 IELTS_CLOZE = os.path.join(BASE_DIR, "ielts", "ielts_cloze.json")
 IELTS_GRAMMAR = os.path.join(BASE_DIR, "ielts", "ielts_grammar.json")
+IELTS_DICTATION = os.path.join(BASE_DIR, "ielts", "ielts_dictation.json")
 
 def load_json(filepath):
     if os.path.exists(filepath):
@@ -503,6 +505,76 @@ def get_diff_input(default="중"):
         pass
     return default
 
+def run_dictation_quiz(dictation_list, count=5, diff="하", lang="hsk"):
+    import re
+    import difflib
+    candidates = filter_items_by_diff_and_srs(dictation_list, diff, count, lang)
+    score = 0
+    tag = "🎙️ HSK 5급 중국어 말하기/딕테이션" if lang == "hsk" else "🎙️ IELTS 영어 스피킹/딕테이션"
+    pass_threshold = 70 if diff == "하" else (75 if diff == "중" else 80)
+    print(f"\n[{tag} (난이도: {normalize_diff(diff)} | 통과 기준: {pass_threshold}%↑)] 총 {len(candidates)}문제")
+    print("=" * 60)
+
+    for idx, (q, is_review) in enumerate(candidates, 1):
+        d_tag = q.get("difficulty", diff)
+        review_tag = " [🔁 오답 복습]" if is_review else ""
+        target = q["sentence"]
+        print(f"\n[문제 {idx}/{len(candidates)}] [{d_tag}]{review_tag}")
+        print(f"🇰🇷 의미 힌트: {q.get('translation', '')}")
+        if d_tag == "하":
+            if lang == "hsk":
+                clean_chars = re.sub(r"[，。！？、；：“”‘’（）().,!?;:\"'\\s]+", "", target)
+                print(f"🌱 초급 가이드 ({len(clean_chars)}글자): {clean_chars[:2]} " + " ".join(["◯"] * max(0, len(clean_chars) - 2)))
+            else:
+                words = target.strip().split()
+                print(f"🌱 초급 가이드 ({len(words)}단어): {' '.join(words[:2])} " + " ".join(["____"] * max(0, len(words) - 2)))
+        elif d_tag == "중":
+            print(f"🌿 중급 핵심 표현: {q.get('keyPoint') or q.get('phonetics') or ''}")
+        print("🔊 원어민 음성을 재생합니다... (r=다시 듣기, h=원문/병음 힌트 보기, q=종료)")
+        play_mac_tts(target, lang=lang)
+
+        while True:
+            try:
+                user_in = input("🎤 들은 문장을 따라 말하거나 입력하세요: ").strip()
+            except (KeyboardInterrupt, EOFError):
+                return
+            if user_in.lower() == "q":
+                return
+            if user_in.lower() == "r":
+                play_mac_tts(target, lang=lang)
+                continue
+            if user_in.lower() == "h":
+                print(f"   💡 힌트: {target} ({q.get('pinyin') or q.get('phonetics') or q.get('keyPoint', '')})")
+                continue
+            if not user_in:
+                continue
+            break
+
+        norm_re = r"[，。！？、；：“”‘’（）().,!?;:\"'\\s-]+"
+        t_clean = re.sub(norm_re, "", target).lower()
+        u_clean = re.sub(norm_re, "", user_in).lower()
+        ratio = round(difflib.SequenceMatcher(None, t_clean, u_clean).ratio() * 100)
+        is_pass = ratio >= pass_threshold
+        update_item_progress(lang, q, is_pass)
+
+        if is_pass:
+            play_feedback_sound(True)
+            score += 1
+            print(f"   🎉 정답(통과)입니다! (정확도: {ratio}% / 기준: {pass_threshold}%↑)")
+        else:
+            play_feedback_sound(False)
+            print(f"   ❌ 오답입니다. (정확도: {ratio}% / 기준: {pass_threshold}%↑)")
+
+        print(f"   🎯 정답 원문: {target}")
+        print(f"   🗣️ 내 답변  : {user_in}")
+        if q.get("pinyin") or q.get("phonetics"):
+            print(f"   📌 발음/구문: {q.get('pinyin') or q.get('phonetics')}")
+
+    print("\n" + "=" * 60)
+    print(f"🏁 딕테이션 완료! 결과: {score}/{len(candidates)} 점 ({(score/len(candidates)*100 if candidates else 0):.0f}%)")
+    print("=" * 60)
+
+
 def interactive_menu():
     while True:
         print("\n" + "=" * 55)
@@ -522,6 +594,7 @@ def interactive_menu():
         lang = "ielts" if lang_choice == "2" else "hsk"
         tag = "🇬🇧 IELTS 영어" if lang == "ielts" else "🇨🇳 HSK 5급 중국어"
         vocab, colloc, chengyu, cloze, grammar, listening = load_all_data(lang)
+        dictation = load_json(IELTS_DICTATION if lang == "ielts" else HSK_DICTATION)
 
         print_srs_summary(lang)
 
@@ -533,15 +606,16 @@ def interactive_menu():
         print(f" 3. {'💡 숙어/Idioms 퀴즈' if lang == 'ielts' else '🀄 사자성어 퀴즈'}")
         print(" 4. 🔗 독해 Collocation/搭配 빈칸")
         print(" 5. 📑 문법 & 복합구문 퀴즈")
-        print(" 6. 🎲 종합 실전 모의고사")
-        print(" 7. 🔄 학습 진도 초기화 (마스터/오답 리셋)")
+        print(" 6. 🎙️ 말하기/받아쓰기 딕테이션")
+        print(" 7. 🎲 종합 실전 모의고사")
+        print(" 8. 🔄 학습 진도 초기화 (마스터/오답 리셋)")
         print(" 0. ↩️ 언어 선택으로 돌아가기")
         print("-" * 55)
 
         choice = input("선택할 메뉴 번호를 입력하세요: ").strip()
-        if choice in ['1', '2', '3', '4', '5', '6']:
+        if choice in ['1', '2', '3', '4', '5', '6', '7']:
             d = get_diff_input("중")
-            n = get_count_input(8 if choice == '6' else 5)
+            n = get_count_input(8 if choice == '7' else 5)
             if choice == '1':
                 run_vocab_quiz(vocab, count=n, diff=d, lang=lang)
             elif choice == '2':
@@ -553,8 +627,10 @@ def interactive_menu():
             elif choice == '5':
                 run_grammar_quiz(grammar_list=grammar, count=n, diff=d, lang=lang)
             elif choice == '6':
+                run_dictation_quiz(dictation_list=dictation, count=n, diff=d, lang=lang)
+            elif choice == '7':
                 run_mixed_quiz(vocab, listening, chengyu, cloze, grammar, count=n, diff=d, lang=lang)
-        elif choice == '7':
+        elif choice == '8':
             reset_cli_progress(lang)
         elif choice == '0':
             continue
@@ -563,7 +639,7 @@ def main():
     parser = argparse.ArgumentParser(description="다국어 마스터 퀴즈 CLI (HSK 5급 & IELTS)")
     parser.add_argument("-l", "--lang", choices=["hsk", "ielts", "cn", "en"], default="hsk",
                         help="학습할 언어 선택 (hsk/cn: 중국어, ielts/en: 영어 - 기본값: hsk)")
-    parser.add_argument("--mode", choices=["vocab", "listening", "chengyu", "cloze", "grammar", "mixed"],
+    parser.add_argument("--mode", choices=["vocab", "listening", "chengyu", "cloze", "grammar", "dictation", "mixed"],
                         help="실행할 퀴즈 모드 직접 지정")
     parser.add_argument("-n", "--count", type=int, default=5,
                         help="출제할 문제 수 지정 (기본값: 5)")
@@ -581,6 +657,7 @@ def main():
         return
 
     vocab, colloc, chengyu, cloze, grammar, listening = load_all_data(lang)
+    dictation = load_json(IELTS_DICTATION if lang == "ielts" else HSK_DICTATION)
 
     if args.mode:
         if args.mode == "vocab":
@@ -593,6 +670,8 @@ def main():
             run_cloze_quiz(cloze, count=args.count, diff=diff, lang=lang)
         elif args.mode == "grammar":
             run_grammar_quiz(grammar, count=args.count, diff=diff, lang=lang)
+        elif args.mode == "dictation":
+            run_dictation_quiz(dictation, count=args.count, diff=diff, lang=lang)
         elif args.mode == "mixed":
             run_mixed_quiz(vocab, listening, chengyu, cloze, grammar, count=args.count, diff=diff, lang=lang)
     else:

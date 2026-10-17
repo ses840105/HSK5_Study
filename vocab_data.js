@@ -1871,6 +1871,368 @@ window.HSK5_DATA = {
       "translation": "연구원: 도시 열섬 현상은 주로 밀집된 고층 건물, 아스팔트 노면의 열 축적 및 인공 폐열 배출이 복합 작용하여 발생합니다. 현대 생태 도시 계획은 옥상 녹화와 투수성 노면을 확충하고 식물의 증산 작용을 활용해 열을 배출함으로써 국지 지표 온도를 효과적으로 낮출 것을 제안합니다.\n질문: 현대 생태 도시 계획은 열섬 현상을 어떻게 완화하고자 하는가?",
       "tip": "'增加屋顶绿化与透水路面'을 해결책으로 직접 제시하고 있습니다."
     }
+  ],
+  "dictation": [
+    {
+      "id": "hd_01",
+      "sentence": "航班临时取消了。",
+      "pinyin": "Hángbān línshí qǔxiāo le.",
+      "translation": "항공편이 임시로 취소되었다.",
+      "keyPoint": "[5급 듣기 1부분 기출] 航班(항공편) + 临时(임시로) + 取消(취소하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_02",
+      "sentence": "他的语气很温柔。",
+      "pinyin": "Tā de yǔqì hěn wēnróu.",
+      "translation": "그의 말투는 매우 부드럽다.",
+      "keyPoint": "[5급 듣기·어휘 기출] 语气(말투/어조) + 温柔(온화하다/부드럽다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_03",
+      "sentence": "合同已经签字了。",
+      "pinyin": "Hétong yǐjīng qiānzì le.",
+      "translation": "계약서에 이미 서명했다.",
+      "keyPoint": "[5급 듣기 1부분 기출] 合同(계약서) + 签字(서명하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_04",
+      "sentence": "请勿随地扔垃圾。",
+      "pinyin": "Qǐng wù suídì rēng lājī.",
+      "translation": "아무 데나 쓰레기를 버리지 마시오.",
+      "keyPoint": "[5급 독해·듣기 기출] 请勿(~하지 마시오) + 随地(아무 데나)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_05",
+      "sentence": "她的身材很苗条。",
+      "pinyin": "Tā de shēncái hěn miáotiao.",
+      "translation": "그녀는 몸매가 매우 날씬하다.",
+      "keyPoint": "[5급 쓰기 1부분 기출搭配] 身材(몸매) + 苗条(날씬하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_06",
+      "sentence": "双方达成了共识。",
+      "pinyin": "Shuāngfāng dáchéngle gòngshí.",
+      "translation": "양측은 합의(공감대)에 도달했다.",
+      "keyPoint": "[5급 독해 1부분 최빈출 기출] 达成共识(합의/공감대를 이루다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_07",
+      "sentence": "我们要节约能源。",
+      "pinyin": "Wǒmen yào jiéyuē néngyuán.",
+      "translation": "우리는 에너지를 절약해야 한다.",
+      "keyPoint": "[5급 쓰기·독해 기출搭配] 节约能源(에너지를 절약하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_08",
+      "sentence": "他的精神很振奋。",
+      "pinyin": "Tā de jīngshén hěn zhènfèn.",
+      "translation": "그는 사기가 매우 진작되었다(활기차다).",
+      "keyPoint": "[5급 필수 어휘 기출] 精神(정신/기운) + 振奋(진작되다/분발하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_09",
+      "sentence": "请你立刻去办理。",
+      "pinyin": "Qǐng nǐ lìkè qù bànlǐ.",
+      "translation": "즉시 가서 수속을 밟으세요.",
+      "keyPoint": "[5급 듣기 1부분 기출] 立刻(즉시) + 办理(수속을 밟다/처리하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_10",
+      "sentence": "这批货物很齐全。",
+      "pinyin": "Zhè pī huòwù hěn qíquán.",
+      "translation": "이번 화물(물품)들은 매우 완비되어 있다.",
+      "keyPoint": "[5급 양사·어휘 기출] 批(양사: 묶음) + 货物(화물) + 齐全(완비되다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_11",
+      "sentence": "我彻底放弃幻想了。",
+      "pinyin": "Wǒ chèdǐ fàngqì huànxiǎng le.",
+      "translation": "나는 환상을 완전히 버렸다.",
+      "keyPoint": "[5급 어휘 기출] 彻底(철저히/완전히) + 放弃幻想(환상을 버리다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_12",
+      "sentence": "故宫有着悠久历史。",
+      "pinyin": "Gùgōng yǒuzhe yōujiǔ lìshǐ.",
+      "translation": "고궁은 유구한 역사를 지니고 있다.",
+      "keyPoint": "[5급 쓰기 1부분 최빈출 기출] 悠久历史(유구한 역사)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_13",
+      "sentence": "大家纷纷表示赞同。",
+      "pinyin": "Dàjiā fēnfēn biǎoshì zàntóng.",
+      "translation": "모두가 앞다투어 찬성을 표했다.",
+      "keyPoint": "[5급 독해·쓰기 기출] 纷纷(잇달아/앞다투어) + 赞同(찬성하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_14",
+      "sentence": "目前形势非常严峻。",
+      "pinyin": "Mùqián xíngshì fēicháng yánjùn.",
+      "translation": "현재 정세(상황)가 매우 엄중하다.",
+      "keyPoint": "[5급 독해 1부분 기출搭配] 目前(현재) + 形势严峻(형세가 엄중하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_15",
+      "sentence": "他找借口推辞了。",
+      "pinyin": "Tā zhǎo jièkǒu tuīcí le.",
+      "translation": "그는 핑계를 대고 사양(거절)했다.",
+      "keyPoint": "[5급 듣기 1부분 기출] 找借口(핑계를 대다) + 推辞(사양/거절하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hd_16",
+      "sentence": "运动有助于缓解工作压力。",
+      "pinyin": "Yùndòng yǒuzhùyú huǎnjiě gōngzuò yālì.",
+      "translation": "운동은 업무 스트레스를 완화하는 데 도움이 된다.",
+      "keyPoint": "[5급 쓰기 1부분 기출] 有助于(~에 도움이 되다) + 缓解压力(스트레스 완화)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_17",
+      "sentence": "请你把重要文件交给秘书。",
+      "pinyin": "Qǐng nǐ bǎ zhòngyào wénjiàn jiāo gěi mìshū.",
+      "translation": "중요한 서류를 비서에게 건네주세요.",
+      "keyPoint": "[5급 쓰기 1부분 把자문 기출] 把 + 文件(서류) + 交给(건네다) + 秘书(비서)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_18",
+      "sentence": "由于大雾，高速公路封闭了。",
+      "pinyin": "Yóuyú dàwù, gāosù gōnglù fēngbì le.",
+      "translation": "짙은 안개로 인해 고속도로가 폐쇄되었다.",
+      "keyPoint": "[5급 듣기 1부분 기출] 由于(~로 인해) + 封闭(폐쇄하다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_19",
+      "sentence": "他终于克服了重重困难。",
+      "pinyin": "Tā zhōngyú kèfúle chóngchóng kùnnán.",
+      "translation": "그는 마침내 거듭된 어려움을 극복했다.",
+      "keyPoint": "[5급 쓰기 1부분 기출搭配] 克服困难(어려움을 극복하다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_20",
+      "sentence": "这个方案还存在明显漏洞。",
+      "pinyin": "Zhège fāng'àn hái cúnzài míngxiǎn lòudòng.",
+      "translation": "이 방안에는 아직 뚜렷한 허점(결함)이 존재한다.",
+      "keyPoint": "[5급 독해 1부분 기출] 方案(방안) + 存在漏洞(허점이 존재하다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_21",
+      "sentence": "政府已采取措施控制房价。",
+      "pinyin": "Zhèngfǔ yǐ cǎiqǔ cuòshī kòngzhì fángjià.",
+      "translation": "정부는 이미 집값을 통제하기 위해 조치를 취했다.",
+      "keyPoint": "[5급 쓰기 1부분 기출] 采取措施(조치를 취하다) + 控制(통제하다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_22",
+      "sentence": "良好的习惯让人受益匪浅。",
+      "pinyin": "Liánghǎo de xíguàn ràng rén shòuyìfěiqiǎn.",
+      "translation": "좋은 습관은 사람에게 큰 유익을 준다.",
+      "keyPoint": "[5급 성어·독해 기출] 良好(양호한) + 受益匪浅(얻는 바가 매우 크다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_23",
+      "sentence": "他凭着经验解决了这个难题。",
+      "pinyin": "Tā píngzhe jīngyàn jiějuéle zhège nántí.",
+      "translation": "그는 경험에 힘입어 이 난제를 해결했다.",
+      "keyPoint": "[5급 쓰기 1부분 기출] 凭着(~에 힘입어) + 解决难题(난제를 해결하다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_24",
+      "sentence": "这部纪录片引起了广泛关注。",
+      "pinyin": "Zhè bù jìlùpiàn yǐnqǐle guǎngfàn guānzhù.",
+      "translation": "이 다큐멘터리는 폭넓은 관심을 불러일으켰다.",
+      "keyPoint": "[5급 쓰기 1부분 기출] 纪录片(다큐멘터리) + 引起广泛关注(관심을 끌다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_25",
+      "sentence": "请不要在公共场所大声喧哗。",
+      "pinyin": "Qǐng búyào zài gōnggòng chǎngsuǒ dàshēng xuānhuá.",
+      "translation": "공공장소에서 큰 소리로 떠들지 마세요.",
+      "keyPoint": "[5급 듣기·독해 기출] 公共场所(공공장소) + 大声喧哗(소란스럽게 떠들다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_26",
+      "sentence": "他对这个领域的知识很熟悉。",
+      "pinyin": "Tā duì zhège lǐngyù de zhīshi hěn shúxī.",
+      "translation": "그는 이 분야의 지식에 매우 정통하다(익숙하다).",
+      "keyPoint": "[5급 쓰기 1부분 기출] 领域(분야/영역) + 对...熟悉(~을 잘 알다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_27",
+      "sentence": "新产品的销量超出了预期。",
+      "pinyin": "Xīn chǎnpǐn de xiāoliàng chāochūle yùqī.",
+      "translation": "신제품의 판매량이 예상을 뛰어넘었다.",
+      "keyPoint": "[5급 듣기 1부분 기출] 销量(판매량) + 超出预期(예상을 뛰어넘다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_28",
+      "sentence": "我们必须遵守交通规则。",
+      "pinyin": "Wǒmen bìxū zūnshǒu jiāotōng guīzé.",
+      "translation": "우리는 반드시 교통 규칙을 준수해야 한다.",
+      "keyPoint": "[5급 쓰기 1부분 최빈출 기출] 遵守规则(규칙을 준수하다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_29",
+      "sentence": "他的演讲赢得了热烈的掌声。",
+      "pinyin": "Tā de yǎnjiǎng yíngdéle rèliè de zhǎngshēng.",
+      "translation": "그의 강연은 열렬한 박수갈채를 얻었다.",
+      "keyPoint": "[5급 쓰기 1부분 기출] 演讲(강연) + 赢得掌声(박수를 얻다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_30",
+      "sentence": "那家餐厅的服务非常周到。",
+      "pinyin": "Nà jiā cāntīng de fúwù fēicháng zhōudào.",
+      "translation": "그 식당의 서비스는 매우 세심(주도면밀)하다.",
+      "keyPoint": "[5급 듣기 1부분 기출搭配] 服务周到(서비스가 세심하다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hd_31",
+      "sentence": "只有不断积累经验，才能提高能力。",
+      "pinyin": "Zhǐyǒu bùduàn jīlěi jīngyàn, cáinéng tígāo nénglì.",
+      "translation": "오직 끊임없이 경험을 쌓아야만 능력을 높일 수 있다.",
+      "keyPoint": "[5급 쓰기·독해 기출 복문] 只有...才...(오직 ~해야만) + 积累经验(경험 축적)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_32",
+      "sentence": "与其事后后悔，不如事前做好准备。",
+      "pinyin": "Yǔqí shìhòu hòuhuǐ, bùrú shìqián zuòhǎo zhǔnbèi.",
+      "translation": "일이 끝난 뒤 후회하느니 사전에 준비를 잘하는 편이 낫다.",
+      "keyPoint": "[5급 독해 1부분 기출 구문] 与其...不如...(~하느니 차라리 ...하는 편이 낫다)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_33",
+      "sentence": "良好的沟通能够消除彼此的误会。",
+      "pinyin": "Liánghǎo de gōutōng nénggòu xiāochú bǐcǐ de wùhuì.",
+      "translation": "원활한 소통은 서로의 오해를 해소할 수 있다.",
+      "keyPoint": "[5급 쓰기 1부분 기출] 沟通(소통) + 消除误会(오해를 없애다) + 彼此(서로)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_34",
+      "sentence": "双方通过友好谈判达成了合作协议。",
+      "pinyin": "Shuāngfāng tōngguò yǒuhǎo tánpàn dáchéngle hézuò xiéyì.",
+      "translation": "양측은 우호적인 협상을 통해 협력 합의에 도달했다.",
+      "keyPoint": "[5급 독해·쓰기 기출] 通过谈判(협상을 통해) + 达成协议(합의를 타결하다)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_35",
+      "sentence": "我们在制定计划时要考虑到风险。",
+      "pinyin": "Wǒmen zài zhìdìng jìhuà shí yào kǎolǜ dào fēngxiǎn.",
+      "translation": "우리는 계획을 수립할 때 위험 요소를 고려해야 한다.",
+      "keyPoint": "[5급 쓰기 1부분 기출] 制定计划(계획을 수립하다) + 风险(위험/리스크)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_36",
+      "sentence": "面对突发危机，他依然保持着冷静。",
+      "pinyin": "Miànduì tūfā wēijī, tā yīrán bǎochízhe lěngjìng.",
+      "translation": "갑작스러운 위기에 직면하여 그는 여전히 냉정함을 유지하고 있다.",
+      "keyPoint": "[5급 독해 1부분 기출] 面对危机(위기에 직면하다) + 保持冷静(냉정함 유지)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_37",
+      "sentence": "阅读优秀作品有助于培养思考能力。",
+      "pinyin": "Yuèdú yōuxiù zuòpǐn yǒuzhùyú péiyǎng sīkǎo nénglì.",
+      "translation": "우수한 작품을 읽는 것은 사고력을 기르는 데 도움이 된다.",
+      "keyPoint": "[5급 쓰기 1부분 기출] 有助于(~에 도움이 되다) + 培养能力(능력을 기르다)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_38",
+      "sentence": "这项新政策将大大缓解交通拥堵。",
+      "pinyin": "Zhè xiàng xīn zhèngcè jiāng dàdà huǎnjiě jiāotōng yōngdǔ.",
+      "translation": "이 새로운 정책은 교통 체증을 크게 완화할 것이다.",
+      "keyPoint": "[5급 독해·듣기 기출] 项(정책 양사) + 缓解交通拥堵(교통 체증 완화)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_39",
+      "sentence": "把理论应用到实践中才能发挥价值。",
+      "pinyin": "Bǎ lǐlùn yìngyòng dào shíjiàn zhōng cáinéng fāhuī jiàzhí.",
+      "translation": "이론을 실천에 응용해야만 가치를 발휘할 수 있다.",
+      "keyPoint": "[5급 쓰기 1부분 把자문 기출] 应用到(~에 응용하다) + 发挥价值(가치 발휘)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_40",
+      "sentence": "如果缺乏创新，就很难在竞争中生存。",
+      "pinyin": "Rúguǒ quēfá chuàngxīn, jiù hěn nán zài jìngzhēng zhōng shēngcún.",
+      "translation": "만약 혁신이 부족하면 경쟁 속에서 살아남기 어렵다.",
+      "keyPoint": "[5급 독해 2부분 기출] 缺乏创新(혁신 부족) + 在竞争中生存(경쟁에서 생존)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_41",
+      "sentence": "既然已经做出了决定，就不要再犹豫。",
+      "pinyin": "Jìrán yǐjīng zuòchūle juédìng, jiù búyào zài yóuyù.",
+      "translation": "이미 결정을 내렸으니 더 이상 망설이지 마라.",
+      "keyPoint": "[5급 어법·독해 기출] 既然...就...(~한 이상) + 做出决定(결정을 내리다) + 犹豫(망설이다)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_42",
+      "sentence": "哪怕遇到再大的挫折，他也从不灰心。",
+      "pinyin": "Nǎpà yùdào zài dà de cuòzhé, tā yě cóng bù huīxīn.",
+      "translation": "설령 아무리 큰 좌절을 겪더라도 그는 결코 낙담하지 않는다.",
+      "keyPoint": "[5급 어법·독해 기출] 哪怕...也...(설령 ~라도) + 挫折(좌절) + 灰心(낙담하다)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_43",
+      "sentence": "这幅画惟妙惟肖，简直像真的一样。",
+      "pinyin": "Zhè fú huà wéimiàowéixiào, jiǎnzhí xiàng zhēn de yíyàng.",
+      "translation": "이 그림은 실물처럼 생생해서 마치 진짜 같다.",
+      "keyPoint": "[5급 사자성어·부사 기출] 幅(그림 양사) + 惟妙惟肖(실물과 꼭 닮다) + 简直(그야말로)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_44",
+      "sentence": "专家建议消费者仔细阅读说明书。",
+      "pinyin": "Zhuānjiā jiànyì xiāofèizhě zǐxì yuèdú shuōmíngshū.",
+      "translation": "전문가는 소비자가 설명서를 꼼꼼히 읽을 것을 권장한다.",
+      "keyPoint": "[5급 쓰기 1부분 겸어문 기출] 消费者(소비자) + 说明书(설명서)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hd_45",
+      "sentence": "保护传统文化并不意味着拒绝现代文明。",
+      "pinyin": "Bǎohù chuántǒng wénhuà bìng bù yìwèizhe jùjué xiàndài wénmíng.",
+      "translation": "전통문화를 보호한다는 것이 현대 문명을 거부함을 의미하지는 않는다.",
+      "keyPoint": "[5급 독해 2부분 기출] 并不意味着(결코 ~을 의미하지 않는다) + 拒绝(거부하다)",
+      "difficulty": "상"
+    }
   ]
 };
 window.IELTS_DATA = {
@@ -1878,362 +2240,362 @@ window.IELTS_DATA = {
     {
       "id": "iv_01",
       "difficulty": "하",
-      "word": "abundant",
+      "word": "affordable",
       "pos": "adj.",
-      "meaning": "풍부한, 많은",
-      "synonym": "plentiful, ample, bountiful",
-      "example": "The region possesses abundant natural resources, including timber and fresh water.",
-      "translation": "그 지역은 목재와 담수를 포함한 풍부한 천연자원을 보유하고 있다."
+      "meaning": "가격이 알맞은, 부담 없는",
+      "synonym": "inexpensive, reasonable, budget-friendly",
+      "example": "Public buses and subways are very affordable for university students.",
+      "translation": "대중 시내버스와 지하철은 대학생들에게 가격 부담이 매우 적다."
     },
     {
       "id": "iv_02",
       "difficulty": "하",
-      "word": "crucial",
+      "word": "convenient",
       "pos": "adj.",
-      "meaning": "결정적인, 중대한",
-      "synonym": "vital, critical, essential",
-      "example": "Early nutritional intervention plays a crucial role in preventing chronic childhood illnesses.",
-      "translation": "초기 영양 공급 개입은 소아 만성 질환을 예방하는 데 결정적인 역할을 한다."
+      "meaning": "편리한, 간편한",
+      "synonym": "handy, accessible, practical",
+      "example": "Living near a supermarket is very convenient for busy families.",
+      "translation": "슈퍼마켓 근처에 사는 것은 바쁜 가족들에게 매우 편리하다."
     },
     {
       "id": "iv_03",
       "difficulty": "하",
-      "word": "diminish",
+      "word": "reduce",
       "pos": "v.",
-      "meaning": "줄어들다, 감소시키다",
-      "synonym": "decrease, reduce, lessen",
-      "example": "Consumer demand for fossil-fuel vehicles began to diminish as electric options emerged.",
-      "translation": "전기차 옵션이 등장함에 따라 화석연료 차량에 대한 소비자 수요는 감소하기 시작했다."
+      "meaning": "줄이다, 낮추다",
+      "synonym": "decrease, cut down, lower",
+      "example": "We should use reusable bags to reduce plastic waste.",
+      "translation": "우리는 플라스틱 쓰레기를 줄이기 위해 다회용 장바구니를 사용해야 한다."
     },
     {
       "id": "iv_04",
       "difficulty": "하",
-      "word": "advocate",
+      "word": "improve",
       "pos": "v.",
-      "meaning": "지지하다, 옹호하다",
-      "synonym": "support, champion, endorse",
-      "example": "Many environmental scientists advocate strict global limits on single-use plastic manufacturing.",
-      "translation": "많은 환경 과학자들은 일회용 플라스틱 제조에 대한 엄격한 글로벌 제한을 지지한다."
+      "meaning": "향상시키다, 개선하다",
+      "synonym": "enhance, get better, upgrade",
+      "example": "Reading English newspapers every day helps improve your vocabulary.",
+      "translation": "매일 영어 신문을 읽는 것은 어휘력을 향상시키는 데 도움이 된다."
     },
     {
       "id": "iv_05",
       "difficulty": "하",
-      "word": "allocate",
+      "word": "provide",
       "pos": "v.",
-      "meaning": "할당하다, 배분하다",
-      "synonym": "assign, distribute, designate",
-      "example": "Municipal authorities agreed to allocate more municipal funds to upgrade public transport.",
-      "translation": "시 당국은 대중교통을 개선하기 위해 더 많은 시 예산을 배분하기로 합의했다."
+      "meaning": "제공하다, 공급하다",
+      "synonym": "supply, offer, give",
+      "example": "The hotel provides free breakfast and wireless internet for all guests.",
+      "translation": "그 호텔은 모든 투숙객에게 무료 아침 식사와 무선 인터넷을 제공한다."
     },
     {
       "id": "iv_06",
       "difficulty": "하",
-      "word": "acquire",
+      "word": "develop",
       "pos": "v.",
-      "meaning": "습득하다, 획득하다",
-      "synonym": "obtain, gain, master",
-      "example": "Students must acquire critical thinking skills early during university coursework.",
-      "translation": "학생들은 대학교 학업 과정 초기에 비판적 사고 능력을 습득해야 한다."
+      "meaning": "발전시키다, 기르다",
+      "synonym": "grow, build, cultivate",
+      "example": "Team sports help children develop good social skills.",
+      "translation": "단체 스포츠는 아이들이 좋은 사회성 기술을 기르는 데 도움이 된다."
     },
     {
       "id": "iv_07",
       "difficulty": "하",
-      "word": "coherent",
-      "pos": "adj.",
-      "meaning": "일관성 있는, 조리 있는",
-      "synonym": "logical, consistent, lucid",
-      "example": "Candidates must organize their IELTS essays into clear, coherent body paragraphs.",
-      "translation": "응시자들은 자신의 IELTS 에세이를 명확하고 일관성 있는 본문 단락들로 구성해야 한다."
+      "word": "schedule",
+      "pos": "n.",
+      "meaning": "일정, 시간표",
+      "synonym": "timetable, plan, agenda",
+      "example": "Please check the train schedule before you leave for the station.",
+      "translation": "역으로 출발하기 전에 기차 시간표를 확인해 주세요."
     },
     {
       "id": "iv_08",
       "difficulty": "하",
-      "word": "domestic",
+      "word": "local",
       "pos": "adj.",
-      "meaning": "국내의, 가정의",
-      "synonym": "national, internal, household",
-      "example": "Higher tariffs significantly influenced domestic consumer expenditure on imported electronics.",
-      "translation": "인상된 관세는 수입 전자기기에 대한 국내 소비자 지출에 상당한 영향을 미쳤다."
+      "meaning": "지역의, 현지의",
+      "synonym": "regional, neighborhood, community",
+      "example": "Tourists enjoy trying fresh food at the local night market.",
+      "translation": "관광객들은 현지 야시장에서 신선한 음식을 맛보는 것을 즐긴다."
     },
     {
       "id": "iv_09",
       "difficulty": "하",
-      "word": "establish",
+      "word": "protect",
       "pos": "v.",
-      "meaning": "확립하다, 설립하다",
-      "synonym": "found, institute, set up",
-      "example": "The research institute was founded to establish sustainable agricultural standards.",
-      "translation": "그 연구소는 지속 가능한 농업 표준을 확립하기 위해 설립되었다."
+      "meaning": "보호하다, 지키다",
+      "synonym": "save, defend, guard",
+      "example": "Wearing sunglasses helps protect your eyes from strong sunlight.",
+      "translation": "선글라스를 착용하는 것은 강한 햇빛으로부터 눈을 보호하는 데 도움이 된다."
     },
     {
       "id": "iv_10",
       "difficulty": "하",
-      "word": "fundamental",
+      "word": "essential",
       "pos": "adj.",
-      "meaning": "근본적인, 핵심적인",
-      "synonym": "basic, foundational, primary",
-      "example": "Access to clean drinking water is recognized as a fundamental human right.",
-      "translation": "깨끗한 식수에 대한 접근성은 근본적인 인권으로 인정받는다."
+      "meaning": "필수적인, 꼭 필요한",
+      "synonym": "necessary, important, vital",
+      "example": "Clean drinking water is essential for human health.",
+      "translation": "깨끗한 식수는 인간의 건강에 필수적이다."
     },
     {
       "id": "iv_11",
       "difficulty": "하",
-      "word": "generate",
-      "pos": "v.",
-      "meaning": "생성하다, 발생시키다",
-      "synonym": "produce, create, yield",
-      "example": "Offshore wind farms generate substantial clean electrical energy for coastal provinces.",
-      "translation": "해상 풍력 발전소는 해안 지방을 위한 상당한 청정 전기 에너지를 생성한다."
+      "word": "benefit",
+      "pos": "n.",
+      "meaning": "이익, 혜택, 장점",
+      "synonym": "advantage, profit, merit",
+      "example": "One major benefit of cycling is that it keeps you healthy.",
+      "translation": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다."
     },
     {
       "id": "iv_12",
       "difficulty": "하",
-      "word": "integrate",
-      "pos": "v.",
-      "meaning": "통합하다, 융합하다",
-      "synonym": "combine, merge, assimilate",
-      "example": "Schools seek to integrate cutting-edge multimedia technology into daily pedagogical methods.",
-      "translation": "학교들은 최첨단 멀티미디어 기술을 일상적인 교육 방법에 통합하고자 한다."
+      "word": "available",
+      "pos": "adj.",
+      "meaning": "이용할 수 있는, 시간이 있는",
+      "synonym": "accessible, free, obtainable",
+      "example": "Tickets for the weekend concert are available online now.",
+      "translation": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다."
     },
     {
       "id": "iv_13",
       "difficulty": "하",
-      "word": "modify",
+      "word": "encourage",
       "pos": "v.",
-      "meaning": "수정하다, 변경하다",
-      "synonym": "alter, adjust, adapt",
-      "example": "Architects had to modify their building design to adhere to modern seismic safety codes.",
-      "translation": "건축가들은 현대 내진 안전 규정을 준수하기 위해 건물 설계를 수정해야 했다."
+      "meaning": "격려하다, 장려하다",
+      "synonym": "inspire, support, motivate",
+      "example": "Teachers always encourage students to ask questions in class.",
+      "translation": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다."
     },
     {
       "id": "iv_14",
       "difficulty": "하",
-      "word": "perceive",
-      "pos": "v.",
-      "meaning": "인식하다, 감지하다",
-      "synonym": "discern, regard, view",
-      "example": "Urban citizens frequently perceive automated delivery vehicles as safer than manual cars.",
-      "translation": "도시 시민들은 자동 배달 차량을 수동 운전 차량보다 안전하다고 인식하는 경우가 많다."
+      "word": "opportunity",
+      "pos": "n.",
+      "meaning": "기회",
+      "synonym": "chance, occasion, opening",
+      "example": "Studying abroad is a great opportunity to experience a new culture.",
+      "translation": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다."
     },
     {
       "id": "iv_15",
       "difficulty": "하",
-      "word": "restrict",
+      "word": "limit",
       "pos": "v.",
-      "meaning": "제한하다, 한정하다",
-      "synonym": "limit, constrain, confine",
-      "example": "Strict local conservation laws restrict commercial construction along natural wetlands.",
-      "translation": "엄격한 지역 보존법은 자연 습지를 따른 상업적 건축을 제한한다."
+      "meaning": "제한하다, 줄이다",
+      "synonym": "restrict, control, cap",
+      "example": "Parents should limit the time children spend playing video games.",
+      "translation": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다."
     },
     {
       "id": "iv_16",
       "difficulty": "하",
-      "word": "transform",
-      "pos": "v.",
-      "meaning": "변모시키다, 탈바꿈하다",
-      "synonym": "convert, revolutionize, reshape",
-      "example": "Digital commerce platforms continue to transform conventional global retail models.",
-      "translation": "디지털 상거래 플랫폼은 전통적인 글로벌 유통 모델을 계속해서 변모시키고 있다."
+      "word": "accommodation",
+      "pos": "n.",
+      "meaning": "숙소, 거처",
+      "synonym": "housing, lodging, residence",
+      "example": "First-year students usually live in university accommodation on campus.",
+      "translation": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다."
     },
     {
       "id": "iv_17",
       "difficulty": "중",
-      "word": "deteriorate",
-      "pos": "v.",
-      "meaning": "악화되다, 저하시키다",
-      "synonym": "worsen, decline, degenerate",
-      "example": "Living conditions continued to deteriorate rapidly as the regional conflict escalated.",
-      "translation": "지역 분쟁이 격화되면서 생활 여건이 급속도로 악화되기 시작했다."
+      "word": "crucial",
+      "pos": "adj.",
+      "meaning": "결정적인, 매우 중요한",
+      "synonym": "vital, critical, key",
+      "example": "Early education plays a crucial role in shaping a child's future.",
+      "translation": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다."
     },
     {
       "id": "iv_18",
       "difficulty": "중",
-      "word": "feasible",
-      "pos": "adj.",
-      "meaning": "실행 가능한, 타당한",
-      "synonym": "viable, practicable, achievable",
-      "example": "It is not financially feasible to construct a high-speed railway in such rugged terrain.",
-      "translation": "그런 험준한 지형에 고속철도를 건설하는 것은 재정적으로 타당하지 않다."
+      "word": "allocate",
+      "pos": "v.",
+      "meaning": "할당하다, 배분하다",
+      "synonym": "assign, distribute, budget",
+      "example": "The government decided to allocate more funds to public hospitals.",
+      "translation": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다."
     },
     {
       "id": "iv_19",
       "difficulty": "중",
-      "word": "plausible",
-      "pos": "adj.",
-      "meaning": "그럴듯한, 이치에 맞는",
-      "synonym": "believable, reasonable, credible",
-      "example": "Biologists have proposed a plausible hypothesis explaining the sudden avian migration shift.",
-      "translation": "생물학자들은 조류의 갑작스러운 이동 경로 변화를 설명하는 그럴듯한 가설을 제시했다."
+      "word": "acquire",
+      "pos": "v.",
+      "meaning": "습득하다, 얻다",
+      "synonym": "obtain, gain, learn",
+      "example": "Students can acquire practical skills through summer internships.",
+      "translation": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다."
     },
     {
       "id": "iv_20",
       "difficulty": "중",
       "word": "mitigate",
       "pos": "v.",
-      "meaning": "완화하다, 경감시키다",
-      "synonym": "alleviate, ease, moderate",
-      "example": "Effective urban drainage planning can mitigate the adverse impacts of flash flooding.",
-      "translation": "효과적인 도시 배수 계획은 갑작스러운 홍수의 악영향을 완화할 수 있다."
+      "meaning": "완화하다, 줄이다",
+      "synonym": "alleviate, ease, reduce",
+      "example": "Planting more urban trees can help mitigate the effects of air pollution.",
+      "translation": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다."
     },
     {
       "id": "iv_21",
       "difficulty": "중",
-      "word": "commence",
-      "pos": "v.",
-      "meaning": "시작하다, 개시하다",
-      "synonym": "begin, initiate, embark on",
-      "example": "Field operations will commence as soon as regulatory environmental permits are issued.",
-      "translation": "규제 환경 허가가 발급되는 즉시 현장 작업이 시작될 것이다."
+      "word": "comprehensive",
+      "pos": "adj.",
+      "meaning": "포괄적인, 종합적인",
+      "synonym": "thorough, complete, extensive",
+      "example": "The ministry published a comprehensive report on road safety.",
+      "translation": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다."
     },
     {
       "id": "iv_22",
       "difficulty": "중",
-      "word": "comprehensive",
-      "pos": "adj.",
-      "meaning": "포괄적인, 종합적인",
-      "synonym": "thorough, exhaustive, extensive",
-      "example": "The committee published a comprehensive assessment regarding metropolitan air pollution.",
-      "translation": "위원회는 대도시 대기 오염에 관한 포괄적인 평가 보고서를 발표했다."
+      "word": "fluctuate",
+      "pos": "v.",
+      "meaning": "변동하다, 오르내리다",
+      "synonym": "vary, change, rise and fall",
+      "example": "Vegetable prices tend to fluctuate according to the season.",
+      "translation": "채소 가격은 계절에 따라 변동하는 경향이 있다."
     },
     {
       "id": "iv_23",
       "difficulty": "중",
-      "word": "deviate",
-      "pos": "v.",
-      "meaning": "벗어나다, 일탈하다",
-      "synonym": "diverge, stray, depart from",
-      "example": "Engineers must ensure manufactured parts do not deviate from millimeter tolerances.",
-      "translation": "엔지니어들은 제조된 부품이 밀리미터 단위의 공차에서 벗어나지 않도록 해야 한다."
+      "word": "inevitable",
+      "pos": "adj.",
+      "meaning": "불가피한, 피할 수 없는",
+      "synonym": "unavoidable, certain, bound to happen",
+      "example": "Traffic delays are almost inevitable during weekday rush hours.",
+      "translation": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다."
     },
     {
       "id": "iv_24",
       "difficulty": "중",
-      "word": "empirical",
+      "word": "mandatory",
       "pos": "adj.",
-      "meaning": "실증적인, 경험에 근거한",
-      "synonym": "observational, experimental, factual",
-      "example": "Academic theses require robust empirical data rather than speculative theories.",
-      "translation": "학술 논문은 추측성 이론보다는 탄탄한 실증적 데이터를 요구한다."
+      "meaning": "의무적인, 필수의",
+      "synonym": "compulsory, required, obligatory",
+      "example": "Wearing a seatbelt is mandatory for all drivers and passengers.",
+      "translation": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다."
     },
     {
       "id": "iv_25",
       "difficulty": "중",
-      "word": "fluctuate",
-      "pos": "v.",
-      "meaning": "변동하다, 오르내리다",
-      "synonym": "oscillate, vary, alternate",
-      "example": "Global crude oil prices fluctuate unpredictably in response to geopolitical instability.",
-      "translation": "세계 원유 가격은 지정학적 불안정에 대응하여 예측 불가능하게 변동한다."
+      "word": "notable",
+      "pos": "adj.",
+      "meaning": "주목할 만한, 뚜렷한",
+      "synonym": "remarkable, significant, striking",
+      "example": "There has been a notable increase in the number of electric cars.",
+      "translation": "전기차 대수에 주목할 만한 증가가 있었다."
     },
     {
       "id": "iv_26",
       "difficulty": "중",
-      "word": "inevitable",
-      "pos": "adj.",
-      "meaning": "불가피한, 필연적인",
-      "synonym": "unavoidable, inescapable, inexorable",
-      "example": "Rapid metropolitan expansion makes increased traffic congestion almost inevitable.",
-      "translation": "급속한 대도시 확장은 교통 혼잡의 증가를 거의 불가피하게 만든다."
+      "word": "reinforce",
+      "pos": "v.",
+      "meaning": "강화하다, 보강하다",
+      "synonym": "strengthen, support, bolster",
+      "example": "Positive feedback from teachers helps reinforce students' confidence.",
+      "translation": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다."
     },
     {
       "id": "iv_27",
       "difficulty": "중",
-      "word": "lucrative",
+      "word": "subsequent",
       "pos": "adj.",
-      "meaning": "수익성이 좋은, 돈벌이가 되는",
-      "synonym": "profitable, rewarding, gainful",
-      "example": "Biotech startups represent a highly lucrative yet risky investment proposition.",
-      "translation": "생명공학 스타트업은 수익성이 매우 높지만 위험 부담이 큰 투자처이다."
+      "meaning": "그 다음의, 차후의",
+      "synonym": "following, later, succeeding",
+      "example": "The skills learned in primary school are vital for subsequent education.",
+      "translation": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다."
     },
     {
       "id": "iv_28",
       "difficulty": "중",
-      "word": "mandatory",
-      "pos": "adj.",
-      "meaning": "의무적인, 강제적인",
-      "synonym": "compulsory, obligatory, statutory",
-      "example": "Passing the national clinical examination is mandatory for practicing physicians.",
-      "translation": "국가 임상 시험을 통과하는 것은 의사 면허를 취득하는 데 의무적이다."
+      "word": "undermine",
+      "pos": "v.",
+      "meaning": "약화시키다, 해치다",
+      "synonym": "weaken, damage, harm",
+      "example": "Constant stress at work can undermine an employee's physical health.",
+      "translation": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다."
     },
     {
       "id": "iv_29",
       "difficulty": "중",
-      "word": "notable",
+      "word": "widespread",
       "pos": "adj.",
-      "meaning": "주목할 만한, 현저한",
-      "synonym": "remarkable, prominent, conspicuous",
-      "example": "The university made notable advancements in developing renewable synthetic polymers.",
-      "translation": "그 대학교는 재생 가능한 합성 고분자를 개발하는 데 주목할 만한 진전을 이루었다."
+      "meaning": "광범위한, 널리 퍼진",
+      "synonym": "common, extensive, general",
+      "example": "Online banking has gained widespread popularity among young adults.",
+      "translation": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다."
     },
     {
       "id": "iv_30",
       "difficulty": "중",
-      "word": "obscure",
+      "word": "sustainable",
       "pos": "adj.",
-      "meaning": "모호한, 잘 알려지지 않은",
-      "synonym": "unclear, ambiguous, vague",
-      "example": "The motives behind the ancient king’s architectural monuments remain obscure.",
-      "translation": "고대 왕의 건축 기념물 이면에 숨겨진 동기는 여전히 모호하다."
+      "meaning": "지속 가능한, 친환경적인",
+      "synonym": "eco-friendly, renewable, long-lasting",
+      "example": "Tourism must be developed in a sustainable way to protect nature.",
+      "translation": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다."
     },
     {
       "id": "iv_31",
       "difficulty": "중",
-      "word": "prevail",
+      "word": "transform",
       "pos": "v.",
-      "meaning": "만연하다, 우세하다",
-      "synonym": "predominate, triumph, persist",
-      "example": "Optimistic economic sentiments continue to prevail among venture capital firms.",
-      "translation": "벤처 캐피털 기업들 사이에서는 낙관적인 경제 심리가 계속 우세하다."
+      "meaning": "바꾸다, 변모시키다",
+      "synonym": "change, convert, reshape",
+      "example": "Smartphones have completely transformed how people shop and pay.",
+      "translation": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다."
     },
     {
       "id": "iv_32",
       "difficulty": "중",
-      "word": "reinforce",
-      "pos": "v.",
-      "meaning": "강화하다, 보강하다",
-      "synonym": "strengthen, fortify, bolster",
-      "example": "Empirical case studies were incorporated to reinforce the researcher’s core hypothesis.",
-      "translation": "연구자의 핵심 가설을 강화하기 위해 실증적인 사례 연구들이 포함되었다."
+      "word": "domestic",
+      "pos": "adj.",
+      "meaning": "국내의, 가정의",
+      "synonym": "national, home, household",
+      "example": "Domestic flights are usually cheaper and faster than long train journeys.",
+      "translation": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다."
     },
     {
       "id": "iv_33",
       "difficulty": "중",
-      "word": "subsequent",
-      "pos": "adj.",
-      "meaning": "그 다음의, 차후의",
-      "synonym": "following, ensuing, consecutive",
-      "example": "Initial lab tests failed, but subsequent trials demonstrated remarkable clinical efficacy.",
-      "translation": "초기 실험실 검사는 실패했으나, 그 이후의 임상 시험들은 놀라운 효능을 보여주었다."
+      "word": "advocate",
+      "pos": "v.",
+      "meaning": "지지하다, 주장하다",
+      "synonym": "support, recommend, promote",
+      "example": "Many health experts advocate a diet rich in vegetables and whole grains.",
+      "translation": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다."
     },
     {
       "id": "iv_34",
       "difficulty": "중",
-      "word": "undermine",
-      "pos": "v.",
-      "meaning": "약화시키다, 훼손하다",
-      "synonym": "weaken, subvert, compromise",
-      "example": "Persistent budgetary deficits threaten to undermine national fiscal stability.",
-      "translation": "지속적인 재정 적자는 국가 재정 안정성을 약화시킬 위협이 있다."
+      "word": "feasible",
+      "pos": "adj.",
+      "meaning": "실현 가능한, 타당한",
+      "synonym": "practical, workable, achievable",
+      "example": "Working four days a week is a feasible option for many office jobs.",
+      "translation": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다."
     },
     {
       "id": "iv_35",
       "difficulty": "중",
-      "word": "validity",
-      "pos": "n.",
-      "meaning": "타당성, 유효성",
-      "synonym": "soundness, legitimacy, authenticity",
-      "example": "External peer reviewers rigorously verified the methodological validity of the findings.",
-      "translation": "외부 동료 심사위원들은 연구 결과의 방법론적 타당성을 엄격히 검증했다."
+      "word": "deteriorate",
+      "pos": "v.",
+      "meaning": "악화되다, 나빠지다",
+      "synonym": "worsen, decline, get worse",
+      "example": "Air quality in the city tends to deteriorate during the winter months.",
+      "translation": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다."
     },
     {
       "id": "iv_36",
       "difficulty": "중",
-      "word": "widespread",
-      "pos": "adj.",
-      "meaning": "광범위한, 널리 퍼진",
-      "synonym": "pervasive, extensive, common",
-      "example": "Remote telecommuting has gained widespread social acceptance across major industries.",
-      "translation": "원격 재택근무는 주요 산업 전반에서 광범위한 사회적 수용을 얻었다."
+      "word": "perceive",
+      "pos": "v.",
+      "meaning": "인식하다, 여기다",
+      "synonym": "view, regard, see",
+      "example": "Many graduates perceive a master's degree as a path to better jobs.",
+      "translation": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다."
     },
     {
       "id": "iv_37",
@@ -2400,122 +2762,122 @@ window.IELTS_DATA = {
     {
       "id": "il_01",
       "difficulty": "하",
-      "category": "Section 1 (Accommodation Booking)",
+      "category": "Section 1 (Band 5.0 · Hotel Room Booking)",
       "dialogue": [
         {
           "speaker": "Receptionist",
-          "text": "Good morning, city student accommodation. How can I assist you today?"
+          "text": "Good morning, Grand City Hotel. How can I help you today?"
         },
         {
-          "speaker": "Student",
-          "text": "Hello, I am looking for a single en-suite room for the upcoming autumn semester starting in September."
+          "speaker": "Guest",
+          "text": "Hello, I would like to book a single room with breakfast for three nights starting this Friday."
         }
       ],
-      "question": "What type of room is the student inquiring about?",
+      "question": "What type of room does the guest want to book?",
       "options": [
-        "A single en-suite room",
-        "A twin shared bedroom",
-        "A private studio flat",
-        "A homestay family house"
+        "A single room with breakfast",
+        "A double room without meals",
+        "A family suite for a week",
+        "A shared dormitory bed"
       ],
-      "answer": "A single en-suite room",
-      "audioText": "Receptionist: Good morning, city student accommodation. How can I assist you today? Student: Hello, I am looking for a single en-suite room for the upcoming autumn semester starting in September. Question: What type of room is the student inquiring about?",
-      "translation": "안내원: 안녕하세요, 시티 학생 기숙사입니다. 오늘 무엇을 도와드릴까요?\n학생: 안녕하세요, 9월에 시작하는 이번 가을 학기에 혼자 쓸 수 있는 개인 욕실 딸린 방(single en-suite room)을 찾고 있습니다.\n질문: 학생이 문의하고 있는 방의 유형은 무엇인가?",
-      "tip": "핵심 명사구 \"single en-suite room\"을 직접 청취하면 바로 답을 고를 수 있는 Section 1 전형적 문제입니다."
+      "answer": "A single room with breakfast",
+      "audioText": "Receptionist: Good morning, Grand City Hotel. How can I help you today? Guest: Hello, I would like to book a single room with breakfast for three nights starting this Friday. Question: What type of room does the guest want to book?",
+      "translation": "직원: 안녕하세요, 그랜드 시티 호텔입니다. 무엇을 도와드릴까요?\n투숙객: 안녕하세요, 이번 주 금요일부터 3박 동안 조식이 포함된 싱글룸(a single room with breakfast)을 예약하고 싶습니다.\n질문: 투숙객이 예약하고 싶어 하는 방은 어떤 유형인가?",
+      "tip": "[Band 5.0 · Listening Sec 1] 핵심 명사구 \"a single room with breakfast\"를 그대로 듣고 답을 고르는 기초 문제입니다."
     },
     {
       "id": "il_02",
       "difficulty": "하",
-      "category": "Section 1 (Library Registration)",
+      "category": "Section 1 (Band 5.0 · Library Card Registration)",
       "dialogue": [
         {
           "speaker": "Librarian",
-          "text": "To activate your digital university library card, we need to verify your proof of address. A utility bill or tenancy agreement will suffice."
+          "text": "To make a new library card, I need to see an ID with your photo, such as a passport or student card."
         },
         {
           "speaker": "Student",
-          "text": "I have brought my official tenancy contract right here in my folder."
+          "text": "Here is my university student card right in my wallet."
         }
       ],
-      "question": "Which document has the student brought to verify his address?",
+      "question": "What does the student show to the librarian?",
       "options": [
-        "A tenancy contract",
-        "An electricity utility bill",
+        "A university student card",
+        "An electricity bill",
         "A bank statement",
-        "A driver’s license"
+        "A train ticket"
       ],
-      "answer": "A tenancy contract",
-      "audioText": "Librarian: To activate your digital university library card, we need to verify your proof of address. A utility bill or tenancy agreement will suffice. Student: I have brought my official tenancy contract right here in my folder. Question: Which document has the student brought to verify his address?",
-      "translation": "사서: 디지털 대학 도서관 카드를 활성화하려면 주소 증명 서류를 확인해야 합니다. 공과금 청구서나 임대 계약서면 충분합니다.\n학생: 제 서류철에 공식 임대 계약서(tenancy contract)를 바로 챙겨왔습니다.\n질문: 학생이 주소를 확인하기 위해 가져온 서류는 무엇인가?",
-      "tip": "\"official tenancy contract\"를 그대로 언급하고 있으므로 직접 매칭하여 정답을 고릅니다."
+      "answer": "A university student card",
+      "audioText": "Librarian: To make a new library card, I need to see an ID with your photo, such as a passport or student card. Student: Here is my university student card right in my wallet. Question: What does the student show to the librarian?",
+      "translation": "사서: 새 도서관 카드를 만들려면 여권이나 학생증처럼 사진이 있는 신분증을 보여주셔야 합니다.\n학생: 제 지갑에 대학교 학생증(university student card)이 여기 있습니다.\n질문: 학생이 사서에게 보여준 것은 무엇인가?",
+      "tip": "[Band 5.0 · Listening Sec 1] 사서가 예시로 든 여권/학생증 중 학생이 실제로 제시한 \"university student card\"를 선택합니다."
     },
     {
       "id": "il_03",
       "difficulty": "하",
-      "category": "Section 1 (Car Rental Reservation)",
+      "category": "Section 1 (Band 5.0 · Car Rental Inquiry)",
       "dialogue": [
         {
           "speaker": "Agent",
-          "text": "We have a compact hatchback available for sixty pounds per day, or a full-size SUV for ninety."
+          "text": "We have a small city car for forty dollars a day, or a large van for seventy dollars."
         },
         {
           "speaker": "Customer",
-          "text": "Since we have four heavy suitcases, we will definitely take the SUV."
+          "text": "We have four big suitcases, so we definitely need the large van."
         }
       ],
-      "question": "Why did the customer choose the larger vehicle?",
+      "question": "Why did the customer choose the large van?",
       "options": [
-        "They have four heavy pieces of luggage",
-        "The compact car was already reserved",
-        "The SUV had a special weekend discount",
-        "They plan to drive across muddy mountain roads"
+        "They have four big suitcases",
+        "The small car was already booked",
+        "The van had a special discount",
+        "They are traveling with eight people"
       ],
-      "answer": "They have four heavy pieces of luggage",
-      "audioText": "Agent: We have a compact hatchback available for sixty pounds per day, or a full-size SUV for ninety. Customer: Since we have four heavy suitcases, we will definitely take the SUV. Question: Why did the customer choose the larger vehicle?",
-      "translation": "직원: 하루 60파운드의 소형 해치백이나 90파운드의 대형 SUV를 이용하실 수 있습니다.\n고객: 무거운 여행가방이 4개나 있어서, 확실히 SUV로 하겠습니다.\n질문: 고객이 더 큰 차량을 선택한 이유는 무엇인가?",
-      "tip": "\"four heavy suitcases\"가 선택지에서 \"four heavy pieces of luggage\"로 패러프레이징(Paraphrasing)된 형태입니다."
+      "answer": "They have four big suitcases",
+      "audioText": "Agent: We have a small city car for forty dollars a day, or a large van for seventy dollars. Customer: We have four big suitcases, so we definitely need the large van. Question: Why did the customer choose the large van?",
+      "translation": "직원: 하루 40달러짜리 소형 시내 차량과 70달러짜리 대형 밴이 있습니다.\n고객: 큰 여행가방이 4개나 있어서 무조건 대형 밴이 필요합니다.\n질문: 고객이 대형 밴을 선택한 이유는 무엇인가?",
+      "tip": "[Band 5.0 · Listening Sec 1] 이유를 나타내는 \"We have four big suitcases, so ~\" 부분을 정확히 청취합니다."
     },
     {
       "id": "il_04",
       "difficulty": "하",
-      "category": "Section 1 (Sports Club Membership)",
+      "category": "Section 1 (Band 5.0 · Swimming Lesson Schedule)",
       "dialogue": [
         {
-          "speaker": "Instructor",
-          "text": "Our peak membership allows unlimited access anytime, whereas off-peak access ends at three in the afternoon."
+          "speaker": "Receptionist",
+          "text": "We have beginner swimming classes on Tuesday evenings and Saturday mornings."
         },
         {
           "speaker": "Member",
-          "text": "I work until five, so the peak membership is the only viable option for me."
+          "text": "I work late on weekdays, so the Saturday morning class is best for me."
         }
       ],
-      "question": "Which membership plan will the customer sign up for?",
+      "question": "When will the member attend the swimming class?",
       "options": [
-        "The peak membership plan",
-        "The off-peak membership plan",
-        "A weekend-only family pass",
-        "A trial one-week guest pass"
+        "On Saturday mornings",
+        "On Tuesday evenings",
+        "On Friday afternoons",
+        "Every weekday morning"
       ],
-      "answer": "The peak membership plan",
-      "audioText": "Instructor: Our peak membership allows unlimited access anytime, whereas off-peak access ends at three in the afternoon. Member: I work until five, so the peak membership is the only viable option for me. Question: Which membership plan will the customer sign up for?",
-      "translation": "강사: 피크 회원권은 언제든 무제한 이용 가능하지만, 오프피크는 오후 3시에 입장이 마감됩니다.\n회원: 제가 5시까지 일하므로, 피크 회원권만이 제게 유일하게 가능한 선택이네요.\n질문: 고객이 가입할 회원권 플랜은 무엇인가?",
-      "tip": "퇴근 시간(5시)을 고려하여 \"peak membership\"을 선택한 결론부를 포착합니다."
+      "answer": "On Saturday mornings",
+      "audioText": "Receptionist: We have beginner swimming classes on Tuesday evenings and Saturday mornings. Member: I work late on weekdays, so the Saturday morning class is best for me. Question: When will the member attend the swimming class?",
+      "translation": "안내원: 초급 수영 수업은 화요일 저녁과 토요일 오전에 있습니다.\n회원: 평일에는 늦게까지 일해서 토요일 오전 수업이 저에게 가장 좋겠네요.\n질문: 회원은 언제 수영 수업에 참석할 예정인가?",
+      "tip": "[Band 5.0 · Listening Sec 1] 평일 야근 때문에 선택한 \"Saturday morning class\"를 포착합니다."
     },
     {
       "id": "il_05",
       "difficulty": "하",
-      "category": "Section 1 (Guided City Tour)",
+      "category": "Section 1 (Band 5.0 · City Walking Tour)",
       "dialogue": [
         {
           "speaker": "Tour Guide",
-          "text": "The morning walking tour begins outside the cathedral at nine-thirty sharp. Please ensure you arrive ten minutes prior."
+          "text": "The walking tour starts at the main square at nine-thirty, so please meet us ten minutes early at nine-twenty."
         },
         {
           "speaker": "Tourist",
-          "text": "Understood, we will gather outside the main cathedral doors at nine-twenty."
+          "text": "Okay, we will be at the main square at nine-twenty."
         }
       ],
-      "question": "What time should tourists assemble at the meeting point?",
+      "question": "What time should the tourists meet at the main square?",
       "options": [
         "At 9:20 AM",
         "At 9:30 AM",
@@ -2523,14 +2885,14 @@ window.IELTS_DATA = {
         "At 10:00 AM"
       ],
       "answer": "At 9:20 AM",
-      "audioText": "Tour Guide: The morning walking tour begins outside the cathedral at nine-thirty sharp. Please ensure you arrive ten minutes prior. Tourist: Understood, we will gather outside the main cathedral doors at nine-twenty. Question: What time should tourists assemble at the meeting point?",
-      "translation": "가이드: 오전 워킹 투어는 대성당 밖에서 정각 9시 30분에 시작합니다. 10분 전에 도착해 주시기 바랍니다.\n관광객: 알겠습니다, 9시 20분에 대성당 정문 밖에 모이겠습니다.\n질문: 관광객들이 집결 장소에 모여야 하는 시간은 언제인가?",
-      "tip": "시작 시간(9:30)과 10분 전 집결 시간(9:20)을 구분하는 시간 함정 문제입니다."
+      "audioText": "Tour Guide: The walking tour starts at the main square at nine-thirty, so please meet us ten minutes early at nine-twenty. Tourist: Okay, we will be at the main square at nine-twenty. Question: What time should the tourists meet at the main square?",
+      "translation": "가이드: 워킹 투어는 중앙 광장에서 9시 30분에 출발하니, 10분 일찍 9시 20분에 모여 주세요.\n관광객: 네, 9시 20분까지 중앙 광장으로 가겠습니다.\n질문: 관광객들이 중앙 광장에 모여야 하는 시간은 언제인가?",
+      "tip": "[Band 5.0 · Listening Sec 1] 출발 시간(9:30)과 모이는 시간(9:20)을 구분하는 전형적인 시간 청취 문제입니다."
     },
     {
       "id": "il_06",
       "difficulty": "중",
-      "category": "Section 2 (Campus Tour & Facility Guidance)",
+      "category": "Section 2 (Band 5.5~6.5 · Campus Sports Center)",
       "dialogue": [
         {
           "speaker": "Guide",
@@ -2555,37 +2917,37 @@ window.IELTS_DATA = {
       "answer": "The Olympic swimming pool",
       "audioText": "Guide: Now, turning to our university sports complex. Please note that while the gymnasium is open seven days a week, the Olympic swimming pool is currently closed for urgent maintenance. Visitor: When is the pool expected to reopen to registered members? Guide: Technicians estimate work will finish by next Thursday morning. Question: Which facility is temporarily unavailable to visitors?",
       "translation": "가이드: 이제 대학 스포츠 콤플렉스로 가보겠습니다. 체육관은 주 7일 운영되지만, 올림픽 규격 수영장은 현재 긴급 보수 공사로 문을 닫았으니 유의하시기 바랍니다.\n방문객: 등록 회원들에게 수영장이 언제 다시 열릴 예정인가요?\n가이드: 기사분들께서는 다음 주 목요일 아침까지 작업이 끝날 것으로 예상하고 있습니다.\n질문: 방문객이 현재 일시적으로 이용할 수 없는 시설은 무엇인가?",
-      "tip": "\"currently closed for urgent maintenance\" 앞뒤의 주어 \"Olympic swimming pool\"을 포착하는 것이 정답 단서입니다."
+      "tip": "[Band 5.5~6.5 · Listening Sec 2] \"currently closed for urgent maintenance\"가 질문의 \"temporarily unavailable\"로 패러프레이징되었습니다."
     },
     {
       "id": "il_07",
       "difficulty": "중",
-      "category": "Section 3 (Academic Discussion - Dissertation Review)",
+      "category": "Section 3 (Band 5.5~6.5 · Research Project Discussion)",
       "dialogue": [
         {
           "speaker": "Tutor",
-          "text": "Your literature review is comprehensive, David, but your data collection methodology relies too heavily on small qualitative surveys."
+          "text": "Your project outline looks good, David, but interviewing only ten students is too small a sample."
         },
         {
           "speaker": "David",
-          "text": "Would you suggest conducting a broader quantitative questionnaire to reinforce empirical validity?"
+          "text": "Should I send out an online survey to at least one hundred students instead?"
         },
         {
           "speaker": "Tutor",
-          "text": "Precisely. Incorporating at least two hundred respondents will render your statistical analysis significantly more robust."
+          "text": "Exactly. A larger online survey will make your final results much more reliable."
         }
       ],
-      "question": "What modification does the tutor recommend for David’s dissertation?",
+      "question": "What does the tutor advise David to do for his project?",
       "options": [
-        "Expanding the sample size via quantitative questionnaires",
-        "Rewriting the theoretical literature review section",
-        "Changing the research topic entirely before submission",
-        "Omitting statistical modeling from the final paper"
+        "Survey a larger number of students online",
+        "Rewrite the introduction of his paper",
+        "Change his research topic completely",
+        "Cancel the student interviews immediately"
       ],
-      "answer": "Expanding the sample size via quantitative questionnaires",
-      "audioText": "Tutor: Your literature review is comprehensive, David, but your data collection methodology relies too heavily on small qualitative surveys. David: Would you suggest conducting a broader quantitative questionnaire to reinforce empirical validity? Tutor: Precisely. Incorporating at least two hundred respondents will render your statistical analysis significantly more robust. Question: What modification does the tutor recommend for David’s dissertation?",
-      "translation": "지도교수: 데이비드, 문헌 고찰은 매우 포괄적이지만, 데이터 수집 방법론이 소규모 정성 설문조사에 너무 크게 의존하고 있네.\n데이비드: 실증적 타당성을 강화하기 위해 더 광범위한 정량적 설문지를 진행하는 것이 좋을까요?\n지도교수: 정확해. 최소 200명의 응답자를 확보하면 통계 분석이 훨씬 더 견고해질 걸세.\n질문: 지도교수는 데이비드의 논문에 어떤 수정을 권고하는가?",
-      "tip": "\"broader quantitative questionnaire\"와 \"incorporating at least two hundred respondents\"를 통한 표본 확대 권고를 파악합니다."
+      "answer": "Survey a larger number of students online",
+      "audioText": "Tutor: Your project outline looks good, David, but interviewing only ten students is too small a sample. David: Should I send out an online survey to at least one hundred students instead? Tutor: Exactly. A larger online survey will make your final results much more reliable. Question: What does the tutor advise David to do for his project?",
+      "translation": "지도교수: 데이비드, 프로젝트 개요는 좋지만 학생 10명만 인터뷰하는 건 표본이 너무 작네.\n데이비드: 대신 최소 100명의 학생에게 온라인 설문지를 보내는 게 좋을까요?\n지도교수: 맞아. 더 큰 규모의 온라인 설문조사를 하면 최종 결과가 훨씬 더 신뢰할 만해질 거야.\n질문: 지도교수는 데이비드에게 프로젝트를 위해 무엇을 하라고 조언하는가?",
+      "tip": "[Band 5.5~6.5 · Listening Sec 3] \"send out an online survey to at least one hundred students\"와 \"A larger online survey\"를 연결합니다."
     },
     {
       "id": "il_08",
@@ -2814,154 +3176,154 @@ window.IELTS_DATA = {
     {
       "id": "ii_01",
       "difficulty": "하",
-      "idiom": "a double-edged sword",
-      "meaning": "양날의 검 (이점과 위험이 공존하는 것)",
-      "sentence": "Rapid technological automation is ____, boosting economic productivity while displacing manual laborers.",
-      "example": "Rapid technological automation is a double-edged sword, boosting economic productivity while displacing manual laborers.",
-      "translation": "급격한 기술 자동화는 양날의 검으로, 경제 생산성을 높이지만 단순 노동자를 대체하기도 한다."
+      "idiom": "keep in touch",
+      "meaning": "계속 연락하고 지내다",
+      "sentence": "Social media makes it very easy to ____ with old school friends.",
+      "example": "Social media makes it very easy to keep in touch with old school friends.",
+      "translation": "소셜 미디어는 옛 학교 친구들과 계속 연락하고 지내는 것을 매우 쉽게 해준다."
     },
     {
       "id": "ii_02",
       "difficulty": "하",
-      "idiom": "think outside the box",
-      "meaning": "기존 틀에서 벗어나 창의적으로 생각하다",
-      "sentence": "To resolve persistent urban congestion, civic planners must encourage engineers to ____.",
-      "example": "To resolve persistent urban congestion, civic planners must encourage engineers to think outside the box.",
-      "translation": "만성적인 도시 혼잡을 해결하기 위해, 도시 계획자들은 엔지니어들이 기존 틀에서 벗어나 창의적으로 생각하도록 장려해야 한다."
+      "idiom": "in my free time",
+      "meaning": "여가 시간에, 한가할 때",
+      "sentence": "I usually listen to music or go for a walk ____.",
+      "example": "I usually listen to music or go for a walk in my free time.",
+      "translation": "나는 여가 시간에 주로 음악을 듣거나 산책을 하러 간다."
     },
     {
       "id": "ii_03",
       "difficulty": "하",
-      "idiom": "in the long run",
-      "meaning": "장기적으로 보면, 결국에는",
-      "sentence": "Subsidizing renewable solar energy infrastructure will yield immense societal benefits ____.",
-      "example": "Subsidizing renewable solar energy infrastructure will yield immense societal benefits in the long run.",
-      "translation": "재생 태양광 에너지 인프라에 보조금을 지급하는 것은 장기적으로 보면 막대한 사회적 혜택을 낳을 것이다."
+      "idiom": "pros and cons",
+      "meaning": "장단점 (찬반양론)",
+      "sentence": "Before buying a new car, we should consider the ____ carefully.",
+      "example": "Before buying a new car, we should consider the pros and cons carefully.",
+      "translation": "새 차를 사기 전에 우리는 장단점을 신중하게 고려해야 한다."
     },
     {
       "id": "ii_04",
       "difficulty": "하",
-      "idiom": "part and parcel of",
-      "meaning": "~의 본질적인 부분, 피할 수 없는 요소",
-      "sentence": "Coping with occasional cultural misunderstandings is ____ studying abroad in a foreign country.",
-      "example": "Coping with occasional cultural misunderstandings is part and parcel of studying abroad in a foreign country.",
-      "translation": "때때로 발생하는 문화적 오해에 대처하는 것은 외국 유학의 본질적이고 피할 수 없는 부분이다."
+      "idiom": "make up one's mind",
+      "meaning": "결심하다, 결정하다",
+      "sentence": "He still cannot ____ about which university course to choose.",
+      "example": "He still cannot make up his mind about which university course to choose.",
+      "translation": "그는 어느 대학 전공 과정을 선택할지 아직 결정을 내리지 못하고 있다."
     },
     {
       "id": "ii_05",
       "difficulty": "하",
-      "idiom": "a stepping stone",
-      "meaning": "(성공이나 목표를 향한) 디딤돌, 발판",
-      "sentence": "Securing an internship at an international non-profit served as ____ to her diplomatic career.",
-      "example": "Securing an internship at an international non-profit served as a stepping stone to her diplomatic career.",
-      "translation": "국제 비영리 단체에서 인턴십을 확보한 것은 그녀의 외교관 경력에 디딤돌 역할을 했다."
+      "idiom": "step by step",
+      "meaning": "단계적으로, 차근차근",
+      "sentence": "Beginners should learn a new foreign language ____.",
+      "example": "Beginners should learn a new foreign language step by step.",
+      "translation": "초보자들은 새로운 외국어를 차근차근 단계적으로 배워야 한다."
     },
     {
       "id": "ii_06",
       "difficulty": "하",
-      "idiom": "see eye to eye",
-      "meaning": "(의견이나 관점에 대해) 전적으로 동의하다",
-      "sentence": "Environmental ministers rarely ____ on binding carbon quota penalties during multilateral summits.",
-      "example": "Environmental ministers rarely see eye to eye on binding carbon quota penalties during multilateral summits.",
-      "translation": "환경 장관들은 다자간 정상회담 동안 구속력 있는 탄소 할당량 처벌에 대해 전적으로 동의하는 경우가 드물다."
+      "idiom": "on a daily basis",
+      "meaning": "매일, 일상적으로",
+      "sentence": "Millions of commuters use the city subway system ____.",
+      "example": "Millions of commuters use the city subway system on a daily basis.",
+      "translation": "수백만 명의 통근자들이 매일 도시 지하철 시스템을 이용한다."
     },
     {
       "id": "ii_07",
       "difficulty": "중",
-      "idiom": "play a pivotal role in",
-      "meaning": "~에서 중추적인 역할을 하다",
-      "sentence": "Early childhood literacy programs ____ fostering long-term educational attainment and social mobility.",
-      "example": "Early childhood literacy programs play a pivotal role in fostering long-term educational attainment and social mobility.",
-      "translation": "유아 문해력 프로그램은 장기적인 학업 성취도와 사회적 이동성을 육성하는 데 중추적인 역할을 한다."
+      "idiom": "a double-edged sword",
+      "meaning": "양날의 검 (장점과 단점이 공존하는 것)",
+      "sentence": "The internet is ____ because it provides useful information but also causes addiction.",
+      "example": "The internet is a double-edged sword because it provides useful information but also causes addiction.",
+      "translation": "인터넷은 유용한 정보를 제공하지만 중독을 유발하기도 하므로 양날의 검이다."
     },
     {
       "id": "ii_08",
       "difficulty": "중",
-      "idiom": "tip the scales in favor of",
-      "meaning": "~에게 유리하도록 균형을 기울이다 (결정적 영향을 주다)",
-      "sentence": "Her extensive voluntary fieldwork experience helped ____ her candidacy during the fiercely contested postgraduate selection.",
-      "example": "Her extensive voluntary fieldwork experience helped tip the scales in favor of her candidacy during the fiercely contested postgraduate selection.",
-      "translation": "그녀의 폭넓은 자원봉사 현장 경험은 치열한 대학원 선발 과정에서 그녀에게 유리하도록 균형을 기울여 주었다."
+      "idiom": "think outside the box",
+      "meaning": "고정관념에서 벗어나 창의적으로 생각하다",
+      "sentence": "Modern companies encourage young employees to ____ to solve problems.",
+      "example": "Modern companies encourage young employees to think outside the box to solve problems.",
+      "translation": "현대 기업들은 젊은 직원들이 문제를 해결하기 위해 창의적으로 생각하도록 장려한다."
     },
     {
       "id": "ii_09",
       "difficulty": "중",
-      "idiom": "bear fruit",
-      "meaning": "결실을 맺다, 좋은 성과를 거두다",
-      "sentence": "Decades of relentless scientific research on mRNA technology finally began to ____ during the pandemic.",
-      "example": "Decades of relentless scientific research on mRNA technology finally began to bear fruit during the pandemic.",
-      "translation": "mRNA 기술에 대한 수십 년간의 끊임없는 과학 연구는 팬데믹 기간에 마침내 결실을 맺기 시작했다."
+      "idiom": "in the long run",
+      "meaning": "장기적으로 보면, 결국에는",
+      "sentence": "Investing in solar energy will save a lot of money ____.",
+      "example": "Investing in solar energy will save a lot of money in the long run.",
+      "translation": "태양광 에너지에 투자하는 것은 장기적으로 보면 많은 돈을 절약해 줄 것이다."
     },
     {
       "id": "ii_10",
       "difficulty": "중",
-      "idiom": "come to terms with",
-      "meaning": "(어려운 현실이나 상황을) 받아들이다, 감수하다",
-      "sentence": "Governments must ____ the harsh reality that fossil fuel reserves will deplete within decades.",
-      "example": "Governments must come to terms with the harsh reality that fossil fuel reserves will deplete within decades.",
-      "translation": "정부들은 화석 연료 매장량이 수십 년 내에 고갈될 것이라는 가혹한 현실을 받아들여야만 한다."
+      "idiom": "a stepping stone",
+      "meaning": "(성공이나 목표를 향한) 디딤돌, 발판",
+      "sentence": "Working as an intern was ____ to her successful career in marketing.",
+      "example": "Working as an intern was a stepping stone to her successful career in marketing.",
+      "translation": "인턴으로 일한 것은 그녀의 성공적인 마케팅 경력에 디딤돌이 되었다."
     },
     {
       "id": "ii_11",
       "difficulty": "중",
       "idiom": "take into account",
-      "meaning": "~을 참작하다, 고려하다",
-      "sentence": "Urban architects must ____ local microclimates when formulating high-density residential layouts.",
-      "example": "Urban architects must take into account local microclimates when formulating high-density residential layouts.",
-      "translation": "도시 건축가들은 고밀도 주거 단지 배치를 수립할 때 지역 미기후를 고려해야 한다."
+      "meaning": "~을 고려하다, 참작하다",
+      "sentence": "City planners must ____ environmental protection when building new roads.",
+      "example": "City planners must take into account environmental protection when building new roads.",
+      "translation": "도시 계획가들은 새로운 도로를 건설할 때 환경 보호를 고려해야 한다."
     },
     {
       "id": "ii_12",
       "difficulty": "중",
-      "idiom": "gain ground",
-      "meaning": "세력을 넓히다, 지지를 얻다, 진전을 보이다",
-      "sentence": "Plant-based dietary alternatives have continued to ____ among health-conscious urban consumers.",
-      "example": "Plant-based dietary alternatives have continued to gain ground among health-conscious urban consumers.",
-      "translation": "식물성 대체 식품은 건강을 중시하는 도시 소비자들 사이에서 계속해서 지지를 얻고 세력을 넓혀왔다."
+      "idiom": "play a key role in",
+      "meaning": "~에서 핵심적인 역할을 하다",
+      "sentence": "Parents and teachers ____ shaping children's reading habits.",
+      "example": "Parents and teachers play a key role in shaping children's reading habits.",
+      "translation": "부모와 교사는 아이들의 독서 습관을 형성하는 데 핵심적인 역할을 한다."
     },
     {
       "id": "ii_13",
       "difficulty": "중",
-      "idiom": "shed light on",
-      "meaning": "~을 명확히 규명하다, 새로운 정보를 밝히다",
-      "sentence": "Recent geological discoveries ____ how ancient river valleys shaped early agricultural settlements.",
-      "example": "Recent geological discoveries shed light on how ancient river valleys shaped early agricultural settlements.",
-      "translation": "최근의 지질학적 발견은 고대 하천 계곡이 초기 농경 정착지를 어떻게 형성했는지를 명확히 규명해 준다."
+      "idiom": "come to terms with",
+      "meaning": "(어려운 현실이나 상황을) 받아들이다, 감수하다",
+      "sentence": "Traditional shops have had to ____ the rapid growth of online shopping.",
+      "example": "Traditional shops have had to come to terms with the rapid growth of online shopping.",
+      "translation": "전통 상점들은 온라인 쇼핑의 급격한 성장을 받아들여야만 했다."
     },
     {
       "id": "ii_14",
       "difficulty": "중",
       "idiom": "stem from",
       "meaning": "~에서 기인하다, 유래하다",
-      "sentence": "A significant proportion of youth psychological anxiety tends to ____ unrelenting social media comparison.",
-      "example": "A significant proportion of youth psychological anxiety tends to stem from unrelenting social media comparison.",
-      "translation": "청소년 심리적 불안의 상당 부분은 끊임없는 소셜 미디어 비교에서 기인하는 경향이 있다."
+      "sentence": "Many modern health problems ____ a lack of regular physical exercise.",
+      "example": "Many modern health problems stem from a lack of regular physical exercise.",
+      "translation": "현대의 많은 건강 문제들은 규칙적인 신체 운동 부족에서 기인한다."
     },
     {
       "id": "ii_15",
       "difficulty": "상",
       "idiom": "at the expense of",
       "meaning": "~을 희생하여, 대가를 치르고",
-      "sentence": "Unregulated corporate industrialization frequently proceeds ____ environmental biodiversity and public health.",
-      "example": "Unregulated corporate industrialization frequently proceeds at the expense of environmental biodiversity and public health.",
-      "translation": "규제되지 않은 기업의 산업화는 흔히 환경적 생물다양성과 공공 보건을 희생시키며 진행된다."
+      "sentence": "Unregulated industrial expansion frequently proceeds ____ environmental biodiversity and public health.",
+      "example": "Unregulated industrial expansion frequently proceeds at the expense of environmental biodiversity and public health.",
+      "translation": "규제되지 않은 산업 확장은 흔히 환경적 생물다양성과 공공 보건을 희생시키며 진행된다."
     },
     {
       "id": "ii_16",
       "difficulty": "상",
       "idiom": "pave the way for",
       "meaning": "~을 위한 길을 열다, 기틀을 마련하다",
-      "sentence": "Groundbreaking CRISPR gene discoveries will ____ highly tailored therapies for inherited metabolic syndromes.",
-      "example": "Groundbreaking CRISPR gene discoveries will pave the way for highly tailored therapies for inherited metabolic syndromes.",
-      "translation": "획기적인 CRISPR 유전자 발견은 유전성 대사 증후군에 대한 고도로 맞춤화된 치료법을 위한 길을 열어줄 것이다."
+      "sentence": "Groundbreaking genetic discoveries will ____ highly tailored therapies for inherited syndromes.",
+      "example": "Groundbreaking genetic discoveries will pave the way for highly tailored therapies for inherited syndromes.",
+      "translation": "획기적인 유전자 발견은 유전성 증후군에 대한 고도로 맞춤화된 치료법을 위한 길을 열어줄 것이다."
     },
     {
       "id": "ii_17",
       "difficulty": "상",
       "idiom": "a catalyst for change",
       "meaning": "변화의 기폭제, 촉매제",
-      "sentence": "The widespread youth climate strike movement served as ____ in national legislative sustainability debates.",
-      "example": "The widespread youth climate strike movement served as a catalyst for change in national legislative sustainability debates.",
+      "sentence": "The widespread youth climate movement served as ____ in national legislative sustainability debates.",
+      "example": "The widespread youth climate movement served as a catalyst for change in national legislative sustainability debates.",
       "translation": "광범위한 청소년 기후 행동 운동은 국가 입법부의 지속가능성 논의에서 변화의 기폭제 역할을 했다."
     },
     {
@@ -2969,49 +3331,139 @@ window.IELTS_DATA = {
       "difficulty": "상",
       "idiom": "run counter to",
       "meaning": "~에 역행하다, 정면으로 배치되다",
-      "sentence": "Imposing severe austerity cuts on public universities would ____ national strategies for technical innovation.",
-      "example": "Imposing severe austerity cuts on public universities would run counter to national strategies for technical innovation.",
-      "translation": "국립대학교에 가혹한 긴축 재정 삭감을 가하는 것은 기술 혁신을 위한 국가적 전략에 정면으로 배치될 것이다."
+      "sentence": "Imposing severe budget cuts on public universities would ____ national strategies for innovation.",
+      "example": "Imposing severe budget cuts on public universities would run counter to national strategies for innovation.",
+      "translation": "국립대학교에 심각한 예산 삭감을 가하는 것은 혁신을 위한 국가적 전략에 정면으로 배치될 것이다."
     },
     {
       "id": "ii_19",
       "difficulty": "상",
       "idiom": "give rise to",
       "meaning": "~을 일으키다, 초래하다",
-      "sentence": "Unchecked algorithmic social echo chambers have begun to ____ unprecedented political polarization.",
-      "example": "Unchecked algorithmic social echo chambers have begun to give rise to unprecedented political polarization.",
-      "translation": "통제되지 않는 알고리즘적 소셜 에코 체임버는 전례 없는 정치적 양극화를 초래하기 시작했다."
+      "sentence": "Unchecked algorithmic echo chambers have begun to ____ unprecedented political polarization.",
+      "example": "Unchecked algorithmic echo chambers have begun to give rise to unprecedented political polarization.",
+      "translation": "통제되지 않는 알고리즘 에코 체임버는 전례 없는 정치적 양극화를 초래하기 시작했다."
     },
     {
       "id": "ii_20",
       "difficulty": "상",
-      "idiom": "hang in the balance",
-      "meaning": "풍전등화이다, 결말이 위태롭다",
-      "sentence": "With ocean temperatures climbing annually, the survival of polar marine habitats continues to ____.",
-      "example": "With ocean temperatures climbing annually, the survival of polar marine habitats continues to hang in the balance.",
-      "translation": "해수 온도가 매년 상승함에 따라 극지 해양 서식지의 생존은 여전히 풍전등화의 위기에 놓여 있다."
+      "idiom": "shed light on",
+      "meaning": "~을 명확히 규명하다, 새로운 단서를 밝히다",
+      "sentence": "Recent archaeological excavations ____ how ancient civilizations adapted to severe droughts.",
+      "example": "Recent archaeological excavations shed light on how ancient civilizations adapted to severe droughts.",
+      "translation": "최근의 고고학적 발굴은 고대 문명이 극심한 가뭄에 어떻게 적응했는지를 명확히 규명해 준다."
     }
   ],
   "cloze": [
     {
       "id": "ic_01",
       "difficulty": "하",
-      "sentence": "Regular cardiovascular aerobic exercise can significantly reduce the ____ of developing metabolic syndrome.",
+      "sentence": "Students need to ____ a clear decision about their future career path.",
+      "answer": "make",
+      "options": [
+        "make",
+        "do",
+        "take",
+        "keep"
+      ],
+      "collocation": "make a decision (결정을 내리다)",
+      "translation": "학생들은 자신의 미래 진로에 대해 명확한 결정을 내려야 한다.",
+      "explanation": "[Band 5.0 필수 연어] '결정을 내리다'는 동사 do나 take가 아닌 'make a decision'을 사용합니다."
+    },
+    {
+      "id": "ic_02",
+      "difficulty": "하",
+      "sentence": "Young children should ____ close attention to their teacher in the classroom.",
+      "answer": "pay",
+      "options": [
+        "pay",
+        "give",
+        "send",
+        "spend"
+      ],
+      "collocation": "pay attention to (~에 주의를 기울이다/집중하다)",
+      "translation": "어린아이들은 교실에서 선생님께 주의를 기울여야 한다.",
+      "explanation": "[Band 5.0 필수 연어] '~에 집중하다, 주의를 기울이다'는 항상 'pay attention to'로 결합합니다."
+    },
+    {
+      "id": "ic_03",
+      "difficulty": "하",
+      "sentence": "Eating too much fast food can ____ a negative effect on your health.",
+      "answer": "have",
+      "options": [
+        "have",
+        "make",
+        "do",
+        "take"
+      ],
+      "collocation": "have an effect on (~에 영향을 미치다)",
+      "translation": "패스트푸드를 너무 많이 먹는 것은 건강에 부정적인 영향을 미칠 수 있다.",
+      "explanation": "[Band 5.0 필수 연어] '~에 영향을 미치다'의 가장 기본적인 구문은 'have a (positive/negative) effect on'입니다."
+    },
+    {
+      "id": "ic_04",
+      "difficulty": "하",
+      "sentence": "Many office workers prefer to ____ public transport to avoid morning traffic.",
+      "answer": "take",
+      "options": [
+        "take",
+        "ride",
+        "drive",
+        "make"
+      ],
+      "collocation": "take public transport (대중교통을 이용하다)",
+      "translation": "많은 직장인들은 아침 교통 체증을 피하기 위해 대중교통을 이용하는 것을 선호한다.",
+      "explanation": "[Band 5.0 필수 연어] 대중교통을 이용하다는 'take public transport' 또는 'use public transport'를 씁니다."
+    },
+    {
+      "id": "ic_05",
+      "difficulty": "하",
+      "sentence": "Doing regular homework helps students ____ steady progress in English.",
+      "answer": "make",
+      "options": [
+        "make",
+        "do",
+        "get",
+        "reach"
+      ],
+      "collocation": "make progress (진전을 이루다, 실력이 늘다)",
+      "translation": "규칙적으로 숙제를 하는 것은 학생들이 영어에서 꾸준한 발전을 이루는 데 도움이 된다.",
+      "explanation": "[Band 5.0 필수 연어] 실력이 향상되거나 진전을 보일 때는 'make progress'를 사용합니다."
+    },
+    {
+      "id": "ic_06",
+      "difficulty": "하",
+      "sentence": "Local libraries ____ an important role in supporting community education.",
+      "answer": "play",
+      "options": [
+        "play",
+        "make",
+        "do",
+        "act"
+      ],
+      "collocation": "play an important role in (~에서 중요한 역할을 하다)",
+      "translation": "지역 도서관은 지역 사회 교육을 지원하는 데 중요한 역할을 한다.",
+      "explanation": "[Band 5.0 필수 연어] '~에서 역할을 하다'는 IELTS 스피킹과 라이팅 기초 필수 표현인 'play a role in'입니다."
+    },
+    {
+      "id": "ic_07",
+      "difficulty": "중",
+      "sentence": "Regular physical exercise can significantly reduce the ____ of heart disease.",
       "answer": "risk",
       "options": [
         "risk",
         "danger",
         "hazard",
-        "threat"
+        "trouble"
       ],
-      "collocation": "reduce the risk of (위험을 줄이다)",
-      "translation": "규칙적인 유산소 운동은 대사 증후군이 발생할 위험을 현저히 줄여줄 수 있다.",
-      "explanation": "의학 및 건강 연구에서 질병 발생 확률을 낮출 때 동사 reduce 뒤에는 'risk'가 가장 전형적인 콜로케이션입니다."
+      "collocation": "reduce the risk of (~의 위험/발병률을 줄이다)",
+      "translation": "규칙적인 신체 운동은 심장 질환의 위험을 크게 줄일 수 있다.",
+      "explanation": "[Band 5.5~6.5 핵심 연어] 건강·의학 주제에서 질병 발생 확률을 낮출 때 'reduce the risk of'가 가장 자연스럽습니다."
     },
     {
-      "id": "ic_02",
-      "difficulty": "하",
-      "sentence": "National governments must ____ decisive measures to curb soaring metropolitan carbon emissions.",
+      "id": "ic_08",
+      "difficulty": "중",
+      "sentence": "Governments should ____ effective measures to reduce plastic pollution.",
       "answer": "take",
       "options": [
         "take",
@@ -3020,193 +3472,103 @@ window.IELTS_DATA = {
         "hold"
       ],
       "collocation": "take measures (조치를 취하다)",
-      "translation": "중앙정부는 치솟는 대도시 탄소 배출량을 억제하기 위해 결단력 있는 조치를 취해야 한다.",
-      "explanation": "'조치를 취하다'는 관용적 학술 표현으로 'take measures' 또는 'adopt measures'를 사용합니다."
+      "translation": "정부는 플라스틱 오염을 줄이기 위해 효과적인 조치를 취해야 한다.",
+      "explanation": "[Band 5.5~6.5 핵심 연어] Writing Task 2 해결책 제시 문장에서 '조치를 취하다'는 'take measures'를 사용합니다."
     },
     {
-      "id": "ic_03",
-      "difficulty": "하",
-      "sentence": "Primary school curricula should ____ emphasis on developing foundational literacy and numeracy skills.",
+      "id": "ic_09",
+      "difficulty": "중",
+      "sentence": "Modern schools should ____ more emphasis on practical communication skills.",
       "answer": "place",
       "options": [
         "place",
         "give",
-        "put",
+        "make",
         "set"
       ],
-      "collocation": "place emphasis on (~에 역점을 두다/강조하다)",
-      "translation": "초등학교 교육과정은 기초 문해력과 수리력 기술을 발달시키는 데 역점을 두어야 한다.",
-      "explanation": "'~에 역점을 두다, 강조하다'의 격식 있는 표현으로 'place emphasis on'이 가장 자연스럽습니다."
+      "collocation": "place emphasis on (~에 중점을 두다/강조하다)",
+      "translation": "현대 학교들은 실용적인 의사소통 기술에 더 많은 중점을 두어야 한다.",
+      "explanation": "[Band 5.5~6.5 핵심 연어] '~을 강조하다, 역점을 두다'는 'place (또는 put) emphasis on'을 씁니다."
     },
     {
-      "id": "ic_04",
-      "difficulty": "하",
-      "sentence": "Advanced automation and artificial intelligence will have a profound ____ on modern labor markets.",
-      "answer": "impact",
-      "options": [
-        "impact",
-        "result",
-        "outcome",
-        "product"
-      ],
-      "collocation": "have a profound impact on (~에 지대한 영향을 미치다)",
-      "translation": "첨단 자동화와 인공지능은 현대 노동 시장에 지대한 영향을 미칠 것이다.",
-      "explanation": "'지대한 영향을 미치다'는 형용사 profound와 전치사 on 사이에 명사 'impact'가 호응합니다."
-    },
-    {
-      "id": "ic_05",
-      "difficulty": "하",
-      "sentence": "Sociologists frequently ____ surveys to evaluate public perceptions regarding nuclear power generation.",
+      "id": "ic_10",
+      "difficulty": "중",
+      "sentence": "Researchers decided to ____ a survey to understand young people's spending habits.",
       "answer": "conduct",
       "options": [
         "conduct",
         "operate",
         "practice",
-        "perform"
+        "make"
       ],
       "collocation": "conduct a survey (설문조사를 실시하다)",
-      "translation": "사회학자들은 원자력 발전에 관한 대중의 인식을 평가하기 위해 설문조사를 자주 실시한다.",
-      "explanation": "연구/설문/조사를 격식 있게 수행할 때 'conduct a survey/study'를 씁니다."
+      "translation": "연구진은 젊은 층의 소비 습관을 파악하기 위해 설문조사를 실시하기로 결정했다.",
+      "explanation": "[Band 5.5~6.5 핵심 연어] 연구나 설문조사를 수행할 때는 동사 'conduct'가 호응합니다."
     },
     {
-      "id": "ic_06",
-      "difficulty": "하",
-      "sentence": "Many university graduates struggle to ____ a steady balance between intense career duties and personal wellness.",
+      "id": "ic_11",
+      "difficulty": "중",
+      "sentence": "Many working parents struggle to ____ a balance between career and family life.",
       "answer": "strike",
       "options": [
         "strike",
         "catch",
         "hit",
-        "seize"
+        "take"
       ],
-      "collocation": "strike a balance (균형을 맞추다/유지하다)",
-      "translation": "많은 대학 졸업생들은 치열한 직무와 개인 건강 사이에서 안정적인 균형을 맞추기 위해 고군분투한다.",
-      "explanation": "두 가지 상충하는 가치 사이에서 균형을 잡을 때 대표적인 관용구는 'strike a balance'입니다."
-    },
-    {
-      "id": "ic_07",
-      "difficulty": "중",
-      "sentence": "The multinational climate delegation failed to reach a unanimous ____ on mandatory emission reduction quotas.",
-      "answer": "consensus",
-      "options": [
-        "consensus",
-        "agreement",
-        "compromise",
-        "treaty"
-      ],
-      "collocation": "reach a consensus (만장일치의 합의에 도달하다)",
-      "translation": "다국적 기후 대표단은 의무적 배출 감축 할당량에 대해 만장일치의 합의에 도달하지 못했다.",
-      "explanation": "국제회의 보고서와 아카데믹 에세이에서 만장일치의 합의는 'reach a unanimous consensus'를 씁니다."
-    },
-    {
-      "id": "ic_08",
-      "difficulty": "중",
-      "sentence": "Unregulated corporate industrial waste disposal poses a severe ____ to downstream freshwater ecosystems.",
-      "answer": "threat",
-      "options": [
-        "threat",
-        "peril",
-        "crisis",
-        "distress"
-      ],
-      "collocation": "pose a threat to (~에 위협이 되다)",
-      "translation": "규제되지 않는 기업의 산업 폐기물 처리는 하류 담수 생태계에 심각한 위협이 된다.",
-      "explanation": "동사 'pose'와 전치사 'to' 사이에서 '위협을 가하다'를 구성하는 명사는 'threat'입니다."
-    },
-    {
-      "id": "ic_09",
-      "difficulty": "중",
-      "sentence": "Recent geological deep-sea core samples have cast ____ on previous assertions regarding prehistoric ocean temperatures.",
-      "answer": "doubt",
-      "options": [
-        "doubt",
-        "suspicion",
-        "mistrust",
-        "skepticism"
-      ],
-      "collocation": "cast doubt on (~에 의구심을 던지다/의문을 제기하다)",
-      "translation": "최근의 지질학적 심해 코어 샘플은 선사시대 해수 온도에 대한 기존의 주장에 의구심을 던졌다.",
-      "explanation": "학술 가설이나 기존 이론에 의문을 제기할 때 쓰는 필수 연어는 'cast doubt on'입니다."
-    },
-    {
-      "id": "ic_10",
-      "difficulty": "중",
-      "sentence": "Governments should ____ priorities carefully between military modernization and public healthcare infrastructure.",
-      "answer": "set",
-      "options": [
-        "set",
-        "make",
-        "do",
-        "impose"
-      ],
-      "collocation": "set priorities (우선순위를 정하다)",
-      "translation": "정부는 군 현대화와 공공 의료 인프라 사이에서 우선순위를 신중하게 정해야 한다.",
-      "explanation": "정책 목표의 우선순위를 정하고 설정할 때는 'set priorities'가 표준적 표현입니다."
-    },
-    {
-      "id": "ic_11",
-      "difficulty": "중",
-      "sentence": "Peer reviewers confirmed that the observational findings are fully ____ with established evolutionary models.",
-      "answer": "consistent",
-      "options": [
-        "consistent",
-        "compatible",
-        "congruent",
-        "identical"
-      ],
-      "collocation": "consistent with (~와 일치하는/부합하는)",
-      "translation": "동료 심사위원들은 관찰된 연구 결과가 기존 진화 모델과 전적으로 부합함을 확인했다.",
-      "explanation": "연구 결과가 기존 이론/데이터와 상치되지 않고 일치할 때 'consistent with'를 씁니다."
+      "collocation": "strike a balance (균형을 맞추다)",
+      "translation": "많은 맞벌이 부모들은 직장과 가정생활 사이에서 균형을 맞추기 위해 애쓴다.",
+      "explanation": "[Band 5.5~6.5 핵심 연어] 두 가지 가치 사이에서 균형을 잡을 때 'strike a balance'를 사용합니다."
     },
     {
       "id": "ic_12",
       "difficulty": "중",
-      "sentence": "Technological globalization has played a key role in raising the ____ of living for millions across emerging markets.",
-      "answer": "standard",
+      "sentence": "Industrial chemical waste poses a serious ____ to nearby rivers and lakes.",
+      "answer": "threat",
       "options": [
-        "standard",
-        "level",
-        "quality",
-        "scale"
+        "threat",
+        "fear",
+        "crisis",
+        "harm"
       ],
-      "collocation": "standard of living (생활 수준)",
-      "translation": "기술 세계화는 신흥 시장 수백만 명의 생활 수준을 향상시키는 데 핵심적인 역할을 했다.",
-      "explanation": "국민의 전반적인 물질적 복지와 경제적 삶의 질을 가리키는 정형 표현은 'standard of living'입니다."
+      "collocation": "pose a threat to (~에 위협이 되다)",
+      "translation": "산업 화학 폐기물은 인근 강과 호수에 심각한 위협이 된다.",
+      "explanation": "[Band 5.5~6.5 핵심 연어] 동사 'pose'와 전치사 'to'와 결합하여 위협을 가한다는 뜻을 나타내는 명사는 'threat'입니다."
     },
     {
       "id": "ic_13",
       "difficulty": "중",
-      "sentence": "University students must learn to ____ critical judgments regarding the validity of online statistical assertions.",
-      "answer": "exercise",
+      "sentence": "Economic growth has helped raise the ____ of living in many developing countries.",
+      "answer": "standard",
       "options": [
-        "exercise",
-        "practice",
-        "apply",
-        "exert"
+        "standard",
+        "level",
+        "grade",
+        "scale"
       ],
-      "collocation": "exercise judgment (신중하게 판단력을 발휘하다)",
-      "translation": "대학생들은 온라인 통계 주장의 타당성에 대해 비판적 판단력을 발휘하는 법을 배워야 한다.",
-      "explanation": "판단력(judgment), 주의(caution), 권한(power) 등을 발휘하고 행사할 때 동사 'exercise'를 씁니다."
+      "collocation": "standard of living (생활 수준)",
+      "translation": "경제 성장은 많은 개발도상국의 생활 수준을 높이는 데 도움이 되었다.",
+      "explanation": "[Band 5.5~6.5 핵심 연어] 경제적 삶의 질과 생활 수준을 가리키는 고정 표현은 'standard of living'입니다."
     },
     {
       "id": "ic_14",
       "difficulty": "중",
-      "sentence": "The new trade agreement will facilitate ____ access to overseas markets for small regional enterprises.",
-      "answer": "greater",
+      "sentence": "After hours of debate, the committee finally reached a ____ on the new budget.",
+      "answer": "consensus",
       "options": [
-        "greater",
-        "higher",
-        "taller",
-        "bigger"
+        "consensus",
+        "discussion",
+        "promise",
+        "opinion"
       ],
-      "collocation": "greater access to (~에 대한 더 넓은 접근성)",
-      "translation": "새로운 무역 협정은 소규모 지역 기업들에게 해외 시장에 대한 더 넓은 접근성을 촉진할 것이다.",
-      "explanation": "시장, 정보, 자원 등에 대한 접근성을 확장할 때 전형적으로 형용사 'greater'가 호응합니다."
+      "collocation": "reach a consensus (합의에 도달하다)",
+      "translation": "수 시간의 토론 끝에 위원회는 마침내 새 예산안에 대해 합의에 도달했다.",
+      "explanation": "[Band 5.5~6.5 핵심 연어] 의견 일치를 보거나 합의에 도달할 때 'reach a consensus'를 씁니다."
     },
     {
       "id": "ic_15",
       "difficulty": "상",
-      "sentence": "The latest genome sequencing study sheds new ____ on how ancient hominids adapted to glacial climates.",
+      "sentence": "The latest genome sequencing study sheds new ____ on how ancient humans adapted to ice ages.",
       "answer": "light",
       "options": [
         "light",
@@ -3215,13 +3577,13 @@ window.IELTS_DATA = {
         "clarity"
       ],
       "collocation": "shed light on (~을 규명하다/새로운 정보를 밝히다)",
-      "translation": "최신 게놈 서열 분석 연구는 고대 인류가 빙하기 기후에 어떻게 적응했는지를 새롭게 규명해 준다.",
-      "explanation": "동사 'shed'와 전치사 'on'과 결합하여 의문점을 밝히는 학술 배합은 'shed light on'입니다."
+      "translation": "최신 유전체 서열 분석 연구는 고대 인류가 빙하기에 어떻게 적응했는지를 새롭게 규명해 준다.",
+      "explanation": "[Band 6.5~8.0 고급 연어] 동사 'shed'와 전치사 'on'과 결합하여 의문점을 밝히는 학술 배합은 'shed light on'입니다."
     },
     {
       "id": "ic_16",
       "difficulty": "상",
-      "sentence": "The sudden withdrawal of institutional venture capital dealt a devastating ____ to the green energy startup.",
+      "sentence": "The sudden withdrawal of venture capital dealt a devastating ____ to the green energy startup.",
       "answer": "blow",
       "options": [
         "blow",
@@ -3230,13 +3592,13 @@ window.IELTS_DATA = {
         "crash"
       ],
       "collocation": "deal a blow to (~에 치명타를 입히다)",
-      "translation": "기관 벤처 캐피털의 갑작스러운 철수는 친환경 에너지 스타트업에 치명타를 입혔다.",
-      "explanation": "사업, 계획, 조직 등에 심각한 타격이나 좌절을 안길 때 'deal a devastating blow to'를 사용합니다."
+      "translation": "벤처 캐피털의 갑작스러운 철수는 친환경 에너지 스타트업에 치명타를 입혔다.",
+      "explanation": "[Band 6.5~8.0 고급 연어] 사업이나 계획에 심각한 타격을 안길 때 'deal a devastating blow to'를 사용합니다."
     },
     {
       "id": "ic_17",
       "difficulty": "상",
-      "sentence": "The proposed tax incentives are intended to ____ private investment toward sustainable municipal transport.",
+      "sentence": "The proposed tax incentives are intended to ____ private investment toward sustainable transport.",
       "answer": "channel",
       "options": [
         "channel",
@@ -3245,13 +3607,13 @@ window.IELTS_DATA = {
         "lead"
       ],
       "collocation": "channel investment toward (~로 투자를 유도하다/돌리다)",
-      "translation": "제안된 세제 혜택은 민간 투자를 지속 가능한 도시 대중교통 쪽으로 유도하기 위한 것이다.",
-      "explanation": "자금이나 노력을 특정 목표 방향으로 집중 투입하고 유도할 때 'channel investment/resources toward'를 씁니다."
+      "translation": "제안된 세제 혜택은 민간 투자를 지속 가능한 대중교통 쪽으로 유도하기 위한 것이다.",
+      "explanation": "[Band 6.5~8.0 고급 연어] 자금이나 자원을 특정 목표로 집중 투입할 때 동사 'channel'을 씁니다."
     },
     {
       "id": "ic_18",
       "difficulty": "상",
-      "sentence": "Extensive metallurgical testing revealed that the structural steel did not meet minimum safety ____.",
+      "sentence": "Extensive laboratory testing revealed that the steel did not meet minimum safety ____.",
       "answer": "specifications",
       "options": [
         "specifications",
@@ -3260,13 +3622,13 @@ window.IELTS_DATA = {
         "definitions"
       ],
       "collocation": "meet safety specifications (안전 규격/사양을 충족하다)",
-      "translation": "광범위한 금속공학 테스트 결과, 해당 구조용 강철은 최소 안전 규격을 충족하지 못한 것으로 드러났다.",
-      "explanation": "공학 및 산업 맥락에서 기술적 규격 사양을 나타내는 전문 어휘는 'specifications'입니다."
+      "translation": "광범위한 실험실 테스트 결과, 해당 강철은 최소 안전 규격을 충족하지 못한 것으로 드러났다.",
+      "explanation": "[Band 6.5~8.0 고급 연어] 기술적 규격 및 안전 사양을 나타내는 전문 어휘는 'specifications'입니다."
     },
     {
       "id": "ic_19",
       "difficulty": "상",
-      "sentence": "The newly ratified international treaty places legally ____ obligations on signatory industrialized nations.",
+      "sentence": "The newly ratified international treaty places legally ____ obligations on signatory nations.",
       "answer": "binding",
       "options": [
         "binding",
@@ -3275,13 +3637,13 @@ window.IELTS_DATA = {
         "locking"
       ],
       "collocation": "legally binding (법적 구속력이 있는)",
-      "translation": "새롭게 비준된 국제 조약은 조약 체결 선진국들에 법적 구속력이 있는 의무를 부과한다.",
-      "explanation": "국제법 및 계약 문서에서 법적 강제성을 나타내는 연어 배합은 'legally binding obligations'입니다."
+      "translation": "새롭게 비준된 국제 조약은 서명국들에 법적 구속력이 있는 의무를 부과한다.",
+      "explanation": "[Band 6.5~8.0 고급 연어] 법적 강제성을 나타내는 학술 연어 배합은 'legally binding obligations'입니다."
     },
     {
       "id": "ic_20",
       "difficulty": "상",
-      "sentence": "The university professor presented a compelling body of ____ demonstrating the efficacy of cognitive behavioral therapy.",
+      "sentence": "The professor presented a compelling body of ____ demonstrating the efficacy of cognitive therapy.",
       "answer": "evidence",
       "options": [
         "evidence",
@@ -3290,240 +3652,240 @@ window.IELTS_DATA = {
         "clues"
       ],
       "collocation": "a compelling body of evidence (설득력 있는 다수의 증거 자료)",
-      "translation": "대학교수는 인지 행동 치료의 효능을 입증하는 설득력 있는 다수의 증거 자료를 제시했다.",
-      "explanation": "학술 논문에서 풍부하고 설득력 있는 실증 자료군을 지칭할 때 'a compelling body of evidence'를 씁니다."
+      "translation": "교수는 인지 치료의 효능을 입증하는 설득력 있는 다수의 증거 자료를 제시했다.",
+      "explanation": "[Band 6.5~8.0 고급 연어] 학술 논문에서 설득력 있는 실증 자료군을 지칭할 때 'a compelling body of evidence'를 씁니다."
     }
   ],
   "grammar": [
     {
       "id": "ig_01",
       "difficulty": "하",
-      "category": "Relative Clauses (관계대명사 소유격)",
-      "question": "Choose the most grammatically accurate sentence for Academic Writing:",
+      "category": "Present Perfect (현재완료 계속 용법: for vs since)",
+      "question": "Choose the grammatically correct sentence for IELTS Speaking Part 1:",
       "options": [
-        "The clinical researchers tracked patients which immune systems were suppressed by targeted chemotherapy.",
-        "The clinical researchers tracked patients whose immune systems were suppressed by targeted chemotherapy.",
-        "The clinical researchers tracked patients that their immune systems were suppressed by targeted chemotherapy.",
-        "The clinical researchers tracked patients who immune systems were suppressed by targeted chemotherapy."
+        "I have lived in this city since five years.",
+        "I have lived in this city for five years.",
+        "I am living in this city for five years.",
+        "I lived in this city since five years ago."
       ],
       "answer": 2,
-      "example": "The clinical researchers tracked patients whose immune systems were suppressed by targeted chemotherapy.",
-      "translation": "임상 연구진은 표적 화학요법에 의해 면역 체계가 억제된 환자들을 추적 관찰했다.",
-      "explanation": "선행사(patients)의 소유격 관계를 나타낼 때는 소유격 관계대명사 'whose'가 정확합니다. (which는 사람 불가, that their는 중복 대명사 오류)."
+      "example": "I have lived in this city for five years.",
+      "translation": "나는 이 도시에서 5년 동안 살아왔다.",
+      "explanation": "[Band 5.0 필수 문법] 과거부터 현재까지 지속된 기간(five years: 5년 동안) 앞에는 전치사 'for'를 쓰고 현재완료(have lived)와 함께 사용합니다 (특정 시점 앞에는 since)."
     },
     {
       "id": "ig_02",
       "difficulty": "하",
-      "category": "Concession Clauses (양보 구문: Despite vs Although)",
-      "question": "Identify the grammatically correct sentence expressing concession:",
+      "category": "Conjunction vs Preposition (because vs because of)",
+      "question": "Identify the grammatically correct sentence expressing a reason:",
       "options": [
-        "Despite facing severe budgetary constraints, the municipal clinic maintained 24-hour emergency services.",
-        "Although facing severe budgetary constraints, but the municipal clinic maintained emergency services.",
-        "Despite of facing severe budgetary constraints, the municipal clinic maintained emergency services.",
-        "In spite facing severe budgetary constraints, the municipal clinic maintained emergency services."
+        "The flight was delayed because the heavy rain.",
+        "The flight was delayed because of the heavy rain.",
+        "The flight was delayed because of it rained heavily.",
+        "The flight was delayed due to it rained heavily."
       ],
-      "answer": 1,
-      "example": "Despite facing severe budgetary constraints, the municipal clinic maintained 24-hour emergency services.",
-      "translation": "심각한 예산 제약에 직면했음에도 불구하고, 시립 진료소는 24시간 응급 서비스를 유지했다.",
-      "explanation": "'Despite'는 전치사로 뒤에 동명사구(facing constraints)가 오며 'of'를 쓰지 않습니다. (Although와 but의 중복 사용, In spite of에서 of 누락은 빈출 오류입니다)."
+      "answer": 2,
+      "example": "The flight was delayed because of the heavy rain.",
+      "translation": "폭우 때문에 항공편이 지연되었다.",
+      "explanation": "[Band 5.0 필수 문법] 명사구(the heavy rain) 앞에는 전치사구인 'because of' 또는 'due to'를 사용하며, 주어+동사 절 앞에는 접속사 'because'를 씁니다."
     },
     {
       "id": "ig_03",
       "difficulty": "하",
-      "category": "Subject-Verb Agreement (주어-동사 수일치)",
-      "question": "Which sentence exhibits flawless subject-verb agreement for complex academic subjects?",
+      "category": "Modal Passive (조동사 수동태: should be + p.p.)",
+      "question": "Choose the sentence that correctly uses the passive voice with a modal verb:",
       "options": [
-        "The proliferation of automated surveillance algorithms have raised grave privacy concerns.",
-        "The proliferation of automated surveillance algorithms were raising grave privacy concerns.",
-        "The proliferation of automated surveillance algorithms has raised grave privacy concerns.",
-        "The proliferation of automated surveillance algorithms are raising grave privacy concerns."
+        "Plastic bottles should recycle to protect the environment.",
+        "Plastic bottles should be recycled to protect the environment.",
+        "Plastic bottles should recycled to protect the environment.",
+        "Plastic bottles should be recycle to protect the environment."
       ],
-      "answer": 3,
-      "example": "The proliferation of automated surveillance algorithms has raised grave privacy concerns.",
-      "translation": "자동화된 감시 알고리즘의 급증은 심각한 사생활 침해 우려를 불러일으켰다.",
-      "explanation": "핵심 주어는 복수형 전치사구의 명사(algorithms)가 아니라 단수 핵심 명사인 'The proliferation'이므로 단수 동사 'has raised'가 일치합니다."
+      "answer": 2,
+      "example": "Plastic bottles should be recycled to protect the environment.",
+      "translation": "환경을 보호하기 위해 플라스틱병은 재활용되어야 한다.",
+      "explanation": "[Band 5.0 필수 문법] 주어(Plastic bottles)가 재활용되는 대상이므로 조동사 수동태 공식인 'should be + 과거분사(recycled)'가 정확합니다."
     },
     {
       "id": "ig_04",
       "difficulty": "하",
-      "category": "Parallel Structure (병렬 구조)",
-      "question": "Choose the sentence that correctly preserves grammatical parallelism:",
+      "category": "Uncountable Nouns (불가산명사 수량 표현)",
+      "question": "Which sentence uses countable and uncountable nouns accurately?",
       "options": [
-        "Effective corporate managers must communicate transparently, delegate responsibilities fairly, and to inspire team morale.",
-        "Effective corporate managers must communicate transparently, delegating responsibilities fairly, and inspire team morale.",
-        "Effective corporate managers must communicate transparently, delegate responsibilities fairly, and inspire team morale.",
-        "Effective corporate managers must communication transparently, delegate responsibilities, and inspire team morale."
+        "The internet provides many useful informations for students.",
+        "The internet provides a lot of useful information for students.",
+        "The internet provides a few useful information for students.",
+        "The internet provides several useful informations for students."
       ],
-      "answer": 3,
-      "example": "Effective corporate managers must communicate transparently, delegate responsibilities fairly, and inspire team morale.",
-      "translation": "유능한 기업 관리자는 투명하게 소통하고, 책임을 공정하게 위임하며, 팀의 사기를 북돋아야 한다.",
-      "explanation": "조동사 must 뒤에 원형 동사 3개(communicate, delegate, inspire)가 접속사 and로 대등하게 병렬 연결되어야 합니다."
+      "answer": 2,
+      "example": "The internet provides a lot of useful information for students.",
+      "translation": "인터넷은 학생들에게 많은 유용한 정보를 제공한다.",
+      "explanation": "[Band 5.0 필수 문법] 'information(정보)', 'advice(조언)', 'furniture(가구)'는 셀 수 없는 불가산명사이므로 복수형(-s)을 쓸 수 없으며 'a lot of / much'와 함께 씁니다."
     },
     {
       "id": "ig_05",
       "difficulty": "하",
-      "category": "Comparatives (비교 구문 정확성)",
-      "question": "Which comparative structure is written with academic precision?",
+      "category": "Comparatives (비교급 기본 구문)",
+      "question": "Select the sentence that forms the comparative structure correctly:",
       "options": [
-        "The energy density of lithium-sulfur batteries is significantly higher than conventional lead-acid cells.",
-        "The energy density of lithium-sulfur batteries is significantly higher than that of conventional lead-acid cells.",
-        "The energy density of lithium-sulfur batteries is significantly higher than those of conventional lead-acid cells.",
-        "The energy density of lithium-sulfur batteries is significantly more higher than lead-acid cells."
+        "Taking the subway is more convenient than driving a car.",
+        "Taking the subway is more convenienter than driving a car.",
+        "Taking the subway is much convenient than driving a car.",
+        "Taking the subway is convenienter than driving a car."
       ],
-      "answer": 2,
-      "example": "The energy density of lithium-sulfur batteries is significantly higher than that of conventional lead-acid cells.",
-      "translation": "리튬-황 배터리의 에너지 밀도는 기존 납축전지의 에너지 밀도보다 현저히 높다.",
-      "explanation": "비교 대상은 전지가 아니라 '에너지 밀도(The energy density)'이므로, 단수 대명사 'that of'를 사용하여 논리적 비교 대상을 정확히 일치시켜야 합니다."
+      "answer": 1,
+      "example": "Taking the subway is more convenient than driving a car.",
+      "translation": "지하철을 타는 것이 자동차를 운전하는 것보다 더 편리하다.",
+      "explanation": "[Band 5.0 필수 문법] 3음절 이상의 형용사(convenient)는 앞에 'more'를 붙여 비교급(more convenient than)을 만듭니다."
     },
     {
       "id": "ig_06",
       "difficulty": "하",
-      "category": "Passive Voice (학술 수동태 어순)",
-      "question": "Select the sentence that properly uses formal passive voice in academic methodology:",
+      "category": "Gerund vs Infinitive (enjoy + -ing 동명사 목적어)",
+      "question": "Choose the grammatically accurate sentence:",
       "options": [
-        "The water samples were collected hourly and analyzed for chemical residues using spectrometry.",
-        "The water samples was collected hourly and analyzed for chemical residues using spectrometry.",
-        "The water samples collected hourly and analyzing for chemical residues using spectrometry.",
-        "The water samples been collected hourly and analyzed for chemical residues using spectrometry."
+        "Many young people enjoy to watch movies at home.",
+        "Many young people enjoy watching movies at home.",
+        "Many young people enjoy watch movies at home.",
+        "Many young people enjoy watched movies at home."
       ],
-      "answer": 1,
-      "example": "The water samples were collected hourly and analyzed for chemical residues using spectrometry.",
-      "translation": "수질 샘플은 매시간 수집되었으며 분광법을 사용하여 화학 잔류물에 대해 분석되었다.",
-      "explanation": "복수 주어(The water samples)에 맞추어 복수 과거 수동태 'were collected and analyzed'가 완벽하게 호응합니다."
+      "answer": 2,
+      "example": "Many young people enjoy watching movies at home.",
+      "translation": "많은 젊은이들이 집에서 영화 보는 것을 즐긴다.",
+      "explanation": "[Band 5.0 필수 문법] 동사 'enjoy', 'avoid', 'mind', 'finish'는 목적어로 to부정사가 아닌 동명사(-ing)만을 취합니다."
     },
     {
       "id": "ig_07",
       "difficulty": "중",
-      "category": "Conditionals (가정법 과거완료 도치)",
-      "question": "Which sentence correctly demonstrates inverted conditional structure in academic argumentation?",
+      "category": "Concession Clauses (양보 구문: Despite vs Although)",
+      "question": "Identify the grammatically correct sentence expressing concession (Band 5.5~6.5):",
       "options": [
-        "If environmental regulators had acted sooner, the ecological disaster would be prevented yesterday.",
-        "Had environmental regulators acted sooner, the catastrophic ecological disaster could have been averted.",
-        "Had environmental regulators act sooner, the catastrophic ecological disaster could have been averted.",
-        "Were environmental regulators had acted sooner, the ecological disaster could have been averted."
+        "Despite the bad weather, the outdoor concert went ahead as planned.",
+        "Although the bad weather, the outdoor concert went ahead as planned.",
+        "Despite of the bad weather, the outdoor concert went ahead as planned.",
+        "Although it rained heavily, but the outdoor concert went ahead."
       ],
-      "answer": 2,
-      "example": "Had environmental regulators acted sooner, the catastrophic ecological disaster could have been averted.",
-      "translation": "환경 당국이 더 일찍 조치를 취했더라면, 그 재앙적인 생태계 참사는 막을 수 있었을 것이다.",
-      "explanation": "가정법 과거완료 if 생략 도치는 'Had + 주어 + p.p., 주어 + could/would have p.p.' 구조입니다. IELTS 라이팅 고득점을 보장하는 전형적 고급 구문입니다."
+      "answer": 1,
+      "example": "Despite the bad weather, the outdoor concert went ahead as planned.",
+      "translation": "궂은 날씨에도 불구하고 야외 콘서트는 예정대로 진행되었다.",
+      "explanation": "[Band 5.5~6.5 핵심 문법] 전치사 'Despite' 뒤에는 명사구(the bad weather)가 오며 'of'를 붙이지 않습니다. (접속사 Although는 주어+동사 절과 쓰이며 but과 중복 불가)."
     },
     {
       "id": "ig_08",
       "difficulty": "중",
-      "category": "Participle Clauses (완료 분사구문)",
-      "question": "Choose the sentence that correctly utilizes an introductory perfect participle clause:",
+      "category": "Subject-Verb Agreement (The number of vs A number of)",
+      "question": "Which sentence shows accurate subject-verb agreement for IELTS Writing Task 1?",
       "options": [
-        "Having analyzed the field survey results meticulously, a revised urban transit policy was drafted by the board.",
-        "Analyzing the field survey results meticulously, a revised urban transit policy was drafted.",
-        "Having analyzing the field survey results meticulously, the board drafted a revised urban transit policy.",
-        "Having analyzed the field survey results meticulously, the municipal board drafted a revised urban transit policy."
+        "The number of private cars in big cities have increased rapidly.",
+        "The number of private cars in big cities has increased rapidly.",
+        "The number of private cars in big cities are increasing rapidly.",
+        "The number of private cars in big cities were increasing rapidly."
       ],
-      "answer": 4,
-      "example": "Having analyzed the field survey results meticulously, the municipal board drafted a revised urban transit policy.",
-      "translation": "현장 설문조사 결과를 면밀히 분석한 후, 시 위원회는 개정된 도시 대중교통 정책을 입안했다.",
-      "explanation": "분사구문의 의미상 주어는 주절의 주어와 일치해야 합니다. 설문 결과를 능동적으로 분석한 주체는 위원회(the municipal board)이므로 4번이 유일하게 현수분사(Dangling participle) 오류가 없는 완벽한 문장입니다."
+      "answer": 2,
+      "example": "The number of private cars in big cities has increased rapidly.",
+      "translation": "대도시의 자가용 대수가 급격히 증가했다.",
+      "explanation": "[Band 5.5~6.5 핵심 문법] 'The number of + 복수명사(~의 수)'의 핵심 주어는 단수인 'The number'이므로 단수 동사 'has increased'가 호응합니다."
     },
     {
       "id": "ig_09",
       "difficulty": "중",
-      "category": "Subjunctive Mood (요구/제안 동사 당위성 가정법)",
-      "question": "Which sentence strictly observes the subjunctive mood required in formal academic proposals?",
+      "category": "Relative Clauses (소유격 관계대명사 whose)",
+      "question": "Choose the most accurate sentence using a relative clause:",
       "options": [
-        "The advisory panel recommended that the government implements strict emissions penalties immediately.",
-        "The advisory panel recommended that the government implement strict emissions penalties immediately.",
-        "The advisory panel recommended that the government will implement strict emissions penalties immediately.",
-        "The advisory panel recommended that the government would implemented emissions penalties."
+        "Companies should support employees which children are under school age.",
+        "Companies should support employees whose children are under school age.",
+        "Companies should support employees that their children are under school age.",
+        "Companies should support employees who children are under school age."
       ],
       "answer": 2,
-      "example": "The advisory panel recommended that the government implement strict emissions penalties immediately.",
-      "translation": "자문 위원회는 정부가 엄격한 배출가스 처벌 규정을 즉시 시행할 것을 권고했다.",
-      "explanation": "recommend, suggest, propose, mandate 등 요구/제안 동사 뒤의 that절에는 '(should +) 동사원형' 형태인 원형(implement)이 옵니다."
+      "example": "Companies should support employees whose children are under school age.",
+      "translation": "기업들은 자녀가 취학 연령 미만인 직원들을 지원해야 한다.",
+      "explanation": "[Band 5.5~6.5 핵심 문법] 선행사(employees)와 뒤 명사(children)가 소유 관계일 때는 소유격 관계대명사 'whose'를 사용합니다."
     },
     {
       "id": "ig_10",
       "difficulty": "중",
-      "category": "Cleft Sentences (It 강조 구문)",
-      "question": "Identify the sentence that correctly employs an 'It-cleft' structure to emphasize a causal factor:",
+      "category": "Second Conditional (가정법 과거: If + 과거동사, would + 동사원형)",
+      "question": "Select the sentence that properly uses the second conditional in an essay:",
       "options": [
-        "It is through relentless cross-disciplinary research that groundbreaking pharmaceutical treatments are developed.",
-        "It is through relentless cross-disciplinary research which groundbreaking treatments are developed.",
-        "It is through relentless cross-disciplinary research what groundbreaking treatments are developed.",
-        "There is through relentless cross-disciplinary research that groundbreaking treatments develop."
+        "If more people used public transport, air pollution would decrease significantly.",
+        "If more people use public transport, air pollution would decreased significantly.",
+        "If more people would use public transport, air pollution decreased significantly.",
+        "If more people used public transport, air pollution will decrease significantly."
       ],
       "answer": 1,
-      "example": "It is through relentless cross-disciplinary research that groundbreaking pharmaceutical treatments are developed.",
-      "translation": "획기적인 제약 치료법이 개발되는 것은 바로 끊임없는 학제 간 연구를 통해서이다.",
-      "explanation": "'It is [강조 대상] that [문장 성분]' 구조로 전치사구(through research)를 강조할 때는 접속사 that을 사용해야 합니다 (which, what 불가)."
+      "example": "If more people used public transport, air pollution would decrease significantly.",
+      "translation": "만약 더 많은 사람들이 대중교통을 이용한다면, 대기 오염이 현저히 줄어들 것이다.",
+      "explanation": "[Band 5.5~6.5 핵심 문법] 현재 사실과 반대되거나 가정적인 상황을 설명할 때 'If + S + 과거동사(used), S + would + 동사원형(decrease)' 구문을 쓰면 Writing 점수가 크게 올라갑니다."
     },
     {
       "id": "ig_11",
       "difficulty": "중",
-      "category": "Adverbial Clauses (양보 및 대조: Whereas / While)",
-      "question": "Select the grammatically correct sentence contrasting two sociological trends:",
+      "category": "Parallel Structure (등위접속사 병렬 구조)",
+      "question": "Choose the sentence that correctly preserves grammatical parallelism:",
       "options": [
-        "Developed economies exhibit aging demographic pyramids, whereas birth rates in emerging economies remain substantially higher.",
-        "Developed economies exhibit aging demographic pyramids, whereas but birth rates remain higher.",
-        "Despite developed economies exhibit aging pyramids, emerging economies have higher birth rates.",
-        "Developed economies exhibit aging pyramids, while that birth rates in emerging economies remain higher."
+        "Regular exercise helps people control weight, reduce stress, and to sleep better.",
+        "Regular exercise helps people control weight, reducing stress, and sleep better.",
+        "Regular exercise helps people control weight, reduce stress, and sleep better.",
+        "Regular exercise helps people controlling weight, reduce stress, and sleep better."
       ],
-      "answer": 1,
-      "example": "Developed economies exhibit aging demographic pyramids, whereas birth rates in emerging economies remain substantially higher.",
-      "translation": "선진국 경제는 고령화되는 인구 피라미드를 보이는 반면, 신흥국 경제의 출산율은 여전히 상당히 높게 유지되고 있다.",
-      "explanation": "'whereas'는 두 대조적인 절을 연결하는 접속사이므로 바로 주어-동사가 오며 but과 중복되지 않습니다."
+      "answer": 3,
+      "example": "Regular exercise helps people control weight, reduce stress, and sleep better.",
+      "translation": "규칙적인 운동은 사람들이 체중을 조절하고 스트레스를 줄이며 더 잘 자는 데 도움이 된다.",
+      "explanation": "[Band 5.5~6.5 핵심 문법] 동사원형 3개(control, reduce, sleep)가 등위접속사 and로 대등하게 병렬 연결되어야 합니다."
     },
     {
       "id": "ig_12",
       "difficulty": "중",
-      "category": "Inversion with Little (부정 부사 도치)",
-      "question": "Which sentence correctly executes negative adverbial inversion with 'Little'?",
+      "category": "Adverbial Clauses of Contrast (대조 접속사: while / whereas)",
+      "question": "Select the grammatically correct sentence contrasting two trends:",
       "options": [
-        "Little the early industrialists realized that their emissions would alter the global climate forever.",
-        "Little did the early industrialists realize that their emissions would alter the global climate forever.",
-        "Little did the early industrialists realized that their emissions would alter the global climate forever.",
-        "Little early industrialists did realize that their emissions alter the global climate forever."
+        "Young people prefer shopping online, whereas older generations often prefer local stores.",
+        "Young people prefer shopping online, whereas but older generations prefer local stores.",
+        "Despite young people prefer shopping online, older generations prefer local stores.",
+        "While young people prefer shopping online, but older generations prefer local stores."
       ],
-      "answer": 2,
-      "example": "Little did the early industrialists realize that their emissions would alter the global climate forever.",
-      "translation": "초기 산업가들은 자신들의 배출가스가 지구 기후를 영원히 바꾸어 놓을 것임을 전혀 깨닫지 못했다.",
-      "explanation": "부정 부사 'Little'이 문두에 올 때 의문문 어순으로 'did + 주어 + 동사원형(realize)' 도치가 일어납니다."
+      "answer": 1,
+      "example": "Young people prefer shopping online, whereas older generations often prefer local stores.",
+      "translation": "젊은 층은 온라인 쇼핑을 선호하는 반면, 기성세대는 흔히 동네 매장을 선호한다.",
+      "explanation": "[Band 5.5~6.5 핵심 문법] 'whereas'와 'while'은 두 절을 직접 연결하는 접속사이므로 뒤에 'but'을 중복해서 쓰지 않습니다."
     },
     {
       "id": "ig_13",
       "difficulty": "중",
-      "category": "Not only ... but also (상관접속사 도치)",
-      "question": "Choose the sentence featuring correct fronted inversion with 'Not only':",
+      "category": "Subjunctive in Proposals (제안/권고 동사 + that + S + 동사원형)",
+      "question": "Which sentence correctly uses 'recommend' in a formal IELTS essay?",
       "options": [
-        "Not only does excessive deforestation destroy biodiversity, but it also accelerates global climate warming.",
-        "Not only excessive deforestation destroys biodiversity, but it also accelerates global climate warming.",
-        "Not only does excessive deforestation destroys biodiversity, but it also accelerates climate warming.",
-        "Not only excessive deforestation does destroy biodiversity, but it accelerates climate warming."
+        "Health experts recommend that the government bans junk food ads aimed at children.",
+        "Health experts recommend that the government ban junk food ads aimed at children.",
+        "Health experts recommend that the government will ban junk food ads aimed at children.",
+        "Health experts recommend the government banning junk food ads aimed at children."
       ],
-      "answer": 1,
-      "example": "Not only does excessive deforestation destroy biodiversity, but it also accelerates global climate warming.",
-      "translation": "과도한 삼림 벌채는 생물다양성을 파괴할 뿐만 아니라 지구 온난화를 가속화하기도 한다.",
-      "explanation": "'Not only'가 문두로 이동하면 첫 번째 절에 'does + 주어 + 동사원형' 도치가 발생하며, 뒤에는 'but it also + 동사'가 연결됩니다."
+      "answer": 2,
+      "example": "Health experts recommend that the government ban junk food ads aimed at children.",
+      "translation": "건강 전문가들은 정부가 아동을 겨냥한 정크푸드 광고를 금지할 것을 권고한다.",
+      "explanation": "[Band 5.5~6.5 핵심 문법] recommend, suggest, insist 등 요구·제안 동사 뒤의 that절에는 '(should) + 동사원형(ban)'을 사용합니다."
     },
     {
       "id": "ig_14",
       "difficulty": "중",
-      "category": "Nominalization (학술 명사화 구문)",
-      "question": "Which sentence demonstrates the most formal academic tone typical of IELTS Band 8+ writing?",
+      "category": "Non-defining Relative Clause (계속적 용법 관계대명사: , which)",
+      "question": "Choose the sentence that correctly uses a non-defining relative clause to comment on a whole clause:",
       "options": [
-        "Because the government quickly adopted renewable energy sources, regional air quality improved significantly.",
-        "The government bought new solar panels rapidly and then air quality in the region was much nicer.",
-        "The rapid adoption of renewable energy sources resulted in a significant improvement in regional air quality.",
-        "Air quality became better because they quickly started adopting renewable energy everywhere."
+        "More employees are working remotely, that helps reduce rush-hour traffic.",
+        "More employees are working remotely, which helps reduce rush-hour traffic.",
+        "More employees are working remotely, what helps reduce rush-hour traffic.",
+        "More employees are working remotely, who helps reduce rush-hour traffic."
       ],
-      "answer": 3,
-      "example": "The rapid adoption of renewable energy sources resulted in a significant improvement in regional air quality.",
-      "translation": "재생 에너지원의 신속한 도입은 지역 대기질의 현저한 개선이라는 결과를 낳았다.",
-      "explanation": "동사적 표현(adopted, improved)을 학술 명사화(The rapid adoption ~, resulted in a significant improvement ~)로 변환하여 세련된 객관적 학술 문체를 완성했습니다."
+      "answer": 2,
+      "example": "More employees are working remotely, which helps reduce rush-hour traffic.",
+      "translation": "더 많은 직원들이 원격으로 근무하고 있으며, 이는 출퇴근 시간대 교통 체증을 줄이는 데 도움이 된다.",
+      "explanation": "[Band 5.5~6.5 핵심 문법] 콤마(,) 뒤에서 앞 문장 전체 내용을 선행사로 받을 때는 ', which + 단수동사(helps)'를 사용합니다 (that이나 what 불가)."
     },
     {
       "id": "ig_15",
       "difficulty": "상",
-      "category": "Negative Inversion (Rarely/Seldom 도치)",
-      "question": "Identify the grammatically flawless sentence featuring negative adverbial inversion:",
+      "category": "Negative Inversion (Rarely/Seldom 부정어 도치)",
+      "question": "Identify the grammatically flawless sentence featuring negative adverbial inversion (Band 6.5~8.0):",
       "options": [
         "Rarely a single empirical discovery fundamentally overturns centuries of established medical dogma.",
         "Rarely does a single empirical discovery fundamentally overturn centuries of established medical dogma.",
@@ -3533,39 +3895,39 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "Rarely does a single empirical discovery fundamentally overturn centuries of established medical dogma.",
       "translation": "단 하나의 실증적 발견이 수 세기 동안 확립된 의학적 통념을 근본적으로 뒤집는 일은 거의 없다.",
-      "explanation": "부정 부사 'Rarely'가 문두에 올 때 '조동사(does) + 단수 주어(a discovery) + 본동사 원형(overturn)'의 어순으로 도치됩니다."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 부정 부사 'Rarely / Seldom / Little / Not only'가 문두에 올 때 '조동사(does) + 주어 + 동사원형(overturn)'의 어순으로 도치됩니다."
     },
     {
       "id": "ig_16",
       "difficulty": "상",
-      "category": "Only when / Only after (조건 도치)",
+      "category": "Only after / Only when (조건·시간 부사절 도치)",
       "question": "Which option accurately constructs inversion following an introductory 'Only after' clause?",
       "options": [
-        "Only after clinical trials were successfully completed did regulatory agencies grant commercial market authorization.",
-        "Only after clinical trials were successfully completed regulatory agencies granted commercial market authorization.",
-        "Only after did clinical trials complete successfully, regulatory agencies granted commercial market authorization.",
+        "Only after clinical trials were successfully completed did regulatory agencies grant commercial authorization.",
+        "Only after clinical trials were successfully completed regulatory agencies granted commercial authorization.",
+        "Only after did clinical trials complete successfully, regulatory agencies granted commercial authorization.",
         "Only after clinical trials were completed, did regulatory agencies granted commercial authorization."
       ],
       "answer": 1,
-      "example": "Only after clinical trials were successfully completed did regulatory agencies grant commercial market authorization.",
+      "example": "Only after clinical trials were successfully completed did regulatory agencies grant commercial authorization.",
       "translation": "임상 시험이 성공적으로 완료된 후에야 비로소 규제 기관들은 상업적 시판 허가를 부여했다.",
-      "explanation": "'Only after + 부사절'이 문두에 올 때, 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다 (부사절 내부가 아니라 주절이 도치됨에 유의)."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 'Only after + 부사절'이 문두에 올 때, 뒤따르는 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다."
     },
     {
       "id": "ig_17",
       "difficulty": "상",
-      "category": "No sooner ... than (시간 도치 구문)",
-      "question": "Select the grammatically correct sentence expressing immediate sequence of events:",
+      "category": "Participle Clauses (완료 분사구문 & 주절 주어 일치)",
+      "question": "Choose the sentence that correctly utilizes an introductory perfect participle clause:",
       "options": [
-        "No sooner the central bank had lowered interest rates when consumer borrowing spiked dramatically.",
-        "No sooner had the central bank lowered interest rates than consumer borrowing spiked dramatically.",
-        "No sooner had the central bank lowered interest rates when consumer borrowing did spike dramatically.",
-        "Hardly had the central bank lowered interest rates than consumer borrowing spiked dramatically."
+        "Having analyzed the survey results meticulously, a revised transit policy was drafted by the board.",
+        "Analyzing the survey results meticulously, a revised transit policy was drafted.",
+        "Having analyzing the survey results meticulously, the board drafted a revised transit policy.",
+        "Having analyzed the survey results meticulously, the municipal board drafted a revised transit policy."
       ],
-      "answer": 2,
-      "example": "No sooner had the central bank lowered interest rates than consumer borrowing spiked dramatically.",
-      "translation": "중앙은행이 금리를 인하하자마자 소비자 대출이 급격히 치솟았다.",
-      "explanation": "'No sooner had + 주어 + p.p. than + 주어 + 과거동사' 호응이 완벽하게 성립합니다 (Hardly/Scarcely는 when/before와 호응하며, No sooner는 than과 호응)."
+      "answer": 4,
+      "example": "Having analyzed the survey results meticulously, the municipal board drafted a revised transit policy.",
+      "translation": "설문조사 결과를 면밀히 분석한 후, 시 위원회는 개정된 대중교통 정책을 입안했다.",
+      "explanation": "[Band 6.5~8.0 고득점 구문] 분사구문(Having analyzed)의 의미상 주어는 주절의 주어(the municipal board)와 일치해야 현수분사 오류가 발생하지 않습니다."
     },
     {
       "id": "ig_18",
@@ -3573,37 +3935,37 @@ window.IELTS_DATA = {
       "category": "Double Comparative (The 비교급 ..., the 비교급 ...)",
       "question": "Choose the sentence that correctly formats the correlative double comparative structure:",
       "options": [
-        "The more sophisticated machine learning models become, the harder it is to interpret their decision parameters.",
+        "The more sophisticated machine learning models become, the harder it is to interpret their parameters.",
         "The more sophisticated machine learning models become, more harder it is to interpret their parameters.",
         "The more sophisticated do machine learning models become, the harder it is to interpret their parameters.",
         "The most sophisticated machine learning models become, the hardest it is to interpret parameters."
       ],
       "answer": 1,
-      "example": "The more sophisticated machine learning models become, the harder it is to interpret their decision parameters.",
-      "translation": "머신러닝 모델이 정교해질수록 그 결정 매개변수를 해석하기는 더 어려워진다.",
-      "explanation": "'The + 비교급(more sophisticated) + S + V, the + 비교급(harder) + S + V' 구조로 일반 평서문 어순을 유지해야 합니다 (의문문 도치 불가)."
+      "example": "The more sophisticated machine learning models become, the harder it is to interpret their parameters.",
+      "translation": "머신러닝 모델이 정교해질수록 그 매개변수를 해석하기는 더 어려워진다.",
+      "explanation": "[Band 6.5~8.0 고득점 구문] 'The + 비교급 + S + V, the + 비교급 + S + V' 구조로 평서문 어순을 유지합니다."
     },
     {
       "id": "ig_19",
       "difficulty": "상",
-      "category": "Hypothetical Inversion (Were to 도치)",
+      "category": "Inverted Conditionals (If 생략 가정법 도치: Had / Were)",
       "question": "Which sentence demonstrates correct hypothetical conditional inversion without 'if'?",
       "options": [
-        "Were global temperatures to rise by another two degrees, coastal metropolitan settlements would face permanent flooding.",
-        "Were global temperatures will rise by another two degrees, coastal settlements would face permanent flooding.",
-        "Were global temperatures rise by two degrees, coastal metropolitan settlements would face permanent flooding.",
-        "Were global temperatures to rose by two degrees, coastal settlements will face permanent flooding."
+        "Were global temperatures to rise by another two degrees, coastal cities would face permanent flooding.",
+        "Were global temperatures will rise by another two degrees, coastal cities would face permanent flooding.",
+        "Were global temperatures rise by two degrees, coastal cities would face permanent flooding.",
+        "Were global temperatures to rose by two degrees, coastal cities will face permanent flooding."
       ],
       "answer": 1,
-      "example": "Were global temperatures to rise by another two degrees, coastal metropolitan settlements would face permanent flooding.",
-      "translation": "만약 지구 기온이 2도 더 상승한다면, 해안 대도시 거주지들은 영구적인 침수에 직면하게 될 것이다.",
-      "explanation": "미래의 실현 가능성이 희박한 가정을 나타내는 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 부정사원형'으로 완벽하게 도치됩니다."
+      "example": "Were global temperatures to rise by another two degrees, coastal cities would face permanent flooding.",
+      "translation": "만약 지구 기온이 2도 더 상승한다면, 해안 도시들은 영구적인 침수에 직면하게 될 것이다.",
+      "explanation": "[Band 6.5~8.0 고득점 구문] 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 동사원형'으로 도치됩니다."
     },
     {
       "id": "ig_20",
       "difficulty": "상",
-      "category": "Complex Passive Nominalization (형식주어 It + 학술 진주어)",
-      "question": "Which sentence reflects the highest degree of formal academic objectivity for thesis statements?",
+      "category": "Academic Nominalization & Passive (학술 명사화 및 가주어 구문)",
+      "question": "Which sentence reflects the highest degree of formal academic objectivity for Band 7.5~8.0 Writing?",
       "options": [
         "It is widely acknowledged that stringent regulatory enforcement serves as an indispensable prerequisite for industrial safety.",
         "People widely acknowledge that if governments enforce rules strictly, industrial safety will definitely happen.",
@@ -3613,7 +3975,369 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "It is widely acknowledged that stringent regulatory enforcement serves as an indispensable prerequisite for industrial safety.",
       "translation": "엄격한 규제 집행이 산업 안전을 위한 필수불가결한 전제조건 역할을 한다는 것은 널리 인정되고 있다.",
-      "explanation": "'It is widely acknowledged that + 완전한 절' 가주어-진주어 수동태 구조와 'indispensable prerequisite(필수불가결한 전제조건)' 학술 배합이 결합된 Band 8.5+ 모범 문장입니다."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 'It is widely acknowledged that + 완전한 절' 수동태 구문과 학술 명사구(stringent regulatory enforcement, indispensable prerequisite)가 결합된 고득점 문장입니다."
+    }
+  ],
+  "dictation": [
+    {
+      "id": "id_01",
+      "sentence": "I usually take the bus to work.",
+      "phonetics": "take the bus to work (버스를 타고 출근하다)",
+      "translation": "나는 보통 버스를 타고 출근한다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] 빈도부사 usually + take the bus",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_02",
+      "sentence": "My hometown is famous for fresh seafood.",
+      "phonetics": "be famous for (~로 유명하다)",
+      "translation": "내 고향은 신선한 해산물로 유명하다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] be famous for + 명사",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_03",
+      "sentence": "I enjoy reading books in my free time.",
+      "phonetics": "in my free time (여가 시간에)",
+      "translation": "나는 여가 시간에 책 읽는 것을 즐긴다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] enjoy + 동명사(-ing)",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_04",
+      "sentence": "Listening to quiet music helps me relax.",
+      "phonetics": "help me relax (긴장을 푸는 데 도움이 되다)",
+      "translation": "조용한 음악을 듣는 것은 내가 긴장을 푸는 데 도움이 된다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] 동명사 주어 + help + 동사원형",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_05",
+      "sentence": "We booked a double room at the hotel.",
+      "phonetics": "book a double room (더블룸을 예약하다)",
+      "translation": "우리는 호텔에 더블룸을 예약했다.",
+      "keyPoint": "[Band 5.0 · Listening Sec 1] 호텔 예약 필수 표현 book a room",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_06",
+      "sentence": "The train station is very close to here.",
+      "phonetics": "be close to (~에서 가까운)",
+      "translation": "기차역은 여기에서 매우 가깝다.",
+      "keyPoint": "[Band 5.0 · Listening Sec 1] 위치·거리 표현 be close to",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_07",
+      "sentence": "Children should eat fresh fruit every day.",
+      "phonetics": "eat fresh fruit (신선한 과일을 먹다)",
+      "translation": "아이들은 매일 신선한 과일을 먹어야 한다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] 건강·식습관 기초 조동사 should",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_08",
+      "sentence": "Online shopping saves a lot of time.",
+      "phonetics": "save a lot of time (시간을 많이 절약하다)",
+      "translation": "온라인 쇼핑은 많은 시간을 절약해 준다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] save time (시간을 아끼다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_09",
+      "sentence": "She works part-time at a local cafe.",
+      "phonetics": "work part-time (아르바이트/시간제로 일하다)",
+      "translation": "그녀는 동네 카페에서 시간제 아르바이트를 한다.",
+      "keyPoint": "[Band 5.0 · Listening Sec 1] work part-time at + 장소",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_10",
+      "sentence": "Many tourists visit this museum every summer.",
+      "phonetics": "visit this museum (이 박물관을 방문하다)",
+      "translation": "매년 여름 많은 관광객들이 이 박물관을 방문한다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] 지역 명소·관광 기초 묘사",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_11",
+      "sentence": "Walking in the park is good for health.",
+      "phonetics": "be good for health (건강에 좋다)",
+      "translation": "공원에서 산책하는 것은 건강에 좋다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] be good for (~에 유익하다)",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_12",
+      "sentence": "I prefer cooking dinner at home with family.",
+      "phonetics": "prefer cooking at home (집에서 요리하는 것을 선호하다)",
+      "translation": "나는 가족과 함께 집에서 저녁을 요리하는 것을 선호한다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] prefer + 동명사(-ing)",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_13",
+      "sentence": "The city library opens at nine every morning.",
+      "phonetics": "open at nine (9시에 문을 열다)",
+      "translation": "시립 도서관은 매일 아침 9시에 문을 연다.",
+      "keyPoint": "[Band 5.0 · Listening Sec 1] 공공시설 운영 시간 안내",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_14",
+      "sentence": "Learning English helps us make new friends.",
+      "phonetics": "make new friends (새로운 친구를 사귀다)",
+      "translation": "영어를 배우는 것은 우리가 새로운 친구를 사귀는 데 도움이 된다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] help + 목적어 + 동사원형",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_15",
+      "sentence": "It is important to get enough sleep.",
+      "phonetics": "get enough sleep (충분한 수면을 취하다)",
+      "translation": "충분한 수면을 취하는 것은 중요하다.",
+      "keyPoint": "[Band 5.0 · Speaking Part 1] 가주어 It is important to + V",
+      "difficulty": "하"
+    },
+    {
+      "id": "id_16",
+      "sentence": "Public transport is both convenient and affordable for commuters.",
+      "phonetics": "convenient and affordable (편리하고 가격 부담이 없는)",
+      "translation": "대중교통은 통근자들에게 편리하면서도 가격 부담이 없다.",
+      "keyPoint": "[Band 5.5~6.5 · Urban] both A and B + affordable",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_17",
+      "sentence": "Regular exercise plays a key role in reducing stress.",
+      "phonetics": "play a key role in (~에서 핵심적인 역할을 하다)",
+      "translation": "규칙적인 운동은 스트레스를 줄이는 데 핵심적인 역할을 한다.",
+      "keyPoint": "[Band 5.5~6.5 · Health] play a key role in + 동명사(-ing)",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_18",
+      "sentence": "Working from home offers employees much greater flexibility.",
+      "phonetics": "offer greater flexibility (더 큰 유연성을 제공하다)",
+      "translation": "재택근무는 직원들에게 훨씬 더 큰 유연성을 제공한다.",
+      "keyPoint": "[Band 5.5~6.5 · Work] work from home + offer flexibility",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_19",
+      "sentence": "Learning a foreign language broadens our cultural horizons.",
+      "phonetics": "broaden our cultural horizons (문화적 시야를 넓히다)",
+      "translation": "외국어를 배우는 것은 우리의 문화적 시야를 넓혀준다.",
+      "keyPoint": "[Band 5.5~6.5 · Education] broaden one's horizons (안목을 넓히다)",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_20",
+      "sentence": "Governments should invest more money in renewable energy.",
+      "phonetics": "invest in renewable energy (재생 에너지에 투자하다)",
+      "translation": "정부는 재생 에너지에 더 많은 자금을 투자해야 한다.",
+      "keyPoint": "[Band 5.5~6.5 · Environment] invest in + renewable energy",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_21",
+      "sentence": "Social media has completely changed the way we communicate.",
+      "phonetics": "change the way we communicate (소통 방식을 바꾸다)",
+      "translation": "소셜 미디어는 우리가 소통하는 방식을 완전히 바꾸어 놓았다.",
+      "keyPoint": "[Band 5.5~6.5 · Media] 현재완료 has changed + the way S + V",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_22",
+      "sentence": "A balanced diet can help prevent many chronic illnesses.",
+      "phonetics": "a balanced diet / chronic illnesses (균형 잡힌 식단 / 만성 질환)",
+      "translation": "균형 잡힌 식단은 많은 만성 질환을 예방하는 데 도움이 된다.",
+      "keyPoint": "[Band 5.5~6.5 · Health] a balanced diet + prevent illnesses",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_23",
+      "sentence": "Traffic congestion has become a serious problem in cities.",
+      "phonetics": "traffic congestion (교통 체증)",
+      "translation": "교통 체증은 도시에서 심각한 문제가 되었다.",
+      "keyPoint": "[Band 5.5~6.5 · Urban] traffic congestion + serious problem",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_24",
+      "sentence": "Studying abroad gives young people valuable life experience.",
+      "phonetics": "valuable life experience (귀중한 인생 경험)",
+      "translation": "해외 유학은 젊은이들에게 귀중한 인생 경험을 준다.",
+      "keyPoint": "[Band 5.5~6.5 · Education] Studying abroad + valuable experience",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_25",
+      "sentence": "Recycling plastic waste helps protect our marine environment.",
+      "phonetics": "protect our marine environment (해양 환경을 보호하다)",
+      "translation": "플라스틱 쓰레기를 재활용하는 것은 해양 환경을 보호하는 데 도움이 된다.",
+      "keyPoint": "[Band 5.5~6.5 · Environment] recycle plastic waste + marine environment",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_26",
+      "sentence": "Good communication skills are essential in the modern workplace.",
+      "phonetics": "essential in the workplace (직장에서 필수적인)",
+      "translation": "원활한 의사소통 능력은 현대 직장에서 필수적이다.",
+      "keyPoint": "[Band 5.5~6.5 · Career] communication skills + be essential in",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_27",
+      "sentence": "Tourism brings major economic benefits to local communities.",
+      "phonetics": "bring economic benefits to (~에 경제적 이익을 가져오다)",
+      "translation": "관광 산업은 지역 사회에 큰 경제적 이익을 가져온다.",
+      "keyPoint": "[Band 5.5~6.5 · Economy] bring economic benefits to + 명사",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_28",
+      "sentence": "Parents have a strong influence on children's reading habits.",
+      "phonetics": "have a strong influence on (~에 강한 영향을 미치다)",
+      "translation": "부모는 자녀의 독서 습관에 강한 영향을 미친다.",
+      "keyPoint": "[Band 5.5~6.5 · Family] have a strong influence on",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_29",
+      "sentence": "Historic buildings should be preserved for future generations.",
+      "phonetics": "be preserved for future generations (미래 세대를 위해 보존되다)",
+      "translation": "역사적 건축물은 미래 세대를 위해 보존되어야 한다.",
+      "keyPoint": "[Band 5.5~6.5 · Culture] 조동사 수동태 should be preserved",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_30",
+      "sentence": "Online courses allow students to learn at their own pace.",
+      "phonetics": "at their own pace (자신의 속도에 맞춰)",
+      "translation": "온라인 강좌는 학생들이 자신의 속도에 맞춰 학습할 수 있게 해준다.",
+      "keyPoint": "[Band 5.5~6.5 · Education] allow A to B + at one's own pace",
+      "difficulty": "중"
+    },
+    {
+      "id": "id_31",
+      "sentence": "Rapid urbanization has led to severe housing shortages in major cities.",
+      "phonetics": "rapid urbanization / housing shortages (급격한 도시화 / 주택 부족)",
+      "translation": "급격한 도시화는 주요 대도시에서 심각한 주택 부족을 초래했다.",
+      "keyPoint": "[Band 6.5~8.0 · Urbanization] lead to + severe housing shortages",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_32",
+      "sentence": "Strict environmental regulations must be enforced to curb carbon emissions.",
+      "phonetics": "enforce regulations / curb emissions (규제를 시행하다 / 배출을 억제하다)",
+      "translation": "탄소 배출을 억제하기 위해 엄격한 환경 규제가 시행되어야 한다.",
+      "keyPoint": "[Band 6.5~8.0 · Environment] be enforced to + curb carbon emissions",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_33",
+      "sentence": "Economic growth should never come at the expense of nature.",
+      "phonetics": "at the expense of (~을 희생하면서, ~을 대가로)",
+      "translation": "경제 성장이 결코 자연을 희생하면서 이루어져서는 안 된다.",
+      "keyPoint": "[Band 6.5~8.0 · Writing Task 2] come at the expense of",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_34",
+      "sentence": "Exposure to diverse cultures fosters mutual understanding and social tolerance.",
+      "phonetics": "foster mutual understanding (상호 이해를 증진하다)",
+      "translation": "다양한 문화에 대한 노출은 상호 이해와 사회적 관용을 증진한다.",
+      "keyPoint": "[Band 6.5~8.0 · Globalization] Exposure to + foster understanding",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_35",
+      "sentence": "Medical advances have significantly extended average life expectancy worldwide.",
+      "phonetics": "extend average life expectancy (평균 기대 수명을 연장하다)",
+      "translation": "의학의 발전은 전 세계적으로 평균 기대 수명을 크게 연장시켰다.",
+      "keyPoint": "[Band 6.5~8.0 · Healthcare] Medical advances + life expectancy",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_36",
+      "sentence": "While automation boosts productivity, it may displace traditional manual workers.",
+      "phonetics": "boost productivity / displace workers (생산성을 높이다 / 노동자를 대체하다)",
+      "translation": "자동화는 생산성을 높이는 반면, 전통적인 육체노동자들을 대체할 수도 있다.",
+      "keyPoint": "[Band 6.5~8.0 · Technology] While 반전절 + boost productivity",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_37",
+      "sentence": "Equal access to quality education promotes social mobility for everyone.",
+      "phonetics": "equal access to / social mobility (평등한 접근 / 사회적 이동성)",
+      "translation": "양질의 교육에 대한 평등한 접근은 모두를 위한 사회적 이동성을 촉진한다.",
+      "keyPoint": "[Band 6.5~8.0 · Society] equal access to + promote social mobility",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_38",
+      "sentence": "An aging population places heavy financial pressure on healthcare systems.",
+      "phonetics": "place heavy financial pressure on (~에 막대한 재정적 부담을 주다)",
+      "translation": "고령화 인구는 의료 시스템에 막대한 재정적 부담을 준다.",
+      "keyPoint": "[Band 6.5~8.0 · Demographics] An aging population + place pressure on",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_39",
+      "sentence": "Excessive reliance on smartphones can undermine face-to-face interpersonal skills.",
+      "phonetics": "excessive reliance on / undermine (지나친 의존 / 약화시키다)",
+      "translation": "스마트폰에 대한 지나친 의존은 대면 대인관계 기술을 약화시킬 수 있다.",
+      "keyPoint": "[Band 6.5~8.0 · Media] reliance on + undermine interpersonal skills",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_40",
+      "sentence": "Governments must strike a balance between economic development and sustainability.",
+      "phonetics": "strike a balance between A and B (A와 B 사이의 균형을 맞추다)",
+      "translation": "정부는 경제 발전과 지속 가능성 사이에서 균형을 잡아야 한다.",
+      "keyPoint": "[Band 6.5~8.0 · Policy] strike a balance between A and B",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_41",
+      "sentence": "International cooperation is indispensable for tackling global climate change effectively.",
+      "phonetics": "indispensable for tackling (~을 해결하는 데 필수불가결한)",
+      "translation": "지구 기후 변화를 효과적으로 해결하기 위해 국제 협력은 필수불가결하다.",
+      "keyPoint": "[Band 6.5~8.0 · Global Issues] be indispensable for + tackling",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_42",
+      "sentence": "Financial incentives can encourage corporations to adopt sustainable green practices.",
+      "phonetics": "financial incentives / adopt practices (재정적 인센티브 / 관행을 채택하다)",
+      "translation": "재정적 인센티브는 기업들이 지속 가능한 친환경 관행을 채택하도록 장려할 수 있다.",
+      "keyPoint": "[Band 6.5~8.0 · Business] financial incentives + adopt practices",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_43",
+      "sentence": "Investing in early childhood education yields substantial long-term social benefits.",
+      "phonetics": "yield substantial long-term benefits (상당한 장기적 혜택을 낳다)",
+      "translation": "조기 유아 교육에 투자하는 것은 상당한 장기적 사회적 혜택을 낳는다.",
+      "keyPoint": "[Band 6.5~8.0 · Education] Investing in + yield substantial benefits",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_44",
+      "sentence": "Preserving architectural heritage helps maintain our unique national cultural identity.",
+      "phonetics": "architectural heritage / cultural identity (건축 유산 / 문화적 정체성)",
+      "translation": "건축 유산을 보존하는 것은 우리의 고유한 국가 문화적 정체성을 유지하는 데 도움이 된다.",
+      "keyPoint": "[Band 6.5~8.0 · Heritage] Preserving heritage + cultural identity",
+      "difficulty": "상"
+    },
+    {
+      "id": "id_45",
+      "sentence": "Technological innovation has fundamentally transformed modern global business operations.",
+      "phonetics": "fundamentally transform (근본적으로 변모시키다)",
+      "translation": "기술 혁신은 현대 글로벌 비즈니스 운영 방식을 근본적으로 변모시켰다.",
+      "keyPoint": "[Band 6.5~8.0 · Innovation] fundamentally transform + business operations",
+      "difficulty": "상"
     }
   ]
 };
@@ -7237,3 +7961,6 @@ window.APP_DATA = {
     ]
   }
 };
+window.APP_DATA.hsk = window.HSK5_DATA;
+window.APP_DATA.ielts = window.IELTS_DATA;
+
