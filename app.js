@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // 데이터 저장소
   let currentLanguage = "hsk"; // "hsk" | "ielts"
 
-  let hskData = { vocab: [], colloc: [], chengyu: [], cloze: [], grammar: [], listening: [], dictation: [] };
-  let ieltsData = { vocab: [], listening: [], idioms: [], cloze: [], grammar: [], dictation: [] };
+  let hskData = { vocab: [], colloc: [], chengyu: [], cloze: [], grammar: [], listening: [], dictation: [], reading: [] };
+  let ieltsData = { vocab: [], listening: [], idioms: [], cloze: [], grammar: [], dictation: [], reading: [] };
 
   // 앱 상태
   let currentMode = "vocab";
@@ -181,6 +181,23 @@ document.addEventListener("DOMContentLoaded", () => {
   const dictationDiagnosisLabel = document.getElementById("dictation-Diagnosis-label");
   const dictationDiffSummary = document.getElementById("dictation-diff-summary");
 
+  // 장문 독해(Reading) 컨트롤러
+  const readingBox = document.getElementById("reading-box");
+  const readingDiffBar = document.getElementById("reading-diff-bar");
+  const readingDiffBarLabel = document.getElementById("reading-diff-bar-label");
+  const readingDiffChips = document.querySelectorAll(".reading-diff-chip");
+  const readingTitleText = document.getElementById("reading-title-text");
+  const readingLineBadge = document.getElementById("reading-line-badge");
+  const readingLineNumBtn = document.getElementById("reading-line-num-btn");
+  const readingLineNumLabel = document.getElementById("reading-line-num-label");
+  const readingTtsBtn = document.getElementById("reading-tts-btn");
+  const readingTtsLabel = document.getElementById("reading-tts-label");
+  const readingPassageBody = document.getElementById("reading-passage-body");
+  const readingQuestionBox = document.getElementById("reading-question-box");
+  const readingQuestionPrompt = document.getElementById("reading-question-prompt");
+  const readingQuestionText = document.getElementById("reading-question-text");
+  let showLineNumbers = true;
+
   const explanationBox = document.getElementById("explanation-box");
   const feedbackBanner = document.getElementById("feedback-banner");
   const expCollocLabel = document.getElementById("exp-colloc-label");
@@ -263,6 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
           listening: { name: "실전 듣기(听力) 퀴즈", desc: "남녀 2마디 대화 & 단문 청취 후 질문 풀이" },
           chengyu: { name: "사자성어(成语) 퀴즈", desc: "문맥 빈칸 채우기 & 빈출 30선 의미 파악" },
           cloze: { name: "독해 1부분 실전 빈칸", desc: "3초 컷! 고정 짝꿍 호응(搭配) 훈련" },
+          reading: { name: "독해 2·3부분 장문 독해", desc: "하(5~10줄)·중(10~20줄)·상(20~30줄) 기출 지문 읽고 보기 맞추기" },
           grammar: { name: "필수 문법 & 어순 배열", desc: "把/被자문, 존현문, 접속사 공식 및 쓰기" },
           dictation: { name: "말하기 딕테이션 (口语)", desc: "원어민 문장 듣고 똑같이 말하기 & 틀린 글자 정밀 비교" },
           mixed: { name: "종합 실전 모의고사", desc: "듣기, 어휘, 성어, 빈칸, 문법, 말하기 통합 출제" }
@@ -282,6 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
           listening: { name: "실전 리스닝(Listening)", desc: "Section 1 일상 대화부터 Section 4 학술 강의 청취" },
           chengyu: { name: "숙어 및 관용구(Idioms)", desc: "스피킹 & 라이팅 점수 부스팅 필수 관용 표현" },
           cloze: { name: "리딩 Collocation 빈칸", desc: "Band 점수대별 빈출 고정 어휘 배합(연어) 완성" },
+          reading: { name: "리딩 장문 독해 (Reading)", desc: "하(5~10줄)·중(10~20줄)·상(20~30줄) 기출 지문 및 패러프레이징 추론" },
           grammar: { name: "라이팅 필수 문법 & 구문", desc: "기초 시제/수동태부터 Band 7+ 도치·분사구문까지" },
           dictation: { name: "스피킹 딕테이션 (Speaking)", desc: "Band 5.0 / 5.5~6.5 / 6.5~8.0 문장 듣고 따라 말하기" },
           mixed: { name: "종합 실전 모의고사", desc: "리스닝, 어휘, 숙어, 콜로케이션, 문법, 스피킹 통합 출제" }
@@ -396,6 +415,7 @@ document.addEventListener("DOMContentLoaded", () => {
         hsk_chengyu_cloze: "문맥의 빈칸 [ ____ ] 에 가장 어울리는 사자성어를 고르세요.",
         hsk_chengyu_meaning: "다음 사자성어의 한국어 의미로 알맞은 것을 고르세요.",
         hsk_cloze: "문맥과 어휘 짝꿍(搭配)을 고려하여 빈칸에 들어갈 단어를 고르세요.",
+        hsk_reading: "지문을 주의 깊게 읽고 가장 알맞은 보기를 고르세요.",
         hsk_grammar: "문법 규칙과 어순에 맞는 가장 올바른 보기를 고르세요.",
         ielts_vocab_reverse: "Select the correct academic word that matches the meaning:",
         ielts_vocab_meaning: "Select the correct Korean meaning for this academic word:",
@@ -403,6 +423,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ielts_idiom_cloze: "Choose the most appropriate idiom to fill in the blank [ ____ ]:",
         ielts_idiom_meaning: "Select the correct Korean meaning for this academic idiom:",
         ielts_cloze: "Select the natural academic collocation for the blank:",
+        ielts_reading: "지문을 주의 깊게 읽고 가장 알맞은 보기를 고르세요.",
         ielts_grammar: "Choose the sentence with flawless academic grammar and structure:"
       }
     },
@@ -433,6 +454,7 @@ document.addEventListener("DOMContentLoaded", () => {
           listening: { name: "实战听力测验", desc: "男女日常对话与短文听力问答训练" },
           chengyu: { name: "常用成语测验", desc: "语境选词填空与高频30成语含义掌握" },
           cloze: { name: "阅读第一部分填空", desc: "3秒速答！高频固定搭配强化训练" },
+          reading: { name: "阅读二·三部分长文理解", desc: "初(5~10行)·中(10~20行)·高(20~30行)真题长文阅读与选项匹配" },
           grammar: { name: "必备语法与语序", desc: "把/被字句、存现句、关联词及句型排序" },
           dictation: { name: "口语听写跟读", desc: "听母语原音跟读句子，智能比对发音与错字" },
           mixed: { name: "综合全真模拟考试", desc: "听力、词汇、成语、填空、语法、口语全方位模拟" }
@@ -452,6 +474,7 @@ document.addEventListener("DOMContentLoaded", () => {
           listening: { name: "实战听力训练", desc: "日常对话与学术讲座听力理解及问答" },
           chengyu: { name: "高分习语与短语", desc: "口语与写作提分必备地道惯用表达" },
           cloze: { name: "阅读搭配填空", desc: "学术高频固定词汇搭配 (Collocations)" },
+          reading: { name: "雅思阅读长文理解 (Reading)", desc: "5~10行 / 10~20行 / 20~30行真题长文精读与同义替换解题" },
           grammar: { name: "写作高分语法句型", desc: "基础句型至倒装、虚拟、分词等高分复合句" },
           dictation: { name: "口语听写跟读 (Speaking)", desc: "按 Band 5.0 / 5.5~6.5 / 6.5~8.0 听原音跟读句子" },
           mixed: { name: "综合全真模拟考试", desc: "听力、词汇、习语、搭配、语法、口语全方位模拟" }
@@ -566,6 +589,7 @@ document.addEventListener("DOMContentLoaded", () => {
         hsk_chengyu_cloze: "请选择最符合语境填空 [ ____ ] 的成语：",
         hsk_chengyu_meaning: "请选择该成语的正确含义：",
         hsk_cloze: "结合上下文语境与词语搭配，选择最合适填入的词汇：",
+        hsk_reading: "请仔细阅读上方短文，选出最符合文意的一项：",
         hsk_grammar: "根据语法规则与语序，选择最正确的选项：",
         ielts_vocab_reverse: "请选择与释义对应的学术英语单词：",
         ielts_vocab_meaning: "请选择该学术英语单词的正确释义：",
@@ -573,6 +597,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ielts_idiom_cloze: "请选择最合适填入横线 [ ____ ] 的地道习语：",
         ielts_idiom_meaning: "请选择该常用英语习语的正确含义：",
         ielts_cloze: "请选择横线处最自然地道的学术固定搭配：",
+        ielts_reading: "请仔细阅读上方短文，选出最符合题意的一项：",
         ielts_grammar: "请选择语法与句型结构最标准规范的句子："
       }
     },
@@ -603,6 +628,7 @@ document.addEventListener("DOMContentLoaded", () => {
           listening: { name: "Listening Practice", desc: "Dialogue & passage comprehension questions" },
           chengyu: { name: "Four-Character Idioms", desc: "Contextual cloze & essential top 30 idioms" },
           cloze: { name: "Reading Part 1 Cloze", desc: "Quick answer! Standard collocations training" },
+          reading: { name: "Reading Part 2 & 3 Passages", desc: "Graded passages (5-10 / 10-20 / 20-30 lines) & comprehension" },
           grammar: { name: "Grammar & Word Order", desc: "Ba/Bei sentences, existential verbs & syntax" },
           dictation: { name: "Speaking Dictation", desc: "Listen & repeat Chinese sentences with character diff" },
           mixed: { name: "Comprehensive Mock Exam", desc: "Full simulation covering all sections" }
@@ -617,6 +643,7 @@ document.addEventListener("DOMContentLoaded", () => {
           listening: { name: "Listening Practice", desc: "Section 1~4 conversations & lectures by Band level" },
           chengyu: { name: "Idioms & Phrases", desc: "Band 5.0~8.0 natural expressions for Speaking & Writing" },
           cloze: { name: "Collocation Cloze", desc: "Band-graded frequent fixed collocations" },
+          reading: { name: "IELTS Reading Passages", desc: "Graded passages (5-10 / 10-20 / 20-30 lines) & paraphrasing" },
           grammar: { name: "Writing Grammar & Syntax", desc: "Band 5.0 basics to Band 6.5~8.0 inversion & conditionals" },
           dictation: { name: "Speaking Dictation", desc: "Band 5.0 / 5.5~6.5 / 6.5~8.0 speaking & listening dictation" },
           mixed: { name: "Comprehensive Mock Exam", desc: "All-in-one test covering listening, vocab, grammar & speaking" }
@@ -736,6 +763,7 @@ document.addEventListener("DOMContentLoaded", () => {
         hsk_chengyu_cloze: "Choose the four-character idiom that best fits [ ____ ]:",
         hsk_chengyu_meaning: "Choose the correct meaning of this four-character idiom:",
         hsk_cloze: "Choose the best word based on sentence context and collocation:",
+        hsk_reading: "Read the passage carefully and select the best answer:",
         hsk_grammar: "Choose the sentence with correct grammar and word order:",
         ielts_vocab_reverse: "Select the academic word that matches the meaning:",
         ielts_vocab_meaning: "Select the correct meaning for this academic word:",
@@ -743,6 +771,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ielts_idiom_cloze: "Choose the idiom that best fits the blank [ ____ ]:",
         ielts_idiom_meaning: "Select the correct meaning for this academic idiom:",
         ielts_cloze: "Select the natural academic collocation for the blank:",
+        ielts_reading: "Read the passage carefully and select the best answer:",
         ielts_grammar: "Choose the sentence with flawless grammar and structure:"
       }
     }
@@ -755,8 +784,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const conf = t[sub];
     const badges = { hsk: "HSK 5", ielts: "IELTS" };
     const icons = {
-      hsk: { vocab: "🎯", listening: "🎧", chengyu: "🀄", cloze: "🔗", grammar: "📑", dictation: "🎙️", mixed: "🎲" },
-      ielts: { vocab: "🎯", listening: "🎧", chengyu: "💡", cloze: "🔗", grammar: "📑", dictation: "🎙️", mixed: "🎲" }
+      hsk: { vocab: "🎯", listening: "🎧", chengyu: "🀄", cloze: "🔗", reading: "📖", grammar: "📑", dictation: "🎙️", mixed: "🎲" },
+      ielts: { vocab: "🎯", listening: "🎧", chengyu: "💡", cloze: "🔗", reading: "📖", grammar: "📑", dictation: "🎙️", mixed: "🎲" }
     };
     const modes = {};
     if (conf && conf.modes) {
@@ -1011,7 +1040,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     try {
-      const [hv, hc, hch, hcl, hg, hl, hd, iv, il, ii, ic, ig, idic] = await Promise.all([
+      const [hv, hc, hch, hcl, hg, hl, hd, hrd, iv, il, ii, ic, ig, idic, ird] = await Promise.all([
         fetch("vocab/hsk5_core_vocabulary.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_collocations.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_chengyu.json").then(r => r.json()).catch(() => []),
@@ -1019,16 +1048,18 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch("vocab/hsk5_grammar.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_listening.json").then(r => r.json()).catch(() => []),
         fetch("vocab/hsk5_dictation.json").then(r => r.json()).catch(() => []),
+        fetch("vocab/hsk5_reading.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_vocab.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_listening.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_idioms.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_cloze.json").then(r => r.json()).catch(() => []),
         fetch("ielts/ielts_grammar.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_dictation.json").then(r => r.json()).catch(() => [])
+        fetch("ielts/ielts_dictation.json").then(r => r.json()).catch(() => []),
+        fetch("ielts/ielts_reading.json").then(r => r.json()).catch(() => [])
       ]);
 
-      hskData = { vocab: hv, colloc: hc, chengyu: hch, cloze: hcl, grammar: hg, listening: hl, dictation: hd };
-      ieltsData = { vocab: iv, listening: il, idioms: ii, cloze: ic, grammar: ig, dictation: idic };
+      hskData = { vocab: hv, colloc: hc, chengyu: hch, cloze: hcl, grammar: hg, listening: hl, dictation: hd, reading: hrd };
+      ieltsData = { vocab: iv, listening: il, idioms: ii, cloze: ic, grammar: ig, dictation: idic, reading: ird };
     } catch (err) {
       console.error("데이터 로딩 중 오류 발생:", err);
     }
@@ -1084,6 +1115,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         (hskData.listening?.length || 0) +
                         (hskData.chengyu?.length || 0) +
                         (hskData.cloze?.length || 0) +
+                        (hskData.reading?.length || 0) +
                         (hskData.grammar?.length || 0) +
                         (hskData.dictation?.length || 0);
     } else {
@@ -1091,6 +1123,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         (ieltsData.listening?.length || 0) +
                         (ieltsData.idioms?.length || 0) +
                         (ieltsData.cloze?.length || 0) +
+                        (ieltsData.reading?.length || 0) +
                         (ieltsData.grammar?.length || 0) +
                         (ieltsData.dictation?.length || 0);
     }
@@ -1811,6 +1844,34 @@ document.addEventListener("DOMContentLoaded", () => {
             exampleKr: modelTranslation
           };
         });
+      } else if (mode === "reading") {
+        const filtered = filterByDifficultyAndSrs(hskData.reading, diff, count);
+        rawItems = filtered.map(item => {
+          return {
+            type: "reading",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: item.category || "독해 2·3부분 장문 독해",
+            title: item.title,
+            passage: item.passage,
+            lineCount: item.lineCount || item.passage.split("\n").length,
+            chinese: item.question,
+            pinyin: "",
+            speechText: item.passage,
+            questionText: item.question,
+            promptKey: "hsk_reading",
+            prompt: "지문을 주의 깊게 읽고 가장 알맞은 보기를 고르세요.",
+            options: shuffle([...item.options]),
+            answer: item.answer,
+            keySentence: item.keySentence,
+            collocation: item.collocation,
+            detail: item.explanation,
+            translation: item.translation,
+            exampleCn: `[지문 핵심 단서]\n${item.keySentence || item.title}`,
+            exampleKr: item.translation
+          };
+        });
       } else if (mode === "dictation") {
         const pool = (hskData.dictation && hskData.dictation.length > 0) ? hskData.dictation : hskData.vocab;
         const filtered = filterByDifficultyAndSrs(pool, diff, count);
@@ -1837,14 +1898,15 @@ document.addEventListener("DOMContentLoaded", () => {
           };
         });
       } else if (mode === "mixed") {
-        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 6) + 1);
+        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 7) + 1);
         const l = buildQuestions("hsk", "listening", perMode, diff);
         const v = buildQuestions("hsk", "vocab", perMode, diff);
         const ch = buildQuestions("hsk", "chengyu", perMode, diff);
         const cl = buildQuestions("hsk", "cloze", perMode, diff);
+        const r = buildQuestions("hsk", "reading", perMode, diff);
         const g = buildQuestions("hsk", "grammar", perMode, diff);
         const d = buildQuestions("hsk", "dictation", perMode, diff);
-        const combined = [...l, ...v, ...ch, ...cl, ...g, ...d];
+        const combined = [...l, ...v, ...ch, ...cl, ...r, ...g, ...d];
         // 오답 복습(isReview) 문제를 최우선 배치하고 나머지를 무작위 셔플
         const rev = shuffle(combined.filter(q => q.isReview));
         const rest = shuffle(combined.filter(q => !q.isReview));
@@ -2034,6 +2096,34 @@ document.addEventListener("DOMContentLoaded", () => {
             exampleKr: modelTranslation
           };
         });
+      } else if (mode === "reading") {
+        const filtered = filterByDifficultyAndSrs(ieltsData.reading, diff, count);
+        rawItems = filtered.map(item => {
+          return {
+            type: "reading",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: item.category || "IELTS Reading",
+            title: item.title,
+            passage: item.passage,
+            lineCount: item.lineCount || item.passage.split("\n").length,
+            chinese: item.question,
+            pinyin: "",
+            speechText: item.passage,
+            questionText: item.question,
+            promptKey: "ielts_reading",
+            prompt: "Read the passage carefully and choose the correct option:",
+            options: shuffle([...item.options]),
+            answer: item.answer,
+            keySentence: item.keySentence,
+            collocation: item.collocation,
+            detail: item.explanation,
+            translation: item.translation,
+            exampleCn: `[Key Paraphrasing Clue]\n${item.keySentence || item.title}`,
+            exampleKr: item.translation
+          };
+        });
       } else if (mode === "dictation") {
         const pool = (ieltsData.dictation && ieltsData.dictation.length > 0) ? ieltsData.dictation : ieltsData.vocab;
         const filtered = filterByDifficultyAndSrs(pool, diff, count);
@@ -2060,14 +2150,15 @@ document.addEventListener("DOMContentLoaded", () => {
           };
         });
       } else if (mode === "mixed") {
-        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 6) + 1);
+        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 7) + 1);
         const l = buildQuestions("ielts", "listening", perMode, diff);
         const v = buildQuestions("ielts", "vocab", perMode, diff);
         const id = buildQuestions("ielts", "chengyu", perMode, diff);
         const cl = buildQuestions("ielts", "cloze", perMode, diff);
+        const r = buildQuestions("ielts", "reading", perMode, diff);
         const g = buildQuestions("ielts", "grammar", perMode, diff);
         const d = buildQuestions("ielts", "dictation", perMode, diff);
-        const combined = [...l, ...v, ...id, ...cl, ...g, ...d];
+        const combined = [...l, ...v, ...id, ...cl, ...r, ...g, ...d];
         const rev = shuffle(combined.filter(q => q.isReview));
         const rest = shuffle(combined.filter(q => !q.isReview));
         rawItems = [...rev, ...rest];
@@ -2157,24 +2248,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
     questionCategory.textContent = q.category;
 
-    // 듣기 모드 vs 딕테이션 모드 vs 일반 모드 UI 분기
+    // 듣기 모드 vs 딕테이션 모드 vs 독해 모드 vs 일반 모드 UI 분기
     if (q.type === "listening") {
       listeningPlayerBox.classList.remove("hidden");
       standardQuestionBody.classList.add("hidden");
       if (dictationBox) dictationBox.classList.add("hidden");
+      if (readingBox) readingBox.classList.add("hidden");
       optionsList.classList.remove("hidden");
       ttsBtn.style.display = "none";
       prepareListening(q);
     } else if (q.type === "dictation") {
       listeningPlayerBox.classList.add("hidden");
       standardQuestionBody.classList.add("hidden");
+      if (readingBox) readingBox.classList.add("hidden");
       if (dictationBox) dictationBox.classList.remove("hidden");
       optionsList.classList.add("hidden");
       ttsBtn.style.display = "inline-flex";
       prepareDictation(q);
+    } else if (q.type === "reading") {
+      listeningPlayerBox.classList.add("hidden");
+      standardQuestionBody.classList.add("hidden");
+      if (dictationBox) dictationBox.classList.add("hidden");
+      if (readingBox) readingBox.classList.remove("hidden");
+      optionsList.classList.remove("hidden");
+      ttsBtn.style.display = "inline-flex";
+      prepareReading(q);
     } else {
       listeningPlayerBox.classList.add("hidden");
       if (dictationBox) dictationBox.classList.add("hidden");
+      if (readingBox) readingBox.classList.add("hidden");
       standardQuestionBody.classList.remove("hidden");
       optionsList.classList.remove("hidden");
       // 문제 풀이 전 발음이 정답을 노출하는 경우(역방향 어휘, 문법)에는 정답 선택 전까지 발음 버튼 숨김
@@ -2220,6 +2322,10 @@ document.addEventListener("DOMContentLoaded", () => {
           const qDiff = q.difficulty || currentDifficulty || "하";
           const rateFactor = qDiff === "하" ? 0.9 : (qDiff === "중" ? 0.95 : 1.0);
           playAudio(currentSpeechText, dictationListenBtn, Math.max(0.7, ttsSpeed * rateFactor));
+        } else if (q.type === "reading") {
+          if (q.questionText) {
+            playAudio(q.questionText, ttsBtn);
+          }
         } else if (currentSpeechText) {
           playAudio(currentSpeechText, ttsBtn);
         }
@@ -2737,6 +2843,76 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // ==========================================
+  // 7-C. 장문 독해 (Reading Comprehension) UI & Key-Sentence 하이라이트
+  // ==========================================
+  function prepareReading(q) {
+    const activeDiff = q.difficulty || currentDifficulty || "중";
+
+    // 1. 난이도 즉시 전환 칩 UI 동기화
+    if (readingDiffChips && readingDiffChips.length > 0) {
+      readingDiffChips.forEach(chip => {
+        const chipDiff = chip.getAttribute("data-read-diff");
+        chip.classList.toggle("active", chipDiff === activeDiff);
+        if (currentLanguage === "ielts") {
+          if (chipDiff === "하") chip.textContent = "🟢 하 (5~10줄 · Band 5.0~5.5)";
+          else if (chipDiff === "중") chip.textContent = "🟡 중 (10~20줄 · Band 6.0~6.5)";
+          else if (chipDiff === "상") chip.textContent = "🔴 상 (20~30줄 · Band 7.0~8.0)";
+        } else {
+          if (chipDiff === "하") chip.textContent = "🟢 하 (5~10줄 · 기초 단문)";
+          else if (chipDiff === "중") chip.textContent = "🟡 중 (10~20줄 · 실전 중문)";
+          else if (chipDiff === "상") chip.textContent = "🔴 상 (20~30줄 · 심화 장문)";
+        }
+      });
+    }
+
+    // 2. 메타데이터 (제목 & 줄 수 배지)
+    if (readingTitleText) {
+      readingTitleText.textContent = `📄 ${q.title || "Reading Passage"}`;
+    }
+    const lines = (q.passage || "").split("\n");
+    const actualLineCount = lines.length;
+    if (readingLineBadge) {
+      const diffDesc = activeDiff === "하" ? "5~10줄" : (activeDiff === "중" ? "10~20줄" : "20~30줄");
+      readingLineBadge.textContent = `총 ${actualLineCount}줄 (${activeDiff} · ${diffDesc} 기준)`;
+    }
+
+    // 3. 줄 번호 버튼 라벨 상태 동기화
+    if (readingLineNumLabel) {
+      readingLineNumLabel.textContent = showLineNumbers ? "줄번호 켜짐" : "줄번호 꺼짐";
+    }
+    if (document.body) {
+      document.body.classList.toggle("hide-line-numbers", !showLineNumbers);
+    }
+
+    // 4. 본문 줄 단위 렌더링
+    if (readingPassageBody) {
+      readingPassageBody.innerHTML = "";
+      lines.forEach((lineText, idx) => {
+        const lineDiv = document.createElement("div");
+        lineDiv.className = "reading-line";
+        lineDiv.setAttribute("data-line-idx", idx);
+        lineDiv.innerHTML = `
+          <span class="reading-line-num">${String(idx + 1).padStart(2, "0")}</span>
+          <span class="reading-line-text">${escapeHtml(lineText)}</span>
+        `;
+        readingPassageBody.appendChild(lineDiv);
+      });
+      readingPassageBody.scrollTop = 0;
+    }
+
+    // 5. 질문 및 안내 프롬프트
+    if (readingQuestionPrompt) {
+      const t = I18N[currentUiLang] || I18N.ko;
+      readingQuestionPrompt.textContent = (t.prompts && t.prompts[q.promptKey])
+        ? t.prompts[q.promptKey]
+        : (q.prompt || "지문을 주의 깊게 읽고 가장 알맞은 보기를 고르세요.");
+    }
+    if (readingQuestionText) {
+      readingQuestionText.textContent = `❓ 질문: ${q.questionText || q.chinese}`;
+    }
+  }
+
   function isMaleSpeaker(speaker) {
     if (!speaker) return false;
     const maleKeywords = ["男", "Man", "David", "Tom", "Professor", "Tutor", "Lecturer", "Historian", "Officer", "Agent", "专家", "教授", "学者", "总监", "研究员"];
@@ -2799,6 +2975,50 @@ document.addEventListener("DOMContentLoaded", () => {
     expCollocVal.textContent = q.collocation || "-";
     expDetailVal.textContent = q.detail || "-";
 
+    // 독해 모드일 때 본문 핵심 단서(keySentence) 하이라이트 처리
+    if (q.type === "reading") {
+      const keySent = (q.keySentence || "").trim();
+      if (keySent && readingPassageBody) {
+        const lineElements = readingPassageBody.querySelectorAll(".reading-line");
+        let firstMatchElem = null;
+
+        // Split keySent by punctuation/clauses so sentences spanning line breaks highlight seamlessly
+        const keyClauses = keySent
+          .split(/([，,。；;:.!?\n]+)/)
+          .map(s => s.trim())
+          .filter(s => s.length >= 4);
+
+        lineElements.forEach(lineElem => {
+          const textSpan = lineElem.querySelector(".reading-line-text");
+          if (!textSpan) return;
+          let origText = textSpan.textContent;
+          let lineMatched = false;
+
+          if (origText.includes(keySent)) {
+            lineMatched = true;
+            textSpan.innerHTML = origText.split(keySent).map(escapeHtml).join(`<mark class="reading-key-highlight">${escapeHtml(keySent)}</mark>`);
+          } else {
+            for (const clause of keyClauses) {
+              if (clause.length >= 4 && origText.includes(clause)) {
+                lineMatched = true;
+                origText = origText.split(clause).map(escapeHtml).join(`<mark class="reading-key-highlight">${escapeHtml(clause)}</mark>`);
+                textSpan.innerHTML = origText;
+              }
+            }
+          }
+
+          if (lineMatched) {
+            lineElem.classList.add("highlighted");
+            if (!firstMatchElem) firstMatchElem = lineElem;
+          }
+        });
+
+        if (firstMatchElem) {
+          firstMatchElem.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+    }
+
     if (q.type === "listening" && q.dialogue) {
       listeningTranscriptCard.classList.remove("hidden");
       standardExampleCard.classList.add("hidden");
@@ -2815,6 +3035,14 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       listeningTranscriptCard.classList.add("hidden");
       standardExampleCard.classList.remove("hidden");
+
+      if (q.type === "reading") {
+        exampleCardTitle.textContent = (currentLanguage === "hsk")
+          ? "📖 지문 핵심 단서 및 전문 한국어 번역"
+          : "📖 Passage Key Clue & Full Translation";
+      } else {
+        exampleCardTitle.textContent = t.exampleCardTitle || "📝 실전 활용 상세 예문";
+      }
 
       expExampleCn.textContent = q.exampleCn || "-";
       expExampleKr.textContent = q.exampleKr || "-";
@@ -3147,6 +3375,58 @@ document.addEventListener("DOMContentLoaded", () => {
       if (e.key === "Enter" && !e.shiftKey) {
         e.preventDefault();
         evaluateDictation();
+      }
+    });
+  }
+
+  // 장문 독해(Reading) 난이도 즉시 전환 칩(하/중/상) 이벤트 바인딩
+  if (readingDiffChips && readingDiffChips.length > 0) {
+    readingDiffChips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        const selectedDiff = chip.getAttribute("data-read-diff") || "중";
+        currentDifficulty = selectedDiff;
+
+        // 메인 설정 화면의 난이도 버튼 상태도 동기화
+        diffBtns.forEach(b => {
+          b.classList.toggle("active", b.getAttribute("data-diff") === selectedDiff);
+        });
+
+        if (currentMode === "reading") {
+          questions = buildQuestions(currentLanguage, "reading", questionCount, currentDifficulty);
+          currentIndex = 0;
+          score = 0;
+          renderCurrentQuestion();
+        } else {
+          // 종합 모의고사(mixed) 내 독해 문항인 경우 현재 문항만 해당 난이도로 교체
+          const replacement = buildQuestions(currentLanguage, "reading", 1, currentDifficulty);
+          if (replacement && replacement.length > 0) {
+            questions[currentIndex] = replacement[0];
+            renderCurrentQuestion();
+          }
+        }
+      });
+    });
+  }
+
+  // 독해 줄 번호 토글 버튼
+  if (readingLineNumBtn) {
+    readingLineNumBtn.addEventListener("click", () => {
+      showLineNumbers = !showLineNumbers;
+      if (document.body) {
+        document.body.classList.toggle("hide-line-numbers", !showLineNumbers);
+      }
+      if (readingLineNumLabel) {
+        readingLineNumLabel.textContent = showLineNumbers ? "줄번호 켜짐" : "줄번호 꺼짐";
+      }
+    });
+  }
+
+  // 독해 지문 전체 오디오 듣기 버튼
+  if (readingTtsBtn) {
+    readingTtsBtn.addEventListener("click", () => {
+      const q = questions[currentIndex];
+      if (q && q.passage) {
+        playAudio(q.passage, readingTtsBtn);
       }
     });
   }

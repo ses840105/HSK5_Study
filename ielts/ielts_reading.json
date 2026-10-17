@@ -1,0 +1,362 @@
+[
+  {
+    "id": "ielts_read_01",
+    "difficulty": "하",
+    "category": "IELTS Reading (Band 5.0~5.5)",
+    "title": "Urban Rooftop Farming and Food Sustainability",
+    "passage": "In densely populated metropolises, vacant rooftop space is increasingly\nbeing transformed into vibrant agricultural plots to produce fresh food.\nThese innovative urban farms cultivate organic vegetables and herbs locally,\ndrastically reducing the carbon footprint associated with long-distance transport.\nMoreover, the thick soil beds and plant canopies absorb substantial solar heat,\nwhich naturally lowers top-floor indoor temperatures and cuts air-conditioning costs.\nBy reconnecting city dwellers with nature and promoting sustainable food practices,\nrooftop farming provides a practical and environmentally friendly solution for cities.",
+    "lineCount": 8,
+    "question": "According to the passage, what is one major benefit of rooftop farming?",
+    "options": [
+      "It lowers indoor temperatures on upper floors and decreases cooling expenses",
+      "It completely replaces traditional countryside farms for national grain production",
+      "It requires zero water or human maintenance throughout the entire calendar year",
+      "It forces all residential buildings to dismantle their existing air-conditioners"
+    ],
+    "answer": "It lowers indoor temperatures on upper floors and decreases cooling expenses",
+    "keySentence": "naturally lowers top-floor indoor temperatures and cuts air-conditioning costs",
+    "collocation": "Passage 'lowers top-floor indoor temperatures and cuts air-conditioning costs' ➔ Option 'lowers indoor temperatures on upper floors and decreases cooling expenses'",
+    "explanation": "본문에서 옥상 농원의 토양과 식물 층이 태양열을 흡수하여 '최상층 실내 온도를 자연스럽게 낮추고 에어컨 가동 비용을 절감한다(lowers top-floor indoor temperatures and cuts air-conditioning costs)'고 언급했습니다. 따라서 이를 'lowers indoor temperatures on upper floors and decreases cooling expenses'로 패러프레이징한 ①번이 정답입니다. ②번은 전통 농업을 '완전 대체'한다는 과장이며, ③번은 관리가 필요 없다는 왜곡, ④번은 에어컨 철거를 강제한다는 터무니없는 오답입니다.",
+    "translation": "[본문 해석]\n인구 밀집도가 높은 대도시에서 유휴 옥상 공간이 신선한 먹거리를 생산하는 활기찬 농경지로 탈바꿈하고 있습니다. 이러한 혁신적인 도시 농장은 유기농 채소와 허브를 현지에서 재배하여 장거리 운송에 수반되는 탄소 발자국을 획기적으로 줄입니다. 나아가 두터운 토양층과 식물 캐노피는 상당한 양의 태양열을 흡수하여 최상층의 실내 온도를 자연스럽게 낮추고 냉방 비용을 절감해 줍니다. 도시 거주자들을 자연과 다시 연결하고 지속 가능한 식생활을 장려함으로써 옥상 농업은 미래 도시를 위한 실용적이고 친환경적인 해법을 제시합니다.\n\n[보기 해석]\n① 상층부 실내 온도를 낮추고 냉방 비용을 절감한다 (정답)\n② 국가 곡물 생산에 있어 전통적인 농촌 농장을 완전히 대체한다\n③ 일 년 내내 물이나 사람의 관리가 전혀 필요하지 않다\n④ 모든 주거용 건물이 기존 에어컨을 강제로 철거하도록 만든다"
+  },
+  {
+    "id": "ielts_read_02",
+    "difficulty": "하",
+    "category": "IELTS Reading (Band 5.0~5.5)",
+    "title": "The Impact of Screen Blue Light on Sleep Cycles",
+    "passage": "Modern individuals routinely spend hours gazing at smartphones and tablets\nimmediately before bedtime, unaware of the biological damage to sleep quality.\nElectronic screens emit high-energy short-wavelength artificial blue light,\nwhich tricks the human brain into interpreting the nighttime environment as daytime.\nConsequently, the pineal gland suppresses the natural secretion of melatonin,\nan indispensable hormone that signals to the body when it is time to sleep.\nMedical sleep specialists advise turning off digital devices at least one hour before bed\nor activating built-in night-mode filters to foster restorative and restful slumber.",
+    "lineCount": 8,
+    "question": "According to the passage, blue light emitted by screens disrupts sleep because:",
+    "options": [
+      "It hinders the normal secretion of melatonin by confusing the brain",
+      "It destroys physical brain cells permanently within a few minutes",
+      "It increases natural sleepiness and causes people to wake up too early",
+      "It permanently damages the display brightness of electronic tablets"
+    ],
+    "answer": "It hinders the normal secretion of melatonin by confusing the brain",
+    "keySentence": "the pineal gland suppresses the natural secretion of melatonin",
+    "collocation": "Passage 'tricks the brain... suppresses the natural secretion of melatonin' ➔ Option 'hinders the normal secretion of melatonin by confusing the brain'",
+    "explanation": "본문에서 블루라이트가 뇌로 하여금 낮으로 착각하게 만들어 수면 유도 호르몬인 멜라토닌 분비를 억제한다(suppresses the natural secretion of melatonin)고 설명했습니다. 따라서 ①번이 정확합니다. ②번은 뇌세포 영구 파괴라는 극단적 왜곡(Extreme), ③번은 졸음을 늘린다는 반대 진술, ④번은 디스플레이 기기 손상이라는 엉뚱한 오답입니다.",
+    "translation": "[본문 해석]\n현대인들은 수면의 질에 미치는 생물학적 피해를 의식하지 못한 채 취침 직전 스마트폰과 태블릿을 바라보며 몇 시간을 보내곤 합니다. 전자기기 화면은 고에너지 단파장 인공 블루라이트를 방출하여 인간의 뇌가 밤을 낮으로 착각하도록 만듭니다. 그 결과 송과체는 몸에 수면 신호를 전달하는 필수 호르몬인 멜라토닌의 자연스러운 분비를 억제하게 됩니다. 수면 의학 전문가들은 피로를 회복하는 숙면을 유도하기 위해 취침 최소 1시간 전에 디지털 기기를 끄거나 야간 모드 필터를 활성화할 것을 권장합니다.\n\n[보기 해석]\n① 뇌를 혼란스럽게 하여 멜라토닌의 정상적인 분비를 방해하기 때문에 (정답)\n② 몇 분 만에 물리적인 뇌세포를 영구적으로 파괴하기 때문에\n③ 자연스러운 졸음을 증가시켜 사람들이 너무 일찍 깨어나게 만들기 때문에\n④ 전자 태블릿의 화면 밝기를 영구적으로 손상시키기 때문에"
+  },
+  {
+    "id": "ielts_read_03",
+    "difficulty": "하",
+    "category": "IELTS Reading (Band 5.0~5.5)",
+    "title": "Flexible Remote Working and Employee Well-being",
+    "passage": "The rapid emergence of cloud technology has accelerated the global adoption\nof telecommuting and flexible working arrangements across diverse corporations.\nEmployees no longer endure lengthy daily commutes in congested rush-hour traffic,\ngaining valuable extra hours each day for family life, exercise, and personal hobbies.\nSurveys reveal that individuals with flexible schedules report higher job satisfaction,\nas they can structure their core working hours around their peak energy levels.\nNevertheless, establishing clear boundaries between work tasks and domestic rest\nremains vital to avert mental fatigue and maintain long-term career productivity.",
+    "lineCount": 8,
+    "question": "What primary advantage of remote working is highlighted in the text?",
+    "options": [
+      "Workers save time previously lost to exhausting daily commuting",
+      "Employees can completely stop communicating with corporate managers",
+      "Companies are exempted from paying wages to remote home-based staff",
+      "Workers can permanently eradicate all forms of workplace stress"
+    ],
+    "answer": "Workers save time previously lost to exhausting daily commuting",
+    "keySentence": "no longer endure lengthy daily commutes in congested rush-hour traffic, gaining valuable extra hours each day",
+    "collocation": "Passage 'no longer endure lengthy daily commutes... gaining valuable extra hours' ➔ Option 'Workers save time previously lost to exhausting daily commuting'",
+    "explanation": "본문에서 원격 근무자가 혼잡한 출퇴근 교통 체증을 더 이상 겪지 않아 매일 가치 있는 여유 시간을 얻는다고 언급했습니다(no longer endure lengthy daily commutes, gaining valuable extra hours). 따라서 ①번이 정확합니다. ②번은 관리자와 소통을 중단한다는 왜곡, ③번은 급여 미지급이라는 터무니없는 내용, ④번은 모든 스트레스의 영구 박멸이라는 극단적 과장입니다.",
+    "translation": "[본문 해석]\n클라우드 기술의 급격한 발전은 다양한 기업에서 재택근무와 유연근무제의 글로벌 도입을 가속화했습니다. 직원들은 더 이상 혼잡한 출퇴근 시간대에 긴 통근 시간을 견디지 않아도 되며, 매일 가족과의 시간, 운동, 개인 취미를 위한 값진 여유 시간을 얻습니다. 설문조사에 따르면 유연한 일정을 가진 사람들은 자신의 가장 활력 있는 시간대에 핵심 업무를 배치할 수 있어 직무 만족도가 더 높다고 보고합니다. 그럼에도 불구하고 업무와 휴식 사이의 명확한 경계를 설정하는 것은 정신적 피로를 예방하고 장기적인 생산성을 유지하는 데 여전히 필수적입니다.\n\n[보기 해석]\n① 과거 소모적인 일상 통근으로 낭비되던 시간을 절약한다 (정답)\n② 직원들이 회사 관리자와의 소통을 완전히 중단할 수 있다\n③ 기업이 재택 직원에게 급여를 지급할 의무를 면제받는다\n④ 근로자가 모든 형태의 직장 스트레스를 영구적으로 없앨 수 있다"
+  },
+  {
+    "id": "ielts_read_04",
+    "difficulty": "하",
+    "category": "IELTS Reading (Band 5.0~5.5)",
+    "title": "Cognitive Advantages of Lifelong Foreign Language Learning",
+    "passage": "Acquiring a foreign language is frequently perceived as an arduous academic endeavour,\nyet scientific studies confirm profound cognitive dividends across all life stages.\nBilingual individuals routinely switch between separate vocabulary systems and grammar rules,\nwhich rigorously exercises executive control circuits within the prefrontal cortex.\nThis ongoing neuroplastic exercise enhances problem-solving aptitude and multitasking dexterity.\nFurthermore, epidemiological research indicates that actively learning an additional language\ncan build substantial cognitive reserve, delaying the onset of dementia in older adults.\nHence, continuous linguistic study serves as a potent non-pharmacological shield for the brain.",
+    "lineCount": 8,
+    "question": "According to the passage, studying a second language benefits older adults by:",
+    "options": [
+      "Building cognitive reserve that helps postpone symptoms of dementia",
+      "Eliminating the requirement for physical exercise and a balanced diet",
+      "Preventing all genetic diseases from developing in future descendants",
+      "Enabling them to immediately comprehend every foreign language worldwide"
+    ],
+    "answer": "Building cognitive reserve that helps postpone symptoms of dementia",
+    "keySentence": "actively learning an additional language can build substantial cognitive reserve, delaying the onset of dementia",
+    "collocation": "Passage 'build substantial cognitive reserve, delaying the onset of dementia' ➔ Option 'Building cognitive reserve that helps postpone symptoms of dementia'",
+    "explanation": "본문에서 외국어 학습이 '상당한 인지 예비능(cognitive reserve)을 구축하여 노년층의 치매 발병을 지연시킨다(delaying the onset of dementia)'고 명시했습니다. 따라서 ①번이 정답입니다. ②번은 식단과 운동을 대체한다는 허위, ③번은 유전병 완전 차단이라는 과장, ④번은 전 세계 모든 언어를 즉각 이해한다는 비현실적 오답입니다.",
+    "translation": "[본문 해석]\n외국어를 배우는 것은 흔히 힘든 학문적 과업으로 여겨지지만, 과학 연구는 전 생애에 걸친 심오한 인지적 혜택을 확인해 줍니다. 이중언어 사용자는 서로 다른 어휘 체계와 문법 규칙 사이를 규칙적으로 전환하며, 이는 전두엽 피질의 실행 제어 회로를 엄격하게 훈련시킵니다. 이러한 지속적인 신경가소성 운동은 문제 해결 능력과 다중 작업(멀티태스킹) 능력을 향상시킵니다. 나아가 역학 조사에 따르면 외국어를 적극적으로 학습하면 상당한 인지 예비능을 축적하여 노년층의 치매 발병 시기를 늦출 수 있습니다. 따라서 꾸준한 언어 학습은 뇌를 위한 강력한 비약물적 보호막 역할을 합니다.\n\n[보기 해석]\n① 치매 증상을 지연시키는 데 도움이 되는 인지 예비능을 구축함 (정답)\n② 신체 운동과 균형 잡힌 식단의 필요성을 완전히 없애줌\n③ 미래 후손에게서 모든 유전 질환이 발병하는 것을 막아줌\n④ 전 세계 모든 외국어를 즉시 알아들을 수 있게 해줌"
+  },
+  {
+    "id": "ielts_read_05",
+    "difficulty": "하",
+    "category": "IELTS Reading (Band 5.0~5.5)",
+    "title": "Transitioning Towards Reusable Packaging Systems",
+    "passage": "The rampant proliferation of single-use plastic containers in retail commerce\nhas generated unprecedented ecological crises, polluting marine habitats globally.\nTo combat this dilemma, pioneering supermarket chains are trialling circular refill models.\nCustomers bring robust, standardised reusable containers into shops to purchase dry goods,\ndetergents, and pantry staples directly from automated bulk-dispensing machines.\nParticipating consumers receive small monetary discounts on transactions as positive incentives.\nThis closed-loop circular packaging framework significantly curbs plastic manufacture and refuse,\nfostering responsible consumerism and substantially curbing municipal landfill burdens.",
+    "lineCount": 8,
+    "question": "What mechanism is used by supermarkets to encourage customers to use refillable containers?",
+    "options": [
+      "Offering small financial discounts on their shopping transactions",
+      "Imposing legal fines on anyone purchasing items packed in cardboard",
+      "Restricting grocery shopping privileges exclusively to registered eco-club members",
+      "Doubling the overall cost of all groceries bought inside brick-and-mortar stores"
+    ],
+    "answer": "Offering small financial discounts on their shopping transactions",
+    "keySentence": "Participating consumers receive small monetary discounts on transactions as positive incentives.",
+    "collocation": "Passage 'receive small monetary discounts on transactions' ➔ Option 'Offering small financial discounts on their shopping transactions'",
+    "explanation": "본문에서 슈퍼마켓이 고객의 리필 다회용기 사용을 장려하기 위해 '금전적 할인 혜택을 제공한다(receive small monetary discounts on transactions as positive incentives)'고 명시했습니다. 따라서 ①번이 정답입니다. ②번은 벌금 부과, ③번은 특정 회원제 제한, ④번은 물건 가격 2배 인상이라는 터무니없는 왜곡입니다.",
+    "translation": "[본문 해석]\n소매업계에서 일회용 플라스틱 용기의 무분별한 확산은 전 세계 해양 생태계를 오염시키며 전례 없는 생태학적 위기를 초래했습니다. 이 딜레마에 맞서 선도적인 슈퍼마켓 체인들은 순환형 리필 모델을 시험 도입하고 있습니다. 고객들은 튼튼하고 규격화된 다회용 용기를 매장에 가져와 자동 벌크 디스펜서에서 건조 식품, 세제, 주방 필수품을 직접 담아 구매합니다. 참여 소비자들은 긍정적 유인책으로 결제 시 소액의 가격 할인 혜택을 받습니다. 이러한 폐쇄 루프 순환 포장 체계는 플라스틱 제조와 폐기물을 현저히 억제하여 책임 있는 소비를 촉진하고 지방자치단체의 쓰레기 매립 부담을 크게 덜어줍니다.\n\n[보기 해석]\n① 쇼핑 결제 시 소액의 금전적 할인 혜택을 제공한다 (정답)\n② 판지에 포장된 물품을 구매하는 사람에게 법적 벌금을 부과한다\n③ 식료품 쇼핑 자격을 등록된 환경 클럽 회원에게만 독점 제한한다\n④ 오프라인 매장에서 구매하는 모든 식료품 가격을 2배로 인상한다"
+  },
+  {
+    "id": "ielts_read_06",
+    "difficulty": "하",
+    "category": "IELTS Reading (Band 5.0~5.5)",
+    "title": "Modern Public Libraries as Dynamic Community Hubs",
+    "passage": "Historically regarded as silent sanctuaries reserved solely for reading printed literature,\ncontemporary public municipal libraries have undergone a radical and dynamic transformation.\nToday, these institutions function as comprehensive community hubs providing equitable access\nto high-speed digital internet connections, advanced 3D printers, and professional software.\nThey host free workshops teaching coding, language acquisition, and financial literacy to citizens,\neffectively bridging the expanding socioeconomic digital divide in underprivileged neighbourhoods.\nBy evolving from static book depositories into interactive collaborative discovery spaces,\nlibraries remain indispensable engines of lifelong learning and democratic civic engagement.",
+    "lineCount": 8,
+    "question": "According to the passage, modern public libraries have transformed into:",
+    "options": [
+      "Interactive community centres offering diverse digital resources and public workshops",
+      "Exclusive commercial clubs that only wealthy tech entrepreneurs can access",
+      "Silent warehouses where talking and technology devices are strictly prohibited",
+      "For-profit computer retail shops that sell high-end 3D printing equipment"
+    ],
+    "answer": "Interactive community centres offering diverse digital resources and public workshops",
+    "keySentence": "Today, these institutions function as comprehensive community hubs providing equitable access to high-speed digital internet connections, advanced 3D printers, and professional software.",
+    "collocation": "Passage 'comprehensive community hubs... interactive collaborative discovery spaces' ➔ Option 'Interactive community centres offering diverse digital resources and public workshops'",
+    "explanation": "본문에서 현대 공공도서관은 정적인 책 보관소에서 탈피하여 '다양한 디지털 자원(인터넷, 3D프린터 등)과 무료 워크숍을 제공하는 포괄적 커뮤니티 허브'로 변모했다고 서술했습니다. 따라서 ①번이 정확한 패러프레이징입니다. ②번은 유료 상업 클럽이라는 왜곡, ③번은 침묵만 강요하는 옛 도서관의 모습, ④번은 장비 판매점이라는 오답입니다.",
+    "translation": "[본문 해석]\n역사적으로 인쇄된 서적을 읽기 위한 고요한 안식처로만 여겨졌던 현대의 공공 시립 도서관은 급진적이고 역동적인 변화를 겪었습니다. 오늘날 이들 기관은 초고속 인터넷, 첨단 3D 프린터, 전문 소프트웨어에 대한 공평한 접근을 제공하는 종합 커뮤니티 허브로 기능합니다. 도서관은 코딩, 언어 습득, 금융 문해력을 시민들에게 무료로 가르치는 워크숍을 개최하여 소외 계층의 디지털 격차를 효과적으로 해소합니다. 정적인 도서 보관소에서 상호작용적인 협업 탐구 공간으로 진화함으로써 도서관은 평생 학습과 민주적 시민 참여의 없어서는 안 될 원동력으로 남아 있습니다.\n\n[보기 해석]\n① 다양한 디지털 자원과 공개 워크숍을 제공하는 상호작용적 커뮤니티 센터 (정답)\n② 부유한 IT 기업가들만 접근할 수 있는 독점적 상업 클럽\n③ 대화와 전자기기 사용이 엄격히 금지된 정적 창고\n④ 고사양 3D 프린팅 장비를 판매하는 영리 목적의 컴퓨터 소매점"
+  },
+  {
+    "id": "ielts_read_07",
+    "difficulty": "중",
+    "category": "IELTS Reading (Band 6.0~6.5)",
+    "title": "The Psychology of Decision Fatigue and Willpower Depletion",
+    "passage": "Every day, individuals make thousands of choices, ranging from trivial wardrobe\nselections to momentous corporate financial investments and strategic agreements.\nPsychological experiments reveal that human willpower does not function as an infinite wellspring;\nrather, it operates like a physiological muscle that tires after continuous exertion.\nThis phenomenon, formally designated as 'decision fatigue', posits that the sheer volume\nof conscious trade-offs evaluated throughout a day progressively depletes mental energy reserves.\nAs cognitive fatigue accumulates, the prefrontal cortex struggles to execute balanced judgements.\nConsequently, decision-makers unconsciously gravitate towards one of two perilous shortcuts:\neither becoming reckless and acting on impulse without calculating downstream risks,\nor succumbing to decision paralysis and defaulting to the easiest option—doing nothing at all.\nA notable judicial study demonstrated that judges were far more inclined to grant parole\nto prisoners early in the morning session, whereas approval rates plummeted towards the end of the day,\nas exhausted magistrates defaulted to the safest, status-quo denial of parole.\nTo mitigate the detrimental fallout of decision fatigue, leading executives streamline routine minutiae,\nsuch as adopting minimalist wardrobes and scheduling high-stakes negotiations during morning peak clarity.\nUnderstanding our biological cognitive limitations allows us to protect our finite focus for what truly matters.",
+    "lineCount": 16,
+    "question": "According to the passage, when individuals suffer from severe decision fatigue, they tend to:",
+    "options": [
+      "Opt for impulsive actions or default to passive inaction to avoid cognitive strain",
+      "Exhibit vastly improved analytical focus and make significantly better long-term investments",
+      "Generate infinite physical stamina without needing regular sleep or nutritional intake",
+      "Rely entirely on complex mathematical algorithms rather than human common sense"
+    ],
+    "answer": "Opt for impulsive actions or default to passive inaction to avoid cognitive strain",
+    "keySentence": "either becoming reckless and acting on impulse without calculating downstream risks, or succumbing to decision paralysis and defaulting to the easiest option—doing nothing at all.",
+    "collocation": "Passage 'acting on impulse... or defaulting to doing nothing at all' ➔ Option 'Opt for impulsive actions or default to passive inaction to avoid cognitive strain'",
+    "explanation": "본문에서 의사결정 피로가 쌓이면 사람들은 두 가지 위험한 지름길로 빠진다고 설명했습니다: 위험을 따지지 않고 충동적으로 행동하거나(acting on impulse), 마비되어 아무것도 하지 않는 기본값(doing nothing at all)을 선택합니다. 따라서 ①번이 정확합니다. ②번은 집중력이 향상된다는 정반대 오답이며, ③, ④번은 본문과 무관한 왜곡입니다.",
+    "translation": "[본문 해석]\n매일 사람들은 옷차림 선택과 같은 사소한 것부터 중대한 기업 투자와 전략적 합의에 이르기까지 수천 가지 결정을 내립니다. 심리학 실험에 따르면 인간의 의지력은 무한한 샘물이 아니며, 지속적으로 사용하면 지치는 신체 근육처럼 작동합니다. '의사결정 피로(Decision Fatigue)'로 명명된 이 현상은 하루 동안 의식적으로 저울질해야 하는 수많은 선택이 정신적 에너지를 점진적으로 고갈시킨다고 설명합니다. 인지 피로가 누적되면 전두엽 피질은 균형 잡힌 판단을 내리는 데 어려움을 겪습니다. 그 결과 결정권자들은 무의식적으로 두 가지 위험한 지름길로 향합니다. 위험을 계산하지 않고 충동적으로 행동하거나, 결정 마비에 빠져 가장 손쉬운 옵션인 '아무것도 하지 않기'를 기본값으로 택하는 것입니다. 판사를 대상으로 한 유명 연구에 따르면 아침 세션에는 죄수의 가석방 승인율이 높았으나, 피로가 극에 달한 오후 늦게는 위험을 피하기 위해 가석방을 기각하는 안전한 현상유지 결정을 내리는 비율이 급증했습니다. 이러한 피로를 완화하기 위해 유능한 리더들은 옷차림을 단순화하고 중요한 협상을 오전 맑은 정신일 때로 배치합니다. 인지적 한계를 이해하면 가장 중요한 일에 유한한 집중력을 보존할 수 있습니다.\n\n[보기 해석]\n① 인지적 부담을 피하기 위해 충동적 행동을 하거나 수동적 무행동을 기본값으로 택함 (정답)\n② 분석적 집중력이 크게 향상되어 훨씬 더 나은 장기 투자를 집행함\n③ 수면이나 영양 섭취 없이도 무한한 신체적 지구력을 발휘함\n④ 인간의 상식 대신 복잡한 수학 알고리즘에 전적으로 의존함"
+  },
+  {
+    "id": "ielts_read_08",
+    "difficulty": "중",
+    "category": "IELTS Reading (Band 6.0~6.5)",
+    "title": "Biomimicry: Engineering Innovations Inspired by Biological Systems",
+    "passage": "For billions of years, evolutionary natural selection has served as a rigorous laboratory,\nrefining biological designs to achieve maximum energy efficiency, resilience, and adaptability.\nBiomimicry is the multidisciplinary scientific discipline that emulates these time-tested\nnatural patterns and strategies to engineer sustainable solutions to complex human challenges.\nA famous historical triumph of biomimicry occurred in the late twentieth century in Japan.\nEngineers designing the high-speed Shinkansen bullet train encountered a severe noise barrier:\nwhen exiting tight mountain tunnels at high velocity, the train generated a thunderous acoustic boom\ncaused by sudden atmospheric pressure displacement, which caused structural distress in nearby towns.\nThe chief engineer, an avid birdwatcher, noted how the kingfisher bird dives seamlessly into water\nfrom the air with barely a splash to catch fish, thanks to its streamlined, elongated beak.\nBy redesigning the train's blunt locomotive nose into a precise replica of the kingfisher's beak,\nthe engineering team not only completely eliminated the destructive atmospheric sonic shockwave,\nbut also reduced electrical power consumption by fifteen percent while increasing operational speed.\nSimilar bio-inspired innovations include wind turbine blades modelled on the flippers of humpback whales\nand self-cooling skyscrapers engineered to mimic the passive ventilation shafts of termite mounds.\nBy looking to nature as an esteemed mentor rather than a resource to plunder,\nhuman engineering can reconcile technological progress with delicate ecological harmony.",
+    "lineCount": 17,
+    "question": "How did engineers resolve the sonic boom issue of the Japanese bullet train?",
+    "options": [
+      "By reshaping the train's front to replicate the aerodynamic beak of a kingfisher",
+      "By forcing the high-speed trains to travel strictly through open plains without tunnels",
+      "By coating the exterior tracks in thick sound-absorbing biological whale blubber",
+      "By reducing passenger capacity and cutting train operational speeds by half"
+    ],
+    "answer": "By reshaping the train's front to replicate the aerodynamic beak of a kingfisher",
+    "keySentence": "By redesigning the train's blunt locomotive nose into a precise replica of the kingfisher's beak, the engineering team not only completely eliminated the destructive atmospheric sonic shockwave",
+    "collocation": "Passage 'redesigning the train's blunt locomotive nose into a precise replica of the kingfisher's beak' ➔ Option 'reshaping the train's front to replicate the aerodynamic beak of a kingfisher'",
+    "explanation": "본문에서 고속열차가 터널을 빠져나올 때 발생하는 폭음 문제를 해결하기 위해, 엔지니어들이 열차 앞머리를 물총새(kingfisher)의 유선형 부리 모양으로 재설계(redesigning the train's locomotive nose into a precise replica of the kingfisher's beak)했다고 명시했습니다. 따라서 ①번이 정확합니다. ②, ③, ④번은 본문과 일치하지 않는 왜곡입니다.",
+    "translation": "[본문 해석]\n수십억 년 동안 자연선택의 진화 과정은 에너지 효율과 탄력성, 적응성을 극대화하기 위해 생물학적 설계를 정제해 온 엄격한 실험실 역할을 해왔습니다. '생체모방 기술(Biomimicry)'은 이러한 오랜 자연의 패턴과 전략을 모방하여 복잡한 인간의 난제에 대한 지속 가능한 솔루션을 설계하는 다학제적 과학 분야입니다. 생체모방의 대표적 성공 사례는 20세기 후반 일본에서 있었습니다. 신칸센 고속열차를 설계하던 엔지니어들은 기차가 고속으로 터널을 통과할 때 급격한 기압 변화로 거대한 폭음(소닉 붐)을 일으켜 인근 마을에 소음 피해를 주는 난관에 부딪혔습니다. 조류 관찰자였던 수석 엔지니어는 물총새가 가늘고 길쭉한 유선형 부리 덕분에 공기 중에서 물속으로 거의 물방울을 튀기지 않고 매끄럽게 다이빙한다는 점에 주목했습니다. 열차의 뭉툭한 앞머리를 물총새 부리 모양으로 개조하자 파괴적인 소닉 붐이 완전히 사라졌을 뿐 아니라 전력 소비가 15% 절감되고 속도는 더 빨라졌습니다. 혹등고래의 지느러미를 본뜬 풍력 터빈 날개나 흰개미집의 통풍 구조를 모방한 친환경 빌딩처럼, 자연을 멘토로 삼을 때 기술 진보와 생태계의 조화를 이룰 수 있습니다.\n\n[보기 해석]\n① 열차 앞머리를 물총새의 공기역학적 부리 모양으로 재설계함으로써 (정답)\n② 터널이 없는 탁 트인 평야로만 열차가 운행하도록 강제함으로써\n③ 외부 선로를 소음을 흡수하는 두꺼운 고래 지방으로 코팅함으로써\n④ 승객 정원을 줄이고 열차 운행 속도를 절반으로 감속함으로써"
+  },
+  {
+    "id": "ielts_read_09",
+    "difficulty": "중",
+    "category": "IELTS Reading (Band 6.0~6.5)",
+    "title": "The Global Revival of Modern Light Rail Tramways",
+    "passage": "Throughout the mid-twentieth century, municipal transport planners across North America\nand Europe dismantled thousands of kilometres of vintage streetcar and tramway systems.\nAutomobiles and diesel-powered buses were heralded as the undisputed champions of modernity,\npromising unconstrained individual mobility and flexible point-to-point transportation.\nHowever, this car-centric urban paradigm inevitably spawned chronic gridlock, lethal air smog,\nand massive road infrastructure expenditures that consumed municipal treasury reserves.\nIn response, forward-thinking cities are spearheading an impressive tram renaissance.\nContemporary light rail vehicles (LRVs) bear little resemblance to their squeaky historical ancestors:\npowered by zero-emission overhead catenary electric wires or cutting-edge ground-level induction,\nthey glide smoothly along dedicated rights-of-way, unimpeded by street automobile congestion.\nA single modern multi-carriage tram can transport over three hundred commuters comfortably,\nreplacing approximately two hundred private motor vehicles and slashing urban carbon emissions.\nFurthermore, urban planners observe that light rail investments trigger substantial capital renewal;\npedestrianised boulevards flanked by tram tracks attract bustling retail storefronts and alfresco dining.\nReclaiming asphalt highways for sustainable mass transit creates healthier, vibrant cities for all.",
+    "lineCount": 15,
+    "question": "What is identified as a major socio-economic benefit of installing modern light rail systems?",
+    "options": [
+      "It revitalises surrounding urban neighbourhoods and stimulates pedestrian-oriented commercial activity",
+      "It compels every local citizen to immediately sell their private family automobiles",
+      "It completely eliminates the financial requirement for municipal taxes in participating cities",
+      "It guarantees that all diesel buses are permanently transformed into electric cars overnight"
+    ],
+    "answer": "It revitalises surrounding urban neighbourhoods and stimulates pedestrian-oriented commercial activity",
+    "keySentence": "urban planners observe that light rail investments trigger substantial capital renewal; pedestrianised boulevards flanked by tram tracks attract bustling retail storefronts and alfresco dining.",
+    "collocation": "Passage 'trigger substantial capital renewal; pedestrianised boulevards... attract bustling retail storefronts' ➔ Option 'revitalises surrounding urban neighbourhoods and stimulates pedestrian-oriented commercial activity'",
+    "explanation": "본문에서 트램 투자가 도시 환경에 미치는 사회경제적 혜택으로 '상당한 자본 재생을 촉발하고, 트램 선로 옆 보행자 전용 대로가 번화한 상점과 야외 식당을 끌어들인다(trigger substantial capital renewal; attract bustling retail storefronts)'고 설명했습니다. 따라서 ①번이 정확합니다. ②, ③, ④번은 본문에서 언급하지 않은 허위·과장 보기입니다.",
+    "translation": "[본문 해석]\n20세기 중반 북미와 유럽의 도시 계획가들은 수천 킬로미터에 달하는 노면전차(트램) 선로를 철거했습니다. 자동차와 디젤 버스가 현대성의 상징으로 각광받으며 무제한의 개별 이동성을 약속했기 때문입니다. 그러나 자동차 중심의 패러다임은 극심한 교통 정체, 치명적인 스모그, 막대한 도로 유지비라는 부작용을 낳았습니다. 이에 따라 현대 도시들은 눈부신 트램의 부활을 주도하고 있습니다. 현대의 경전철(LRV)은 친환경 전력망이나 바닥 유도 충전으로 구동되며 전용 궤도를 따라 자동차 정체 없이 부드럽게 주행합니다. 다객차 트램 한 대는 300명 이상의 승객을 쾌적하게 수송하여 자가용 200대를 대체하고 탄소 배출을 격감시킵니다. 나아가 도시 계획가들은 트램 투자가 주변의 도시 재생을 촉진하여 보행자 중심의 활기찬 상권과 카페 거리를 조성한다는 점을 확인했습니다. 아스팔트를 대중교통에 돌려줌으로써 도시는 더욱 살기 좋은 공간이 됩니다.\n\n[보기 해석]\n① 주변 도시 지역을 활성화하고 보행자 중심의 상업 활동을 자극함 (정답)\n② 모든 지역 시민이 자가용을 즉시 매각하도록 강제함\n③ 참여 도시의 지방세 납부 요건을 완전히 면제해 줌\n④ 모든 디젤 버스가 하룻밤 사이에 전기차로 완전히 개조되도록 보장함"
+  },
+  {
+    "id": "ielts_read_10",
+    "difficulty": "중",
+    "category": "IELTS Reading (Band 6.0~6.5)",
+    "title": "Ocean Acidification and Coral Bleaching Phenomena",
+    "passage": "Often hailed as the 'rainforests of the marine kingdom', tropical coral reefs support\nover twenty-five percent of all marine species despite occupying under one percent of the ocean floor.\nThese complex calcium-carbonate bio-structures provide crucial coastal storm buffers\nand sustain the livelihoods and food security of half a billion people globally.\nTragically, global anthropogenic climate destabilisation is placing these fragile ecosystems in jeopardy.\nThe world's oceans have absorbed approximately thirty percent of excess carbon dioxide generated by humans,\ntriggering widespread ocean acidification that severely hampers calcifying coral polyps from building skeletons.\nSimultaneously, prolonged marine heatwaves induce catastrophic thermal stress on coral colonies.\nIn response to elevated water temperatures, corals expel their symbiotic photosynthetic microalgae,\nknown scientifically as zooxanthellae, which inhabit their tissues and furnish up to ninety percent of their nutrients.\nDeprived of these vibrant algae, the coral skeletons turn ghostly white in a process known as 'bleaching'.\nWhile bleached corals are not dead immediately, prolonged nutrient starvation leaves them highly vulnerable to disease.\nMarine conservation biologists emphasise that without urgent worldwide decarbonisation efforts,\nalong with local interventions like cultivating thermally resilient 'super-corals' in gene nurseries,\nmost shallow-water tropical reefs could face irreversible ecological extinction by the century's conclusion.\nProtecting these vibrant marine sanctuaries is an urgent imperative for global ecological survival.",
+    "lineCount": 16,
+    "question": "What directly causes corals to turn white during a coral bleaching event?",
+    "options": [
+      "The expulsion of nutrient-providing symbiotic algae due to elevated water temperatures",
+      "The accumulation of toxic industrial mercury discharging from coastal mining factories",
+      "A total absence of oceanic carbon dioxide preventing any algae from growing",
+      "Predatory crown-of-thorns starfish devouring all outer coral shells overnight"
+    ],
+    "answer": "The expulsion of nutrient-providing symbiotic algae due to elevated water temperatures",
+    "keySentence": "In response to elevated water temperatures, corals expel their symbiotic photosynthetic microalgae, known scientifically as zooxanthellae",
+    "collocation": "Passage 'corals expel their symbiotic photosynthetic microalgae... turn ghostly white' ➔ Option 'The expulsion of nutrient-providing symbiotic algae due to elevated water temperatures'",
+    "explanation": "본문에서 산호 백화현상의 직접적인 메커니즘으로 '수온 상승에 반응하여 산호가 영양분의 최대 90%를 공급해 주던 공생 조류(zooxanthellae)를 방출(expel their symbiotic photosynthetic microalgae)하기 때문'이라고 명시했습니다. 따라서 ①번이 정답입니다. ②번은 수은 배출, ③번은 이산화탄소 결핍이라는 반대 진술, ④번은 불가사리 습격이라는 엉뚱한 오답입니다.",
+    "translation": "[본문 해석]\n'바다의 열대우림'으로 불리는 열대 산호초는 해저 면적의 1% 미만을 차지함에도 해양 생물종의 25% 이상을 부양합니다. 이들은 해안 폭풍을 완충하고 전 세계 5억 인구의 생계와 식량을 지탱합니다. 비극적이게도 인간 활동에 의한 기후 불안정화로 이 취약한 생태계가 위협받고 있습니다. 바다가 인류가 배출한 이산화탄소의 약 30%를 흡수하면서 해양 산성화가 진행되어 산호 유충이 골격을 형성하기 어려워졌습니다. 동시에 지속되는 해양 열파는 열 스트레스를 유발합니다. 수온이 상승하면 산호는 조직 내에 서식하며 영양분의 90%를 제공하던 공생 조류인 '주산셀레(zooxanthellae)'를 체외로 방출합니다. 조류를 잃은 산호는 하얗게 변하는 '백화현상(Bleaching)'을 겪습니다. 백화된 산호가 즉시 죽는 것은 아니지만 기아 상태가 지속되면 질병에 극도로 취약해집니다. 해양생물학자들은 전 지구적 탈탄소화 노력과 고수온 저항성 슈퍼 산호 육성 등의 보전 조치가 없다면 21세기 말까지 열대 산호초가 멸종 위기에 처할 것이라고 경고합니다.\n\n[보기 해석]\n① 수온 상승으로 인해 영양을 공급하던 공생 조류가 체외로 방출되기 때문에 (정답)\n② 해안 광산 공장에서 배출된 유독성 산업 수은이 축적되기 때문에\n③ 해양 이산화탄소가 완전히 결핍되어 어떤 조류도 자라지 못하기 때문에\n④ 육식성 가시관불가사리가 하룻밤 사이에 외부 산호 껍질을 모두 먹어치우기 때문에"
+  },
+  {
+    "id": "ielts_read_11",
+    "difficulty": "중",
+    "category": "IELTS Reading (Band 6.0~6.5)",
+    "title": "The Evolution and Dual Impact of Ecotourism",
+    "passage": "Conceived in the late twentieth century as an ethical alternative to exploitative mass travel,\necotourism promised to harmonise environmental conservation with socio-economic empowerment.\nThe core ethos prioritises low-impact travel to fragile, pristine natural ecosystems,\nchannelling tourism revenues directly into wildlife protection and indigenous community development.\nIn classic success stories, such as mountain gorilla conservation across Rwanda and Uganda,\nlucrative visitor permit fees have turned former wildlife poachers into passionate park rangers.\nLocal communities receive sustained financing for potable water infrastructure, schools, and health clinics,\nincentivising them to safeguard endangered species rather than encroach upon forest reserves.\nHowever, the commercial boom of ecotourism has inevitably birthed disquieting unintended paradoxes.\nThe relentless surge of tourists into previously secluded biodiversity hotspots often requires\nthe construction of paved access roads, safari airstrips, and luxury wilderness lodges.\nHeavy vehicular traffic fragments habitats, contaminates local watersheds with sewage run-off,\nand alters the foraging behaviours of territorial apex predators.\nFurthermore, critics highlight 'greenwashing', where unscrupulous operators brand conventional holidays\nas 'eco-friendly' without instituting genuine environmental protocols or benefiting native residents.\nGenuine ecotourism requires uncompromising regulatory standards and robust community governance.",
+    "lineCount": 16,
+    "question": "What is one negative consequence of ecotourism expansion highlighted in the passage?",
+    "options": [
+      "Infrastructural developments like roads and luxury lodges can fragment fragile habitats",
+      "Poachers have entirely eliminated all mountain gorilla populations in Central Africa",
+      "All indigenous communities are legally prohibited from working inside national parks",
+      "Governments worldwide have banned tourist travel to all natural ecosystems"
+    ],
+    "answer": "Infrastructural developments like roads and luxury lodges can fragment fragile habitats",
+    "keySentence": "The relentless surge of tourists into previously secluded biodiversity hotspots often requires the construction of paved access roads, safari airstrips, and luxury wilderness lodges. Heavy vehicular traffic fragments habitats",
+    "collocation": "Passage 'construction of paved access roads... fragments habitats' ➔ Option 'Infrastructural developments like roads and luxury lodges can fragment fragile habitats'",
+    "explanation": "본문에서 생태관광의 상업적 확장에 따른 부정적 영향으로 '포장 진입로, 활주로, 럭셔리 롯지 등 인프라 건설과 차량 통행이 야생동물 서식지를 파편화한다(construction of paved access roads, safari airstrips, and luxury wilderness lodges... fragments habitats)'고 명시했습니다. 따라서 ①번이 정확합니다. ②번은 고릴라가 멸종했다는 허위, ③번은 원주민 고용 금지라는 반대 진술, ④번은 전면 금지라는 과장입니다.",
+    "translation": "[본문 해석]\n20세기 후반 착취적인 대중 관광의 윤리적 대안으로 구상된 생태관광(Ecotourism)은 환경 보전과 사회경제적 권익 향상의 조화를 약속했습니다. 그 핵심 가치는 취약하고 원시적인 자연 생태계로의 저영향 여행을 지향하며, 관광 수익을 야생동물 보호와 원주민 공동체 발전에 직접 투입하는 것입니다. 르완다와 우간다의 마운틴고릴라 보전 성공 사례처럼, 고가의 방문 허가 수수료는 과거의 밀렵꾼들을 열정적인 공원 관리원으로 변모시켰습니다. 지역사회는 식수, 학교, 보건소에 대한 지속적인 재정 지원을 받아 숲을 훼손하는 대신 멸종위기종을 보호하게 되었습니다. 그러나 생태관광의 상업적 붐은 의도치 않은 역설을 낳았습니다. 한적했던 생태 핫스팟으로 관광객이 몰려들면서 도로, 비행장, 고급 롯지 건설이 잇따랐습니다. 심한 차량 통행은 서식지를 파편화하고 오폐수로 수원을 오염시키며 포식 동물의 먹이활동을 교란합니다. 나아가 진정한 환경 규약 없이 친환경 꼬리표만 붙이는 '그린워싱'도 비판받고 있습니다. 진정한 생태관광을 위해서는 엄격한 규제와 지역사회의 거버넌스가 필수적입니다.\n\n[보기 해석]\n① 도로와 고급 롯지 같은 인프라 개발이 취약한 서식지를 파편화할 수 있음 (정답)\n② 밀렵꾼들이 중앙아프리카의 모든 마운틴고릴라 개체군을 완전히 멸종시킴\n③ 모든 원주민 공동체는 국립공원 내 근무가 법적으로 금지됨\n④ 전 세계 정부가 모든 자연 생태계로의 관광 여행을 전면 금지함"
+  },
+  {
+    "id": "ielts_read_12",
+    "difficulty": "중",
+    "category": "IELTS Reading (Band 6.0~6.5)",
+    "title": "Microplastics in Freshwater Ecosystems and Trophic Transfer",
+    "passage": "While global scientific scrutiny has concentrated extensively on marine plastic debris,\nenvironmental toxicologists are sounding alarms regarding microplastic contamination in freshwater river basins.\nMicroplastics—defined as synthetic polymer particles measuring less than five millimetres in diameter—\noriginate from the degradation of commercial packaging, tyre abrasion, and synthetic textile fibres shedding in laundry.\nInland waterways and lakes serve as primary conduits transporting these persistent synthetic pollutants from land to sea,\nyet substantial quantities settle permanently into riverbeds or remain suspended in the water column.\nAquatic organisms at the base of the food web, including filter-feeding zooplankton, benthic larvae, and small fish,\nreadily mistake these buoyant colourful plastic particles for nutrient-rich food sources.\nIngestion induces severe internal abrasions, pseudo-satiety leading to starvation, and endocrine disruptions.\nCrucially, microplastics possess hydrophobic surfaces that readily absorb toxic industrial chemical contaminants,\nsuch as polychlorinated biphenyls (PCBs) and heavy metals, from ambient waters at alarmingly high concentrations.\nAs primary consumers are predated by apex predators, these toxic particles bioaccumulate across trophic levels,\neventually reaching commercial fish species harvested for widespread human dietary consumption.\nMitigating freshwater plastic contamination demands comprehensive interventions: from wastewater filtration retrofits\nto redesigning textiles and enforcing strict extended producer responsibility frameworks across industrial supply chains.",
+    "lineCount": 15,
+    "question": "Why do microplastics pose a particularly grave toxicological threat in aquatic food chains?",
+    "options": [
+      "Their surfaces absorb hazardous chemical pollutants, which then bioaccumulate across trophic levels",
+      "They dissolve immediately in freshwater to create boiling underwater thermal currents",
+      "They mutate aquatic organisms into giant predatory beasts within forty-eight hours",
+      "They exclusively poison apex marine mammals without affecting smaller organisms"
+    ],
+    "answer": "Their surfaces absorb hazardous chemical pollutants, which then bioaccumulate across trophic levels",
+    "keySentence": "microplastics possess hydrophobic surfaces that readily absorb toxic industrial chemical contaminants",
+    "collocation": "Passage 'absorb toxic industrial chemical contaminants... bioaccumulate across trophic levels' ➔ Option 'Their surfaces absorb hazardous chemical pollutants, which then bioaccumulate across trophic levels'",
+    "explanation": "본문에서 미세플라스틱의 심각한 독성학적 위험으로 '소수성 표면이 주변 수중의 유독 화학오염물질(PCB, 중금속 등)을 흡수하고, 상위 포식자로 갈수록 먹이사슬을 통해 생물농축(bioaccumulate across trophic levels)된다'고 기술했습니다. 따라서 ①번이 정확합니다. ②, ③, ④번은 과학적 사실과 동떨어진 허위 왜곡입니다.",
+    "translation": "[본문 해석]\n해양 플라스틱 쓰레기에 대한 연구가 집중되는 동안, 환경 독성학자들은 담수 하천 유역의 미세플라스틱 오염에 대해 경종을 울리고 있습니다. 직경 5밀리미터 미만의 합성 고분자 입자인 미세플라스틱은 포장재 분해, 타이어 마모, 세탁 시 빠져나오는 합성 섬유 등에서 발생합니다. 내륙 수로와 호수는 이러한 난분해성 오염물질을 바다로 운반하는 주요 통로이지만, 상당량이 하상에 침전되거나 수중에 부유합니다. 동물성 플랑크톤, 저서 유충, 소형 어류 등 먹이사슬 바닥의 생물들은 이 알록달록한 미세플라스틱을 먹이로 오인해 섭취합니다. 섭취 시 장기 손상, 거짓 포만감으로 인한 아사, 내분비 교란이 발생합니다. 특히 미세플라스틱은 소수성 표면을 지녀 물속의 잔류성 유기오염물질(PCB)이나 중금속 등 유독 화학물질을 고농도로 흡착합니다. 하위 소비자가 상위 포식자에게 잡아먹히면서 이 독성 입자들은 영양 단계를 거쳐 생물농축(Bioaccumulation)되며, 결국 식탁에 오르는 상업 어종에까지 도달합니다. 하수처리장 필터 개선과 생산자 책임 재활용제도 등 전면적인 대책이 시급합니다.\n\n[보기 해석]\n① 표면에 유해 화학물질을 흡착하며 먹이사슬의 영양 단계를 따라 생물농축되기 때문에 (정답)\n② 담수에서 즉시 녹아 수중에 끓는 열수 해류를 생성하기 때문에\n③ 48시간 이내에 수생 생물을 거대한 포식 괴수로 돌연변이시키기 때문에\n④ 소형 생물에는 영향을 주지 않고 오직 최상위 해양 포유류만 독살하기 때문에"
+  },
+  {
+    "id": "ielts_read_13",
+    "difficulty": "상",
+    "category": "IELTS Reading (Band 7.0~8.0)",
+    "title": "Neuroplasticity, Cognitive Reserve, and Healthy Brain Ageing",
+    "passage": "For over a century, the classical dogma in neurobiology asserted that the adult human brain\nwas an immutable, hard-wired organ incapable of generating novel neurons or restructuring circuits.\nIt was widely assumed that post-adolescent cerebral development was purely a gradual process\nof inexorable neurodegenerative decline, where lost cortical capacity could never be reclaimed.\nGroundbreaking neuroimaging breakthroughs in contemporary neuroscience have decisively shattered\nthis fatalistic orthodoxy, establishing the lifelong persistence of neuroplasticity—the extraordinary\ncapacity of neural networks to continually reorganise, form synaptic connections, and even undergo neurogenesis.\nCrucially, the degree to which an ageing brain preserves robust executive functioning is underpinned\nby the conceptual paradigm of 'cognitive reserve'. Coined to elucidate a paradoxical clinical anomaly,\ncognitive reserve explains why certain elderly individuals demonstrate minimal cognitive impairment\nin life despite autopsy post-mortems revealing advanced pathological hallmarks of Alzheimer's disease.\nRather than possessing structural immunity to neuropathological lesions, these resilient brains exhibit\nsuperior functional redundancy and cognitive flexibility: when primary computational pathways deteriorate,\nthe brain fluidly recruits alternative neural circuits across bilateral cerebral hemispheres to execute tasks.\nDecades of empirical epidemiological tracking indicate that cognitive reserve is not biologically predetermined;\nrather, it is actively accumulated across a lifespan through demanding intellectual and social pursuits.\nSustained mastery of complex skills—such as acquiring multiple languages, learning polyphonic musical instruments,\nor navigating cognitively taxing professional vocations—stimulates continuous dendritic branching.\nConcurrently, regular aerobic physical exercise triggers the upregulation of Brain-Derived Neurotrophic Factor (BDNF),\na master biochemical catalyst that promotes synaptic plasticity and preserves hippocampal volume.\nFurthermore, rich interpersonal social engagement provides potent cognitive buffering against loneliness,\na chronic psychological stressor known to provoke neurotoxic cortisol cascades and accelerate cortical atrophy.\nThe revelation that brain architecture remains profoundly adaptable into senescence empowers us:\nageing is not a passive surrender to inevitable decay, but an active, lifelong creative project of cognitive enrichment.",
+    "lineCount": 24,
+    "question": "What is the primary mechanism through which cognitive reserve protects elderly individuals from dementia symptoms?",
+    "options": [
+      "By enabling the brain to recruit alternate neural pathways to compensate for damaged primary circuits",
+      "By producing a biological vaccine that permanently destroys all neuropathological plaques in the bloodstream",
+      "By halting the chronological ageing process completely so that brain cells never physically age",
+      "By allowing the brain to permanently eliminate all reliance on glucose and oxygen for cellular energy"
+    ],
+    "answer": "By enabling the brain to recruit alternate neural pathways to compensate for damaged primary circuits",
+    "keySentence": "when primary computational pathways deteriorate, the brain fluidly recruits alternative neural circuits across bilateral cerebral hemispheres to execute tasks.",
+    "collocation": "Passage 'recruits alternative neural circuits across bilateral cerebral hemispheres to execute tasks' ➔ Option 'enabling the brain to recruit alternate neural pathways to compensate for damaged primary circuits'",
+    "explanation": "본문에서 인지 예비능(cognitive reserve)이 뇌 질환 병변에도 불구하고 인지 기능을 유지시키는 핵심 메커니즘으로 '주요 연산 경로가 손상되었을 때, 뇌가 양측 반구 전반에 걸쳐 대안적 신경 회로를 유연하게 동원하여 과제를 수행하기 때문(fluidly recruits alternative neural circuits to execute tasks)'이라고 명시했습니다. 따라서 ①번이 정확한 패러프레이징입니다. ②, ③, ④번은 과학적 사실을 왜곡한 극단적 오답입니다.",
+    "translation": "[본문 해석]\n1세기 이상 신경생물학의 고전적 교리는 성인의 뇌가 회로를 재구성하거나 새로운 뉴런을 생성할 수 없는 고정된 기관이라는 것이었습니다. 청소년기 이후의 뇌 발달은 그저 돌이킬 수 없는 퇴행성 쇠퇴의 과정일 뿐이라고 여겨졌습니다. 그러나 현대 신경과학의 획기적인 뇌영상 기술은 이러한 숙명론적 정설을 깨뜨리고, 신경망이 평생에 걸쳐 시냅스 연결을 형성하고 재조직하는 '신경가소성(Neuroplasticity)'이 평생 지속됨을 입증했습니다. 노화하는 뇌가 인지 기능을 유지하는 능력의 핵심에는 '인지 예비능(Cognitive Reserve)'이라는 개념이 있습니다. 이는 부검 시 알츠하이머병의 심각한 병리학적 징후가 발견되었음에도 생전에 인지 저하가 거의 나타나지 않았던 환자들의 역설적 임상 사례를 설명합니다. 이들의 뇌는 질병 자체에 면역이 있는 것이 아니라, 뛰어난 기능적 중복성과 인지적 유연성을 갖추어 기존 경로가 손상되었을 때 대안 신경 회로를 즉시 가동하여 기능을 보상합니다. 인지 예비능은 유전적으로 결정되는 것이 아니라, 다국어 학습, 악기 연주, 지적 직무 수행 등 평생에 걸친 인지적·사회적 도전을 통해 축적됩니다. 아울러 유산소 운동은 신경영양인자(BDNF)를 분비해 해마 부피를 유지하고, 풍부한 대인관계는 뇌 위축을 유발하는 만성 스트레스를 완화합니다. 뇌는 노화에 굴복하는 수동적 기관이 아니라, 평생에 걸쳐 스스로를 일구어가는 역동적 학습의 장입니다.\n\n[보기 해석]\n① 손상된 주 회로를 보상하기 위해 뇌가 대안적인 신경 경로를 동원할 수 있게 함으로써 (정답)\n② 혈류 속의 모든 병리학적 플라크를 영구적으로 파괴하는 생물학적 백신을 생성함으로써\n③ 연대기적 노화 과정을 완전히 중단시켜 뇌세포가 물리적으로 늙지 않게 함으로써\n④ 뇌세포가 세포 에너지로 포도당과 산소에 의존하는 것을 완전히 없애줌으로써"
+  },
+  {
+    "id": "ielts_read_14",
+    "difficulty": "상",
+    "category": "IELTS Reading (Band 7.0~8.0)",
+    "title": "Algorithmic Bias, Epistemic Opacity, and Autonomous Decision-Making",
+    "passage": "The inexorable proliferation of automated decision-making algorithms across high-stakes domains—\nincluding criminal sentencing risk-assessments, mortgage underwriting, corporate hiring, and medical triage—\nhas been vigorously championed under the banner of objective, mathematical impartiality.\nProponents claim that algorithmic classifiers bypass capricious human cognitive prejudices and irrational biases,\ndelivering frictionless efficiency, empirical consistency, and meritocratic neutrality.\nHowever, critical legal scholars and computer scientists increasingly interrogate this technocratic orthodoxy,\nilluminating how predictive systems frequently automate, institutionalise, and entrench historical systemic discrimination.\nMachine learning algorithms are not autonomous moral arbiters; they are inductive pattern recognisers\ntrained on massive historical data repositories that inherently mirror decades of unequal societal distributions.\nWhen an algorithm processes arrest records tainted by historically discriminatory policing practices,\nit uncritically codifies those disparate policing patterns as objective predictive indicators of future criminality.\nFar from eradicating systemic inequity, the algorithm acts as a digital accelerator of historical prejudice,\nlaundering deeply flawed human bias through an aura of mathematically infallible technological sophistication.\nCompounding this ethical quagmire is the profound challenge of 'epistemic opacity', colloquially known as the 'black-box' problem.\nModern deep neural networks comprise millions of hyper-dimensional parameters and non-linear interactions\nthat defy intuitive human explanation, rendering it practically impossible even for their creators to elucidate\nprecisely why a specific applicant was denied credit or designated high-risk for criminal recidivism.\nThis structural opacity strikes at the foundational core of procedural justice and democratic accountability:\nwhen affected individuals are stripped of the fundamental right to meaningful explanation and contestation,\ndue process of law is reduced to an arbitrary technocratic illusion.\nAddressing this crisis necessitates far more than superficial technical fixes like algorithmic de-biasing audits;\nit demands legally enforceable algorithmic transparency regimes, independent multi-stakeholder oversight,\nand a societal consensus that certain existential moral judgements must remain unequivocally reserved for human conscience.",
+    "lineCount": 23,
+    "question": "According to the author, why does algorithmic decision-making often perpetuate discrimination?",
+    "options": [
+      "Algorithms are trained on historical data that intrinsically reflect existing societal inequalities",
+      "Computer processors are inherently programmed with malicious racial hostility by software engineers",
+      "Mathematical formulas are legally prohibited from processing numbers higher than zero",
+      "Artificial intelligence systems refuse to execute computational tasks unless human judges supervise them"
+    ],
+    "answer": "Algorithms are trained on historical data that intrinsically reflect existing societal inequalities",
+    "keySentence": "Machine learning algorithms are not autonomous moral arbiters; they are inductive pattern recognisers trained on massive historical data repositories that inherently mirror decades of unequal societal distributions.",
+    "collocation": "Passage 'trained on massive historical data repositories that inherently mirror decades of unequal societal distributions' ➔ Option 'Algorithms are trained on historical data that intrinsically reflect existing societal inequalities'",
+    "explanation": "본문에서 알고리즘이 차별을 고착화하는 근본 원인으로 '기계학습 알고리즘이 불평등한 사회적 분배를 고스란히 반영하는 방대한 역사적 데이터 코퍼스로 학습되기 때문(trained on massive historical data repositories that inherently mirror decades of unequal societal distributions)'이라고 명백히 논증했습니다. 따라서 ①번이 정확합니다. ②, ③, ④번은 본문의 학술적 논지와 무관한 왜곡입니다.",
+    "translation": "[본문 해석]\n형사 재판 형량 산정, 주택담보대출 심사, 채용, 의료 응급도 분류 등 중대한 결정 영역에서 자동화 알고리즘의 도입은 수학적 객관성과 공정성의 이름으로 추진되었습니다. 옹호자들은 알고리즘이 인간의 변덕스러운 편견을 배제하고 능력주의적 중립성을 제공한다고 주장합니다. 그러나 법학자와 컴퓨터 과학자들은 예측 시스템이 오히려 역사적이고 구조적인 차별을 자동화하고 공고화한다고 비판합니다. 머신러닝 알고리즘은 도덕적 중재자가 아니며, 수십 년간의 불평등한 사회 현실을 반영하는 과거 데이터에서 귀납적 패턴을 추출하는 도구에 불과합니다. 과거의 차별적 경찰 관행이 깃든 체포 기록으로 학습된 알고리즘은 이를 객관적인 미래 범죄 지표로 오인하여 편향을 답습합니다. 또한 현대 심층 신경망은 수백만 개의 비선형 매개변수로 얽혀 있어 개발자조차 특정 결론의 인과관계를 설명하기 어려운 '블랙박스(설명 불가능성)' 문제를 안고 있습니다. 피해 당사자가 결정의 근거를 설명받고 이의를 제기할 권리를 박탈당할 때 법적 적법절차는 무력화됩니다. 이 문제를 해결하기 위해서는 단순한 기술적 패치를 넘어 법적 투명성 강제, 다자간 독립적 감사, 그리고 핵심적 도덕 판단을 인간의 양심에 맡기는 사회적 합의가 필요합니다.\n\n[보기 해석]\n① 기존 사회적 불평등을 본질적으로 반영하는 역사적 데이터로 알고리즘이 훈련되기 때문에 (정답)\n② 소프트웨어 엔지니어들이 컴퓨터 프로세서에 악의적인 인종적 적대감을 프로그래밍했기 때문에\n③ 수학 공식이 0보다 큰 숫자를 처리하는 것을 법적으로 금지당했기 때문에\n④ AI 시스템이 인간 판사의 감독 없이는 연산 작업을 수행하기를 거부하기 때문에"
+  },
+  {
+    "id": "ielts_read_15",
+    "difficulty": "상",
+    "category": "IELTS Reading (Band 7.0~8.0)",
+    "title": "The Anthropocene Epoch and the Theory of Planetary Boundaries",
+    "passage": "For roughly eleven thousand seven hundred years, the Holocene epoch provided an extraordinarily benign,\nstable climatic baseline that facilitated the dawn of agriculture, permanent settlements, and global civilisation.\nHowever, mounting stratigraphic, geochemical, and biological evidence indicates that human industrial civilisation\nhas transformed Earth's biophysical equilibrium so profoundly that we have crossed into an entirely novel geological epoch: the Anthropocene.\nTo operationalise the precarious thresholds of this new reality, an international consortium of Earth systems scientists\nintroduced the landmark 'Planetary Boundaries' framework, identifying nine interdependent biophysical limits\nwithin which humanity can safely develop, flourish, and thrive for generations to come.\nThese vital planetary thresholds encompass atmospheric greenhouse gas concentrations, stratospheric ozone depletion,\nocean acidification, freshwater consumption, biogeochemical flows of nitrogen and phosphorus, novel chemical entities,\nland-system change, aerosol loading, and the integrity of biological biosphere diversity.\nAlarmingly, recent comprehensive empirical audits demonstrate that humanity has already breached at least six\nof these nine critical thresholds, plunging several foundational Earth subsystems into dangerously destabilised states.\nThe disruption of biogeochemical cycles serves as a chilling case in point: synthetic agricultural fertiliser run-off\nhas flooded global hydrological basins with colossal surpluses of reactive nitrogen and phosphorus,\ntriggering catastrophic aquatic eutrophication, widespread toxic algal blooms, and oceanic dead zones devoid of dissolved oxygen.\nSimultaneously, the anthropogenic extinction crisis is occurring at rates hundreds of times above the background baseline,\nunravelling intricate ecological webs that sustain pollination, soil fertility, and global climate moderation.\nCrucially, Earth systems scientists emphasise that these planetary boundaries are intensely interconnected and non-linear:\ntransgressing the threshold for land-system conversion through tropical deforestation accelerates atmospheric warming,\nwhich in turn catalyses permafrost thaw, releasing gargantuan subterranean methane plumes in an irreversible tipping cascade.\nNavigating the Anthropocene necessitates a fundamental paradigm shift away from unconstrained, extractive economic growth\ntowards an ecologically bounded regenerative model, such as 'Doughnut Economics', that satisfies universal human social needs\nwhile uncompromisingly respecting the non-negotiable biophysical carrying capacities of our finite living planet.\nPreserving a hospitable planet demands nothing less than the radical restructuring of global energy, food, and economic architectures.",
+    "lineCount": 24,
+    "question": "What is the central warning of the Planetary Boundaries framework regarding Earth's environmental systems?",
+    "options": [
+      "Humanity has already crossed multiple interdependent ecological limits, risking irreversible systemic collapse",
+      "All nine Earth boundaries have already recovered completely to their pre-industrial pristine states",
+      "Global environmental issues operate as isolated phenomena that exert zero mutual influence on each other",
+      "Earth will naturally expand its physical diameter to accommodate infinite economic expansion"
+    ],
+    "answer": "Humanity has already crossed multiple interdependent ecological limits, risking irreversible systemic collapse",
+    "keySentence": "recent comprehensive empirical audits demonstrate that humanity has already breached at least six of these nine critical thresholds, plunging several foundational Earth subsystems into dangerously destabilised states.",
+    "collocation": "Passage 'breached at least six of these nine critical thresholds, plunging several foundational Earth subsystems into dangerously destabilised states' ➔ Option 'Humanity has already crossed multiple interdependent ecological limits, risking irreversible systemic collapse'",
+    "explanation": "본문에서 지구위험한계선(Planetary Boundaries) 프레임워크의 핵심 경고로 '인류가 이미 9개 한계 중 최소 6개를 초과하여 상호 연결된 지구 시스템이 비선형적인 파국적 위험에 처했다'고 분명히 밝혔습니다. 따라서 ①번이 정확합니다. ②번은 한계선이 모두 회복되었다는 정반대 오답이며, ③번은 상호 무관하다는 왜곡, ④번은 물리적 지구가 팽창한다는 터무니없는 오답입니다.",
+    "translation": "[본문 해석]\n약 11,700년 동안 이어진 홀로세(Holocene)는 농경과 도시 문명이 번영할 수 있었던 안정적인 기후 환경을 제공했습니다. 그러나 인간의 산업 문명이 지구 생물물리학적 균형을 근본적으로 변화시키면서 인류는 '인류세(Anthropocene)'라는 새로운 지질학적 시대로 진입했습니다. 지구과학자들은 인류가 안전하게 생존하고 번영할 수 있는 9가지 상호의존적 생물물리학적 한계를 규명한 '지구위험한계선(Planetary Boundaries)' 이론을 정립했습니다. 이 9대 한계에는 온실가스 농도, 오존층 파괴, 해양 산성화, 담수 이용, 질소·인 순환, 신규 화학물질, 토지 이용 변화, 에어로졸 부하, 생물다양성이 포함됩니다. 놀랍게도 최근 연구에 따르면 인류는 이미 이 중 최소 6개의 한계선을 초과하여 지구 하위 시스템을 심각하게 불안정화시켰습니다. 합성 비료 과다 사용으로 인한 질소·인 유출은 수중 부영양화와 무산소 데드존을 양산했고, 생물 멸종 속도는 자연 기준의 수백 배에 달합니다. 특히 이 한계선들은 비선형적으로 얽혀 있어 아마존 열대우림 파괴가 기후변화를 가속하고, 이는 영구동토층 해빙을 유발해 메탄을 대량 방출하는 연쇄 티핑 포인트로 이어집니다. 인류세를 헤쳐 나가기 위해서는 무한 성장에서 탈피하여 지구의 수용 한계 내에서 인류의 번영을 도모하는 재생적 경제 모델로의 전환이 시급합니다.\n\n[보기 해석]\n① 인류가 이미 다수의 상호의존적 생태 한계를 초과하여 돌이킬 수 없는 시스템 붕괴 위험에 직면해 있다 (정답)\n② 지구의 9대 한계선이 이미 산업화 이전의 원시 상태로 완전히 회복되었다\n③ 지구 환경 문제는 서로 아무런 영향을 미치지 않는 독립적인 고립 현상으로 작용한다\n④ 지구는 무한한 경제 확장을 수용하기 위해 물리적 직경을 스스로 팽창시킬 것이다"
+  },
+  {
+    "id": "ielts_read_16",
+    "difficulty": "상",
+    "category": "IELTS Reading (Band 7.0~8.0)",
+    "title": "Epigenetics and Environmental Influences on Gene Expression",
+    "passage": "Throughout the mid-to-late twentieth century, biological science was overwhelmingly dominated\nby genetic determinism—the reductionist conviction that an organism's physical traits, disease susceptibilities,\nand behavioural trajectories were rigidly, immutably hard-coded into the static four-letter nucleotide sequence of DNA.\nUnder this rigid paradigm, our inherited genome was cast as an unalterable biological fate.\nHowever, the burgeoning frontier of epigenetics has utterly dismantled this fatalistic view,\nrevealing that while the underlying primary DNA sequence remains largely unchanged throughout life,\nthe operational manifestation and activity of those genes is profoundly fluid and responsive to external stimuli.\nEpigenetics—literally meaning 'above' or 'on top of' genetics—investigates the complex molecular mechanisms\nthat control gene expression without altering the underlying genetic text.\nChief among these regulatory mechanisms is DNA methylation, where small chemical carbon-hydrogen tags\nknown as methyl groups attach directly to specific cytosine bases, functioning as microscopic molecular switches\nthat typically silence or dial down the transcriptional expression of adjacent genes.\nAdditionally, histone modification alters the physical packaging of DNA around structural proteins,\ndetermining whether genetic segments are coiled so tightly that cellular machinery cannot access them,\nor relaxed into open configurations readily accessible for transcription into messenger RNA.\nAstoundingly, empirical studies reveal that these biochemical chromatin switches are dynamically tuned\nby a diverse array of environmental exposures, including chronic psychological distress, nutritional quality,\naerobic exercise, environmental toxicant exposure, and circadian disruptions.\nEven more revolutionary is the contentious discovery of transgenerational epigenetic inheritance:\npioneering animal models and human historical epidemiological data demonstrate that severe nutritional deprivation\nor severe psychological trauma experienced by parents can alter the epigenetic marks in their germline cells,\ntransmitting elevated risks of metabolic disorders and anxiety across subsequent generations without altering DNA.\nEpigenetics dissolves the historic philosophical dichotomy between nature and nurture:\nour genes represent not an unyielding dictator, but an exquisite, interactive musical score that our life choices dynamically play.",
+    "lineCount": 24,
+    "question": "What is the defining discovery of the field of epigenetics regarding human genetics?",
+    "options": [
+      "Environmental lifestyle factors can alter gene expression through molecular switches without changing DNA sequences",
+      "Every human being has the ability to physically mutate their primary DNA base letters at will through meditation",
+      "Human health is one hundred percent genetically predetermined at conception with zero environmental influence",
+      "Chemical methyl groups completely replace all human chromosomes within twenty-four hours of birth"
+    ],
+    "answer": "Environmental lifestyle factors can alter gene expression through molecular switches without changing DNA sequences",
+    "keySentence": "while the underlying primary DNA sequence remains largely unchanged throughout life, the operational manifestation and activity of those genes is profoundly fluid and responsive to external stimuli.",
+    "collocation": "Passage 'mechanisms that control gene expression without altering the underlying genetic text... dynamically tuned by environmental exposures' ➔ Option 'Environmental lifestyle factors can alter gene expression through molecular switches without changing DNA sequences'",
+    "explanation": "본문에서 후성유전학(Epigenetics)의 핵심 발견으로 'DNA 염기서열 자체는 불변하더라도 메틸화 등 분자 스위치를 통해 환경적 요인(식습관, 스트레스, 운동 등)이 유전자의 발현 여부와 활성을 유동적으로 조절한다'고 명확히 설명했습니다. 따라서 ①번이 정확합니다. ②, ③, ④번은 본문과 반대되거나 비과학적인 왜곡입니다.",
+    "translation": "[본문 해석]\n20세기 후반 생물학은 유전 결정론에 지배되었습니다. 즉 생명체의 신체적 특성, 질병 감수성, 행동 궤적이 정적인 DNA 염기서열에 불변으로 각인되어 있다는 환원주의적 신념이었습니다. 그러나 급성장하는 '후성유전학(Epigenetics)'은 이러한 운명론을 해체했습니다. DNA의 기본 염기서열은 평생 변하지 않더라도, 그 유전자가 발현되고 작동하는 방식은 외부 자극에 반응하여 매우 유동적이라는 사실이 밝혀진 것입니다. '유전학 위에'를 의미하는 후성유전학은 유전 암호 자체의 변형 없이 유전자 발현을 조절하는 분자 메커니즘을 탐구합니다. 대표적인 기제는 DNA 메틸화(Methylation)로서, 메틸기가 특정 염기에 결합하여 스위치처럼 인접 유전자의 발현을 켜거나 끕니다. 또한 히스톤 단백질의 변형은 DNA의 응축 정도를 조절하여 전사 효소의 접근성을 통제합니다. 놀랍게도 이러한 후성유전학적 스위치는 스트레스, 영양, 운동, 환경 독소 노출 등 환경 요인에 의해 역동적으로 조율됩니다. 나아가 부모가 겪은 극심한 기아나 트라우마가 생식세포의 후성유전학적 표식을 바꾸어 다음 세대로 대사 질환이나 불안 위험을 전달한다는 '세대 간 후성유전'도 확인되었습니다. 유전자는 바꿀 수 없는 운명의 독재자가 아니라, 우리의 삶의 선택에 의해 연주되는 악보인 것입니다.\n\n[보기 해석]\n① 환경 및 생활양식 요인이 DNA 서열 변경 없이 분자 스위치를 통해 유전자 발현을 바꿀 수 있음 (정답)\n② 모든 인간은 명상을 통해 자신의 기본 DNA 염기서열을 의지대로 변이시킬 수 있음\n③ 인간의 건강은 환경적 영향이 전무하며 수정 시점에 100% 유전적으로 결정됨\n④ 화학적 메틸기가 출생 후 24시간 이내에 인간의 모든 염색체를 완전히 대체함"
+  },
+  {
+    "id": "ielts_read_17",
+    "difficulty": "상",
+    "category": "IELTS Reading (Band 7.0~8.0)",
+    "title": "Grid Stability and Storage Economics in the Renewable Transition",
+    "passage": "The monumental global transition from carbon-intensive fossil fuel combustion towards\nphotovoltaic solar arrays and wind turbines represents an indispensable civilisational imperative.\nHowever, integrating high penetrations of intermittent renewable generation into legacy electricity grids\npresents unprecedented thermodynamic, engineering, and economic challenges for utility operators.\nTraditional power grids were meticulously architected around centralised thermal power plants—\nburning coal, fossil gas, or uranium—that furnished continuous, dispatchable 'baseload' power.\nCrucially, the colossal rotating masses of these giant steam-driven turbines provided substantial mechanical inertia,\nwhich naturally damped instantaneous fluctuations and maintained electrical grid frequency at a rock-solid 50 or 60 Hertz.\nConversely, solar panels and wind turbines are weather-dependent, non-dispatchable energy assets\nthat connect to the grid through solid-state power inverters, supplying virtually zero physical mechanical inertia.\nConsequently, when sudden cloud cover obscures vast solar parks or wind currents abruptly subside,\nthe balance between instantaneous electrical generation and consumption can destabilise in fractions of a second,\nrisking cascading grid frequency anomalies and catastrophic regional blackouts.\nTo resolve this fundamental intermittency paradox, energy economists and grid engineers are deploying a portfolio of solutions.\nGrid-scale lithium-iron-phosphate (LFP) battery storage facilities provide millisecond-fast synthetic inertia and peak-shaving,\nyet their limited discharge durations of two to four hours remain insufficient to bridge multi-day winter wind lulls.\nTherefore, long-duration energy storage (LDES) technologies are emerging as critical infrastructure assets:\npumped-storage hydroelectric reservoirs, compressed-air energy storage in deep subterranean salt caverns,\nand green hydrogen electrolysis that converts surplus summer renewable electricity into chemical fuel for winter generation.\nSimultaneously, artificial-intelligence-driven smart grids are actively managing demand-side flexibility,\ndynamically modulating industrial aluminium smelters and millions of domestic electric vehicle charging schedules.\nThe economics of the energy transition are thus shifting from pure generation costs towards total system integration costs.\nDecarbonising the global economy is ultimately not merely about building clean generating capacity,\nbut about engineering resilient, flexible, and intelligent energy architectures capable of withstanding nature's variability.",
+    "lineCount": 24,
+    "question": "Why does high penetration of solar and wind energy challenge legacy grid stability?",
+    "options": [
+      "Their weather-dependent generation provides negligible physical inertia to absorb sudden frequency shocks",
+      "Solar panels absorb so much sunlight that they cool the Earth's atmosphere to freezing temperatures",
+      "Wind turbines spin backwards during peak hours and drain all electricity from domestic households",
+      "Renewable energy generation produces toxic chemical radiation that melts subterranean copper cables"
+    ],
+    "answer": "Their weather-dependent generation provides negligible physical inertia to absorb sudden frequency shocks",
+    "keySentence": "solar panels and wind turbines are weather-dependent, non-dispatchable energy assets that connect to the grid through solid-state power inverters, supplying virtually zero physical mechanical inertia.",
+    "collocation": "Passage 'weather-dependent, non-dispatchable... supplying virtually zero physical mechanical inertia' ➔ Option 'Their weather-dependent generation provides negligible physical inertia to absorb sudden frequency shocks'",
+    "explanation": "본문에서 태양광과 풍력 발전이 기존 전력망 안정성에 도전이 되는 본질적 이유로 '날씨에 의존하는 간헐적 전원이며 회전 터빈이 없어 급격한 주파수 변동을 흡수해 줄 물리적 기계 관성(mechanical inertia)을 거의 제공하지 못하기 때문'이라고 상세히 설명했습니다. 따라서 ①번이 정확합니다. ②, ③, ④번은 과학적 사실을 날조한 비합리적 오답입니다.",
+    "translation": "[본문 해석]\n화석연료에서 태양광과 풍력으로의 전환은 기후위기 대응을 위한 문명사적 과제입니다. 그러나 간헐적인 재생에너지를 기존 전력망에 대규모로 연계하는 것은 전력망 운영에 전례 없는 공학적·경제적 도전을 안겨줍니다. 전통적인 전력망은 석탄, 가스, 원자력 등 기저부하(Baseload)를 공급하는 대형 회전 터빈을 중심으로 설계되었습니다. 이 거대한 터빈의 회전 질량은 막대한 기계적 관성(Inertia)을 제공하여 주파수(50/60Hz) 변동을 자연스럽게 흡수했습니다. 반면 태양광과 풍력은 날씨에 따라 발전량이 요동치며 인버터를 통해 전력망에 연결되므로 물리적 관성이 거의 전무합니다. 따라서 갑작스러운 구름이나 풍속 저하로 발전량이 급감하면 순식간에 전력망 균형이 무너져 광역 정전의 위험이 발생합니다. 이 문제를 해결하기 위해 배터리 에너지저장장치(BESS), 양수발전, 지하 암염 공동을 이용한 압축공기 저장, 잉여 전력으로 그린수소를 생산하는 장주기 에너지저장(LDES) 기술이 결합되고 있습니다. 아울러 AI 기반 스마트그리드가 전기차 충전과 산업체 수요를 조절하는 수요반응(DR)을 구현하고 있습니다. 에너지 전환의 성패는 단순한 발전소 건설이 아니라 유연하고 지능적인 전력망 시스템을 구축하는 데 달려 있습니다.\n\n[보기 해석]\n① 날씨에 의존하는 발전 특성상 급격한 주파수 충격을 완충할 물리적 관성을 거의 제공하지 못하기 때문에 (정답)\n② 태양광 패널이 햇빛을 너무 많이 흡수하여 지구 대기를 영하의 결빙 상태로 냉각시키기 때문에\n③ 풍력 터빈이 피크 시간대에 역회전하여 일반 가정의 모든 전기를 소모해 버리기 때문에\n④ 재생에너지 발전 과정에서 지하 구리 케이블을 녹여버리는 유독성 방사선이 방출되기 때문에"
+  },
+  {
+    "id": "ielts_read_18",
+    "difficulty": "상",
+    "category": "IELTS Reading (Band 7.0~8.0)",
+    "title": "Deciphering Linear B and the Birth of Cognitive Archaeology",
+    "passage": "In the annals of twentieth-century classical epigraphy and linguistics, few achievements\nrival the breathtaking intellectual drama surrounding the decipherment of the mysterious Linear B script.\nExcavated in the early 1900s from the ruined Bronze Age palaces of Knossos on Crete and Mycenae on the Greek mainland,\nthousands of baked clay tablets inscribed with an intricate array of pictographic and abstract geometric signs\nconfronted scholars with an inscrutable linguistic enigma that resisted all interpretive efforts for half a century.\nThe prevailing academic consensus, fiercely championed by eminent excavator Sir Arthur Evans,\ndogmatically asserted that Linear B recorded a totally indigenous, non-Greek Minoan tongue\nculturally detached from the Hellenic linguistic heritage of Homer's epic Odyssey and Iliad.\nHowever, this entrenched orthodoxy was decisively dismantled in 1952 by Michael Ventris,\na brilliant young British architect and self-taught cryptolinguist who approached the tablets\nnot as an archaeologist bounded by historical dogma, but as a disciplined codebreaker deciphering enemy military ciphers.\nVentris meticulously constructed complex statistical syllabic grids correlating the distribution of signs,\nidentifying subtle vowel-consonant phonetic shifts across grammatical inflexional endings.\nThe breakthrough arrived when he hypothesised that specific recurrent sign-groups corresponded\nto Cretan place names—such as Knossos, Amnisos, and Tylissos—which remained phonetically anchored to local geography.\nPlugging these geographical sound values into his grid, the tablets suddenly yielded coherent words:\nthey were not inscribed in a mysterious foreign dialect, but in an archaic Mycenaean dialect of early Greek,\npredating Homer's epic poetry by over five centuries and pushing the documented history of the Greek language back half a millennium.\nBeyond its staggering philological triumph, the decipherment of Linear B pioneered the discipline of 'cognitive archaeology'.\nFar from esoteric religious prophecies or heroic literary sagas, the tablets revealed meticulously audited administrative ledgers:\nexhaustive palace inventories recording bushels of barley, amphorae of olive oil, allocations of bronze armour,\nflocks of sheep, and chariot wheel components managed by a highly stratified, centralised bureaucratic monarchy.\nThe clay tablets demonstrated that the seeds of complex statehood were rooted in logistical accounting and resource management.\nLinear B proved that deciphering ancient text illuminates not merely dead languages, but the cognitive structures of human societies.",
+    "lineCount": 24,
+    "question": "What fundamental discovery was made by Michael Ventris when he deciphered the Linear B tablets?",
+    "options": [
+      "The tablets were written in an archaic form of Greek rather than an unknown non-Hellenic tongue",
+      "The inscriptions were actually forged modern Roman graffiti planted by nineteenth-century antiquarians",
+      "The tablets proved that ancient Crete possessed advanced nuclear technology and supersonic aircraft",
+      "The writings consisted entirely of epic love poems dedicated to mythological Greek deities"
+    ],
+    "answer": "The tablets were written in an archaic form of Greek rather than an unknown non-Hellenic tongue",
+    "keySentence": "they were not inscribed in a mysterious foreign dialect, but in an archaic Mycenaean dialect of early Greek, predating Homer's epic poetry by over five centuries",
+    "collocation": "Passage 'not inscribed in a mysterious foreign dialect, but in an archaic Mycenaean dialect of early Greek' ➔ Option 'The tablets were written in an archaic form of Greek rather than an unknown non-Hellenic tongue'",
+    "explanation": "본문에서 마이클 벤트리스가 선문자 B(Linear B)를 해독하여 밝혀낸 결정적 발견으로 '해당 점토판이 그리스어와 무관한 미지의 언어가 아니라 호메로스보다 500년 앞선 초기 그리스어의 고대 미케네 방언이었다(in an archaic Mycenaean dialect of early Greek)'는 점이라고 밝혔습니다. 따라서 ①번이 정확합니다. ②, ③, ④번은 본문과 일치하지 않는 터무니없는 오답입니다.",
+    "translation": "[본문 해석]\n20세기 고전 금석학과 언어학사에서 미스터리한 '선문자 B(Linear B)' 스크립트 해독만큼 지적 전율을 안겨준 사건은 드뭅니다. 1900년대 초 크레타섬 크노소스와 그리스 본토 미케네의 청동기 궁전 유적에서 출토된 수천 장의 점토판은 50년 동안 학자들을 가로막았습니다. 당시 아서 에반스 경을 비롯한 주류 학계는 이 문자가 호메로스의 일리아드·오디세이아와 무관한 토착 미노아어라고 단정했습니다. 그러나 1952년 젊은 영국인 건축가이자 독학 암호학자인 마이클 벤트리스에 의해 이 도그마는 산산조각 났습니다. 그는 점토판을 군사 암호처럼 취급하여 기호들의 음절 상관 표를 만들고 문법적 어미 변화를 정밀하게 분석했습니다. 결정적 돌파구는 특정 반복 기호들이 크노소스, 암니소스 같은 크레타섬의 지명과 일치한다는 가설에서 나왔습니다. 이 음가를 대입하자 놀랍게도 점토판은 호메로스 서사시보다 500년 앞선 '초기 미케네 그리스어 방언'으로 읽히기 시작했습니다. 이로써 그리스어의 문헌 역사가 500년 앞당겨졌습니다. 나아가 점토판의 내용은 신비로운 종교 예언이나 서사시가 아니라 보리 수확량, 올리브유, 청동 갑옷, 전차 바퀴 등을 꼼꼼히 기록한 궁전의 물류 행정 장부였습니다. 고대 문자의 해독은 고대 문명의 인지 체계와 관료제 국가의 기원을 생생하게 복원해 주었습니다.\n\n[보기 해석]\n① 점토판은 알려지지 않은 비그리스계 언어가 아니라 초기 그리스어의 고어 형태로 작성되었다 (정답)\n② 비문은 사실 19세기 골동품 수집가가 조작해 묻어둔 현대 로마의 낙서였다\n③ 점토판은 고대 크레타가 첨단 핵 기술과 초음속 항공기를 보유했음을 증명했다\n④ 기록은 전적으로 신화 속 그리스 신들에게 바치는 서사적 연애시로만 구성되어 있었다"
+  }
+]

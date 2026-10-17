@@ -154,6 +154,14 @@
           </div>
         </div>
 
+        <div class="mode-card" data-mode="reading">
+          <div class="mode-icon">📖</div>
+          <div class="mode-info">
+            <div class="mode-name">독해 2·3부분 장문 독해</div>
+            <div class="mode-desc">하(5~10줄)·중(10~20줄)·상(20~30줄) 기출 지문 읽고 보기 맞추기</div>
+          </div>
+        </div>
+
         <div class="mode-card" data-mode="grammar">
           <div class="mode-icon">📑</div>
           <div class="mode-info">
@@ -346,6 +354,46 @@
               <div class="dictation-diff-label" id="dictation-Diagnosis-label">📌 틀린 부분 상세 진단:</div>
               <div id="dictation-diff-summary" class="dictation-diff-summary"></div>
             </div>
+          </div>
+        </div>
+
+        <!-- 3. 장문 독해(Reading Comprehension) 전용 UI -->
+        <div id="reading-box" class="reading-box hidden">
+          <!-- 독해 전용 난이도 및 줄 수 즉시 전환 바 -->
+          <div class="reading-diff-bar" id="reading-diff-bar">
+            <span class="reading-diff-bar-label" id="reading-diff-bar-label">📏 독해 지문 난이도 (줄 수):</span>
+            <div class="reading-diff-btns">
+              <button type="button" class="reading-diff-chip" data-read-diff="하" id="read-diff-easy">🟢 하 (5~10줄)</button>
+              <button type="button" class="reading-diff-chip" data-read-diff="중" id="read-diff-mid">🟡 중 (10~20줄)</button>
+              <button type="button" class="reading-diff-chip" data-read-diff="상" id="read-diff-hard">🔴 상 (20~30줄)</button>
+            </div>
+          </div>
+
+          <!-- 지문 메타데이터 및 컨트롤 헤더 -->
+          <div class="reading-passage-header">
+            <div class="reading-meta-left">
+              <span class="reading-title-text" id="reading-title-text">📄 지문 제목</span>
+              <span class="reading-line-badge" id="reading-line-badge">총 7줄 (하 · 5~10줄 기준)</span>
+            </div>
+            <div class="reading-controls">
+              <button type="button" id="reading-line-num-btn" class="secondary-btn reading-ctrl-btn" title="줄 번호 표시 토글">
+                <span>🔢</span> <span id="reading-line-num-label">줄번호 켜짐</span>
+              </button>
+              <button type="button" id="reading-tts-btn" class="primary-btn reading-ctrl-btn" title="지문 전체 원어민 음성 듣기">
+                <span>🔊</span> <span id="reading-tts-label">지문 전체 듣기</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 지문 본문 박스 (줄 단위 구조화 렌더링) -->
+          <div id="reading-passage-body" class="reading-passage-body">
+            <!-- JS에서 줄별로 <div class="reading-line"><span class="reading-line-num">01</span><span class="reading-line-text">...</span></div> 동적 생성 -->
+          </div>
+
+          <!-- 독해 질문 영역 -->
+          <div id="reading-question-box" class="reading-question-box">
+            <div class="reading-question-prompt" id="reading-question-prompt">📖 지문을 주의 깊게 읽고 가장 알맞은 보기를 고르세요.</div>
+            <div class="reading-question-text" id="reading-question-text">❓ 질문: 根据这段话，可以知道：</div>
           </div>
         </div>
 
