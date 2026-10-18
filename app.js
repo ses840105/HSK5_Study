@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const optSpeedSlow = document.getElementById("opt-speed-slow");
   const optSpeedNormal = document.getElementById("opt-speed-normal");
   const optSpeedFast = document.getElementById("opt-speed-fast");
+  const optSpeedVFast = document.getElementById("opt-speed-vfast");
 
   // SRS 진도 현황 요소
   const srsTitle = document.getElementById("srs-title");
@@ -266,6 +267,7 @@ document.addEventListener("DOMContentLoaded", () => {
       speedSlow: "0.8x (느리게)",
       speedNormal: "1.0x (보통)",
       speedFast: "1.2x (빠르게)",
+      speedVFast: "1.5x (매우 빠르게)",
       voiceSelectTitle: "고음질 원어민 음성 선택",
       voiceAutoZh: "✨ 최적 중국어 음성 (자동)",
       voiceAutoEn: "✨ 미국식(US) 고음질 음성 (자동)",
@@ -440,6 +442,7 @@ document.addEventListener("DOMContentLoaded", () => {
       speedSlow: "0.8x (慢速)",
       speedNormal: "1.0x (正常)",
       speedFast: "1.2x (快速)",
+      speedVFast: "1.5x (极快)",
       voiceSelectTitle: "高清母语语音引擎选择",
       voiceAutoZh: "✨ 最优中文语音 (自动)",
       voiceAutoEn: "✨ 美式英语高清语音 (自动)",
@@ -614,6 +617,7 @@ document.addEventListener("DOMContentLoaded", () => {
       speedSlow: "0.8x (Slow)",
       speedNormal: "1.0x (Normal)",
       speedFast: "1.2x (Fast)",
+      speedVFast: "1.5x (Very Fast)",
       voiceSelectTitle: "High-Quality Native Voice Engine",
       voiceAutoZh: "✨ Optimal Chinese Voice (Auto)",
       voiceAutoEn: "✨ Optimal US English Voice (Auto)",
@@ -900,6 +904,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (optSpeedSlow) optSpeedSlow.textContent = t.speedSlow;
     if (optSpeedNormal) optSpeedNormal.textContent = t.speedNormal;
     if (optSpeedFast) optSpeedFast.textContent = t.speedFast;
+    if (optSpeedVFast) optSpeedVFast.textContent = t.speedVFast || "1.5x";
     if (ttsVoiceSelect) ttsVoiceSelect.title = t.voiceSelectTitle;
 
     // 4. SRS 상태 카드

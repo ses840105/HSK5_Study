@@ -253,7 +253,7 @@ sequenceDiagram
      ```
 
 4. **Phase 4: Release & Deployment (`hsk5-team-manager`)**
-   - Team Manager가 QA ALL PASS를 승인.
+   - Team Manager가 QA ALL PASS(`🎉 [PASS] HSK5_Study Local Stable`)를 승인.
    - 데이터 무결성 검증 및 빌드 확인.
    - Git 커밋 및 푸시:
      ```bash
@@ -261,7 +261,36 @@ sequenceDiagram
      git commit -m "feat(audio): add 1.5x audio speed option with 3-language i18n support"
      git push origin main
      ```
+
+5. **Phase 5: Live Smoke Test & Task Sign-off (`hsk5-qa-validator` & `hsk5-team-manager`)**
+   - QA 에이전트가 `node scripts/smoke_test_live.js` 실행.
+   - `https://ses840105.github.io/HSK5_Study/` 라이브 사이트 검증 완료 신호 확인:
+     ```
+     🎉 [PASS] HSK5_Study Live Production Smoke Test Complete — Task Closed
+     ```
    - 사용자에게 작업 완료 및 검증 내역 최종 통보.
+
+---
+
+### 2.3 The 5-Step Development Pipeline Standard
+
+모든 기능 추가 및 버그 수정은 아래 5단계를 엄격히 순서대로 밟아야 합니다:
+
+```
+[Step 1: 기획&브랜치] ──> [Step 2: 에이전트 구현] ──> [Step 3: 로컬 검증 (QA)] ──> [Step 4: Git Push & 배포] ──> [Step 5: 라이브 최종 점검]
+```
+
+1. **Step 1: 기획 & 브랜치 생성**:
+   - `git checkout main && git pull origin main && git checkout -b feature/<name>`
+2. **Step 2: 에이전트 구현**:
+   - 역할별 전문 에이전트(`UI/UX`, `Quiz Engine`, `Multimedia`)가 각자 파일 스코프 내에서 비충돌 구현.
+3. **Step 3: 로컬 검증 (QA)**:
+   - `node scripts/validate_local.js` 실행 (콘솔 에러 0개, 모바일 반응형 SRS 카운터/버튼 정렬, 5문항 풀이 + F5 새로고침 영속성, 오디오 배속 검증).
+   - Gatekeeper 승인 신호 획득 필수: `🎉 [PASS] HSK5_Study Local Stable`
+4. **Step 4: Git Push & 배포**:
+   - Semantic Commit (`feat:`, `fix:`, `docs:`, `style:`) 적용 후 `main` 브랜치 머지 및 푸시.
+5. **Step 5: 라이브 최종 점검**:
+   - `node scripts/smoke_test_live.js` 실행하여 라이브 프로덕션 정상 배포 확인 후 작업 종결 (`Task Closed`).
 
 ---
 

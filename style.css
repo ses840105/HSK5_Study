@@ -2290,3 +2290,71 @@ body.theme-ielts {
   font-weight: 800;
   color: var(--gray-900);
 }
+
+/* ==========================================================================
+   Mobile Responsive Rules (<= 480px) & Defensive UI Alignment
+   ========================================================================== */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 12px 10px;
+    border-radius: 12px;
+  }
+
+  .srs-status-card {
+    padding: 12px 10px;
+  }
+
+  .srs-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .srs-reset-btn {
+    align-self: flex-end;
+  }
+
+  /* SRS 카운터 모바일 텍스트 클리핑 방지 및 3분할 유지 */
+  .srs-stats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .srs-stat-box {
+    padding: 8px 4px;
+    min-width: 0;
+  }
+
+  .srs-stat-num {
+    font-size: 1.15rem;
+    margin-bottom: 2px;
+  }
+
+  .srs-stat-label {
+    font-size: 0.68rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: -0.2px;
+  }
+
+  /* 시작 버튼 하단 정렬 및 탭 타겟 최적화 */
+  .action-wrap {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #start-btn {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-sm);
+  }
+}
