@@ -81,8 +81,8 @@ async function verifyLiveSite() {
       vocabDataJs = await fetchUrl(`${BASE_URL}/vocab_data.js`);
 
       // Check if the latest build is live
-      const has15x = html.includes('opt-speed-vfast') || appJs.includes('speedVFast');
-      if (has15x) {
+      const hasTimerFeature = html.includes('quiz-timer-badge') && html.includes('timer-hint-box') && appJs.includes('TIME_LIMIT_MAP');
+      if (hasTimerFeature) {
         console.log(colors.green('OK! (Latest deployment detected)'));
         break;
       } else {
@@ -102,6 +102,7 @@ async function verifyLiveSite() {
   // Check 1: Live Feature Signatures
   const requiredKeywords = [
     { name: '1.5x speed option (#opt-speed-vfast)', test: () => html.includes('opt-speed-vfast') && appJs.includes('speedVFast') },
+    { name: 'Per-question timer & timeout hint (#quiz-timer-badge, #timer-hint-box)', test: () => html.includes('quiz-timer-badge') && html.includes('timer-hint-box') && appJs.includes('TIME_LIMIT_MAP') },
     { name: 'IELTS English subject switcher', test: () => html.includes('lang-ielts-btn') && html.includes('IELTS 영어') },
     { name: 'HSK Level 5 subject switcher', test: () => html.includes('lang-hsk-btn') && html.includes('HSK 5급') },
     { name: 'Start Quiz button (#start-btn)', test: () => html.includes('id="start-btn"') && html.includes('퀴즈 시작하기') },

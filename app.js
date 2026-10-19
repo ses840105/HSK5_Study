@@ -38,6 +38,25 @@ document.addEventListener("DOMContentLoaded", () => {
   let isRecordingDictation = false;
   let dictationFinalTranscript = "";
 
+  // 문제별 카운트다운 타이머 및 제한시간 초과 힌트 상태 (하: 30초, 중: 1분(60초), 상: 5분(300초))
+  const TIME_LIMIT_MAP = { "하": 30, "중": 60, "상": 300 };
+  let questionTimerInterval = null;
+  let questionTimeLimit = 60;
+  let questionRemainingSeconds = 60;
+  let questionTimerExpired = false;
+
+  function getQuestionTimeLimit(diff) {
+    const d = diff || currentDifficulty || "중";
+    return TIME_LIMIT_MAP[d] || 60;
+  }
+
+  function formatTimerMMSS(seconds) {
+    const s = Math.max(0, Math.floor(seconds || 0));
+    const m = Math.floor(s / 60);
+    const rem = s % 60;
+    return `${String(m).padStart(2, "0")}:${String(rem).padStart(2, "0")}`;
+  }
+
   // 사용자별 독립적인 데이터 저장을 위한 키 생성 함수
   function getStorageKey() {
     const user = localStorage.getItem("loggedInUser") || "guest";
@@ -126,6 +145,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizDiffTag = document.getElementById("quiz-diff-tag");
   const progressText = document.getElementById("progress-text");
   const progressBarFill = document.getElementById("progress-bar-fill");
+  const quizTimerBadge = document.getElementById("quiz-timer-badge");
+  const timerDisplay = document.getElementById("timer-display");
+  const timerBarFill = document.getElementById("timer-bar-fill");
+  const timerHintBox = document.getElementById("timer-hint-box");
+  const timerHintBadge = document.getElementById("timer-hint-badge");
+  const timerHintLimitInfo = document.getElementById("timer-hint-limit-info");
+  const timerHintContent = document.getElementById("timer-hint-content");
+  const diffTimerEasy = document.getElementById("diff-timer-easy");
+  const diffTimerMid = document.getElementById("diff-timer-mid");
+  const diffTimerHard = document.getElementById("diff-timer-hard");
   const scoreLabel = document.getElementById("score-label");
   const currentScoreElem = document.getElementById("current-score");
   const quitBtn = document.getElementById("quit-btn");
@@ -327,10 +356,16 @@ document.addEventListener("DOMContentLoaded", () => {
       countAll: "전체 풀기",
 
       diffLabels: {
-        "하": { label: "🟢 하 (기본)", chip: "하 (기본)", desc: "짧고 명확한 기초 어휘 & 일상 2마디 대화" },
-        "중": { label: "🟡 중 (실전)", chip: "중 (실전)", desc: "5급 표준 문맥, 반전 함정 청취, 빈출 짝꿍" },
-        "상": { label: "🔴 상 (심화)", chip: "상 (심화)", desc: "길고 복잡한 장문 설명문, 심화 추론 & 어순" }
+        "하": { label: "🟢 하 (기본)", chip: "하 (기본)", desc: "짧고 명확한 기초 어휘 & 일상 2마디 대화 (문제당 30초)" },
+        "중": { label: "🟡 중 (실전)", chip: "중 (실전)", desc: "5급 표준 문맥, 반전 함정 청취, 빈출 짝꿍 (문제당 1분)" },
+        "상": { label: "🔴 상 (심화)", chip: "상 (심화)", desc: "길고 복잡한 장문 설명문, 심화 추론 & 어순 (문제당 5분)" }
       },
+      diffTimerEasy: "⏱️ 30초",
+      diffTimerMid: "⏱️ 1분",
+      diffTimerHard: "⏱️ 5분",
+      timerBadgeTitle: "문제 제한 시간 (시간 초과 시 힌트 자동 제공)",
+      timerHintBadge: "⏰ 제한 시간 초과 · 스마트 힌트",
+      timerHintLimitInfo: (d, sec) => `난이도 [${d}] 제한 시간(${sec === 30 ? "30초" : sec === 60 ? "1분" : "5분"}) 경과 — 아래 힌트를 참고하여 문제를 풀어보세요!`,
 
       startBtn: "퀴즈 시작하기 🚀",
 
@@ -502,10 +537,16 @@ document.addEventListener("DOMContentLoaded", () => {
       countAll: "全部挑战",
 
       diffLabels: {
-        "하": { label: "🟢 基础 (初级)", chip: "基础 (初级)", desc: "简短明了的基础核心词汇与日常对话" },
-        "중": { label: "🟡 实战 (中级)", chip: "实战 (中级)", desc: "标准难度语境、反转陷阱听力、高频搭配" },
-        "상": { label: "🔴 进阶 (高级)", chip: "进阶 (高级)", desc: "复杂长句说明文、深度推理与复杂语序" }
+        "하": { label: "🟢 基础 (初级)", chip: "基础 (初级)", desc: "简短明了的基础核心词汇与日常对话（每题 30秒）" },
+        "중": { label: "🟡 实战 (中级)", chip: "实战 (中级)", desc: "标准难度语境、反转陷阱听力、高频搭配（每题 1分钟）" },
+        "상": { label: "🔴 进阶 (高级)", chip: "进阶 (高级)", desc: "复杂长句说明文、深度推理与复杂语序（每题 5分钟）" }
       },
+      diffTimerEasy: "⏱️ 30秒",
+      diffTimerMid: "⏱️ 1分钟",
+      diffTimerHard: "⏱️ 5分钟",
+      timerBadgeTitle: "单题答题时限（超时自动提供线索）",
+      timerHintBadge: "⏰ 答题超时 · 智能线索",
+      timerHintLimitInfo: (d, sec) => `难度 [${d}] 时限（${sec === 30 ? "30秒" : sec === 60 ? "1分钟" : "5分钟"}）已到 — 请参考下方线索继续作答！`,
 
       startBtn: "开始测验 🚀",
 
@@ -677,10 +718,16 @@ document.addEventListener("DOMContentLoaded", () => {
       countAll: "All Questions",
 
       diffLabels: {
-        "하": { label: "🟢 Easy (Basic)", chip: "Easy (Basic)", desc: "Short, clear core vocabulary & daily dialogue" },
-        "중": { label: "🟡 Medium (Standard)", chip: "Medium (Standard)", desc: "Standard exam context, listening traps & collocations" },
-        "상": { label: "🔴 Hard (Advanced)", chip: "Hard (Advanced)", desc: "Complex expository texts, deep reasoning & syntax" }
+        "하": { label: "🟢 Easy (Basic)", chip: "Easy (Basic)", desc: "Short, clear core vocabulary & daily dialogue (30s / question)" },
+        "중": { label: "🟡 Medium (Standard)", chip: "Medium (Standard)", desc: "Standard exam context, listening traps & collocations (1m / question)" },
+        "상": { label: "🔴 Hard (Advanced)", chip: "Hard (Advanced)", desc: "Complex expository texts, deep reasoning & syntax (5m / question)" }
       },
+      diffTimerEasy: "⏱️ 30s",
+      diffTimerMid: "⏱️ 1m",
+      diffTimerHard: "⏱️ 5m",
+      timerBadgeTitle: "Per-question time limit (Hint unlocks automatically on timeout)",
+      timerHintBadge: "⏰ Time's Up · Smart Hint",
+      timerHintLimitInfo: (d, sec) => `Difficulty [${d}] time limit (${sec === 30 ? "30s" : sec === 60 ? "1m" : "5m"}) expired — use the hint below to solve!`,
 
       startBtn: "Start Quiz 🚀",
 
@@ -936,6 +983,10 @@ document.addEventListener("DOMContentLoaded", () => {
       if (b) b.textContent = dInfo.label;
       if (desc) desc.textContent = dInfo.desc;
     });
+    if (diffTimerEasy && t.diffTimerEasy) diffTimerEasy.textContent = t.diffTimerEasy;
+    if (diffTimerMid && t.diffTimerMid) diffTimerMid.textContent = t.diffTimerMid;
+    if (diffTimerHard && t.diffTimerHard) diffTimerHard.textContent = t.diffTimerHard;
+    if (quizTimerBadge && t.timerBadgeTitle) quizTimerBadge.title = t.timerBadgeTitle;
 
     if (startBtn) startBtn.textContent = t.startBtn;
     renderModeGrid();
@@ -972,6 +1023,16 @@ document.addEventListener("DOMContentLoaded", () => {
       if (progressText) progressText.textContent = t.progressText(currentIndex + 1, questions.length);
       const curQ = questions[currentIndex];
       if (curQ && subPrompt) subPrompt.textContent = getLocalizedPrompt(curQ, currentUiLang);
+      if (curQ && questionTimerExpired && timerHintBox && !timerHintBox.classList.contains("hidden")) {
+        const qDiff = curQ.difficulty || currentDifficulty || "중";
+        if (timerHintBadge && t.timerHintBadge) timerHintBadge.textContent = t.timerHintBadge;
+        if (timerHintLimitInfo && t.timerHintLimitInfo) {
+          timerHintLimitInfo.textContent = t.timerHintLimitInfo(qDiff, questionTimeLimit);
+        }
+        if (timerHintContent) {
+          timerHintContent.innerHTML = buildQuestionHint(curQ, currentUiLang);
+        }
+      }
     }
 
     // 7. 결과 화면 번역
@@ -2190,8 +2251,283 @@ document.addEventListener("DOMContentLoaded", () => {
     return s.slice(0, n);
   }
 
-  // 7. 화면 렌더링
+  // 7. 화면 렌더링 및 문제별 타이머 & 타임아웃 힌트 엔진
+  function playHintSound() {
+    try {
+      const ctx = getAudioCtx();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+      [440.0, 554.37].forEach((freq, idx) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = "sine";
+        osc.frequency.setValueAtTime(freq, now + idx * 0.1);
+        gain.gain.setValueAtTime(0.001, now + idx * 0.1);
+        gain.gain.exponentialRampToValueAtTime(0.12, now + idx * 0.1 + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + idx * 0.1 + 0.25);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(now + idx * 0.1);
+        osc.stop(now + idx * 0.1 + 0.26);
+      });
+    } catch (e) {}
+  }
+
+  function buildQuestionHint(q, uiLang) {
+    if (!q) return "";
+    const rows = [];
+    const raw = q.rawItem || {};
+    const addRow = (label, val) => {
+      if (!val) return;
+      rows.push(
+        `<div class="timer-hint-row"><span class="timer-hint-label">${escapeHtml(label)}</span><span class="timer-hint-val">${escapeHtml(String(val))}</span></div>`
+      );
+    };
+
+    if (q.type === "vocab") {
+      const targetWord = raw.word || q.answer || "";
+      if (q.postAnswerSpeechText) {
+        // 역방향 (뜻 -> 단어 선택)
+        const firstChar = targetWord ? targetWord.charAt(0) : "";
+        if (currentLanguage === "hsk") {
+          addRow("💡 발음(병음) 단서:", raw.pinyin || q.pinyin || "-");
+          addRow("🔤 글자 수 & 첫 글자:", `총 ${targetWord.length}글자 · 첫 글자 「${firstChar}...」 (${raw.pos || "어휘"})`);
+        } else {
+          addRow("💡 유의어 & 품사:", `${raw.synonym || "-"} (${raw.pos || "word"})`);
+          addRow("🔤 철자 힌트:", `총 ${targetWord.length}글자 · "${firstChar}..." 로 시작`);
+        }
+        if (raw.example && targetWord) {
+          const maskedEx = raw.example.split(targetWord).join("____");
+          addRow("📖 문맥 예문 힌트:", maskedEx);
+        }
+      } else {
+        // 정방향 (단어 -> 뜻 선택)
+        if (currentLanguage === "hsk") {
+          addRow("💡 병음 & 품사:", `${raw.pinyin || q.pinyin || "-"} (${raw.pos || "어휘"})`);
+        } else {
+          addRow("💡 유의어(Synonyms):", `${raw.synonym || "-"} (${raw.pos || "word"})`);
+        }
+        if (raw.example) {
+          addRow("📖 실전 예문 문맥:", raw.example);
+        }
+        if (q.answer) {
+          const firstHint = String(q.answer).trim().slice(0, 2);
+          addRow("🔑 의미 초성/시작 힌트:", `「${firstHint}...」 관련 의미`);
+        }
+      }
+    } else if (q.type === "listening") {
+      addRow("❓ 질문 원문 공개:", q.questionText || q.chinese || "-");
+      if (q.dialogue && q.dialogue.length > 0) {
+        const lastTurn = q.dialogue[q.dialogue.length - 1];
+        addRow("🎧 핵심 대화 단서:", `${lastTurn.speaker}: ${lastTurn.text}`);
+      }
+      if (q.detail || raw.tip) {
+        addRow("📌 청취 공략 포인트:", q.detail || raw.tip);
+      }
+    } else if (q.type === "chengyu_cloze") {
+      addRow("💡 빈칸 표현의 핵심 의미:", raw.meaning || "-");
+      if (currentLanguage === "hsk" && raw.pinyin) {
+        addRow("🗣️ 성어 병음 단서:", raw.pinyin);
+      } else if (raw.idiom) {
+        const firstWord = raw.idiom.split(/\s+/)[0] || "";
+        addRow("🔤 첫 단어 단서:", `"${firstWord} ..."` );
+      }
+      if (raw.translation) {
+        addRow("🇰🇷 문장 전체 해석:", raw.translation);
+      }
+    } else if (q.type === "chengyu_meaning") {
+      if (raw.pinyin) {
+        addRow("🗣️ 발음(병음):", raw.pinyin);
+      }
+      addRow("📖 문맥 활용 예문:", q.exampleCn || raw.example || raw.sentence || "-");
+      if (q.answer) {
+        addRow("🔑 의미 힌트:", `「${String(q.answer).trim().slice(0, 3)}...」`);
+      }
+    } else if (q.type === "cloze") {
+      const maskedColloc = q.answer
+        ? String(q.collocation || "").split(q.answer).join("____")
+        : (q.collocation || "-");
+      addRow("🔗 핵심 짝꿍(搭配) 구조:", maskedColloc);
+      if (q.detail || raw.explanation) {
+        addRow("📌 호응 공략 힌트:", q.detail || raw.explanation);
+      }
+      if (q.exampleKr || raw.translation) {
+        addRow("🇰🇷 문장 의미:", q.exampleKr || raw.translation);
+      }
+    } else if (q.type === "reading") {
+      if (q.keySentence) {
+        addRow("🎯 지문 내 정답 단서 문장:", q.keySentence);
+      }
+      if (q.collocation) {
+        addRow("🔗 핵심 어휘/패러프레이징:", q.collocation);
+      }
+      if (q.detail) {
+        addRow("📌 독해 공략 힌트:", q.detail);
+      }
+    } else if (q.type === "grammar") {
+      addRow("📑 적용 문법 공식:", q.collocation || raw.category || "-");
+      if (q.detail || raw.explanation) {
+        addRow("📌 어순 & 구문 힌트:", q.detail || raw.explanation);
+      }
+      if (q.exampleKr || raw.translation) {
+        addRow("🇰🇷 완성 문장 해석:", q.exampleKr || raw.translation);
+      }
+    } else if (q.type === "dictation") {
+      addRow("🇰🇷 문장 의미:", q.translation || "-");
+      if (q.pinyin) {
+        addRow("🗣️ 발음/병음 가이드:", q.pinyin);
+      }
+      addRow("👁️ 정답 원문 힌트:", q.chinese || "-");
+    } else {
+      addRow("💡 핵심 포인트:", q.collocation || "-");
+      addRow("📌 풀이 힌트:", q.detail || "-");
+    }
+
+    if (rows.length === 0) {
+      addRow("💡 풀이 힌트:", q.detail || q.collocation || q.exampleKr || "문맥과 호응 관계를 다시 확인해 보세요.");
+    }
+    return rows.join("");
+  }
+
+  function stopQuestionTimer(isTimeout = false) {
+    if (questionTimerInterval) {
+      clearInterval(questionTimerInterval);
+      questionTimerInterval = null;
+    }
+    if (quizTimerBadge) {
+      if (isTimeout) {
+        quizTimerBadge.className = "timer-badge timeout";
+      } else if (answered) {
+        quizTimerBadge.className = "timer-badge paused";
+      } else {
+        quizTimerBadge.className = "timer-badge";
+      }
+    }
+    if (timerBarFill && isTimeout) {
+      timerBarFill.style.width = "0%";
+      timerBarFill.className = "timer-bar-fill timeout";
+    }
+  }
+
+  function triggerQuestionTimeoutHint(targetQuestion) {
+    const q = targetQuestion || questions[currentIndex];
+    if (!q || answered) return;
+
+    questionTimerExpired = true;
+    questionRemainingSeconds = 0;
+    if (timerDisplay) timerDisplay.textContent = "00:00";
+    stopQuestionTimer(true);
+    playHintSound();
+
+    const t = I18N[currentUiLang] || I18N.ko;
+    const diff = q.difficulty || currentDifficulty || "중";
+    const limitSec = getQuestionTimeLimit(diff);
+
+    if (timerHintBadge && t.timerHintBadge) {
+      timerHintBadge.textContent = t.timerHintBadge;
+    }
+    if (timerHintLimitInfo && t.timerHintLimitInfo) {
+      timerHintLimitInfo.textContent = t.timerHintLimitInfo(diff, limitSec);
+    }
+    if (timerHintContent) {
+      timerHintContent.innerHTML = buildQuestionHint(q, currentUiLang);
+    }
+    if (timerHintBox) {
+      timerHintBox.classList.remove("hidden");
+    }
+
+    // 딕테이션 모드에서는 원문/병음 힌트 박스도 함께 자동 오픈
+    if (q.type === "dictation" && dictationHintBox) {
+      dictationHintBox.classList.remove("hidden");
+      if (dictationHintLabel) {
+        dictationHintLabel.textContent = "힌트 숨기기";
+      }
+    }
+
+    // 장문 독해 모드에서는 지문 내 핵심 단서 문장(keySentence) 줄을 하이라이트하여 위치 안내
+    if (q.type === "reading" && q.keySentence && readingPassageBody) {
+      const keySent = q.keySentence.trim();
+      const lineElements = readingPassageBody.querySelectorAll(".reading-line");
+      let firstMatch = null;
+      lineElements.forEach(lineElem => {
+        const textSpan = lineElem.querySelector(".reading-line-text");
+        if (textSpan && textSpan.textContent.includes(keySent)) {
+          lineElem.classList.add("highlighted");
+          if (!firstMatch) firstMatch = lineElem;
+        }
+      });
+      if (firstMatch && typeof firstMatch.scrollIntoView === "function") {
+        firstMatch.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+    }
+  }
+
+  function startQuestionTimer(q) {
+    stopQuestionTimer(false);
+    const diff = (q && q.difficulty) || currentDifficulty || "중";
+    questionTimeLimit = getQuestionTimeLimit(diff);
+    questionRemainingSeconds = questionTimeLimit;
+    questionTimerExpired = false;
+
+    if (timerHintBox) timerHintBox.classList.add("hidden");
+    if (timerHintContent) timerHintContent.innerHTML = "";
+    if (timerDisplay) timerDisplay.textContent = formatTimerMMSS(questionRemainingSeconds);
+    if (quizTimerBadge) quizTimerBadge.className = "timer-badge";
+    if (timerBarFill) {
+      timerBarFill.style.width = "100%";
+      timerBarFill.className = "timer-bar-fill";
+    }
+
+    questionTimerInterval = setInterval(() => {
+      if (answered || !quizView || !quizView.classList.contains("active")) {
+        stopQuestionTimer(false);
+        return;
+      }
+
+      questionRemainingSeconds = Math.max(0, questionRemainingSeconds - 1);
+      if (timerDisplay) {
+        timerDisplay.textContent = formatTimerMMSS(questionRemainingSeconds);
+      }
+
+      const pct = Math.max(0, (questionRemainingSeconds / questionTimeLimit) * 100);
+      if (timerBarFill) {
+        timerBarFill.style.width = `${pct}%`;
+      }
+
+      const warnThreshold = Math.min(15, Math.ceil(questionTimeLimit * 0.25));
+      if (questionRemainingSeconds <= 5 && questionRemainingSeconds > 0) {
+        if (quizTimerBadge) quizTimerBadge.className = "timer-badge danger";
+        if (timerBarFill) timerBarFill.className = "timer-bar-fill danger";
+      } else if (questionRemainingSeconds <= warnThreshold && questionRemainingSeconds > 0) {
+        if (quizTimerBadge) quizTimerBadge.className = "timer-badge warning";
+        if (timerBarFill) timerBarFill.className = "timer-bar-fill warning";
+      }
+
+      if (questionRemainingSeconds <= 0) {
+        triggerQuestionTimeoutHint(q);
+      }
+    }, 1000);
+  }
+
+  // 자동화 QA 테스트를 위한 타이머 상태 및 제어 인터페이스 노출
+  window.__HSK5_TIMER_TEST__ = {
+    getQuestionTimeLimit,
+    formatTimerMMSS,
+    buildQuestionHint,
+    startQuestionTimer,
+    stopQuestionTimer,
+    triggerQuestionTimeoutHint,
+    getTimerState: () => ({
+      limit: questionTimeLimit,
+      remaining: questionRemainingSeconds,
+      expired: questionTimerExpired
+    })
+  };
+
   function showView(viewId) {
+    if (viewId !== "quiz") {
+      stopQuestionTimer(false);
+    }
     setupView.classList.remove("active");
     quizView.classList.remove("active");
     resultView.classList.remove("active");
@@ -2221,6 +2557,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stopListeningAudio();
     answered = false;
     const q = questions[currentIndex];
+    startQuestionTimer(q);
     currentSpeechText = q.speechText || "";
     currentExampleSpeechText = q.exampleCn || "";
 
@@ -2808,6 +3145,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 첫 채점 시에만 점수 및 SRS 마스터/복습 상태 반영 (이후 재녹음 연습 시에는 비교표만 실시간 갱신)
     if (!answered) {
       answered = true;
+      stopQuestionTimer(false);
       updateItemMastery(currentLanguage, q.rawItem, diffRes.isPass);
 
       if (diffRes.isPass) {
@@ -2927,6 +3265,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleSelectOption(selectedBtn, chosenAnswer, q) {
     if (answered) return;
     answered = true;
+    stopQuestionTimer(false);
     clearTimeout(autoTtsTimer);
 
     if (q.type === "listening") {

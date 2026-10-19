@@ -201,18 +201,21 @@
         <button class="diff-btn" data-diff="하">
           <div class="diff-top">
             <span class="diff-badge green">🟢 하 (기본)</span>
+            <span class="diff-timer-badge" id="diff-timer-easy">⏱️ 30초</span>
           </div>
           <div class="diff-desc">짧고 명확한 기초 어휘 & 일상 2마디 대화</div>
         </button>
         <button class="diff-btn active" data-diff="중">
           <div class="diff-top">
             <span class="diff-badge yellow">🟡 중 (실전)</span>
+            <span class="diff-timer-badge" id="diff-timer-mid">⏱️ 1분</span>
           </div>
           <div class="diff-desc">5급 표준 문맥, 반전 함정 청취, 빈출 짝꿍</div>
         </button>
         <button class="diff-btn" data-diff="상">
           <div class="diff-top">
             <span class="diff-badge red">🔴 상 (심화)</span>
+            <span class="diff-timer-badge" id="diff-timer-hard">⏱️ 5분</span>
           </div>
           <div class="diff-desc">길고 복잡한 장문 설명문, 심화 추론 & 어순</div>
         </button>
@@ -232,6 +235,10 @@
           <span id="progress-text" class="progress-indicator">문제 1 / 5</span>
         </div>
         <div class="status-right">
+          <span id="quiz-timer-badge" class="timer-badge" title="문제 제한 시간 (시간 초과 시 힌트 자동 제공)">
+            <span id="timer-icon" class="timer-icon">⏱️</span>
+            <span id="timer-display">01:00</span>
+          </span>
           <span class="score-badge"><span id="score-label">현재 점수:</span> <b id="current-score">0</b></span>
           <button id="quit-btn" class="text-btn">그만하기</button>
         </div>
@@ -240,6 +247,11 @@
       <!-- 진행 바 -->
       <div class="progress-bar-bg">
         <div id="progress-bar-fill" class="progress-bar-fill" style="width: 20%;"></div>
+      </div>
+
+      <!-- 타이머 카운트다운 바 -->
+      <div id="timer-bar-bg" class="timer-bar-bg">
+        <div id="timer-bar-fill" class="timer-bar-fill" style="width: 100%;"></div>
       </div>
 
       <!-- 퀴즈 카드 -->
@@ -396,6 +408,15 @@
             <div class="reading-question-prompt" id="reading-question-prompt">📖 지문을 주의 깊게 읽고 가장 알맞은 보기를 고르세요.</div>
             <div class="reading-question-text" id="reading-question-text">❓ 질문: 根据这段话，可以知道：</div>
           </div>
+        </div>
+
+        <!-- 제한 시간 초과 시 자동 노출되는 스마트 힌트 박스 -->
+        <div id="timer-hint-box" class="timer-hint-box hidden" role="status" aria-live="polite">
+          <div class="timer-hint-header">
+            <span id="timer-hint-badge" class="timer-hint-badge">⏰ 제한 시간 초과 · 힌트 제공</span>
+            <span id="timer-hint-limit-info" class="timer-hint-limit-info">제한 시간 1분 경과</span>
+          </div>
+          <div id="timer-hint-content" class="timer-hint-content"></div>
         </div>
 
         <!-- 4지선다 옵션 목록 -->

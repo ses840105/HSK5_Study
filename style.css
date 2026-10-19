@@ -566,6 +566,20 @@ body.theme-ielts {
 .diff-badge.yellow { background: #fff9db; color: #f59f00; }
 .diff-badge.red { background: #fff5f5; color: #e03131; }
 
+.diff-timer-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 12px;
+  background: var(--gray-100);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-300);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  letter-spacing: -0.2px;
+}
+
 .diff-desc {
   font-size: 0.76rem;
   color: var(--gray-600);
@@ -680,6 +694,56 @@ body.theme-ielts {
   border-radius: 20px;
 }
 
+/* 문제 제한 시간 카운트다운 타이머 배지 */
+.timer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.88rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--gray-800);
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  padding: 4px 10px;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.timer-badge .timer-icon {
+  font-size: 0.95rem;
+}
+
+.timer-badge.warning {
+  background: #fff9db;
+  color: #d97706;
+  border-color: #fcc419;
+}
+
+.timer-badge.danger {
+  background: #fff5f5;
+  color: #e03131;
+  border-color: #ff8787;
+  animation: timer-pulse 1s infinite alternate;
+}
+
+.timer-badge.timeout {
+  background: #fff3bf;
+  color: #c92a2a;
+  border-color: #f59f00;
+  box-shadow: 0 0 0 2px rgba(245, 159, 0, 0.25);
+}
+
+.timer-badge.paused {
+  opacity: 0.75;
+}
+
+@keyframes timer-pulse {
+  from { transform: scale(1); box-shadow: 0 0 0 0 rgba(224, 49, 49, 0.4); }
+  to { transform: scale(1.04); box-shadow: 0 0 0 4px rgba(224, 49, 49, 0); }
+}
+
 .text-btn {
   background: none;
   border: none;
@@ -700,13 +764,116 @@ body.theme-ielts {
   background: var(--gray-200);
   border-radius: 4px;
   overflow: hidden;
-  margin-bottom: 24px;
+  margin-bottom: 6px;
 }
 
 .progress-bar-fill {
   height: 100%;
   background: linear-gradient(90deg, #ff8787 0%, var(--primary) 100%);
   transition: width 0.3s ease;
+}
+
+/* 타이머 카운트다운 진행 바 */
+.timer-bar-bg {
+  width: 100%;
+  height: 5px;
+  background: var(--gray-200);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.timer-bar-fill {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #51cf66 0%, #2b8a3e 100%);
+  transition: width 0.95s linear, background 0.3s ease;
+}
+
+.timer-bar-fill.warning {
+  background: linear-gradient(90deg, #ffd43b 0%, #f59f00 100%);
+}
+
+.timer-bar-fill.danger {
+  background: linear-gradient(90deg, #ff8787 0%, #e03131 100%);
+}
+
+.timer-bar-fill.timeout {
+  background: #c92a2a;
+}
+
+/* 제한 시간 초과 시 자동 노출되는 스마트 힌트 박스 */
+.timer-hint-box {
+  background: #fff9db;
+  border: 1px solid #fcc419;
+  border-left: 4px solid #f59f00;
+  border-radius: var(--radius-sm);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  animation: hint-fade-in 0.35s ease;
+  box-shadow: 0 4px 12px rgba(245, 159, 0, 0.12);
+}
+
+.timer-hint-box.hidden {
+  display: none !important;
+}
+
+@keyframes hint-fade-in {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.timer-hint-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed rgba(245, 159, 0, 0.35);
+  padding-bottom: 8px;
+}
+
+.timer-hint-badge {
+  font-size: 0.86rem;
+  font-weight: 800;
+  color: #b45309;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.timer-hint-limit-info {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #92400e;
+}
+
+.timer-hint-content {
+  font-size: 0.9rem;
+  color: #495057;
+  line-height: 1.55;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.timer-hint-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.timer-hint-label {
+  font-weight: 700;
+  color: #b45309;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+}
+
+.timer-hint-val {
+  color: var(--gray-900);
+  word-break: break-word;
 }
 
 /* 퀴즈 카드 */

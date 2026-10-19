@@ -14,6 +14,47 @@ import json
 import random
 import argparse
 import subprocess
+import threading
+
+TIME_LIMITS = {"하": 30, "중": 60, "상": 300}
+
+def get_time_limit_seconds(diff):
+    d = normalize_diff(diff)
+    return TIME_LIMITS.get(d, 60)
+
+def format_limit_label(diff):
+    sec = get_time_limit_seconds(diff)
+    if sec == 30:
+        return "30초"
+    elif sec == 60:
+        return "1분(60초)"
+    return "5분(300초)"
+
+def build_cli_hint(item, lang="hsk"):
+    if not item:
+        return "문맥과 핵심 어휘 호응 관계를 다시 확인해 보세요."
+    parts = []
+    if item.get("pinyin"):
+        parts.append(f"병음: {item['pinyin']}")
+    if item.get("synonym"):
+        parts.append(f"유의어: {item['synonym']}")
+    if item.get("collocation"):
+        ans = str(item.get("answer", ""))
+        col = item["collocation"].replace(ans, "____") if ans else item["collocation"]
+        parts.append(f"핵심 짝꿍(搭配): {col}")
+    if item.get("keySentence"):
+        parts.append(f"지문 단서: \"{item['keySentence']}\"")
+    if item.get("tip"):
+        parts.append(f"청취 공략: {item['tip']}")
+    if item.get("explanation"):
+        parts.append(f"풀이 포인트: {item['explanation']}")
+    if item.get("keyPoint"):
+        parts.append(f"핵심 구문: {item['keyPoint']}")
+    if item.get("translation") and not parts:
+        parts.append(f"해석 단서: {item['translation']}")
+    if item.get("example") and not parts:
+        parts.append(f"예문 단서: {item['example']}")
+    return " | ".join(parts) if parts else "핵심 문맥과 품사/짝꿍 호응을 확인해 보세요."
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 PROGRESS_FILE = os.path.join(BASE_DIR, ".quiz_progress.json")
@@ -167,37 +208,62 @@ def play_feedback_sound(is_correct):
     except Exception:
         pass
 
-def prompt_answer(options, correct_idx, explanation="", item=None, lang="hsk"):
+def prompt_answer(options, correct_idx, explanation="", item=None, lang="hsk", diff=None):
+    eff_diff = normalize_diff(diff or (item.get("difficulty") if item else "중"))
+    limit_sec = get_time_limit_seconds(eff_diff)
+    limit_str = format_limit_label(eff_diff)
+    hint_str = build_cli_hint(item, lang=lang)
+    print(f"   ⏱️  [제한 시간: {limit_str} (난이도 {eff_diff}) — 시간 초과 시 자동 힌트 제공 | h=힌트 보기]")
     for i, opt in enumerate(options, 1):
         print(f"   ({i}) {opt}")
 
-    while True:
-        try:
-            user_in = input("\n👉 정답 번호 입력 (1-4, q=종료): ").strip()
-            if user_in.lower() == 'q':
+    hint_shown = [False]
+    def on_timeout():
+        if not hint_shown[0]:
+            hint_shown[0] = True
+            print(f"\n   ⏰ [제한 시간({limit_str}) 경과! 스마트 힌트를 제공합니다]")
+            print(f"   💡 힌트: {hint_str}")
+            sys.stdout.write("👉 정답 번호 입력 (1-4, h=힌트, q=종료): ")
+            sys.stdout.flush()
+
+    timer = threading.Timer(limit_sec, on_timeout)
+    timer.daemon = True
+    timer.start()
+
+    try:
+        while True:
+            try:
+                user_in = input("\n👉 정답 번호 입력 (1-4, h=힌트, q=종료): ").strip()
+                if user_in.lower() == 'q':
+                    return None
+                if user_in.lower() == 'h':
+                    hint_shown[0] = True
+                    print(f"   💡 힌트: {hint_str}")
+                    continue
+                if not user_in.isdigit() or int(user_in) not in range(1, len(options) + 1):
+                    print(f"   ⚠️ 1부터 {len(options)} 사이의 숫자를 입력해 주세요. (힌트: h)")
+                    continue
+                
+                choice = int(user_in)
+                if choice == correct_idx:
+                    play_feedback_sound(True)
+                    update_item_progress(lang, item, True)
+                    print("   🎉 정답입니다! (암기 완료되어 다음 시도에 출제되지 않습니다)")
+                    if explanation:
+                        print(f"   💡 해설:\n{explanation}")
+                    return True
+                else:
+                    play_feedback_sound(False)
+                    update_item_progress(lang, item, False)
+                    print(f"   ❌ 오답입니다. 정답은 ({correct_idx})번: {options[correct_idx-1]} 입니다. (복습 대상으로 등록되어 다음 시도에 다시 출제됩니다)")
+                    if explanation:
+                        print(f"   💡 해설:\n{explanation}")
+                    return False
+            except (KeyboardInterrupt, EOFError):
+                print("\n퀴즈를 중단합니다.")
                 return None
-            if not user_in.isdigit() or int(user_in) not in range(1, len(options) + 1):
-                print(f"   ⚠️ 1부터 {len(options)} 사이의 숫자를 입력해 주세요.")
-                continue
-            
-            choice = int(user_in)
-            if choice == correct_idx:
-                play_feedback_sound(True)
-                update_item_progress(lang, item, True)
-                print("   🎉 정답입니다! (암기 완료되어 다음 시도에 출제되지 않습니다)")
-                if explanation:
-                    print(f"   💡 해설:\n{explanation}")
-                return True
-            else:
-                play_feedback_sound(False)
-                update_item_progress(lang, item, False)
-                print(f"   ❌ 오답입니다. 정답은 ({correct_idx})번: {options[correct_idx-1]} 입니다. (복습 대상으로 등록되어 다음 시도에 다시 출제됩니다)")
-                if explanation:
-                    print(f"   💡 해설:\n{explanation}")
-                return False
-        except (KeyboardInterrupt, EOFError):
-            print("\n퀴즈를 중단합니다.")
-            return None
+    finally:
+        timer.cancel()
 
 def run_vocab_quiz(vocab, count=5, diff="중", lang="hsk"):
     candidates = filter_items_by_diff_and_srs(vocab, diff, count, lang)
@@ -589,25 +655,45 @@ def run_dictation_quiz(dictation_list, count=5, diff="하", lang="hsk"):
                 print(f"🌱 초급 가이드 ({len(words)}단어): {' '.join(words[:2])} " + " ".join(["____"] * max(0, len(words) - 2)))
         elif d_tag == "중":
             print(f"🌿 중급 핵심 표현: {q.get('keyPoint') or q.get('phonetics') or ''}")
+        limit_sec = get_time_limit_seconds(d_tag)
+        limit_str = format_limit_label(d_tag)
+        print(f"⏱️  [제한 시간: {limit_str} (난이도 {d_tag}) — 시간 초과 시 원문/발음 힌트 자동 제공]")
         print("🔊 원어민 음성을 재생합니다... (r=다시 듣기, h=원문/병음 힌트 보기, q=종료)")
         play_mac_tts(target, lang=lang)
 
-        while True:
-            try:
-                user_in = input("🎤 들은 문장을 따라 말하거나 입력하세요: ").strip()
-            except (KeyboardInterrupt, EOFError):
-                return
-            if user_in.lower() == "q":
-                return
-            if user_in.lower() == "r":
-                play_mac_tts(target, lang=lang)
-                continue
-            if user_in.lower() == "h":
+        hint_shown = [False]
+        def on_dict_timeout():
+            if not hint_shown[0]:
+                hint_shown[0] = True
+                print(f"\n   ⏰ [제한 시간({limit_str}) 경과! 딕테이션 힌트를 제공합니다]")
                 print(f"   💡 힌트: {target} ({q.get('pinyin') or q.get('phonetics') or q.get('keyPoint', '')})")
-                continue
-            if not user_in:
-                continue
-            break
+                sys.stdout.write("🎤 들은 문장을 따라 말하거나 입력하세요: ")
+                sys.stdout.flush()
+
+        dict_timer = threading.Timer(limit_sec, on_dict_timeout)
+        dict_timer.daemon = True
+        dict_timer.start()
+
+        try:
+            while True:
+                try:
+                    user_in = input("🎤 들은 문장을 따라 말하거나 입력하세요: ").strip()
+                except (KeyboardInterrupt, EOFError):
+                    return
+                if user_in.lower() == "q":
+                    return
+                if user_in.lower() == "r":
+                    play_mac_tts(target, lang=lang)
+                    continue
+                if user_in.lower() == "h":
+                    hint_shown[0] = True
+                    print(f"   💡 힌트: {target} ({q.get('pinyin') or q.get('phonetics') or q.get('keyPoint', '')})")
+                    continue
+                if not user_in:
+                    continue
+                break
+        finally:
+            dict_timer.cancel()
 
         norm_re = r"[，。！？、；：“”‘’（）().,!?;:\"'\\s-]+"
         t_clean = re.sub(norm_re, "", target).lower()

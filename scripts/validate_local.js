@@ -133,6 +133,13 @@ const requiredDomIds = [
   'mode-grid',
   'start-btn',
   'quiz-view',
+  'quiz-timer-badge',
+  'timer-display',
+  'timer-bar-fill',
+  'timer-hint-box',
+  'diff-timer-easy',
+  'diff-timer-mid',
+  'diff-timer-hard',
   'options-list',
   'dictation-box',
   'listening-player-box',
@@ -638,6 +645,54 @@ async function runVMHarness() {
       logPass(`F5 Browser Reload persistence check PASSED (Mastered: ${postReloadMastered}, Review: ${postReloadReview})`);
     } else {
       logFail(`SRS counts mismatched after reload (Pre: M=${preReloadMastered}/R=${preReloadReview}, Post: M=${postReloadMastered}/R=${postReloadReview})`);
+    }
+
+    // -------------------------------------------------------------------------
+    // Test 7: Per-Question Timer (하=30s, 중=60s, 상=300s) & Timeout Hint Verification
+    // -------------------------------------------------------------------------
+    console.log(colors.bold('\n7. Per-Question Timer (30s / 1m / 5m) & Auto Timeout Hint Verification'));
+    const timerApi = env.windowMock.__HSK5_TIMER_TEST__;
+    if (timerApi && typeof timerApi.getQuestionTimeLimit === 'function') {
+      const easySec = timerApi.getQuestionTimeLimit('하');
+      const midSec = timerApi.getQuestionTimeLimit('중');
+      const hardSec = timerApi.getQuestionTimeLimit('상');
+
+      if (easySec === 30 && midSec === 60 && hardSec === 300) {
+        logPass(`Difficulty time limits verified: 하=${easySec}s (30초), 중=${midSec}s (1분), 상=${hardSec}s (5분)`);
+      } else {
+        logFail(`Unexpected time limits: 하=${easySec}, 중=${midSec}, 상=${hardSec}`);
+      }
+
+      // Start a fresh quiz and test timeout hint trigger
+      startBtn.click();
+      await new Promise((r) => setTimeout(r, 20));
+      const timerHintBox = env.elementsById.get('timer-hint-box');
+      const timerHintContent = env.elementsById.get('timer-hint-content');
+      const timerDisplay = env.elementsById.get('timer-display');
+
+      if (timerHintBox && timerHintBox.classList.contains('hidden')) {
+        logPass('Timer hint box is initially hidden when question starts');
+      } else {
+        logFail('Timer hint box should be hidden before timeout');
+      }
+
+      timerApi.triggerQuestionTimeoutHint();
+      const stateAfterTimeout = timerApi.getTimerState();
+      if (
+        stateAfterTimeout.expired &&
+        timerDisplay.textContent === '00:00' &&
+        timerHintBox &&
+        !timerHintBox.classList.contains('hidden') &&
+        timerHintContent &&
+        timerHintContent.innerHTML.includes('timer-hint-row')
+      ) {
+        logPass('Timeout (00:00) automatically unlocks and renders context-aware Smart Hint box');
+      } else {
+        logFail('Timeout hint box failed to unlock or render hint content');
+      }
+      timerApi.stopQuestionTimer(false);
+    } else {
+      logFail('Missing window.__HSK5_TIMER_TEST__ interface in app.js');
     }
   } else {
     logFail('Missing #start-btn');
