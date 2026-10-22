@@ -12,6 +12,7 @@ import socketserver
 import threading
 import time
 import json
+import urllib.parse
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -80,6 +81,102 @@ class CustomHTTPHandler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, format, *args):
         # 터미널 출력 간소화
         pass
+
+    def send_json(self, data, status=200):
+        body = json.dumps(data, ensure_ascii=False).encode('utf-8')
+        self.send_response(status)
+        self.send_header('Content-Type', 'application/json; charset=utf-8')
+        self.send_header('Content-Length', str(len(body)))
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.end_headers()
+        self.wfile.write(body)
+
+    def do_OPTIONS(self):
+        self.send_response(204)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.end_headers()
+
+    def do_GET(self):
+        parsed = urllib.parse.urlparse(self.path)
+        path = parsed.path
+        query = urllib.parse.parse_qs(parsed.query)
+
+        # REST API: /api/study/items?subject=hsk&mode=vocab&diff=all
+        if path == "/api/study/items":
+            subject = query.get("subject", ["hsk"])[0].lower()
+            mode = query.get("mode", ["vocab"])[0].lower()
+            diff = query.get("diff", ["all"])[0]
+
+            vocab_dir = os.path.join(BASE_DIR, "vocab" if subject == "hsk" else "ielts")
+            mapping = {
+                "hsk": {
+                    "vocab": "hsk5_core_vocabulary.json",
+                    "colloc": "hsk5_collocations.json",
+                    "chengyu": "hsk5_chengyu.json",
+                    "cloze": "hsk5_cloze.json",
+                    "grammar": "hsk5_grammar.json",
+                    "listening": "hsk5_listening.json",
+                    "dictation": "hsk5_dictation.json",
+                    "reading": "hsk5_reading.json"
+                },
+                "ielts": {
+                    "vocab": "ielts_vocab.json",
+                    "listening": "ielts_listening.json",
+                    "idioms": "ielts_idioms.json",
+                    "cloze": "ielts_cloze.json",
+                    "grammar": "ielts_grammar.json",
+                    "dictation": "ielts_dictation.json",
+                    "reading": "ielts_reading.json"
+                }
+            }
+
+            sub_map = mapping.get(subject, mapping["hsk"])
+            fname = sub_map.get(mode, sub_map.get("vocab"))
+            fpath = os.path.join(vocab_dir, fname)
+
+            items = []
+            if os.path.exists(fpath):
+                try:
+                    with open(fpath, "r", encoding="utf-8") as f:
+                        items = json.load(f)
+                except Exception as e:
+                    return self.send_json({"error": str(e)}, status=500)
+
+            if diff and diff != "all":
+                items = [it for it in items if it.get("difficulty") == diff]
+
+            return self.send_json({
+                "subject": subject,
+                "mode": mode,
+                "diff": diff,
+                "count": len(items),
+                "items": items
+            })
+
+        elif path == "/api/study/stats":
+            bundle = {"hsk": {}, "ielts": {}}
+            try:
+                with open(os.path.join(BASE_DIR, "vocab", "hsk5_core_vocabulary.json"), "r", encoding="utf-8") as f:
+                    bundle["hsk"]["vocab"] = len(json.load(f))
+                with open(os.path.join(BASE_DIR, "vocab", "hsk5_chengyu.json"), "r", encoding="utf-8") as f:
+                    bundle["hsk"]["chengyu"] = len(json.load(f))
+                with open(os.path.join(BASE_DIR, "vocab", "hsk5_grammar.json"), "r", encoding="utf-8") as f:
+                    bundle["hsk"]["grammar"] = len(json.load(f))
+                with open(os.path.join(BASE_DIR, "ielts", "ielts_vocab.json"), "r", encoding="utf-8") as f:
+                    bundle["ielts"]["vocab"] = len(json.load(f))
+                with open(os.path.join(BASE_DIR, "ielts", "ielts_idioms.json"), "r", encoding="utf-8") as f:
+                    bundle["ielts"]["idioms"] = len(json.load(f))
+                with open(os.path.join(BASE_DIR, "ielts", "ielts_grammar.json"), "r", encoding="utf-8") as f:
+                    bundle["ielts"]["grammar"] = len(json.load(f))
+            except Exception:
+                pass
+            return self.send_json(bundle)
+
+        return super().do_GET()
 
 def main():
     sync_vocab_bundle()

@@ -9,7 +9,11 @@ window.HSK5_DATA = {
       "example": "很多大学生利用假期做兼职积累社会经验。",
       "difficulty": "하",
       "id": "hv_01",
-      "translation": "많은 대학생들은 방학을 이용해 아르바이트를 하며 사회 경험을 쌓는다."
+      "translation": "많은 대학생들은 방학을 이용해 아르바이트를 하며 사회 경험을 쌓는다.",
+      "meaning_en": "work part-time; part-time job",
+      "meaning_zh": "兼职；打工",
+      "translation_en": "Many college students use their vacations to do part-time jobs to accumulate social experience.",
+      "translation_zh": "许多大学生利用假期做兼职积累社会经验。"
     },
     {
       "word": "概念",
@@ -19,7 +23,11 @@ window.HSK5_DATA = {
       "example": "这是一个非常新颖的商业概念。",
       "difficulty": "하",
       "id": "hv_02",
-      "translation": "이것은 매우 참신한 비즈니스 개념이다."
+      "translation": "이것은 매우 참신한 비즈니스 개념이다.",
+      "meaning_en": "concept, idea",
+      "meaning_zh": "概念；观念",
+      "translation_en": "The speaker clearly explained several core concepts in modern economics.",
+      "translation_zh": "演讲者清晰地解释了现代经济学中的几个核心概念。"
     },
     {
       "word": "缓解",
@@ -29,7 +37,11 @@ window.HSK5_DATA = {
       "example": "听轻音乐有助于缓解工作带来的压力。",
       "difficulty": "중",
       "id": "hv_03",
-      "translation": "경음악을 듣는 것은 업무로 인한 스트레스를 완화하는 데 도움이 된다."
+      "translation": "경음악을 듣는 것은 업무로 인한 스트레스를 완화하는 데 도움이 된다.",
+      "meaning_en": "relieve, ease, mitigate",
+      "meaning_zh": "缓解；缓和",
+      "translation_en": "Doing moderate exercise helps relieve academic and work pressure.",
+      "translation_zh": "适当运动有助于缓解学业和工作压力。"
     },
     {
       "word": "逻辑",
@@ -39,7 +51,11 @@ window.HSK5_DATA = {
       "example": "他的发言条理清晰，逻辑非常严密。",
       "difficulty": "중",
       "id": "hv_04",
-      "translation": "그의 발언은 조리가 명확하고 논리가 매우 치밀하다."
+      "translation": "그의 발언은 조리가 명확하고 논리가 매우 치밀하다.",
+      "meaning_en": "logic",
+      "meaning_zh": "逻辑",
+      "translation_en": "His debate statement was clear in logic and strongly convincing.",
+      "translation_zh": "他在辩论中的陈述逻辑清晰，很有说服力。"
     },
     {
       "word": "犹豫",
@@ -49,7 +65,11 @@ window.HSK5_DATA = {
       "example": "面对难得的机遇，你不要再犹豫了。",
       "difficulty": "하",
       "id": "hv_05",
-      "translation": "얻기 힘든 기회에 직면했으니 더 이상 망설이지 마라."
+      "translation": "얻기 힘든 기회에 직면했으니 더 이상 망설이지 마라.",
+      "meaning_en": "hesitate",
+      "meaning_zh": "犹豫；迟疑",
+      "translation_en": "Faced with this rare opportunity, he did not hesitate to accept.",
+      "translation_zh": "面对这个难得的机会，他毫不犹豫地接受了。"
     },
     {
       "word": "彻底",
@@ -59,7 +79,11 @@ window.HSK5_DATA = {
       "example": "我们需要彻底调查这件事情的真正原因。",
       "difficulty": "중",
       "id": "hv_06",
-      "translation": "우리는 이 사건의 진정한 원인을 철저히 조사해야 한다."
+      "translation": "우리는 이 사건의 진정한 원인을 철저히 조사해야 한다.",
+      "meaning_en": "thorough; completely",
+      "meaning_zh": "彻底；完全",
+      "translation_en": "Before moving in, we cleaned the entire room thoroughly.",
+      "translation_zh": "入住之前，我们把整个房间彻底打扫了一遍。"
     },
     {
       "word": "启发",
@@ -69,7 +93,11 @@ window.HSK5_DATA = {
       "example": "这部纪录片给了我们很多深刻的启发。",
       "difficulty": "중",
       "id": "hv_07",
-      "translation": "이 다큐멘터리는 우리에게 많은 깊은 영감을 주었다."
+      "translation": "이 다큐멘터리는 우리에게 많은 깊은 영감을 주었다.",
+      "meaning_en": "inspire, enlightenment",
+      "meaning_zh": "启发；启示",
+      "translation_en": "The professor's speech gave students profound inspiration.",
+      "translation_zh": "教授的发言给同学们带来了深刻的启发。"
     },
     {
       "word": "原则",
@@ -79,7 +107,11 @@ window.HSK5_DATA = {
       "example": "在原则问题上，我们决不能轻易妥协。",
       "difficulty": "하",
       "id": "hv_08",
-      "translation": "원칙적인 문제에 있어서 우리는 결코 쉽게 타협해서는 안 된다."
+      "translation": "원칙적인 문제에 있어서 우리는 결코 쉽게 타협해서는 안 된다.",
+      "meaning_en": "principle",
+      "meaning_zh": "原则",
+      "translation_en": "No matter what happens, we must adhere to the principle of honesty.",
+      "translation_zh": "无论发生什么，我们都要坚持诚信的原则。"
     },
     {
       "word": "耽误",
@@ -89,7 +121,11 @@ window.HSK5_DATA = {
       "example": "路上堵车耽误了很多时间。",
       "difficulty": "하",
       "id": "hv_09",
-      "translation": "길에서 차가 막혀 많은 시간을 지체했다."
+      "translation": "길에서 차가 막혀 많은 시간을 지체했다.",
+      "meaning_en": "delay, waste time",
+      "meaning_zh": "耽误；延误",
+      "translation_en": "Because of traffic jams, I was delayed by half an hour this morning.",
+      "translation_zh": "因为路上堵车，今天早上我耽误了半小时。"
     },
     {
       "word": "克服",
@@ -99,7 +135,11 @@ window.HSK5_DATA = {
       "example": "只要大家团结一致，就一定能克服一切困难。",
       "difficulty": "하",
       "id": "hv_10",
-      "translation": "모두가 하나로 단결하기만 하면 반드시 모든 어려움을 극복할 수 있다."
+      "translation": "모두가 하나로 단결하기만 하면 반드시 모든 어려움을 극복할 수 있다.",
+      "meaning_en": "overcome, conquer",
+      "meaning_zh": "克服；战胜",
+      "translation_en": "With teamwork and persistence, we finally overcame all technical difficulties.",
+      "translation_zh": "通过团队合作和坚持，我们终于克服了所有技术困难。"
     },
     {
       "word": "效率",
@@ -109,7 +149,11 @@ window.HSK5_DATA = {
       "example": "合理安排作息时间可以显著提高工作效率。",
       "difficulty": "하",
       "id": "hv_11",
-      "translation": "일과와 휴식 시간을 합리적으로 배분하면 업무 효율을 현저히 높일 수 있다."
+      "translation": "일과와 휴식 시간을 합리적으로 배분하면 업무 효율을 현저히 높일 수 있다.",
+      "meaning_en": "efficiency",
+      "meaning_zh": "效率",
+      "translation_en": "Using suitable project tools can significantly improve study and work efficiency.",
+      "translation_zh": "使用合适的工具可以显著提高学习和工作效率。"
     },
     {
       "word": "赞成",
@@ -119,7 +163,11 @@ window.HSK5_DATA = {
       "example": "对于这个提议，大家纷纷表示赞成。",
       "difficulty": "하",
       "id": "hv_12",
-      "translation": "이 제안에 대해 모두가 앞다투어 찬성의 뜻을 표했다."
+      "translation": "이 제안에 대해 모두가 앞다투어 찬성의 뜻을 표했다.",
+      "meaning_en": "approve, agree with",
+      "meaning_zh": "赞成；同意",
+      "translation_en": "Most members in the meeting strongly approved of this reform proposal.",
+      "translation_zh": "大多数参会人员非常赞成这项改革提议。"
     },
     {
       "word": "独特",
@@ -129,7 +177,11 @@ window.HSK5_DATA = {
       "example": "这位设计师拥有非常独特的设计风格。",
       "difficulty": "중",
       "id": "hv_13",
-      "translation": "이 디자이너는 매우 독특한 디자인 스타일을 가지고 있다."
+      "translation": "이 디자이너는 매우 독특한 디자인 스타일을 가지고 있다.",
+      "meaning_en": "unique, distinctive",
+      "meaning_zh": "独特；独一无二",
+      "translation_en": "This museum has a very unique architectural style and design.",
+      "translation_zh": "这座博物馆的建筑风格和设计非常独特。"
     },
     {
       "word": "趋势",
@@ -139,7 +191,11 @@ window.HSK5_DATA = {
       "example": "随着科技的发展，数字化已成为必然趋势。",
       "difficulty": "중",
       "id": "hv_14",
-      "translation": "과학기술이 발전함에 따라 디지털화는 이미 필연적인 추세가 되었다."
+      "translation": "과학기술이 발전함에 따라 디지털화는 이미 필연적인 추세가 되었다.",
+      "meaning_en": "trend, tendency",
+      "meaning_zh": "趋势；走向",
+      "translation_en": "Continuous digital transformation has become an inevitable trend worldwide.",
+      "translation_zh": "数字化转型已成为全球不可避免的发展趋势。"
     },
     {
       "word": "繁荣",
@@ -149,7 +205,11 @@ window.HSK5_DATA = {
       "example": "经济的快速发展带来了城市的繁荣。",
       "difficulty": "중",
       "id": "hv_15",
-      "translation": "경제의 빠른 발전은 도시의 번영을 가져왔다."
+      "translation": "경제의 빠른 발전은 도시의 번영을 가져왔다.",
+      "meaning_en": "prosperous, flourishing",
+      "meaning_zh": "繁荣；繁华",
+      "translation_en": "Trade and technological innovation brought economic prosperity to the coastal area.",
+      "translation_zh": "贸易和技术创新促进了该沿海地区的经济繁荣。"
     },
     {
       "word": "珍惜",
@@ -159,7 +219,11 @@ window.HSK5_DATA = {
       "example": "我们应该珍惜眼前来之不易的幸福生活。",
       "difficulty": "하",
       "id": "hv_16",
-      "translation": "우리는 눈앞의 어렵게 얻은 행복한 삶을 소중히 여겨야 한다."
+      "translation": "우리는 눈앞의 어렵게 얻은 행복한 삶을 소중히 여겨야 한다.",
+      "meaning_en": "cherish, treasure, value",
+      "meaning_zh": "珍惜；珍爱",
+      "translation_en": "We should cherish current study opportunities and time.",
+      "translation_zh": "我们应当珍惜现在的学习机会和宝贵时间。"
     },
     {
       "word": "承担",
@@ -169,7 +233,11 @@ window.HSK5_DATA = {
       "example": "勇于承担责任是成熟的标志。",
       "difficulty": "하",
       "id": "hv_17",
-      "translation": "용기 있게 책임을 지는 것은 성숙함의 상징이다."
+      "translation": "용기 있게 책임을 지는 것은 성숙함의 상징이다.",
+      "meaning_en": "undertake, shoulder, assume",
+      "meaning_zh": "承担；担负",
+      "translation_en": "As the team leader, he took on the main responsibility of the project.",
+      "translation_zh": "作为项目负责人，他主动承担了核心研发责任。"
     },
     {
       "word": "敏锐",
@@ -179,7 +247,11 @@ window.HSK5_DATA = {
       "example": "优秀的企业家通常拥有敏锐的市场洞察力。",
       "difficulty": "상",
       "id": "hv_18",
-      "translation": "우수한 기업가는 대개 예리한 시장 통찰력을 지니고 있다."
+      "translation": "우수한 기업가는 대개 예리한 시장 통찰력을 지니고 있다.",
+      "meaning_en": "keen, sharp, acute",
+      "meaning_zh": "敏锐；尖锐",
+      "translation_en": "She possesses keen observation and easily detects market shifts.",
+      "translation_zh": "她拥有敏锐的市场洞察力，能迅速察觉行业趋势。"
     },
     {
       "word": "挑战",
@@ -189,7 +261,11 @@ window.HSK5_DATA = {
       "example": "我们要勇于迎接生活中的各种挑战。",
       "difficulty": "중",
       "id": "hv_19",
-      "translation": "우리는 삶 속의 온갖 도전을 용기 있게 맞이해야 한다."
+      "translation": "우리는 삶 속의 온갖 도전을 용기 있게 맞이해야 한다.",
+      "meaning_en": "challenge",
+      "meaning_zh": "挑战",
+      "translation_en": "Courageously facing new challenges promotes personal growth.",
+      "translation_zh": "勇敢面对新的挑战能够促使我们快速成长。"
     },
     {
       "word": "循序渐进",
@@ -199,7 +275,11 @@ window.HSK5_DATA = {
       "example": "学习外语是一个循序渐进的过程。",
       "difficulty": "상",
       "id": "hv_20",
-      "translation": "외국어를 배우는 것은 순서를 따라 차근차근 나아가는 과정이다."
+      "translation": "외국어를 배우는 것은 순서를 따라 차근차근 나아가는 과정이다.",
+      "meaning_en": "proceed step by step, progress gradually",
+      "meaning_zh": "循序渐进；按部就班",
+      "translation_en": "Learning a new language requires step-by-step practice rather than rushing.",
+      "translation_zh": "学习新语言需要循序渐进，不可急于求成。"
     },
     {
       "id": "hv_21",
@@ -209,7 +289,11 @@ window.HSK5_DATA = {
       "pos": "동사/명사",
       "difficulty": "중",
       "example": "我们必须牢牢把握这次难得的发展机会。",
-      "translation": "우리는 이번 얻기 힘든 발전의 기회를 단단히 잡아야 한다."
+      "translation": "우리는 이번 얻기 힘든 발전의 기회를 단단히 잡아야 한다.",
+      "meaning_en": "grasp, master, confidence",
+      "meaning_zh": "把握；掌握",
+      "translation_en": "Through thorough preparation, he is confident of passing the HSK examination.",
+      "translation_zh": "经过充分复习，他对通过考试很有把握。"
     },
     {
       "id": "hv_22",
@@ -219,7 +303,11 @@ window.HSK5_DATA = {
       "pos": "동사",
       "difficulty": "상",
       "example": "这首简短的诗歌里包含了作者深厚的情感。",
-      "translation": "이 짧은 시 속에는 작가의 깊은 감정이 담겨 있다."
+      "translation": "이 짧은 시 속에는 작가의 깊은 감정이 담겨 있다.",
+      "meaning_en": "contain, include, imply",
+      "meaning_zh": "包含；涵盖",
+      "translation_en": "This training plan contains comprehensive listening and reading exercises.",
+      "translation_zh": "该培训方案包含全面的听力与阅读实战训练。"
     },
     {
       "id": "hv_23",
@@ -229,7 +317,11 @@ window.HSK5_DATA = {
       "pos": "형용사/부사",
       "difficulty": "중",
       "example": "长期熬夜必然会对身体健康造成损害。",
-      "translation": "장기간 밤을 새우면 필연적으로 신체 건강에 해를 끼치게 된다."
+      "translation": "장기간 밤을 새우면 필연적으로 신체 건강에 해를 끼치게 된다.",
+      "meaning_en": "inevitable, necessary",
+      "meaning_zh": "必然；必然性",
+      "translation_en": "Failures and setbacks are inevitable on the road to success.",
+      "translation_zh": "走向成功的道路上遇到挫折是必然的。"
     },
     {
       "id": "hv_24",
@@ -239,7 +331,11 @@ window.HSK5_DATA = {
       "pos": "명사",
       "difficulty": "중",
       "example": "法律严格保护每一位公民的合法私人财产。",
-      "translation": "법률은 모든 시민의 합법적인 개인 재산을 엄격히 보호한다."
+      "translation": "법률은 모든 시민의 합법적인 개인 재산을 엄격히 보호한다.",
+      "meaning_en": "property, wealth, assets",
+      "meaning_zh": "财产；财富",
+      "translation_en": "Protecting citizens' lawful property is guaranteed by law.",
+      "translation_zh": "法律严格保护公民的合法财产不受侵犯。"
     },
     {
       "id": "hv_25",
@@ -249,7 +345,11 @@ window.HSK5_DATA = {
       "pos": "동사",
       "difficulty": "상",
       "example": "面对突发状况，管理部门立即采取了有效措施。",
-      "translation": "돌발 상황에 직면하여 관리 부서는 즉시 유효한 조치를 취했다."
+      "translation": "돌발 상황에 직면하여 관리 부서는 즉시 유효한 조치를 취했다.",
+      "meaning_en": "adopt, take (measures)",
+      "meaning_zh": "采取；采纳",
+      "translation_en": "The government adopted effective measures to curb environmental pollution.",
+      "translation_zh": "政府采取了切实有效的措施来治理环境污染。"
     },
     {
       "id": "hv_26",
@@ -259,7 +359,11 @@ window.HSK5_DATA = {
       "pos": "동사",
       "difficulty": "상",
       "example": "操作失误导致整条生产线停工了两个小时。",
-      "translation": "조작 실수로 인해 전체 생산 라인이 두 시간 동안 가동 중단되었다."
+      "translation": "조작 실수로 인해 전체 생산 라인이 두 시간 동안 가동 중단되었다.",
+      "meaning_en": "lead to, cause, result in",
+      "meaning_zh": "导致；造成",
+      "translation_en": "Careless verification led to errors in the final data sheet.",
+      "translation_zh": "疏忽大意导致最终数据核算出现了差错。"
     },
     {
       "id": "hv_27",
@@ -269,7 +373,11 @@ window.HSK5_DATA = {
       "pos": "동사",
       "difficulty": "상",
       "example": "各部门必须全面贯彻落实公司的新安全规定。",
-      "translation": "각 부서는 회사의 새로운 안전 규정을 전면적으로 관철하여 실행해야 한다."
+      "translation": "각 부서는 회사의 새로운 안전 규정을 전면적으로 관철하여 실행해야 한다.",
+      "meaning_en": "implement, carry out thoroughly",
+      "meaning_zh": "贯彻；落实",
+      "translation_en": "The company firmly implemented the green environmental development strategy.",
+      "translation_zh": "公司坚定贯彻绿色环保的发展战略。"
     },
     {
       "id": "hv_28",
@@ -279,7 +387,11 @@ window.HSK5_DATA = {
       "pos": "동사",
       "difficulty": "상",
       "example": "在图书馆大声喧哗会妨碍其他人正常学习。",
-      "translation": "도서관에서 큰 소리로 떠드는 것은 다른 사람의 정상적인 공부를 방해한다."
+      "translation": "도서관에서 큰 소리로 떠드는 것은 다른 사람의 정상적인 공부를 방해한다.",
+      "meaning_en": "hinder, obstruct, impede",
+      "meaning_zh": "妨碍；阻碍",
+      "translation_en": "Please do not make loud noises in the library so as not to disturb others.",
+      "translation_zh": "在图书馆请保持安静，以免妨碍他人专注学习。"
     },
     {
       "id": "hv_29",
@@ -289,7 +401,11 @@ window.HSK5_DATA = {
       "pos": "형용사",
       "difficulty": "중",
       "example": "人工智能技术已经在医疗领域得到了广泛的应用。",
-      "translation": "인공지능 기술은 이미 의료 분야에서 광범위하게 응용되고 있다."
+      "translation": "인공지능 기술은 이미 의료 분야에서 광범위하게 응용되고 있다.",
+      "meaning_en": "broad, extensive, widespread",
+      "meaning_zh": "广泛；广博",
+      "translation_en": "Artificial intelligence technology has gained widespread application across industries.",
+      "translation_zh": "人工智能技术已在各行各业获得了极其广泛的应用。"
     },
     {
       "id": "hv_30",
@@ -299,7 +415,11 @@ window.HSK5_DATA = {
       "pos": "명사",
       "difficulty": "상",
       "example": "掌握核心技术是企业保持竞争力的关键。",
-      "translation": "핵심 기술을 확보하는 것이 기업이 경쟁력을 유지하는 열쇠이다."
+      "translation": "핵심 기술을 확보하는 것이 기업이 경쟁력을 유지하는 열쇠이다.",
+      "meaning_en": "core, nucleus, key",
+      "meaning_zh": "核心；要害",
+      "translation_en": "Mastering vocabulary and grammar rules is the core of passing the exam.",
+      "translation_zh": "掌握核心词汇与语法结构是通过考试的关键。"
     }
   ],
   "colloc": [
@@ -394,380 +514,426 @@ window.HSK5_DATA = {
       "id": "hco_10"
     }
   ],
-  "grammar": [
+  "chengyu": [
     {
-      "id": "hg_01",
+      "chengyu": "举一反三",
+      "pinyin": "jǔ yī fǎn sān",
+      "meaning": "하나를 듣고 셋을 미루어 알다 (응용력이 뛰어나다)",
+      "sentence": "学习不仅要掌握基础知识，更要善于____，触类旁通。",
+      "example": "学习不仅要掌握基础知识，更要善于举一反三，触类旁通。",
+      "translation": "공부는 기초 지식을 습득해야 할 뿐만 아니라, 하나를 듣고 셋을 미루어 응용할 줄 알아야 한다.",
       "difficulty": "하",
-      "type": "special_sentence",
-      "category": "把자문 (처치문 동사 완료 성분)",
-      "question": "다음 중 [把자문]의 어순과 문법 규칙이 가장 올바른 문장은?",
-      "options": [
-        "他把昨天的作业没做完。",
-        "请你把这篇报告认真地修改一遍。",
-        "他把那个重要的秘密说了。",
-        "我把钥匙忘在家里没。"
-      ],
-      "answer": 2,
-      "example": "请你把这篇报告认真地修改一遍。",
-      "translation": "이 보고서를 진지하게 한 번 수정해 주십시오.",
-      "explanation": "把자문의 동사는 단독으로 끝날 수 없으며 반드시 보어(修改一遍), 동태조사(了) 등 기타 성분이 결합해야 합니다. 부정부사(没, 不)는 반드시 '把' 앞에 와야 합니다 (没把作业做完)."
+      "id": "hch_01",
+      "meaning_en": "draw inferences about other cases from one instance",
+      "meaning_zh": "举一反三；触类旁通",
+      "translation_en": "Studying should not merely absorb basic facts, but learn to deduce broader principles.",
+      "translation_zh": "学习不仅要掌握基础知识，更要善于举一反三，触类旁通。"
     },
     {
-      "id": "hg_02",
+      "chengyu": "循序渐进",
+      "pinyin": "xún xù jiàn jìn",
+      "meaning": "순서를 따라 점진적으로 나아가다",
+      "sentence": "无论是学习还是健身，都必须____，不能急于求成。",
+      "example": "无论是学习还是健身，都必须循序渐进，不能急于求成。",
+      "translation": "공부든 운동이든 모두 순서를 따라 차근차근 나아가야 하며, 성급하게 성과를 내려 해서는 안 된다.",
       "difficulty": "하",
-      "type": "special_sentence",
-      "category": "被자문 (피동문 부정사 위치)",
-      "question": "다음 문장에서 부정부사 '还没'이 들어갈 가장 적절한 위치는?\n\"这个问题【 (A) 】被【 (B) 】专家们【 (C) 】圆满地【 (D) 】解决了。\"",
-      "options": [
-        "(A) 위치",
-        "(B) 위치",
-        "(C) 위치",
-        "(D) 위치"
-      ],
-      "answer": 1,
-      "example": "这个问题还没被专家们圆满地解决。",
-      "translation": "이 문제는 아직 전문가들에 의해 원만하게 해결되지 않았다.",
-      "explanation": "被자문에서 부정부사(没, 还没有, 不)나 능원동사(想, 会, 能)는 반드시 피동 표식인 '被'의 【앞】에 놓여야 합니다 (这个问题还没被专家们解决)."
+      "id": "hch_02",
+      "meaning_en": "proceed step by step, gradual progress",
+      "meaning_zh": "循序渐进；由浅入深",
+      "translation_en": "Mastering advanced vocabulary requires gradual and steady accumulation.",
+      "translation_zh": "掌握高阶词汇需要循序渐进地积累。"
     },
     {
-      "id": "hg_03",
+      "chengyu": "半途而废",
+      "pinyin": "bàn tú ér fèi",
+      "meaning": "중도에 그만두다, 포기하다",
+      "sentence": "既然已经开始了这项科研项目，就绝不能____。",
+      "example": "既然已经开始了这项科研项目，就绝不能半途而废。",
+      "translation": "이미 이 과학 연구 프로젝트를 시작한 이상 결코 중도에 포기해서는 안 된다.",
       "difficulty": "하",
-      "type": "special_sentence",
-      "category": "존현문 (存现句 장소 표현)",
-      "question": "다음 중 사람이나 사물의 존재·출현을 나타내는 [존현문]으로 문법상 가장 올바른 것은?",
-      "options": [
-        "在桌子上放着几本厚厚的专业书。",
-        "桌子上放着几本厚厚的专业书。",
-        "桌子上放这几本厚厚的专业书。",
-        "厚厚的专业书在桌子上放着了。"
-      ],
-      "answer": 2,
-      "example": "桌子上放着几本厚厚的专业书。",
-      "translation": "책상 위에 두꺼운 전공 서적 몇 권이 놓여 있다.",
-      "explanation": "존현문의 기본 공식은 '장소사 + 동사 + 着/了 + 불특정 대상(수량+명사)'입니다. 흔한 오류로 장소사 앞에 전치사 '在'를 붙이는데, 존현문에서는 문두 장소 앞에 '在'를 쓰지 않습니다."
+      "id": "hch_03",
+      "meaning_en": "give up halfway, leave unfinished",
+      "meaning_zh": "半途而废；前功尽弃",
+      "translation_en": "Once you start, never give up halfway.",
+      "translation_zh": "既然确定了目标，就决不能半途而废。"
     },
     {
-      "id": "hg_04",
+      "chengyu": "坚持不懈",
+      "pinyin": "jiān chí bú xiè",
+      "meaning": "포기하지 않고 끈기 있게 계속하다",
+      "sentence": "只要____地努力下去，梦想终有一天会变成现实。",
+      "example": "只要坚持不懈地努力下去，梦想终有一天会变成现实。",
+      "translation": "포기하지 않고 끈기 있게 계속 노력하기만 한다면 꿈은 마침내 현실이 될 것이다.",
       "difficulty": "하",
-      "type": "special_sentence",
-      "category": "겸어문 (兼语句 사동사)",
-      "question": "다음 빈칸에 들어갈 사동사로 알맞지 않은 것은?\n\"这次深刻的教训____他意识到了团队合作的重要性。\"",
-      "options": [
-        "使 (shǐ)",
-        "让 (ràng)",
-        "令 (lìng)",
-        "被 (bèi)"
-      ],
-      "answer": 4,
-      "example": "这次深刻的教训使他意识到了团队合作的重要性。",
-      "translation": "이번 뼈아픈 교훈은 그로 하여금 팀워크의 중요성을 깨닫게 만들었다.",
-      "explanation": "'被'는 피동 표식으로 겸어 사동 구문에 올 수 없습니다. '주어 + 사동사(使/让/令) + 겸어(사람) + 술어' 구조로 '~로 하여금 ...하게 만들다'라는 뜻입니다."
+      "id": "hch_04",
+      "meaning_en": "persevere unremittingly, tireless persistence",
+      "meaning_zh": "坚持不懈；持之以恒",
+      "translation_en": "With unremitting perseverance, he achieved remarkable success.",
+      "translation_zh": "只要坚持不懈，就一定能取得显著成绩。"
     },
     {
-      "id": "hg_05",
+      "chengyu": "全力以赴",
+      "pinyin": "quán lì yǐ fù",
+      "meaning": "모든 힘을 다해 전력투구하다",
+      "sentence": "面对即将到来的决赛，每位队员都表示会____。",
+      "example": "面对即将到来的决赛，每位队员都表示会全力以赴。",
+      "translation": "곧 다가올 결승전을 앞두고 모든 팀원이 전력투구하겠다고 밝혔다.",
       "difficulty": "하",
-      "type": "complement",
-      "category": "정도보어 (程度补语 得)",
-      "question": "다음 중 상태/정도 보어 표식 '得'의 쓰임이 가장 올바른 문장은?",
-      "options": [
-        "他跑得很极快。",
-        "听到这个好消息，大家高兴得跳了起来。",
-        "这道难题他做得非常没好。",
-        "他感动得流下眼泪了得很多。"
-      ],
-      "answer": 2,
-      "example": "听到这个好消息，大家高兴得跳了起来。",
-      "translation": "이 기쁜 소식을 듣고 모두가 너무 기뻐서 펄쩍 뛰어올랐다.",
-      "explanation": "정도보어 뒤에 구체적인 상태 묘사가 연결되어 '기뻐서 펄쩍 뛰어올랐다(高兴得跳了起来)'가 가장 자연스럽습니다. 정도부사 很과 极는 중복 수식할 수 없으며, 부정은 '做得不好' 형태로 씁니다."
+      "id": "hch_05",
+      "meaning_en": "spare no effort, go all out",
+      "meaning_zh": "全力以赴；竭尽全力",
+      "translation_en": "We will go all out to achieve the highest score.",
+      "translation_zh": "我们将全力以赴争取最好的成绩。"
     },
     {
-      "id": "hg_06",
+      "chengyu": "同舟共济",
+      "pinyin": "tóng zhōu gòng jì",
+      "meaning": "같은 배를 타고 함께 강을 건너다 (환난을 함께 극복하다)",
+      "sentence": "在这次经济危机中，全公司员工____，共渡难关。",
+      "example": "在这次经济危机中，全公司员工同舟共济，共渡难关。",
+      "translation": "이번 경제 위기 속에서 전 사원이 한마음으로 힘을 합쳐 난관을 함께 극복했다.",
+      "difficulty": "중",
+      "id": "hch_06",
+      "meaning_en": "cross a river in the same boat; pull together through difficulty",
+      "meaning_zh": "同舟共济；风雨同舟",
+      "translation_en": "Faced with hardships, the team pulled together to overcome hurdles.",
+      "translation_zh": "面对困境，团队全体成员同舟共济共渡难关。"
+    },
+    {
+      "chengyu": "取长补短",
+      "pinyin": "qǔ cháng bǔ duǎn",
+      "meaning": "장점을 취해 단점을 보완하다",
+      "sentence": "团队成员之间应该互相学习，____，共同进步。",
+      "example": "团队成员之间应该互相学习，取长补短，共同进步。",
+      "translation": "팀원들 간에는 서로 배우고 장점을 취해 단점을 보완하며 함께 발전해야 한다.",
       "difficulty": "하",
-      "type": "conjunction",
-      "category": "접속사 호응 (유일 조건 只有...才...)",
-      "question": "다음 빈칸에 알맞은 접속사 짝꿍은?\n\"____坚持实事求是的科学态度，____能得出真正客观的结论。\"",
-      "options": [
-        "只要 ... 就 ...",
-        "只有 ... 才 ...",
-        "无论 ... 都 ...",
-        "与其 ... 不如 ..."
-      ],
-      "answer": 2,
-      "example": "只有坚持实事求是的科学态度，才能得出真正客观的结论。",
-      "translation": "오직 사실에 입각한 과학적 태도를 견지해야만 비로소 진정으로 객관적인 결론을 도출할 수 있다.",
-      "explanation": "'只有 ... 才 ...'(오직 ~해야만 비로소 ~하다)가 정답입니다. 뒷절에 '才'가 있으므로 유일 조건을 나타내는 '只有'와 짝을 이룹니다. (충분 조건인 只要는 就와 호응)."
+      "id": "hch_07",
+      "meaning_en": "learn from others' strengths to offset one's weaknesses",
+      "meaning_zh": "取长补短；相互借鉴",
+      "translation_en": "Collaborative study allows students to complement each other.",
+      "translation_zh": "互相合作可以取长补短，共同进步。"
     },
     {
-      "id": "hg_07",
+      "chengyu": "各抒己见",
+      "pinyin": "gè shū jǐ jiàn",
+      "meaning": "각자 자신의 의견과 견해를 밝히다",
+      "sentence": "在今天的研讨会上，与会专家们____，探讨方案。",
+      "example": "在今天的研讨会上，与会专家们各抒己见，探讨方案。",
+      "translation": "오늘 세미나에서 참석한 전문가들은 각자 자신의 견해를 밝히며 방안을 논의했다.",
+      "difficulty": "중",
+      "id": "hch_08",
+      "meaning_en": "express one's own opinions freely",
+      "meaning_zh": "各抒己见；畅所欲言",
+      "translation_en": "In the group discussion, everyone freely expressed their opinions.",
+      "translation_zh": "研讨会上，大家各抒己见，气氛热烈。"
+    },
+    {
+      "chengyu": "随机应变",
+      "pinyin": "suí jī yìng biàn",
+      "meaning": "상황의 변화에 맞추어 임기응변하다",
+      "sentence": "面对谈判桌上的突发状况，他展现出了极强的____能力。",
+      "example": "面对谈判桌上的突发状况，他展现出了极强的随机应变能力。",
+      "translation": "협상 테이블의 돌발 상황에 직면하여 그는 매우 뛰어난 임기응변 능력을 보여주었다.",
+      "difficulty": "상",
+      "id": "hch_09",
+      "meaning_en": "act according to circumstances, adapt flexibly",
+      "meaning_zh": "随机应变；灵活处理",
+      "translation_en": "An experienced leader can adapt quickly when unforeseen situations arise.",
+      "translation_zh": "面对突发情况，我们需要具备随机应变的能力。"
+    },
+    {
+      "chengyu": "络绎不绝",
+      "pinyin": "luò yì bù jué",
+      "meaning": "(사람·수레 등의 왕래가) 끊이지 않고 이어지다",
+      "sentence": "故宫博物院每到节假日，前来参观的中外游客都____。",
+      "example": "故宫博物院每到节假日，前来参观的中外游客都络绎不绝。",
+      "translation": "고궁박물원은 휴일만 되면 관람하러 오는 국내외 관광객들의 발길이 끊이지 않는다.",
+      "difficulty": "중",
+      "id": "hch_10",
+      "meaning_en": "in an endless stream, continuous flow",
+      "meaning_zh": "络绎不绝；连绵不断",
+      "translation_en": "Visitors came to the exhibition in an endless stream.",
+      "translation_zh": "参观展览的游客整日络绎不绝。"
+    },
+    {
+      "chengyu": "恍然大悟",
+      "pinyin": "huǎng rán dà wù",
+      "meaning": "문득 크게 깨닫다, 번쩍 알아차리다",
+      "sentence": "听了老师耐心的解释后，他这才____，解开了心中的疑惑。",
+      "example": "听了老师耐心的解释后，他这才恍然大悟，解开了心中的疑惑。",
+      "translation": "선생님의 인내심 있는 설명을 듣고 나서야 그는 비로소 크게 깨닫고 마음속 의문을 풀었다.",
+      "difficulty": "상",
+      "id": "hch_11",
+      "meaning_en": "suddenly see the light, suddenly realize",
+      "meaning_zh": "恍然大悟；豁然开朗",
+      "translation_en": "After hearing the teacher's explanation, I suddenly understood.",
+      "translation_zh": "听完老师的详细讲解，我顿时恍然大悟。"
+    },
+    {
+      "chengyu": "犹豫不决",
+      "pinyin": "yóu yù bù jué",
+      "meaning": "결정을 내리지 못하고 주저하다",
+      "sentence": "商机稍纵即逝，在关键时刻切记不可____。",
+      "example": "商机稍纵即逝，在关键时刻切记不可犹豫不决。",
+      "translation": "비즈니스 기회는 순식간에 사라지므로 결정적인 순간에 결코 주저해서는 안 된다.",
+      "difficulty": "중",
+      "id": "hch_12",
+      "meaning_en": "hesitant, indecisive",
+      "meaning_zh": "犹豫不决；瞻前顾后",
+      "translation_en": "He remained indecisive between the two job offers.",
+      "translation_zh": "在两个待遇优厚的录用机会前，他犹豫不决。"
+    },
+    {
+      "chengyu": "耐人寻味",
+      "pinyin": "nài rén xún wèi",
+      "meaning": "여운이 길고 깊이 음미해 볼 가치가 있다",
+      "sentence": "这部话剧的情节引人入胜，结局更是____。",
+      "example": "这部话剧的情节引人入胜，结局更是耐人寻味。",
+      "translation": "이 연극의 줄거리는 매우 매력적이며 결말은 더욱 깊은 여운을 남긴다.",
+      "difficulty": "중",
+      "id": "hch_13",
+      "meaning_en": "thought-provoking, meaningful and memorable",
+      "meaning_zh": "耐人寻味；发人深省",
+      "translation_en": "The ending of the novel was subtle and thought-provoking.",
+      "translation_zh": "这部小说的结局耐人寻味，引人深思。"
+    },
+    {
+      "chengyu": "迫不及待",
+      "pinyin": "pò bù jí dài",
+      "meaning": "너무 조급하여 잠시도 기다릴 수 없다",
+      "sentence": "刚收到录取通知书，他就____地打电话告诉了父母。",
+      "example": "刚收到录取通知书，他就迫不及待地打电话告诉了父母。",
+      "translation": "합격 통지서를 받자마자 그는 잠시도 기다리지 못하고 부모님께 전화해 알렸다.",
       "difficulty": "하",
-      "type": "special_sentence",
-      "category": "비교문 (A 不如 B)",
-      "question": "다음 중 비교문 표현이 문법적으로 가장 자연스러운 것은?",
-      "options": [
-        "现在的实际情况不如原来预期的那么乐观。",
-        "他比我非常高。",
-        "今天的天气比昨天更冷得多得很。",
-        "他的汉语水平跟我不如一样。"
-      ],
-      "answer": 1,
-      "example": "现在的实际情况不如原来预期的那么乐观。",
-      "translation": "현재의 실제 상황은 원래 예상했던 것만큼 그렇게 낙관적이지 못하다.",
-      "explanation": "'A 不如 B + 那么 + 형용사'(A는 B만큼 ~하지 못하다)의 표준 비교 구문입니다. 比 뒤에는 구체적 차이(高三厘米, 高得多)를 나타내며 정도부사 '非常/很'을 쓸 수 없습니다."
+      "id": "hch_14",
+      "meaning_en": "too impatient to wait, eager",
+      "meaning_zh": "迫不及待；刻不容缓",
+      "translation_en": "Upon opening the package, she could not wait to read the book.",
+      "translation_zh": "收到包裹后，他迫不及待地打开阅读。"
     },
     {
-      "id": "hg_08",
+      "chengyu": "津津有味",
+      "pinyin": "jīn jīn yǒu wèi",
+      "meaning": "매우 흥미진진하게, 맛깔스럽게",
+      "sentence": "孩子们正围坐在电视机前，____地看着动画片。",
+      "example": "孩子们正围坐在电视机前，津津有味地看着动画片。",
+      "translation": "아이들이 텔레비전 앞에 둘러앉아 흥미진진하게 만화영화를 보고 있다.",
+      "difficulty": "하",
+      "id": "hch_15",
+      "meaning_en": "with keen pleasure, relish with gusto",
+      "meaning_zh": "津津有味；兴致勃勃",
+      "translation_en": "The children were reading the illustrated storybook with great relish.",
+      "translation_zh": "孩子们津津有味地听着生动的故事。"
+    },
+    {
+      "chengyu": "理所当然",
+      "pinyin": "lǐ suǒ dāng rán",
+      "meaning": "도리나 이치상 응당 당연하다",
+      "sentence": "父母为我们付出了很多，我们不应该把这一切视为____。",
+      "example": "父母为我们付出了很多，我们不应该把这一切视为理所当然。",
+      "translation": "부모님께서 우리를 위해 많은 헌신을 하셨으니, 우리는 이 모든 것을 당연하게 여겨서는 안 된다.",
       "difficulty": "중",
-      "type": "conjunction",
-      "category": "접속사 호응 (인과 도치 之所以...是因为...)",
-      "question": "다음 문장의 빈칸에 들어갈 인과 접속사 짝꿍은?\n\"他____能够克服重重困难取得成功，____有着坚定的信念。\"",
-      "options": [
-        "因为 ... 所以 ...",
-        "之所以 ... 是因为 ...",
-        "虽然 ... 但是 ...",
-        "既然 ... 就 ..."
-      ],
-      "answer": 2,
-      "example": "他之所以能够克服重重困难取得成功，是因为有着坚定的信念。",
-      "translation": "그가 겹겹의 어려움을 극복하고 성공을 거둘 수 있었던 까닭은 확고한 신념이 있었기 때문이다.",
-      "explanation": "'之所以 ... 是因为 ...'(그가 ~한 까닭은 ~때문이다) 구문입니다. 결과('取得成功')를 앞절에서 먼저 제시하고 원인('有着坚定的信念')을 뒷절에서 밝히는 고득점 패턴입니다."
+      "id": "hch_16",
+      "meaning_en": "matter of course, natural and reasonable",
+      "meaning_zh": "理所当然；顺理成章",
+      "translation_en": "Helping elderly and children on public transport is a matter of course.",
+      "translation_zh": "在公交车上给老人让座是理所当然的事情。"
     },
     {
-      "id": "hg_09",
+      "chengyu": "莫名其妙",
+      "pinyin": "mò míng qí miào",
+      "meaning": "영문을 알 수 없다, 까닭을 몰라 어리둥절하다",
+      "sentence": "他今天一句话都没说就突然发脾气，真让人觉得____。",
+      "example": "他今天一句话都没说就突然发脾气，真让人觉得莫名其妙。",
+      "translation": "그가 오늘 한마디 말도 없이 갑자기 화를 내서 정말 영문을 알 수 없게 만들었다.",
       "difficulty": "중",
-      "type": "conjunction",
-      "category": "접속사 호응 (선택 与其...不如...)",
-      "question": "다음 빈칸에 들어갈 알맞은 접속사는?\n\"遇到问题，____一味地互相推卸责任，____坐下来共同寻找解决办法。\"",
-      "options": [
-        "宁可 ... 也不 ...",
-        "即使 ... 也 ...",
-        "与其 ... 不如 ...",
-        "不仅 ... 而且 ..."
-      ],
-      "answer": 3,
-      "example": "遇到问题，与其一味地互相推卸责任，不如坐下来共同寻找解决办法。",
-      "translation": "문제에 부딪혔을 때 덮어놓고 서로 책임을 떠넘기느니 차라리 마주 앉아 함께 해결 방법을 찾는 편이 낫다.",
-      "explanation": "'与其 ... 不如 ...'(~하느니 차라리 ~하는 것이 낫다)가 정답입니다. 전자보다 후자의 방안이 더 바람직함을 나타낼 때 쓰는 5급 초빈출 접속사입니다."
+      "id": "hch_17",
+      "meaning_en": "baffling, without rhyme or reason",
+      "meaning_zh": "莫名其妙；不可名状",
+      "translation_en": "His sudden anger left everybody feeling baffled.",
+      "translation_zh": "他突然发脾气让在场的人都觉得莫名其妙。"
     },
     {
-      "id": "hg_10",
+      "chengyu": "爱不释手",
+      "pinyin": "ài bù shì shǒu",
+      "meaning": "너무 마음에 들어 손에서 놓지 못하다",
+      "sentence": "爷爷送给他的那块古董手表，他喜欢得____。",
+      "example": "爷爷送给他的那块古董手表，他喜欢得爱不释手。",
+      "translation": "할아버지께서 선물해 주신 그 골동품 시계가 너무 마음에 들어 그는 손에서 놓지 못했다.",
+      "difficulty": "하",
+      "id": "hch_18",
+      "meaning_en": "love something too much to part with it",
+      "meaning_zh": "爱不释手；爱如珍宝",
+      "translation_en": "This exquisitely crafted pen was so lovely that he could hardly put it down.",
+      "translation_zh": "这本精装图册设计优雅，令人爱不释手。"
+    },
+    {
+      "chengyu": "家喻户晓",
+      "pinyin": "jiā yù hù xiǎo",
+      "meaning": "집집마다 다 알다, 널리 알려지다",
+      "sentence": "孙悟空大闹天宫的神话故事在中国几乎是____的。",
+      "example": "孙悟空大闹天宫的神话故事在中国几乎是家喻户晓的。",
+      "translation": "손오공이 천궁을 대소동케 한 신화 이야기는 중국에서 거의 집집마다 다 알 정도로 유명하다.",
       "difficulty": "중",
-      "type": "conjunction",
-      "category": "접속사 호응 (가설 양보 哪怕...也...)",
-      "question": "다음 빈칸에 들어갈 가장 알맞은 접속사는?\n\"____这次实验遇到再大的阻碍，科研团队____决不放弃。\"",
-      "options": [
-        "哪怕 ... 也 ...",
-        "既然 ... 就 ...",
-        "因为 ... 所以 ...",
-        "只要 ... 就 ..."
-      ],
-      "answer": 1,
-      "example": "哪怕这次实验遇到再大的阻碍，科研团队也决不放弃。",
-      "translation": "설령 이번 실험이 아무리 큰 장애물에 부딪힐지라도 연구팀은 결코 포기하지 않을 것이다.",
-      "explanation": "'哪怕 ... 也 ...'(설령 ~할지라도 ~하다)가 정답입니다. 극단적인 가설 양보 상황('遇到再大的阻碍')을 전제하고 뒷절의 확고한 의지('决不放弃')와 호응합니다."
+      "id": "hch_19",
+      "meaning_en": "known to every household, well known",
+      "meaning_zh": "家喻户晓；妇孺皆知",
+      "translation_en": "This folk tale is well known to every household in China.",
+      "translation_zh": "这个励志故事在全国已经是家喻户晓。"
     },
     {
-      "id": "hg_11",
+      "chengyu": "独一无二",
+      "pinyin": "dú yī wú èr",
+      "meaning": "유일무이하다, 둘도 없다",
+      "sentence": "世界上没有两片完全相同的树叶，每个人都是____的。",
+      "example": "世界上没有两片完全相同的树叶，每个人都是独一无二的。",
+      "translation": "세상에 완전히 똑같은 나뭇잎이 두 장 없듯 모든 사람은 유일무이한 존재이다.",
+      "difficulty": "하",
+      "id": "hch_20",
+      "meaning_en": "unique, second to none",
+      "meaning_zh": "独一无二；绝无仅有",
+      "translation_en": "Every person's unique background shapes their individuality.",
+      "translation_zh": "每个人独特的成长经历都是独一无二的。"
+    },
+    {
+      "chengyu": "实事求是",
+      "pinyin": "shí shì qiú shì",
+      "meaning": "사실에 입각하여 진리를 탐구하다 (있는 그대로 평가하다)",
+      "sentence": "做学术研究必须坚持____的态度，严禁弄虚作假。",
+      "example": "做学术研究必须坚持实事求是的态度，严禁弄虚作假。",
+      "translation": "학술 연구를 할 때는 반드시 사실에 입각해 진리를 탐구하는 태도를 견지해야 하며 허위 조작을 엄금해야 한다.",
       "difficulty": "중",
-      "type": "complement",
-      "category": "방향보어 파생 의미 (起来 vs 下去)",
-      "question": "다음 문장에서 동작의 지속을 나타내는 방향보어로 알맞은 것은?\n\"只要我们坚持____，胜利最终一定会属于我们。\"",
-      "options": [
-        "起来",
-        "下去",
-        "出来",
-        "过来"
-      ],
-      "answer": 2,
-      "example": "只要我们坚持下去，胜利最终一定会属于我们。",
-      "translation": "우리가 끝까지 계속 버텨내기만 한다면 승리는 마침내 반드시 우리의 것이 될 것이다.",
-      "explanation": "동사 뒤에 붙는 '下去'는 현재 진행 중인 동작이 미래로 계속 이어짐(지속)을 나타냅니다 (坚持下去). 반면 '起来'는 동작의 시작과 계속(哭了起来) 또는 분산에서 집중을 나타냅니다."
+      "id": "hch_21",
+      "meaning_en": "seek truth from facts, be practical and realistic",
+      "meaning_zh": "实事求是；求真务实",
+      "translation_en": "Scientific research demands a rigorous, realistic attitude.",
+      "translation_zh": "科学研究必须秉持实事求是的求实态度。"
     },
     {
-      "id": "hg_12",
-      "difficulty": "중",
-      "type": "complement",
-      "category": "가능보어 (可能补语 得/不)",
-      "question": "다음 중 \"양이 너무 많아서 다 먹을 수 없다\"를 뜻하는 올바른 가능보어 표현은?",
-      "options": [
-        "吃不完",
-        "没吃完",
-        "不吃完",
-        "吃得了"
-      ],
-      "answer": 1,
-      "example": "桌上点的菜实在太多了，我们三个人根本吃不完。",
-      "translation": "식탁에 주문한 요리가 너무 많아서 우리 세 사람이 도저히 다 먹을 수 없다.",
-      "explanation": "가능보어 부정은 '동사 + 不 + 보어' 공식으로 '吃不完'(다 먹을 수 없다)이 올바릅니다. '没吃完'은 동작의 미완료('아직 다 못 먹었다')를 나타내는 결과보어의 부정입니다."
-    },
-    {
-      "id": "hg_13",
-      "difficulty": "중",
-      "type": "preposition",
-      "category": "개사 (전치사) 호응 (关于 vs 对于)",
-      "question": "다음 빈칸에 알맞은 전치사는?\n\"____这个复杂的新能源项目，专家组进行了深入的技术论证。\"",
-      "options": [
-        "对于",
-        "朝",
-        "从",
-        "由"
-      ],
-      "answer": 1,
-      "example": "对于这个复杂的新能源项目，专家组进行了深入的技术论证。",
-      "translation": "이 복잡한 신에너지 프로젝트에 대하여 전문가 그룹이 심도 있는 기술 검증을 진행했다.",
-      "explanation": "'对于'(~에 대하여)는 특정 대상에 대한 태도나 조치를 취할 때 문두에서 대상을 제시합니다. (关于는 범위/관련 내용을 나타내며 술어 앞에 바로 올 수 없습니다)."
-    },
-    {
-      "id": "hg_14",
-      "difficulty": "중",
-      "type": "conjunction",
-      "category": "접속사 호응 (선택 宁可...也...)",
-      "question": "다음 빈칸에 알맞은 접속사 짝꿍은?\n\"为了保护消费者的权益，我们____承担经济损失，____绝不销售不合格商品。\"",
-      "options": [
-        "宁可 ... 也 ...",
-        "既然 ... 就 ...",
-        "尽管 ... 但是 ...",
-        "即使 ... 也 ..."
-      ],
-      "answer": 1,
-      "example": "为了保护消费者的权益，我们宁可承担经济损失，也绝不销售不合格商品。",
-      "translation": "소비자의 권익을 보호하기 위해 우리는 차라리 경제적 손실을 감수할지언정 결코 불합격 상품을 판매하지 않겠다.",
-      "explanation": "'宁可 ... 也(不) ...'(차라리 ~할지언정 결코 ~하지 않겠다) 구문입니다. 큰 희생을 감수하고서라도 원칙을 지키겠다는 강한 결단을 나타냅니다."
-    },
-    {
-      "id": "hg_15",
-      "difficulty": "중",
-      "type": "special_sentence",
-      "category": "연동문 (连动句 목적/방식)",
-      "question": "다음 중 동작의 방식이나 수단을 나타내는 [연동문]으로 가장 자연스러운 것은?",
-      "options": [
-        "他坐地铁去市中心参加学术研讨会。",
-        "他去市中心坐地铁参加学术研讨会。",
-        "他参加学术研讨会坐地铁去市中心。",
-        "他坐地铁参加去市中心学术研讨会。"
-      ],
-      "answer": 1,
-      "example": "他坐地铁去市中心参加学术研讨会。",
-      "translation": "그는 지하철을 타고 도심으로 가서 학술 세미나에 참석한다.",
-      "explanation": "연동문에서 수단이나 방식(坐地铁)을 나타내는 동사구가 첫 번째 동작으로 오고, 목적(去市中心参加研讨会)이 뒤이어 발생하는 시간 순서대로 배열됩니다."
-    },
-    {
-      "id": "hg_16",
+      "chengyu": "微不足道",
+      "pinyin": "wēi bù zú dào",
+      "meaning": "하찮아서 말할 가치도 없다",
+      "sentence": "虽然个人的力量看似____，但凝聚起来就是巨大的奇迹。",
+      "example": "虽然个人的力量看似微不足道，但凝聚起来就是巨大的奇迹。",
+      "translation": "비록 개인의 힘은 보잘것없어 보일지라도 하나로 모이면 거대한 기적이 된다.",
       "difficulty": "상",
-      "type": "word_order",
-      "category": "쓰기 1부분 어순 배열 (동사 술어문)",
-      "question": "다음 조각들을 문법에 맞게 올바른 순서로 배열한 것은?\n[A] 这项科研成果  [B] 广泛的应用  [C] 在各个领域得到了  [D] 很快",
-      "options": [
-        "[A] - [D] - [C] - [B]",
-        "[A] - [C] - [B] - [D]",
-        "[C] - [A] - [D] - [B]",
-        "[D] - [B] - [A] - [C]"
-      ],
-      "answer": 1,
-      "example": "这项科研成果很快在各个领域得到了广泛的应用。",
-      "translation": "이 과학 연구 성과는 곧 각 분야에서 광범위한 응용을 얻게 되었다.",
-      "explanation": "[A]-[D]-[C]-[B] (这项科研成果 很快 在各个领域得到了 广泛的应用。)가 정답입니다. 주어(这项科研成果) + 부사어(很快 在各个领域) + 동사(得到了) + 목적어(广泛的应用)."
+      "id": "hch_22",
+      "meaning_en": "negligible, insignificant",
+      "meaning_zh": "微不足道；不足挂齿",
+      "translation_en": "Small contributions might seem negligible, but they add up to greatness.",
+      "translation_zh": "点滴的善举虽然微不足道，汇聚起来却力量无穷。"
     },
     {
-      "id": "hg_17",
+      "chengyu": "千方百计",
+      "pinyin": "qiān fāng bǎi jì",
+      "meaning": "온갖 방법과 수단을 다 쓰다",
+      "sentence": "为了完成这项紧急任务，大家都在____地寻找解决方案。",
+      "example": "为了完成这项紧急任务，大家都在千方百计地寻找解决方案。",
+      "translation": "이 긴급 임무를 완수하기 위해 모두가 백방으로 해결책을 찾고 있다.",
       "difficulty": "상",
-      "type": "word_order",
-      "category": "쓰기 1부분 어순 배열 (把자문 귀착보어)",
-      "question": "다음 조각들을 올바른 문장 어순으로 배열한 것은?\n[A] 已经  [B] 志愿者们  [C] 分发到了灾区  [D] 把救援物资",
-      "options": [
-        "[B] - [A] - [D] - [C]",
-        "[D] - [B] - [A] - [C]",
-        "[A] - [B] - [C] - [D]",
-        "[B] - [D] - [A] - [C]"
-      ],
-      "answer": 1,
-      "example": "志愿者们已经把救援物资分发到了灾区。",
-      "translation": "자원봉사자들은 이미 구호 물자를 재난 지역에 배분하여 전달했다.",
-      "explanation": "[B]-[A]-[D]-[C] (志愿者们 已经 把救援物资 分发到了灾区。)가 정답입니다. 주어(志愿者们) + 부사(已经) + 把 대상(救援物资) + 동사 술어(分发) + 귀착보어(到了灾区)."
+      "id": "hch_23",
+      "meaning_en": "by every possible means, leave no stone unturned",
+      "meaning_zh": "千方百计；想方设法",
+      "translation_en": "They tried by every possible means to rescue the trapped animals.",
+      "translation_zh": "救援队千方百计营救受困人员。"
     },
     {
-      "id": "hg_18",
+      "chengyu": "不可思议",
+      "pinyin": "bù kě sī yì",
+      "meaning": "불가사의하다, 사람의 생각으로 헤아릴 수 없다",
+      "sentence": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到____。",
+      "example": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到不可思议。",
+      "translation": "불과 몇 년 사이에 이 가난한 소도시가 현대화된 대도시로 발전하다니 놀랍고도 불가사의하다.",
       "difficulty": "상",
-      "type": "word_order",
-      "category": "쓰기 1부분 어순 배열 (被자문 피동)",
-      "question": "다음 조각들을 올바른 피동문 어순으로 배열한 것은?\n[A] 被  [B] 那个感人的故事  [C] 深深地打动了  [D] 在场的所有观众",
-      "options": [
-        "[D] - [A] - [B] - [C]",
-        "[B] - [A] - [D] - [C]",
-        "[A] - [B] - [D] - [C]",
-        "[D] - [C] - [A] - [B]"
-      ],
-      "answer": 1,
-      "example": "在场的所有观众被那个感人的故事深深地打动了。",
-      "translation": "현장에 있던 모든 관객이 그 감동적인 이야기에 깊이 감동받았다.",
-      "explanation": "[D]-[A]-[B]-[C] (在场的所有观众 被 那个感人的故事 深深地打动了。)가 정답입니다. 수동 주어(在场的所有观众) + 被 행위자(那个感人的故事) + 부사어(深深地) + 술어보어(打动了)."
+      "id": "hch_24",
+      "meaning_en": "inconceivable, unbelievable, incredible",
+      "meaning_zh": "不可思议；难以置信",
+      "translation_en": "The rapid advancement of quantum computing is truly incredible.",
+      "translation_zh": "计算机技术的飞速发展简直令人不可思议。"
     },
     {
-      "id": "hg_19",
-      "difficulty": "상",
-      "type": "special_sentence",
-      "category": "다층 관형어 어순 (多层定语)",
-      "question": "다음 중 명사를 수식하는 [다층 관형어]의 어순이 가장 자연스러운 문장은?",
-      "options": [
-        "那是她新买的一件漂亮的真丝连衣裙。",
-        "那是漂亮的一件她新买的真丝连衣裙。",
-        "那是一件漂亮的真丝她新买的连衣裙。",
-        "那是真丝的一件她新买的漂亮连衣裙。"
-      ],
-      "answer": 1,
-      "example": "那是她新买的一件漂亮的真丝连衣裙。",
-      "translation": "저것은 그녀가 새로 산 예쁜 실크 원피스 한 벌이다.",
-      "explanation": "다층 관형어의 기본 어순은 '소유/소속(她) + 지시수량(新买的一件) + 성질/묘사(漂亮的) + 재료/성질(真丝) + 중심명사(连衣裙)'입니다."
+      "chengyu": "一目了然",
+      "pinyin": "yī mù liǎo rán",
+      "meaning": "한눈에 환히 명백하게 알아보다",
+      "sentence": "通过这张直观的折线图，销售趋势____。",
+      "example": "通过这张直观的折线图，销售趋势一目了然。",
+      "translation": "이 직관적인 꺾은선 그래프를 통해 판매 추세를 한눈에 환히 알 수 있다.",
+      "difficulty": "중",
+      "id": "hch_25",
+      "meaning_en": "clear at a glance, obvious",
+      "meaning_zh": "一目了然；显而易见",
+      "translation_en": "The graphical dashboard made all test metrics clear at a glance.",
+      "translation_zh": "图表清晰直观，各项统计数据一目了然。"
     },
     {
-      "id": "hg_20",
+      "chengyu": "自相矛盾",
+      "pinyin": "zì xiāng máo dùn",
+      "meaning": "자가당착, 말이나 행동의 앞뒤가 맞지 않다",
+      "sentence": "他前面说自己不在现场，后面又描述了案发经过，显然是____。",
+      "example": "他前面说自己不在现场，后面又描述了案发经过，显然是自相矛盾。",
+      "translation": "그는 앞에서는 자신이 현장에 없었다고 말하고 뒤에서는 사건 경위를 묘사했으니 명백한 자가당착이다.",
       "difficulty": "상",
-      "type": "special_sentence",
-      "category": "가능보어 관용 표현 (吃不消 / 经不起)",
-      "question": "다음 빈칸에 들어갈 관용적 표현으로 가장 알맞은 것은?\n\"连续加班三天三夜，他的身体实在有点儿____了。\"",
-      "options": [
-        "吃不消 (감당하기 힘들다)",
-        "看不起 (무시하다)",
-        "对不起 (미안하다)",
-        "想不开 (마음을 풀지 못하다)"
-      ],
-      "answer": 1,
-      "example": "连续加班三天三夜，他的身体实在有点儿吃不消了。",
-      "translation": "사흘 밤낮으로 연속 야근을 했더니 그의 몸이 정말이지 좀 버텨내기 힘들어졌다.",
-      "explanation": "'吃不消'(견디지 못하다, 감당하기 힘들다)는 극심한 피로나 부담을 육체적/정신적으로 감당할 수 없을 때 쓰는 5급 필수 관용구입니다."
+      "id": "hch_26",
+      "meaning_en": "self-contradictory, paradox",
+      "meaning_zh": "自相矛盾；漏洞百出",
+      "translation_en": "His testimony was full of holes and self-contradictory.",
+      "translation_zh": "他的发言前后抵触，显然自相矛盾。"
     },
     {
-      "id": "hg_21",
+      "chengyu": "雪中送炭",
+      "pinyin": "xuě zhōng sòng tàn",
+      "meaning": "눈 속에 숯을 보내다 (남의 위급할 때 돕다)",
+      "sentence": "这笔及时的善款对他来说无异于____，帮他渡过了最大难关。",
+      "example": "这笔及时的善款对他来说无异于雪中送炭，帮他渡过了最大难关。",
+      "translation": "이 시의적절한 성금은 그에게 눈 속에 숯을 보내준 격(설중송탄)이어서 가장 큰 난관을 넘기게 해 주었다.",
       "difficulty": "상",
-      "type": "conjunction",
-      "category": "점층 접속사 (不仅...反而...)",
-      "question": "다음 빈칸에 들어갈 접속사 짝꿍은?\n\"批评不仅没有挫伤他的积极性，____更加激发了他的斗志。\"",
-      "options": [
-        "反而 (오히려)",
-        "固然 (물론)",
-        "难免 (불가피하게)",
-        "何必 (하필)"
-      ],
-      "answer": 1,
-      "example": "批评不仅没有挫伤他的积极性，反而更加激发了他的斗志。",
-      "translation": "비판은 그의 적극성을 꺾지 않았을 뿐만 아니라 오히려 그의 투지를 더욱 불태웠다.",
-      "explanation": "'不仅没有 ... 反而 ...'(~하지 않았을 뿐만 아니라 도리어/오히려 ~하다) 구문으로 예상과 정반대의 긍정적 결과가 나타났음을 강조합니다."
+      "id": "hch_27",
+      "meaning_en": "send charcoal in snowy weather; timely help",
+      "meaning_zh": "雪中送炭；患难相助",
+      "translation_en": "Your prompt financial assistance was true help in times of need.",
+      "translation_zh": "朋友在危急时刻的援助犹如雪中送炭。"
     },
     {
-      "id": "hg_22",
+      "chengyu": "锦上添花",
+      "pinyin": "jǐn shàng tiān huā",
+      "meaning": "비단 위에 꽃을 더하다 (좋은 일에 더 좋은 일이 겹치다)",
+      "sentence": "获得最佳团队奖，为我们今年的辉煌业绩____。",
+      "example": "获得最佳团队奖，为我们今年的辉煌业绩锦上添花。",
+      "translation": "최우수 팀 상을 수상한 것은 올해 우리의 눈부신 실적에 금상첨화가 되었다.",
       "difficulty": "상",
-      "type": "word_order",
-      "category": "쓰기 1부분 어순 배열 (존현문)",
-      "question": "다음 조각들을 올바른 존현문 어순으로 배열한 것은?\n[A] 挂着  [B] 办公室的墙上  [C] 世界地图  [D] 一幅崭新的",
-      "options": [
-        "[B] - [A] - [D] - [C]",
-        "[A] - [B] - [D] - [C]",
-        "[B] - [D] - [C] - [A]",
-        "[D] - [C] - [B] - [A]"
-      ],
-      "answer": 1,
-      "example": "办公室的墙上挂着一幅崭新的世界地图。",
-      "translation": "사무실 벽에 새것 같은 세계 지도 한 폭이 걸려 있다.",
-      "explanation": "[B]-[A]-[D]-[C] (办公室的墙上 挂着 一幅崭新的 世界地图。)가 정답입니다. 장소사(办公室的墙上) + 동사+着(挂着) + 수량사(一幅崭新的) + 명사(世界地图)."
+      "id": "hch_28",
+      "meaning_en": "add flowers to embroidery; make what is good even better",
+      "meaning_zh": "锦上添花；好上加好",
+      "translation_en": "Winning the national trophy on his graduation was icing on the cake.",
+      "translation_zh": "获得全额奖学金为他的毕业成果锦上添花。"
+    },
+    {
+      "chengyu": "坐井观天",
+      "pinyin": "zuò jǐng guān tiān",
+      "meaning": "우물 안 개구리처럼 식견이 좁다",
+      "sentence": "如果不走出国门开阔眼界，就很容易陷入____的狭隘境地。",
+      "example": "如果不走出国门开阔眼界，就很容易陷入坐井观天的狭隘境地。",
+      "translation": "만약 세계로 나아가 시야를 넓히지 않는다면 우물 안 개구리 같은 편협한 처지에 빠지기 쉽다.",
+      "difficulty": "상",
+      "id": "hch_29",
+      "meaning_en": "view the sky from the bottom of a well; narrow-minded",
+      "meaning_zh": "坐井观天；目光短浅",
+      "translation_en": "Do not judge the vast world from a narrow viewpoint like a frog in a well.",
+      "translation_zh": "看待世界应当放宽视野，切勿坐井观天。"
+    },
+    {
+      "chengyu": "拔苗助长",
+      "pinyin": "bá miáo zhù zhǎng",
+      "meaning": "싹을 뽑아 자라게 하다 (성급하게 성과를 내려다 일을 그르치다)",
+      "sentence": "教育孩子不能急躁，过度施压往往会起到____的反效果。",
+      "example": "教育孩子不能急躁，过度施压往往会起到拔苗助长的反效果。",
+      "translation": "자녀 교육은 조급해해서는 안 되며, 과도한 압박은 종종 싹을 뽑아 자라게 하려다 죽이는(발묘조장) 역효과를 낳는다.",
+      "difficulty": "상",
+      "id": "hch_30",
+      "meaning_en": "pull up seedlings to help them grow; spoil things by impatience",
+      "meaning_zh": "拔苗助长；急功近利",
+      "translation_en": "Excessive tutoring may backfire like pulling up seedlings to make them grow.",
+      "translation_zh": "过度施压犹如拔苗助长，往往适得其反。"
     }
   ],
   "cloze": [
@@ -1124,306 +1290,468 @@ window.HSK5_DATA = {
       "explanation": "원칙 위반이나 부정부패, 안전사고에 대해 일절 타협하지 않는 태도를 나타낼 때 현대 중국어 5/6급 시사 배합으로 '零容忍'을 씁니다."
     }
   ],
-  "chengyu": [
+  "grammar": [
     {
-      "chengyu": "举一反三",
-      "pinyin": "jǔ yī fǎn sān",
-      "meaning": "하나를 듣고 셋을 미루어 알다 (응용력이 뛰어나다)",
-      "sentence": "学习不仅要掌握基础知识，更要善于____，触类旁通。",
-      "example": "学习不仅要掌握基础知识，更要善于举一反三，触类旁通。",
-      "translation": "공부는 기초 지식을 습득해야 할 뿐만 아니라, 하나를 듣고 셋을 미루어 응용할 줄 알아야 한다.",
+      "id": "hg_01",
       "difficulty": "하",
-      "id": "hch_01"
+      "type": "special_sentence",
+      "category": "把자문 (처치문 동사 완료 성분)",
+      "question": "다음 중 [把자문]의 어순과 문법 규칙이 가장 올바른 문장은?",
+      "options": [
+        "他把昨天的作业没做完。",
+        "请你把这篇报告认真地修改一遍。",
+        "他把那个重要的秘密说了。",
+        "我把钥匙忘在家里没。"
+      ],
+      "answer": 2,
+      "example": "请你把这篇报告认真地修改一遍。",
+      "translation": "이 보고서를 진지하게 한 번 수정해 주십시오.",
+      "explanation": "把자문의 동사는 단독으로 끝날 수 없으며 반드시 보어(修改一遍), 동태조사(了) 등 기타 성분이 결합해야 합니다. 부정부사(没, 不)는 반드시 '把' 앞에 와야 합니다 (没把作业做完).",
+      "category_en": "Ba-sentence (Disposal structure with complement)",
+      "category_zh": "把字句（处置句动词完成补语）",
+      "explanation_en": "In a Ba-sentence (把), the verb must have a complement (e.g. 修改一遍) or particle (了) and cannot stand alone. Negation (没, 不) must precede 把.",
+      "explanation_zh": "把字句的动词不可单独出现，必须带补语或助词。否定词（没/不）必须置于‘把’字之前。"
     },
     {
-      "chengyu": "循序渐进",
-      "pinyin": "xún xù jiàn jìn",
-      "meaning": "순서를 따라 점진적으로 나아가다",
-      "sentence": "无论是学习还是健身，都必须____，不能急于求成。",
-      "example": "无论是学习还是健身，都必须循序渐进，不能急于求成。",
-      "translation": "공부든 운동이든 모두 순서를 따라 차근차근 나아가야 하며, 성급하게 성과를 내려 해서는 안 된다.",
+      "id": "hg_02",
       "difficulty": "하",
-      "id": "hch_02"
+      "type": "special_sentence",
+      "category": "被자문 (피동문 부정사 위치)",
+      "question": "다음 문장에서 부정부사 '还没'이 들어갈 가장 적절한 위치는?\n\"这个问题【 (A) 】被【 (B) 】专家们【 (C) 】圆满地【 (D) 】解决了。\"",
+      "options": [
+        "(A) 위치",
+        "(B) 위치",
+        "(C) 위치",
+        "(D) 위치"
+      ],
+      "answer": 1,
+      "example": "这个问题还没被专家们圆满地解决。",
+      "translation": "이 문제는 아직 전문가들에 의해 원만하게 해결되지 않았다.",
+      "explanation": "被자문에서 부정부사(没, 还没有, 不)나 능원동사(想, 会, 能)는 반드시 피동 표식인 '被'의 【앞】에 놓여야 합니다 (这个问题还没被专家们解决).",
+      "category_en": "Bei-sentence (Passive voice negation placement)",
+      "category_zh": "被字句（被动句否定词位置）",
+      "explanation_en": "In a Bei-sentence (被), negative adverbs (没, 还没有) and modal verbs must be placed directly BEFORE '被'.",
+      "explanation_zh": "被字句中，否定副词（没/不）或能愿动词必须位于被动标志‘被’的前面。"
     },
     {
-      "chengyu": "半途而废",
-      "pinyin": "bàn tú ér fèi",
-      "meaning": "중도에 그만두다, 포기하다",
-      "sentence": "既然已经开始了这项科研项目，就绝不能____。",
-      "example": "既然已经开始了这项科研项目，就绝不能半途而废。",
-      "translation": "이미 이 과학 연구 프로젝트를 시작한 이상 결코 중도에 포기해서는 안 된다.",
+      "id": "hg_03",
       "difficulty": "하",
-      "id": "hch_03"
+      "type": "special_sentence",
+      "category": "존현문 (存现句 장소 표현)",
+      "question": "다음 중 사람이나 사물의 존재·출현을 나타내는 [존현문]으로 문법상 가장 올바른 것은?",
+      "options": [
+        "在桌子上放着几本厚厚的专业书。",
+        "桌子上放着几本厚厚的专业书。",
+        "桌子上放这几本厚厚的专业书。",
+        "厚厚的专业书在桌子上放着了。"
+      ],
+      "answer": 2,
+      "example": "桌子上放着几本厚厚的专业书。",
+      "translation": "책상 위에 두꺼운 전공 서적 몇 권이 놓여 있다.",
+      "explanation": "존현문의 기본 공식은 '장소사 + 동사 + 着/了 + 불특정 대상(수량+명사)'입니다. 흔한 오류로 장소사 앞에 전치사 '在'를 붙이는데, 존현문에서는 문두 장소 앞에 '在'를 쓰지 않습니다.",
+      "category_en": "Existential sentence (Zunxianju location marker)",
+      "category_zh": "存现句（处所词位于句首不用在）",
+      "explanation_en": "In an existential sentence, the location noun phrase stands at the very beginning without the preposition '在'.",
+      "explanation_zh": "存现句基本句型为处所词+动词+着/了+人/物，句首处所词前不加介词‘在’。"
     },
     {
-      "chengyu": "坚持不懈",
-      "pinyin": "jiān chí bú xiè",
-      "meaning": "포기하지 않고 끈기 있게 계속하다",
-      "sentence": "只要____地努力下去，梦想终有一天会变成现实。",
-      "example": "只要坚持不懈地努力下去，梦想终有一天会变成现实。",
-      "translation": "포기하지 않고 끈기 있게 계속 노력하기만 한다면 꿈은 마침내 현실이 될 것이다.",
+      "id": "hg_04",
       "difficulty": "하",
-      "id": "hch_04"
+      "type": "special_sentence",
+      "category": "겸어문 (兼语句 사동사)",
+      "question": "다음 빈칸에 들어갈 사동사로 알맞지 않은 것은?\n\"这次深刻的教训____他意识到了团队合作的重要性。\"",
+      "options": [
+        "使 (shǐ)",
+        "让 (ràng)",
+        "令 (lìng)",
+        "被 (bèi)"
+      ],
+      "answer": 4,
+      "example": "这次深刻的教训使他意识到了团队合作的重要性。",
+      "translation": "이번 뼈아픈 교훈은 그로 하여금 팀워크의 중요성을 깨닫게 만들었다.",
+      "explanation": "'被'는 피동 표식으로 겸어 사동 구문에 올 수 없습니다. '주어 + 사동사(使/让/令) + 겸어(사람) + 술어' 구조로 '~로 하여금 ...하게 만들다'라는 뜻입니다.",
+      "category_en": "Pivotal sentence (Causative verbs 让/使/叫)",
+      "category_zh": "兼语句（使役动词兼语结构）",
+      "explanation_en": "In pivotal sentences with causative verbs (让, 使, 请), the object of the first verb serves as the subject of the second verb.",
+      "explanation_zh": "使役兼语句中，前一动词的宾语同时兼任后一动词的主语。"
     },
     {
-      "chengyu": "全力以赴",
-      "pinyin": "quán lì yǐ fù",
-      "meaning": "모든 힘을 다해 전력투구하다",
-      "sentence": "面对即将到来的决赛，每位队员都表示会____。",
-      "example": "面对即将到来的决赛，每位队员都表示会全力以赴。",
-      "translation": "곧 다가올 결승전을 앞두고 모든 팀원이 전력투구하겠다고 밝혔다.",
+      "id": "hg_05",
       "difficulty": "하",
-      "id": "hch_05"
+      "type": "complement",
+      "category": "정도보어 (程度补语 得)",
+      "question": "다음 중 상태/정도 보어 표식 '得'의 쓰임이 가장 올바른 문장은?",
+      "options": [
+        "他跑得很极快。",
+        "听到这个好消息，大家高兴得跳了起来。",
+        "这道难题他做得非常没好。",
+        "他感动得流下眼泪了得很多。"
+      ],
+      "answer": 2,
+      "example": "听到这个好消息，大家高兴得跳了起来。",
+      "translation": "이 기쁜 소식을 듣고 모두가 너무 기뻐서 펄쩍 뛰어올랐다.",
+      "explanation": "정도보어 뒤에 구체적인 상태 묘사가 연결되어 '기뻐서 펄쩍 뛰어올랐다(高兴得跳了起来)'가 가장 자연스럽습니다. 정도부사 很과 极는 중복 수식할 수 없으며, 부정은 '做得不好' 형태로 씁니다.",
+      "category_en": "Degree complement (Structural particle 得)",
+      "category_zh": "程度补语（结构助词‘得’）",
+      "explanation_en": "When describing degree or manner after a verb/adjective, use the structural particle '得' followed by the complement.",
+      "explanation_zh": "动词或形容词后引出状态或程度评价时，使用结构助词‘得’。"
     },
     {
-      "chengyu": "同舟共济",
-      "pinyin": "tóng zhōu gòng jì",
-      "meaning": "같은 배를 타고 함께 강을 건너다 (환난을 함께 극복하다)",
-      "sentence": "在这次经济危机中，全公司员工____，共渡难关。",
-      "example": "在这次经济危机中，全公司员工同舟共济，共渡难关。",
-      "translation": "이번 경제 위기 속에서 전 사원이 한마음으로 힘을 합쳐 난관을 함께 극복했다.",
-      "difficulty": "중",
-      "id": "hch_06"
-    },
-    {
-      "chengyu": "取长补短",
-      "pinyin": "qǔ cháng bǔ duǎn",
-      "meaning": "장점을 취해 단점을 보완하다",
-      "sentence": "团队成员之间应该互相学习，____，共同进步。",
-      "example": "团队成员之间应该互相学习，取长补短，共同进步。",
-      "translation": "팀원들 간에는 서로 배우고 장점을 취해 단점을 보완하며 함께 발전해야 한다.",
+      "id": "hg_06",
       "difficulty": "하",
-      "id": "hch_07"
+      "type": "conjunction",
+      "category": "접속사 호응 (유일 조건 只有...才...)",
+      "question": "다음 빈칸에 알맞은 접속사 짝꿍은?\n\"____坚持实事求是的科学态度，____能得出真正客观的结论。\"",
+      "options": [
+        "只要 ... 就 ...",
+        "只有 ... 才 ...",
+        "无论 ... 都 ...",
+        "与其 ... 不如 ..."
+      ],
+      "answer": 2,
+      "example": "只有坚持实事求是的科学态度，才能得出真正客观的结论。",
+      "translation": "오직 사실에 입각한 과학적 태도를 견지해야만 비로소 진정으로 객관적인 결론을 도출할 수 있다.",
+      "explanation": "'只有 ... 才 ...'(오직 ~해야만 비로소 ~하다)가 정답입니다. 뒷절에 '才'가 있으므로 유일 조건을 나타내는 '只有'와 짝을 이룹니다. (충분 조건인 只要는 就와 호응).",
+      "category_en": "Condition conjunction (Only if ... then: 只有...才...)",
+      "category_zh": "条件复句（唯一条件：只有...才...）",
+      "explanation_en": "'只有...才...' expresses a necessary/exclusive condition: only if A is met, will B occur.",
+      "explanation_zh": "‘只有……才……’表示唯一必要条件，前后分句严格配对。"
     },
     {
-      "chengyu": "各抒己见",
-      "pinyin": "gè shū jǐ jiàn",
-      "meaning": "각자 자신의 의견과 견해를 밝히다",
-      "sentence": "在今天的研讨会上，与会专家们____，探讨方案。",
-      "example": "在今天的研讨会上，与会专家们各抒己见，探讨方案。",
-      "translation": "오늘 세미나에서 참석한 전문가들은 각자 자신의 견해를 밝히며 방안을 논의했다.",
-      "difficulty": "중",
-      "id": "hch_08"
-    },
-    {
-      "chengyu": "随机应变",
-      "pinyin": "suí jī yìng biàn",
-      "meaning": "상황의 변화에 맞추어 임기응변하다",
-      "sentence": "面对谈判桌上的突发状况，他展现出了极强的____能力。",
-      "example": "面对谈判桌上的突发状况，他展现出了极强的随机应变能力。",
-      "translation": "협상 테이블의 돌발 상황에 직면하여 그는 매우 뛰어난 임기응변 능력을 보여주었다.",
-      "difficulty": "상",
-      "id": "hch_09"
-    },
-    {
-      "chengyu": "络绎不绝",
-      "pinyin": "luò yì bù jué",
-      "meaning": "(사람·수레 등의 왕래가) 끊이지 않고 이어지다",
-      "sentence": "故宫博物院每到节假日，前来参观的中外游客都____。",
-      "example": "故宫博物院每到节假日，前来参观的中外游客都络绎不绝。",
-      "translation": "고궁박물원은 휴일만 되면 관람하러 오는 국내외 관광객들의 발길이 끊이지 않는다.",
-      "difficulty": "중",
-      "id": "hch_10"
-    },
-    {
-      "chengyu": "恍然大悟",
-      "pinyin": "huǎng rán dà wù",
-      "meaning": "문득 크게 깨닫다, 번쩍 알아차리다",
-      "sentence": "听了老师耐心的解释后，他这才____，解开了心中的疑惑。",
-      "example": "听了老师耐心的解释后，他这才恍然大悟，解开了心中的疑惑。",
-      "translation": "선생님의 인내심 있는 설명을 듣고 나서야 그는 비로소 크게 깨닫고 마음속 의문을 풀었다.",
-      "difficulty": "상",
-      "id": "hch_11"
-    },
-    {
-      "chengyu": "犹豫不决",
-      "pinyin": "yóu yù bù jué",
-      "meaning": "결정을 내리지 못하고 주저하다",
-      "sentence": "商机稍纵即逝，在关键时刻切记不可____。",
-      "example": "商机稍纵即逝，在关键时刻切记不可犹豫不决。",
-      "translation": "비즈니스 기회는 순식간에 사라지므로 결정적인 순간에 결코 주저해서는 안 된다.",
-      "difficulty": "중",
-      "id": "hch_12"
-    },
-    {
-      "chengyu": "耐人寻味",
-      "pinyin": "nài rén xún wèi",
-      "meaning": "여운이 길고 깊이 음미해 볼 가치가 있다",
-      "sentence": "这部话剧的情节引人入胜，结局更是____。",
-      "example": "这部话剧的情节引人入胜，结局更是耐人寻味。",
-      "translation": "이 연극의 줄거리는 매우 매력적이며 결말은 더욱 깊은 여운을 남긴다.",
-      "difficulty": "중",
-      "id": "hch_13"
-    },
-    {
-      "chengyu": "迫不及待",
-      "pinyin": "pò bù jí dài",
-      "meaning": "너무 조급하여 잠시도 기다릴 수 없다",
-      "sentence": "刚收到录取通知书，他就____地打电话告诉了父母。",
-      "example": "刚收到录取通知书，他就迫不及待地打电话告诉了父母。",
-      "translation": "합격 통지서를 받자마자 그는 잠시도 기다리지 못하고 부모님께 전화해 알렸다.",
+      "id": "hg_07",
       "difficulty": "하",
-      "id": "hch_14"
+      "type": "special_sentence",
+      "category": "비교문 (A 不如 B)",
+      "question": "다음 중 비교문 표현이 문법적으로 가장 자연스러운 것은?",
+      "options": [
+        "现在的实际情况不如原来预期的那么乐观。",
+        "他比我非常高。",
+        "今天的天气比昨天更冷得多得很。",
+        "他的汉语水平跟我不如一样。"
+      ],
+      "answer": 1,
+      "example": "现在的实际情况不如原来预期的那么乐观。",
+      "translation": "현재의 실제 상황은 원래 예상했던 것만큼 그렇게 낙관적이지 못하다.",
+      "explanation": "'A 不如 B + 那么 + 형용사'(A는 B만큼 ~하지 못하다)의 표준 비교 구문입니다. 比 뒤에는 구체적 차이(高三厘米, 高得多)를 나타내며 정도부사 '非常/很'을 쓸 수 없습니다.",
+      "category_en": "Comparative sentence (Inferior comparison: A 不如 B)",
+      "category_zh": "比较句（否定推论：A不如B）",
+      "explanation_en": "'A 不如 B + Adj' means A is not as good as B in that adjective quality.",
+      "explanation_zh": "‘A不如B’表示A不及B，后可接形容词或动词短语。"
     },
     {
-      "chengyu": "津津有味",
-      "pinyin": "jīn jīn yǒu wèi",
-      "meaning": "매우 흥미진진하게, 맛깔스럽게",
-      "sentence": "孩子们正围坐在电视机前，____地看着动画片。",
-      "example": "孩子们正围坐在电视机前，津津有味地看着动画片。",
-      "translation": "아이들이 텔레비전 앞에 둘러앉아 흥미진진하게 만화영화를 보고 있다.",
-      "difficulty": "하",
-      "id": "hch_15"
-    },
-    {
-      "chengyu": "理所当然",
-      "pinyin": "lǐ suǒ dāng rán",
-      "meaning": "도리나 이치상 응당 당연하다",
-      "sentence": "父母为我们付出了很多，我们不应该把这一切视为____。",
-      "example": "父母为我们付出了很多，我们不应该把这一切视为理所当然。",
-      "translation": "부모님께서 우리를 위해 많은 헌신을 하셨으니, 우리는 이 모든 것을 당연하게 여겨서는 안 된다.",
+      "id": "hg_08",
       "difficulty": "중",
-      "id": "hch_16"
+      "type": "conjunction",
+      "category": "접속사 호응 (인과 도치 之所以...是因为...)",
+      "question": "다음 문장의 빈칸에 들어갈 인과 접속사 짝꿍은?\n\"他____能够克服重重困难取得成功，____有着坚定的信念。\"",
+      "options": [
+        "因为 ... 所以 ...",
+        "之所以 ... 是因为 ...",
+        "虽然 ... 但是 ...",
+        "既然 ... 就 ..."
+      ],
+      "answer": 2,
+      "example": "他之所以能够克服重重困难取得成功，是因为有着坚定的信念。",
+      "translation": "그가 겹겹의 어려움을 극복하고 성공을 거둘 수 있었던 까닭은 확고한 신념이 있었기 때문이다.",
+      "explanation": "'之所以 ... 是因为 ...'(그가 ~한 까닭은 ~때문이다) 구문입니다. 결과('取得成功')를 앞절에서 먼저 제시하고 원인('有着坚定的信念')을 뒷절에서 밝히는 고득점 패턴입니다.",
+      "category_en": "Causal inversion (The reason why ... is because: 之所以...是因为...)",
+      "category_zh": "因果倒装（之所以……是因为……）",
+      "explanation_en": "Inverted causal pattern: state the result first with 之所以, then give the reason with 是因为.",
+      "explanation_zh": "先指出结果（之所以），再阐述根本原因（是因为）。"
     },
     {
-      "chengyu": "莫名其妙",
-      "pinyin": "mò míng qí miào",
-      "meaning": "영문을 알 수 없다, 까닭을 몰라 어리둥절하다",
-      "sentence": "他今天一句话都没说就突然发脾气，真让人觉得____。",
-      "example": "他今天一句话都没说就突然发脾气，真让人觉得莫名其妙。",
-      "translation": "그가 오늘 한마디 말도 없이 갑자기 화를 내서 정말 영문을 알 수 없게 만들었다.",
+      "id": "hg_09",
       "difficulty": "중",
-      "id": "hch_17"
+      "type": "conjunction",
+      "category": "접속사 호응 (선택 与其...不如...)",
+      "question": "다음 빈칸에 들어갈 알맞은 접속사는?\n\"遇到问题，____一味地互相推卸责任，____坐下来共同寻找解决办法。\"",
+      "options": [
+        "宁可 ... 也不 ...",
+        "即使 ... 也 ...",
+        "与其 ... 不如 ...",
+        "不仅 ... 而且 ..."
+      ],
+      "answer": 3,
+      "example": "遇到问题，与其一味地互相推卸责任，不如坐下来共同寻找解决办法。",
+      "translation": "문제에 부딪혔을 때 덮어놓고 서로 책임을 떠넘기느니 차라리 마주 앉아 함께 해결 방법을 찾는 편이 낫다.",
+      "explanation": "'与其 ... 不如 ...'(~하느니 차라리 ~하는 것이 낫다)가 정답입니다. 전자보다 후자의 방안이 더 바람직함을 나타낼 때 쓰는 5급 초빈출 접속사입니다.",
+      "category_en": "Preference conjunction (Rather than A, better B: 与其...不如...)",
+      "category_zh": "选择复句（取舍：与其……不如……）",
+      "explanation_en": "Indicates abandoning choice A and preferring choice B ('Rather than A, better B').",
+      "explanation_zh": "表示在两者权衡中放弃前者、选取后者。"
     },
     {
-      "chengyu": "爱不释手",
-      "pinyin": "ài bù shì shǒu",
-      "meaning": "너무 마음에 들어 손에서 놓지 못하다",
-      "sentence": "爷爷送给他的那块古董手表，他喜欢得____。",
-      "example": "爷爷送给他的那块古董手表，他喜欢得爱不释手。",
-      "translation": "할아버지께서 선물해 주신 그 골동품 시계가 너무 마음에 들어 그는 손에서 놓지 못했다.",
-      "difficulty": "하",
-      "id": "hch_18"
-    },
-    {
-      "chengyu": "家喻户晓",
-      "pinyin": "jiā yù hù xiǎo",
-      "meaning": "집집마다 다 알다, 널리 알려지다",
-      "sentence": "孙悟空大闹天宫的神话故事在中国几乎是____的。",
-      "example": "孙悟空大闹天宫的神话故事在中国几乎是家喻户晓的。",
-      "translation": "손오공이 천궁을 대소동케 한 신화 이야기는 중국에서 거의 집집마다 다 알 정도로 유명하다.",
+      "id": "hg_10",
       "difficulty": "중",
-      "id": "hch_19"
+      "type": "conjunction",
+      "category": "접속사 호응 (가설 양보 哪怕...也...)",
+      "question": "다음 빈칸에 들어갈 가장 알맞은 접속사는?\n\"____这次实验遇到再大的阻碍，科研团队____决不放弃。\"",
+      "options": [
+        "哪怕 ... 也 ...",
+        "既然 ... 就 ...",
+        "因为 ... 所以 ...",
+        "只要 ... 就 ..."
+      ],
+      "answer": 1,
+      "example": "哪怕这次实验遇到再大的阻碍，科研团队也决不放弃。",
+      "translation": "설령 이번 실험이 아무리 큰 장애물에 부딪힐지라도 연구팀은 결코 포기하지 않을 것이다.",
+      "explanation": "'哪怕 ... 也 ...'(설령 ~할지라도 ~하다)가 정답입니다. 극단적인 가설 양보 상황('遇到再大的阻碍')을 전제하고 뒷절의 확고한 의지('决不放弃')와 호응합니다.",
+      "category_en": "Concession conjunction (Even if ... still: 哪怕...也...)",
+      "category_zh": "让步假设（哪怕……也……）",
+      "explanation_en": "'哪怕...也...' introduces an extreme hypothetical condition while affirming the conclusion remains valid.",
+      "explanation_zh": "引入极端假设情况，但后句依然坚决施行。"
     },
     {
-      "chengyu": "独一无二",
-      "pinyin": "dú yī wú èr",
-      "meaning": "유일무이하다, 둘도 없다",
-      "sentence": "世界上没有两片完全相同的树叶，每个人都是____的。",
-      "example": "世界上没有两片完全相同的树叶，每个人都是独一无二的。",
-      "translation": "세상에 완전히 똑같은 나뭇잎이 두 장 없듯 모든 사람은 유일무이한 존재이다.",
-      "difficulty": "하",
-      "id": "hch_20"
-    },
-    {
-      "chengyu": "实事求是",
-      "pinyin": "shí shì qiú shì",
-      "meaning": "사실에 입각하여 진리를 탐구하다 (있는 그대로 평가하다)",
-      "sentence": "做学术研究必须坚持____的态度，严禁弄虚作假。",
-      "example": "做学术研究必须坚持实事求是的态度，严禁弄虚作假。",
-      "translation": "학술 연구를 할 때는 반드시 사실에 입각해 진리를 탐구하는 태도를 견지해야 하며 허위 조작을 엄금해야 한다.",
+      "id": "hg_11",
       "difficulty": "중",
-      "id": "hch_21"
+      "type": "complement",
+      "category": "방향보어 파생 의미 (起来 vs 下去)",
+      "question": "다음 문장에서 동작의 지속을 나타내는 방향보어로 알맞은 것은?\n\"只要我们坚持____，胜利最终一定会属于我们。\"",
+      "options": [
+        "起来",
+        "下去",
+        "出来",
+        "过来"
+      ],
+      "answer": 2,
+      "example": "只要我们坚持下去，胜利最终一定会属于我们。",
+      "translation": "우리가 끝까지 계속 버텨내기만 한다면 승리는 마침내 반드시 우리의 것이 될 것이다.",
+      "explanation": "동사 뒤에 붙는 '下去'는 현재 진행 중인 동작이 미래로 계속 이어짐(지속)을 나타냅니다 (坚持下去). 반면 '起来'는 동작의 시작과 계속(哭了起来) 또는 분산에서 집중을 나타냅니다.",
+      "category_en": "Directional complement derivative meaning (起来 vs 下去)",
+      "category_zh": "复合趋向补语引申义（起来与下去）",
+      "explanation_en": "起来 implies starting and continuing, or assembling; 下去 implies continuing from past to future.",
+      "explanation_zh": "‘起来’常表动作开始并持续或汇聚，‘下去’表动作向后继续发展。"
     },
     {
-      "chengyu": "微不足道",
-      "pinyin": "wēi bù zú dào",
-      "meaning": "하찮아서 말할 가치도 없다",
-      "sentence": "虽然个人的力量看似____，但凝聚起来就是巨大的奇迹。",
-      "example": "虽然个人的力量看似微不足道，但凝聚起来就是巨大的奇迹。",
-      "translation": "비록 개인의 힘은 보잘것없어 보일지라도 하나로 모이면 거대한 기적이 된다.",
-      "difficulty": "상",
-      "id": "hch_22"
-    },
-    {
-      "chengyu": "千方百计",
-      "pinyin": "qiān fāng bǎi jì",
-      "meaning": "온갖 방법과 수단을 다 쓰다",
-      "sentence": "为了完成这项紧急任务，大家都在____地寻找解决方案。",
-      "example": "为了完成这项紧急任务，大家都在千方百计地寻找解决方案。",
-      "translation": "이 긴급 임무를 완수하기 위해 모두가 백방으로 해결책을 찾고 있다.",
-      "difficulty": "상",
-      "id": "hch_23"
-    },
-    {
-      "chengyu": "不可思议",
-      "pinyin": "bù kě sī yì",
-      "meaning": "불가사의하다, 사람의 생각으로 헤아릴 수 없다",
-      "sentence": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到____。",
-      "example": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到不可思议。",
-      "translation": "불과 몇 년 사이에 이 가난한 소도시가 현대화된 대도시로 발전하다니 놀랍고도 불가사의하다.",
-      "difficulty": "상",
-      "id": "hch_24"
-    },
-    {
-      "chengyu": "一目了然",
-      "pinyin": "yī mù liǎo rán",
-      "meaning": "한눈에 환히 명백하게 알아보다",
-      "sentence": "通过这张直观的折线图，销售趋势____。",
-      "example": "通过这张直观的折线图，销售趋势一目了然。",
-      "translation": "이 직관적인 꺾은선 그래프를 통해 판매 추세를 한눈에 환히 알 수 있다.",
+      "id": "hg_12",
       "difficulty": "중",
-      "id": "hch_25"
+      "type": "complement",
+      "category": "가능보어 (可能补语 得/不)",
+      "question": "다음 중 \"양이 너무 많아서 다 먹을 수 없다\"를 뜻하는 올바른 가능보어 표현은?",
+      "options": [
+        "吃不完",
+        "没吃完",
+        "不吃完",
+        "吃得了"
+      ],
+      "answer": 1,
+      "example": "桌上点的菜实在太多了，我们三个人根本吃不完。",
+      "translation": "식탁에 주문한 요리가 너무 많아서 우리 세 사람이 도저히 다 먹을 수 없다.",
+      "explanation": "가능보어 부정은 '동사 + 不 + 보어' 공식으로 '吃不完'(다 먹을 수 없다)이 올바릅니다. '没吃完'은 동작의 미완료('아직 다 못 먹었다')를 나타내는 결과보어의 부정입니다.",
+      "category_en": "Potential complement (Can/Cannot: 动词 + 得/不 + 补语)",
+      "category_zh": "可能补语（听得懂 / 听不懂）",
+      "explanation_en": "Insert '得' (affirmative) or '不' (negative) between the verb and result/direction complement.",
+      "explanation_zh": "动词与结果/趋向补语之间插入‘得’或‘不’表示是否具备能力或可能性。"
     },
     {
-      "chengyu": "自相矛盾",
-      "pinyin": "zì xiāng máo dùn",
-      "meaning": "자가당착, 말이나 행동의 앞뒤가 맞지 않다",
-      "sentence": "他前面说自己不在现场，后面又描述了案发经过，显然是____。",
-      "example": "他前面说自己不在现场，后面又描述了案发经过，显然是自相矛盾。",
-      "translation": "그는 앞에서는 자신이 현장에 없었다고 말하고 뒤에서는 사건 경위를 묘사했으니 명백한 자가당착이다.",
-      "difficulty": "상",
-      "id": "hch_26"
+      "id": "hg_13",
+      "difficulty": "중",
+      "type": "preposition",
+      "category": "개사 (전치사) 호응 (关于 vs 对于)",
+      "question": "다음 빈칸에 알맞은 전치사는?\n\"____这个复杂的新能源项目，专家组进行了深入的技术论证。\"",
+      "options": [
+        "对于",
+        "朝",
+        "从",
+        "由"
+      ],
+      "answer": 1,
+      "example": "对于这个复杂的新能源项目，专家组进行了深入的技术论证。",
+      "translation": "이 복잡한 신에너지 프로젝트에 대하여 전문가 그룹이 심도 있는 기술 검증을 진행했다.",
+      "explanation": "'对于'(~에 대하여)는 특정 대상에 대한 태도나 조치를 취할 때 문두에서 대상을 제시합니다. (关于는 범위/관련 내용을 나타내며 술어 앞에 바로 올 수 없습니다).",
+      "category_en": "Preposition usage (About/Regarding: 关于 vs 对于)",
+      "category_zh": "介词辨析（关于与对于）",
+      "explanation_en": "'关于' introduces the general topic/scope; '对于' introduces the targeted recipient or attitude object.",
+      "explanation_zh": "‘关于’指出关涉范围，多置于句首；‘对于’指出对待对象或态度。"
     },
     {
-      "chengyu": "雪中送炭",
-      "pinyin": "xuě zhōng sòng tàn",
-      "meaning": "눈 속에 숯을 보내다 (남의 위급할 때 돕다)",
-      "sentence": "这笔及时的善款对他来说无异于____，帮他渡过了最大难关。",
-      "example": "这笔及时的善款对他来说无异于雪中送炭，帮他渡过了最大难关。",
-      "translation": "이 시의적절한 성금은 그에게 눈 속에 숯을 보내준 격(설중송탄)이어서 가장 큰 난관을 넘기게 해 주었다.",
-      "difficulty": "상",
-      "id": "hch_27"
+      "id": "hg_14",
+      "difficulty": "중",
+      "type": "conjunction",
+      "category": "접속사 호응 (선택 宁可...也...)",
+      "question": "다음 빈칸에 알맞은 접속사 짝꿍은?\n\"为了保护消费者的权益，我们____承担经济损失，____绝不销售不合格商品。\"",
+      "options": [
+        "宁可 ... 也 ...",
+        "既然 ... 就 ...",
+        "尽管 ... 但是 ...",
+        "即使 ... 也 ..."
+      ],
+      "answer": 1,
+      "example": "为了保护消费者的权益，我们宁可承担经济损失，也绝不销售不合格商品。",
+      "translation": "소비자의 권익을 보호하기 위해 우리는 차라리 경제적 손실을 감수할지언정 결코 불합격 상품을 판매하지 않겠다.",
+      "explanation": "'宁可 ... 也(不) ...'(차라리 ~할지언정 결코 ~하지 않겠다) 구문입니다. 큰 희생을 감수하고서라도 원칙을 지키겠다는 강한 결단을 나타냅니다.",
+      "category_en": "Determined choice conjunction (Would rather ... than: 宁可...也...)",
+      "category_zh": "决择复句（宁可……也……）",
+      "explanation_en": "'宁可...也...' expresses strong willingness to accept hardship rather than compromise.",
+      "explanation_zh": "表示两害相权取其轻，宁愿承受代价也要达成目的。"
     },
     {
-      "chengyu": "锦上添花",
-      "pinyin": "jǐn shàng tiān huā",
-      "meaning": "비단 위에 꽃을 더하다 (좋은 일에 더 좋은 일이 겹치다)",
-      "sentence": "获得最佳团队奖，为我们今年的辉煌业绩____。",
-      "example": "获得最佳团队奖，为我们今年的辉煌业绩锦上添花。",
-      "translation": "최우수 팀 상을 수상한 것은 올해 우리의 눈부신 실적에 금상첨화가 되었다.",
-      "difficulty": "상",
-      "id": "hch_28"
+      "id": "hg_15",
+      "difficulty": "중",
+      "type": "special_sentence",
+      "category": "연동문 (连动句 목적/방식)",
+      "question": "다음 중 동작의 방식이나 수단을 나타내는 [연동문]으로 가장 자연스러운 것은?",
+      "options": [
+        "他坐地铁去市中心参加学术研讨会。",
+        "他去市中心坐地铁参加学术研讨会。",
+        "他参加学术研讨会坐地铁去市中心。",
+        "他坐地铁参加去市中心学术研讨会。"
+      ],
+      "answer": 1,
+      "example": "他坐地铁去市中心参加学术研讨会。",
+      "translation": "그는 지하철을 타고 도심으로 가서 학술 세미나에 참석한다.",
+      "explanation": "연동문에서 수단이나 방식(坐地铁)을 나타내는 동사구가 첫 번째 동작으로 오고, 목적(去市中心参加研讨会)이 뒤이어 발생하는 시간 순서대로 배열됩니다.",
+      "category_en": "Serial verb construction (Manner / Purpose: 连动句)",
+      "category_zh": "连动句（方式与目的）",
+      "explanation_en": "In a serial verb sentence (S + V1 + O1 + V2 + O2), V1 often denotes method or purpose for V2.",
+      "explanation_zh": "两个动词连续出现，第一动词常表第二动词的方式或手段。"
     },
     {
-      "chengyu": "坐井观天",
-      "pinyin": "zuò jǐng guān tiān",
-      "meaning": "우물 안 개구리처럼 식견이 좁다",
-      "sentence": "如果不走出国门开阔眼界，就很容易陷入____的狭隘境地。",
-      "example": "如果不走出国门开阔眼界，就很容易陷入坐井观天的狭隘境地。",
-      "translation": "만약 세계로 나아가 시야를 넓히지 않는다면 우물 안 개구리 같은 편협한 처지에 빠지기 쉽다.",
+      "id": "hg_16",
       "difficulty": "상",
-      "id": "hch_29"
+      "type": "word_order",
+      "category": "쓰기 1부분 어순 배열 (동사 술어문)",
+      "question": "다음 조각들을 문법에 맞게 올바른 순서로 배열한 것은?\n[A] 这项科研成果  [B] 广泛的应用  [C] 在各个领域得到了  [D] 很快",
+      "options": [
+        "[A] - [D] - [C] - [B]",
+        "[A] - [C] - [B] - [D]",
+        "[C] - [A] - [D] - [B]",
+        "[D] - [B] - [A] - [C]"
+      ],
+      "answer": 1,
+      "example": "这项科研成果很快在各个领域得到了广泛的应用。",
+      "translation": "이 과학 연구 성과는 곧 각 분야에서 광범위한 응용을 얻게 되었다.",
+      "explanation": "[A]-[D]-[C]-[B] (这项科研成果 很快 在各个领域得到了 广泛的应用。)가 정답입니다. 주어(这项科研成果) + 부사어(很快 在各个领域) + 동사(得到了) + 목적어(广泛的应用).",
+      "category_en": "HSK 5 Writing Part 1 Word Order (Verb Predicate)",
+      "category_zh": "书写第一部分语序（动词谓语句）",
+      "explanation_en": "Standard word order: Subject + Adverbial + Verb + Object.",
+      "explanation_zh": "主谓宾基本语序：主语 + 状语 + 谓语动词 + 宾语。"
     },
     {
-      "chengyu": "拔苗助长",
-      "pinyin": "bá miáo zhù zhǎng",
-      "meaning": "싹을 뽑아 자라게 하다 (성급하게 성과를 내려다 일을 그르치다)",
-      "sentence": "教育孩子不能急躁，过度施压往往会起到____的反效果。",
-      "example": "教育孩子不能急躁，过度施压往往会起到拔苗助长的反效果。",
-      "translation": "자녀 교육은 조급해해서는 안 되며, 과도한 압박은 종종 싹을 뽑아 자라게 하려다 죽이는(발묘조장) 역효과를 낳는다.",
+      "id": "hg_17",
       "difficulty": "상",
-      "id": "hch_30"
+      "type": "word_order",
+      "category": "쓰기 1부분 어순 배열 (把자문 귀착보어)",
+      "question": "다음 조각들을 올바른 문장 어순으로 배열한 것은?\n[A] 已经  [B] 志愿者们  [C] 分发到了灾区  [D] 把救援物资",
+      "options": [
+        "[B] - [A] - [D] - [C]",
+        "[D] - [B] - [A] - [C]",
+        "[A] - [B] - [C] - [D]",
+        "[B] - [D] - [A] - [C]"
+      ],
+      "answer": 1,
+      "example": "志愿者们已经把救援物资分发到了灾区。",
+      "translation": "자원봉사자들은 이미 구호 물자를 재난 지역에 배분하여 전달했다.",
+      "explanation": "[B]-[A]-[D]-[C] (志愿者们 已经 把救援物资 分发到了灾区。)가 정답입니다. 주어(志愿者们) + 부사(已经) + 把 대상(救援物资) + 동사 술어(分发) + 귀착보어(到了灾区).",
+      "category_en": "HSK 5 Writing Part 1 Word Order (Ba-sentence destination)",
+      "category_zh": "书写第一部分语序（把字句归着点）",
+      "explanation_en": "Subject + 把 + Object + Verb + Complement (在/到/给/入).",
+      "explanation_zh": "主语 + 把 + 处置对象 + 动词 + 补语（在/到/给）。"
+    },
+    {
+      "id": "hg_18",
+      "difficulty": "상",
+      "type": "word_order",
+      "category": "쓰기 1부분 어순 배열 (被자문 피동)",
+      "question": "다음 조각들을 올바른 피동문 어순으로 배열한 것은?\n[A] 被  [B] 那个感人的故事  [C] 深深地打动了  [D] 在场的所有观众",
+      "options": [
+        "[D] - [A] - [B] - [C]",
+        "[B] - [A] - [D] - [C]",
+        "[A] - [B] - [D] - [C]",
+        "[D] - [C] - [A] - [B]"
+      ],
+      "answer": 1,
+      "example": "在场的所有观众被那个感人的故事深深地打动了。",
+      "translation": "현장에 있던 모든 관객이 그 감동적인 이야기에 깊이 감동받았다.",
+      "explanation": "[D]-[A]-[B]-[C] (在场的所有观众 被 那个感人的故事 深深地打动了。)가 정답입니다. 수동 주어(在场的所有观众) + 被 행위자(那个感人的故事) + 부사어(深深地) + 술어보어(打动了).",
+      "category_en": "HSK 5 Writing Part 1 Word Order (Bei passive structure)",
+      "category_zh": "书写第一部分语序（被动句式）",
+      "explanation_en": "Patient subject + 被 + Agent + Verb + Other elements.",
+      "explanation_zh": "受事主语 + 被 + 施事者 + 谓语动词 + 其他成分。"
+    },
+    {
+      "id": "hg_19",
+      "difficulty": "상",
+      "type": "special_sentence",
+      "category": "다층 관형어 어순 (多层定语)",
+      "question": "다음 중 명사를 수식하는 [다층 관형어]의 어순이 가장 자연스러운 문장은?",
+      "options": [
+        "那是她新买的一件漂亮的真丝连衣裙。",
+        "那是漂亮的一件她新买的真丝连衣裙。",
+        "那是一件漂亮的真丝她新买的连衣裙。",
+        "那是真丝的一件她新买的漂亮连衣裙。"
+      ],
+      "answer": 1,
+      "example": "那是她新买的一件漂亮的真丝连衣裙。",
+      "translation": "저것은 그녀가 새로 산 예쁜 실크 원피스 한 벌이다.",
+      "explanation": "다층 관형어의 기본 어순은 '소유/소속(她) + 지시수량(新买的一件) + 성질/묘사(漂亮的) + 재료/성질(真丝) + 중심명사(连衣裙)'입니다.",
+      "category_en": "Multi-layer Attributive Order (多层定语)",
+      "category_zh": "多层定语排序规则",
+      "explanation_en": "Possessive / Demonstrative > Quantity > State adjective > Noun modifier.",
+      "explanation_zh": "所属/指称 > 数量 > 描摹性形容词 > 属性名词。"
+    },
+    {
+      "id": "hg_20",
+      "difficulty": "상",
+      "type": "special_sentence",
+      "category": "가능보어 관용 표현 (吃不消 / 经不起)",
+      "question": "다음 빈칸에 들어갈 관용적 표현으로 가장 알맞은 것은?\n\"连续加班三天三夜，他的身体实在有点儿____了。\"",
+      "options": [
+        "吃不消 (감당하기 힘들다)",
+        "看不起 (무시하다)",
+        "对不起 (미안하다)",
+        "想不开 (마음을 풀지 못하다)"
+      ],
+      "answer": 1,
+      "example": "连续加班三天三夜，他的身体实在有点儿吃不消了。",
+      "translation": "사흘 밤낮으로 연속 야근을 했더니 그의 몸이 정말이지 좀 버텨내기 힘들어졌다.",
+      "explanation": "'吃不消'(견디지 못하다, 감당하기 힘들다)는 극심한 피로나 부담을 육체적/정신적으로 감당할 수 없을 때 쓰는 5급 필수 관용구입니다.",
+      "category_en": "Idiomatic Potential Complements (吃不消 / 经不起)",
+      "category_zh": "可能补语常用习惯表达",
+      "explanation_en": "Fixed expressions such as '吃不消' (cannot bear physically) and '经不起' (cannot withstand tests).",
+      "explanation_zh": "如‘吃不消’（承受不了）、‘经不起’（无法经受考验）等固定结构。"
+    },
+    {
+      "id": "hg_21",
+      "difficulty": "상",
+      "type": "conjunction",
+      "category": "점층 접속사 (不仅...反而...)",
+      "question": "다음 빈칸에 들어갈 접속사 짝꿍은?\n\"批评不仅没有挫伤他的积极性，____更加激发了他的斗志。\"",
+      "options": [
+        "反而 (오히려)",
+        "固然 (물론)",
+        "难免 (불가피하게)",
+        "何必 (하필)"
+      ],
+      "answer": 1,
+      "example": "批评不仅没有挫伤他的积极性，反而更加激发了他的斗志。",
+      "translation": "비판은 그의 적극성을 꺾지 않았을 뿐만 아니라 오히려 그의 투지를 더욱 불태웠다.",
+      "explanation": "'不仅没有 ... 反而 ...'(~하지 않았을 뿐만 아니라 도리어/오히려 ~하다) 구문으로 예상과 정반대의 긍정적 결과가 나타났음을 강조합니다.",
+      "category_en": "Progressive conjunction (Not only ... but instead: 不仅没有...反而...)",
+      "category_zh": "递进转折复句（不仅没……反而……）",
+      "explanation_en": "Indicates an unexpected worsening or opposite outcome beyond the initial clause.",
+      "explanation_zh": "表示情况没有按照常理发展，反而向相反或更深程度演进。"
+    },
+    {
+      "id": "hg_22",
+      "difficulty": "상",
+      "type": "word_order",
+      "category": "쓰기 1부분 어순 배열 (존현문)",
+      "question": "다음 조각들을 올바른 존현문 어순으로 배열한 것은?\n[A] 挂着  [B] 办公室的墙上  [C] 世界地图  [D] 一幅崭新的",
+      "options": [
+        "[B] - [A] - [D] - [C]",
+        "[A] - [B] - [D] - [C]",
+        "[B] - [D] - [C] - [A]",
+        "[D] - [C] - [B] - [A]"
+      ],
+      "answer": 1,
+      "example": "办公室的墙上挂着一幅崭新的世界地图。",
+      "translation": "사무실 벽에 새것 같은 세계 지도 한 폭이 걸려 있다.",
+      "explanation": "[B]-[A]-[D]-[C] (办公室的墙上 挂着 一幅崭新的 世界地图。)가 정답입니다. 장소사(办公室的墙上) + 동사+着(挂着) + 수량사(一幅崭新的) + 명사(世界地图).",
+      "category_en": "HSK 5 Writing Part 1 Word Order (Existential sentence)",
+      "category_zh": "书写第一部分语序（存现句结构）",
+      "explanation_en": "Place phrase + Verb + Zhe/Le + Indefinite Subject (Numeral-Measure + Noun).",
+      "explanation_zh": "处所词 + 动词 + 着/了 + 不特定人或物（数量+名词）。"
     }
   ],
   "listening": [
@@ -2607,7 +2935,10 @@ window.IELTS_DATA = {
       "meaning": "가격이 알맞은, 부담 없는",
       "synonym": "inexpensive, reasonable, budget-friendly",
       "example": "Public buses and subways are very affordable for university students.",
-      "translation": "대중 시내버스와 지하철은 대학생들에게 가격 부담이 매우 적다."
+      "translation": "대중 시내버스와 지하철은 대학생들에게 가격 부담이 매우 적다.",
+      "meaning_en": "affordable, reasonably priced",
+      "meaning_zh": "经济实惠的；负担得起的",
+      "translation_zh": "对于大学生来说，公共巴士和地铁的价格非常实惠。"
     },
     {
       "id": "iv_02",
@@ -2617,7 +2948,10 @@ window.IELTS_DATA = {
       "meaning": "편리한, 간편한",
       "synonym": "handy, accessible, practical",
       "example": "Living near a supermarket is very convenient for busy families.",
-      "translation": "슈퍼마켓 근처에 사는 것은 바쁜 가족들에게 매우 편리하다."
+      "translation": "슈퍼마켓 근처에 사는 것은 바쁜 가족들에게 매우 편리하다.",
+      "meaning_en": "convenient, easily accessible",
+      "meaning_zh": "方便的；便利的",
+      "translation_zh": "住在市中心非常便利，所有配套设施都在步行范围内。"
     },
     {
       "id": "iv_03",
@@ -2627,7 +2961,10 @@ window.IELTS_DATA = {
       "meaning": "줄이다, 낮추다",
       "synonym": "decrease, cut down, lower",
       "example": "We should use reusable bags to reduce plastic waste.",
-      "translation": "우리는 플라스틱 쓰레기를 줄이기 위해 다회용 장바구니를 사용해야 한다."
+      "translation": "우리는 플라스틱 쓰레기를 줄이기 위해 다회용 장바구니를 사용해야 한다.",
+      "meaning_en": "reduce, lessen, diminish",
+      "meaning_zh": "减少；降低",
+      "translation_zh": "骑自行车上下班可以显著减少城市碳排放。"
     },
     {
       "id": "iv_04",
@@ -2637,7 +2974,10 @@ window.IELTS_DATA = {
       "meaning": "향상시키다, 개선하다",
       "synonym": "enhance, get better, upgrade",
       "example": "Reading English newspapers every day helps improve your vocabulary.",
-      "translation": "매일 영어 신문을 읽는 것은 어휘력을 향상시키는 데 도움이 된다."
+      "translation": "매일 영어 신문을 읽는 것은 어휘력을 향상시키는 데 도움이 된다.",
+      "meaning_en": "improve, enhance, upgrade",
+      "meaning_zh": "改善；提高",
+      "translation_zh": "持续阅读学术文章是提高雅思词汇量的极佳途径。"
     },
     {
       "id": "iv_05",
@@ -2647,7 +2987,10 @@ window.IELTS_DATA = {
       "meaning": "제공하다, 공급하다",
       "synonym": "supply, offer, give",
       "example": "The hotel provides free breakfast and wireless internet for all guests.",
-      "translation": "그 호텔은 모든 투숙객에게 무료 아침 식사와 무선 인터넷을 제공한다."
+      "translation": "그 호텔은 모든 투숙객에게 무료 아침 식사와 무선 인터넷을 제공한다.",
+      "meaning_en": "provide, supply, offer",
+      "meaning_zh": "提供；供应",
+      "translation_zh": "大学图书馆为所有注册学生提供丰富的在线学术资源。"
     },
     {
       "id": "iv_06",
@@ -2657,7 +3000,10 @@ window.IELTS_DATA = {
       "meaning": "발전시키다, 기르다",
       "synonym": "grow, build, cultivate",
       "example": "Team sports help children develop good social skills.",
-      "translation": "단체 스포츠는 아이들이 좋은 사회성 기술을 기르는 데 도움이 된다."
+      "translation": "단체 스포츠는 아이들이 좋은 사회성 기술을 기르는 데 도움이 된다.",
+      "meaning_en": "develop, cultivate, foster",
+      "meaning_zh": "发展；培养",
+      "translation_zh": "鼓励独立思考有助于培养批判性分析能力。"
     },
     {
       "id": "iv_07",
@@ -2667,7 +3013,10 @@ window.IELTS_DATA = {
       "meaning": "일정, 시간표",
       "synonym": "timetable, plan, agenda",
       "example": "Please check the train schedule before you leave for the station.",
-      "translation": "역으로 출발하기 전에 기차 시간표를 확인해 주세요."
+      "translation": "역으로 출발하기 전에 기차 시간표를 확인해 주세요.",
+      "meaning_en": "schedule, timetable, agenda",
+      "meaning_zh": "日程；时刻表",
+      "translation_zh": "由于考试临近，她制定了严格的日常复习时间表。"
     },
     {
       "id": "iv_08",
@@ -2677,7 +3026,10 @@ window.IELTS_DATA = {
       "meaning": "지역의, 현지의",
       "synonym": "regional, neighborhood, community",
       "example": "Tourists enjoy trying fresh food at the local night market.",
-      "translation": "관광객들은 현지 야시장에서 신선한 음식을 맛보는 것을 즐긴다."
+      "translation": "관광객들은 현지 야시장에서 신선한 음식을 맛보는 것을 즐긴다.",
+      "meaning_en": "local, regional, indigenous",
+      "meaning_zh": "当地的；本地区的",
+      "translation_zh": "游览当地农贸市场是体验本土文化与风俗的最佳方式。"
     },
     {
       "id": "iv_09",
@@ -2687,7 +3039,10 @@ window.IELTS_DATA = {
       "meaning": "보호하다, 지키다",
       "synonym": "save, defend, guard",
       "example": "Wearing sunglasses helps protect your eyes from strong sunlight.",
-      "translation": "선글라스를 착용하는 것은 강한 햇빛으로부터 눈을 보호하는 데 도움이 된다."
+      "translation": "선글라스를 착용하는 것은 강한 햇빛으로부터 눈을 보호하는 데 도움이 된다.",
+      "meaning_en": "protect, shield, defend",
+      "meaning_zh": "保护；守护",
+      "translation_zh": "国际社会必须通力合作，保护濒危野生动物栖息地。"
     },
     {
       "id": "iv_10",
@@ -2697,7 +3052,10 @@ window.IELTS_DATA = {
       "meaning": "필수적인, 꼭 필요한",
       "synonym": "necessary, important, vital",
       "example": "Clean drinking water is essential for human health.",
-      "translation": "깨끗한 식수는 인간의 건강에 필수적이다."
+      "translation": "깨끗한 식수는 인간의 건강에 필수적이다.",
+      "meaning_en": "essential, vital, crucial",
+      "meaning_zh": "必不可少的；极其重要的",
+      "translation_zh": "良好的时间管理对于高分通过雅思考试至关重要。"
     },
     {
       "id": "iv_11",
@@ -2707,7 +3065,10 @@ window.IELTS_DATA = {
       "meaning": "이익, 혜택, 장점",
       "synonym": "advantage, profit, merit",
       "example": "One major benefit of cycling is that it keeps you healthy.",
-      "translation": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다."
+      "translation": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다.",
+      "meaning_en": "advantage, profit, merit",
+      "meaning_zh": "이익, 혜택, 장점",
+      "translation_zh": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다."
     },
     {
       "id": "iv_12",
@@ -2717,7 +3078,10 @@ window.IELTS_DATA = {
       "meaning": "이용할 수 있는, 시간이 있는",
       "synonym": "accessible, free, obtainable",
       "example": "Tickets for the weekend concert are available online now.",
-      "translation": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다."
+      "translation": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다.",
+      "meaning_en": "accessible, free, obtainable",
+      "meaning_zh": "이용할 수 있는, 시간이 있는",
+      "translation_zh": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다."
     },
     {
       "id": "iv_13",
@@ -2727,7 +3091,10 @@ window.IELTS_DATA = {
       "meaning": "격려하다, 장려하다",
       "synonym": "inspire, support, motivate",
       "example": "Teachers always encourage students to ask questions in class.",
-      "translation": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다."
+      "translation": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다.",
+      "meaning_en": "inspire, support, motivate",
+      "meaning_zh": "격려하다, 장려하다",
+      "translation_zh": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다."
     },
     {
       "id": "iv_14",
@@ -2737,7 +3104,10 @@ window.IELTS_DATA = {
       "meaning": "기회",
       "synonym": "chance, occasion, opening",
       "example": "Studying abroad is a great opportunity to experience a new culture.",
-      "translation": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다."
+      "translation": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다.",
+      "meaning_en": "chance, occasion, opening",
+      "meaning_zh": "기회",
+      "translation_zh": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다."
     },
     {
       "id": "iv_15",
@@ -2747,7 +3117,10 @@ window.IELTS_DATA = {
       "meaning": "제한하다, 줄이다",
       "synonym": "restrict, control, cap",
       "example": "Parents should limit the time children spend playing video games.",
-      "translation": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다."
+      "translation": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다.",
+      "meaning_en": "restrict, control, cap",
+      "meaning_zh": "제한하다, 줄이다",
+      "translation_zh": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다."
     },
     {
       "id": "iv_16",
@@ -2757,7 +3130,10 @@ window.IELTS_DATA = {
       "meaning": "숙소, 거처",
       "synonym": "housing, lodging, residence",
       "example": "First-year students usually live in university accommodation on campus.",
-      "translation": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다."
+      "translation": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다.",
+      "meaning_en": "housing, lodging, residence",
+      "meaning_zh": "숙소, 거처",
+      "translation_zh": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다."
     },
     {
       "id": "iv_17",
@@ -2767,7 +3143,10 @@ window.IELTS_DATA = {
       "meaning": "결정적인, 매우 중요한",
       "synonym": "vital, critical, key",
       "example": "Early education plays a crucial role in shaping a child's future.",
-      "translation": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다."
+      "translation": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다.",
+      "meaning_en": "vital, critical, key",
+      "meaning_zh": "결정적인, 매우 중요한",
+      "translation_zh": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다."
     },
     {
       "id": "iv_18",
@@ -2777,7 +3156,10 @@ window.IELTS_DATA = {
       "meaning": "할당하다, 배분하다",
       "synonym": "assign, distribute, budget",
       "example": "The government decided to allocate more funds to public hospitals.",
-      "translation": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다."
+      "translation": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다.",
+      "meaning_en": "assign, distribute, budget",
+      "meaning_zh": "할당하다, 배분하다",
+      "translation_zh": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다."
     },
     {
       "id": "iv_19",
@@ -2787,7 +3169,10 @@ window.IELTS_DATA = {
       "meaning": "습득하다, 얻다",
       "synonym": "obtain, gain, learn",
       "example": "Students can acquire practical skills through summer internships.",
-      "translation": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다."
+      "translation": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다.",
+      "meaning_en": "obtain, gain, learn",
+      "meaning_zh": "습득하다, 얻다",
+      "translation_zh": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다."
     },
     {
       "id": "iv_20",
@@ -2797,7 +3182,10 @@ window.IELTS_DATA = {
       "meaning": "완화하다, 줄이다",
       "synonym": "alleviate, ease, reduce",
       "example": "Planting more urban trees can help mitigate the effects of air pollution.",
-      "translation": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다."
+      "translation": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다.",
+      "meaning_en": "alleviate, ease, reduce",
+      "meaning_zh": "완화하다, 줄이다",
+      "translation_zh": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다."
     },
     {
       "id": "iv_21",
@@ -2807,7 +3195,10 @@ window.IELTS_DATA = {
       "meaning": "포괄적인, 종합적인",
       "synonym": "thorough, complete, extensive",
       "example": "The ministry published a comprehensive report on road safety.",
-      "translation": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다."
+      "translation": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다.",
+      "meaning_en": "thorough, complete, extensive",
+      "meaning_zh": "포괄적인, 종합적인",
+      "translation_zh": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다."
     },
     {
       "id": "iv_22",
@@ -2817,7 +3208,10 @@ window.IELTS_DATA = {
       "meaning": "변동하다, 오르내리다",
       "synonym": "vary, change, rise and fall",
       "example": "Vegetable prices tend to fluctuate according to the season.",
-      "translation": "채소 가격은 계절에 따라 변동하는 경향이 있다."
+      "translation": "채소 가격은 계절에 따라 변동하는 경향이 있다.",
+      "meaning_en": "vary, change, rise and fall",
+      "meaning_zh": "변동하다, 오르내리다",
+      "translation_zh": "채소 가격은 계절에 따라 변동하는 경향이 있다."
     },
     {
       "id": "iv_23",
@@ -2827,7 +3221,10 @@ window.IELTS_DATA = {
       "meaning": "불가피한, 피할 수 없는",
       "synonym": "unavoidable, certain, bound to happen",
       "example": "Traffic delays are almost inevitable during weekday rush hours.",
-      "translation": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다."
+      "translation": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다.",
+      "meaning_en": "unavoidable, certain, bound to happen",
+      "meaning_zh": "불가피한, 피할 수 없는",
+      "translation_zh": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다."
     },
     {
       "id": "iv_24",
@@ -2837,7 +3234,10 @@ window.IELTS_DATA = {
       "meaning": "의무적인, 필수의",
       "synonym": "compulsory, required, obligatory",
       "example": "Wearing a seatbelt is mandatory for all drivers and passengers.",
-      "translation": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다."
+      "translation": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다.",
+      "meaning_en": "compulsory, required, obligatory",
+      "meaning_zh": "의무적인, 필수의",
+      "translation_zh": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다."
     },
     {
       "id": "iv_25",
@@ -2847,7 +3247,10 @@ window.IELTS_DATA = {
       "meaning": "주목할 만한, 뚜렷한",
       "synonym": "remarkable, significant, striking",
       "example": "There has been a notable increase in the number of electric cars.",
-      "translation": "전기차 대수에 주목할 만한 증가가 있었다."
+      "translation": "전기차 대수에 주목할 만한 증가가 있었다.",
+      "meaning_en": "remarkable, significant, striking",
+      "meaning_zh": "주목할 만한, 뚜렷한",
+      "translation_zh": "전기차 대수에 주목할 만한 증가가 있었다."
     },
     {
       "id": "iv_26",
@@ -2857,7 +3260,10 @@ window.IELTS_DATA = {
       "meaning": "강화하다, 보강하다",
       "synonym": "strengthen, support, bolster",
       "example": "Positive feedback from teachers helps reinforce students' confidence.",
-      "translation": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다."
+      "translation": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다.",
+      "meaning_en": "strengthen, support, bolster",
+      "meaning_zh": "강화하다, 보강하다",
+      "translation_zh": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다."
     },
     {
       "id": "iv_27",
@@ -2867,7 +3273,10 @@ window.IELTS_DATA = {
       "meaning": "그 다음의, 차후의",
       "synonym": "following, later, succeeding",
       "example": "The skills learned in primary school are vital for subsequent education.",
-      "translation": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다."
+      "translation": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다.",
+      "meaning_en": "following, later, succeeding",
+      "meaning_zh": "그 다음의, 차후의",
+      "translation_zh": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다."
     },
     {
       "id": "iv_28",
@@ -2877,7 +3286,10 @@ window.IELTS_DATA = {
       "meaning": "약화시키다, 해치다",
       "synonym": "weaken, damage, harm",
       "example": "Constant stress at work can undermine an employee's physical health.",
-      "translation": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다."
+      "translation": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다.",
+      "meaning_en": "weaken, damage, harm",
+      "meaning_zh": "약화시키다, 해치다",
+      "translation_zh": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다."
     },
     {
       "id": "iv_29",
@@ -2887,7 +3299,10 @@ window.IELTS_DATA = {
       "meaning": "광범위한, 널리 퍼진",
       "synonym": "common, extensive, general",
       "example": "Online banking has gained widespread popularity among young adults.",
-      "translation": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다."
+      "translation": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다.",
+      "meaning_en": "common, extensive, general",
+      "meaning_zh": "광범위한, 널리 퍼진",
+      "translation_zh": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다."
     },
     {
       "id": "iv_30",
@@ -2897,7 +3312,10 @@ window.IELTS_DATA = {
       "meaning": "지속 가능한, 친환경적인",
       "synonym": "eco-friendly, renewable, long-lasting",
       "example": "Tourism must be developed in a sustainable way to protect nature.",
-      "translation": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다."
+      "translation": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다.",
+      "meaning_en": "eco-friendly, renewable, long-lasting",
+      "meaning_zh": "지속 가능한, 친환경적인",
+      "translation_zh": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다."
     },
     {
       "id": "iv_31",
@@ -2907,7 +3325,10 @@ window.IELTS_DATA = {
       "meaning": "바꾸다, 변모시키다",
       "synonym": "change, convert, reshape",
       "example": "Smartphones have completely transformed how people shop and pay.",
-      "translation": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다."
+      "translation": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다.",
+      "meaning_en": "change, convert, reshape",
+      "meaning_zh": "바꾸다, 변모시키다",
+      "translation_zh": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다."
     },
     {
       "id": "iv_32",
@@ -2917,7 +3338,10 @@ window.IELTS_DATA = {
       "meaning": "국내의, 가정의",
       "synonym": "national, home, household",
       "example": "Domestic flights are usually cheaper and faster than long train journeys.",
-      "translation": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다."
+      "translation": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다.",
+      "meaning_en": "national, home, household",
+      "meaning_zh": "국내의, 가정의",
+      "translation_zh": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다."
     },
     {
       "id": "iv_33",
@@ -2927,7 +3351,10 @@ window.IELTS_DATA = {
       "meaning": "지지하다, 주장하다",
       "synonym": "support, recommend, promote",
       "example": "Many health experts advocate a diet rich in vegetables and whole grains.",
-      "translation": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다."
+      "translation": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다.",
+      "meaning_en": "support, recommend, promote",
+      "meaning_zh": "지지하다, 주장하다",
+      "translation_zh": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다."
     },
     {
       "id": "iv_34",
@@ -2937,7 +3364,10 @@ window.IELTS_DATA = {
       "meaning": "실현 가능한, 타당한",
       "synonym": "practical, workable, achievable",
       "example": "Working four days a week is a feasible option for many office jobs.",
-      "translation": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다."
+      "translation": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다.",
+      "meaning_en": "practical, workable, achievable",
+      "meaning_zh": "실현 가능한, 타당한",
+      "translation_zh": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다."
     },
     {
       "id": "iv_35",
@@ -2947,7 +3377,10 @@ window.IELTS_DATA = {
       "meaning": "악화되다, 나빠지다",
       "synonym": "worsen, decline, get worse",
       "example": "Air quality in the city tends to deteriorate during the winter months.",
-      "translation": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다."
+      "translation": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다.",
+      "meaning_en": "worsen, decline, get worse",
+      "meaning_zh": "악화되다, 나빠지다",
+      "translation_zh": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다."
     },
     {
       "id": "iv_36",
@@ -2957,7 +3390,10 @@ window.IELTS_DATA = {
       "meaning": "인식하다, 여기다",
       "synonym": "view, regard, see",
       "example": "Many graduates perceive a master's degree as a path to better jobs.",
-      "translation": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다."
+      "translation": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다.",
+      "meaning_en": "view, regard, see",
+      "meaning_zh": "인식하다, 여기다",
+      "translation_zh": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다."
     },
     {
       "id": "iv_37",
@@ -2967,7 +3403,10 @@ window.IELTS_DATA = {
       "meaning": "어디에나 존재하는, 편재하는",
       "synonym": "omnipresent, pervasive, universal",
       "example": "Smartphones and handheld digital screens have become ubiquitous in metropolitan life.",
-      "translation": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다."
+      "translation": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다.",
+      "meaning_en": "omnipresent, pervasive, universal",
+      "meaning_zh": "어디에나 존재하는, 편재하는",
+      "translation_zh": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다."
     },
     {
       "id": "iv_38",
@@ -2977,7 +3416,10 @@ window.IELTS_DATA = {
       "meaning": "(문제를) 악화시키다, 격화시키다",
       "synonym": "aggravate, worsen, inflame",
       "example": "Prolonged summer heatwaves threaten to exacerbate existing agricultural water deficits.",
-      "translation": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다."
+      "translation": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다.",
+      "meaning_en": "aggravate, worsen, inflame",
+      "meaning_zh": "(문제를) 악화시키다, 격화시키다",
+      "translation_zh": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다."
     },
     {
       "id": "iv_39",
@@ -2987,7 +3429,10 @@ window.IELTS_DATA = {
       "meaning": "수명이 짧은, 덧없는",
       "synonym": "transient, fleeting, momentary",
       "example": "Viral fame generated on social networking sites is notoriously ephemeral and volatile.",
-      "translation": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다."
+      "translation": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다.",
+      "meaning_en": "transient, fleeting, momentary",
+      "meaning_zh": "수명이 짧은, 덧없는",
+      "translation_zh": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다."
     },
     {
       "id": "iv_40",
@@ -2997,7 +3442,10 @@ window.IELTS_DATA = {
       "meaning": "불균형, 격차",
       "synonym": "discrepancy, inequality, imbalance",
       "example": "Economic globalization has inadvertently widened the income disparity between urban and rural areas.",
-      "translation": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다."
+      "translation": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다.",
+      "meaning_en": "discrepancy, inequality, imbalance",
+      "meaning_zh": "불균형, 격차",
+      "translation_zh": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다."
     },
     {
       "id": "iv_41",
@@ -3007,7 +3455,10 @@ window.IELTS_DATA = {
       "meaning": "(증거로) 뒷받침하다, 입증하다",
       "synonym": "confirm, substantiate, authenticate",
       "example": "Satellite sensory telemetry was required to corroborate the meteorological simulation results.",
-      "translation": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다."
+      "translation": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다.",
+      "meaning_en": "confirm, substantiate, authenticate",
+      "meaning_zh": "(증거로) 뒷받침하다, 입증하다",
+      "translation_zh": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다."
     },
     {
       "id": "iv_42",
@@ -3017,7 +3468,10 @@ window.IELTS_DATA = {
       "meaning": "해로운, 유해한",
       "synonym": "detrimental, harmful, pernicious",
       "example": "Excessive sedentary screen time exercises deleterious physiological impacts on adolescents.",
-      "translation": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다."
+      "translation": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다.",
+      "meaning_en": "detrimental, harmful, pernicious",
+      "meaning_zh": "해로운, 유해한",
+      "translation_zh": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다."
     },
     {
       "id": "iv_43",
@@ -3027,7 +3481,10 @@ window.IELTS_DATA = {
       "meaning": "필수불가결한, 없어서는 안 될",
       "synonym": "essential, crucial, requisite",
       "example": "Cross-disciplinary collaboration is indispensable for solving intricate climate crises.",
-      "translation": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다."
+      "translation": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다.",
+      "meaning_en": "essential, crucial, requisite",
+      "meaning_zh": "필수불가결한, 없어서는 안 될",
+      "translation_zh": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다."
     },
     {
       "id": "iv_44",
@@ -3037,7 +3494,10 @@ window.IELTS_DATA = {
       "meaning": "변칙, 이례적인 것",
       "synonym": "irregularity, aberration, abnormality",
       "example": "Statisticians scrutinized the laboratory output to determine if the result was a genuine anomaly.",
-      "translation": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다."
+      "translation": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다.",
+      "meaning_en": "irregularity, aberration, abnormality",
+      "meaning_zh": "변칙, 이례적인 것",
+      "translation_zh": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다."
     },
     {
       "id": "iv_45",
@@ -3047,7 +3507,10 @@ window.IELTS_DATA = {
       "meaning": "급증하다, 확산되다",
       "synonym": "multiply, mushroom, burgeon",
       "example": "Autonomous digital commerce applications continue to proliferate across developing economies.",
-      "translation": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다."
+      "translation": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다.",
+      "meaning_en": "multiply, mushroom, burgeon",
+      "meaning_zh": "급증하다, 확산되다",
+      "translation_zh": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다."
     },
     {
       "id": "iv_46",
@@ -3057,7 +3520,10 @@ window.IELTS_DATA = {
       "meaning": "꼼꼼한, 세심한",
       "synonym": "thorough, scrupulous, punctilious",
       "example": "Forensic historians performed meticulous archival analyses on ancient trade treaties.",
-      "translation": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다."
+      "translation": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다.",
+      "meaning_en": "thorough, scrupulous, punctilious",
+      "meaning_zh": "꼼꼼한, 세심한",
+      "translation_zh": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다."
     },
     {
       "id": "iv_47",
@@ -3067,7 +3533,10 @@ window.IELTS_DATA = {
       "meaning": "병치하다, 나란히 놓다",
       "synonym": "collocate, contrast, compare",
       "example": "The museum curators juxtaposed classical oil paintings with contemporary digital sculptures.",
-      "translation": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다."
+      "translation": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다.",
+      "meaning_en": "collocate, contrast, compare",
+      "meaning_zh": "병치하다, 나란히 놓다",
+      "translation_zh": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다."
     },
     {
       "id": "iv_48",
@@ -3077,7 +3546,10 @@ window.IELTS_DATA = {
       "meaning": "패러다임, 전형적인 틀",
       "synonym": "model, framework, archetype",
       "example": "Quantum computational theory triggers a profound paradigm shift in modern cryptography.",
-      "translation": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다."
+      "translation": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다.",
+      "meaning_en": "model, framework, archetype",
+      "meaning_zh": "패러다임, 전형적인 틀",
+      "translation_zh": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다."
     },
     {
       "id": "iv_49",
@@ -3087,7 +3559,10 @@ window.IELTS_DATA = {
       "meaning": "수반되는, 부수적인",
       "synonym": "accompanying, associated, attendant",
       "example": "Rapid industrial expansion brings concomitant risks of hazardous ecological degradation.",
-      "translation": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다."
+      "translation": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다.",
+      "meaning_en": "accompanying, associated, attendant",
+      "meaning_zh": "수반되는, 부수적인",
+      "translation_zh": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다."
     },
     {
       "id": "iv_49_b",
@@ -3097,7 +3572,10 @@ window.IELTS_DATA = {
       "meaning": "빈약한, 보잘것없는",
       "synonym": "flimsy, weak, fragile",
       "example": "The historical connection between the two isolated dynasties remains tenuous at best.",
-      "translation": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다."
+      "translation": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다.",
+      "meaning_en": "flimsy, weak, fragile",
+      "meaning_zh": "빈약한, 보잘것없는",
+      "translation_zh": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다."
     },
     {
       "id": "iv_50",
@@ -3107,7 +3585,10 @@ window.IELTS_DATA = {
       "meaning": "실용적인, 실무적인",
       "synonym": "practical, realistic, utilitarian",
       "example": "Diplomats adopted a pragmatic negotiating framework to resolve transnational border disputes.",
-      "translation": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다."
+      "translation": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다.",
+      "meaning_en": "practical, realistic, utilitarian",
+      "meaning_zh": "실용적인, 실무적인",
+      "translation_zh": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다."
     },
     {
       "id": "iv_51",
@@ -3117,7 +3598,10 @@ window.IELTS_DATA = {
       "meaning": "실증하다, 구체화하다",
       "synonym": "validate, prove, authenticate",
       "example": "Economists gathered decadal macroeconomic indicators to substantiate their monetary thesis.",
-      "translation": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다."
+      "translation": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다.",
+      "meaning_en": "validate, prove, authenticate",
+      "meaning_zh": "실증하다, 구체화하다",
+      "translation_zh": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다."
     }
   ],
   "listening": [
@@ -3542,7 +4026,9 @@ window.IELTS_DATA = {
       "meaning": "계속 연락하고 지내다",
       "sentence": "Social media makes it very easy to ____ with old school friends.",
       "example": "Social media makes it very easy to keep in touch with old school friends.",
-      "translation": "소셜 미디어는 옛 학교 친구들과 계속 연락하고 지내는 것을 매우 쉽게 해준다."
+      "translation": "소셜 미디어는 옛 학교 친구들과 계속 연락하고 지내는 것을 매우 쉽게 해준다.",
+      "meaning_en": "keep in touch",
+      "meaning_zh": "계속 연락하고 지내다"
     },
     {
       "id": "ii_02",
@@ -3551,7 +4037,9 @@ window.IELTS_DATA = {
       "meaning": "여가 시간에, 한가할 때",
       "sentence": "I usually listen to music or go for a walk ____.",
       "example": "I usually listen to music or go for a walk in my free time.",
-      "translation": "나는 여가 시간에 주로 음악을 듣거나 산책을 하러 간다."
+      "translation": "나는 여가 시간에 주로 음악을 듣거나 산책을 하러 간다.",
+      "meaning_en": "in my free time",
+      "meaning_zh": "여가 시간에, 한가할 때"
     },
     {
       "id": "ii_03",
@@ -3560,7 +4048,9 @@ window.IELTS_DATA = {
       "meaning": "장단점 (찬반양론)",
       "sentence": "Before buying a new car, we should consider the ____ carefully.",
       "example": "Before buying a new car, we should consider the pros and cons carefully.",
-      "translation": "새 차를 사기 전에 우리는 장단점을 신중하게 고려해야 한다."
+      "translation": "새 차를 사기 전에 우리는 장단점을 신중하게 고려해야 한다.",
+      "meaning_en": "pros and cons",
+      "meaning_zh": "장단점 (찬반양론)"
     },
     {
       "id": "ii_04",
@@ -3569,7 +4059,9 @@ window.IELTS_DATA = {
       "meaning": "결심하다, 결정하다",
       "sentence": "He still cannot ____ about which university course to choose.",
       "example": "He still cannot make up his mind about which university course to choose.",
-      "translation": "그는 어느 대학 전공 과정을 선택할지 아직 결정을 내리지 못하고 있다."
+      "translation": "그는 어느 대학 전공 과정을 선택할지 아직 결정을 내리지 못하고 있다.",
+      "meaning_en": "make up one's mind",
+      "meaning_zh": "결심하다, 결정하다"
     },
     {
       "id": "ii_05",
@@ -3578,7 +4070,9 @@ window.IELTS_DATA = {
       "meaning": "단계적으로, 차근차근",
       "sentence": "Beginners should learn a new foreign language ____.",
       "example": "Beginners should learn a new foreign language step by step.",
-      "translation": "초보자들은 새로운 외국어를 차근차근 단계적으로 배워야 한다."
+      "translation": "초보자들은 새로운 외국어를 차근차근 단계적으로 배워야 한다.",
+      "meaning_en": "step by step",
+      "meaning_zh": "단계적으로, 차근차근"
     },
     {
       "id": "ii_06",
@@ -3587,7 +4081,9 @@ window.IELTS_DATA = {
       "meaning": "매일, 일상적으로",
       "sentence": "Millions of commuters use the city subway system ____.",
       "example": "Millions of commuters use the city subway system on a daily basis.",
-      "translation": "수백만 명의 통근자들이 매일 도시 지하철 시스템을 이용한다."
+      "translation": "수백만 명의 통근자들이 매일 도시 지하철 시스템을 이용한다.",
+      "meaning_en": "on a daily basis",
+      "meaning_zh": "매일, 일상적으로"
     },
     {
       "id": "ii_07",
@@ -3596,7 +4092,9 @@ window.IELTS_DATA = {
       "meaning": "양날의 검 (장점과 단점이 공존하는 것)",
       "sentence": "The internet is ____ because it provides useful information but also causes addiction.",
       "example": "The internet is a double-edged sword because it provides useful information but also causes addiction.",
-      "translation": "인터넷은 유용한 정보를 제공하지만 중독을 유발하기도 하므로 양날의 검이다."
+      "translation": "인터넷은 유용한 정보를 제공하지만 중독을 유발하기도 하므로 양날의 검이다.",
+      "meaning_en": "a double-edged sword",
+      "meaning_zh": "양날의 검 (장점과 단점이 공존하는 것)"
     },
     {
       "id": "ii_08",
@@ -3605,7 +4103,9 @@ window.IELTS_DATA = {
       "meaning": "고정관념에서 벗어나 창의적으로 생각하다",
       "sentence": "Modern companies encourage young employees to ____ to solve problems.",
       "example": "Modern companies encourage young employees to think outside the box to solve problems.",
-      "translation": "현대 기업들은 젊은 직원들이 문제를 해결하기 위해 창의적으로 생각하도록 장려한다."
+      "translation": "현대 기업들은 젊은 직원들이 문제를 해결하기 위해 창의적으로 생각하도록 장려한다.",
+      "meaning_en": "think outside the box",
+      "meaning_zh": "고정관념에서 벗어나 창의적으로 생각하다"
     },
     {
       "id": "ii_09",
@@ -3614,7 +4114,9 @@ window.IELTS_DATA = {
       "meaning": "장기적으로 보면, 결국에는",
       "sentence": "Investing in solar energy will save a lot of money ____.",
       "example": "Investing in solar energy will save a lot of money in the long run.",
-      "translation": "태양광 에너지에 투자하는 것은 장기적으로 보면 많은 돈을 절약해 줄 것이다."
+      "translation": "태양광 에너지에 투자하는 것은 장기적으로 보면 많은 돈을 절약해 줄 것이다.",
+      "meaning_en": "in the long run",
+      "meaning_zh": "장기적으로 보면, 결국에는"
     },
     {
       "id": "ii_10",
@@ -3623,7 +4125,9 @@ window.IELTS_DATA = {
       "meaning": "(성공이나 목표를 향한) 디딤돌, 발판",
       "sentence": "Working as an intern was ____ to her successful career in marketing.",
       "example": "Working as an intern was a stepping stone to her successful career in marketing.",
-      "translation": "인턴으로 일한 것은 그녀의 성공적인 마케팅 경력에 디딤돌이 되었다."
+      "translation": "인턴으로 일한 것은 그녀의 성공적인 마케팅 경력에 디딤돌이 되었다.",
+      "meaning_en": "a stepping stone",
+      "meaning_zh": "(성공이나 목표를 향한) 디딤돌, 발판"
     },
     {
       "id": "ii_11",
@@ -3632,7 +4136,9 @@ window.IELTS_DATA = {
       "meaning": "~을 고려하다, 참작하다",
       "sentence": "City planners must ____ environmental protection when building new roads.",
       "example": "City planners must take into account environmental protection when building new roads.",
-      "translation": "도시 계획가들은 새로운 도로를 건설할 때 환경 보호를 고려해야 한다."
+      "translation": "도시 계획가들은 새로운 도로를 건설할 때 환경 보호를 고려해야 한다.",
+      "meaning_en": "take into account",
+      "meaning_zh": "~을 고려하다, 참작하다"
     },
     {
       "id": "ii_12",
@@ -3641,7 +4147,9 @@ window.IELTS_DATA = {
       "meaning": "~에서 핵심적인 역할을 하다",
       "sentence": "Parents and teachers ____ shaping children's reading habits.",
       "example": "Parents and teachers play a key role in shaping children's reading habits.",
-      "translation": "부모와 교사는 아이들의 독서 습관을 형성하는 데 핵심적인 역할을 한다."
+      "translation": "부모와 교사는 아이들의 독서 습관을 형성하는 데 핵심적인 역할을 한다.",
+      "meaning_en": "play a key role in",
+      "meaning_zh": "~에서 핵심적인 역할을 하다"
     },
     {
       "id": "ii_13",
@@ -3650,7 +4158,9 @@ window.IELTS_DATA = {
       "meaning": "(어려운 현실이나 상황을) 받아들이다, 감수하다",
       "sentence": "Traditional shops have had to ____ the rapid growth of online shopping.",
       "example": "Traditional shops have had to come to terms with the rapid growth of online shopping.",
-      "translation": "전통 상점들은 온라인 쇼핑의 급격한 성장을 받아들여야만 했다."
+      "translation": "전통 상점들은 온라인 쇼핑의 급격한 성장을 받아들여야만 했다.",
+      "meaning_en": "come to terms with",
+      "meaning_zh": "(어려운 현실이나 상황을) 받아들이다, 감수하다"
     },
     {
       "id": "ii_14",
@@ -3659,7 +4169,9 @@ window.IELTS_DATA = {
       "meaning": "~에서 기인하다, 유래하다",
       "sentence": "Many modern health problems ____ a lack of regular physical exercise.",
       "example": "Many modern health problems stem from a lack of regular physical exercise.",
-      "translation": "현대의 많은 건강 문제들은 규칙적인 신체 운동 부족에서 기인한다."
+      "translation": "현대의 많은 건강 문제들은 규칙적인 신체 운동 부족에서 기인한다.",
+      "meaning_en": "stem from",
+      "meaning_zh": "~에서 기인하다, 유래하다"
     },
     {
       "id": "ii_15",
@@ -3668,7 +4180,9 @@ window.IELTS_DATA = {
       "meaning": "~을 희생하여, 대가를 치르고",
       "sentence": "Unregulated industrial expansion frequently proceeds ____ environmental biodiversity and public health.",
       "example": "Unregulated industrial expansion frequently proceeds at the expense of environmental biodiversity and public health.",
-      "translation": "규제되지 않은 산업 확장은 흔히 환경적 생물다양성과 공공 보건을 희생시키며 진행된다."
+      "translation": "규제되지 않은 산업 확장은 흔히 환경적 생물다양성과 공공 보건을 희생시키며 진행된다.",
+      "meaning_en": "at the expense of",
+      "meaning_zh": "~을 희생하여, 대가를 치르고"
     },
     {
       "id": "ii_16",
@@ -3677,7 +4191,9 @@ window.IELTS_DATA = {
       "meaning": "~을 위한 길을 열다, 기틀을 마련하다",
       "sentence": "Groundbreaking genetic discoveries will ____ highly tailored therapies for inherited syndromes.",
       "example": "Groundbreaking genetic discoveries will pave the way for highly tailored therapies for inherited syndromes.",
-      "translation": "획기적인 유전자 발견은 유전성 증후군에 대한 고도로 맞춤화된 치료법을 위한 길을 열어줄 것이다."
+      "translation": "획기적인 유전자 발견은 유전성 증후군에 대한 고도로 맞춤화된 치료법을 위한 길을 열어줄 것이다.",
+      "meaning_en": "pave the way for",
+      "meaning_zh": "~을 위한 길을 열다, 기틀을 마련하다"
     },
     {
       "id": "ii_17",
@@ -3686,7 +4202,9 @@ window.IELTS_DATA = {
       "meaning": "변화의 기폭제, 촉매제",
       "sentence": "The widespread youth climate movement served as ____ in national legislative sustainability debates.",
       "example": "The widespread youth climate movement served as a catalyst for change in national legislative sustainability debates.",
-      "translation": "광범위한 청소년 기후 행동 운동은 국가 입법부의 지속가능성 논의에서 변화의 기폭제 역할을 했다."
+      "translation": "광범위한 청소년 기후 행동 운동은 국가 입법부의 지속가능성 논의에서 변화의 기폭제 역할을 했다.",
+      "meaning_en": "a catalyst for change",
+      "meaning_zh": "변화의 기폭제, 촉매제"
     },
     {
       "id": "ii_18",
@@ -3695,7 +4213,9 @@ window.IELTS_DATA = {
       "meaning": "~에 역행하다, 정면으로 배치되다",
       "sentence": "Imposing severe budget cuts on public universities would ____ national strategies for innovation.",
       "example": "Imposing severe budget cuts on public universities would run counter to national strategies for innovation.",
-      "translation": "국립대학교에 심각한 예산 삭감을 가하는 것은 혁신을 위한 국가적 전략에 정면으로 배치될 것이다."
+      "translation": "국립대학교에 심각한 예산 삭감을 가하는 것은 혁신을 위한 국가적 전략에 정면으로 배치될 것이다.",
+      "meaning_en": "run counter to",
+      "meaning_zh": "~에 역행하다, 정면으로 배치되다"
     },
     {
       "id": "ii_19",
@@ -3704,7 +4224,9 @@ window.IELTS_DATA = {
       "meaning": "~을 일으키다, 초래하다",
       "sentence": "Unchecked algorithmic echo chambers have begun to ____ unprecedented political polarization.",
       "example": "Unchecked algorithmic echo chambers have begun to give rise to unprecedented political polarization.",
-      "translation": "통제되지 않는 알고리즘 에코 체임버는 전례 없는 정치적 양극화를 초래하기 시작했다."
+      "translation": "통제되지 않는 알고리즘 에코 체임버는 전례 없는 정치적 양극화를 초래하기 시작했다.",
+      "meaning_en": "give rise to",
+      "meaning_zh": "~을 일으키다, 초래하다"
     },
     {
       "id": "ii_20",
@@ -3713,7 +4235,9 @@ window.IELTS_DATA = {
       "meaning": "~을 명확히 규명하다, 새로운 단서를 밝히다",
       "sentence": "Recent archaeological excavations ____ how ancient civilizations adapted to severe droughts.",
       "example": "Recent archaeological excavations shed light on how ancient civilizations adapted to severe droughts.",
-      "translation": "최근의 고고학적 발굴은 고대 문명이 극심한 가뭄에 어떻게 적응했는지를 명확히 규명해 준다."
+      "translation": "최근의 고고학적 발굴은 고대 문명이 극심한 가뭄에 어떻게 적응했는지를 명확히 규명해 준다.",
+      "meaning_en": "shed light on",
+      "meaning_zh": "~을 명확히 규명하다, 새로운 단서를 밝히다"
     }
   ],
   "cloze": [
@@ -4033,7 +4557,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "I have lived in this city for five years.",
       "translation": "나는 이 도시에서 5년 동안 살아왔다.",
-      "explanation": "[Band 5.0 필수 문법] 과거부터 현재까지 지속된 기간(five years: 5년 동안) 앞에는 전치사 'for'를 쓰고 현재완료(have lived)와 함께 사용합니다 (특정 시점 앞에는 since)."
+      "explanation": "[Band 5.0 필수 문법] 과거부터 현재까지 지속된 기간(five years: 5년 동안) 앞에는 전치사 'for'를 쓰고 현재완료(have lived)와 함께 사용합니다 (특정 시점 앞에는 since).",
+      "category_en": "Present Perfect (현재완료 계속 용법: for vs since)",
+      "category_zh": "Present Perfect (현재완료 계속 용법: for vs since)"
     },
     {
       "id": "ig_02",
@@ -4049,7 +4575,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "The flight was delayed because of the heavy rain.",
       "translation": "폭우 때문에 항공편이 지연되었다.",
-      "explanation": "[Band 5.0 필수 문법] 명사구(the heavy rain) 앞에는 전치사구인 'because of' 또는 'due to'를 사용하며, 주어+동사 절 앞에는 접속사 'because'를 씁니다."
+      "explanation": "[Band 5.0 필수 문법] 명사구(the heavy rain) 앞에는 전치사구인 'because of' 또는 'due to'를 사용하며, 주어+동사 절 앞에는 접속사 'because'를 씁니다.",
+      "category_en": "Conjunction vs Preposition (because vs because of)",
+      "category_zh": "Conjunction vs Preposition (because vs because of)"
     },
     {
       "id": "ig_03",
@@ -4065,7 +4593,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "Plastic bottles should be recycled to protect the environment.",
       "translation": "환경을 보호하기 위해 플라스틱병은 재활용되어야 한다.",
-      "explanation": "[Band 5.0 필수 문법] 주어(Plastic bottles)가 재활용되는 대상이므로 조동사 수동태 공식인 'should be + 과거분사(recycled)'가 정확합니다."
+      "explanation": "[Band 5.0 필수 문법] 주어(Plastic bottles)가 재활용되는 대상이므로 조동사 수동태 공식인 'should be + 과거분사(recycled)'가 정확합니다.",
+      "category_en": "Modal Passive (조동사 수동태: should be + p.p.)",
+      "category_zh": "Modal Passive (조동사 수동태: should be + p.p.)"
     },
     {
       "id": "ig_04",
@@ -4081,7 +4611,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "The internet provides a lot of useful information for students.",
       "translation": "인터넷은 학생들에게 많은 유용한 정보를 제공한다.",
-      "explanation": "[Band 5.0 필수 문법] 'information(정보)', 'advice(조언)', 'furniture(가구)'는 셀 수 없는 불가산명사이므로 복수형(-s)을 쓸 수 없으며 'a lot of / much'와 함께 씁니다."
+      "explanation": "[Band 5.0 필수 문법] 'information(정보)', 'advice(조언)', 'furniture(가구)'는 셀 수 없는 불가산명사이므로 복수형(-s)을 쓸 수 없으며 'a lot of / much'와 함께 씁니다.",
+      "category_en": "Uncountable Nouns (불가산명사 수량 표현)",
+      "category_zh": "Uncountable Nouns (불가산명사 수량 표현)"
     },
     {
       "id": "ig_05",
@@ -4097,7 +4629,9 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "Taking the subway is more convenient than driving a car.",
       "translation": "지하철을 타는 것이 자동차를 운전하는 것보다 더 편리하다.",
-      "explanation": "[Band 5.0 필수 문법] 3음절 이상의 형용사(convenient)는 앞에 'more'를 붙여 비교급(more convenient than)을 만듭니다."
+      "explanation": "[Band 5.0 필수 문법] 3음절 이상의 형용사(convenient)는 앞에 'more'를 붙여 비교급(more convenient than)을 만듭니다.",
+      "category_en": "Comparatives (비교급 기본 구문)",
+      "category_zh": "Comparatives (비교급 기본 구문)"
     },
     {
       "id": "ig_06",
@@ -4113,7 +4647,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "Many young people enjoy watching movies at home.",
       "translation": "많은 젊은이들이 집에서 영화 보는 것을 즐긴다.",
-      "explanation": "[Band 5.0 필수 문법] 동사 'enjoy', 'avoid', 'mind', 'finish'는 목적어로 to부정사가 아닌 동명사(-ing)만을 취합니다."
+      "explanation": "[Band 5.0 필수 문법] 동사 'enjoy', 'avoid', 'mind', 'finish'는 목적어로 to부정사가 아닌 동명사(-ing)만을 취합니다.",
+      "category_en": "Gerund vs Infinitive (enjoy + -ing 동명사 목적어)",
+      "category_zh": "Gerund vs Infinitive (enjoy + -ing 동명사 목적어)"
     },
     {
       "id": "ig_07",
@@ -4129,7 +4665,9 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "Despite the bad weather, the outdoor concert went ahead as planned.",
       "translation": "궂은 날씨에도 불구하고 야외 콘서트는 예정대로 진행되었다.",
-      "explanation": "[Band 5.5~6.5 핵심 문법] 전치사 'Despite' 뒤에는 명사구(the bad weather)가 오며 'of'를 붙이지 않습니다. (접속사 Although는 주어+동사 절과 쓰이며 but과 중복 불가)."
+      "explanation": "[Band 5.5~6.5 핵심 문법] 전치사 'Despite' 뒤에는 명사구(the bad weather)가 오며 'of'를 붙이지 않습니다. (접속사 Although는 주어+동사 절과 쓰이며 but과 중복 불가).",
+      "category_en": "Concession Clauses (양보 구문: Despite vs Although)",
+      "category_zh": "Concession Clauses (양보 구문: Despite vs Although)"
     },
     {
       "id": "ig_08",
@@ -4145,7 +4683,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "The number of private cars in big cities has increased rapidly.",
       "translation": "대도시의 자가용 대수가 급격히 증가했다.",
-      "explanation": "[Band 5.5~6.5 핵심 문법] 'The number of + 복수명사(~의 수)'의 핵심 주어는 단수인 'The number'이므로 단수 동사 'has increased'가 호응합니다."
+      "explanation": "[Band 5.5~6.5 핵심 문법] 'The number of + 복수명사(~의 수)'의 핵심 주어는 단수인 'The number'이므로 단수 동사 'has increased'가 호응합니다.",
+      "category_en": "Subject-Verb Agreement (The number of vs A number of)",
+      "category_zh": "Subject-Verb Agreement (The number of vs A number of)"
     },
     {
       "id": "ig_09",
@@ -4161,7 +4701,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "Companies should support employees whose children are under school age.",
       "translation": "기업들은 자녀가 취학 연령 미만인 직원들을 지원해야 한다.",
-      "explanation": "[Band 5.5~6.5 핵심 문법] 선행사(employees)와 뒤 명사(children)가 소유 관계일 때는 소유격 관계대명사 'whose'를 사용합니다."
+      "explanation": "[Band 5.5~6.5 핵심 문법] 선행사(employees)와 뒤 명사(children)가 소유 관계일 때는 소유격 관계대명사 'whose'를 사용합니다.",
+      "category_en": "Relative Clauses (소유격 관계대명사 whose)",
+      "category_zh": "Relative Clauses (소유격 관계대명사 whose)"
     },
     {
       "id": "ig_10",
@@ -4177,7 +4719,9 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "If more people used public transport, air pollution would decrease significantly.",
       "translation": "만약 더 많은 사람들이 대중교통을 이용한다면, 대기 오염이 현저히 줄어들 것이다.",
-      "explanation": "[Band 5.5~6.5 핵심 문법] 현재 사실과 반대되거나 가정적인 상황을 설명할 때 'If + S + 과거동사(used), S + would + 동사원형(decrease)' 구문을 쓰면 Writing 점수가 크게 올라갑니다."
+      "explanation": "[Band 5.5~6.5 핵심 문법] 현재 사실과 반대되거나 가정적인 상황을 설명할 때 'If + S + 과거동사(used), S + would + 동사원형(decrease)' 구문을 쓰면 Writing 점수가 크게 올라갑니다.",
+      "category_en": "Second Conditional (가정법 과거: If + 과거동사, would + 동사원형)",
+      "category_zh": "Second Conditional (가정법 과거: If + 과거동사, would + 동사원형)"
     },
     {
       "id": "ig_11",
@@ -4193,7 +4737,9 @@ window.IELTS_DATA = {
       "answer": 3,
       "example": "Regular exercise helps people control weight, reduce stress, and sleep better.",
       "translation": "규칙적인 운동은 사람들이 체중을 조절하고 스트레스를 줄이며 더 잘 자는 데 도움이 된다.",
-      "explanation": "[Band 5.5~6.5 핵심 문법] 동사원형 3개(control, reduce, sleep)가 등위접속사 and로 대등하게 병렬 연결되어야 합니다."
+      "explanation": "[Band 5.5~6.5 핵심 문법] 동사원형 3개(control, reduce, sleep)가 등위접속사 and로 대등하게 병렬 연결되어야 합니다.",
+      "category_en": "Parallel Structure (등위접속사 병렬 구조)",
+      "category_zh": "Parallel Structure (등위접속사 병렬 구조)"
     },
     {
       "id": "ig_12",
@@ -4209,7 +4755,9 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "Young people prefer shopping online, whereas older generations often prefer local stores.",
       "translation": "젊은 층은 온라인 쇼핑을 선호하는 반면, 기성세대는 흔히 동네 매장을 선호한다.",
-      "explanation": "[Band 5.5~6.5 핵심 문법] 'whereas'와 'while'은 두 절을 직접 연결하는 접속사이므로 뒤에 'but'을 중복해서 쓰지 않습니다."
+      "explanation": "[Band 5.5~6.5 핵심 문법] 'whereas'와 'while'은 두 절을 직접 연결하는 접속사이므로 뒤에 'but'을 중복해서 쓰지 않습니다.",
+      "category_en": "Adverbial Clauses of Contrast (대조 접속사: while / whereas)",
+      "category_zh": "Adverbial Clauses of Contrast (대조 접속사: while / whereas)"
     },
     {
       "id": "ig_13",
@@ -4225,7 +4773,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "Health experts recommend that the government ban junk food ads aimed at children.",
       "translation": "건강 전문가들은 정부가 아동을 겨냥한 정크푸드 광고를 금지할 것을 권고한다.",
-      "explanation": "[Band 5.5~6.5 핵심 문법] recommend, suggest, insist 등 요구·제안 동사 뒤의 that절에는 '(should) + 동사원형(ban)'을 사용합니다."
+      "explanation": "[Band 5.5~6.5 핵심 문법] recommend, suggest, insist 등 요구·제안 동사 뒤의 that절에는 '(should) + 동사원형(ban)'을 사용합니다.",
+      "category_en": "Subjunctive in Proposals (제안/권고 동사 + that + S + 동사원형)",
+      "category_zh": "Subjunctive in Proposals (제안/권고 동사 + that + S + 동사원형)"
     },
     {
       "id": "ig_14",
@@ -4241,7 +4791,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "More employees are working remotely, which helps reduce rush-hour traffic.",
       "translation": "더 많은 직원들이 원격으로 근무하고 있으며, 이는 출퇴근 시간대 교통 체증을 줄이는 데 도움이 된다.",
-      "explanation": "[Band 5.5~6.5 핵심 문법] 콤마(,) 뒤에서 앞 문장 전체 내용을 선행사로 받을 때는 ', which + 단수동사(helps)'를 사용합니다 (that이나 what 불가)."
+      "explanation": "[Band 5.5~6.5 핵심 문법] 콤마(,) 뒤에서 앞 문장 전체 내용을 선행사로 받을 때는 ', which + 단수동사(helps)'를 사용합니다 (that이나 what 불가).",
+      "category_en": "Non-defining Relative Clause (계속적 용법 관계대명사: , which)",
+      "category_zh": "Non-defining Relative Clause (계속적 용법 관계대명사: , which)"
     },
     {
       "id": "ig_15",
@@ -4257,7 +4809,9 @@ window.IELTS_DATA = {
       "answer": 2,
       "example": "Rarely does a single empirical discovery fundamentally overturn centuries of established medical dogma.",
       "translation": "단 하나의 실증적 발견이 수 세기 동안 확립된 의학적 통념을 근본적으로 뒤집는 일은 거의 없다.",
-      "explanation": "[Band 6.5~8.0 고득점 구문] 부정 부사 'Rarely / Seldom / Little / Not only'가 문두에 올 때 '조동사(does) + 주어 + 동사원형(overturn)'의 어순으로 도치됩니다."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 부정 부사 'Rarely / Seldom / Little / Not only'가 문두에 올 때 '조동사(does) + 주어 + 동사원형(overturn)'의 어순으로 도치됩니다.",
+      "category_en": "Negative Inversion (Rarely/Seldom 부정어 도치)",
+      "category_zh": "Negative Inversion (Rarely/Seldom 부정어 도치)"
     },
     {
       "id": "ig_16",
@@ -4273,7 +4827,9 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "Only after clinical trials were successfully completed did regulatory agencies grant commercial authorization.",
       "translation": "임상 시험이 성공적으로 완료된 후에야 비로소 규제 기관들은 상업적 시판 허가를 부여했다.",
-      "explanation": "[Band 6.5~8.0 고득점 구문] 'Only after + 부사절'이 문두에 올 때, 뒤따르는 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 'Only after + 부사절'이 문두에 올 때, 뒤따르는 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다.",
+      "category_en": "Only after / Only when (조건·시간 부사절 도치)",
+      "category_zh": "Only after / Only when (조건·시간 부사절 도치)"
     },
     {
       "id": "ig_17",
@@ -4289,7 +4845,9 @@ window.IELTS_DATA = {
       "answer": 4,
       "example": "Having analyzed the survey results meticulously, the municipal board drafted a revised transit policy.",
       "translation": "설문조사 결과를 면밀히 분석한 후, 시 위원회는 개정된 대중교통 정책을 입안했다.",
-      "explanation": "[Band 6.5~8.0 고득점 구문] 분사구문(Having analyzed)의 의미상 주어는 주절의 주어(the municipal board)와 일치해야 현수분사 오류가 발생하지 않습니다."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 분사구문(Having analyzed)의 의미상 주어는 주절의 주어(the municipal board)와 일치해야 현수분사 오류가 발생하지 않습니다.",
+      "category_en": "Participle Clauses (완료 분사구문 & 주절 주어 일치)",
+      "category_zh": "Participle Clauses (완료 분사구문 & 주절 주어 일치)"
     },
     {
       "id": "ig_18",
@@ -4305,7 +4863,9 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "The more sophisticated machine learning models become, the harder it is to interpret their parameters.",
       "translation": "머신러닝 모델이 정교해질수록 그 매개변수를 해석하기는 더 어려워진다.",
-      "explanation": "[Band 6.5~8.0 고득점 구문] 'The + 비교급 + S + V, the + 비교급 + S + V' 구조로 평서문 어순을 유지합니다."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 'The + 비교급 + S + V, the + 비교급 + S + V' 구조로 평서문 어순을 유지합니다.",
+      "category_en": "Double Comparative (The 비교급 ..., the 비교급 ...)",
+      "category_zh": "Double Comparative (The 비교급 ..., the 비교급 ...)"
     },
     {
       "id": "ig_19",
@@ -4321,7 +4881,9 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "Were global temperatures to rise by another two degrees, coastal cities would face permanent flooding.",
       "translation": "만약 지구 기온이 2도 더 상승한다면, 해안 도시들은 영구적인 침수에 직면하게 될 것이다.",
-      "explanation": "[Band 6.5~8.0 고득점 구문] 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 동사원형'으로 도치됩니다."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 동사원형'으로 도치됩니다.",
+      "category_en": "Inverted Conditionals (If 생략 가정법 도치: Had / Were)",
+      "category_zh": "Inverted Conditionals (If 생략 가정법 도치: Had / Were)"
     },
     {
       "id": "ig_20",
@@ -4337,7 +4899,9 @@ window.IELTS_DATA = {
       "answer": 1,
       "example": "It is widely acknowledged that stringent regulatory enforcement serves as an indispensable prerequisite for industrial safety.",
       "translation": "엄격한 규제 집행이 산업 안전을 위한 필수불가결한 전제조건 역할을 한다는 것은 널리 인정되고 있다.",
-      "explanation": "[Band 6.5~8.0 고득점 구문] 'It is widely acknowledged that + 완전한 절' 수동태 구문과 학술 명사구(stringent regulatory enforcement, indispensable prerequisite)가 결합된 고득점 문장입니다."
+      "explanation": "[Band 6.5~8.0 고득점 구문] 'It is widely acknowledged that + 완전한 절' 수동태 구문과 학술 명사구(stringent regulatory enforcement, indispensable prerequisite)가 결합된 고득점 문장입니다.",
+      "category_en": "Academic Nominalization & Passive (학술 명사화 및 가주어 구문)",
+      "category_zh": "Academic Nominalization & Passive (학술 명사화 및 가주어 구문)"
     }
   ],
   "dictation": [
@@ -5076,7 +5640,11 @@ window.APP_DATA = {
         "example": "很多大学生利用假期做兼职积累社会经验。",
         "difficulty": "하",
         "id": "hv_01",
-        "translation": "많은 대학생들은 방학을 이용해 아르바이트를 하며 사회 경험을 쌓는다."
+        "translation": "많은 대학생들은 방학을 이용해 아르바이트를 하며 사회 경험을 쌓는다.",
+        "meaning_en": "work part-time; part-time job",
+        "meaning_zh": "兼职；打工",
+        "translation_en": "Many college students use their vacations to do part-time jobs to accumulate social experience.",
+        "translation_zh": "许多大学生利用假期做兼职积累社会经验。"
       },
       {
         "word": "概念",
@@ -5086,7 +5654,11 @@ window.APP_DATA = {
         "example": "这是一个非常新颖的商业概念。",
         "difficulty": "하",
         "id": "hv_02",
-        "translation": "이것은 매우 참신한 비즈니스 개념이다."
+        "translation": "이것은 매우 참신한 비즈니스 개념이다.",
+        "meaning_en": "concept, idea",
+        "meaning_zh": "概念；观念",
+        "translation_en": "The speaker clearly explained several core concepts in modern economics.",
+        "translation_zh": "演讲者清晰地解释了现代经济学中的几个核心概念。"
       },
       {
         "word": "缓解",
@@ -5096,7 +5668,11 @@ window.APP_DATA = {
         "example": "听轻音乐有助于缓解工作带来的压力。",
         "difficulty": "중",
         "id": "hv_03",
-        "translation": "경음악을 듣는 것은 업무로 인한 스트레스를 완화하는 데 도움이 된다."
+        "translation": "경음악을 듣는 것은 업무로 인한 스트레스를 완화하는 데 도움이 된다.",
+        "meaning_en": "relieve, ease, mitigate",
+        "meaning_zh": "缓解；缓和",
+        "translation_en": "Doing moderate exercise helps relieve academic and work pressure.",
+        "translation_zh": "适当运动有助于缓解学业和工作压力。"
       },
       {
         "word": "逻辑",
@@ -5106,7 +5682,11 @@ window.APP_DATA = {
         "example": "他的发言条理清晰，逻辑非常严密。",
         "difficulty": "중",
         "id": "hv_04",
-        "translation": "그의 발언은 조리가 명확하고 논리가 매우 치밀하다."
+        "translation": "그의 발언은 조리가 명확하고 논리가 매우 치밀하다.",
+        "meaning_en": "logic",
+        "meaning_zh": "逻辑",
+        "translation_en": "His debate statement was clear in logic and strongly convincing.",
+        "translation_zh": "他在辩论中的陈述逻辑清晰，很有说服力。"
       },
       {
         "word": "犹豫",
@@ -5116,7 +5696,11 @@ window.APP_DATA = {
         "example": "面对难得的机遇，你不要再犹豫了。",
         "difficulty": "하",
         "id": "hv_05",
-        "translation": "얻기 힘든 기회에 직면했으니 더 이상 망설이지 마라."
+        "translation": "얻기 힘든 기회에 직면했으니 더 이상 망설이지 마라.",
+        "meaning_en": "hesitate",
+        "meaning_zh": "犹豫；迟疑",
+        "translation_en": "Faced with this rare opportunity, he did not hesitate to accept.",
+        "translation_zh": "面对这个难得的机会，他毫不犹豫地接受了。"
       },
       {
         "word": "彻底",
@@ -5126,7 +5710,11 @@ window.APP_DATA = {
         "example": "我们需要彻底调查这件事情的真正原因。",
         "difficulty": "중",
         "id": "hv_06",
-        "translation": "우리는 이 사건의 진정한 원인을 철저히 조사해야 한다."
+        "translation": "우리는 이 사건의 진정한 원인을 철저히 조사해야 한다.",
+        "meaning_en": "thorough; completely",
+        "meaning_zh": "彻底；完全",
+        "translation_en": "Before moving in, we cleaned the entire room thoroughly.",
+        "translation_zh": "入住之前，我们把整个房间彻底打扫了一遍。"
       },
       {
         "word": "启发",
@@ -5136,7 +5724,11 @@ window.APP_DATA = {
         "example": "这部纪录片给了我们很多深刻的启发。",
         "difficulty": "중",
         "id": "hv_07",
-        "translation": "이 다큐멘터리는 우리에게 많은 깊은 영감을 주었다."
+        "translation": "이 다큐멘터리는 우리에게 많은 깊은 영감을 주었다.",
+        "meaning_en": "inspire, enlightenment",
+        "meaning_zh": "启发；启示",
+        "translation_en": "The professor's speech gave students profound inspiration.",
+        "translation_zh": "教授的发言给同学们带来了深刻的启发。"
       },
       {
         "word": "原则",
@@ -5146,7 +5738,11 @@ window.APP_DATA = {
         "example": "在原则问题上，我们决不能轻易妥协。",
         "difficulty": "하",
         "id": "hv_08",
-        "translation": "원칙적인 문제에 있어서 우리는 결코 쉽게 타협해서는 안 된다."
+        "translation": "원칙적인 문제에 있어서 우리는 결코 쉽게 타협해서는 안 된다.",
+        "meaning_en": "principle",
+        "meaning_zh": "原则",
+        "translation_en": "No matter what happens, we must adhere to the principle of honesty.",
+        "translation_zh": "无论发生什么，我们都要坚持诚信的原则。"
       },
       {
         "word": "耽误",
@@ -5156,7 +5752,11 @@ window.APP_DATA = {
         "example": "路上堵车耽误了很多时间。",
         "difficulty": "하",
         "id": "hv_09",
-        "translation": "길에서 차가 막혀 많은 시간을 지체했다."
+        "translation": "길에서 차가 막혀 많은 시간을 지체했다.",
+        "meaning_en": "delay, waste time",
+        "meaning_zh": "耽误；延误",
+        "translation_en": "Because of traffic jams, I was delayed by half an hour this morning.",
+        "translation_zh": "因为路上堵车，今天早上我耽误了半小时。"
       },
       {
         "word": "克服",
@@ -5166,7 +5766,11 @@ window.APP_DATA = {
         "example": "只要大家团结一致，就一定能克服一切困难。",
         "difficulty": "하",
         "id": "hv_10",
-        "translation": "모두가 하나로 단결하기만 하면 반드시 모든 어려움을 극복할 수 있다."
+        "translation": "모두가 하나로 단결하기만 하면 반드시 모든 어려움을 극복할 수 있다.",
+        "meaning_en": "overcome, conquer",
+        "meaning_zh": "克服；战胜",
+        "translation_en": "With teamwork and persistence, we finally overcame all technical difficulties.",
+        "translation_zh": "通过团队合作和坚持，我们终于克服了所有技术困难。"
       },
       {
         "word": "效率",
@@ -5176,7 +5780,11 @@ window.APP_DATA = {
         "example": "合理安排作息时间可以显著提高工作效率。",
         "difficulty": "하",
         "id": "hv_11",
-        "translation": "일과와 휴식 시간을 합리적으로 배분하면 업무 효율을 현저히 높일 수 있다."
+        "translation": "일과와 휴식 시간을 합리적으로 배분하면 업무 효율을 현저히 높일 수 있다.",
+        "meaning_en": "efficiency",
+        "meaning_zh": "效率",
+        "translation_en": "Using suitable project tools can significantly improve study and work efficiency.",
+        "translation_zh": "使用合适的工具可以显著提高学习和工作效率。"
       },
       {
         "word": "赞成",
@@ -5186,7 +5794,11 @@ window.APP_DATA = {
         "example": "对于这个提议，大家纷纷表示赞成。",
         "difficulty": "하",
         "id": "hv_12",
-        "translation": "이 제안에 대해 모두가 앞다투어 찬성의 뜻을 표했다."
+        "translation": "이 제안에 대해 모두가 앞다투어 찬성의 뜻을 표했다.",
+        "meaning_en": "approve, agree with",
+        "meaning_zh": "赞成；同意",
+        "translation_en": "Most members in the meeting strongly approved of this reform proposal.",
+        "translation_zh": "大多数参会人员非常赞成这项改革提议。"
       },
       {
         "word": "独特",
@@ -5196,7 +5808,11 @@ window.APP_DATA = {
         "example": "这位设计师拥有非常独特的设计风格。",
         "difficulty": "중",
         "id": "hv_13",
-        "translation": "이 디자이너는 매우 독특한 디자인 스타일을 가지고 있다."
+        "translation": "이 디자이너는 매우 독특한 디자인 스타일을 가지고 있다.",
+        "meaning_en": "unique, distinctive",
+        "meaning_zh": "独特；独一无二",
+        "translation_en": "This museum has a very unique architectural style and design.",
+        "translation_zh": "这座博物馆的建筑风格和设计非常独特。"
       },
       {
         "word": "趋势",
@@ -5206,7 +5822,11 @@ window.APP_DATA = {
         "example": "随着科技的发展，数字化已成为必然趋势。",
         "difficulty": "중",
         "id": "hv_14",
-        "translation": "과학기술이 발전함에 따라 디지털화는 이미 필연적인 추세가 되었다."
+        "translation": "과학기술이 발전함에 따라 디지털화는 이미 필연적인 추세가 되었다.",
+        "meaning_en": "trend, tendency",
+        "meaning_zh": "趋势；走向",
+        "translation_en": "Continuous digital transformation has become an inevitable trend worldwide.",
+        "translation_zh": "数字化转型已成为全球不可避免的发展趋势。"
       },
       {
         "word": "繁荣",
@@ -5216,7 +5836,11 @@ window.APP_DATA = {
         "example": "经济的快速发展带来了城市的繁荣。",
         "difficulty": "중",
         "id": "hv_15",
-        "translation": "경제의 빠른 발전은 도시의 번영을 가져왔다."
+        "translation": "경제의 빠른 발전은 도시의 번영을 가져왔다.",
+        "meaning_en": "prosperous, flourishing",
+        "meaning_zh": "繁荣；繁华",
+        "translation_en": "Trade and technological innovation brought economic prosperity to the coastal area.",
+        "translation_zh": "贸易和技术创新促进了该沿海地区的经济繁荣。"
       },
       {
         "word": "珍惜",
@@ -5226,7 +5850,11 @@ window.APP_DATA = {
         "example": "我们应该珍惜眼前来之不易的幸福生活。",
         "difficulty": "하",
         "id": "hv_16",
-        "translation": "우리는 눈앞의 어렵게 얻은 행복한 삶을 소중히 여겨야 한다."
+        "translation": "우리는 눈앞의 어렵게 얻은 행복한 삶을 소중히 여겨야 한다.",
+        "meaning_en": "cherish, treasure, value",
+        "meaning_zh": "珍惜；珍爱",
+        "translation_en": "We should cherish current study opportunities and time.",
+        "translation_zh": "我们应当珍惜现在的学习机会和宝贵时间。"
       },
       {
         "word": "承担",
@@ -5236,7 +5864,11 @@ window.APP_DATA = {
         "example": "勇于承担责任是成熟的标志。",
         "difficulty": "하",
         "id": "hv_17",
-        "translation": "용기 있게 책임을 지는 것은 성숙함의 상징이다."
+        "translation": "용기 있게 책임을 지는 것은 성숙함의 상징이다.",
+        "meaning_en": "undertake, shoulder, assume",
+        "meaning_zh": "承担；担负",
+        "translation_en": "As the team leader, he took on the main responsibility of the project.",
+        "translation_zh": "作为项目负责人，他主动承担了核心研发责任。"
       },
       {
         "word": "敏锐",
@@ -5246,7 +5878,11 @@ window.APP_DATA = {
         "example": "优秀的企业家通常拥有敏锐的市场洞察力。",
         "difficulty": "상",
         "id": "hv_18",
-        "translation": "우수한 기업가는 대개 예리한 시장 통찰력을 지니고 있다."
+        "translation": "우수한 기업가는 대개 예리한 시장 통찰력을 지니고 있다.",
+        "meaning_en": "keen, sharp, acute",
+        "meaning_zh": "敏锐；尖锐",
+        "translation_en": "She possesses keen observation and easily detects market shifts.",
+        "translation_zh": "她拥有敏锐的市场洞察力，能迅速察觉行业趋势。"
       },
       {
         "word": "挑战",
@@ -5256,7 +5892,11 @@ window.APP_DATA = {
         "example": "我们要勇于迎接生活中的各种挑战。",
         "difficulty": "중",
         "id": "hv_19",
-        "translation": "우리는 삶 속의 온갖 도전을 용기 있게 맞이해야 한다."
+        "translation": "우리는 삶 속의 온갖 도전을 용기 있게 맞이해야 한다.",
+        "meaning_en": "challenge",
+        "meaning_zh": "挑战",
+        "translation_en": "Courageously facing new challenges promotes personal growth.",
+        "translation_zh": "勇敢面对新的挑战能够促使我们快速成长。"
       },
       {
         "word": "循序渐进",
@@ -5266,7 +5906,11 @@ window.APP_DATA = {
         "example": "学习外语是一个循序渐进的过程。",
         "difficulty": "상",
         "id": "hv_20",
-        "translation": "외국어를 배우는 것은 순서를 따라 차근차근 나아가는 과정이다."
+        "translation": "외국어를 배우는 것은 순서를 따라 차근차근 나아가는 과정이다.",
+        "meaning_en": "proceed step by step, progress gradually",
+        "meaning_zh": "循序渐进；按部就班",
+        "translation_en": "Learning a new language requires step-by-step practice rather than rushing.",
+        "translation_zh": "学习新语言需要循序渐进，不可急于求成。"
       },
       {
         "id": "hv_21",
@@ -5276,7 +5920,11 @@ window.APP_DATA = {
         "pos": "동사/명사",
         "difficulty": "중",
         "example": "我们必须牢牢把握这次难得的发展机会。",
-        "translation": "우리는 이번 얻기 힘든 발전의 기회를 단단히 잡아야 한다."
+        "translation": "우리는 이번 얻기 힘든 발전의 기회를 단단히 잡아야 한다.",
+        "meaning_en": "grasp, master, confidence",
+        "meaning_zh": "把握；掌握",
+        "translation_en": "Through thorough preparation, he is confident of passing the HSK examination.",
+        "translation_zh": "经过充分复习，他对通过考试很有把握。"
       },
       {
         "id": "hv_22",
@@ -5286,7 +5934,11 @@ window.APP_DATA = {
         "pos": "동사",
         "difficulty": "상",
         "example": "这首简短的诗歌里包含了作者深厚的情感。",
-        "translation": "이 짧은 시 속에는 작가의 깊은 감정이 담겨 있다."
+        "translation": "이 짧은 시 속에는 작가의 깊은 감정이 담겨 있다.",
+        "meaning_en": "contain, include, imply",
+        "meaning_zh": "包含；涵盖",
+        "translation_en": "This training plan contains comprehensive listening and reading exercises.",
+        "translation_zh": "该培训方案包含全面的听力与阅读实战训练。"
       },
       {
         "id": "hv_23",
@@ -5296,7 +5948,11 @@ window.APP_DATA = {
         "pos": "형용사/부사",
         "difficulty": "중",
         "example": "长期熬夜必然会对身体健康造成损害。",
-        "translation": "장기간 밤을 새우면 필연적으로 신체 건강에 해를 끼치게 된다."
+        "translation": "장기간 밤을 새우면 필연적으로 신체 건강에 해를 끼치게 된다.",
+        "meaning_en": "inevitable, necessary",
+        "meaning_zh": "必然；必然性",
+        "translation_en": "Failures and setbacks are inevitable on the road to success.",
+        "translation_zh": "走向成功的道路上遇到挫折是必然的。"
       },
       {
         "id": "hv_24",
@@ -5306,7 +5962,11 @@ window.APP_DATA = {
         "pos": "명사",
         "difficulty": "중",
         "example": "法律严格保护每一位公民的合法私人财产。",
-        "translation": "법률은 모든 시민의 합법적인 개인 재산을 엄격히 보호한다."
+        "translation": "법률은 모든 시민의 합법적인 개인 재산을 엄격히 보호한다.",
+        "meaning_en": "property, wealth, assets",
+        "meaning_zh": "财产；财富",
+        "translation_en": "Protecting citizens' lawful property is guaranteed by law.",
+        "translation_zh": "法律严格保护公民的合法财产不受侵犯。"
       },
       {
         "id": "hv_25",
@@ -5316,7 +5976,11 @@ window.APP_DATA = {
         "pos": "동사",
         "difficulty": "상",
         "example": "面对突发状况，管理部门立即采取了有效措施。",
-        "translation": "돌발 상황에 직면하여 관리 부서는 즉시 유효한 조치를 취했다."
+        "translation": "돌발 상황에 직면하여 관리 부서는 즉시 유효한 조치를 취했다.",
+        "meaning_en": "adopt, take (measures)",
+        "meaning_zh": "采取；采纳",
+        "translation_en": "The government adopted effective measures to curb environmental pollution.",
+        "translation_zh": "政府采取了切实有效的措施来治理环境污染。"
       },
       {
         "id": "hv_26",
@@ -5326,7 +5990,11 @@ window.APP_DATA = {
         "pos": "동사",
         "difficulty": "상",
         "example": "操作失误导致整条生产线停工了两个小时。",
-        "translation": "조작 실수로 인해 전체 생산 라인이 두 시간 동안 가동 중단되었다."
+        "translation": "조작 실수로 인해 전체 생산 라인이 두 시간 동안 가동 중단되었다.",
+        "meaning_en": "lead to, cause, result in",
+        "meaning_zh": "导致；造成",
+        "translation_en": "Careless verification led to errors in the final data sheet.",
+        "translation_zh": "疏忽大意导致最终数据核算出现了差错。"
       },
       {
         "id": "hv_27",
@@ -5336,7 +6004,11 @@ window.APP_DATA = {
         "pos": "동사",
         "difficulty": "상",
         "example": "各部门必须全面贯彻落实公司的新安全规定。",
-        "translation": "각 부서는 회사의 새로운 안전 규정을 전면적으로 관철하여 실행해야 한다."
+        "translation": "각 부서는 회사의 새로운 안전 규정을 전면적으로 관철하여 실행해야 한다.",
+        "meaning_en": "implement, carry out thoroughly",
+        "meaning_zh": "贯彻；落实",
+        "translation_en": "The company firmly implemented the green environmental development strategy.",
+        "translation_zh": "公司坚定贯彻绿色环保的发展战略。"
       },
       {
         "id": "hv_28",
@@ -5346,7 +6018,11 @@ window.APP_DATA = {
         "pos": "동사",
         "difficulty": "상",
         "example": "在图书馆大声喧哗会妨碍其他人正常学习。",
-        "translation": "도서관에서 큰 소리로 떠드는 것은 다른 사람의 정상적인 공부를 방해한다."
+        "translation": "도서관에서 큰 소리로 떠드는 것은 다른 사람의 정상적인 공부를 방해한다.",
+        "meaning_en": "hinder, obstruct, impede",
+        "meaning_zh": "妨碍；阻碍",
+        "translation_en": "Please do not make loud noises in the library so as not to disturb others.",
+        "translation_zh": "在图书馆请保持安静，以免妨碍他人专注学习。"
       },
       {
         "id": "hv_29",
@@ -5356,7 +6032,11 @@ window.APP_DATA = {
         "pos": "형용사",
         "difficulty": "중",
         "example": "人工智能技术已经在医疗领域得到了广泛的应用。",
-        "translation": "인공지능 기술은 이미 의료 분야에서 광범위하게 응용되고 있다."
+        "translation": "인공지능 기술은 이미 의료 분야에서 광범위하게 응용되고 있다.",
+        "meaning_en": "broad, extensive, widespread",
+        "meaning_zh": "广泛；广博",
+        "translation_en": "Artificial intelligence technology has gained widespread application across industries.",
+        "translation_zh": "人工智能技术已在各行各业获得了极其广泛的应用。"
       },
       {
         "id": "hv_30",
@@ -5366,7 +6046,11 @@ window.APP_DATA = {
         "pos": "명사",
         "difficulty": "상",
         "example": "掌握核心技术是企业保持竞争力的关键。",
-        "translation": "핵심 기술을 확보하는 것이 기업이 경쟁력을 유지하는 열쇠이다."
+        "translation": "핵심 기술을 확보하는 것이 기업이 경쟁력을 유지하는 열쇠이다.",
+        "meaning_en": "core, nucleus, key",
+        "meaning_zh": "核心；要害",
+        "translation_en": "Mastering vocabulary and grammar rules is the core of passing the exam.",
+        "translation_zh": "掌握核心词汇与语法结构是通过考试的关键。"
       }
     ],
     "colloc": [
@@ -5461,380 +6145,426 @@ window.APP_DATA = {
         "id": "hco_10"
       }
     ],
-    "grammar": [
+    "chengyu": [
       {
-        "id": "hg_01",
+        "chengyu": "举一反三",
+        "pinyin": "jǔ yī fǎn sān",
+        "meaning": "하나를 듣고 셋을 미루어 알다 (응용력이 뛰어나다)",
+        "sentence": "学习不仅要掌握基础知识，更要善于____，触类旁通。",
+        "example": "学习不仅要掌握基础知识，更要善于举一反三，触类旁通。",
+        "translation": "공부는 기초 지식을 습득해야 할 뿐만 아니라, 하나를 듣고 셋을 미루어 응용할 줄 알아야 한다.",
         "difficulty": "하",
-        "type": "special_sentence",
-        "category": "把자문 (처치문 동사 완료 성분)",
-        "question": "다음 중 [把자문]의 어순과 문법 규칙이 가장 올바른 문장은?",
-        "options": [
-          "他把昨天的作业没做完。",
-          "请你把这篇报告认真地修改一遍。",
-          "他把那个重要的秘密说了。",
-          "我把钥匙忘在家里没。"
-        ],
-        "answer": 2,
-        "example": "请你把这篇报告认真地修改一遍。",
-        "translation": "이 보고서를 진지하게 한 번 수정해 주십시오.",
-        "explanation": "把자문의 동사는 단독으로 끝날 수 없으며 반드시 보어(修改一遍), 동태조사(了) 등 기타 성분이 결합해야 합니다. 부정부사(没, 不)는 반드시 '把' 앞에 와야 합니다 (没把作业做完)."
+        "id": "hch_01",
+        "meaning_en": "draw inferences about other cases from one instance",
+        "meaning_zh": "举一反三；触类旁通",
+        "translation_en": "Studying should not merely absorb basic facts, but learn to deduce broader principles.",
+        "translation_zh": "学习不仅要掌握基础知识，更要善于举一反三，触类旁通。"
       },
       {
-        "id": "hg_02",
+        "chengyu": "循序渐进",
+        "pinyin": "xún xù jiàn jìn",
+        "meaning": "순서를 따라 점진적으로 나아가다",
+        "sentence": "无论是学习还是健身，都必须____，不能急于求成。",
+        "example": "无论是学习还是健身，都必须循序渐进，不能急于求成。",
+        "translation": "공부든 운동이든 모두 순서를 따라 차근차근 나아가야 하며, 성급하게 성과를 내려 해서는 안 된다.",
         "difficulty": "하",
-        "type": "special_sentence",
-        "category": "被자문 (피동문 부정사 위치)",
-        "question": "다음 문장에서 부정부사 '还没'이 들어갈 가장 적절한 위치는?\n\"这个问题【 (A) 】被【 (B) 】专家们【 (C) 】圆满地【 (D) 】解决了。\"",
-        "options": [
-          "(A) 위치",
-          "(B) 위치",
-          "(C) 위치",
-          "(D) 위치"
-        ],
-        "answer": 1,
-        "example": "这个问题还没被专家们圆满地解决。",
-        "translation": "이 문제는 아직 전문가들에 의해 원만하게 해결되지 않았다.",
-        "explanation": "被자문에서 부정부사(没, 还没有, 不)나 능원동사(想, 会, 能)는 반드시 피동 표식인 '被'의 【앞】에 놓여야 합니다 (这个问题还没被专家们解决)."
+        "id": "hch_02",
+        "meaning_en": "proceed step by step, gradual progress",
+        "meaning_zh": "循序渐进；由浅入深",
+        "translation_en": "Mastering advanced vocabulary requires gradual and steady accumulation.",
+        "translation_zh": "掌握高阶词汇需要循序渐进地积累。"
       },
       {
-        "id": "hg_03",
+        "chengyu": "半途而废",
+        "pinyin": "bàn tú ér fèi",
+        "meaning": "중도에 그만두다, 포기하다",
+        "sentence": "既然已经开始了这项科研项目，就绝不能____。",
+        "example": "既然已经开始了这项科研项目，就绝不能半途而废。",
+        "translation": "이미 이 과학 연구 프로젝트를 시작한 이상 결코 중도에 포기해서는 안 된다.",
         "difficulty": "하",
-        "type": "special_sentence",
-        "category": "존현문 (存现句 장소 표현)",
-        "question": "다음 중 사람이나 사물의 존재·출현을 나타내는 [존현문]으로 문법상 가장 올바른 것은?",
-        "options": [
-          "在桌子上放着几本厚厚的专业书。",
-          "桌子上放着几本厚厚的专业书。",
-          "桌子上放这几本厚厚的专业书。",
-          "厚厚的专业书在桌子上放着了。"
-        ],
-        "answer": 2,
-        "example": "桌子上放着几本厚厚的专业书。",
-        "translation": "책상 위에 두꺼운 전공 서적 몇 권이 놓여 있다.",
-        "explanation": "존현문의 기본 공식은 '장소사 + 동사 + 着/了 + 불특정 대상(수량+명사)'입니다. 흔한 오류로 장소사 앞에 전치사 '在'를 붙이는데, 존현문에서는 문두 장소 앞에 '在'를 쓰지 않습니다."
+        "id": "hch_03",
+        "meaning_en": "give up halfway, leave unfinished",
+        "meaning_zh": "半途而废；前功尽弃",
+        "translation_en": "Once you start, never give up halfway.",
+        "translation_zh": "既然确定了目标，就决不能半途而废。"
       },
       {
-        "id": "hg_04",
+        "chengyu": "坚持不懈",
+        "pinyin": "jiān chí bú xiè",
+        "meaning": "포기하지 않고 끈기 있게 계속하다",
+        "sentence": "只要____地努力下去，梦想终有一天会变成现实。",
+        "example": "只要坚持不懈地努力下去，梦想终有一天会变成现实。",
+        "translation": "포기하지 않고 끈기 있게 계속 노력하기만 한다면 꿈은 마침내 현실이 될 것이다.",
         "difficulty": "하",
-        "type": "special_sentence",
-        "category": "겸어문 (兼语句 사동사)",
-        "question": "다음 빈칸에 들어갈 사동사로 알맞지 않은 것은?\n\"这次深刻的教训____他意识到了团队合作的重要性。\"",
-        "options": [
-          "使 (shǐ)",
-          "让 (ràng)",
-          "令 (lìng)",
-          "被 (bèi)"
-        ],
-        "answer": 4,
-        "example": "这次深刻的教训使他意识到了团队合作的重要性。",
-        "translation": "이번 뼈아픈 교훈은 그로 하여금 팀워크의 중요성을 깨닫게 만들었다.",
-        "explanation": "'被'는 피동 표식으로 겸어 사동 구문에 올 수 없습니다. '주어 + 사동사(使/让/令) + 겸어(사람) + 술어' 구조로 '~로 하여금 ...하게 만들다'라는 뜻입니다."
+        "id": "hch_04",
+        "meaning_en": "persevere unremittingly, tireless persistence",
+        "meaning_zh": "坚持不懈；持之以恒",
+        "translation_en": "With unremitting perseverance, he achieved remarkable success.",
+        "translation_zh": "只要坚持不懈，就一定能取得显著成绩。"
       },
       {
-        "id": "hg_05",
+        "chengyu": "全力以赴",
+        "pinyin": "quán lì yǐ fù",
+        "meaning": "모든 힘을 다해 전력투구하다",
+        "sentence": "面对即将到来的决赛，每位队员都表示会____。",
+        "example": "面对即将到来的决赛，每位队员都表示会全力以赴。",
+        "translation": "곧 다가올 결승전을 앞두고 모든 팀원이 전력투구하겠다고 밝혔다.",
         "difficulty": "하",
-        "type": "complement",
-        "category": "정도보어 (程度补语 得)",
-        "question": "다음 중 상태/정도 보어 표식 '得'의 쓰임이 가장 올바른 문장은?",
-        "options": [
-          "他跑得很极快。",
-          "听到这个好消息，大家高兴得跳了起来。",
-          "这道难题他做得非常没好。",
-          "他感动得流下眼泪了得很多。"
-        ],
-        "answer": 2,
-        "example": "听到这个好消息，大家高兴得跳了起来。",
-        "translation": "이 기쁜 소식을 듣고 모두가 너무 기뻐서 펄쩍 뛰어올랐다.",
-        "explanation": "정도보어 뒤에 구체적인 상태 묘사가 연결되어 '기뻐서 펄쩍 뛰어올랐다(高兴得跳了起来)'가 가장 자연스럽습니다. 정도부사 很과 极는 중복 수식할 수 없으며, 부정은 '做得不好' 형태로 씁니다."
+        "id": "hch_05",
+        "meaning_en": "spare no effort, go all out",
+        "meaning_zh": "全力以赴；竭尽全力",
+        "translation_en": "We will go all out to achieve the highest score.",
+        "translation_zh": "我们将全力以赴争取最好的成绩。"
       },
       {
-        "id": "hg_06",
+        "chengyu": "同舟共济",
+        "pinyin": "tóng zhōu gòng jì",
+        "meaning": "같은 배를 타고 함께 강을 건너다 (환난을 함께 극복하다)",
+        "sentence": "在这次经济危机中，全公司员工____，共渡难关。",
+        "example": "在这次经济危机中，全公司员工同舟共济，共渡难关。",
+        "translation": "이번 경제 위기 속에서 전 사원이 한마음으로 힘을 합쳐 난관을 함께 극복했다.",
+        "difficulty": "중",
+        "id": "hch_06",
+        "meaning_en": "cross a river in the same boat; pull together through difficulty",
+        "meaning_zh": "同舟共济；风雨同舟",
+        "translation_en": "Faced with hardships, the team pulled together to overcome hurdles.",
+        "translation_zh": "面对困境，团队全体成员同舟共济共渡难关。"
+      },
+      {
+        "chengyu": "取长补短",
+        "pinyin": "qǔ cháng bǔ duǎn",
+        "meaning": "장점을 취해 단점을 보완하다",
+        "sentence": "团队成员之间应该互相学习，____，共同进步。",
+        "example": "团队成员之间应该互相学习，取长补短，共同进步。",
+        "translation": "팀원들 간에는 서로 배우고 장점을 취해 단점을 보완하며 함께 발전해야 한다.",
         "difficulty": "하",
-        "type": "conjunction",
-        "category": "접속사 호응 (유일 조건 只有...才...)",
-        "question": "다음 빈칸에 알맞은 접속사 짝꿍은?\n\"____坚持实事求是的科学态度，____能得出真正客观的结论。\"",
-        "options": [
-          "只要 ... 就 ...",
-          "只有 ... 才 ...",
-          "无论 ... 都 ...",
-          "与其 ... 不如 ..."
-        ],
-        "answer": 2,
-        "example": "只有坚持实事求是的科学态度，才能得出真正客观的结论。",
-        "translation": "오직 사실에 입각한 과학적 태도를 견지해야만 비로소 진정으로 객관적인 결론을 도출할 수 있다.",
-        "explanation": "'只有 ... 才 ...'(오직 ~해야만 비로소 ~하다)가 정답입니다. 뒷절에 '才'가 있으므로 유일 조건을 나타내는 '只有'와 짝을 이룹니다. (충분 조건인 只要는 就와 호응)."
+        "id": "hch_07",
+        "meaning_en": "learn from others' strengths to offset one's weaknesses",
+        "meaning_zh": "取长补短；相互借鉴",
+        "translation_en": "Collaborative study allows students to complement each other.",
+        "translation_zh": "互相合作可以取长补短，共同进步。"
       },
       {
-        "id": "hg_07",
+        "chengyu": "各抒己见",
+        "pinyin": "gè shū jǐ jiàn",
+        "meaning": "각자 자신의 의견과 견해를 밝히다",
+        "sentence": "在今天的研讨会上，与会专家们____，探讨方案。",
+        "example": "在今天的研讨会上，与会专家们各抒己见，探讨方案。",
+        "translation": "오늘 세미나에서 참석한 전문가들은 각자 자신의 견해를 밝히며 방안을 논의했다.",
+        "difficulty": "중",
+        "id": "hch_08",
+        "meaning_en": "express one's own opinions freely",
+        "meaning_zh": "各抒己见；畅所欲言",
+        "translation_en": "In the group discussion, everyone freely expressed their opinions.",
+        "translation_zh": "研讨会上，大家各抒己见，气氛热烈。"
+      },
+      {
+        "chengyu": "随机应变",
+        "pinyin": "suí jī yìng biàn",
+        "meaning": "상황의 변화에 맞추어 임기응변하다",
+        "sentence": "面对谈判桌上的突发状况，他展现出了极强的____能力。",
+        "example": "面对谈判桌上的突发状况，他展现出了极强的随机应变能力。",
+        "translation": "협상 테이블의 돌발 상황에 직면하여 그는 매우 뛰어난 임기응변 능력을 보여주었다.",
+        "difficulty": "상",
+        "id": "hch_09",
+        "meaning_en": "act according to circumstances, adapt flexibly",
+        "meaning_zh": "随机应变；灵活处理",
+        "translation_en": "An experienced leader can adapt quickly when unforeseen situations arise.",
+        "translation_zh": "面对突发情况，我们需要具备随机应变的能力。"
+      },
+      {
+        "chengyu": "络绎不绝",
+        "pinyin": "luò yì bù jué",
+        "meaning": "(사람·수레 등의 왕래가) 끊이지 않고 이어지다",
+        "sentence": "故宫博物院每到节假日，前来参观的中外游客都____。",
+        "example": "故宫博物院每到节假日，前来参观的中外游客都络绎不绝。",
+        "translation": "고궁박물원은 휴일만 되면 관람하러 오는 국내외 관광객들의 발길이 끊이지 않는다.",
+        "difficulty": "중",
+        "id": "hch_10",
+        "meaning_en": "in an endless stream, continuous flow",
+        "meaning_zh": "络绎不绝；连绵不断",
+        "translation_en": "Visitors came to the exhibition in an endless stream.",
+        "translation_zh": "参观展览的游客整日络绎不绝。"
+      },
+      {
+        "chengyu": "恍然大悟",
+        "pinyin": "huǎng rán dà wù",
+        "meaning": "문득 크게 깨닫다, 번쩍 알아차리다",
+        "sentence": "听了老师耐心的解释后，他这才____，解开了心中的疑惑。",
+        "example": "听了老师耐心的解释后，他这才恍然大悟，解开了心中的疑惑。",
+        "translation": "선생님의 인내심 있는 설명을 듣고 나서야 그는 비로소 크게 깨닫고 마음속 의문을 풀었다.",
+        "difficulty": "상",
+        "id": "hch_11",
+        "meaning_en": "suddenly see the light, suddenly realize",
+        "meaning_zh": "恍然大悟；豁然开朗",
+        "translation_en": "After hearing the teacher's explanation, I suddenly understood.",
+        "translation_zh": "听完老师的详细讲解，我顿时恍然大悟。"
+      },
+      {
+        "chengyu": "犹豫不决",
+        "pinyin": "yóu yù bù jué",
+        "meaning": "결정을 내리지 못하고 주저하다",
+        "sentence": "商机稍纵即逝，在关键时刻切记不可____。",
+        "example": "商机稍纵即逝，在关键时刻切记不可犹豫不决。",
+        "translation": "비즈니스 기회는 순식간에 사라지므로 결정적인 순간에 결코 주저해서는 안 된다.",
+        "difficulty": "중",
+        "id": "hch_12",
+        "meaning_en": "hesitant, indecisive",
+        "meaning_zh": "犹豫不决；瞻前顾后",
+        "translation_en": "He remained indecisive between the two job offers.",
+        "translation_zh": "在两个待遇优厚的录用机会前，他犹豫不决。"
+      },
+      {
+        "chengyu": "耐人寻味",
+        "pinyin": "nài rén xún wèi",
+        "meaning": "여운이 길고 깊이 음미해 볼 가치가 있다",
+        "sentence": "这部话剧的情节引人入胜，结局更是____。",
+        "example": "这部话剧的情节引人入胜，结局更是耐人寻味。",
+        "translation": "이 연극의 줄거리는 매우 매력적이며 결말은 더욱 깊은 여운을 남긴다.",
+        "difficulty": "중",
+        "id": "hch_13",
+        "meaning_en": "thought-provoking, meaningful and memorable",
+        "meaning_zh": "耐人寻味；发人深省",
+        "translation_en": "The ending of the novel was subtle and thought-provoking.",
+        "translation_zh": "这部小说的结局耐人寻味，引人深思。"
+      },
+      {
+        "chengyu": "迫不及待",
+        "pinyin": "pò bù jí dài",
+        "meaning": "너무 조급하여 잠시도 기다릴 수 없다",
+        "sentence": "刚收到录取通知书，他就____地打电话告诉了父母。",
+        "example": "刚收到录取通知书，他就迫不及待地打电话告诉了父母。",
+        "translation": "합격 통지서를 받자마자 그는 잠시도 기다리지 못하고 부모님께 전화해 알렸다.",
         "difficulty": "하",
-        "type": "special_sentence",
-        "category": "비교문 (A 不如 B)",
-        "question": "다음 중 비교문 표현이 문법적으로 가장 자연스러운 것은?",
-        "options": [
-          "现在的实际情况不如原来预期的那么乐观。",
-          "他比我非常高。",
-          "今天的天气比昨天更冷得多得很。",
-          "他的汉语水平跟我不如一样。"
-        ],
-        "answer": 1,
-        "example": "现在的实际情况不如原来预期的那么乐观。",
-        "translation": "현재의 실제 상황은 원래 예상했던 것만큼 그렇게 낙관적이지 못하다.",
-        "explanation": "'A 不如 B + 那么 + 형용사'(A는 B만큼 ~하지 못하다)의 표준 비교 구문입니다. 比 뒤에는 구체적 차이(高三厘米, 高得多)를 나타내며 정도부사 '非常/很'을 쓸 수 없습니다."
+        "id": "hch_14",
+        "meaning_en": "too impatient to wait, eager",
+        "meaning_zh": "迫不及待；刻不容缓",
+        "translation_en": "Upon opening the package, she could not wait to read the book.",
+        "translation_zh": "收到包裹后，他迫不及待地打开阅读。"
       },
       {
-        "id": "hg_08",
+        "chengyu": "津津有味",
+        "pinyin": "jīn jīn yǒu wèi",
+        "meaning": "매우 흥미진진하게, 맛깔스럽게",
+        "sentence": "孩子们正围坐在电视机前，____地看着动画片。",
+        "example": "孩子们正围坐在电视机前，津津有味地看着动画片。",
+        "translation": "아이들이 텔레비전 앞에 둘러앉아 흥미진진하게 만화영화를 보고 있다.",
+        "difficulty": "하",
+        "id": "hch_15",
+        "meaning_en": "with keen pleasure, relish with gusto",
+        "meaning_zh": "津津有味；兴致勃勃",
+        "translation_en": "The children were reading the illustrated storybook with great relish.",
+        "translation_zh": "孩子们津津有味地听着生动的故事。"
+      },
+      {
+        "chengyu": "理所当然",
+        "pinyin": "lǐ suǒ dāng rán",
+        "meaning": "도리나 이치상 응당 당연하다",
+        "sentence": "父母为我们付出了很多，我们不应该把这一切视为____。",
+        "example": "父母为我们付出了很多，我们不应该把这一切视为理所当然。",
+        "translation": "부모님께서 우리를 위해 많은 헌신을 하셨으니, 우리는 이 모든 것을 당연하게 여겨서는 안 된다.",
         "difficulty": "중",
-        "type": "conjunction",
-        "category": "접속사 호응 (인과 도치 之所以...是因为...)",
-        "question": "다음 문장의 빈칸에 들어갈 인과 접속사 짝꿍은?\n\"他____能够克服重重困难取得成功，____有着坚定的信念。\"",
-        "options": [
-          "因为 ... 所以 ...",
-          "之所以 ... 是因为 ...",
-          "虽然 ... 但是 ...",
-          "既然 ... 就 ..."
-        ],
-        "answer": 2,
-        "example": "他之所以能够克服重重困难取得成功，是因为有着坚定的信念。",
-        "translation": "그가 겹겹의 어려움을 극복하고 성공을 거둘 수 있었던 까닭은 확고한 신념이 있었기 때문이다.",
-        "explanation": "'之所以 ... 是因为 ...'(그가 ~한 까닭은 ~때문이다) 구문입니다. 결과('取得成功')를 앞절에서 먼저 제시하고 원인('有着坚定的信念')을 뒷절에서 밝히는 고득점 패턴입니다."
+        "id": "hch_16",
+        "meaning_en": "matter of course, natural and reasonable",
+        "meaning_zh": "理所当然；顺理成章",
+        "translation_en": "Helping elderly and children on public transport is a matter of course.",
+        "translation_zh": "在公交车上给老人让座是理所当然的事情。"
       },
       {
-        "id": "hg_09",
+        "chengyu": "莫名其妙",
+        "pinyin": "mò míng qí miào",
+        "meaning": "영문을 알 수 없다, 까닭을 몰라 어리둥절하다",
+        "sentence": "他今天一句话都没说就突然发脾气，真让人觉得____。",
+        "example": "他今天一句话都没说就突然发脾气，真让人觉得莫名其妙。",
+        "translation": "그가 오늘 한마디 말도 없이 갑자기 화를 내서 정말 영문을 알 수 없게 만들었다.",
         "difficulty": "중",
-        "type": "conjunction",
-        "category": "접속사 호응 (선택 与其...不如...)",
-        "question": "다음 빈칸에 들어갈 알맞은 접속사는?\n\"遇到问题，____一味地互相推卸责任，____坐下来共同寻找解决办法。\"",
-        "options": [
-          "宁可 ... 也不 ...",
-          "即使 ... 也 ...",
-          "与其 ... 不如 ...",
-          "不仅 ... 而且 ..."
-        ],
-        "answer": 3,
-        "example": "遇到问题，与其一味地互相推卸责任，不如坐下来共同寻找解决办法。",
-        "translation": "문제에 부딪혔을 때 덮어놓고 서로 책임을 떠넘기느니 차라리 마주 앉아 함께 해결 방법을 찾는 편이 낫다.",
-        "explanation": "'与其 ... 不如 ...'(~하느니 차라리 ~하는 것이 낫다)가 정답입니다. 전자보다 후자의 방안이 더 바람직함을 나타낼 때 쓰는 5급 초빈출 접속사입니다."
+        "id": "hch_17",
+        "meaning_en": "baffling, without rhyme or reason",
+        "meaning_zh": "莫名其妙；不可名状",
+        "translation_en": "His sudden anger left everybody feeling baffled.",
+        "translation_zh": "他突然发脾气让在场的人都觉得莫名其妙。"
       },
       {
-        "id": "hg_10",
+        "chengyu": "爱不释手",
+        "pinyin": "ài bù shì shǒu",
+        "meaning": "너무 마음에 들어 손에서 놓지 못하다",
+        "sentence": "爷爷送给他的那块古董手表，他喜欢得____。",
+        "example": "爷爷送给他的那块古董手表，他喜欢得爱不释手。",
+        "translation": "할아버지께서 선물해 주신 그 골동품 시계가 너무 마음에 들어 그는 손에서 놓지 못했다.",
+        "difficulty": "하",
+        "id": "hch_18",
+        "meaning_en": "love something too much to part with it",
+        "meaning_zh": "爱不释手；爱如珍宝",
+        "translation_en": "This exquisitely crafted pen was so lovely that he could hardly put it down.",
+        "translation_zh": "这本精装图册设计优雅，令人爱不释手。"
+      },
+      {
+        "chengyu": "家喻户晓",
+        "pinyin": "jiā yù hù xiǎo",
+        "meaning": "집집마다 다 알다, 널리 알려지다",
+        "sentence": "孙悟空大闹天宫的神话故事在中国几乎是____的。",
+        "example": "孙悟空大闹天宫的神话故事在中国几乎是家喻户晓的。",
+        "translation": "손오공이 천궁을 대소동케 한 신화 이야기는 중국에서 거의 집집마다 다 알 정도로 유명하다.",
         "difficulty": "중",
-        "type": "conjunction",
-        "category": "접속사 호응 (가설 양보 哪怕...也...)",
-        "question": "다음 빈칸에 들어갈 가장 알맞은 접속사는?\n\"____这次实验遇到再大的阻碍，科研团队____决不放弃。\"",
-        "options": [
-          "哪怕 ... 也 ...",
-          "既然 ... 就 ...",
-          "因为 ... 所以 ...",
-          "只要 ... 就 ..."
-        ],
-        "answer": 1,
-        "example": "哪怕这次实验遇到再大的阻碍，科研团队也决不放弃。",
-        "translation": "설령 이번 실험이 아무리 큰 장애물에 부딪힐지라도 연구팀은 결코 포기하지 않을 것이다.",
-        "explanation": "'哪怕 ... 也 ...'(설령 ~할지라도 ~하다)가 정답입니다. 극단적인 가설 양보 상황('遇到再大的阻碍')을 전제하고 뒷절의 확고한 의지('决不放弃')와 호응합니다."
+        "id": "hch_19",
+        "meaning_en": "known to every household, well known",
+        "meaning_zh": "家喻户晓；妇孺皆知",
+        "translation_en": "This folk tale is well known to every household in China.",
+        "translation_zh": "这个励志故事在全国已经是家喻户晓。"
       },
       {
-        "id": "hg_11",
+        "chengyu": "独一无二",
+        "pinyin": "dú yī wú èr",
+        "meaning": "유일무이하다, 둘도 없다",
+        "sentence": "世界上没有两片完全相同的树叶，每个人都是____的。",
+        "example": "世界上没有两片完全相同的树叶，每个人都是独一无二的。",
+        "translation": "세상에 완전히 똑같은 나뭇잎이 두 장 없듯 모든 사람은 유일무이한 존재이다.",
+        "difficulty": "하",
+        "id": "hch_20",
+        "meaning_en": "unique, second to none",
+        "meaning_zh": "独一无二；绝无仅有",
+        "translation_en": "Every person's unique background shapes their individuality.",
+        "translation_zh": "每个人独特的成长经历都是独一无二的。"
+      },
+      {
+        "chengyu": "实事求是",
+        "pinyin": "shí shì qiú shì",
+        "meaning": "사실에 입각하여 진리를 탐구하다 (있는 그대로 평가하다)",
+        "sentence": "做学术研究必须坚持____的态度，严禁弄虚作假。",
+        "example": "做学术研究必须坚持实事求是的态度，严禁弄虚作假。",
+        "translation": "학술 연구를 할 때는 반드시 사실에 입각해 진리를 탐구하는 태도를 견지해야 하며 허위 조작을 엄금해야 한다.",
         "difficulty": "중",
-        "type": "complement",
-        "category": "방향보어 파생 의미 (起来 vs 下去)",
-        "question": "다음 문장에서 동작의 지속을 나타내는 방향보어로 알맞은 것은?\n\"只要我们坚持____，胜利最终一定会属于我们。\"",
-        "options": [
-          "起来",
-          "下去",
-          "出来",
-          "过来"
-        ],
-        "answer": 2,
-        "example": "只要我们坚持下去，胜利最终一定会属于我们。",
-        "translation": "우리가 끝까지 계속 버텨내기만 한다면 승리는 마침내 반드시 우리의 것이 될 것이다.",
-        "explanation": "동사 뒤에 붙는 '下去'는 현재 진행 중인 동작이 미래로 계속 이어짐(지속)을 나타냅니다 (坚持下去). 반면 '起来'는 동작의 시작과 계속(哭了起来) 또는 분산에서 집중을 나타냅니다."
+        "id": "hch_21",
+        "meaning_en": "seek truth from facts, be practical and realistic",
+        "meaning_zh": "实事求是；求真务实",
+        "translation_en": "Scientific research demands a rigorous, realistic attitude.",
+        "translation_zh": "科学研究必须秉持实事求是的求实态度。"
       },
       {
-        "id": "hg_12",
-        "difficulty": "중",
-        "type": "complement",
-        "category": "가능보어 (可能补语 得/不)",
-        "question": "다음 중 \"양이 너무 많아서 다 먹을 수 없다\"를 뜻하는 올바른 가능보어 표현은?",
-        "options": [
-          "吃不完",
-          "没吃完",
-          "不吃完",
-          "吃得了"
-        ],
-        "answer": 1,
-        "example": "桌上点的菜实在太多了，我们三个人根本吃不完。",
-        "translation": "식탁에 주문한 요리가 너무 많아서 우리 세 사람이 도저히 다 먹을 수 없다.",
-        "explanation": "가능보어 부정은 '동사 + 不 + 보어' 공식으로 '吃不完'(다 먹을 수 없다)이 올바릅니다. '没吃完'은 동작의 미완료('아직 다 못 먹었다')를 나타내는 결과보어의 부정입니다."
-      },
-      {
-        "id": "hg_13",
-        "difficulty": "중",
-        "type": "preposition",
-        "category": "개사 (전치사) 호응 (关于 vs 对于)",
-        "question": "다음 빈칸에 알맞은 전치사는?\n\"____这个复杂的新能源项目，专家组进行了深入的技术论证。\"",
-        "options": [
-          "对于",
-          "朝",
-          "从",
-          "由"
-        ],
-        "answer": 1,
-        "example": "对于这个复杂的新能源项目，专家组进行了深入的技术论证。",
-        "translation": "이 복잡한 신에너지 프로젝트에 대하여 전문가 그룹이 심도 있는 기술 검증을 진행했다.",
-        "explanation": "'对于'(~에 대하여)는 특정 대상에 대한 태도나 조치를 취할 때 문두에서 대상을 제시합니다. (关于는 범위/관련 내용을 나타내며 술어 앞에 바로 올 수 없습니다)."
-      },
-      {
-        "id": "hg_14",
-        "difficulty": "중",
-        "type": "conjunction",
-        "category": "접속사 호응 (선택 宁可...也...)",
-        "question": "다음 빈칸에 알맞은 접속사 짝꿍은?\n\"为了保护消费者的权益，我们____承担经济损失，____绝不销售不合格商品。\"",
-        "options": [
-          "宁可 ... 也 ...",
-          "既然 ... 就 ...",
-          "尽管 ... 但是 ...",
-          "即使 ... 也 ..."
-        ],
-        "answer": 1,
-        "example": "为了保护消费者的权益，我们宁可承担经济损失，也绝不销售不合格商品。",
-        "translation": "소비자의 권익을 보호하기 위해 우리는 차라리 경제적 손실을 감수할지언정 결코 불합격 상품을 판매하지 않겠다.",
-        "explanation": "'宁可 ... 也(不) ...'(차라리 ~할지언정 결코 ~하지 않겠다) 구문입니다. 큰 희생을 감수하고서라도 원칙을 지키겠다는 강한 결단을 나타냅니다."
-      },
-      {
-        "id": "hg_15",
-        "difficulty": "중",
-        "type": "special_sentence",
-        "category": "연동문 (连动句 목적/방식)",
-        "question": "다음 중 동작의 방식이나 수단을 나타내는 [연동문]으로 가장 자연스러운 것은?",
-        "options": [
-          "他坐地铁去市中心参加学术研讨会。",
-          "他去市中心坐地铁参加学术研讨会。",
-          "他参加学术研讨会坐地铁去市中心。",
-          "他坐地铁参加去市中心学术研讨会。"
-        ],
-        "answer": 1,
-        "example": "他坐地铁去市中心参加学术研讨会。",
-        "translation": "그는 지하철을 타고 도심으로 가서 학술 세미나에 참석한다.",
-        "explanation": "연동문에서 수단이나 방식(坐地铁)을 나타내는 동사구가 첫 번째 동작으로 오고, 목적(去市中心参加研讨会)이 뒤이어 발생하는 시간 순서대로 배열됩니다."
-      },
-      {
-        "id": "hg_16",
+        "chengyu": "微不足道",
+        "pinyin": "wēi bù zú dào",
+        "meaning": "하찮아서 말할 가치도 없다",
+        "sentence": "虽然个人的力量看似____，但凝聚起来就是巨大的奇迹。",
+        "example": "虽然个人的力量看似微不足道，但凝聚起来就是巨大的奇迹。",
+        "translation": "비록 개인의 힘은 보잘것없어 보일지라도 하나로 모이면 거대한 기적이 된다.",
         "difficulty": "상",
-        "type": "word_order",
-        "category": "쓰기 1부분 어순 배열 (동사 술어문)",
-        "question": "다음 조각들을 문법에 맞게 올바른 순서로 배열한 것은?\n[A] 这项科研成果  [B] 广泛的应用  [C] 在各个领域得到了  [D] 很快",
-        "options": [
-          "[A] - [D] - [C] - [B]",
-          "[A] - [C] - [B] - [D]",
-          "[C] - [A] - [D] - [B]",
-          "[D] - [B] - [A] - [C]"
-        ],
-        "answer": 1,
-        "example": "这项科研成果很快在各个领域得到了广泛的应用。",
-        "translation": "이 과학 연구 성과는 곧 각 분야에서 광범위한 응용을 얻게 되었다.",
-        "explanation": "[A]-[D]-[C]-[B] (这项科研成果 很快 在各个领域得到了 广泛的应用。)가 정답입니다. 주어(这项科研成果) + 부사어(很快 在各个领域) + 동사(得到了) + 목적어(广泛的应用)."
+        "id": "hch_22",
+        "meaning_en": "negligible, insignificant",
+        "meaning_zh": "微不足道；不足挂齿",
+        "translation_en": "Small contributions might seem negligible, but they add up to greatness.",
+        "translation_zh": "点滴的善举虽然微不足道，汇聚起来却力量无穷。"
       },
       {
-        "id": "hg_17",
+        "chengyu": "千方百计",
+        "pinyin": "qiān fāng bǎi jì",
+        "meaning": "온갖 방법과 수단을 다 쓰다",
+        "sentence": "为了完成这项紧急任务，大家都在____地寻找解决方案。",
+        "example": "为了完成这项紧急任务，大家都在千方百计地寻找解决方案。",
+        "translation": "이 긴급 임무를 완수하기 위해 모두가 백방으로 해결책을 찾고 있다.",
         "difficulty": "상",
-        "type": "word_order",
-        "category": "쓰기 1부분 어순 배열 (把자문 귀착보어)",
-        "question": "다음 조각들을 올바른 문장 어순으로 배열한 것은?\n[A] 已经  [B] 志愿者们  [C] 分发到了灾区  [D] 把救援物资",
-        "options": [
-          "[B] - [A] - [D] - [C]",
-          "[D] - [B] - [A] - [C]",
-          "[A] - [B] - [C] - [D]",
-          "[B] - [D] - [A] - [C]"
-        ],
-        "answer": 1,
-        "example": "志愿者们已经把救援物资分发到了灾区。",
-        "translation": "자원봉사자들은 이미 구호 물자를 재난 지역에 배분하여 전달했다.",
-        "explanation": "[B]-[A]-[D]-[C] (志愿者们 已经 把救援物资 分发到了灾区。)가 정답입니다. 주어(志愿者们) + 부사(已经) + 把 대상(救援物资) + 동사 술어(分发) + 귀착보어(到了灾区)."
+        "id": "hch_23",
+        "meaning_en": "by every possible means, leave no stone unturned",
+        "meaning_zh": "千方百计；想方设法",
+        "translation_en": "They tried by every possible means to rescue the trapped animals.",
+        "translation_zh": "救援队千方百计营救受困人员。"
       },
       {
-        "id": "hg_18",
+        "chengyu": "不可思议",
+        "pinyin": "bù kě sī yì",
+        "meaning": "불가사의하다, 사람의 생각으로 헤아릴 수 없다",
+        "sentence": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到____。",
+        "example": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到不可思议。",
+        "translation": "불과 몇 년 사이에 이 가난한 소도시가 현대화된 대도시로 발전하다니 놀랍고도 불가사의하다.",
         "difficulty": "상",
-        "type": "word_order",
-        "category": "쓰기 1부분 어순 배열 (被자문 피동)",
-        "question": "다음 조각들을 올바른 피동문 어순으로 배열한 것은?\n[A] 被  [B] 那个感人的故事  [C] 深深地打动了  [D] 在场的所有观众",
-        "options": [
-          "[D] - [A] - [B] - [C]",
-          "[B] - [A] - [D] - [C]",
-          "[A] - [B] - [D] - [C]",
-          "[D] - [C] - [A] - [B]"
-        ],
-        "answer": 1,
-        "example": "在场的所有观众被那个感人的故事深深地打动了。",
-        "translation": "현장에 있던 모든 관객이 그 감동적인 이야기에 깊이 감동받았다.",
-        "explanation": "[D]-[A]-[B]-[C] (在场的所有观众 被 那个感人的故事 深深地打动了。)가 정답입니다. 수동 주어(在场的所有观众) + 被 행위자(那个感人的故事) + 부사어(深深地) + 술어보어(打动了)."
+        "id": "hch_24",
+        "meaning_en": "inconceivable, unbelievable, incredible",
+        "meaning_zh": "不可思议；难以置信",
+        "translation_en": "The rapid advancement of quantum computing is truly incredible.",
+        "translation_zh": "计算机技术的飞速发展简直令人不可思议。"
       },
       {
-        "id": "hg_19",
-        "difficulty": "상",
-        "type": "special_sentence",
-        "category": "다층 관형어 어순 (多层定语)",
-        "question": "다음 중 명사를 수식하는 [다층 관형어]의 어순이 가장 자연스러운 문장은?",
-        "options": [
-          "那是她新买的一件漂亮的真丝连衣裙。",
-          "那是漂亮的一件她新买的真丝连衣裙。",
-          "那是一件漂亮的真丝她新买的连衣裙。",
-          "那是真丝的一件她新买的漂亮连衣裙。"
-        ],
-        "answer": 1,
-        "example": "那是她新买的一件漂亮的真丝连衣裙。",
-        "translation": "저것은 그녀가 새로 산 예쁜 실크 원피스 한 벌이다.",
-        "explanation": "다층 관형어의 기본 어순은 '소유/소속(她) + 지시수량(新买的一件) + 성질/묘사(漂亮的) + 재료/성질(真丝) + 중심명사(连衣裙)'입니다."
+        "chengyu": "一目了然",
+        "pinyin": "yī mù liǎo rán",
+        "meaning": "한눈에 환히 명백하게 알아보다",
+        "sentence": "通过这张直观的折线图，销售趋势____。",
+        "example": "通过这张直观的折线图，销售趋势一目了然。",
+        "translation": "이 직관적인 꺾은선 그래프를 통해 판매 추세를 한눈에 환히 알 수 있다.",
+        "difficulty": "중",
+        "id": "hch_25",
+        "meaning_en": "clear at a glance, obvious",
+        "meaning_zh": "一目了然；显而易见",
+        "translation_en": "The graphical dashboard made all test metrics clear at a glance.",
+        "translation_zh": "图表清晰直观，各项统计数据一目了然。"
       },
       {
-        "id": "hg_20",
+        "chengyu": "自相矛盾",
+        "pinyin": "zì xiāng máo dùn",
+        "meaning": "자가당착, 말이나 행동의 앞뒤가 맞지 않다",
+        "sentence": "他前面说自己不在现场，后面又描述了案发经过，显然是____。",
+        "example": "他前面说自己不在现场，后面又描述了案发经过，显然是自相矛盾。",
+        "translation": "그는 앞에서는 자신이 현장에 없었다고 말하고 뒤에서는 사건 경위를 묘사했으니 명백한 자가당착이다.",
         "difficulty": "상",
-        "type": "special_sentence",
-        "category": "가능보어 관용 표현 (吃不消 / 经不起)",
-        "question": "다음 빈칸에 들어갈 관용적 표현으로 가장 알맞은 것은?\n\"连续加班三天三夜，他的身体实在有点儿____了。\"",
-        "options": [
-          "吃不消 (감당하기 힘들다)",
-          "看不起 (무시하다)",
-          "对不起 (미안하다)",
-          "想不开 (마음을 풀지 못하다)"
-        ],
-        "answer": 1,
-        "example": "连续加班三天三夜，他的身体实在有点儿吃不消了。",
-        "translation": "사흘 밤낮으로 연속 야근을 했더니 그의 몸이 정말이지 좀 버텨내기 힘들어졌다.",
-        "explanation": "'吃不消'(견디지 못하다, 감당하기 힘들다)는 극심한 피로나 부담을 육체적/정신적으로 감당할 수 없을 때 쓰는 5급 필수 관용구입니다."
+        "id": "hch_26",
+        "meaning_en": "self-contradictory, paradox",
+        "meaning_zh": "自相矛盾；漏洞百出",
+        "translation_en": "His testimony was full of holes and self-contradictory.",
+        "translation_zh": "他的发言前后抵触，显然自相矛盾。"
       },
       {
-        "id": "hg_21",
+        "chengyu": "雪中送炭",
+        "pinyin": "xuě zhōng sòng tàn",
+        "meaning": "눈 속에 숯을 보내다 (남의 위급할 때 돕다)",
+        "sentence": "这笔及时的善款对他来说无异于____，帮他渡过了最大难关。",
+        "example": "这笔及时的善款对他来说无异于雪中送炭，帮他渡过了最大难关。",
+        "translation": "이 시의적절한 성금은 그에게 눈 속에 숯을 보내준 격(설중송탄)이어서 가장 큰 난관을 넘기게 해 주었다.",
         "difficulty": "상",
-        "type": "conjunction",
-        "category": "점층 접속사 (不仅...反而...)",
-        "question": "다음 빈칸에 들어갈 접속사 짝꿍은?\n\"批评不仅没有挫伤他的积极性，____更加激发了他的斗志。\"",
-        "options": [
-          "反而 (오히려)",
-          "固然 (물론)",
-          "难免 (불가피하게)",
-          "何必 (하필)"
-        ],
-        "answer": 1,
-        "example": "批评不仅没有挫伤他的积极性，反而更加激发了他的斗志。",
-        "translation": "비판은 그의 적극성을 꺾지 않았을 뿐만 아니라 오히려 그의 투지를 더욱 불태웠다.",
-        "explanation": "'不仅没有 ... 反而 ...'(~하지 않았을 뿐만 아니라 도리어/오히려 ~하다) 구문으로 예상과 정반대의 긍정적 결과가 나타났음을 강조합니다."
+        "id": "hch_27",
+        "meaning_en": "send charcoal in snowy weather; timely help",
+        "meaning_zh": "雪中送炭；患难相助",
+        "translation_en": "Your prompt financial assistance was true help in times of need.",
+        "translation_zh": "朋友在危急时刻的援助犹如雪中送炭。"
       },
       {
-        "id": "hg_22",
+        "chengyu": "锦上添花",
+        "pinyin": "jǐn shàng tiān huā",
+        "meaning": "비단 위에 꽃을 더하다 (좋은 일에 더 좋은 일이 겹치다)",
+        "sentence": "获得最佳团队奖，为我们今年的辉煌业绩____。",
+        "example": "获得最佳团队奖，为我们今年的辉煌业绩锦上添花。",
+        "translation": "최우수 팀 상을 수상한 것은 올해 우리의 눈부신 실적에 금상첨화가 되었다.",
         "difficulty": "상",
-        "type": "word_order",
-        "category": "쓰기 1부분 어순 배열 (존현문)",
-        "question": "다음 조각들을 올바른 존현문 어순으로 배열한 것은?\n[A] 挂着  [B] 办公室的墙上  [C] 世界地图  [D] 一幅崭新的",
-        "options": [
-          "[B] - [A] - [D] - [C]",
-          "[A] - [B] - [D] - [C]",
-          "[B] - [D] - [C] - [A]",
-          "[D] - [C] - [B] - [A]"
-        ],
-        "answer": 1,
-        "example": "办公室的墙上挂着一幅崭新的世界地图。",
-        "translation": "사무실 벽에 새것 같은 세계 지도 한 폭이 걸려 있다.",
-        "explanation": "[B]-[A]-[D]-[C] (办公室的墙上 挂着 一幅崭新的 世界地图。)가 정답입니다. 장소사(办公室的墙上) + 동사+着(挂着) + 수량사(一幅崭新的) + 명사(世界地图)."
+        "id": "hch_28",
+        "meaning_en": "add flowers to embroidery; make what is good even better",
+        "meaning_zh": "锦上添花；好上加好",
+        "translation_en": "Winning the national trophy on his graduation was icing on the cake.",
+        "translation_zh": "获得全额奖学金为他的毕业成果锦上添花。"
+      },
+      {
+        "chengyu": "坐井观天",
+        "pinyin": "zuò jǐng guān tiān",
+        "meaning": "우물 안 개구리처럼 식견이 좁다",
+        "sentence": "如果不走出国门开阔眼界，就很容易陷入____的狭隘境地。",
+        "example": "如果不走出国门开阔眼界，就很容易陷入坐井观天的狭隘境地。",
+        "translation": "만약 세계로 나아가 시야를 넓히지 않는다면 우물 안 개구리 같은 편협한 처지에 빠지기 쉽다.",
+        "difficulty": "상",
+        "id": "hch_29",
+        "meaning_en": "view the sky from the bottom of a well; narrow-minded",
+        "meaning_zh": "坐井观天；目光短浅",
+        "translation_en": "Do not judge the vast world from a narrow viewpoint like a frog in a well.",
+        "translation_zh": "看待世界应当放宽视野，切勿坐井观天。"
+      },
+      {
+        "chengyu": "拔苗助长",
+        "pinyin": "bá miáo zhù zhǎng",
+        "meaning": "싹을 뽑아 자라게 하다 (성급하게 성과를 내려다 일을 그르치다)",
+        "sentence": "教育孩子不能急躁，过度施压往往会起到____的反效果。",
+        "example": "教育孩子不能急躁，过度施压往往会起到拔苗助长的反效果。",
+        "translation": "자녀 교육은 조급해해서는 안 되며, 과도한 압박은 종종 싹을 뽑아 자라게 하려다 죽이는(발묘조장) 역효과를 낳는다.",
+        "difficulty": "상",
+        "id": "hch_30",
+        "meaning_en": "pull up seedlings to help them grow; spoil things by impatience",
+        "meaning_zh": "拔苗助长；急功近利",
+        "translation_en": "Excessive tutoring may backfire like pulling up seedlings to make them grow.",
+        "translation_zh": "过度施压犹如拔苗助长，往往适得其反。"
       }
     ],
     "cloze": [
@@ -6191,306 +6921,468 @@ window.APP_DATA = {
         "explanation": "원칙 위반이나 부정부패, 안전사고에 대해 일절 타협하지 않는 태도를 나타낼 때 현대 중국어 5/6급 시사 배합으로 '零容忍'을 씁니다."
       }
     ],
-    "chengyu": [
+    "grammar": [
       {
-        "chengyu": "举一反三",
-        "pinyin": "jǔ yī fǎn sān",
-        "meaning": "하나를 듣고 셋을 미루어 알다 (응용력이 뛰어나다)",
-        "sentence": "学习不仅要掌握基础知识，更要善于____，触类旁通。",
-        "example": "学习不仅要掌握基础知识，更要善于举一反三，触类旁通。",
-        "translation": "공부는 기초 지식을 습득해야 할 뿐만 아니라, 하나를 듣고 셋을 미루어 응용할 줄 알아야 한다.",
+        "id": "hg_01",
         "difficulty": "하",
-        "id": "hch_01"
+        "type": "special_sentence",
+        "category": "把자문 (처치문 동사 완료 성분)",
+        "question": "다음 중 [把자문]의 어순과 문법 규칙이 가장 올바른 문장은?",
+        "options": [
+          "他把昨天的作业没做完。",
+          "请你把这篇报告认真地修改一遍。",
+          "他把那个重要的秘密说了。",
+          "我把钥匙忘在家里没。"
+        ],
+        "answer": 2,
+        "example": "请你把这篇报告认真地修改一遍。",
+        "translation": "이 보고서를 진지하게 한 번 수정해 주십시오.",
+        "explanation": "把자문의 동사는 단독으로 끝날 수 없으며 반드시 보어(修改一遍), 동태조사(了) 등 기타 성분이 결합해야 합니다. 부정부사(没, 不)는 반드시 '把' 앞에 와야 합니다 (没把作业做完).",
+        "category_en": "Ba-sentence (Disposal structure with complement)",
+        "category_zh": "把字句（处置句动词完成补语）",
+        "explanation_en": "In a Ba-sentence (把), the verb must have a complement (e.g. 修改一遍) or particle (了) and cannot stand alone. Negation (没, 不) must precede 把.",
+        "explanation_zh": "把字句的动词不可单独出现，必须带补语或助词。否定词（没/不）必须置于‘把’字之前。"
       },
       {
-        "chengyu": "循序渐进",
-        "pinyin": "xún xù jiàn jìn",
-        "meaning": "순서를 따라 점진적으로 나아가다",
-        "sentence": "无论是学习还是健身，都必须____，不能急于求成。",
-        "example": "无论是学习还是健身，都必须循序渐进，不能急于求成。",
-        "translation": "공부든 운동이든 모두 순서를 따라 차근차근 나아가야 하며, 성급하게 성과를 내려 해서는 안 된다.",
+        "id": "hg_02",
         "difficulty": "하",
-        "id": "hch_02"
+        "type": "special_sentence",
+        "category": "被자문 (피동문 부정사 위치)",
+        "question": "다음 문장에서 부정부사 '还没'이 들어갈 가장 적절한 위치는?\n\"这个问题【 (A) 】被【 (B) 】专家们【 (C) 】圆满地【 (D) 】解决了。\"",
+        "options": [
+          "(A) 위치",
+          "(B) 위치",
+          "(C) 위치",
+          "(D) 위치"
+        ],
+        "answer": 1,
+        "example": "这个问题还没被专家们圆满地解决。",
+        "translation": "이 문제는 아직 전문가들에 의해 원만하게 해결되지 않았다.",
+        "explanation": "被자문에서 부정부사(没, 还没有, 不)나 능원동사(想, 会, 能)는 반드시 피동 표식인 '被'의 【앞】에 놓여야 합니다 (这个问题还没被专家们解决).",
+        "category_en": "Bei-sentence (Passive voice negation placement)",
+        "category_zh": "被字句（被动句否定词位置）",
+        "explanation_en": "In a Bei-sentence (被), negative adverbs (没, 还没有) and modal verbs must be placed directly BEFORE '被'.",
+        "explanation_zh": "被字句中，否定副词（没/不）或能愿动词必须位于被动标志‘被’的前面。"
       },
       {
-        "chengyu": "半途而废",
-        "pinyin": "bàn tú ér fèi",
-        "meaning": "중도에 그만두다, 포기하다",
-        "sentence": "既然已经开始了这项科研项目，就绝不能____。",
-        "example": "既然已经开始了这项科研项目，就绝不能半途而废。",
-        "translation": "이미 이 과학 연구 프로젝트를 시작한 이상 결코 중도에 포기해서는 안 된다.",
+        "id": "hg_03",
         "difficulty": "하",
-        "id": "hch_03"
+        "type": "special_sentence",
+        "category": "존현문 (存现句 장소 표현)",
+        "question": "다음 중 사람이나 사물의 존재·출현을 나타내는 [존현문]으로 문법상 가장 올바른 것은?",
+        "options": [
+          "在桌子上放着几本厚厚的专业书。",
+          "桌子上放着几本厚厚的专业书。",
+          "桌子上放这几本厚厚的专业书。",
+          "厚厚的专业书在桌子上放着了。"
+        ],
+        "answer": 2,
+        "example": "桌子上放着几本厚厚的专业书。",
+        "translation": "책상 위에 두꺼운 전공 서적 몇 권이 놓여 있다.",
+        "explanation": "존현문의 기본 공식은 '장소사 + 동사 + 着/了 + 불특정 대상(수량+명사)'입니다. 흔한 오류로 장소사 앞에 전치사 '在'를 붙이는데, 존현문에서는 문두 장소 앞에 '在'를 쓰지 않습니다.",
+        "category_en": "Existential sentence (Zunxianju location marker)",
+        "category_zh": "存现句（处所词位于句首不用在）",
+        "explanation_en": "In an existential sentence, the location noun phrase stands at the very beginning without the preposition '在'.",
+        "explanation_zh": "存现句基本句型为处所词+动词+着/了+人/物，句首处所词前不加介词‘在’。"
       },
       {
-        "chengyu": "坚持不懈",
-        "pinyin": "jiān chí bú xiè",
-        "meaning": "포기하지 않고 끈기 있게 계속하다",
-        "sentence": "只要____地努力下去，梦想终有一天会变成现实。",
-        "example": "只要坚持不懈地努力下去，梦想终有一天会变成现实。",
-        "translation": "포기하지 않고 끈기 있게 계속 노력하기만 한다면 꿈은 마침내 현실이 될 것이다.",
+        "id": "hg_04",
         "difficulty": "하",
-        "id": "hch_04"
+        "type": "special_sentence",
+        "category": "겸어문 (兼语句 사동사)",
+        "question": "다음 빈칸에 들어갈 사동사로 알맞지 않은 것은?\n\"这次深刻的教训____他意识到了团队合作的重要性。\"",
+        "options": [
+          "使 (shǐ)",
+          "让 (ràng)",
+          "令 (lìng)",
+          "被 (bèi)"
+        ],
+        "answer": 4,
+        "example": "这次深刻的教训使他意识到了团队合作的重要性。",
+        "translation": "이번 뼈아픈 교훈은 그로 하여금 팀워크의 중요성을 깨닫게 만들었다.",
+        "explanation": "'被'는 피동 표식으로 겸어 사동 구문에 올 수 없습니다. '주어 + 사동사(使/让/令) + 겸어(사람) + 술어' 구조로 '~로 하여금 ...하게 만들다'라는 뜻입니다.",
+        "category_en": "Pivotal sentence (Causative verbs 让/使/叫)",
+        "category_zh": "兼语句（使役动词兼语结构）",
+        "explanation_en": "In pivotal sentences with causative verbs (让, 使, 请), the object of the first verb serves as the subject of the second verb.",
+        "explanation_zh": "使役兼语句中，前一动词的宾语同时兼任后一动词的主语。"
       },
       {
-        "chengyu": "全力以赴",
-        "pinyin": "quán lì yǐ fù",
-        "meaning": "모든 힘을 다해 전력투구하다",
-        "sentence": "面对即将到来的决赛，每位队员都表示会____。",
-        "example": "面对即将到来的决赛，每位队员都表示会全力以赴。",
-        "translation": "곧 다가올 결승전을 앞두고 모든 팀원이 전력투구하겠다고 밝혔다.",
+        "id": "hg_05",
         "difficulty": "하",
-        "id": "hch_05"
+        "type": "complement",
+        "category": "정도보어 (程度补语 得)",
+        "question": "다음 중 상태/정도 보어 표식 '得'의 쓰임이 가장 올바른 문장은?",
+        "options": [
+          "他跑得很极快。",
+          "听到这个好消息，大家高兴得跳了起来。",
+          "这道难题他做得非常没好。",
+          "他感动得流下眼泪了得很多。"
+        ],
+        "answer": 2,
+        "example": "听到这个好消息，大家高兴得跳了起来。",
+        "translation": "이 기쁜 소식을 듣고 모두가 너무 기뻐서 펄쩍 뛰어올랐다.",
+        "explanation": "정도보어 뒤에 구체적인 상태 묘사가 연결되어 '기뻐서 펄쩍 뛰어올랐다(高兴得跳了起来)'가 가장 자연스럽습니다. 정도부사 很과 极는 중복 수식할 수 없으며, 부정은 '做得不好' 형태로 씁니다.",
+        "category_en": "Degree complement (Structural particle 得)",
+        "category_zh": "程度补语（结构助词‘得’）",
+        "explanation_en": "When describing degree or manner after a verb/adjective, use the structural particle '得' followed by the complement.",
+        "explanation_zh": "动词或形容词后引出状态或程度评价时，使用结构助词‘得’。"
       },
       {
-        "chengyu": "同舟共济",
-        "pinyin": "tóng zhōu gòng jì",
-        "meaning": "같은 배를 타고 함께 강을 건너다 (환난을 함께 극복하다)",
-        "sentence": "在这次经济危机中，全公司员工____，共渡难关。",
-        "example": "在这次经济危机中，全公司员工同舟共济，共渡难关。",
-        "translation": "이번 경제 위기 속에서 전 사원이 한마음으로 힘을 합쳐 난관을 함께 극복했다.",
-        "difficulty": "중",
-        "id": "hch_06"
-      },
-      {
-        "chengyu": "取长补短",
-        "pinyin": "qǔ cháng bǔ duǎn",
-        "meaning": "장점을 취해 단점을 보완하다",
-        "sentence": "团队成员之间应该互相学习，____，共同进步。",
-        "example": "团队成员之间应该互相学习，取长补短，共同进步。",
-        "translation": "팀원들 간에는 서로 배우고 장점을 취해 단점을 보완하며 함께 발전해야 한다.",
+        "id": "hg_06",
         "difficulty": "하",
-        "id": "hch_07"
+        "type": "conjunction",
+        "category": "접속사 호응 (유일 조건 只有...才...)",
+        "question": "다음 빈칸에 알맞은 접속사 짝꿍은?\n\"____坚持实事求是的科学态度，____能得出真正客观的结论。\"",
+        "options": [
+          "只要 ... 就 ...",
+          "只有 ... 才 ...",
+          "无论 ... 都 ...",
+          "与其 ... 不如 ..."
+        ],
+        "answer": 2,
+        "example": "只有坚持实事求是的科学态度，才能得出真正客观的结论。",
+        "translation": "오직 사실에 입각한 과학적 태도를 견지해야만 비로소 진정으로 객관적인 결론을 도출할 수 있다.",
+        "explanation": "'只有 ... 才 ...'(오직 ~해야만 비로소 ~하다)가 정답입니다. 뒷절에 '才'가 있으므로 유일 조건을 나타내는 '只有'와 짝을 이룹니다. (충분 조건인 只要는 就와 호응).",
+        "category_en": "Condition conjunction (Only if ... then: 只有...才...)",
+        "category_zh": "条件复句（唯一条件：只有...才...）",
+        "explanation_en": "'只有...才...' expresses a necessary/exclusive condition: only if A is met, will B occur.",
+        "explanation_zh": "‘只有……才……’表示唯一必要条件，前后分句严格配对。"
       },
       {
-        "chengyu": "各抒己见",
-        "pinyin": "gè shū jǐ jiàn",
-        "meaning": "각자 자신의 의견과 견해를 밝히다",
-        "sentence": "在今天的研讨会上，与会专家们____，探讨方案。",
-        "example": "在今天的研讨会上，与会专家们各抒己见，探讨方案。",
-        "translation": "오늘 세미나에서 참석한 전문가들은 각자 자신의 견해를 밝히며 방안을 논의했다.",
-        "difficulty": "중",
-        "id": "hch_08"
-      },
-      {
-        "chengyu": "随机应变",
-        "pinyin": "suí jī yìng biàn",
-        "meaning": "상황의 변화에 맞추어 임기응변하다",
-        "sentence": "面对谈判桌上的突发状况，他展现出了极强的____能力。",
-        "example": "面对谈判桌上的突发状况，他展现出了极强的随机应变能力。",
-        "translation": "협상 테이블의 돌발 상황에 직면하여 그는 매우 뛰어난 임기응변 능력을 보여주었다.",
-        "difficulty": "상",
-        "id": "hch_09"
-      },
-      {
-        "chengyu": "络绎不绝",
-        "pinyin": "luò yì bù jué",
-        "meaning": "(사람·수레 등의 왕래가) 끊이지 않고 이어지다",
-        "sentence": "故宫博物院每到节假日，前来参观的中外游客都____。",
-        "example": "故宫博物院每到节假日，前来参观的中外游客都络绎不绝。",
-        "translation": "고궁박물원은 휴일만 되면 관람하러 오는 국내외 관광객들의 발길이 끊이지 않는다.",
-        "difficulty": "중",
-        "id": "hch_10"
-      },
-      {
-        "chengyu": "恍然大悟",
-        "pinyin": "huǎng rán dà wù",
-        "meaning": "문득 크게 깨닫다, 번쩍 알아차리다",
-        "sentence": "听了老师耐心的解释后，他这才____，解开了心中的疑惑。",
-        "example": "听了老师耐心的解释后，他这才恍然大悟，解开了心中的疑惑。",
-        "translation": "선생님의 인내심 있는 설명을 듣고 나서야 그는 비로소 크게 깨닫고 마음속 의문을 풀었다.",
-        "difficulty": "상",
-        "id": "hch_11"
-      },
-      {
-        "chengyu": "犹豫不决",
-        "pinyin": "yóu yù bù jué",
-        "meaning": "결정을 내리지 못하고 주저하다",
-        "sentence": "商机稍纵即逝，在关键时刻切记不可____。",
-        "example": "商机稍纵即逝，在关键时刻切记不可犹豫不决。",
-        "translation": "비즈니스 기회는 순식간에 사라지므로 결정적인 순간에 결코 주저해서는 안 된다.",
-        "difficulty": "중",
-        "id": "hch_12"
-      },
-      {
-        "chengyu": "耐人寻味",
-        "pinyin": "nài rén xún wèi",
-        "meaning": "여운이 길고 깊이 음미해 볼 가치가 있다",
-        "sentence": "这部话剧的情节引人入胜，结局更是____。",
-        "example": "这部话剧的情节引人入胜，结局更是耐人寻味。",
-        "translation": "이 연극의 줄거리는 매우 매력적이며 결말은 더욱 깊은 여운을 남긴다.",
-        "difficulty": "중",
-        "id": "hch_13"
-      },
-      {
-        "chengyu": "迫不及待",
-        "pinyin": "pò bù jí dài",
-        "meaning": "너무 조급하여 잠시도 기다릴 수 없다",
-        "sentence": "刚收到录取通知书，他就____地打电话告诉了父母。",
-        "example": "刚收到录取通知书，他就迫不及待地打电话告诉了父母。",
-        "translation": "합격 통지서를 받자마자 그는 잠시도 기다리지 못하고 부모님께 전화해 알렸다.",
+        "id": "hg_07",
         "difficulty": "하",
-        "id": "hch_14"
+        "type": "special_sentence",
+        "category": "비교문 (A 不如 B)",
+        "question": "다음 중 비교문 표현이 문법적으로 가장 자연스러운 것은?",
+        "options": [
+          "现在的实际情况不如原来预期的那么乐观。",
+          "他比我非常高。",
+          "今天的天气比昨天更冷得多得很。",
+          "他的汉语水平跟我不如一样。"
+        ],
+        "answer": 1,
+        "example": "现在的实际情况不如原来预期的那么乐观。",
+        "translation": "현재의 실제 상황은 원래 예상했던 것만큼 그렇게 낙관적이지 못하다.",
+        "explanation": "'A 不如 B + 那么 + 형용사'(A는 B만큼 ~하지 못하다)의 표준 비교 구문입니다. 比 뒤에는 구체적 차이(高三厘米, 高得多)를 나타내며 정도부사 '非常/很'을 쓸 수 없습니다.",
+        "category_en": "Comparative sentence (Inferior comparison: A 不如 B)",
+        "category_zh": "比较句（否定推论：A不如B）",
+        "explanation_en": "'A 不如 B + Adj' means A is not as good as B in that adjective quality.",
+        "explanation_zh": "‘A不如B’表示A不及B，后可接形容词或动词短语。"
       },
       {
-        "chengyu": "津津有味",
-        "pinyin": "jīn jīn yǒu wèi",
-        "meaning": "매우 흥미진진하게, 맛깔스럽게",
-        "sentence": "孩子们正围坐在电视机前，____地看着动画片。",
-        "example": "孩子们正围坐在电视机前，津津有味地看着动画片。",
-        "translation": "아이들이 텔레비전 앞에 둘러앉아 흥미진진하게 만화영화를 보고 있다.",
-        "difficulty": "하",
-        "id": "hch_15"
-      },
-      {
-        "chengyu": "理所当然",
-        "pinyin": "lǐ suǒ dāng rán",
-        "meaning": "도리나 이치상 응당 당연하다",
-        "sentence": "父母为我们付出了很多，我们不应该把这一切视为____。",
-        "example": "父母为我们付出了很多，我们不应该把这一切视为理所当然。",
-        "translation": "부모님께서 우리를 위해 많은 헌신을 하셨으니, 우리는 이 모든 것을 당연하게 여겨서는 안 된다.",
+        "id": "hg_08",
         "difficulty": "중",
-        "id": "hch_16"
+        "type": "conjunction",
+        "category": "접속사 호응 (인과 도치 之所以...是因为...)",
+        "question": "다음 문장의 빈칸에 들어갈 인과 접속사 짝꿍은?\n\"他____能够克服重重困难取得成功，____有着坚定的信念。\"",
+        "options": [
+          "因为 ... 所以 ...",
+          "之所以 ... 是因为 ...",
+          "虽然 ... 但是 ...",
+          "既然 ... 就 ..."
+        ],
+        "answer": 2,
+        "example": "他之所以能够克服重重困难取得成功，是因为有着坚定的信念。",
+        "translation": "그가 겹겹의 어려움을 극복하고 성공을 거둘 수 있었던 까닭은 확고한 신념이 있었기 때문이다.",
+        "explanation": "'之所以 ... 是因为 ...'(그가 ~한 까닭은 ~때문이다) 구문입니다. 결과('取得成功')를 앞절에서 먼저 제시하고 원인('有着坚定的信念')을 뒷절에서 밝히는 고득점 패턴입니다.",
+        "category_en": "Causal inversion (The reason why ... is because: 之所以...是因为...)",
+        "category_zh": "因果倒装（之所以……是因为……）",
+        "explanation_en": "Inverted causal pattern: state the result first with 之所以, then give the reason with 是因为.",
+        "explanation_zh": "先指出结果（之所以），再阐述根本原因（是因为）。"
       },
       {
-        "chengyu": "莫名其妙",
-        "pinyin": "mò míng qí miào",
-        "meaning": "영문을 알 수 없다, 까닭을 몰라 어리둥절하다",
-        "sentence": "他今天一句话都没说就突然发脾气，真让人觉得____。",
-        "example": "他今天一句话都没说就突然发脾气，真让人觉得莫名其妙。",
-        "translation": "그가 오늘 한마디 말도 없이 갑자기 화를 내서 정말 영문을 알 수 없게 만들었다.",
+        "id": "hg_09",
         "difficulty": "중",
-        "id": "hch_17"
+        "type": "conjunction",
+        "category": "접속사 호응 (선택 与其...不如...)",
+        "question": "다음 빈칸에 들어갈 알맞은 접속사는?\n\"遇到问题，____一味地互相推卸责任，____坐下来共同寻找解决办法。\"",
+        "options": [
+          "宁可 ... 也不 ...",
+          "即使 ... 也 ...",
+          "与其 ... 不如 ...",
+          "不仅 ... 而且 ..."
+        ],
+        "answer": 3,
+        "example": "遇到问题，与其一味地互相推卸责任，不如坐下来共同寻找解决办法。",
+        "translation": "문제에 부딪혔을 때 덮어놓고 서로 책임을 떠넘기느니 차라리 마주 앉아 함께 해결 방법을 찾는 편이 낫다.",
+        "explanation": "'与其 ... 不如 ...'(~하느니 차라리 ~하는 것이 낫다)가 정답입니다. 전자보다 후자의 방안이 더 바람직함을 나타낼 때 쓰는 5급 초빈출 접속사입니다.",
+        "category_en": "Preference conjunction (Rather than A, better B: 与其...不如...)",
+        "category_zh": "选择复句（取舍：与其……不如……）",
+        "explanation_en": "Indicates abandoning choice A and preferring choice B ('Rather than A, better B').",
+        "explanation_zh": "表示在两者权衡中放弃前者、选取后者。"
       },
       {
-        "chengyu": "爱不释手",
-        "pinyin": "ài bù shì shǒu",
-        "meaning": "너무 마음에 들어 손에서 놓지 못하다",
-        "sentence": "爷爷送给他的那块古董手表，他喜欢得____。",
-        "example": "爷爷送给他的那块古董手表，他喜欢得爱不释手。",
-        "translation": "할아버지께서 선물해 주신 그 골동품 시계가 너무 마음에 들어 그는 손에서 놓지 못했다.",
-        "difficulty": "하",
-        "id": "hch_18"
-      },
-      {
-        "chengyu": "家喻户晓",
-        "pinyin": "jiā yù hù xiǎo",
-        "meaning": "집집마다 다 알다, 널리 알려지다",
-        "sentence": "孙悟空大闹天宫的神话故事在中国几乎是____的。",
-        "example": "孙悟空大闹天宫的神话故事在中国几乎是家喻户晓的。",
-        "translation": "손오공이 천궁을 대소동케 한 신화 이야기는 중국에서 거의 집집마다 다 알 정도로 유명하다.",
+        "id": "hg_10",
         "difficulty": "중",
-        "id": "hch_19"
+        "type": "conjunction",
+        "category": "접속사 호응 (가설 양보 哪怕...也...)",
+        "question": "다음 빈칸에 들어갈 가장 알맞은 접속사는?\n\"____这次实验遇到再大的阻碍，科研团队____决不放弃。\"",
+        "options": [
+          "哪怕 ... 也 ...",
+          "既然 ... 就 ...",
+          "因为 ... 所以 ...",
+          "只要 ... 就 ..."
+        ],
+        "answer": 1,
+        "example": "哪怕这次实验遇到再大的阻碍，科研团队也决不放弃。",
+        "translation": "설령 이번 실험이 아무리 큰 장애물에 부딪힐지라도 연구팀은 결코 포기하지 않을 것이다.",
+        "explanation": "'哪怕 ... 也 ...'(설령 ~할지라도 ~하다)가 정답입니다. 극단적인 가설 양보 상황('遇到再大的阻碍')을 전제하고 뒷절의 확고한 의지('决不放弃')와 호응합니다.",
+        "category_en": "Concession conjunction (Even if ... still: 哪怕...也...)",
+        "category_zh": "让步假设（哪怕……也……）",
+        "explanation_en": "'哪怕...也...' introduces an extreme hypothetical condition while affirming the conclusion remains valid.",
+        "explanation_zh": "引入极端假设情况，但后句依然坚决施行。"
       },
       {
-        "chengyu": "独一无二",
-        "pinyin": "dú yī wú èr",
-        "meaning": "유일무이하다, 둘도 없다",
-        "sentence": "世界上没有两片完全相同的树叶，每个人都是____的。",
-        "example": "世界上没有两片完全相同的树叶，每个人都是独一无二的。",
-        "translation": "세상에 완전히 똑같은 나뭇잎이 두 장 없듯 모든 사람은 유일무이한 존재이다.",
-        "difficulty": "하",
-        "id": "hch_20"
-      },
-      {
-        "chengyu": "实事求是",
-        "pinyin": "shí shì qiú shì",
-        "meaning": "사실에 입각하여 진리를 탐구하다 (있는 그대로 평가하다)",
-        "sentence": "做学术研究必须坚持____的态度，严禁弄虚作假。",
-        "example": "做学术研究必须坚持实事求是的态度，严禁弄虚作假。",
-        "translation": "학술 연구를 할 때는 반드시 사실에 입각해 진리를 탐구하는 태도를 견지해야 하며 허위 조작을 엄금해야 한다.",
+        "id": "hg_11",
         "difficulty": "중",
-        "id": "hch_21"
+        "type": "complement",
+        "category": "방향보어 파생 의미 (起来 vs 下去)",
+        "question": "다음 문장에서 동작의 지속을 나타내는 방향보어로 알맞은 것은?\n\"只要我们坚持____，胜利最终一定会属于我们。\"",
+        "options": [
+          "起来",
+          "下去",
+          "出来",
+          "过来"
+        ],
+        "answer": 2,
+        "example": "只要我们坚持下去，胜利最终一定会属于我们。",
+        "translation": "우리가 끝까지 계속 버텨내기만 한다면 승리는 마침내 반드시 우리의 것이 될 것이다.",
+        "explanation": "동사 뒤에 붙는 '下去'는 현재 진행 중인 동작이 미래로 계속 이어짐(지속)을 나타냅니다 (坚持下去). 반면 '起来'는 동작의 시작과 계속(哭了起来) 또는 분산에서 집중을 나타냅니다.",
+        "category_en": "Directional complement derivative meaning (起来 vs 下去)",
+        "category_zh": "复合趋向补语引申义（起来与下去）",
+        "explanation_en": "起来 implies starting and continuing, or assembling; 下去 implies continuing from past to future.",
+        "explanation_zh": "‘起来’常表动作开始并持续或汇聚，‘下去’表动作向后继续发展。"
       },
       {
-        "chengyu": "微不足道",
-        "pinyin": "wēi bù zú dào",
-        "meaning": "하찮아서 말할 가치도 없다",
-        "sentence": "虽然个人的力量看似____，但凝聚起来就是巨大的奇迹。",
-        "example": "虽然个人的力量看似微不足道，但凝聚起来就是巨大的奇迹。",
-        "translation": "비록 개인의 힘은 보잘것없어 보일지라도 하나로 모이면 거대한 기적이 된다.",
-        "difficulty": "상",
-        "id": "hch_22"
-      },
-      {
-        "chengyu": "千方百计",
-        "pinyin": "qiān fāng bǎi jì",
-        "meaning": "온갖 방법과 수단을 다 쓰다",
-        "sentence": "为了完成这项紧急任务，大家都在____地寻找解决方案。",
-        "example": "为了完成这项紧急任务，大家都在千方百计地寻找解决方案。",
-        "translation": "이 긴급 임무를 완수하기 위해 모두가 백방으로 해결책을 찾고 있다.",
-        "difficulty": "상",
-        "id": "hch_23"
-      },
-      {
-        "chengyu": "不可思议",
-        "pinyin": "bù kě sī yì",
-        "meaning": "불가사의하다, 사람의 생각으로 헤아릴 수 없다",
-        "sentence": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到____。",
-        "example": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到不可思议。",
-        "translation": "불과 몇 년 사이에 이 가난한 소도시가 현대화된 대도시로 발전하다니 놀랍고도 불가사의하다.",
-        "difficulty": "상",
-        "id": "hch_24"
-      },
-      {
-        "chengyu": "一目了然",
-        "pinyin": "yī mù liǎo rán",
-        "meaning": "한눈에 환히 명백하게 알아보다",
-        "sentence": "通过这张直观的折线图，销售趋势____。",
-        "example": "通过这张直观的折线图，销售趋势一目了然。",
-        "translation": "이 직관적인 꺾은선 그래프를 통해 판매 추세를 한눈에 환히 알 수 있다.",
+        "id": "hg_12",
         "difficulty": "중",
-        "id": "hch_25"
+        "type": "complement",
+        "category": "가능보어 (可能补语 得/不)",
+        "question": "다음 중 \"양이 너무 많아서 다 먹을 수 없다\"를 뜻하는 올바른 가능보어 표현은?",
+        "options": [
+          "吃不完",
+          "没吃完",
+          "不吃完",
+          "吃得了"
+        ],
+        "answer": 1,
+        "example": "桌上点的菜实在太多了，我们三个人根本吃不完。",
+        "translation": "식탁에 주문한 요리가 너무 많아서 우리 세 사람이 도저히 다 먹을 수 없다.",
+        "explanation": "가능보어 부정은 '동사 + 不 + 보어' 공식으로 '吃不完'(다 먹을 수 없다)이 올바릅니다. '没吃完'은 동작의 미완료('아직 다 못 먹었다')를 나타내는 결과보어의 부정입니다.",
+        "category_en": "Potential complement (Can/Cannot: 动词 + 得/不 + 补语)",
+        "category_zh": "可能补语（听得懂 / 听不懂）",
+        "explanation_en": "Insert '得' (affirmative) or '不' (negative) between the verb and result/direction complement.",
+        "explanation_zh": "动词与结果/趋向补语之间插入‘得’或‘不’表示是否具备能力或可能性。"
       },
       {
-        "chengyu": "自相矛盾",
-        "pinyin": "zì xiāng máo dùn",
-        "meaning": "자가당착, 말이나 행동의 앞뒤가 맞지 않다",
-        "sentence": "他前面说自己不在现场，后面又描述了案发经过，显然是____。",
-        "example": "他前面说自己不在现场，后面又描述了案发经过，显然是自相矛盾。",
-        "translation": "그는 앞에서는 자신이 현장에 없었다고 말하고 뒤에서는 사건 경위를 묘사했으니 명백한 자가당착이다.",
-        "difficulty": "상",
-        "id": "hch_26"
+        "id": "hg_13",
+        "difficulty": "중",
+        "type": "preposition",
+        "category": "개사 (전치사) 호응 (关于 vs 对于)",
+        "question": "다음 빈칸에 알맞은 전치사는?\n\"____这个复杂的新能源项目，专家组进行了深入的技术论证。\"",
+        "options": [
+          "对于",
+          "朝",
+          "从",
+          "由"
+        ],
+        "answer": 1,
+        "example": "对于这个复杂的新能源项目，专家组进行了深入的技术论证。",
+        "translation": "이 복잡한 신에너지 프로젝트에 대하여 전문가 그룹이 심도 있는 기술 검증을 진행했다.",
+        "explanation": "'对于'(~에 대하여)는 특정 대상에 대한 태도나 조치를 취할 때 문두에서 대상을 제시합니다. (关于는 범위/관련 내용을 나타내며 술어 앞에 바로 올 수 없습니다).",
+        "category_en": "Preposition usage (About/Regarding: 关于 vs 对于)",
+        "category_zh": "介词辨析（关于与对于）",
+        "explanation_en": "'关于' introduces the general topic/scope; '对于' introduces the targeted recipient or attitude object.",
+        "explanation_zh": "‘关于’指出关涉范围，多置于句首；‘对于’指出对待对象或态度。"
       },
       {
-        "chengyu": "雪中送炭",
-        "pinyin": "xuě zhōng sòng tàn",
-        "meaning": "눈 속에 숯을 보내다 (남의 위급할 때 돕다)",
-        "sentence": "这笔及时的善款对他来说无异于____，帮他渡过了最大难关。",
-        "example": "这笔及时的善款对他来说无异于雪中送炭，帮他渡过了最大难关。",
-        "translation": "이 시의적절한 성금은 그에게 눈 속에 숯을 보내준 격(설중송탄)이어서 가장 큰 난관을 넘기게 해 주었다.",
-        "difficulty": "상",
-        "id": "hch_27"
+        "id": "hg_14",
+        "difficulty": "중",
+        "type": "conjunction",
+        "category": "접속사 호응 (선택 宁可...也...)",
+        "question": "다음 빈칸에 알맞은 접속사 짝꿍은?\n\"为了保护消费者的权益，我们____承担经济损失，____绝不销售不合格商品。\"",
+        "options": [
+          "宁可 ... 也 ...",
+          "既然 ... 就 ...",
+          "尽管 ... 但是 ...",
+          "即使 ... 也 ..."
+        ],
+        "answer": 1,
+        "example": "为了保护消费者的权益，我们宁可承担经济损失，也绝不销售不合格商品。",
+        "translation": "소비자의 권익을 보호하기 위해 우리는 차라리 경제적 손실을 감수할지언정 결코 불합격 상품을 판매하지 않겠다.",
+        "explanation": "'宁可 ... 也(不) ...'(차라리 ~할지언정 결코 ~하지 않겠다) 구문입니다. 큰 희생을 감수하고서라도 원칙을 지키겠다는 강한 결단을 나타냅니다.",
+        "category_en": "Determined choice conjunction (Would rather ... than: 宁可...也...)",
+        "category_zh": "决择复句（宁可……也……）",
+        "explanation_en": "'宁可...也...' expresses strong willingness to accept hardship rather than compromise.",
+        "explanation_zh": "表示两害相权取其轻，宁愿承受代价也要达成目的。"
       },
       {
-        "chengyu": "锦上添花",
-        "pinyin": "jǐn shàng tiān huā",
-        "meaning": "비단 위에 꽃을 더하다 (좋은 일에 더 좋은 일이 겹치다)",
-        "sentence": "获得最佳团队奖，为我们今年的辉煌业绩____。",
-        "example": "获得最佳团队奖，为我们今年的辉煌业绩锦上添花。",
-        "translation": "최우수 팀 상을 수상한 것은 올해 우리의 눈부신 실적에 금상첨화가 되었다.",
-        "difficulty": "상",
-        "id": "hch_28"
+        "id": "hg_15",
+        "difficulty": "중",
+        "type": "special_sentence",
+        "category": "연동문 (连动句 목적/방식)",
+        "question": "다음 중 동작의 방식이나 수단을 나타내는 [연동문]으로 가장 자연스러운 것은?",
+        "options": [
+          "他坐地铁去市中心参加学术研讨会。",
+          "他去市中心坐地铁参加学术研讨会。",
+          "他参加学术研讨会坐地铁去市中心。",
+          "他坐地铁参加去市中心学术研讨会。"
+        ],
+        "answer": 1,
+        "example": "他坐地铁去市中心参加学术研讨会。",
+        "translation": "그는 지하철을 타고 도심으로 가서 학술 세미나에 참석한다.",
+        "explanation": "연동문에서 수단이나 방식(坐地铁)을 나타내는 동사구가 첫 번째 동작으로 오고, 목적(去市中心参加研讨会)이 뒤이어 발생하는 시간 순서대로 배열됩니다.",
+        "category_en": "Serial verb construction (Manner / Purpose: 连动句)",
+        "category_zh": "连动句（方式与目的）",
+        "explanation_en": "In a serial verb sentence (S + V1 + O1 + V2 + O2), V1 often denotes method or purpose for V2.",
+        "explanation_zh": "两个动词连续出现，第一动词常表第二动词的方式或手段。"
       },
       {
-        "chengyu": "坐井观天",
-        "pinyin": "zuò jǐng guān tiān",
-        "meaning": "우물 안 개구리처럼 식견이 좁다",
-        "sentence": "如果不走出国门开阔眼界，就很容易陷入____的狭隘境地。",
-        "example": "如果不走出国门开阔眼界，就很容易陷入坐井观天的狭隘境地。",
-        "translation": "만약 세계로 나아가 시야를 넓히지 않는다면 우물 안 개구리 같은 편협한 처지에 빠지기 쉽다.",
+        "id": "hg_16",
         "difficulty": "상",
-        "id": "hch_29"
+        "type": "word_order",
+        "category": "쓰기 1부분 어순 배열 (동사 술어문)",
+        "question": "다음 조각들을 문법에 맞게 올바른 순서로 배열한 것은?\n[A] 这项科研成果  [B] 广泛的应用  [C] 在各个领域得到了  [D] 很快",
+        "options": [
+          "[A] - [D] - [C] - [B]",
+          "[A] - [C] - [B] - [D]",
+          "[C] - [A] - [D] - [B]",
+          "[D] - [B] - [A] - [C]"
+        ],
+        "answer": 1,
+        "example": "这项科研成果很快在各个领域得到了广泛的应用。",
+        "translation": "이 과학 연구 성과는 곧 각 분야에서 광범위한 응용을 얻게 되었다.",
+        "explanation": "[A]-[D]-[C]-[B] (这项科研成果 很快 在各个领域得到了 广泛的应用。)가 정답입니다. 주어(这项科研成果) + 부사어(很快 在各个领域) + 동사(得到了) + 목적어(广泛的应用).",
+        "category_en": "HSK 5 Writing Part 1 Word Order (Verb Predicate)",
+        "category_zh": "书写第一部分语序（动词谓语句）",
+        "explanation_en": "Standard word order: Subject + Adverbial + Verb + Object.",
+        "explanation_zh": "主谓宾基本语序：主语 + 状语 + 谓语动词 + 宾语。"
       },
       {
-        "chengyu": "拔苗助长",
-        "pinyin": "bá miáo zhù zhǎng",
-        "meaning": "싹을 뽑아 자라게 하다 (성급하게 성과를 내려다 일을 그르치다)",
-        "sentence": "教育孩子不能急躁，过度施压往往会起到____的反效果。",
-        "example": "教育孩子不能急躁，过度施压往往会起到拔苗助长的反效果。",
-        "translation": "자녀 교육은 조급해해서는 안 되며, 과도한 압박은 종종 싹을 뽑아 자라게 하려다 죽이는(발묘조장) 역효과를 낳는다.",
+        "id": "hg_17",
         "difficulty": "상",
-        "id": "hch_30"
+        "type": "word_order",
+        "category": "쓰기 1부분 어순 배열 (把자문 귀착보어)",
+        "question": "다음 조각들을 올바른 문장 어순으로 배열한 것은?\n[A] 已经  [B] 志愿者们  [C] 分发到了灾区  [D] 把救援物资",
+        "options": [
+          "[B] - [A] - [D] - [C]",
+          "[D] - [B] - [A] - [C]",
+          "[A] - [B] - [C] - [D]",
+          "[B] - [D] - [A] - [C]"
+        ],
+        "answer": 1,
+        "example": "志愿者们已经把救援物资分发到了灾区。",
+        "translation": "자원봉사자들은 이미 구호 물자를 재난 지역에 배분하여 전달했다.",
+        "explanation": "[B]-[A]-[D]-[C] (志愿者们 已经 把救援物资 分发到了灾区。)가 정답입니다. 주어(志愿者们) + 부사(已经) + 把 대상(救援物资) + 동사 술어(分发) + 귀착보어(到了灾区).",
+        "category_en": "HSK 5 Writing Part 1 Word Order (Ba-sentence destination)",
+        "category_zh": "书写第一部分语序（把字句归着点）",
+        "explanation_en": "Subject + 把 + Object + Verb + Complement (在/到/给/入).",
+        "explanation_zh": "主语 + 把 + 处置对象 + 动词 + 补语（在/到/给）。"
+      },
+      {
+        "id": "hg_18",
+        "difficulty": "상",
+        "type": "word_order",
+        "category": "쓰기 1부분 어순 배열 (被자문 피동)",
+        "question": "다음 조각들을 올바른 피동문 어순으로 배열한 것은?\n[A] 被  [B] 那个感人的故事  [C] 深深地打动了  [D] 在场的所有观众",
+        "options": [
+          "[D] - [A] - [B] - [C]",
+          "[B] - [A] - [D] - [C]",
+          "[A] - [B] - [D] - [C]",
+          "[D] - [C] - [A] - [B]"
+        ],
+        "answer": 1,
+        "example": "在场的所有观众被那个感人的故事深深地打动了。",
+        "translation": "현장에 있던 모든 관객이 그 감동적인 이야기에 깊이 감동받았다.",
+        "explanation": "[D]-[A]-[B]-[C] (在场的所有观众 被 那个感人的故事 深深地打动了。)가 정답입니다. 수동 주어(在场的所有观众) + 被 행위자(那个感人的故事) + 부사어(深深地) + 술어보어(打动了).",
+        "category_en": "HSK 5 Writing Part 1 Word Order (Bei passive structure)",
+        "category_zh": "书写第一部分语序（被动句式）",
+        "explanation_en": "Patient subject + 被 + Agent + Verb + Other elements.",
+        "explanation_zh": "受事主语 + 被 + 施事者 + 谓语动词 + 其他成分。"
+      },
+      {
+        "id": "hg_19",
+        "difficulty": "상",
+        "type": "special_sentence",
+        "category": "다층 관형어 어순 (多层定语)",
+        "question": "다음 중 명사를 수식하는 [다층 관형어]의 어순이 가장 자연스러운 문장은?",
+        "options": [
+          "那是她新买的一件漂亮的真丝连衣裙。",
+          "那是漂亮的一件她新买的真丝连衣裙。",
+          "那是一件漂亮的真丝她新买的连衣裙。",
+          "那是真丝的一件她新买的漂亮连衣裙。"
+        ],
+        "answer": 1,
+        "example": "那是她新买的一件漂亮的真丝连衣裙。",
+        "translation": "저것은 그녀가 새로 산 예쁜 실크 원피스 한 벌이다.",
+        "explanation": "다층 관형어의 기본 어순은 '소유/소속(她) + 지시수량(新买的一件) + 성질/묘사(漂亮的) + 재료/성질(真丝) + 중심명사(连衣裙)'입니다.",
+        "category_en": "Multi-layer Attributive Order (多层定语)",
+        "category_zh": "多层定语排序规则",
+        "explanation_en": "Possessive / Demonstrative > Quantity > State adjective > Noun modifier.",
+        "explanation_zh": "所属/指称 > 数量 > 描摹性形容词 > 属性名词。"
+      },
+      {
+        "id": "hg_20",
+        "difficulty": "상",
+        "type": "special_sentence",
+        "category": "가능보어 관용 표현 (吃不消 / 经不起)",
+        "question": "다음 빈칸에 들어갈 관용적 표현으로 가장 알맞은 것은?\n\"连续加班三天三夜，他的身体实在有点儿____了。\"",
+        "options": [
+          "吃不消 (감당하기 힘들다)",
+          "看不起 (무시하다)",
+          "对不起 (미안하다)",
+          "想不开 (마음을 풀지 못하다)"
+        ],
+        "answer": 1,
+        "example": "连续加班三天三夜，他的身体实在有点儿吃不消了。",
+        "translation": "사흘 밤낮으로 연속 야근을 했더니 그의 몸이 정말이지 좀 버텨내기 힘들어졌다.",
+        "explanation": "'吃不消'(견디지 못하다, 감당하기 힘들다)는 극심한 피로나 부담을 육체적/정신적으로 감당할 수 없을 때 쓰는 5급 필수 관용구입니다.",
+        "category_en": "Idiomatic Potential Complements (吃不消 / 经不起)",
+        "category_zh": "可能补语常用习惯表达",
+        "explanation_en": "Fixed expressions such as '吃不消' (cannot bear physically) and '经不起' (cannot withstand tests).",
+        "explanation_zh": "如‘吃不消’（承受不了）、‘经不起’（无法经受考验）等固定结构。"
+      },
+      {
+        "id": "hg_21",
+        "difficulty": "상",
+        "type": "conjunction",
+        "category": "점층 접속사 (不仅...反而...)",
+        "question": "다음 빈칸에 들어갈 접속사 짝꿍은?\n\"批评不仅没有挫伤他的积极性，____更加激发了他的斗志。\"",
+        "options": [
+          "反而 (오히려)",
+          "固然 (물론)",
+          "难免 (불가피하게)",
+          "何必 (하필)"
+        ],
+        "answer": 1,
+        "example": "批评不仅没有挫伤他的积极性，反而更加激发了他的斗志。",
+        "translation": "비판은 그의 적극성을 꺾지 않았을 뿐만 아니라 오히려 그의 투지를 더욱 불태웠다.",
+        "explanation": "'不仅没有 ... 反而 ...'(~하지 않았을 뿐만 아니라 도리어/오히려 ~하다) 구문으로 예상과 정반대의 긍정적 결과가 나타났음을 강조합니다.",
+        "category_en": "Progressive conjunction (Not only ... but instead: 不仅没有...反而...)",
+        "category_zh": "递进转折复句（不仅没……反而……）",
+        "explanation_en": "Indicates an unexpected worsening or opposite outcome beyond the initial clause.",
+        "explanation_zh": "表示情况没有按照常理发展，反而向相反或更深程度演进。"
+      },
+      {
+        "id": "hg_22",
+        "difficulty": "상",
+        "type": "word_order",
+        "category": "쓰기 1부분 어순 배열 (존현문)",
+        "question": "다음 조각들을 올바른 존현문 어순으로 배열한 것은?\n[A] 挂着  [B] 办公室的墙上  [C] 世界地图  [D] 一幅崭新的",
+        "options": [
+          "[B] - [A] - [D] - [C]",
+          "[A] - [B] - [D] - [C]",
+          "[B] - [D] - [C] - [A]",
+          "[D] - [C] - [B] - [A]"
+        ],
+        "answer": 1,
+        "example": "办公室的墙上挂着一幅崭新的世界地图。",
+        "translation": "사무실 벽에 새것 같은 세계 지도 한 폭이 걸려 있다.",
+        "explanation": "[B]-[A]-[D]-[C] (办公室的墙上 挂着 一幅崭新的 世界地图。)가 정답입니다. 장소사(办公室的墙上) + 동사+着(挂着) + 수량사(一幅崭新的) + 명사(世界地图).",
+        "category_en": "HSK 5 Writing Part 1 Word Order (Existential sentence)",
+        "category_zh": "书写第一部分语序（存现句结构）",
+        "explanation_en": "Place phrase + Verb + Zhe/Le + Indefinite Subject (Numeral-Measure + Noun).",
+        "explanation_zh": "处所词 + 动词 + 着/了 + 不特定人或物（数量+名词）。"
       }
     ],
     "listening": [
@@ -7674,7 +8566,10 @@ window.APP_DATA = {
         "meaning": "가격이 알맞은, 부담 없는",
         "synonym": "inexpensive, reasonable, budget-friendly",
         "example": "Public buses and subways are very affordable for university students.",
-        "translation": "대중 시내버스와 지하철은 대학생들에게 가격 부담이 매우 적다."
+        "translation": "대중 시내버스와 지하철은 대학생들에게 가격 부담이 매우 적다.",
+        "meaning_en": "affordable, reasonably priced",
+        "meaning_zh": "经济实惠的；负担得起的",
+        "translation_zh": "对于大学生来说，公共巴士和地铁的价格非常实惠。"
       },
       {
         "id": "iv_02",
@@ -7684,7 +8579,10 @@ window.APP_DATA = {
         "meaning": "편리한, 간편한",
         "synonym": "handy, accessible, practical",
         "example": "Living near a supermarket is very convenient for busy families.",
-        "translation": "슈퍼마켓 근처에 사는 것은 바쁜 가족들에게 매우 편리하다."
+        "translation": "슈퍼마켓 근처에 사는 것은 바쁜 가족들에게 매우 편리하다.",
+        "meaning_en": "convenient, easily accessible",
+        "meaning_zh": "方便的；便利的",
+        "translation_zh": "住在市中心非常便利，所有配套设施都在步行范围内。"
       },
       {
         "id": "iv_03",
@@ -7694,7 +8592,10 @@ window.APP_DATA = {
         "meaning": "줄이다, 낮추다",
         "synonym": "decrease, cut down, lower",
         "example": "We should use reusable bags to reduce plastic waste.",
-        "translation": "우리는 플라스틱 쓰레기를 줄이기 위해 다회용 장바구니를 사용해야 한다."
+        "translation": "우리는 플라스틱 쓰레기를 줄이기 위해 다회용 장바구니를 사용해야 한다.",
+        "meaning_en": "reduce, lessen, diminish",
+        "meaning_zh": "减少；降低",
+        "translation_zh": "骑自行车上下班可以显著减少城市碳排放。"
       },
       {
         "id": "iv_04",
@@ -7704,7 +8605,10 @@ window.APP_DATA = {
         "meaning": "향상시키다, 개선하다",
         "synonym": "enhance, get better, upgrade",
         "example": "Reading English newspapers every day helps improve your vocabulary.",
-        "translation": "매일 영어 신문을 읽는 것은 어휘력을 향상시키는 데 도움이 된다."
+        "translation": "매일 영어 신문을 읽는 것은 어휘력을 향상시키는 데 도움이 된다.",
+        "meaning_en": "improve, enhance, upgrade",
+        "meaning_zh": "改善；提高",
+        "translation_zh": "持续阅读学术文章是提高雅思词汇量的极佳途径。"
       },
       {
         "id": "iv_05",
@@ -7714,7 +8618,10 @@ window.APP_DATA = {
         "meaning": "제공하다, 공급하다",
         "synonym": "supply, offer, give",
         "example": "The hotel provides free breakfast and wireless internet for all guests.",
-        "translation": "그 호텔은 모든 투숙객에게 무료 아침 식사와 무선 인터넷을 제공한다."
+        "translation": "그 호텔은 모든 투숙객에게 무료 아침 식사와 무선 인터넷을 제공한다.",
+        "meaning_en": "provide, supply, offer",
+        "meaning_zh": "提供；供应",
+        "translation_zh": "大学图书馆为所有注册学生提供丰富的在线学术资源。"
       },
       {
         "id": "iv_06",
@@ -7724,7 +8631,10 @@ window.APP_DATA = {
         "meaning": "발전시키다, 기르다",
         "synonym": "grow, build, cultivate",
         "example": "Team sports help children develop good social skills.",
-        "translation": "단체 스포츠는 아이들이 좋은 사회성 기술을 기르는 데 도움이 된다."
+        "translation": "단체 스포츠는 아이들이 좋은 사회성 기술을 기르는 데 도움이 된다.",
+        "meaning_en": "develop, cultivate, foster",
+        "meaning_zh": "发展；培养",
+        "translation_zh": "鼓励独立思考有助于培养批判性分析能力。"
       },
       {
         "id": "iv_07",
@@ -7734,7 +8644,10 @@ window.APP_DATA = {
         "meaning": "일정, 시간표",
         "synonym": "timetable, plan, agenda",
         "example": "Please check the train schedule before you leave for the station.",
-        "translation": "역으로 출발하기 전에 기차 시간표를 확인해 주세요."
+        "translation": "역으로 출발하기 전에 기차 시간표를 확인해 주세요.",
+        "meaning_en": "schedule, timetable, agenda",
+        "meaning_zh": "日程；时刻表",
+        "translation_zh": "由于考试临近，她制定了严格的日常复习时间表。"
       },
       {
         "id": "iv_08",
@@ -7744,7 +8657,10 @@ window.APP_DATA = {
         "meaning": "지역의, 현지의",
         "synonym": "regional, neighborhood, community",
         "example": "Tourists enjoy trying fresh food at the local night market.",
-        "translation": "관광객들은 현지 야시장에서 신선한 음식을 맛보는 것을 즐긴다."
+        "translation": "관광객들은 현지 야시장에서 신선한 음식을 맛보는 것을 즐긴다.",
+        "meaning_en": "local, regional, indigenous",
+        "meaning_zh": "当地的；本地区的",
+        "translation_zh": "游览当地农贸市场是体验本土文化与风俗的最佳方式。"
       },
       {
         "id": "iv_09",
@@ -7754,7 +8670,10 @@ window.APP_DATA = {
         "meaning": "보호하다, 지키다",
         "synonym": "save, defend, guard",
         "example": "Wearing sunglasses helps protect your eyes from strong sunlight.",
-        "translation": "선글라스를 착용하는 것은 강한 햇빛으로부터 눈을 보호하는 데 도움이 된다."
+        "translation": "선글라스를 착용하는 것은 강한 햇빛으로부터 눈을 보호하는 데 도움이 된다.",
+        "meaning_en": "protect, shield, defend",
+        "meaning_zh": "保护；守护",
+        "translation_zh": "国际社会必须通力合作，保护濒危野生动物栖息地。"
       },
       {
         "id": "iv_10",
@@ -7764,7 +8683,10 @@ window.APP_DATA = {
         "meaning": "필수적인, 꼭 필요한",
         "synonym": "necessary, important, vital",
         "example": "Clean drinking water is essential for human health.",
-        "translation": "깨끗한 식수는 인간의 건강에 필수적이다."
+        "translation": "깨끗한 식수는 인간의 건강에 필수적이다.",
+        "meaning_en": "essential, vital, crucial",
+        "meaning_zh": "必不可少的；极其重要的",
+        "translation_zh": "良好的时间管理对于高分通过雅思考试至关重要。"
       },
       {
         "id": "iv_11",
@@ -7774,7 +8696,10 @@ window.APP_DATA = {
         "meaning": "이익, 혜택, 장점",
         "synonym": "advantage, profit, merit",
         "example": "One major benefit of cycling is that it keeps you healthy.",
-        "translation": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다."
+        "translation": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다.",
+        "meaning_en": "advantage, profit, merit",
+        "meaning_zh": "이익, 혜택, 장점",
+        "translation_zh": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다."
       },
       {
         "id": "iv_12",
@@ -7784,7 +8709,10 @@ window.APP_DATA = {
         "meaning": "이용할 수 있는, 시간이 있는",
         "synonym": "accessible, free, obtainable",
         "example": "Tickets for the weekend concert are available online now.",
-        "translation": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다."
+        "translation": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다.",
+        "meaning_en": "accessible, free, obtainable",
+        "meaning_zh": "이용할 수 있는, 시간이 있는",
+        "translation_zh": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다."
       },
       {
         "id": "iv_13",
@@ -7794,7 +8722,10 @@ window.APP_DATA = {
         "meaning": "격려하다, 장려하다",
         "synonym": "inspire, support, motivate",
         "example": "Teachers always encourage students to ask questions in class.",
-        "translation": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다."
+        "translation": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다.",
+        "meaning_en": "inspire, support, motivate",
+        "meaning_zh": "격려하다, 장려하다",
+        "translation_zh": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다."
       },
       {
         "id": "iv_14",
@@ -7804,7 +8735,10 @@ window.APP_DATA = {
         "meaning": "기회",
         "synonym": "chance, occasion, opening",
         "example": "Studying abroad is a great opportunity to experience a new culture.",
-        "translation": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다."
+        "translation": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다.",
+        "meaning_en": "chance, occasion, opening",
+        "meaning_zh": "기회",
+        "translation_zh": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다."
       },
       {
         "id": "iv_15",
@@ -7814,7 +8748,10 @@ window.APP_DATA = {
         "meaning": "제한하다, 줄이다",
         "synonym": "restrict, control, cap",
         "example": "Parents should limit the time children spend playing video games.",
-        "translation": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다."
+        "translation": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다.",
+        "meaning_en": "restrict, control, cap",
+        "meaning_zh": "제한하다, 줄이다",
+        "translation_zh": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다."
       },
       {
         "id": "iv_16",
@@ -7824,7 +8761,10 @@ window.APP_DATA = {
         "meaning": "숙소, 거처",
         "synonym": "housing, lodging, residence",
         "example": "First-year students usually live in university accommodation on campus.",
-        "translation": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다."
+        "translation": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다.",
+        "meaning_en": "housing, lodging, residence",
+        "meaning_zh": "숙소, 거처",
+        "translation_zh": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다."
       },
       {
         "id": "iv_17",
@@ -7834,7 +8774,10 @@ window.APP_DATA = {
         "meaning": "결정적인, 매우 중요한",
         "synonym": "vital, critical, key",
         "example": "Early education plays a crucial role in shaping a child's future.",
-        "translation": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다."
+        "translation": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다.",
+        "meaning_en": "vital, critical, key",
+        "meaning_zh": "결정적인, 매우 중요한",
+        "translation_zh": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다."
       },
       {
         "id": "iv_18",
@@ -7844,7 +8787,10 @@ window.APP_DATA = {
         "meaning": "할당하다, 배분하다",
         "synonym": "assign, distribute, budget",
         "example": "The government decided to allocate more funds to public hospitals.",
-        "translation": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다."
+        "translation": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다.",
+        "meaning_en": "assign, distribute, budget",
+        "meaning_zh": "할당하다, 배분하다",
+        "translation_zh": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다."
       },
       {
         "id": "iv_19",
@@ -7854,7 +8800,10 @@ window.APP_DATA = {
         "meaning": "습득하다, 얻다",
         "synonym": "obtain, gain, learn",
         "example": "Students can acquire practical skills through summer internships.",
-        "translation": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다."
+        "translation": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다.",
+        "meaning_en": "obtain, gain, learn",
+        "meaning_zh": "습득하다, 얻다",
+        "translation_zh": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다."
       },
       {
         "id": "iv_20",
@@ -7864,7 +8813,10 @@ window.APP_DATA = {
         "meaning": "완화하다, 줄이다",
         "synonym": "alleviate, ease, reduce",
         "example": "Planting more urban trees can help mitigate the effects of air pollution.",
-        "translation": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다."
+        "translation": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다.",
+        "meaning_en": "alleviate, ease, reduce",
+        "meaning_zh": "완화하다, 줄이다",
+        "translation_zh": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다."
       },
       {
         "id": "iv_21",
@@ -7874,7 +8826,10 @@ window.APP_DATA = {
         "meaning": "포괄적인, 종합적인",
         "synonym": "thorough, complete, extensive",
         "example": "The ministry published a comprehensive report on road safety.",
-        "translation": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다."
+        "translation": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다.",
+        "meaning_en": "thorough, complete, extensive",
+        "meaning_zh": "포괄적인, 종합적인",
+        "translation_zh": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다."
       },
       {
         "id": "iv_22",
@@ -7884,7 +8839,10 @@ window.APP_DATA = {
         "meaning": "변동하다, 오르내리다",
         "synonym": "vary, change, rise and fall",
         "example": "Vegetable prices tend to fluctuate according to the season.",
-        "translation": "채소 가격은 계절에 따라 변동하는 경향이 있다."
+        "translation": "채소 가격은 계절에 따라 변동하는 경향이 있다.",
+        "meaning_en": "vary, change, rise and fall",
+        "meaning_zh": "변동하다, 오르내리다",
+        "translation_zh": "채소 가격은 계절에 따라 변동하는 경향이 있다."
       },
       {
         "id": "iv_23",
@@ -7894,7 +8852,10 @@ window.APP_DATA = {
         "meaning": "불가피한, 피할 수 없는",
         "synonym": "unavoidable, certain, bound to happen",
         "example": "Traffic delays are almost inevitable during weekday rush hours.",
-        "translation": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다."
+        "translation": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다.",
+        "meaning_en": "unavoidable, certain, bound to happen",
+        "meaning_zh": "불가피한, 피할 수 없는",
+        "translation_zh": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다."
       },
       {
         "id": "iv_24",
@@ -7904,7 +8865,10 @@ window.APP_DATA = {
         "meaning": "의무적인, 필수의",
         "synonym": "compulsory, required, obligatory",
         "example": "Wearing a seatbelt is mandatory for all drivers and passengers.",
-        "translation": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다."
+        "translation": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다.",
+        "meaning_en": "compulsory, required, obligatory",
+        "meaning_zh": "의무적인, 필수의",
+        "translation_zh": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다."
       },
       {
         "id": "iv_25",
@@ -7914,7 +8878,10 @@ window.APP_DATA = {
         "meaning": "주목할 만한, 뚜렷한",
         "synonym": "remarkable, significant, striking",
         "example": "There has been a notable increase in the number of electric cars.",
-        "translation": "전기차 대수에 주목할 만한 증가가 있었다."
+        "translation": "전기차 대수에 주목할 만한 증가가 있었다.",
+        "meaning_en": "remarkable, significant, striking",
+        "meaning_zh": "주목할 만한, 뚜렷한",
+        "translation_zh": "전기차 대수에 주목할 만한 증가가 있었다."
       },
       {
         "id": "iv_26",
@@ -7924,7 +8891,10 @@ window.APP_DATA = {
         "meaning": "강화하다, 보강하다",
         "synonym": "strengthen, support, bolster",
         "example": "Positive feedback from teachers helps reinforce students' confidence.",
-        "translation": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다."
+        "translation": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다.",
+        "meaning_en": "strengthen, support, bolster",
+        "meaning_zh": "강화하다, 보강하다",
+        "translation_zh": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다."
       },
       {
         "id": "iv_27",
@@ -7934,7 +8904,10 @@ window.APP_DATA = {
         "meaning": "그 다음의, 차후의",
         "synonym": "following, later, succeeding",
         "example": "The skills learned in primary school are vital for subsequent education.",
-        "translation": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다."
+        "translation": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다.",
+        "meaning_en": "following, later, succeeding",
+        "meaning_zh": "그 다음의, 차후의",
+        "translation_zh": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다."
       },
       {
         "id": "iv_28",
@@ -7944,7 +8917,10 @@ window.APP_DATA = {
         "meaning": "약화시키다, 해치다",
         "synonym": "weaken, damage, harm",
         "example": "Constant stress at work can undermine an employee's physical health.",
-        "translation": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다."
+        "translation": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다.",
+        "meaning_en": "weaken, damage, harm",
+        "meaning_zh": "약화시키다, 해치다",
+        "translation_zh": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다."
       },
       {
         "id": "iv_29",
@@ -7954,7 +8930,10 @@ window.APP_DATA = {
         "meaning": "광범위한, 널리 퍼진",
         "synonym": "common, extensive, general",
         "example": "Online banking has gained widespread popularity among young adults.",
-        "translation": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다."
+        "translation": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다.",
+        "meaning_en": "common, extensive, general",
+        "meaning_zh": "광범위한, 널리 퍼진",
+        "translation_zh": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다."
       },
       {
         "id": "iv_30",
@@ -7964,7 +8943,10 @@ window.APP_DATA = {
         "meaning": "지속 가능한, 친환경적인",
         "synonym": "eco-friendly, renewable, long-lasting",
         "example": "Tourism must be developed in a sustainable way to protect nature.",
-        "translation": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다."
+        "translation": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다.",
+        "meaning_en": "eco-friendly, renewable, long-lasting",
+        "meaning_zh": "지속 가능한, 친환경적인",
+        "translation_zh": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다."
       },
       {
         "id": "iv_31",
@@ -7974,7 +8956,10 @@ window.APP_DATA = {
         "meaning": "바꾸다, 변모시키다",
         "synonym": "change, convert, reshape",
         "example": "Smartphones have completely transformed how people shop and pay.",
-        "translation": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다."
+        "translation": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다.",
+        "meaning_en": "change, convert, reshape",
+        "meaning_zh": "바꾸다, 변모시키다",
+        "translation_zh": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다."
       },
       {
         "id": "iv_32",
@@ -7984,7 +8969,10 @@ window.APP_DATA = {
         "meaning": "국내의, 가정의",
         "synonym": "national, home, household",
         "example": "Domestic flights are usually cheaper and faster than long train journeys.",
-        "translation": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다."
+        "translation": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다.",
+        "meaning_en": "national, home, household",
+        "meaning_zh": "국내의, 가정의",
+        "translation_zh": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다."
       },
       {
         "id": "iv_33",
@@ -7994,7 +8982,10 @@ window.APP_DATA = {
         "meaning": "지지하다, 주장하다",
         "synonym": "support, recommend, promote",
         "example": "Many health experts advocate a diet rich in vegetables and whole grains.",
-        "translation": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다."
+        "translation": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다.",
+        "meaning_en": "support, recommend, promote",
+        "meaning_zh": "지지하다, 주장하다",
+        "translation_zh": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다."
       },
       {
         "id": "iv_34",
@@ -8004,7 +8995,10 @@ window.APP_DATA = {
         "meaning": "실현 가능한, 타당한",
         "synonym": "practical, workable, achievable",
         "example": "Working four days a week is a feasible option for many office jobs.",
-        "translation": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다."
+        "translation": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다.",
+        "meaning_en": "practical, workable, achievable",
+        "meaning_zh": "실현 가능한, 타당한",
+        "translation_zh": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다."
       },
       {
         "id": "iv_35",
@@ -8014,7 +9008,10 @@ window.APP_DATA = {
         "meaning": "악화되다, 나빠지다",
         "synonym": "worsen, decline, get worse",
         "example": "Air quality in the city tends to deteriorate during the winter months.",
-        "translation": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다."
+        "translation": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다.",
+        "meaning_en": "worsen, decline, get worse",
+        "meaning_zh": "악화되다, 나빠지다",
+        "translation_zh": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다."
       },
       {
         "id": "iv_36",
@@ -8024,7 +9021,10 @@ window.APP_DATA = {
         "meaning": "인식하다, 여기다",
         "synonym": "view, regard, see",
         "example": "Many graduates perceive a master's degree as a path to better jobs.",
-        "translation": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다."
+        "translation": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다.",
+        "meaning_en": "view, regard, see",
+        "meaning_zh": "인식하다, 여기다",
+        "translation_zh": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다."
       },
       {
         "id": "iv_37",
@@ -8034,7 +9034,10 @@ window.APP_DATA = {
         "meaning": "어디에나 존재하는, 편재하는",
         "synonym": "omnipresent, pervasive, universal",
         "example": "Smartphones and handheld digital screens have become ubiquitous in metropolitan life.",
-        "translation": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다."
+        "translation": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다.",
+        "meaning_en": "omnipresent, pervasive, universal",
+        "meaning_zh": "어디에나 존재하는, 편재하는",
+        "translation_zh": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다."
       },
       {
         "id": "iv_38",
@@ -8044,7 +9047,10 @@ window.APP_DATA = {
         "meaning": "(문제를) 악화시키다, 격화시키다",
         "synonym": "aggravate, worsen, inflame",
         "example": "Prolonged summer heatwaves threaten to exacerbate existing agricultural water deficits.",
-        "translation": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다."
+        "translation": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다.",
+        "meaning_en": "aggravate, worsen, inflame",
+        "meaning_zh": "(문제를) 악화시키다, 격화시키다",
+        "translation_zh": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다."
       },
       {
         "id": "iv_39",
@@ -8054,7 +9060,10 @@ window.APP_DATA = {
         "meaning": "수명이 짧은, 덧없는",
         "synonym": "transient, fleeting, momentary",
         "example": "Viral fame generated on social networking sites is notoriously ephemeral and volatile.",
-        "translation": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다."
+        "translation": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다.",
+        "meaning_en": "transient, fleeting, momentary",
+        "meaning_zh": "수명이 짧은, 덧없는",
+        "translation_zh": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다."
       },
       {
         "id": "iv_40",
@@ -8064,7 +9073,10 @@ window.APP_DATA = {
         "meaning": "불균형, 격차",
         "synonym": "discrepancy, inequality, imbalance",
         "example": "Economic globalization has inadvertently widened the income disparity between urban and rural areas.",
-        "translation": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다."
+        "translation": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다.",
+        "meaning_en": "discrepancy, inequality, imbalance",
+        "meaning_zh": "불균형, 격차",
+        "translation_zh": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다."
       },
       {
         "id": "iv_41",
@@ -8074,7 +9086,10 @@ window.APP_DATA = {
         "meaning": "(증거로) 뒷받침하다, 입증하다",
         "synonym": "confirm, substantiate, authenticate",
         "example": "Satellite sensory telemetry was required to corroborate the meteorological simulation results.",
-        "translation": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다."
+        "translation": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다.",
+        "meaning_en": "confirm, substantiate, authenticate",
+        "meaning_zh": "(증거로) 뒷받침하다, 입증하다",
+        "translation_zh": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다."
       },
       {
         "id": "iv_42",
@@ -8084,7 +9099,10 @@ window.APP_DATA = {
         "meaning": "해로운, 유해한",
         "synonym": "detrimental, harmful, pernicious",
         "example": "Excessive sedentary screen time exercises deleterious physiological impacts on adolescents.",
-        "translation": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다."
+        "translation": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다.",
+        "meaning_en": "detrimental, harmful, pernicious",
+        "meaning_zh": "해로운, 유해한",
+        "translation_zh": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다."
       },
       {
         "id": "iv_43",
@@ -8094,7 +9112,10 @@ window.APP_DATA = {
         "meaning": "필수불가결한, 없어서는 안 될",
         "synonym": "essential, crucial, requisite",
         "example": "Cross-disciplinary collaboration is indispensable for solving intricate climate crises.",
-        "translation": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다."
+        "translation": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다.",
+        "meaning_en": "essential, crucial, requisite",
+        "meaning_zh": "필수불가결한, 없어서는 안 될",
+        "translation_zh": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다."
       },
       {
         "id": "iv_44",
@@ -8104,7 +9125,10 @@ window.APP_DATA = {
         "meaning": "변칙, 이례적인 것",
         "synonym": "irregularity, aberration, abnormality",
         "example": "Statisticians scrutinized the laboratory output to determine if the result was a genuine anomaly.",
-        "translation": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다."
+        "translation": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다.",
+        "meaning_en": "irregularity, aberration, abnormality",
+        "meaning_zh": "변칙, 이례적인 것",
+        "translation_zh": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다."
       },
       {
         "id": "iv_45",
@@ -8114,7 +9138,10 @@ window.APP_DATA = {
         "meaning": "급증하다, 확산되다",
         "synonym": "multiply, mushroom, burgeon",
         "example": "Autonomous digital commerce applications continue to proliferate across developing economies.",
-        "translation": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다."
+        "translation": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다.",
+        "meaning_en": "multiply, mushroom, burgeon",
+        "meaning_zh": "급증하다, 확산되다",
+        "translation_zh": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다."
       },
       {
         "id": "iv_46",
@@ -8124,7 +9151,10 @@ window.APP_DATA = {
         "meaning": "꼼꼼한, 세심한",
         "synonym": "thorough, scrupulous, punctilious",
         "example": "Forensic historians performed meticulous archival analyses on ancient trade treaties.",
-        "translation": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다."
+        "translation": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다.",
+        "meaning_en": "thorough, scrupulous, punctilious",
+        "meaning_zh": "꼼꼼한, 세심한",
+        "translation_zh": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다."
       },
       {
         "id": "iv_47",
@@ -8134,7 +9164,10 @@ window.APP_DATA = {
         "meaning": "병치하다, 나란히 놓다",
         "synonym": "collocate, contrast, compare",
         "example": "The museum curators juxtaposed classical oil paintings with contemporary digital sculptures.",
-        "translation": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다."
+        "translation": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다.",
+        "meaning_en": "collocate, contrast, compare",
+        "meaning_zh": "병치하다, 나란히 놓다",
+        "translation_zh": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다."
       },
       {
         "id": "iv_48",
@@ -8144,7 +9177,10 @@ window.APP_DATA = {
         "meaning": "패러다임, 전형적인 틀",
         "synonym": "model, framework, archetype",
         "example": "Quantum computational theory triggers a profound paradigm shift in modern cryptography.",
-        "translation": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다."
+        "translation": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다.",
+        "meaning_en": "model, framework, archetype",
+        "meaning_zh": "패러다임, 전형적인 틀",
+        "translation_zh": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다."
       },
       {
         "id": "iv_49",
@@ -8154,7 +9190,10 @@ window.APP_DATA = {
         "meaning": "수반되는, 부수적인",
         "synonym": "accompanying, associated, attendant",
         "example": "Rapid industrial expansion brings concomitant risks of hazardous ecological degradation.",
-        "translation": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다."
+        "translation": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다.",
+        "meaning_en": "accompanying, associated, attendant",
+        "meaning_zh": "수반되는, 부수적인",
+        "translation_zh": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다."
       },
       {
         "id": "iv_49_b",
@@ -8164,7 +9203,10 @@ window.APP_DATA = {
         "meaning": "빈약한, 보잘것없는",
         "synonym": "flimsy, weak, fragile",
         "example": "The historical connection between the two isolated dynasties remains tenuous at best.",
-        "translation": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다."
+        "translation": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다.",
+        "meaning_en": "flimsy, weak, fragile",
+        "meaning_zh": "빈약한, 보잘것없는",
+        "translation_zh": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다."
       },
       {
         "id": "iv_50",
@@ -8174,7 +9216,10 @@ window.APP_DATA = {
         "meaning": "실용적인, 실무적인",
         "synonym": "practical, realistic, utilitarian",
         "example": "Diplomats adopted a pragmatic negotiating framework to resolve transnational border disputes.",
-        "translation": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다."
+        "translation": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다.",
+        "meaning_en": "practical, realistic, utilitarian",
+        "meaning_zh": "실용적인, 실무적인",
+        "translation_zh": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다."
       },
       {
         "id": "iv_51",
@@ -8184,7 +9229,10 @@ window.APP_DATA = {
         "meaning": "실증하다, 구체화하다",
         "synonym": "validate, prove, authenticate",
         "example": "Economists gathered decadal macroeconomic indicators to substantiate their monetary thesis.",
-        "translation": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다."
+        "translation": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다.",
+        "meaning_en": "validate, prove, authenticate",
+        "meaning_zh": "실증하다, 구체화하다",
+        "translation_zh": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다."
       }
     ],
     "listening": [
@@ -8609,7 +9657,9 @@ window.APP_DATA = {
         "meaning": "계속 연락하고 지내다",
         "sentence": "Social media makes it very easy to ____ with old school friends.",
         "example": "Social media makes it very easy to keep in touch with old school friends.",
-        "translation": "소셜 미디어는 옛 학교 친구들과 계속 연락하고 지내는 것을 매우 쉽게 해준다."
+        "translation": "소셜 미디어는 옛 학교 친구들과 계속 연락하고 지내는 것을 매우 쉽게 해준다.",
+        "meaning_en": "keep in touch",
+        "meaning_zh": "계속 연락하고 지내다"
       },
       {
         "id": "ii_02",
@@ -8618,7 +9668,9 @@ window.APP_DATA = {
         "meaning": "여가 시간에, 한가할 때",
         "sentence": "I usually listen to music or go for a walk ____.",
         "example": "I usually listen to music or go for a walk in my free time.",
-        "translation": "나는 여가 시간에 주로 음악을 듣거나 산책을 하러 간다."
+        "translation": "나는 여가 시간에 주로 음악을 듣거나 산책을 하러 간다.",
+        "meaning_en": "in my free time",
+        "meaning_zh": "여가 시간에, 한가할 때"
       },
       {
         "id": "ii_03",
@@ -8627,7 +9679,9 @@ window.APP_DATA = {
         "meaning": "장단점 (찬반양론)",
         "sentence": "Before buying a new car, we should consider the ____ carefully.",
         "example": "Before buying a new car, we should consider the pros and cons carefully.",
-        "translation": "새 차를 사기 전에 우리는 장단점을 신중하게 고려해야 한다."
+        "translation": "새 차를 사기 전에 우리는 장단점을 신중하게 고려해야 한다.",
+        "meaning_en": "pros and cons",
+        "meaning_zh": "장단점 (찬반양론)"
       },
       {
         "id": "ii_04",
@@ -8636,7 +9690,9 @@ window.APP_DATA = {
         "meaning": "결심하다, 결정하다",
         "sentence": "He still cannot ____ about which university course to choose.",
         "example": "He still cannot make up his mind about which university course to choose.",
-        "translation": "그는 어느 대학 전공 과정을 선택할지 아직 결정을 내리지 못하고 있다."
+        "translation": "그는 어느 대학 전공 과정을 선택할지 아직 결정을 내리지 못하고 있다.",
+        "meaning_en": "make up one's mind",
+        "meaning_zh": "결심하다, 결정하다"
       },
       {
         "id": "ii_05",
@@ -8645,7 +9701,9 @@ window.APP_DATA = {
         "meaning": "단계적으로, 차근차근",
         "sentence": "Beginners should learn a new foreign language ____.",
         "example": "Beginners should learn a new foreign language step by step.",
-        "translation": "초보자들은 새로운 외국어를 차근차근 단계적으로 배워야 한다."
+        "translation": "초보자들은 새로운 외국어를 차근차근 단계적으로 배워야 한다.",
+        "meaning_en": "step by step",
+        "meaning_zh": "단계적으로, 차근차근"
       },
       {
         "id": "ii_06",
@@ -8654,7 +9712,9 @@ window.APP_DATA = {
         "meaning": "매일, 일상적으로",
         "sentence": "Millions of commuters use the city subway system ____.",
         "example": "Millions of commuters use the city subway system on a daily basis.",
-        "translation": "수백만 명의 통근자들이 매일 도시 지하철 시스템을 이용한다."
+        "translation": "수백만 명의 통근자들이 매일 도시 지하철 시스템을 이용한다.",
+        "meaning_en": "on a daily basis",
+        "meaning_zh": "매일, 일상적으로"
       },
       {
         "id": "ii_07",
@@ -8663,7 +9723,9 @@ window.APP_DATA = {
         "meaning": "양날의 검 (장점과 단점이 공존하는 것)",
         "sentence": "The internet is ____ because it provides useful information but also causes addiction.",
         "example": "The internet is a double-edged sword because it provides useful information but also causes addiction.",
-        "translation": "인터넷은 유용한 정보를 제공하지만 중독을 유발하기도 하므로 양날의 검이다."
+        "translation": "인터넷은 유용한 정보를 제공하지만 중독을 유발하기도 하므로 양날의 검이다.",
+        "meaning_en": "a double-edged sword",
+        "meaning_zh": "양날의 검 (장점과 단점이 공존하는 것)"
       },
       {
         "id": "ii_08",
@@ -8672,7 +9734,9 @@ window.APP_DATA = {
         "meaning": "고정관념에서 벗어나 창의적으로 생각하다",
         "sentence": "Modern companies encourage young employees to ____ to solve problems.",
         "example": "Modern companies encourage young employees to think outside the box to solve problems.",
-        "translation": "현대 기업들은 젊은 직원들이 문제를 해결하기 위해 창의적으로 생각하도록 장려한다."
+        "translation": "현대 기업들은 젊은 직원들이 문제를 해결하기 위해 창의적으로 생각하도록 장려한다.",
+        "meaning_en": "think outside the box",
+        "meaning_zh": "고정관념에서 벗어나 창의적으로 생각하다"
       },
       {
         "id": "ii_09",
@@ -8681,7 +9745,9 @@ window.APP_DATA = {
         "meaning": "장기적으로 보면, 결국에는",
         "sentence": "Investing in solar energy will save a lot of money ____.",
         "example": "Investing in solar energy will save a lot of money in the long run.",
-        "translation": "태양광 에너지에 투자하는 것은 장기적으로 보면 많은 돈을 절약해 줄 것이다."
+        "translation": "태양광 에너지에 투자하는 것은 장기적으로 보면 많은 돈을 절약해 줄 것이다.",
+        "meaning_en": "in the long run",
+        "meaning_zh": "장기적으로 보면, 결국에는"
       },
       {
         "id": "ii_10",
@@ -8690,7 +9756,9 @@ window.APP_DATA = {
         "meaning": "(성공이나 목표를 향한) 디딤돌, 발판",
         "sentence": "Working as an intern was ____ to her successful career in marketing.",
         "example": "Working as an intern was a stepping stone to her successful career in marketing.",
-        "translation": "인턴으로 일한 것은 그녀의 성공적인 마케팅 경력에 디딤돌이 되었다."
+        "translation": "인턴으로 일한 것은 그녀의 성공적인 마케팅 경력에 디딤돌이 되었다.",
+        "meaning_en": "a stepping stone",
+        "meaning_zh": "(성공이나 목표를 향한) 디딤돌, 발판"
       },
       {
         "id": "ii_11",
@@ -8699,7 +9767,9 @@ window.APP_DATA = {
         "meaning": "~을 고려하다, 참작하다",
         "sentence": "City planners must ____ environmental protection when building new roads.",
         "example": "City planners must take into account environmental protection when building new roads.",
-        "translation": "도시 계획가들은 새로운 도로를 건설할 때 환경 보호를 고려해야 한다."
+        "translation": "도시 계획가들은 새로운 도로를 건설할 때 환경 보호를 고려해야 한다.",
+        "meaning_en": "take into account",
+        "meaning_zh": "~을 고려하다, 참작하다"
       },
       {
         "id": "ii_12",
@@ -8708,7 +9778,9 @@ window.APP_DATA = {
         "meaning": "~에서 핵심적인 역할을 하다",
         "sentence": "Parents and teachers ____ shaping children's reading habits.",
         "example": "Parents and teachers play a key role in shaping children's reading habits.",
-        "translation": "부모와 교사는 아이들의 독서 습관을 형성하는 데 핵심적인 역할을 한다."
+        "translation": "부모와 교사는 아이들의 독서 습관을 형성하는 데 핵심적인 역할을 한다.",
+        "meaning_en": "play a key role in",
+        "meaning_zh": "~에서 핵심적인 역할을 하다"
       },
       {
         "id": "ii_13",
@@ -8717,7 +9789,9 @@ window.APP_DATA = {
         "meaning": "(어려운 현실이나 상황을) 받아들이다, 감수하다",
         "sentence": "Traditional shops have had to ____ the rapid growth of online shopping.",
         "example": "Traditional shops have had to come to terms with the rapid growth of online shopping.",
-        "translation": "전통 상점들은 온라인 쇼핑의 급격한 성장을 받아들여야만 했다."
+        "translation": "전통 상점들은 온라인 쇼핑의 급격한 성장을 받아들여야만 했다.",
+        "meaning_en": "come to terms with",
+        "meaning_zh": "(어려운 현실이나 상황을) 받아들이다, 감수하다"
       },
       {
         "id": "ii_14",
@@ -8726,7 +9800,9 @@ window.APP_DATA = {
         "meaning": "~에서 기인하다, 유래하다",
         "sentence": "Many modern health problems ____ a lack of regular physical exercise.",
         "example": "Many modern health problems stem from a lack of regular physical exercise.",
-        "translation": "현대의 많은 건강 문제들은 규칙적인 신체 운동 부족에서 기인한다."
+        "translation": "현대의 많은 건강 문제들은 규칙적인 신체 운동 부족에서 기인한다.",
+        "meaning_en": "stem from",
+        "meaning_zh": "~에서 기인하다, 유래하다"
       },
       {
         "id": "ii_15",
@@ -8735,7 +9811,9 @@ window.APP_DATA = {
         "meaning": "~을 희생하여, 대가를 치르고",
         "sentence": "Unregulated industrial expansion frequently proceeds ____ environmental biodiversity and public health.",
         "example": "Unregulated industrial expansion frequently proceeds at the expense of environmental biodiversity and public health.",
-        "translation": "규제되지 않은 산업 확장은 흔히 환경적 생물다양성과 공공 보건을 희생시키며 진행된다."
+        "translation": "규제되지 않은 산업 확장은 흔히 환경적 생물다양성과 공공 보건을 희생시키며 진행된다.",
+        "meaning_en": "at the expense of",
+        "meaning_zh": "~을 희생하여, 대가를 치르고"
       },
       {
         "id": "ii_16",
@@ -8744,7 +9822,9 @@ window.APP_DATA = {
         "meaning": "~을 위한 길을 열다, 기틀을 마련하다",
         "sentence": "Groundbreaking genetic discoveries will ____ highly tailored therapies for inherited syndromes.",
         "example": "Groundbreaking genetic discoveries will pave the way for highly tailored therapies for inherited syndromes.",
-        "translation": "획기적인 유전자 발견은 유전성 증후군에 대한 고도로 맞춤화된 치료법을 위한 길을 열어줄 것이다."
+        "translation": "획기적인 유전자 발견은 유전성 증후군에 대한 고도로 맞춤화된 치료법을 위한 길을 열어줄 것이다.",
+        "meaning_en": "pave the way for",
+        "meaning_zh": "~을 위한 길을 열다, 기틀을 마련하다"
       },
       {
         "id": "ii_17",
@@ -8753,7 +9833,9 @@ window.APP_DATA = {
         "meaning": "변화의 기폭제, 촉매제",
         "sentence": "The widespread youth climate movement served as ____ in national legislative sustainability debates.",
         "example": "The widespread youth climate movement served as a catalyst for change in national legislative sustainability debates.",
-        "translation": "광범위한 청소년 기후 행동 운동은 국가 입법부의 지속가능성 논의에서 변화의 기폭제 역할을 했다."
+        "translation": "광범위한 청소년 기후 행동 운동은 국가 입법부의 지속가능성 논의에서 변화의 기폭제 역할을 했다.",
+        "meaning_en": "a catalyst for change",
+        "meaning_zh": "변화의 기폭제, 촉매제"
       },
       {
         "id": "ii_18",
@@ -8762,7 +9844,9 @@ window.APP_DATA = {
         "meaning": "~에 역행하다, 정면으로 배치되다",
         "sentence": "Imposing severe budget cuts on public universities would ____ national strategies for innovation.",
         "example": "Imposing severe budget cuts on public universities would run counter to national strategies for innovation.",
-        "translation": "국립대학교에 심각한 예산 삭감을 가하는 것은 혁신을 위한 국가적 전략에 정면으로 배치될 것이다."
+        "translation": "국립대학교에 심각한 예산 삭감을 가하는 것은 혁신을 위한 국가적 전략에 정면으로 배치될 것이다.",
+        "meaning_en": "run counter to",
+        "meaning_zh": "~에 역행하다, 정면으로 배치되다"
       },
       {
         "id": "ii_19",
@@ -8771,7 +9855,9 @@ window.APP_DATA = {
         "meaning": "~을 일으키다, 초래하다",
         "sentence": "Unchecked algorithmic echo chambers have begun to ____ unprecedented political polarization.",
         "example": "Unchecked algorithmic echo chambers have begun to give rise to unprecedented political polarization.",
-        "translation": "통제되지 않는 알고리즘 에코 체임버는 전례 없는 정치적 양극화를 초래하기 시작했다."
+        "translation": "통제되지 않는 알고리즘 에코 체임버는 전례 없는 정치적 양극화를 초래하기 시작했다.",
+        "meaning_en": "give rise to",
+        "meaning_zh": "~을 일으키다, 초래하다"
       },
       {
         "id": "ii_20",
@@ -8780,7 +9866,9 @@ window.APP_DATA = {
         "meaning": "~을 명확히 규명하다, 새로운 단서를 밝히다",
         "sentence": "Recent archaeological excavations ____ how ancient civilizations adapted to severe droughts.",
         "example": "Recent archaeological excavations shed light on how ancient civilizations adapted to severe droughts.",
-        "translation": "최근의 고고학적 발굴은 고대 문명이 극심한 가뭄에 어떻게 적응했는지를 명확히 규명해 준다."
+        "translation": "최근의 고고학적 발굴은 고대 문명이 극심한 가뭄에 어떻게 적응했는지를 명확히 규명해 준다.",
+        "meaning_en": "shed light on",
+        "meaning_zh": "~을 명확히 규명하다, 새로운 단서를 밝히다"
       }
     ],
     "cloze": [
@@ -9100,7 +10188,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "I have lived in this city for five years.",
         "translation": "나는 이 도시에서 5년 동안 살아왔다.",
-        "explanation": "[Band 5.0 필수 문법] 과거부터 현재까지 지속된 기간(five years: 5년 동안) 앞에는 전치사 'for'를 쓰고 현재완료(have lived)와 함께 사용합니다 (특정 시점 앞에는 since)."
+        "explanation": "[Band 5.0 필수 문법] 과거부터 현재까지 지속된 기간(five years: 5년 동안) 앞에는 전치사 'for'를 쓰고 현재완료(have lived)와 함께 사용합니다 (특정 시점 앞에는 since).",
+        "category_en": "Present Perfect (현재완료 계속 용법: for vs since)",
+        "category_zh": "Present Perfect (현재완료 계속 용법: for vs since)"
       },
       {
         "id": "ig_02",
@@ -9116,7 +10206,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "The flight was delayed because of the heavy rain.",
         "translation": "폭우 때문에 항공편이 지연되었다.",
-        "explanation": "[Band 5.0 필수 문법] 명사구(the heavy rain) 앞에는 전치사구인 'because of' 또는 'due to'를 사용하며, 주어+동사 절 앞에는 접속사 'because'를 씁니다."
+        "explanation": "[Band 5.0 필수 문법] 명사구(the heavy rain) 앞에는 전치사구인 'because of' 또는 'due to'를 사용하며, 주어+동사 절 앞에는 접속사 'because'를 씁니다.",
+        "category_en": "Conjunction vs Preposition (because vs because of)",
+        "category_zh": "Conjunction vs Preposition (because vs because of)"
       },
       {
         "id": "ig_03",
@@ -9132,7 +10224,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "Plastic bottles should be recycled to protect the environment.",
         "translation": "환경을 보호하기 위해 플라스틱병은 재활용되어야 한다.",
-        "explanation": "[Band 5.0 필수 문법] 주어(Plastic bottles)가 재활용되는 대상이므로 조동사 수동태 공식인 'should be + 과거분사(recycled)'가 정확합니다."
+        "explanation": "[Band 5.0 필수 문법] 주어(Plastic bottles)가 재활용되는 대상이므로 조동사 수동태 공식인 'should be + 과거분사(recycled)'가 정확합니다.",
+        "category_en": "Modal Passive (조동사 수동태: should be + p.p.)",
+        "category_zh": "Modal Passive (조동사 수동태: should be + p.p.)"
       },
       {
         "id": "ig_04",
@@ -9148,7 +10242,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "The internet provides a lot of useful information for students.",
         "translation": "인터넷은 학생들에게 많은 유용한 정보를 제공한다.",
-        "explanation": "[Band 5.0 필수 문법] 'information(정보)', 'advice(조언)', 'furniture(가구)'는 셀 수 없는 불가산명사이므로 복수형(-s)을 쓸 수 없으며 'a lot of / much'와 함께 씁니다."
+        "explanation": "[Band 5.0 필수 문법] 'information(정보)', 'advice(조언)', 'furniture(가구)'는 셀 수 없는 불가산명사이므로 복수형(-s)을 쓸 수 없으며 'a lot of / much'와 함께 씁니다.",
+        "category_en": "Uncountable Nouns (불가산명사 수량 표현)",
+        "category_zh": "Uncountable Nouns (불가산명사 수량 표현)"
       },
       {
         "id": "ig_05",
@@ -9164,7 +10260,9 @@ window.APP_DATA = {
         "answer": 1,
         "example": "Taking the subway is more convenient than driving a car.",
         "translation": "지하철을 타는 것이 자동차를 운전하는 것보다 더 편리하다.",
-        "explanation": "[Band 5.0 필수 문법] 3음절 이상의 형용사(convenient)는 앞에 'more'를 붙여 비교급(more convenient than)을 만듭니다."
+        "explanation": "[Band 5.0 필수 문법] 3음절 이상의 형용사(convenient)는 앞에 'more'를 붙여 비교급(more convenient than)을 만듭니다.",
+        "category_en": "Comparatives (비교급 기본 구문)",
+        "category_zh": "Comparatives (비교급 기본 구문)"
       },
       {
         "id": "ig_06",
@@ -9180,7 +10278,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "Many young people enjoy watching movies at home.",
         "translation": "많은 젊은이들이 집에서 영화 보는 것을 즐긴다.",
-        "explanation": "[Band 5.0 필수 문법] 동사 'enjoy', 'avoid', 'mind', 'finish'는 목적어로 to부정사가 아닌 동명사(-ing)만을 취합니다."
+        "explanation": "[Band 5.0 필수 문법] 동사 'enjoy', 'avoid', 'mind', 'finish'는 목적어로 to부정사가 아닌 동명사(-ing)만을 취합니다.",
+        "category_en": "Gerund vs Infinitive (enjoy + -ing 동명사 목적어)",
+        "category_zh": "Gerund vs Infinitive (enjoy + -ing 동명사 목적어)"
       },
       {
         "id": "ig_07",
@@ -9196,7 +10296,9 @@ window.APP_DATA = {
         "answer": 1,
         "example": "Despite the bad weather, the outdoor concert went ahead as planned.",
         "translation": "궂은 날씨에도 불구하고 야외 콘서트는 예정대로 진행되었다.",
-        "explanation": "[Band 5.5~6.5 핵심 문법] 전치사 'Despite' 뒤에는 명사구(the bad weather)가 오며 'of'를 붙이지 않습니다. (접속사 Although는 주어+동사 절과 쓰이며 but과 중복 불가)."
+        "explanation": "[Band 5.5~6.5 핵심 문법] 전치사 'Despite' 뒤에는 명사구(the bad weather)가 오며 'of'를 붙이지 않습니다. (접속사 Although는 주어+동사 절과 쓰이며 but과 중복 불가).",
+        "category_en": "Concession Clauses (양보 구문: Despite vs Although)",
+        "category_zh": "Concession Clauses (양보 구문: Despite vs Although)"
       },
       {
         "id": "ig_08",
@@ -9212,7 +10314,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "The number of private cars in big cities has increased rapidly.",
         "translation": "대도시의 자가용 대수가 급격히 증가했다.",
-        "explanation": "[Band 5.5~6.5 핵심 문법] 'The number of + 복수명사(~의 수)'의 핵심 주어는 단수인 'The number'이므로 단수 동사 'has increased'가 호응합니다."
+        "explanation": "[Band 5.5~6.5 핵심 문법] 'The number of + 복수명사(~의 수)'의 핵심 주어는 단수인 'The number'이므로 단수 동사 'has increased'가 호응합니다.",
+        "category_en": "Subject-Verb Agreement (The number of vs A number of)",
+        "category_zh": "Subject-Verb Agreement (The number of vs A number of)"
       },
       {
         "id": "ig_09",
@@ -9228,7 +10332,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "Companies should support employees whose children are under school age.",
         "translation": "기업들은 자녀가 취학 연령 미만인 직원들을 지원해야 한다.",
-        "explanation": "[Band 5.5~6.5 핵심 문법] 선행사(employees)와 뒤 명사(children)가 소유 관계일 때는 소유격 관계대명사 'whose'를 사용합니다."
+        "explanation": "[Band 5.5~6.5 핵심 문법] 선행사(employees)와 뒤 명사(children)가 소유 관계일 때는 소유격 관계대명사 'whose'를 사용합니다.",
+        "category_en": "Relative Clauses (소유격 관계대명사 whose)",
+        "category_zh": "Relative Clauses (소유격 관계대명사 whose)"
       },
       {
         "id": "ig_10",
@@ -9244,7 +10350,9 @@ window.APP_DATA = {
         "answer": 1,
         "example": "If more people used public transport, air pollution would decrease significantly.",
         "translation": "만약 더 많은 사람들이 대중교통을 이용한다면, 대기 오염이 현저히 줄어들 것이다.",
-        "explanation": "[Band 5.5~6.5 핵심 문법] 현재 사실과 반대되거나 가정적인 상황을 설명할 때 'If + S + 과거동사(used), S + would + 동사원형(decrease)' 구문을 쓰면 Writing 점수가 크게 올라갑니다."
+        "explanation": "[Band 5.5~6.5 핵심 문법] 현재 사실과 반대되거나 가정적인 상황을 설명할 때 'If + S + 과거동사(used), S + would + 동사원형(decrease)' 구문을 쓰면 Writing 점수가 크게 올라갑니다.",
+        "category_en": "Second Conditional (가정법 과거: If + 과거동사, would + 동사원형)",
+        "category_zh": "Second Conditional (가정법 과거: If + 과거동사, would + 동사원형)"
       },
       {
         "id": "ig_11",
@@ -9260,7 +10368,9 @@ window.APP_DATA = {
         "answer": 3,
         "example": "Regular exercise helps people control weight, reduce stress, and sleep better.",
         "translation": "규칙적인 운동은 사람들이 체중을 조절하고 스트레스를 줄이며 더 잘 자는 데 도움이 된다.",
-        "explanation": "[Band 5.5~6.5 핵심 문법] 동사원형 3개(control, reduce, sleep)가 등위접속사 and로 대등하게 병렬 연결되어야 합니다."
+        "explanation": "[Band 5.5~6.5 핵심 문법] 동사원형 3개(control, reduce, sleep)가 등위접속사 and로 대등하게 병렬 연결되어야 합니다.",
+        "category_en": "Parallel Structure (등위접속사 병렬 구조)",
+        "category_zh": "Parallel Structure (등위접속사 병렬 구조)"
       },
       {
         "id": "ig_12",
@@ -9276,7 +10386,9 @@ window.APP_DATA = {
         "answer": 1,
         "example": "Young people prefer shopping online, whereas older generations often prefer local stores.",
         "translation": "젊은 층은 온라인 쇼핑을 선호하는 반면, 기성세대는 흔히 동네 매장을 선호한다.",
-        "explanation": "[Band 5.5~6.5 핵심 문법] 'whereas'와 'while'은 두 절을 직접 연결하는 접속사이므로 뒤에 'but'을 중복해서 쓰지 않습니다."
+        "explanation": "[Band 5.5~6.5 핵심 문법] 'whereas'와 'while'은 두 절을 직접 연결하는 접속사이므로 뒤에 'but'을 중복해서 쓰지 않습니다.",
+        "category_en": "Adverbial Clauses of Contrast (대조 접속사: while / whereas)",
+        "category_zh": "Adverbial Clauses of Contrast (대조 접속사: while / whereas)"
       },
       {
         "id": "ig_13",
@@ -9292,7 +10404,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "Health experts recommend that the government ban junk food ads aimed at children.",
         "translation": "건강 전문가들은 정부가 아동을 겨냥한 정크푸드 광고를 금지할 것을 권고한다.",
-        "explanation": "[Band 5.5~6.5 핵심 문법] recommend, suggest, insist 등 요구·제안 동사 뒤의 that절에는 '(should) + 동사원형(ban)'을 사용합니다."
+        "explanation": "[Band 5.5~6.5 핵심 문법] recommend, suggest, insist 등 요구·제안 동사 뒤의 that절에는 '(should) + 동사원형(ban)'을 사용합니다.",
+        "category_en": "Subjunctive in Proposals (제안/권고 동사 + that + S + 동사원형)",
+        "category_zh": "Subjunctive in Proposals (제안/권고 동사 + that + S + 동사원형)"
       },
       {
         "id": "ig_14",
@@ -9308,7 +10422,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "More employees are working remotely, which helps reduce rush-hour traffic.",
         "translation": "더 많은 직원들이 원격으로 근무하고 있으며, 이는 출퇴근 시간대 교통 체증을 줄이는 데 도움이 된다.",
-        "explanation": "[Band 5.5~6.5 핵심 문법] 콤마(,) 뒤에서 앞 문장 전체 내용을 선행사로 받을 때는 ', which + 단수동사(helps)'를 사용합니다 (that이나 what 불가)."
+        "explanation": "[Band 5.5~6.5 핵심 문법] 콤마(,) 뒤에서 앞 문장 전체 내용을 선행사로 받을 때는 ', which + 단수동사(helps)'를 사용합니다 (that이나 what 불가).",
+        "category_en": "Non-defining Relative Clause (계속적 용법 관계대명사: , which)",
+        "category_zh": "Non-defining Relative Clause (계속적 용법 관계대명사: , which)"
       },
       {
         "id": "ig_15",
@@ -9324,7 +10440,9 @@ window.APP_DATA = {
         "answer": 2,
         "example": "Rarely does a single empirical discovery fundamentally overturn centuries of established medical dogma.",
         "translation": "단 하나의 실증적 발견이 수 세기 동안 확립된 의학적 통념을 근본적으로 뒤집는 일은 거의 없다.",
-        "explanation": "[Band 6.5~8.0 고득점 구문] 부정 부사 'Rarely / Seldom / Little / Not only'가 문두에 올 때 '조동사(does) + 주어 + 동사원형(overturn)'의 어순으로 도치됩니다."
+        "explanation": "[Band 6.5~8.0 고득점 구문] 부정 부사 'Rarely / Seldom / Little / Not only'가 문두에 올 때 '조동사(does) + 주어 + 동사원형(overturn)'의 어순으로 도치됩니다.",
+        "category_en": "Negative Inversion (Rarely/Seldom 부정어 도치)",
+        "category_zh": "Negative Inversion (Rarely/Seldom 부정어 도치)"
       },
       {
         "id": "ig_16",
@@ -9340,7 +10458,9 @@ window.APP_DATA = {
         "answer": 1,
         "example": "Only after clinical trials were successfully completed did regulatory agencies grant commercial authorization.",
         "translation": "임상 시험이 성공적으로 완료된 후에야 비로소 규제 기관들은 상업적 시판 허가를 부여했다.",
-        "explanation": "[Band 6.5~8.0 고득점 구문] 'Only after + 부사절'이 문두에 올 때, 뒤따르는 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다."
+        "explanation": "[Band 6.5~8.0 고득점 구문] 'Only after + 부사절'이 문두에 올 때, 뒤따르는 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다.",
+        "category_en": "Only after / Only when (조건·시간 부사절 도치)",
+        "category_zh": "Only after / Only when (조건·시간 부사절 도치)"
       },
       {
         "id": "ig_17",
@@ -9356,7 +10476,9 @@ window.APP_DATA = {
         "answer": 4,
         "example": "Having analyzed the survey results meticulously, the municipal board drafted a revised transit policy.",
         "translation": "설문조사 결과를 면밀히 분석한 후, 시 위원회는 개정된 대중교통 정책을 입안했다.",
-        "explanation": "[Band 6.5~8.0 고득점 구문] 분사구문(Having analyzed)의 의미상 주어는 주절의 주어(the municipal board)와 일치해야 현수분사 오류가 발생하지 않습니다."
+        "explanation": "[Band 6.5~8.0 고득점 구문] 분사구문(Having analyzed)의 의미상 주어는 주절의 주어(the municipal board)와 일치해야 현수분사 오류가 발생하지 않습니다.",
+        "category_en": "Participle Clauses (완료 분사구문 & 주절 주어 일치)",
+        "category_zh": "Participle Clauses (완료 분사구문 & 주절 주어 일치)"
       },
       {
         "id": "ig_18",
@@ -9372,7 +10494,9 @@ window.APP_DATA = {
         "answer": 1,
         "example": "The more sophisticated machine learning models become, the harder it is to interpret their parameters.",
         "translation": "머신러닝 모델이 정교해질수록 그 매개변수를 해석하기는 더 어려워진다.",
-        "explanation": "[Band 6.5~8.0 고득점 구문] 'The + 비교급 + S + V, the + 비교급 + S + V' 구조로 평서문 어순을 유지합니다."
+        "explanation": "[Band 6.5~8.0 고득점 구문] 'The + 비교급 + S + V, the + 비교급 + S + V' 구조로 평서문 어순을 유지합니다.",
+        "category_en": "Double Comparative (The 비교급 ..., the 비교급 ...)",
+        "category_zh": "Double Comparative (The 비교급 ..., the 비교급 ...)"
       },
       {
         "id": "ig_19",
@@ -9388,7 +10512,9 @@ window.APP_DATA = {
         "answer": 1,
         "example": "Were global temperatures to rise by another two degrees, coastal cities would face permanent flooding.",
         "translation": "만약 지구 기온이 2도 더 상승한다면, 해안 도시들은 영구적인 침수에 직면하게 될 것이다.",
-        "explanation": "[Band 6.5~8.0 고득점 구문] 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 동사원형'으로 도치됩니다."
+        "explanation": "[Band 6.5~8.0 고득점 구문] 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 동사원형'으로 도치됩니다.",
+        "category_en": "Inverted Conditionals (If 생략 가정법 도치: Had / Were)",
+        "category_zh": "Inverted Conditionals (If 생략 가정법 도치: Had / Were)"
       },
       {
         "id": "ig_20",
@@ -9404,7 +10530,9 @@ window.APP_DATA = {
         "answer": 1,
         "example": "It is widely acknowledged that stringent regulatory enforcement serves as an indispensable prerequisite for industrial safety.",
         "translation": "엄격한 규제 집행이 산업 안전을 위한 필수불가결한 전제조건 역할을 한다는 것은 널리 인정되고 있다.",
-        "explanation": "[Band 6.5~8.0 고득점 구문] 'It is widely acknowledged that + 완전한 절' 수동태 구문과 학술 명사구(stringent regulatory enforcement, indispensable prerequisite)가 결합된 고득점 문장입니다."
+        "explanation": "[Band 6.5~8.0 고득점 구문] 'It is widely acknowledged that + 완전한 절' 수동태 구문과 학술 명사구(stringent regulatory enforcement, indispensable prerequisite)가 결합된 고득점 문장입니다.",
+        "category_en": "Academic Nominalization & Passive (학술 명사화 및 가주어 구문)",
+        "category_zh": "Academic Nominalization & Passive (학술 명사화 및 가주어 구문)"
       }
     ],
     "dictation": [

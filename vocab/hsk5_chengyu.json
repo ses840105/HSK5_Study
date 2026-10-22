@@ -7,7 +7,11 @@
     "example": "学习不仅要掌握基础知识，更要善于举一反三，触类旁通。",
     "translation": "공부는 기초 지식을 습득해야 할 뿐만 아니라, 하나를 듣고 셋을 미루어 응용할 줄 알아야 한다.",
     "difficulty": "하",
-    "id": "hch_01"
+    "id": "hch_01",
+    "meaning_en": "draw inferences about other cases from one instance",
+    "meaning_zh": "举一反三；触类旁通",
+    "translation_en": "Studying should not merely absorb basic facts, but learn to deduce broader principles.",
+    "translation_zh": "学习不仅要掌握基础知识，更要善于举一反三，触类旁通。"
   },
   {
     "chengyu": "循序渐进",
@@ -17,7 +21,11 @@
     "example": "无论是学习还是健身，都必须循序渐进，不能急于求成。",
     "translation": "공부든 운동이든 모두 순서를 따라 차근차근 나아가야 하며, 성급하게 성과를 내려 해서는 안 된다.",
     "difficulty": "하",
-    "id": "hch_02"
+    "id": "hch_02",
+    "meaning_en": "proceed step by step, gradual progress",
+    "meaning_zh": "循序渐进；由浅入深",
+    "translation_en": "Mastering advanced vocabulary requires gradual and steady accumulation.",
+    "translation_zh": "掌握高阶词汇需要循序渐进地积累。"
   },
   {
     "chengyu": "半途而废",
@@ -27,7 +35,11 @@
     "example": "既然已经开始了这项科研项目，就绝不能半途而废。",
     "translation": "이미 이 과학 연구 프로젝트를 시작한 이상 결코 중도에 포기해서는 안 된다.",
     "difficulty": "하",
-    "id": "hch_03"
+    "id": "hch_03",
+    "meaning_en": "give up halfway, leave unfinished",
+    "meaning_zh": "半途而废；前功尽弃",
+    "translation_en": "Once you start, never give up halfway.",
+    "translation_zh": "既然确定了目标，就决不能半途而废。"
   },
   {
     "chengyu": "坚持不懈",
@@ -37,7 +49,11 @@
     "example": "只要坚持不懈地努力下去，梦想终有一天会变成现实。",
     "translation": "포기하지 않고 끈기 있게 계속 노력하기만 한다면 꿈은 마침내 현실이 될 것이다.",
     "difficulty": "하",
-    "id": "hch_04"
+    "id": "hch_04",
+    "meaning_en": "persevere unremittingly, tireless persistence",
+    "meaning_zh": "坚持不懈；持之以恒",
+    "translation_en": "With unremitting perseverance, he achieved remarkable success.",
+    "translation_zh": "只要坚持不懈，就一定能取得显著成绩。"
   },
   {
     "chengyu": "全力以赴",
@@ -47,7 +63,11 @@
     "example": "面对即将到来的决赛，每位队员都表示会全力以赴。",
     "translation": "곧 다가올 결승전을 앞두고 모든 팀원이 전력투구하겠다고 밝혔다.",
     "difficulty": "하",
-    "id": "hch_05"
+    "id": "hch_05",
+    "meaning_en": "spare no effort, go all out",
+    "meaning_zh": "全力以赴；竭尽全力",
+    "translation_en": "We will go all out to achieve the highest score.",
+    "translation_zh": "我们将全力以赴争取最好的成绩。"
   },
   {
     "chengyu": "同舟共济",
@@ -57,7 +77,11 @@
     "example": "在这次经济危机中，全公司员工同舟共济，共渡难关。",
     "translation": "이번 경제 위기 속에서 전 사원이 한마음으로 힘을 합쳐 난관을 함께 극복했다.",
     "difficulty": "중",
-    "id": "hch_06"
+    "id": "hch_06",
+    "meaning_en": "cross a river in the same boat; pull together through difficulty",
+    "meaning_zh": "同舟共济；风雨同舟",
+    "translation_en": "Faced with hardships, the team pulled together to overcome hurdles.",
+    "translation_zh": "面对困境，团队全体成员同舟共济共渡难关。"
   },
   {
     "chengyu": "取长补短",
@@ -67,7 +91,11 @@
     "example": "团队成员之间应该互相学习，取长补短，共同进步。",
     "translation": "팀원들 간에는 서로 배우고 장점을 취해 단점을 보완하며 함께 발전해야 한다.",
     "difficulty": "하",
-    "id": "hch_07"
+    "id": "hch_07",
+    "meaning_en": "learn from others' strengths to offset one's weaknesses",
+    "meaning_zh": "取长补短；相互借鉴",
+    "translation_en": "Collaborative study allows students to complement each other.",
+    "translation_zh": "互相合作可以取长补短，共同进步。"
   },
   {
     "chengyu": "各抒己见",
@@ -77,7 +105,11 @@
     "example": "在今天的研讨会上，与会专家们各抒己见，探讨方案。",
     "translation": "오늘 세미나에서 참석한 전문가들은 각자 자신의 견해를 밝히며 방안을 논의했다.",
     "difficulty": "중",
-    "id": "hch_08"
+    "id": "hch_08",
+    "meaning_en": "express one's own opinions freely",
+    "meaning_zh": "各抒己见；畅所欲言",
+    "translation_en": "In the group discussion, everyone freely expressed their opinions.",
+    "translation_zh": "研讨会上，大家各抒己见，气氛热烈。"
   },
   {
     "chengyu": "随机应变",
@@ -87,7 +119,11 @@
     "example": "面对谈判桌上的突发状况，他展现出了极强的随机应变能力。",
     "translation": "협상 테이블의 돌발 상황에 직면하여 그는 매우 뛰어난 임기응변 능력을 보여주었다.",
     "difficulty": "상",
-    "id": "hch_09"
+    "id": "hch_09",
+    "meaning_en": "act according to circumstances, adapt flexibly",
+    "meaning_zh": "随机应变；灵活处理",
+    "translation_en": "An experienced leader can adapt quickly when unforeseen situations arise.",
+    "translation_zh": "面对突发情况，我们需要具备随机应变的能力。"
   },
   {
     "chengyu": "络绎不绝",
@@ -97,7 +133,11 @@
     "example": "故宫博物院每到节假日，前来参观的中外游客都络绎不绝。",
     "translation": "고궁박물원은 휴일만 되면 관람하러 오는 국내외 관광객들의 발길이 끊이지 않는다.",
     "difficulty": "중",
-    "id": "hch_10"
+    "id": "hch_10",
+    "meaning_en": "in an endless stream, continuous flow",
+    "meaning_zh": "络绎不绝；连绵不断",
+    "translation_en": "Visitors came to the exhibition in an endless stream.",
+    "translation_zh": "参观展览的游客整日络绎不绝。"
   },
   {
     "chengyu": "恍然大悟",
@@ -107,7 +147,11 @@
     "example": "听了老师耐心的解释后，他这才恍然大悟，解开了心中的疑惑。",
     "translation": "선생님의 인내심 있는 설명을 듣고 나서야 그는 비로소 크게 깨닫고 마음속 의문을 풀었다.",
     "difficulty": "상",
-    "id": "hch_11"
+    "id": "hch_11",
+    "meaning_en": "suddenly see the light, suddenly realize",
+    "meaning_zh": "恍然大悟；豁然开朗",
+    "translation_en": "After hearing the teacher's explanation, I suddenly understood.",
+    "translation_zh": "听完老师的详细讲解，我顿时恍然大悟。"
   },
   {
     "chengyu": "犹豫不决",
@@ -117,7 +161,11 @@
     "example": "商机稍纵即逝，在关键时刻切记不可犹豫不决。",
     "translation": "비즈니스 기회는 순식간에 사라지므로 결정적인 순간에 결코 주저해서는 안 된다.",
     "difficulty": "중",
-    "id": "hch_12"
+    "id": "hch_12",
+    "meaning_en": "hesitant, indecisive",
+    "meaning_zh": "犹豫不决；瞻前顾后",
+    "translation_en": "He remained indecisive between the two job offers.",
+    "translation_zh": "在两个待遇优厚的录用机会前，他犹豫不决。"
   },
   {
     "chengyu": "耐人寻味",
@@ -127,7 +175,11 @@
     "example": "这部话剧的情节引人入胜，结局更是耐人寻味。",
     "translation": "이 연극의 줄거리는 매우 매력적이며 결말은 더욱 깊은 여운을 남긴다.",
     "difficulty": "중",
-    "id": "hch_13"
+    "id": "hch_13",
+    "meaning_en": "thought-provoking, meaningful and memorable",
+    "meaning_zh": "耐人寻味；发人深省",
+    "translation_en": "The ending of the novel was subtle and thought-provoking.",
+    "translation_zh": "这部小说的结局耐人寻味，引人深思。"
   },
   {
     "chengyu": "迫不及待",
@@ -137,7 +189,11 @@
     "example": "刚收到录取通知书，他就迫不及待地打电话告诉了父母。",
     "translation": "합격 통지서를 받자마자 그는 잠시도 기다리지 못하고 부모님께 전화해 알렸다.",
     "difficulty": "하",
-    "id": "hch_14"
+    "id": "hch_14",
+    "meaning_en": "too impatient to wait, eager",
+    "meaning_zh": "迫不及待；刻不容缓",
+    "translation_en": "Upon opening the package, she could not wait to read the book.",
+    "translation_zh": "收到包裹后，他迫不及待地打开阅读。"
   },
   {
     "chengyu": "津津有味",
@@ -147,7 +203,11 @@
     "example": "孩子们正围坐在电视机前，津津有味地看着动画片。",
     "translation": "아이들이 텔레비전 앞에 둘러앉아 흥미진진하게 만화영화를 보고 있다.",
     "difficulty": "하",
-    "id": "hch_15"
+    "id": "hch_15",
+    "meaning_en": "with keen pleasure, relish with gusto",
+    "meaning_zh": "津津有味；兴致勃勃",
+    "translation_en": "The children were reading the illustrated storybook with great relish.",
+    "translation_zh": "孩子们津津有味地听着生动的故事。"
   },
   {
     "chengyu": "理所当然",
@@ -157,7 +217,11 @@
     "example": "父母为我们付出了很多，我们不应该把这一切视为理所当然。",
     "translation": "부모님께서 우리를 위해 많은 헌신을 하셨으니, 우리는 이 모든 것을 당연하게 여겨서는 안 된다.",
     "difficulty": "중",
-    "id": "hch_16"
+    "id": "hch_16",
+    "meaning_en": "matter of course, natural and reasonable",
+    "meaning_zh": "理所当然；顺理成章",
+    "translation_en": "Helping elderly and children on public transport is a matter of course.",
+    "translation_zh": "在公交车上给老人让座是理所当然的事情。"
   },
   {
     "chengyu": "莫名其妙",
@@ -167,7 +231,11 @@
     "example": "他今天一句话都没说就突然发脾气，真让人觉得莫名其妙。",
     "translation": "그가 오늘 한마디 말도 없이 갑자기 화를 내서 정말 영문을 알 수 없게 만들었다.",
     "difficulty": "중",
-    "id": "hch_17"
+    "id": "hch_17",
+    "meaning_en": "baffling, without rhyme or reason",
+    "meaning_zh": "莫名其妙；不可名状",
+    "translation_en": "His sudden anger left everybody feeling baffled.",
+    "translation_zh": "他突然发脾气让在场的人都觉得莫名其妙。"
   },
   {
     "chengyu": "爱不释手",
@@ -177,7 +245,11 @@
     "example": "爷爷送给他的那块古董手表，他喜欢得爱不释手。",
     "translation": "할아버지께서 선물해 주신 그 골동품 시계가 너무 마음에 들어 그는 손에서 놓지 못했다.",
     "difficulty": "하",
-    "id": "hch_18"
+    "id": "hch_18",
+    "meaning_en": "love something too much to part with it",
+    "meaning_zh": "爱不释手；爱如珍宝",
+    "translation_en": "This exquisitely crafted pen was so lovely that he could hardly put it down.",
+    "translation_zh": "这本精装图册设计优雅，令人爱不释手。"
   },
   {
     "chengyu": "家喻户晓",
@@ -187,7 +259,11 @@
     "example": "孙悟空大闹天宫的神话故事在中国几乎是家喻户晓的。",
     "translation": "손오공이 천궁을 대소동케 한 신화 이야기는 중국에서 거의 집집마다 다 알 정도로 유명하다.",
     "difficulty": "중",
-    "id": "hch_19"
+    "id": "hch_19",
+    "meaning_en": "known to every household, well known",
+    "meaning_zh": "家喻户晓；妇孺皆知",
+    "translation_en": "This folk tale is well known to every household in China.",
+    "translation_zh": "这个励志故事在全国已经是家喻户晓。"
   },
   {
     "chengyu": "独一无二",
@@ -197,7 +273,11 @@
     "example": "世界上没有两片完全相同的树叶，每个人都是独一无二的。",
     "translation": "세상에 완전히 똑같은 나뭇잎이 두 장 없듯 모든 사람은 유일무이한 존재이다.",
     "difficulty": "하",
-    "id": "hch_20"
+    "id": "hch_20",
+    "meaning_en": "unique, second to none",
+    "meaning_zh": "独一无二；绝无仅有",
+    "translation_en": "Every person's unique background shapes their individuality.",
+    "translation_zh": "每个人独特的成长经历都是独一无二的。"
   },
   {
     "chengyu": "实事求是",
@@ -207,7 +287,11 @@
     "example": "做学术研究必须坚持实事求是的态度，严禁弄虚作假。",
     "translation": "학술 연구를 할 때는 반드시 사실에 입각해 진리를 탐구하는 태도를 견지해야 하며 허위 조작을 엄금해야 한다.",
     "difficulty": "중",
-    "id": "hch_21"
+    "id": "hch_21",
+    "meaning_en": "seek truth from facts, be practical and realistic",
+    "meaning_zh": "实事求是；求真务实",
+    "translation_en": "Scientific research demands a rigorous, realistic attitude.",
+    "translation_zh": "科学研究必须秉持实事求是的求实态度。"
   },
   {
     "chengyu": "微不足道",
@@ -217,7 +301,11 @@
     "example": "虽然个人的力量看似微不足道，但凝聚起来就是巨大的奇迹。",
     "translation": "비록 개인의 힘은 보잘것없어 보일지라도 하나로 모이면 거대한 기적이 된다.",
     "difficulty": "상",
-    "id": "hch_22"
+    "id": "hch_22",
+    "meaning_en": "negligible, insignificant",
+    "meaning_zh": "微不足道；不足挂齿",
+    "translation_en": "Small contributions might seem negligible, but they add up to greatness.",
+    "translation_zh": "点滴的善举虽然微不足道，汇聚起来却力量无穷。"
   },
   {
     "chengyu": "千方百计",
@@ -227,7 +315,11 @@
     "example": "为了完成这项紧急任务，大家都在千方百计地寻找解决方案。",
     "translation": "이 긴급 임무를 완수하기 위해 모두가 백방으로 해결책을 찾고 있다.",
     "difficulty": "상",
-    "id": "hch_23"
+    "id": "hch_23",
+    "meaning_en": "by every possible means, leave no stone unturned",
+    "meaning_zh": "千方百计；想方设法",
+    "translation_en": "They tried by every possible means to rescue the trapped animals.",
+    "translation_zh": "救援队千方百计营救受困人员。"
   },
   {
     "chengyu": "不可思议",
@@ -237,7 +329,11 @@
     "example": "短短几年时间这个贫困小镇就发展成现代化都市，令人感到不可思议。",
     "translation": "불과 몇 년 사이에 이 가난한 소도시가 현대화된 대도시로 발전하다니 놀랍고도 불가사의하다.",
     "difficulty": "상",
-    "id": "hch_24"
+    "id": "hch_24",
+    "meaning_en": "inconceivable, unbelievable, incredible",
+    "meaning_zh": "不可思议；难以置信",
+    "translation_en": "The rapid advancement of quantum computing is truly incredible.",
+    "translation_zh": "计算机技术的飞速发展简直令人不可思议。"
   },
   {
     "chengyu": "一目了然",
@@ -247,7 +343,11 @@
     "example": "通过这张直观的折线图，销售趋势一目了然。",
     "translation": "이 직관적인 꺾은선 그래프를 통해 판매 추세를 한눈에 환히 알 수 있다.",
     "difficulty": "중",
-    "id": "hch_25"
+    "id": "hch_25",
+    "meaning_en": "clear at a glance, obvious",
+    "meaning_zh": "一目了然；显而易见",
+    "translation_en": "The graphical dashboard made all test metrics clear at a glance.",
+    "translation_zh": "图表清晰直观，各项统计数据一目了然。"
   },
   {
     "chengyu": "自相矛盾",
@@ -257,7 +357,11 @@
     "example": "他前面说自己不在现场，后面又描述了案发经过，显然是自相矛盾。",
     "translation": "그는 앞에서는 자신이 현장에 없었다고 말하고 뒤에서는 사건 경위를 묘사했으니 명백한 자가당착이다.",
     "difficulty": "상",
-    "id": "hch_26"
+    "id": "hch_26",
+    "meaning_en": "self-contradictory, paradox",
+    "meaning_zh": "自相矛盾；漏洞百出",
+    "translation_en": "His testimony was full of holes and self-contradictory.",
+    "translation_zh": "他的发言前后抵触，显然自相矛盾。"
   },
   {
     "chengyu": "雪中送炭",
@@ -267,7 +371,11 @@
     "example": "这笔及时的善款对他来说无异于雪中送炭，帮他渡过了最大难关。",
     "translation": "이 시의적절한 성금은 그에게 눈 속에 숯을 보내준 격(설중송탄)이어서 가장 큰 난관을 넘기게 해 주었다.",
     "difficulty": "상",
-    "id": "hch_27"
+    "id": "hch_27",
+    "meaning_en": "send charcoal in snowy weather; timely help",
+    "meaning_zh": "雪中送炭；患难相助",
+    "translation_en": "Your prompt financial assistance was true help in times of need.",
+    "translation_zh": "朋友在危急时刻的援助犹如雪中送炭。"
   },
   {
     "chengyu": "锦上添花",
@@ -277,7 +385,11 @@
     "example": "获得最佳团队奖，为我们今年的辉煌业绩锦上添花。",
     "translation": "최우수 팀 상을 수상한 것은 올해 우리의 눈부신 실적에 금상첨화가 되었다.",
     "difficulty": "상",
-    "id": "hch_28"
+    "id": "hch_28",
+    "meaning_en": "add flowers to embroidery; make what is good even better",
+    "meaning_zh": "锦上添花；好上加好",
+    "translation_en": "Winning the national trophy on his graduation was icing on the cake.",
+    "translation_zh": "获得全额奖学金为他的毕业成果锦上添花。"
   },
   {
     "chengyu": "坐井观天",
@@ -287,7 +399,11 @@
     "example": "如果不走出国门开阔眼界，就很容易陷入坐井观天的狭隘境地。",
     "translation": "만약 세계로 나아가 시야를 넓히지 않는다면 우물 안 개구리 같은 편협한 처지에 빠지기 쉽다.",
     "difficulty": "상",
-    "id": "hch_29"
+    "id": "hch_29",
+    "meaning_en": "view the sky from the bottom of a well; narrow-minded",
+    "meaning_zh": "坐井观天；目光短浅",
+    "translation_en": "Do not judge the vast world from a narrow viewpoint like a frog in a well.",
+    "translation_zh": "看待世界应当放宽视野，切勿坐井观天。"
   },
   {
     "chengyu": "拔苗助长",
@@ -297,6 +413,10 @@
     "example": "教育孩子不能急躁，过度施压往往会起到拔苗助长的反效果。",
     "translation": "자녀 교육은 조급해해서는 안 되며, 과도한 압박은 종종 싹을 뽑아 자라게 하려다 죽이는(발묘조장) 역효과를 낳는다.",
     "difficulty": "상",
-    "id": "hch_30"
+    "id": "hch_30",
+    "meaning_en": "pull up seedlings to help them grow; spoil things by impatience",
+    "meaning_zh": "拔苗助长；急功近利",
+    "translation_en": "Excessive tutoring may backfire like pulling up seedlings to make them grow.",
+    "translation_zh": "过度施压犹如拔苗助长，往往适得其反。"
   }
 ]

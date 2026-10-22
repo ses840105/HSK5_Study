@@ -6,7 +6,9 @@
     "meaning": "계속 연락하고 지내다",
     "sentence": "Social media makes it very easy to ____ with old school friends.",
     "example": "Social media makes it very easy to keep in touch with old school friends.",
-    "translation": "소셜 미디어는 옛 학교 친구들과 계속 연락하고 지내는 것을 매우 쉽게 해준다."
+    "translation": "소셜 미디어는 옛 학교 친구들과 계속 연락하고 지내는 것을 매우 쉽게 해준다.",
+    "meaning_en": "keep in touch",
+    "meaning_zh": "계속 연락하고 지내다"
   },
   {
     "id": "ii_02",
@@ -15,7 +17,9 @@
     "meaning": "여가 시간에, 한가할 때",
     "sentence": "I usually listen to music or go for a walk ____.",
     "example": "I usually listen to music or go for a walk in my free time.",
-    "translation": "나는 여가 시간에 주로 음악을 듣거나 산책을 하러 간다."
+    "translation": "나는 여가 시간에 주로 음악을 듣거나 산책을 하러 간다.",
+    "meaning_en": "in my free time",
+    "meaning_zh": "여가 시간에, 한가할 때"
   },
   {
     "id": "ii_03",
@@ -24,7 +28,9 @@
     "meaning": "장단점 (찬반양론)",
     "sentence": "Before buying a new car, we should consider the ____ carefully.",
     "example": "Before buying a new car, we should consider the pros and cons carefully.",
-    "translation": "새 차를 사기 전에 우리는 장단점을 신중하게 고려해야 한다."
+    "translation": "새 차를 사기 전에 우리는 장단점을 신중하게 고려해야 한다.",
+    "meaning_en": "pros and cons",
+    "meaning_zh": "장단점 (찬반양론)"
   },
   {
     "id": "ii_04",
@@ -33,7 +39,9 @@
     "meaning": "결심하다, 결정하다",
     "sentence": "He still cannot ____ about which university course to choose.",
     "example": "He still cannot make up his mind about which university course to choose.",
-    "translation": "그는 어느 대학 전공 과정을 선택할지 아직 결정을 내리지 못하고 있다."
+    "translation": "그는 어느 대학 전공 과정을 선택할지 아직 결정을 내리지 못하고 있다.",
+    "meaning_en": "make up one's mind",
+    "meaning_zh": "결심하다, 결정하다"
   },
   {
     "id": "ii_05",
@@ -42,7 +50,9 @@
     "meaning": "단계적으로, 차근차근",
     "sentence": "Beginners should learn a new foreign language ____.",
     "example": "Beginners should learn a new foreign language step by step.",
-    "translation": "초보자들은 새로운 외국어를 차근차근 단계적으로 배워야 한다."
+    "translation": "초보자들은 새로운 외국어를 차근차근 단계적으로 배워야 한다.",
+    "meaning_en": "step by step",
+    "meaning_zh": "단계적으로, 차근차근"
   },
   {
     "id": "ii_06",
@@ -51,7 +61,9 @@
     "meaning": "매일, 일상적으로",
     "sentence": "Millions of commuters use the city subway system ____.",
     "example": "Millions of commuters use the city subway system on a daily basis.",
-    "translation": "수백만 명의 통근자들이 매일 도시 지하철 시스템을 이용한다."
+    "translation": "수백만 명의 통근자들이 매일 도시 지하철 시스템을 이용한다.",
+    "meaning_en": "on a daily basis",
+    "meaning_zh": "매일, 일상적으로"
   },
   {
     "id": "ii_07",
@@ -60,7 +72,9 @@
     "meaning": "양날의 검 (장점과 단점이 공존하는 것)",
     "sentence": "The internet is ____ because it provides useful information but also causes addiction.",
     "example": "The internet is a double-edged sword because it provides useful information but also causes addiction.",
-    "translation": "인터넷은 유용한 정보를 제공하지만 중독을 유발하기도 하므로 양날의 검이다."
+    "translation": "인터넷은 유용한 정보를 제공하지만 중독을 유발하기도 하므로 양날의 검이다.",
+    "meaning_en": "a double-edged sword",
+    "meaning_zh": "양날의 검 (장점과 단점이 공존하는 것)"
   },
   {
     "id": "ii_08",
@@ -69,7 +83,9 @@
     "meaning": "고정관념에서 벗어나 창의적으로 생각하다",
     "sentence": "Modern companies encourage young employees to ____ to solve problems.",
     "example": "Modern companies encourage young employees to think outside the box to solve problems.",
-    "translation": "현대 기업들은 젊은 직원들이 문제를 해결하기 위해 창의적으로 생각하도록 장려한다."
+    "translation": "현대 기업들은 젊은 직원들이 문제를 해결하기 위해 창의적으로 생각하도록 장려한다.",
+    "meaning_en": "think outside the box",
+    "meaning_zh": "고정관념에서 벗어나 창의적으로 생각하다"
   },
   {
     "id": "ii_09",
@@ -78,7 +94,9 @@
     "meaning": "장기적으로 보면, 결국에는",
     "sentence": "Investing in solar energy will save a lot of money ____.",
     "example": "Investing in solar energy will save a lot of money in the long run.",
-    "translation": "태양광 에너지에 투자하는 것은 장기적으로 보면 많은 돈을 절약해 줄 것이다."
+    "translation": "태양광 에너지에 투자하는 것은 장기적으로 보면 많은 돈을 절약해 줄 것이다.",
+    "meaning_en": "in the long run",
+    "meaning_zh": "장기적으로 보면, 결국에는"
   },
   {
     "id": "ii_10",
@@ -87,7 +105,9 @@
     "meaning": "(성공이나 목표를 향한) 디딤돌, 발판",
     "sentence": "Working as an intern was ____ to her successful career in marketing.",
     "example": "Working as an intern was a stepping stone to her successful career in marketing.",
-    "translation": "인턴으로 일한 것은 그녀의 성공적인 마케팅 경력에 디딤돌이 되었다."
+    "translation": "인턴으로 일한 것은 그녀의 성공적인 마케팅 경력에 디딤돌이 되었다.",
+    "meaning_en": "a stepping stone",
+    "meaning_zh": "(성공이나 목표를 향한) 디딤돌, 발판"
   },
   {
     "id": "ii_11",
@@ -96,7 +116,9 @@
     "meaning": "~을 고려하다, 참작하다",
     "sentence": "City planners must ____ environmental protection when building new roads.",
     "example": "City planners must take into account environmental protection when building new roads.",
-    "translation": "도시 계획가들은 새로운 도로를 건설할 때 환경 보호를 고려해야 한다."
+    "translation": "도시 계획가들은 새로운 도로를 건설할 때 환경 보호를 고려해야 한다.",
+    "meaning_en": "take into account",
+    "meaning_zh": "~을 고려하다, 참작하다"
   },
   {
     "id": "ii_12",
@@ -105,7 +127,9 @@
     "meaning": "~에서 핵심적인 역할을 하다",
     "sentence": "Parents and teachers ____ shaping children's reading habits.",
     "example": "Parents and teachers play a key role in shaping children's reading habits.",
-    "translation": "부모와 교사는 아이들의 독서 습관을 형성하는 데 핵심적인 역할을 한다."
+    "translation": "부모와 교사는 아이들의 독서 습관을 형성하는 데 핵심적인 역할을 한다.",
+    "meaning_en": "play a key role in",
+    "meaning_zh": "~에서 핵심적인 역할을 하다"
   },
   {
     "id": "ii_13",
@@ -114,7 +138,9 @@
     "meaning": "(어려운 현실이나 상황을) 받아들이다, 감수하다",
     "sentence": "Traditional shops have had to ____ the rapid growth of online shopping.",
     "example": "Traditional shops have had to come to terms with the rapid growth of online shopping.",
-    "translation": "전통 상점들은 온라인 쇼핑의 급격한 성장을 받아들여야만 했다."
+    "translation": "전통 상점들은 온라인 쇼핑의 급격한 성장을 받아들여야만 했다.",
+    "meaning_en": "come to terms with",
+    "meaning_zh": "(어려운 현실이나 상황을) 받아들이다, 감수하다"
   },
   {
     "id": "ii_14",
@@ -123,7 +149,9 @@
     "meaning": "~에서 기인하다, 유래하다",
     "sentence": "Many modern health problems ____ a lack of regular physical exercise.",
     "example": "Many modern health problems stem from a lack of regular physical exercise.",
-    "translation": "현대의 많은 건강 문제들은 규칙적인 신체 운동 부족에서 기인한다."
+    "translation": "현대의 많은 건강 문제들은 규칙적인 신체 운동 부족에서 기인한다.",
+    "meaning_en": "stem from",
+    "meaning_zh": "~에서 기인하다, 유래하다"
   },
   {
     "id": "ii_15",
@@ -132,7 +160,9 @@
     "meaning": "~을 희생하여, 대가를 치르고",
     "sentence": "Unregulated industrial expansion frequently proceeds ____ environmental biodiversity and public health.",
     "example": "Unregulated industrial expansion frequently proceeds at the expense of environmental biodiversity and public health.",
-    "translation": "규제되지 않은 산업 확장은 흔히 환경적 생물다양성과 공공 보건을 희생시키며 진행된다."
+    "translation": "규제되지 않은 산업 확장은 흔히 환경적 생물다양성과 공공 보건을 희생시키며 진행된다.",
+    "meaning_en": "at the expense of",
+    "meaning_zh": "~을 희생하여, 대가를 치르고"
   },
   {
     "id": "ii_16",
@@ -141,7 +171,9 @@
     "meaning": "~을 위한 길을 열다, 기틀을 마련하다",
     "sentence": "Groundbreaking genetic discoveries will ____ highly tailored therapies for inherited syndromes.",
     "example": "Groundbreaking genetic discoveries will pave the way for highly tailored therapies for inherited syndromes.",
-    "translation": "획기적인 유전자 발견은 유전성 증후군에 대한 고도로 맞춤화된 치료법을 위한 길을 열어줄 것이다."
+    "translation": "획기적인 유전자 발견은 유전성 증후군에 대한 고도로 맞춤화된 치료법을 위한 길을 열어줄 것이다.",
+    "meaning_en": "pave the way for",
+    "meaning_zh": "~을 위한 길을 열다, 기틀을 마련하다"
   },
   {
     "id": "ii_17",
@@ -150,7 +182,9 @@
     "meaning": "변화의 기폭제, 촉매제",
     "sentence": "The widespread youth climate movement served as ____ in national legislative sustainability debates.",
     "example": "The widespread youth climate movement served as a catalyst for change in national legislative sustainability debates.",
-    "translation": "광범위한 청소년 기후 행동 운동은 국가 입법부의 지속가능성 논의에서 변화의 기폭제 역할을 했다."
+    "translation": "광범위한 청소년 기후 행동 운동은 국가 입법부의 지속가능성 논의에서 변화의 기폭제 역할을 했다.",
+    "meaning_en": "a catalyst for change",
+    "meaning_zh": "변화의 기폭제, 촉매제"
   },
   {
     "id": "ii_18",
@@ -159,7 +193,9 @@
     "meaning": "~에 역행하다, 정면으로 배치되다",
     "sentence": "Imposing severe budget cuts on public universities would ____ national strategies for innovation.",
     "example": "Imposing severe budget cuts on public universities would run counter to national strategies for innovation.",
-    "translation": "국립대학교에 심각한 예산 삭감을 가하는 것은 혁신을 위한 국가적 전략에 정면으로 배치될 것이다."
+    "translation": "국립대학교에 심각한 예산 삭감을 가하는 것은 혁신을 위한 국가적 전략에 정면으로 배치될 것이다.",
+    "meaning_en": "run counter to",
+    "meaning_zh": "~에 역행하다, 정면으로 배치되다"
   },
   {
     "id": "ii_19",
@@ -168,7 +204,9 @@
     "meaning": "~을 일으키다, 초래하다",
     "sentence": "Unchecked algorithmic echo chambers have begun to ____ unprecedented political polarization.",
     "example": "Unchecked algorithmic echo chambers have begun to give rise to unprecedented political polarization.",
-    "translation": "통제되지 않는 알고리즘 에코 체임버는 전례 없는 정치적 양극화를 초래하기 시작했다."
+    "translation": "통제되지 않는 알고리즘 에코 체임버는 전례 없는 정치적 양극화를 초래하기 시작했다.",
+    "meaning_en": "give rise to",
+    "meaning_zh": "~을 일으키다, 초래하다"
   },
   {
     "id": "ii_20",
@@ -177,6 +215,8 @@
     "meaning": "~을 명확히 규명하다, 새로운 단서를 밝히다",
     "sentence": "Recent archaeological excavations ____ how ancient civilizations adapted to severe droughts.",
     "example": "Recent archaeological excavations shed light on how ancient civilizations adapted to severe droughts.",
-    "translation": "최근의 고고학적 발굴은 고대 문명이 극심한 가뭄에 어떻게 적응했는지를 명확히 규명해 준다."
+    "translation": "최근의 고고학적 발굴은 고대 문명이 극심한 가뭄에 어떻게 적응했는지를 명확히 규명해 준다.",
+    "meaning_en": "shed light on",
+    "meaning_zh": "~을 명확히 규명하다, 새로운 단서를 밝히다"
   }
 ]

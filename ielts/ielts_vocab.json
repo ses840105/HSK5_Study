@@ -7,7 +7,10 @@
     "meaning": "가격이 알맞은, 부담 없는",
     "synonym": "inexpensive, reasonable, budget-friendly",
     "example": "Public buses and subways are very affordable for university students.",
-    "translation": "대중 시내버스와 지하철은 대학생들에게 가격 부담이 매우 적다."
+    "translation": "대중 시내버스와 지하철은 대학생들에게 가격 부담이 매우 적다.",
+    "meaning_en": "affordable, reasonably priced",
+    "meaning_zh": "经济实惠的；负担得起的",
+    "translation_zh": "对于大学生来说，公共巴士和地铁的价格非常实惠。"
   },
   {
     "id": "iv_02",
@@ -17,7 +20,10 @@
     "meaning": "편리한, 간편한",
     "synonym": "handy, accessible, practical",
     "example": "Living near a supermarket is very convenient for busy families.",
-    "translation": "슈퍼마켓 근처에 사는 것은 바쁜 가족들에게 매우 편리하다."
+    "translation": "슈퍼마켓 근처에 사는 것은 바쁜 가족들에게 매우 편리하다.",
+    "meaning_en": "convenient, easily accessible",
+    "meaning_zh": "方便的；便利的",
+    "translation_zh": "住在市中心非常便利，所有配套设施都在步行范围内。"
   },
   {
     "id": "iv_03",
@@ -27,7 +33,10 @@
     "meaning": "줄이다, 낮추다",
     "synonym": "decrease, cut down, lower",
     "example": "We should use reusable bags to reduce plastic waste.",
-    "translation": "우리는 플라스틱 쓰레기를 줄이기 위해 다회용 장바구니를 사용해야 한다."
+    "translation": "우리는 플라스틱 쓰레기를 줄이기 위해 다회용 장바구니를 사용해야 한다.",
+    "meaning_en": "reduce, lessen, diminish",
+    "meaning_zh": "减少；降低",
+    "translation_zh": "骑自行车上下班可以显著减少城市碳排放。"
   },
   {
     "id": "iv_04",
@@ -37,7 +46,10 @@
     "meaning": "향상시키다, 개선하다",
     "synonym": "enhance, get better, upgrade",
     "example": "Reading English newspapers every day helps improve your vocabulary.",
-    "translation": "매일 영어 신문을 읽는 것은 어휘력을 향상시키는 데 도움이 된다."
+    "translation": "매일 영어 신문을 읽는 것은 어휘력을 향상시키는 데 도움이 된다.",
+    "meaning_en": "improve, enhance, upgrade",
+    "meaning_zh": "改善；提高",
+    "translation_zh": "持续阅读学术文章是提高雅思词汇量的极佳途径。"
   },
   {
     "id": "iv_05",
@@ -47,7 +59,10 @@
     "meaning": "제공하다, 공급하다",
     "synonym": "supply, offer, give",
     "example": "The hotel provides free breakfast and wireless internet for all guests.",
-    "translation": "그 호텔은 모든 투숙객에게 무료 아침 식사와 무선 인터넷을 제공한다."
+    "translation": "그 호텔은 모든 투숙객에게 무료 아침 식사와 무선 인터넷을 제공한다.",
+    "meaning_en": "provide, supply, offer",
+    "meaning_zh": "提供；供应",
+    "translation_zh": "大学图书馆为所有注册学生提供丰富的在线学术资源。"
   },
   {
     "id": "iv_06",
@@ -57,7 +72,10 @@
     "meaning": "발전시키다, 기르다",
     "synonym": "grow, build, cultivate",
     "example": "Team sports help children develop good social skills.",
-    "translation": "단체 스포츠는 아이들이 좋은 사회성 기술을 기르는 데 도움이 된다."
+    "translation": "단체 스포츠는 아이들이 좋은 사회성 기술을 기르는 데 도움이 된다.",
+    "meaning_en": "develop, cultivate, foster",
+    "meaning_zh": "发展；培养",
+    "translation_zh": "鼓励独立思考有助于培养批判性分析能力。"
   },
   {
     "id": "iv_07",
@@ -67,7 +85,10 @@
     "meaning": "일정, 시간표",
     "synonym": "timetable, plan, agenda",
     "example": "Please check the train schedule before you leave for the station.",
-    "translation": "역으로 출발하기 전에 기차 시간표를 확인해 주세요."
+    "translation": "역으로 출발하기 전에 기차 시간표를 확인해 주세요.",
+    "meaning_en": "schedule, timetable, agenda",
+    "meaning_zh": "日程；时刻表",
+    "translation_zh": "由于考试临近，她制定了严格的日常复习时间表。"
   },
   {
     "id": "iv_08",
@@ -77,7 +98,10 @@
     "meaning": "지역의, 현지의",
     "synonym": "regional, neighborhood, community",
     "example": "Tourists enjoy trying fresh food at the local night market.",
-    "translation": "관광객들은 현지 야시장에서 신선한 음식을 맛보는 것을 즐긴다."
+    "translation": "관광객들은 현지 야시장에서 신선한 음식을 맛보는 것을 즐긴다.",
+    "meaning_en": "local, regional, indigenous",
+    "meaning_zh": "当地的；本地区的",
+    "translation_zh": "游览当地农贸市场是体验本土文化与风俗的最佳方式。"
   },
   {
     "id": "iv_09",
@@ -87,7 +111,10 @@
     "meaning": "보호하다, 지키다",
     "synonym": "save, defend, guard",
     "example": "Wearing sunglasses helps protect your eyes from strong sunlight.",
-    "translation": "선글라스를 착용하는 것은 강한 햇빛으로부터 눈을 보호하는 데 도움이 된다."
+    "translation": "선글라스를 착용하는 것은 강한 햇빛으로부터 눈을 보호하는 데 도움이 된다.",
+    "meaning_en": "protect, shield, defend",
+    "meaning_zh": "保护；守护",
+    "translation_zh": "国际社会必须通力合作，保护濒危野生动物栖息地。"
   },
   {
     "id": "iv_10",
@@ -97,7 +124,10 @@
     "meaning": "필수적인, 꼭 필요한",
     "synonym": "necessary, important, vital",
     "example": "Clean drinking water is essential for human health.",
-    "translation": "깨끗한 식수는 인간의 건강에 필수적이다."
+    "translation": "깨끗한 식수는 인간의 건강에 필수적이다.",
+    "meaning_en": "essential, vital, crucial",
+    "meaning_zh": "必不可少的；极其重要的",
+    "translation_zh": "良好的时间管理对于高分通过雅思考试至关重要。"
   },
   {
     "id": "iv_11",
@@ -107,7 +137,10 @@
     "meaning": "이익, 혜택, 장점",
     "synonym": "advantage, profit, merit",
     "example": "One major benefit of cycling is that it keeps you healthy.",
-    "translation": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다."
+    "translation": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다.",
+    "meaning_en": "advantage, profit, merit",
+    "meaning_zh": "이익, 혜택, 장점",
+    "translation_zh": "자전거 타기의 한 가지 큰 장점은 건강을 유지해 준다는 것이다."
   },
   {
     "id": "iv_12",
@@ -117,7 +150,10 @@
     "meaning": "이용할 수 있는, 시간이 있는",
     "synonym": "accessible, free, obtainable",
     "example": "Tickets for the weekend concert are available online now.",
-    "translation": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다."
+    "translation": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다.",
+    "meaning_en": "accessible, free, obtainable",
+    "meaning_zh": "이용할 수 있는, 시간이 있는",
+    "translation_zh": "주말 콘서트 티켓은 지금 온라인에서 구매(이용)할 수 있다."
   },
   {
     "id": "iv_13",
@@ -127,7 +163,10 @@
     "meaning": "격려하다, 장려하다",
     "synonym": "inspire, support, motivate",
     "example": "Teachers always encourage students to ask questions in class.",
-    "translation": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다."
+    "translation": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다.",
+    "meaning_en": "inspire, support, motivate",
+    "meaning_zh": "격려하다, 장려하다",
+    "translation_zh": "선생님들은 항상 학생들이 수업 시간에 질문하도록 격려한다."
   },
   {
     "id": "iv_14",
@@ -137,7 +176,10 @@
     "meaning": "기회",
     "synonym": "chance, occasion, opening",
     "example": "Studying abroad is a great opportunity to experience a new culture.",
-    "translation": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다."
+    "translation": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다.",
+    "meaning_en": "chance, occasion, opening",
+    "meaning_zh": "기회",
+    "translation_zh": "해외 유학은 새로운 문화를 경험할 수 있는 좋은 기회이다."
   },
   {
     "id": "iv_15",
@@ -147,7 +189,10 @@
     "meaning": "제한하다, 줄이다",
     "synonym": "restrict, control, cap",
     "example": "Parents should limit the time children spend playing video games.",
-    "translation": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다."
+    "translation": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다.",
+    "meaning_en": "restrict, control, cap",
+    "meaning_zh": "제한하다, 줄이다",
+    "translation_zh": "부모는 아이들이 비디오 게임을 하는 데 쓰는 시간을 제한해야 한다."
   },
   {
     "id": "iv_16",
@@ -157,7 +202,10 @@
     "meaning": "숙소, 거처",
     "synonym": "housing, lodging, residence",
     "example": "First-year students usually live in university accommodation on campus.",
-    "translation": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다."
+    "translation": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다.",
+    "meaning_en": "housing, lodging, residence",
+    "meaning_zh": "숙소, 거처",
+    "translation_zh": "1학년 학생들은 보통 캠퍼스 내 대학 기숙사(숙소)에서 생활한다."
   },
   {
     "id": "iv_17",
@@ -167,7 +215,10 @@
     "meaning": "결정적인, 매우 중요한",
     "synonym": "vital, critical, key",
     "example": "Early education plays a crucial role in shaping a child's future.",
-    "translation": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다."
+    "translation": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다.",
+    "meaning_en": "vital, critical, key",
+    "meaning_zh": "결정적인, 매우 중요한",
+    "translation_zh": "조기 교육은 아이의 미래를 형성하는 데 결정적인 역할을 한다."
   },
   {
     "id": "iv_18",
@@ -177,7 +228,10 @@
     "meaning": "할당하다, 배분하다",
     "synonym": "assign, distribute, budget",
     "example": "The government decided to allocate more funds to public hospitals.",
-    "translation": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다."
+    "translation": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다.",
+    "meaning_en": "assign, distribute, budget",
+    "meaning_zh": "할당하다, 배분하다",
+    "translation_zh": "정부는 공공 병원에 더 많은 예산을 배분하기로 결정했다."
   },
   {
     "id": "iv_19",
@@ -187,7 +241,10 @@
     "meaning": "습득하다, 얻다",
     "synonym": "obtain, gain, learn",
     "example": "Students can acquire practical skills through summer internships.",
-    "translation": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다."
+    "translation": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다.",
+    "meaning_en": "obtain, gain, learn",
+    "meaning_zh": "습득하다, 얻다",
+    "translation_zh": "학생들은 여름 인턴십을 통해 실무 기술을 습득할 수 있다."
   },
   {
     "id": "iv_20",
@@ -197,7 +254,10 @@
     "meaning": "완화하다, 줄이다",
     "synonym": "alleviate, ease, reduce",
     "example": "Planting more urban trees can help mitigate the effects of air pollution.",
-    "translation": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다."
+    "translation": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다.",
+    "meaning_en": "alleviate, ease, reduce",
+    "meaning_zh": "완화하다, 줄이다",
+    "translation_zh": "도심에 나무를 더 많이 심는 것은 대기 오염의 영향을 완화하는 데 도움이 된다."
   },
   {
     "id": "iv_21",
@@ -207,7 +267,10 @@
     "meaning": "포괄적인, 종합적인",
     "synonym": "thorough, complete, extensive",
     "example": "The ministry published a comprehensive report on road safety.",
-    "translation": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다."
+    "translation": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다.",
+    "meaning_en": "thorough, complete, extensive",
+    "meaning_zh": "포괄적인, 종합적인",
+    "translation_zh": "정부 부처는 도로 안전에 관한 포괄적인 보고서를 발표했다."
   },
   {
     "id": "iv_22",
@@ -217,7 +280,10 @@
     "meaning": "변동하다, 오르내리다",
     "synonym": "vary, change, rise and fall",
     "example": "Vegetable prices tend to fluctuate according to the season.",
-    "translation": "채소 가격은 계절에 따라 변동하는 경향이 있다."
+    "translation": "채소 가격은 계절에 따라 변동하는 경향이 있다.",
+    "meaning_en": "vary, change, rise and fall",
+    "meaning_zh": "변동하다, 오르내리다",
+    "translation_zh": "채소 가격은 계절에 따라 변동하는 경향이 있다."
   },
   {
     "id": "iv_23",
@@ -227,7 +293,10 @@
     "meaning": "불가피한, 피할 수 없는",
     "synonym": "unavoidable, certain, bound to happen",
     "example": "Traffic delays are almost inevitable during weekday rush hours.",
-    "translation": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다."
+    "translation": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다.",
+    "meaning_en": "unavoidable, certain, bound to happen",
+    "meaning_zh": "불가피한, 피할 수 없는",
+    "translation_zh": "평일 출퇴근 혼잡 시간대에는 교통 정체가 거의 불가피하다."
   },
   {
     "id": "iv_24",
@@ -237,7 +306,10 @@
     "meaning": "의무적인, 필수의",
     "synonym": "compulsory, required, obligatory",
     "example": "Wearing a seatbelt is mandatory for all drivers and passengers.",
-    "translation": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다."
+    "translation": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다.",
+    "meaning_en": "compulsory, required, obligatory",
+    "meaning_zh": "의무적인, 필수의",
+    "translation_zh": "안전벨트 착용은 모든 운전자와 승객에게 의무적이다."
   },
   {
     "id": "iv_25",
@@ -247,7 +319,10 @@
     "meaning": "주목할 만한, 뚜렷한",
     "synonym": "remarkable, significant, striking",
     "example": "There has been a notable increase in the number of electric cars.",
-    "translation": "전기차 대수에 주목할 만한 증가가 있었다."
+    "translation": "전기차 대수에 주목할 만한 증가가 있었다.",
+    "meaning_en": "remarkable, significant, striking",
+    "meaning_zh": "주목할 만한, 뚜렷한",
+    "translation_zh": "전기차 대수에 주목할 만한 증가가 있었다."
   },
   {
     "id": "iv_26",
@@ -257,7 +332,10 @@
     "meaning": "강화하다, 보강하다",
     "synonym": "strengthen, support, bolster",
     "example": "Positive feedback from teachers helps reinforce students' confidence.",
-    "translation": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다."
+    "translation": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다.",
+    "meaning_en": "strengthen, support, bolster",
+    "meaning_zh": "강화하다, 보강하다",
+    "translation_zh": "교사의 긍정적인 피드백은 학생들의 자신감을 강화하는 데 도움이 된다."
   },
   {
     "id": "iv_27",
@@ -267,7 +345,10 @@
     "meaning": "그 다음의, 차후의",
     "synonym": "following, later, succeeding",
     "example": "The skills learned in primary school are vital for subsequent education.",
-    "translation": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다."
+    "translation": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다.",
+    "meaning_en": "following, later, succeeding",
+    "meaning_zh": "그 다음의, 차후의",
+    "translation_zh": "초등학교에서 배운 기술들은 그 이후의 교육에 매우 중요하다."
   },
   {
     "id": "iv_28",
@@ -277,7 +358,10 @@
     "meaning": "약화시키다, 해치다",
     "synonym": "weaken, damage, harm",
     "example": "Constant stress at work can undermine an employee's physical health.",
-    "translation": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다."
+    "translation": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다.",
+    "meaning_en": "weaken, damage, harm",
+    "meaning_zh": "약화시키다, 해치다",
+    "translation_zh": "직장에서의 지속적인 스트레스는 직원의 신체 건강을 해칠 수 있다."
   },
   {
     "id": "iv_29",
@@ -287,7 +371,10 @@
     "meaning": "광범위한, 널리 퍼진",
     "synonym": "common, extensive, general",
     "example": "Online banking has gained widespread popularity among young adults.",
-    "translation": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다."
+    "translation": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다.",
+    "meaning_en": "common, extensive, general",
+    "meaning_zh": "광범위한, 널리 퍼진",
+    "translation_zh": "온라인 뱅킹은 청년층 사이에서 광범위한 인기를 얻었다."
   },
   {
     "id": "iv_30",
@@ -297,7 +384,10 @@
     "meaning": "지속 가능한, 친환경적인",
     "synonym": "eco-friendly, renewable, long-lasting",
     "example": "Tourism must be developed in a sustainable way to protect nature.",
-    "translation": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다."
+    "translation": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다.",
+    "meaning_en": "eco-friendly, renewable, long-lasting",
+    "meaning_zh": "지속 가능한, 친환경적인",
+    "translation_zh": "자연을 보호하기 위해 관광 산업은 지속 가능한 방식으로 개발되어야 한다."
   },
   {
     "id": "iv_31",
@@ -307,7 +397,10 @@
     "meaning": "바꾸다, 변모시키다",
     "synonym": "change, convert, reshape",
     "example": "Smartphones have completely transformed how people shop and pay.",
-    "translation": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다."
+    "translation": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다.",
+    "meaning_en": "change, convert, reshape",
+    "meaning_zh": "바꾸다, 변모시키다",
+    "translation_zh": "스마트폰은 사람들이 쇼핑하고 결제하는 방식을 완전히 바꾸어 놓았다."
   },
   {
     "id": "iv_32",
@@ -317,7 +410,10 @@
     "meaning": "국내의, 가정의",
     "synonym": "national, home, household",
     "example": "Domestic flights are usually cheaper and faster than long train journeys.",
-    "translation": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다."
+    "translation": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다.",
+    "meaning_en": "national, home, household",
+    "meaning_zh": "국내의, 가정의",
+    "translation_zh": "국내선 항공편은 보통 장거리 기차 여행보다 저렴하고 빠르다."
   },
   {
     "id": "iv_33",
@@ -327,7 +423,10 @@
     "meaning": "지지하다, 주장하다",
     "synonym": "support, recommend, promote",
     "example": "Many health experts advocate a diet rich in vegetables and whole grains.",
-    "translation": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다."
+    "translation": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다.",
+    "meaning_en": "support, recommend, promote",
+    "meaning_zh": "지지하다, 주장하다",
+    "translation_zh": "많은 건강 전문가들은 채소와 통곡물이 풍부한 식단을 지지한다."
   },
   {
     "id": "iv_34",
@@ -337,7 +436,10 @@
     "meaning": "실현 가능한, 타당한",
     "synonym": "practical, workable, achievable",
     "example": "Working four days a week is a feasible option for many office jobs.",
-    "translation": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다."
+    "translation": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다.",
+    "meaning_en": "practical, workable, achievable",
+    "meaning_zh": "실현 가능한, 타당한",
+    "translation_zh": "주 4일 근무는 많은 사무직 직종에서 실현 가능한 선택지이다."
   },
   {
     "id": "iv_35",
@@ -347,7 +449,10 @@
     "meaning": "악화되다, 나빠지다",
     "synonym": "worsen, decline, get worse",
     "example": "Air quality in the city tends to deteriorate during the winter months.",
-    "translation": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다."
+    "translation": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다.",
+    "meaning_en": "worsen, decline, get worse",
+    "meaning_zh": "악화되다, 나빠지다",
+    "translation_zh": "도시의 대기질은 겨울철 동안 악화되는 경향이 있다."
   },
   {
     "id": "iv_36",
@@ -357,7 +462,10 @@
     "meaning": "인식하다, 여기다",
     "synonym": "view, regard, see",
     "example": "Many graduates perceive a master's degree as a path to better jobs.",
-    "translation": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다."
+    "translation": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다.",
+    "meaning_en": "view, regard, see",
+    "meaning_zh": "인식하다, 여기다",
+    "translation_zh": "많은 졸업생들은 석사 학위를 더 나은 직장으로 가는 길로 인식한다."
   },
   {
     "id": "iv_37",
@@ -367,7 +475,10 @@
     "meaning": "어디에나 존재하는, 편재하는",
     "synonym": "omnipresent, pervasive, universal",
     "example": "Smartphones and handheld digital screens have become ubiquitous in metropolitan life.",
-    "translation": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다."
+    "translation": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다.",
+    "meaning_en": "omnipresent, pervasive, universal",
+    "meaning_zh": "어디에나 존재하는, 편재하는",
+    "translation_zh": "스마트폰과 휴대용 디지털 화면은 현대 대도시 생활 어디에나 존재하는 것이 되었다."
   },
   {
     "id": "iv_38",
@@ -377,7 +488,10 @@
     "meaning": "(문제를) 악화시키다, 격화시키다",
     "synonym": "aggravate, worsen, inflame",
     "example": "Prolonged summer heatwaves threaten to exacerbate existing agricultural water deficits.",
-    "translation": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다."
+    "translation": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다.",
+    "meaning_en": "aggravate, worsen, inflame",
+    "meaning_zh": "(문제를) 악화시키다, 격화시키다",
+    "translation_zh": "장기화되는 여름 폭염은 기존의 농업용수 부족 문제를 더욱 악화시킬 우려가 있다."
   },
   {
     "id": "iv_39",
@@ -387,7 +501,10 @@
     "meaning": "수명이 짧은, 덧없는",
     "synonym": "transient, fleeting, momentary",
     "example": "Viral fame generated on social networking sites is notoriously ephemeral and volatile.",
-    "translation": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다."
+    "translation": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다.",
+    "meaning_en": "transient, fleeting, momentary",
+    "meaning_zh": "수명이 짧은, 덧없는",
+    "translation_zh": "소셜 네트워킹 사이트에서 생겨나는 바이럴 인기는 덧없고 변동성이 큰 것으로 악명 높다."
   },
   {
     "id": "iv_40",
@@ -397,7 +514,10 @@
     "meaning": "불균형, 격차",
     "synonym": "discrepancy, inequality, imbalance",
     "example": "Economic globalization has inadvertently widened the income disparity between urban and rural areas.",
-    "translation": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다."
+    "translation": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다.",
+    "meaning_en": "discrepancy, inequality, imbalance",
+    "meaning_zh": "불균형, 격차",
+    "translation_zh": "경제 세계화는 의도치 않게 도시와 농촌 간의 소득 격차를 확대시켰다."
   },
   {
     "id": "iv_41",
@@ -407,7 +527,10 @@
     "meaning": "(증거로) 뒷받침하다, 입증하다",
     "synonym": "confirm, substantiate, authenticate",
     "example": "Satellite sensory telemetry was required to corroborate the meteorological simulation results.",
-    "translation": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다."
+    "translation": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다.",
+    "meaning_en": "confirm, substantiate, authenticate",
+    "meaning_zh": "(증거로) 뒷받침하다, 입증하다",
+    "translation_zh": "기상 시뮬레이션 결과를 뒷받침하기 위해 인공위성 원격 감측 자료가 요구되었다."
   },
   {
     "id": "iv_42",
@@ -417,7 +540,10 @@
     "meaning": "해로운, 유해한",
     "synonym": "detrimental, harmful, pernicious",
     "example": "Excessive sedentary screen time exercises deleterious physiological impacts on adolescents.",
-    "translation": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다."
+    "translation": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다.",
+    "meaning_en": "detrimental, harmful, pernicious",
+    "meaning_zh": "해로운, 유해한",
+    "translation_zh": "과도하게 앉아서 화면을 보는 시간은 청소년들에게 유해한 생리적 영향을 미친다."
   },
   {
     "id": "iv_43",
@@ -427,7 +553,10 @@
     "meaning": "필수불가결한, 없어서는 안 될",
     "synonym": "essential, crucial, requisite",
     "example": "Cross-disciplinary collaboration is indispensable for solving intricate climate crises.",
-    "translation": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다."
+    "translation": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다.",
+    "meaning_en": "essential, crucial, requisite",
+    "meaning_zh": "필수불가결한, 없어서는 안 될",
+    "translation_zh": "학제 간 융합 협력은 복잡한 기후 위기를 해결하는 데 필수불가결하다."
   },
   {
     "id": "iv_44",
@@ -437,7 +566,10 @@
     "meaning": "변칙, 이례적인 것",
     "synonym": "irregularity, aberration, abnormality",
     "example": "Statisticians scrutinized the laboratory output to determine if the result was a genuine anomaly.",
-    "translation": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다."
+    "translation": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다.",
+    "meaning_en": "irregularity, aberration, abnormality",
+    "meaning_zh": "변칙, 이례적인 것",
+    "translation_zh": "통계학자들은 그 결과가 진정한 변칙치인지 확인하기 위해 실험실 산출물을 면밀히 조사했다."
   },
   {
     "id": "iv_45",
@@ -447,7 +579,10 @@
     "meaning": "급증하다, 확산되다",
     "synonym": "multiply, mushroom, burgeon",
     "example": "Autonomous digital commerce applications continue to proliferate across developing economies.",
-    "translation": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다."
+    "translation": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다.",
+    "meaning_en": "multiply, mushroom, burgeon",
+    "meaning_zh": "급증하다, 확산되다",
+    "translation_zh": "자율 디지털 커머스 애플리케이션은 개발도상국 경제 전반에 걸쳐 계속해서 급증하고 있다."
   },
   {
     "id": "iv_46",
@@ -457,7 +592,10 @@
     "meaning": "꼼꼼한, 세심한",
     "synonym": "thorough, scrupulous, punctilious",
     "example": "Forensic historians performed meticulous archival analyses on ancient trade treaties.",
-    "translation": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다."
+    "translation": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다.",
+    "meaning_en": "thorough, scrupulous, punctilious",
+    "meaning_zh": "꼼꼼한, 세심한",
+    "translation_zh": "법의학적 역사가들은 고대 무역 조약에 대해 꼼꼼한 기록물 분석을 수행했다."
   },
   {
     "id": "iv_47",
@@ -467,7 +605,10 @@
     "meaning": "병치하다, 나란히 놓다",
     "synonym": "collocate, contrast, compare",
     "example": "The museum curators juxtaposed classical oil paintings with contemporary digital sculptures.",
-    "translation": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다."
+    "translation": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다.",
+    "meaning_en": "collocate, contrast, compare",
+    "meaning_zh": "병치하다, 나란히 놓다",
+    "translation_zh": "박물관 큐레이터들은 고전 유화 회화와 현대 디지털 조각을 나란히 병치했다."
   },
   {
     "id": "iv_48",
@@ -477,7 +618,10 @@
     "meaning": "패러다임, 전형적인 틀",
     "synonym": "model, framework, archetype",
     "example": "Quantum computational theory triggers a profound paradigm shift in modern cryptography.",
-    "translation": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다."
+    "translation": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다.",
+    "meaning_en": "model, framework, archetype",
+    "meaning_zh": "패러다임, 전형적인 틀",
+    "translation_zh": "양자 컴퓨팅 이론은 현대 암호학에 심오한 패러다임 전환을 촉발한다."
   },
   {
     "id": "iv_49",
@@ -487,7 +631,10 @@
     "meaning": "수반되는, 부수적인",
     "synonym": "accompanying, associated, attendant",
     "example": "Rapid industrial expansion brings concomitant risks of hazardous ecological degradation.",
-    "translation": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다."
+    "translation": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다.",
+    "meaning_en": "accompanying, associated, attendant",
+    "meaning_zh": "수반되는, 부수적인",
+    "translation_zh": "급격한 산업 확장은 위험한 생태계 파괴라는 수반되는 위험을 초래한다."
   },
   {
     "id": "iv_49_b",
@@ -497,7 +644,10 @@
     "meaning": "빈약한, 보잘것없는",
     "synonym": "flimsy, weak, fragile",
     "example": "The historical connection between the two isolated dynasties remains tenuous at best.",
-    "translation": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다."
+    "translation": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다.",
+    "meaning_en": "flimsy, weak, fragile",
+    "meaning_zh": "빈약한, 보잘것없는",
+    "translation_zh": "두 고립된 왕조 사이의 역사적 연관성은 기껏해야 빈약한 상태로 남아있다."
   },
   {
     "id": "iv_50",
@@ -507,7 +657,10 @@
     "meaning": "실용적인, 실무적인",
     "synonym": "practical, realistic, utilitarian",
     "example": "Diplomats adopted a pragmatic negotiating framework to resolve transnational border disputes.",
-    "translation": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다."
+    "translation": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다.",
+    "meaning_en": "practical, realistic, utilitarian",
+    "meaning_zh": "실용적인, 실무적인",
+    "translation_zh": "외교관들은 국가 간 국경 분쟁을 해결하기 위해 실용적인 협상 프레임워크를 채택했다."
   },
   {
     "id": "iv_51",
@@ -517,6 +670,9 @@
     "meaning": "실증하다, 구체화하다",
     "synonym": "validate, prove, authenticate",
     "example": "Economists gathered decadal macroeconomic indicators to substantiate their monetary thesis.",
-    "translation": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다."
+    "translation": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다.",
+    "meaning_en": "validate, prove, authenticate",
+    "meaning_zh": "실증하다, 구체화하다",
+    "translation_zh": "경제학자들은 통화 정책 논문을 실증하기 위해 10년 치 거시경제 지표를 수집했다."
   }
 ]

@@ -144,7 +144,25 @@ const requiredDomIds = [
   'dictation-box',
   'listening-player-box',
   'reading-box',
-  'history-modal'
+  'history-modal',
+  'main-mode-nav',
+  'nav-mode-study',
+  'nav-mode-quiz',
+  'study-view',
+  'study-cat-vocab',
+  'study-cat-chengyu',
+  'study-cat-grammar',
+  'flashcard-scene',
+  'flashcard',
+  'card-primary-text',
+  'card-secondary-text',
+  'card-meaning-ko',
+  'card-meaning-en',
+  'card-meaning-zh',
+  'study-prev-btn',
+  'study-flip-btn',
+  'study-next-btn',
+  'bridge-start-quiz-btn'
 ];
 
 requiredDomIds.forEach((id) => {

@@ -84,6 +84,16 @@
       </div>
     </header>
 
+    <!-- 상단 대분류 모드 탭 (학습 모드 / 퀴즈 모드) -->
+    <nav class="main-mode-nav" id="main-mode-nav">
+      <button id="nav-mode-study" class="main-mode-tab" data-nav-mode="study">
+        <span class="nav-icon">📖</span> <span id="nav-mode-study-text">공부 모드 (카드 세트)</span>
+      </button>
+      <button id="nav-mode-quiz" class="main-mode-tab active" data-nav-mode="quiz">
+        <span class="nav-icon">📝</span> <span id="nav-mode-quiz-text">실전 퀴즈 모드</span>
+      </button>
+    </nav>
+
     <!-- 1. 설정 / 메뉴 화면 -->
     <section id="setup-view" class="view-section active">
       <div id="intro-card" class="intro-card">
@@ -499,6 +509,131 @@
           <button id="view-history-btn" class="secondary-btn">📜 학습 기록 보기</button>
           <button id="home-btn" class="secondary-btn">메인 메뉴 🏠</button>
         </div>
+      </div>
+    </section>
+
+    <!-- 4. 공부 모드 화면 (단어 카드 세트 / 사자성어 / 문법 학습) -->
+    <section id="study-view" class="view-section">
+      <!-- 공부 모드 컨트롤 바 -->
+      <div class="study-header-card">
+        <div class="study-category-nav">
+          <button class="study-cat-btn active" data-study-cat="vocab" id="study-cat-vocab">
+            <span>📚</span> <span id="study-cat-vocab-text">필수 어휘</span>
+          </button>
+          <button class="study-cat-btn" data-study-cat="chengyu" id="study-cat-chengyu">
+            <span>🀄</span> <span id="study-cat-chengyu-text">사자성어 / 관용구</span>
+          </button>
+          <button class="study-cat-btn" data-study-cat="grammar" id="study-cat-grammar">
+            <span>📐</span> <span id="study-cat-grammar-text">핵심 문법</span>
+          </button>
+        </div>
+
+        <div class="study-filter-row">
+          <div class="study-diff-filters">
+            <button class="study-diff-filter active" data-diff="all" id="study-diff-all">전체</button>
+            <button class="study-diff-filter" data-diff="하" id="study-diff-easy">🟢 하</button>
+            <button class="study-diff-filter" data-diff="중" id="study-diff-mid">🟡 중</button>
+            <button class="study-diff-filter" data-diff="상" id="study-diff-hard">🔴 상</button>
+          </div>
+          <div class="study-meta-info">
+            <span id="study-item-counter" class="study-counter-badge">1 / 30</span>
+            <button id="study-autoplay-btn" class="study-tool-btn" title="카드 자동 넘김 / 自动播放 / Auto Play">
+              <span>▶️</span> <span id="study-autoplay-text">자동 넘김</span>
+            </button>
+            <button id="study-shuffle-btn" class="study-tool-btn" title="카드 순서 섞기 / 随机打乱 / Shuffle Cards">
+              <span>🔀</span> <span id="study-shuffle-text">셔플</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 플립 플래시카드 컨테이너 -->
+      <div class="flashcard-scene" id="flashcard-scene">
+        <div class="flashcard" id="flashcard">
+          <!-- 카드 앞면 (단어 / 성어 / 문법 카테고리) -->
+          <div class="flashcard-face flashcard-front">
+            <div class="card-top-bar">
+              <span class="card-badge" id="card-diff-badge">🟢 하</span>
+              <span class="card-badge tag" id="card-cat-badge">HSK 5급</span>
+              <button class="card-audio-btn" id="card-front-audio-btn" title="발음 듣기">🔊</button>
+            </div>
+            <div class="card-main-content">
+              <div class="card-primary-text" id="card-primary-text">兼职</div>
+              <div class="card-secondary-text" id="card-secondary-text">jiānzhí</div>
+              <div class="card-pos-badge" id="card-pos-badge">동사/명사</div>
+            </div>
+            <div class="card-flip-prompt">
+              <span class="flip-icon">👆</span> <span id="card-flip-prompt-text">클릭하여 뜻 & 예문 확인</span>
+            </div>
+          </div>
+
+          <!-- 카드 뒷면 (뜻 / 한국어-영어-중국어 / 예문 / 상세 해설) -->
+          <div class="flashcard-face flashcard-back">
+            <div class="card-top-bar">
+              <span class="card-badge back-badge" id="card-back-badge">💡 의미 및 해설</span>
+              <button class="card-audio-btn" id="card-back-audio-btn" title="예문 발음 듣기">🔊</button>
+            </div>
+            <div class="card-back-content">
+              <!-- 다국어 뜻 (한국어 / 영어 / 중국어) -->
+              <div class="card-meanings-box">
+                <div class="meaning-item primary">
+                  <span class="lang-flag" id="meaning-flag-ko">🇰🇷</span>
+                  <span class="meaning-text" id="card-meaning-ko">아르바이트하다, 겸직하다</span>
+                </div>
+                <div class="meaning-item">
+                  <span class="lang-flag">🇬🇧</span>
+                  <span class="meaning-text" id="card-meaning-en">work part-time; part-time job</span>
+                </div>
+                <div class="meaning-item">
+                  <span class="lang-flag">🇨🇳</span>
+                  <span class="meaning-text" id="card-meaning-zh">兼职；打工</span>
+                </div>
+              </div>
+
+              <!-- 예문 섹션 -->
+              <div class="card-example-box" id="card-example-box">
+                <div class="example-original" id="card-example-orig">很多大学生利用假期做兼职积累社会经验。</div>
+                <div class="example-translation" id="card-example-trans">많은 대학생들은 방학을 이용해 아르바이트를 하며 사회 경험을 쌓는다.</div>
+              </div>
+
+              <!-- 문법 팁 / 공식 / 상세 해설 -->
+              <div class="card-grammar-box" id="card-grammar-box" style="display: none;">
+                <div class="grammar-title" id="card-grammar-title">📌 문법 공식 및 쓰기 팁</div>
+                <div class="grammar-explanation" id="card-grammar-exp"></div>
+              </div>
+            </div>
+            <div class="card-flip-prompt back">
+              <span class="flip-icon">🔄</span> <span id="card-flip-back-prompt-text">클릭하여 앞면으로 돌아가기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 플래시카드 하단 네비게이션 컨트롤 -->
+      <div class="flashcard-controls">
+        <button id="study-prev-btn" class="card-nav-btn" title="이전 카드 (←)">
+          <span>⬅️</span> <span id="study-prev-text">이전 카드</span>
+        </button>
+        <button id="study-flip-btn" class="card-nav-btn flip-toggle-btn" title="뒤집기 (스페이스바)">
+          <span>🔄</span> <span id="study-flip-text">카드 뒤집기</span>
+        </button>
+        <button id="study-next-btn" class="card-nav-btn primary" title="다음 카드 (→)">
+          <span id="study-next-text">다음 카드</span> <span>➡️</span>
+        </button>
+      </div>
+
+      <!-- 바로 퀴즈로 연결되는 브릿지 배너 -->
+      <div class="study-quiz-bridge">
+        <div class="bridge-info">
+          <span class="bridge-icon">🚀</span>
+          <div>
+            <div class="bridge-title" id="bridge-title">충분히 공부하셨나요? 바로 실전 퀴즈로 테스트해보세요!</div>
+            <div class="bridge-desc" id="bridge-desc">공부한 내용을 즉시 퀴즈로 풀며 스마트 반복 학습(SRS)에 기록할 수 있습니다.</div>
+          </div>
+        </div>
+        <button id="bridge-start-quiz-btn" class="bridge-btn">
+          <span id="bridge-btn-text">이 모드로 퀴즈 풀기</span> ➔
+        </button>
       </div>
     </section>
 

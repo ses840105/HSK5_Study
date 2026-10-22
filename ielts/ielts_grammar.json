@@ -13,7 +13,9 @@
     "answer": 2,
     "example": "I have lived in this city for five years.",
     "translation": "나는 이 도시에서 5년 동안 살아왔다.",
-    "explanation": "[Band 5.0 필수 문법] 과거부터 현재까지 지속된 기간(five years: 5년 동안) 앞에는 전치사 'for'를 쓰고 현재완료(have lived)와 함께 사용합니다 (특정 시점 앞에는 since)."
+    "explanation": "[Band 5.0 필수 문법] 과거부터 현재까지 지속된 기간(five years: 5년 동안) 앞에는 전치사 'for'를 쓰고 현재완료(have lived)와 함께 사용합니다 (특정 시점 앞에는 since).",
+    "category_en": "Present Perfect (현재완료 계속 용법: for vs since)",
+    "category_zh": "Present Perfect (현재완료 계속 용법: for vs since)"
   },
   {
     "id": "ig_02",
@@ -29,7 +31,9 @@
     "answer": 2,
     "example": "The flight was delayed because of the heavy rain.",
     "translation": "폭우 때문에 항공편이 지연되었다.",
-    "explanation": "[Band 5.0 필수 문법] 명사구(the heavy rain) 앞에는 전치사구인 'because of' 또는 'due to'를 사용하며, 주어+동사 절 앞에는 접속사 'because'를 씁니다."
+    "explanation": "[Band 5.0 필수 문법] 명사구(the heavy rain) 앞에는 전치사구인 'because of' 또는 'due to'를 사용하며, 주어+동사 절 앞에는 접속사 'because'를 씁니다.",
+    "category_en": "Conjunction vs Preposition (because vs because of)",
+    "category_zh": "Conjunction vs Preposition (because vs because of)"
   },
   {
     "id": "ig_03",
@@ -45,7 +49,9 @@
     "answer": 2,
     "example": "Plastic bottles should be recycled to protect the environment.",
     "translation": "환경을 보호하기 위해 플라스틱병은 재활용되어야 한다.",
-    "explanation": "[Band 5.0 필수 문법] 주어(Plastic bottles)가 재활용되는 대상이므로 조동사 수동태 공식인 'should be + 과거분사(recycled)'가 정확합니다."
+    "explanation": "[Band 5.0 필수 문법] 주어(Plastic bottles)가 재활용되는 대상이므로 조동사 수동태 공식인 'should be + 과거분사(recycled)'가 정확합니다.",
+    "category_en": "Modal Passive (조동사 수동태: should be + p.p.)",
+    "category_zh": "Modal Passive (조동사 수동태: should be + p.p.)"
   },
   {
     "id": "ig_04",
@@ -61,7 +67,9 @@
     "answer": 2,
     "example": "The internet provides a lot of useful information for students.",
     "translation": "인터넷은 학생들에게 많은 유용한 정보를 제공한다.",
-    "explanation": "[Band 5.0 필수 문법] 'information(정보)', 'advice(조언)', 'furniture(가구)'는 셀 수 없는 불가산명사이므로 복수형(-s)을 쓸 수 없으며 'a lot of / much'와 함께 씁니다."
+    "explanation": "[Band 5.0 필수 문법] 'information(정보)', 'advice(조언)', 'furniture(가구)'는 셀 수 없는 불가산명사이므로 복수형(-s)을 쓸 수 없으며 'a lot of / much'와 함께 씁니다.",
+    "category_en": "Uncountable Nouns (불가산명사 수량 표현)",
+    "category_zh": "Uncountable Nouns (불가산명사 수량 표현)"
   },
   {
     "id": "ig_05",
@@ -77,7 +85,9 @@
     "answer": 1,
     "example": "Taking the subway is more convenient than driving a car.",
     "translation": "지하철을 타는 것이 자동차를 운전하는 것보다 더 편리하다.",
-    "explanation": "[Band 5.0 필수 문법] 3음절 이상의 형용사(convenient)는 앞에 'more'를 붙여 비교급(more convenient than)을 만듭니다."
+    "explanation": "[Band 5.0 필수 문법] 3음절 이상의 형용사(convenient)는 앞에 'more'를 붙여 비교급(more convenient than)을 만듭니다.",
+    "category_en": "Comparatives (비교급 기본 구문)",
+    "category_zh": "Comparatives (비교급 기본 구문)"
   },
   {
     "id": "ig_06",
@@ -93,7 +103,9 @@
     "answer": 2,
     "example": "Many young people enjoy watching movies at home.",
     "translation": "많은 젊은이들이 집에서 영화 보는 것을 즐긴다.",
-    "explanation": "[Band 5.0 필수 문법] 동사 'enjoy', 'avoid', 'mind', 'finish'는 목적어로 to부정사가 아닌 동명사(-ing)만을 취합니다."
+    "explanation": "[Band 5.0 필수 문법] 동사 'enjoy', 'avoid', 'mind', 'finish'는 목적어로 to부정사가 아닌 동명사(-ing)만을 취합니다.",
+    "category_en": "Gerund vs Infinitive (enjoy + -ing 동명사 목적어)",
+    "category_zh": "Gerund vs Infinitive (enjoy + -ing 동명사 목적어)"
   },
   {
     "id": "ig_07",
@@ -109,7 +121,9 @@
     "answer": 1,
     "example": "Despite the bad weather, the outdoor concert went ahead as planned.",
     "translation": "궂은 날씨에도 불구하고 야외 콘서트는 예정대로 진행되었다.",
-    "explanation": "[Band 5.5~6.5 핵심 문법] 전치사 'Despite' 뒤에는 명사구(the bad weather)가 오며 'of'를 붙이지 않습니다. (접속사 Although는 주어+동사 절과 쓰이며 but과 중복 불가)."
+    "explanation": "[Band 5.5~6.5 핵심 문법] 전치사 'Despite' 뒤에는 명사구(the bad weather)가 오며 'of'를 붙이지 않습니다. (접속사 Although는 주어+동사 절과 쓰이며 but과 중복 불가).",
+    "category_en": "Concession Clauses (양보 구문: Despite vs Although)",
+    "category_zh": "Concession Clauses (양보 구문: Despite vs Although)"
   },
   {
     "id": "ig_08",
@@ -125,7 +139,9 @@
     "answer": 2,
     "example": "The number of private cars in big cities has increased rapidly.",
     "translation": "대도시의 자가용 대수가 급격히 증가했다.",
-    "explanation": "[Band 5.5~6.5 핵심 문법] 'The number of + 복수명사(~의 수)'의 핵심 주어는 단수인 'The number'이므로 단수 동사 'has increased'가 호응합니다."
+    "explanation": "[Band 5.5~6.5 핵심 문법] 'The number of + 복수명사(~의 수)'의 핵심 주어는 단수인 'The number'이므로 단수 동사 'has increased'가 호응합니다.",
+    "category_en": "Subject-Verb Agreement (The number of vs A number of)",
+    "category_zh": "Subject-Verb Agreement (The number of vs A number of)"
   },
   {
     "id": "ig_09",
@@ -141,7 +157,9 @@
     "answer": 2,
     "example": "Companies should support employees whose children are under school age.",
     "translation": "기업들은 자녀가 취학 연령 미만인 직원들을 지원해야 한다.",
-    "explanation": "[Band 5.5~6.5 핵심 문법] 선행사(employees)와 뒤 명사(children)가 소유 관계일 때는 소유격 관계대명사 'whose'를 사용합니다."
+    "explanation": "[Band 5.5~6.5 핵심 문법] 선행사(employees)와 뒤 명사(children)가 소유 관계일 때는 소유격 관계대명사 'whose'를 사용합니다.",
+    "category_en": "Relative Clauses (소유격 관계대명사 whose)",
+    "category_zh": "Relative Clauses (소유격 관계대명사 whose)"
   },
   {
     "id": "ig_10",
@@ -157,7 +175,9 @@
     "answer": 1,
     "example": "If more people used public transport, air pollution would decrease significantly.",
     "translation": "만약 더 많은 사람들이 대중교통을 이용한다면, 대기 오염이 현저히 줄어들 것이다.",
-    "explanation": "[Band 5.5~6.5 핵심 문법] 현재 사실과 반대되거나 가정적인 상황을 설명할 때 'If + S + 과거동사(used), S + would + 동사원형(decrease)' 구문을 쓰면 Writing 점수가 크게 올라갑니다."
+    "explanation": "[Band 5.5~6.5 핵심 문법] 현재 사실과 반대되거나 가정적인 상황을 설명할 때 'If + S + 과거동사(used), S + would + 동사원형(decrease)' 구문을 쓰면 Writing 점수가 크게 올라갑니다.",
+    "category_en": "Second Conditional (가정법 과거: If + 과거동사, would + 동사원형)",
+    "category_zh": "Second Conditional (가정법 과거: If + 과거동사, would + 동사원형)"
   },
   {
     "id": "ig_11",
@@ -173,7 +193,9 @@
     "answer": 3,
     "example": "Regular exercise helps people control weight, reduce stress, and sleep better.",
     "translation": "규칙적인 운동은 사람들이 체중을 조절하고 스트레스를 줄이며 더 잘 자는 데 도움이 된다.",
-    "explanation": "[Band 5.5~6.5 핵심 문법] 동사원형 3개(control, reduce, sleep)가 등위접속사 and로 대등하게 병렬 연결되어야 합니다."
+    "explanation": "[Band 5.5~6.5 핵심 문법] 동사원형 3개(control, reduce, sleep)가 등위접속사 and로 대등하게 병렬 연결되어야 합니다.",
+    "category_en": "Parallel Structure (등위접속사 병렬 구조)",
+    "category_zh": "Parallel Structure (등위접속사 병렬 구조)"
   },
   {
     "id": "ig_12",
@@ -189,7 +211,9 @@
     "answer": 1,
     "example": "Young people prefer shopping online, whereas older generations often prefer local stores.",
     "translation": "젊은 층은 온라인 쇼핑을 선호하는 반면, 기성세대는 흔히 동네 매장을 선호한다.",
-    "explanation": "[Band 5.5~6.5 핵심 문법] 'whereas'와 'while'은 두 절을 직접 연결하는 접속사이므로 뒤에 'but'을 중복해서 쓰지 않습니다."
+    "explanation": "[Band 5.5~6.5 핵심 문법] 'whereas'와 'while'은 두 절을 직접 연결하는 접속사이므로 뒤에 'but'을 중복해서 쓰지 않습니다.",
+    "category_en": "Adverbial Clauses of Contrast (대조 접속사: while / whereas)",
+    "category_zh": "Adverbial Clauses of Contrast (대조 접속사: while / whereas)"
   },
   {
     "id": "ig_13",
@@ -205,7 +229,9 @@
     "answer": 2,
     "example": "Health experts recommend that the government ban junk food ads aimed at children.",
     "translation": "건강 전문가들은 정부가 아동을 겨냥한 정크푸드 광고를 금지할 것을 권고한다.",
-    "explanation": "[Band 5.5~6.5 핵심 문법] recommend, suggest, insist 등 요구·제안 동사 뒤의 that절에는 '(should) + 동사원형(ban)'을 사용합니다."
+    "explanation": "[Band 5.5~6.5 핵심 문법] recommend, suggest, insist 등 요구·제안 동사 뒤의 that절에는 '(should) + 동사원형(ban)'을 사용합니다.",
+    "category_en": "Subjunctive in Proposals (제안/권고 동사 + that + S + 동사원형)",
+    "category_zh": "Subjunctive in Proposals (제안/권고 동사 + that + S + 동사원형)"
   },
   {
     "id": "ig_14",
@@ -221,7 +247,9 @@
     "answer": 2,
     "example": "More employees are working remotely, which helps reduce rush-hour traffic.",
     "translation": "더 많은 직원들이 원격으로 근무하고 있으며, 이는 출퇴근 시간대 교통 체증을 줄이는 데 도움이 된다.",
-    "explanation": "[Band 5.5~6.5 핵심 문법] 콤마(,) 뒤에서 앞 문장 전체 내용을 선행사로 받을 때는 ', which + 단수동사(helps)'를 사용합니다 (that이나 what 불가)."
+    "explanation": "[Band 5.5~6.5 핵심 문법] 콤마(,) 뒤에서 앞 문장 전체 내용을 선행사로 받을 때는 ', which + 단수동사(helps)'를 사용합니다 (that이나 what 불가).",
+    "category_en": "Non-defining Relative Clause (계속적 용법 관계대명사: , which)",
+    "category_zh": "Non-defining Relative Clause (계속적 용법 관계대명사: , which)"
   },
   {
     "id": "ig_15",
@@ -237,7 +265,9 @@
     "answer": 2,
     "example": "Rarely does a single empirical discovery fundamentally overturn centuries of established medical dogma.",
     "translation": "단 하나의 실증적 발견이 수 세기 동안 확립된 의학적 통념을 근본적으로 뒤집는 일은 거의 없다.",
-    "explanation": "[Band 6.5~8.0 고득점 구문] 부정 부사 'Rarely / Seldom / Little / Not only'가 문두에 올 때 '조동사(does) + 주어 + 동사원형(overturn)'의 어순으로 도치됩니다."
+    "explanation": "[Band 6.5~8.0 고득점 구문] 부정 부사 'Rarely / Seldom / Little / Not only'가 문두에 올 때 '조동사(does) + 주어 + 동사원형(overturn)'의 어순으로 도치됩니다.",
+    "category_en": "Negative Inversion (Rarely/Seldom 부정어 도치)",
+    "category_zh": "Negative Inversion (Rarely/Seldom 부정어 도치)"
   },
   {
     "id": "ig_16",
@@ -253,7 +283,9 @@
     "answer": 1,
     "example": "Only after clinical trials were successfully completed did regulatory agencies grant commercial authorization.",
     "translation": "임상 시험이 성공적으로 완료된 후에야 비로소 규제 기관들은 상업적 시판 허가를 부여했다.",
-    "explanation": "[Band 6.5~8.0 고득점 구문] 'Only after + 부사절'이 문두에 올 때, 뒤따르는 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다."
+    "explanation": "[Band 6.5~8.0 고득점 구문] 'Only after + 부사절'이 문두에 올 때, 뒤따르는 주절에서 'did + 주어 + 동사원형(grant)' 도치가 일어납니다.",
+    "category_en": "Only after / Only when (조건·시간 부사절 도치)",
+    "category_zh": "Only after / Only when (조건·시간 부사절 도치)"
   },
   {
     "id": "ig_17",
@@ -269,7 +301,9 @@
     "answer": 4,
     "example": "Having analyzed the survey results meticulously, the municipal board drafted a revised transit policy.",
     "translation": "설문조사 결과를 면밀히 분석한 후, 시 위원회는 개정된 대중교통 정책을 입안했다.",
-    "explanation": "[Band 6.5~8.0 고득점 구문] 분사구문(Having analyzed)의 의미상 주어는 주절의 주어(the municipal board)와 일치해야 현수분사 오류가 발생하지 않습니다."
+    "explanation": "[Band 6.5~8.0 고득점 구문] 분사구문(Having analyzed)의 의미상 주어는 주절의 주어(the municipal board)와 일치해야 현수분사 오류가 발생하지 않습니다.",
+    "category_en": "Participle Clauses (완료 분사구문 & 주절 주어 일치)",
+    "category_zh": "Participle Clauses (완료 분사구문 & 주절 주어 일치)"
   },
   {
     "id": "ig_18",
@@ -285,7 +319,9 @@
     "answer": 1,
     "example": "The more sophisticated machine learning models become, the harder it is to interpret their parameters.",
     "translation": "머신러닝 모델이 정교해질수록 그 매개변수를 해석하기는 더 어려워진다.",
-    "explanation": "[Band 6.5~8.0 고득점 구문] 'The + 비교급 + S + V, the + 비교급 + S + V' 구조로 평서문 어순을 유지합니다."
+    "explanation": "[Band 6.5~8.0 고득점 구문] 'The + 비교급 + S + V, the + 비교급 + S + V' 구조로 평서문 어순을 유지합니다.",
+    "category_en": "Double Comparative (The 비교급 ..., the 비교급 ...)",
+    "category_zh": "Double Comparative (The 비교급 ..., the 비교급 ...)"
   },
   {
     "id": "ig_19",
@@ -301,7 +337,9 @@
     "answer": 1,
     "example": "Were global temperatures to rise by another two degrees, coastal cities would face permanent flooding.",
     "translation": "만약 지구 기온이 2도 더 상승한다면, 해안 도시들은 영구적인 침수에 직면하게 될 것이다.",
-    "explanation": "[Band 6.5~8.0 고득점 구문] 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 동사원형'으로 도치됩니다."
+    "explanation": "[Band 6.5~8.0 고득점 구문] 'If + 주어 + were to 동사원형' 구문에서 If가 생략되면 'Were + 주어 + to 동사원형'으로 도치됩니다.",
+    "category_en": "Inverted Conditionals (If 생략 가정법 도치: Had / Were)",
+    "category_zh": "Inverted Conditionals (If 생략 가정법 도치: Had / Were)"
   },
   {
     "id": "ig_20",
@@ -317,6 +355,8 @@
     "answer": 1,
     "example": "It is widely acknowledged that stringent regulatory enforcement serves as an indispensable prerequisite for industrial safety.",
     "translation": "엄격한 규제 집행이 산업 안전을 위한 필수불가결한 전제조건 역할을 한다는 것은 널리 인정되고 있다.",
-    "explanation": "[Band 6.5~8.0 고득점 구문] 'It is widely acknowledged that + 완전한 절' 수동태 구문과 학술 명사구(stringent regulatory enforcement, indispensable prerequisite)가 결합된 고득점 문장입니다."
+    "explanation": "[Band 6.5~8.0 고득점 구문] 'It is widely acknowledged that + 완전한 절' 수동태 구문과 학술 명사구(stringent regulatory enforcement, indispensable prerequisite)가 결합된 고득점 문장입니다.",
+    "category_en": "Academic Nominalization & Passive (학술 명사화 및 가주어 구문)",
+    "category_zh": "Academic Nominalization & Passive (학술 명사화 및 가주어 구문)"
   }
 ]

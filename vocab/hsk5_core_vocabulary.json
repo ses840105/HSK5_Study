@@ -7,7 +7,11 @@
     "example": "很多大学生利用假期做兼职积累社会经验。",
     "difficulty": "하",
     "id": "hv_01",
-    "translation": "많은 대학생들은 방학을 이용해 아르바이트를 하며 사회 경험을 쌓는다."
+    "translation": "많은 대학생들은 방학을 이용해 아르바이트를 하며 사회 경험을 쌓는다.",
+    "meaning_en": "work part-time; part-time job",
+    "meaning_zh": "兼职；打工",
+    "translation_en": "Many college students use their vacations to do part-time jobs to accumulate social experience.",
+    "translation_zh": "许多大学生利用假期做兼职积累社会经验。"
   },
   {
     "word": "概念",
@@ -17,7 +21,11 @@
     "example": "这是一个非常新颖的商业概念。",
     "difficulty": "하",
     "id": "hv_02",
-    "translation": "이것은 매우 참신한 비즈니스 개념이다."
+    "translation": "이것은 매우 참신한 비즈니스 개념이다.",
+    "meaning_en": "concept, idea",
+    "meaning_zh": "概念；观念",
+    "translation_en": "The speaker clearly explained several core concepts in modern economics.",
+    "translation_zh": "演讲者清晰地解释了现代经济学中的几个核心概念。"
   },
   {
     "word": "缓解",
@@ -27,7 +35,11 @@
     "example": "听轻音乐有助于缓解工作带来的压力。",
     "difficulty": "중",
     "id": "hv_03",
-    "translation": "경음악을 듣는 것은 업무로 인한 스트레스를 완화하는 데 도움이 된다."
+    "translation": "경음악을 듣는 것은 업무로 인한 스트레스를 완화하는 데 도움이 된다.",
+    "meaning_en": "relieve, ease, mitigate",
+    "meaning_zh": "缓解；缓和",
+    "translation_en": "Doing moderate exercise helps relieve academic and work pressure.",
+    "translation_zh": "适当运动有助于缓解学业和工作压力。"
   },
   {
     "word": "逻辑",
@@ -37,7 +49,11 @@
     "example": "他的发言条理清晰，逻辑非常严密。",
     "difficulty": "중",
     "id": "hv_04",
-    "translation": "그의 발언은 조리가 명확하고 논리가 매우 치밀하다."
+    "translation": "그의 발언은 조리가 명확하고 논리가 매우 치밀하다.",
+    "meaning_en": "logic",
+    "meaning_zh": "逻辑",
+    "translation_en": "His debate statement was clear in logic and strongly convincing.",
+    "translation_zh": "他在辩论中的陈述逻辑清晰，很有说服力。"
   },
   {
     "word": "犹豫",
@@ -47,7 +63,11 @@
     "example": "面对难得的机遇，你不要再犹豫了。",
     "difficulty": "하",
     "id": "hv_05",
-    "translation": "얻기 힘든 기회에 직면했으니 더 이상 망설이지 마라."
+    "translation": "얻기 힘든 기회에 직면했으니 더 이상 망설이지 마라.",
+    "meaning_en": "hesitate",
+    "meaning_zh": "犹豫；迟疑",
+    "translation_en": "Faced with this rare opportunity, he did not hesitate to accept.",
+    "translation_zh": "面对这个难得的机会，他毫不犹豫地接受了。"
   },
   {
     "word": "彻底",
@@ -57,7 +77,11 @@
     "example": "我们需要彻底调查这件事情的真正原因。",
     "difficulty": "중",
     "id": "hv_06",
-    "translation": "우리는 이 사건의 진정한 원인을 철저히 조사해야 한다."
+    "translation": "우리는 이 사건의 진정한 원인을 철저히 조사해야 한다.",
+    "meaning_en": "thorough; completely",
+    "meaning_zh": "彻底；完全",
+    "translation_en": "Before moving in, we cleaned the entire room thoroughly.",
+    "translation_zh": "入住之前，我们把整个房间彻底打扫了一遍。"
   },
   {
     "word": "启发",
@@ -67,7 +91,11 @@
     "example": "这部纪录片给了我们很多深刻的启发。",
     "difficulty": "중",
     "id": "hv_07",
-    "translation": "이 다큐멘터리는 우리에게 많은 깊은 영감을 주었다."
+    "translation": "이 다큐멘터리는 우리에게 많은 깊은 영감을 주었다.",
+    "meaning_en": "inspire, enlightenment",
+    "meaning_zh": "启发；启示",
+    "translation_en": "The professor's speech gave students profound inspiration.",
+    "translation_zh": "教授的发言给同学们带来了深刻的启发。"
   },
   {
     "word": "原则",
@@ -77,7 +105,11 @@
     "example": "在原则问题上，我们决不能轻易妥协。",
     "difficulty": "하",
     "id": "hv_08",
-    "translation": "원칙적인 문제에 있어서 우리는 결코 쉽게 타협해서는 안 된다."
+    "translation": "원칙적인 문제에 있어서 우리는 결코 쉽게 타협해서는 안 된다.",
+    "meaning_en": "principle",
+    "meaning_zh": "原则",
+    "translation_en": "No matter what happens, we must adhere to the principle of honesty.",
+    "translation_zh": "无论发生什么，我们都要坚持诚信的原则。"
   },
   {
     "word": "耽误",
@@ -87,7 +119,11 @@
     "example": "路上堵车耽误了很多时间。",
     "difficulty": "하",
     "id": "hv_09",
-    "translation": "길에서 차가 막혀 많은 시간을 지체했다."
+    "translation": "길에서 차가 막혀 많은 시간을 지체했다.",
+    "meaning_en": "delay, waste time",
+    "meaning_zh": "耽误；延误",
+    "translation_en": "Because of traffic jams, I was delayed by half an hour this morning.",
+    "translation_zh": "因为路上堵车，今天早上我耽误了半小时。"
   },
   {
     "word": "克服",
@@ -97,7 +133,11 @@
     "example": "只要大家团结一致，就一定能克服一切困难。",
     "difficulty": "하",
     "id": "hv_10",
-    "translation": "모두가 하나로 단결하기만 하면 반드시 모든 어려움을 극복할 수 있다."
+    "translation": "모두가 하나로 단결하기만 하면 반드시 모든 어려움을 극복할 수 있다.",
+    "meaning_en": "overcome, conquer",
+    "meaning_zh": "克服；战胜",
+    "translation_en": "With teamwork and persistence, we finally overcame all technical difficulties.",
+    "translation_zh": "通过团队合作和坚持，我们终于克服了所有技术困难。"
   },
   {
     "word": "效率",
@@ -107,7 +147,11 @@
     "example": "合理安排作息时间可以显著提高工作效率。",
     "difficulty": "하",
     "id": "hv_11",
-    "translation": "일과와 휴식 시간을 합리적으로 배분하면 업무 효율을 현저히 높일 수 있다."
+    "translation": "일과와 휴식 시간을 합리적으로 배분하면 업무 효율을 현저히 높일 수 있다.",
+    "meaning_en": "efficiency",
+    "meaning_zh": "效率",
+    "translation_en": "Using suitable project tools can significantly improve study and work efficiency.",
+    "translation_zh": "使用合适的工具可以显著提高学习和工作效率。"
   },
   {
     "word": "赞成",
@@ -117,7 +161,11 @@
     "example": "对于这个提议，大家纷纷表示赞成。",
     "difficulty": "하",
     "id": "hv_12",
-    "translation": "이 제안에 대해 모두가 앞다투어 찬성의 뜻을 표했다."
+    "translation": "이 제안에 대해 모두가 앞다투어 찬성의 뜻을 표했다.",
+    "meaning_en": "approve, agree with",
+    "meaning_zh": "赞成；同意",
+    "translation_en": "Most members in the meeting strongly approved of this reform proposal.",
+    "translation_zh": "大多数参会人员非常赞成这项改革提议。"
   },
   {
     "word": "独特",
@@ -127,7 +175,11 @@
     "example": "这位设计师拥有非常独特的设计风格。",
     "difficulty": "중",
     "id": "hv_13",
-    "translation": "이 디자이너는 매우 독특한 디자인 스타일을 가지고 있다."
+    "translation": "이 디자이너는 매우 독특한 디자인 스타일을 가지고 있다.",
+    "meaning_en": "unique, distinctive",
+    "meaning_zh": "独特；独一无二",
+    "translation_en": "This museum has a very unique architectural style and design.",
+    "translation_zh": "这座博物馆的建筑风格和设计非常独特。"
   },
   {
     "word": "趋势",
@@ -137,7 +189,11 @@
     "example": "随着科技的发展，数字化已成为必然趋势。",
     "difficulty": "중",
     "id": "hv_14",
-    "translation": "과학기술이 발전함에 따라 디지털화는 이미 필연적인 추세가 되었다."
+    "translation": "과학기술이 발전함에 따라 디지털화는 이미 필연적인 추세가 되었다.",
+    "meaning_en": "trend, tendency",
+    "meaning_zh": "趋势；走向",
+    "translation_en": "Continuous digital transformation has become an inevitable trend worldwide.",
+    "translation_zh": "数字化转型已成为全球不可避免的发展趋势。"
   },
   {
     "word": "繁荣",
@@ -147,7 +203,11 @@
     "example": "经济的快速发展带来了城市的繁荣。",
     "difficulty": "중",
     "id": "hv_15",
-    "translation": "경제의 빠른 발전은 도시의 번영을 가져왔다."
+    "translation": "경제의 빠른 발전은 도시의 번영을 가져왔다.",
+    "meaning_en": "prosperous, flourishing",
+    "meaning_zh": "繁荣；繁华",
+    "translation_en": "Trade and technological innovation brought economic prosperity to the coastal area.",
+    "translation_zh": "贸易和技术创新促进了该沿海地区的经济繁荣。"
   },
   {
     "word": "珍惜",
@@ -157,7 +217,11 @@
     "example": "我们应该珍惜眼前来之不易的幸福生活。",
     "difficulty": "하",
     "id": "hv_16",
-    "translation": "우리는 눈앞의 어렵게 얻은 행복한 삶을 소중히 여겨야 한다."
+    "translation": "우리는 눈앞의 어렵게 얻은 행복한 삶을 소중히 여겨야 한다.",
+    "meaning_en": "cherish, treasure, value",
+    "meaning_zh": "珍惜；珍爱",
+    "translation_en": "We should cherish current study opportunities and time.",
+    "translation_zh": "我们应当珍惜现在的学习机会和宝贵时间。"
   },
   {
     "word": "承担",
@@ -167,7 +231,11 @@
     "example": "勇于承担责任是成熟的标志。",
     "difficulty": "하",
     "id": "hv_17",
-    "translation": "용기 있게 책임을 지는 것은 성숙함의 상징이다."
+    "translation": "용기 있게 책임을 지는 것은 성숙함의 상징이다.",
+    "meaning_en": "undertake, shoulder, assume",
+    "meaning_zh": "承担；担负",
+    "translation_en": "As the team leader, he took on the main responsibility of the project.",
+    "translation_zh": "作为项目负责人，他主动承担了核心研发责任。"
   },
   {
     "word": "敏锐",
@@ -177,7 +245,11 @@
     "example": "优秀的企业家通常拥有敏锐的市场洞察力。",
     "difficulty": "상",
     "id": "hv_18",
-    "translation": "우수한 기업가는 대개 예리한 시장 통찰력을 지니고 있다."
+    "translation": "우수한 기업가는 대개 예리한 시장 통찰력을 지니고 있다.",
+    "meaning_en": "keen, sharp, acute",
+    "meaning_zh": "敏锐；尖锐",
+    "translation_en": "She possesses keen observation and easily detects market shifts.",
+    "translation_zh": "她拥有敏锐的市场洞察力，能迅速察觉行业趋势。"
   },
   {
     "word": "挑战",
@@ -187,7 +259,11 @@
     "example": "我们要勇于迎接生活中的各种挑战。",
     "difficulty": "중",
     "id": "hv_19",
-    "translation": "우리는 삶 속의 온갖 도전을 용기 있게 맞이해야 한다."
+    "translation": "우리는 삶 속의 온갖 도전을 용기 있게 맞이해야 한다.",
+    "meaning_en": "challenge",
+    "meaning_zh": "挑战",
+    "translation_en": "Courageously facing new challenges promotes personal growth.",
+    "translation_zh": "勇敢面对新的挑战能够促使我们快速成长。"
   },
   {
     "word": "循序渐进",
@@ -197,7 +273,11 @@
     "example": "学习外语是一个循序渐进的过程。",
     "difficulty": "상",
     "id": "hv_20",
-    "translation": "외국어를 배우는 것은 순서를 따라 차근차근 나아가는 과정이다."
+    "translation": "외국어를 배우는 것은 순서를 따라 차근차근 나아가는 과정이다.",
+    "meaning_en": "proceed step by step, progress gradually",
+    "meaning_zh": "循序渐进；按部就班",
+    "translation_en": "Learning a new language requires step-by-step practice rather than rushing.",
+    "translation_zh": "学习新语言需要循序渐进，不可急于求成。"
   },
   {
     "id": "hv_21",
@@ -207,7 +287,11 @@
     "pos": "동사/명사",
     "difficulty": "중",
     "example": "我们必须牢牢把握这次难得的发展机会。",
-    "translation": "우리는 이번 얻기 힘든 발전의 기회를 단단히 잡아야 한다."
+    "translation": "우리는 이번 얻기 힘든 발전의 기회를 단단히 잡아야 한다.",
+    "meaning_en": "grasp, master, confidence",
+    "meaning_zh": "把握；掌握",
+    "translation_en": "Through thorough preparation, he is confident of passing the HSK examination.",
+    "translation_zh": "经过充分复习，他对通过考试很有把握。"
   },
   {
     "id": "hv_22",
@@ -217,7 +301,11 @@
     "pos": "동사",
     "difficulty": "상",
     "example": "这首简短的诗歌里包含了作者深厚的情感。",
-    "translation": "이 짧은 시 속에는 작가의 깊은 감정이 담겨 있다."
+    "translation": "이 짧은 시 속에는 작가의 깊은 감정이 담겨 있다.",
+    "meaning_en": "contain, include, imply",
+    "meaning_zh": "包含；涵盖",
+    "translation_en": "This training plan contains comprehensive listening and reading exercises.",
+    "translation_zh": "该培训方案包含全面的听力与阅读实战训练。"
   },
   {
     "id": "hv_23",
@@ -227,7 +315,11 @@
     "pos": "형용사/부사",
     "difficulty": "중",
     "example": "长期熬夜必然会对身体健康造成损害。",
-    "translation": "장기간 밤을 새우면 필연적으로 신체 건강에 해를 끼치게 된다."
+    "translation": "장기간 밤을 새우면 필연적으로 신체 건강에 해를 끼치게 된다.",
+    "meaning_en": "inevitable, necessary",
+    "meaning_zh": "必然；必然性",
+    "translation_en": "Failures and setbacks are inevitable on the road to success.",
+    "translation_zh": "走向成功的道路上遇到挫折是必然的。"
   },
   {
     "id": "hv_24",
@@ -237,7 +329,11 @@
     "pos": "명사",
     "difficulty": "중",
     "example": "法律严格保护每一位公民的合法私人财产。",
-    "translation": "법률은 모든 시민의 합법적인 개인 재산을 엄격히 보호한다."
+    "translation": "법률은 모든 시민의 합법적인 개인 재산을 엄격히 보호한다.",
+    "meaning_en": "property, wealth, assets",
+    "meaning_zh": "财产；财富",
+    "translation_en": "Protecting citizens' lawful property is guaranteed by law.",
+    "translation_zh": "法律严格保护公民的合法财产不受侵犯。"
   },
   {
     "id": "hv_25",
@@ -247,7 +343,11 @@
     "pos": "동사",
     "difficulty": "상",
     "example": "面对突发状况，管理部门立即采取了有效措施。",
-    "translation": "돌발 상황에 직면하여 관리 부서는 즉시 유효한 조치를 취했다."
+    "translation": "돌발 상황에 직면하여 관리 부서는 즉시 유효한 조치를 취했다.",
+    "meaning_en": "adopt, take (measures)",
+    "meaning_zh": "采取；采纳",
+    "translation_en": "The government adopted effective measures to curb environmental pollution.",
+    "translation_zh": "政府采取了切实有效的措施来治理环境污染。"
   },
   {
     "id": "hv_26",
@@ -257,7 +357,11 @@
     "pos": "동사",
     "difficulty": "상",
     "example": "操作失误导致整条生产线停工了两个小时。",
-    "translation": "조작 실수로 인해 전체 생산 라인이 두 시간 동안 가동 중단되었다."
+    "translation": "조작 실수로 인해 전체 생산 라인이 두 시간 동안 가동 중단되었다.",
+    "meaning_en": "lead to, cause, result in",
+    "meaning_zh": "导致；造成",
+    "translation_en": "Careless verification led to errors in the final data sheet.",
+    "translation_zh": "疏忽大意导致最终数据核算出现了差错。"
   },
   {
     "id": "hv_27",
@@ -267,7 +371,11 @@
     "pos": "동사",
     "difficulty": "상",
     "example": "各部门必须全面贯彻落实公司的新安全规定。",
-    "translation": "각 부서는 회사의 새로운 안전 규정을 전면적으로 관철하여 실행해야 한다."
+    "translation": "각 부서는 회사의 새로운 안전 규정을 전면적으로 관철하여 실행해야 한다.",
+    "meaning_en": "implement, carry out thoroughly",
+    "meaning_zh": "贯彻；落实",
+    "translation_en": "The company firmly implemented the green environmental development strategy.",
+    "translation_zh": "公司坚定贯彻绿色环保的发展战略。"
   },
   {
     "id": "hv_28",
@@ -277,7 +385,11 @@
     "pos": "동사",
     "difficulty": "상",
     "example": "在图书馆大声喧哗会妨碍其他人正常学习。",
-    "translation": "도서관에서 큰 소리로 떠드는 것은 다른 사람의 정상적인 공부를 방해한다."
+    "translation": "도서관에서 큰 소리로 떠드는 것은 다른 사람의 정상적인 공부를 방해한다.",
+    "meaning_en": "hinder, obstruct, impede",
+    "meaning_zh": "妨碍；阻碍",
+    "translation_en": "Please do not make loud noises in the library so as not to disturb others.",
+    "translation_zh": "在图书馆请保持安静，以免妨碍他人专注学习。"
   },
   {
     "id": "hv_29",
@@ -287,7 +399,11 @@
     "pos": "형용사",
     "difficulty": "중",
     "example": "人工智能技术已经在医疗领域得到了广泛的应用。",
-    "translation": "인공지능 기술은 이미 의료 분야에서 광범위하게 응용되고 있다."
+    "translation": "인공지능 기술은 이미 의료 분야에서 광범위하게 응용되고 있다.",
+    "meaning_en": "broad, extensive, widespread",
+    "meaning_zh": "广泛；广博",
+    "translation_en": "Artificial intelligence technology has gained widespread application across industries.",
+    "translation_zh": "人工智能技术已在各行各业获得了极其广泛的应用。"
   },
   {
     "id": "hv_30",
@@ -297,6 +413,10 @@
     "pos": "명사",
     "difficulty": "상",
     "example": "掌握核心技术是企业保持竞争力的关键。",
-    "translation": "핵심 기술을 확보하는 것이 기업이 경쟁력을 유지하는 열쇠이다."
+    "translation": "핵심 기술을 확보하는 것이 기업이 경쟁력을 유지하는 열쇠이다.",
+    "meaning_en": "core, nucleus, key",
+    "meaning_zh": "核心；要害",
+    "translation_en": "Mastering vocabulary and grammar rules is the core of passing the exam.",
+    "translation_zh": "掌握核心词汇与语法结构是通过考试的关键。"
   }
 ]

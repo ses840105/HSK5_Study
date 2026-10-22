@@ -71,6 +71,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // UI 언어 상태 (기본값: 한국어, localStorage에 저장)
   let currentUiLang = localStorage.getItem("preferred_ui_lang") || "ko";
 
+  // 공부 모드(플래시카드) 상태
+  let activeNavTab = "quiz"; // "study" | "quiz"
+  let studyCategory = "vocab"; // "vocab" | "chengyu" | "grammar"
+  let studyDifficulty = "all"; // "all" | "하" | "중" | "상"
+  let studyItems = [];
+  let studyCurrentIndex = 0;
+  let isCardFlipped = false;
+  let studyAutoplayTimer = null;
+  let isStudyAutoplay = false;
+
   // DOM 요소 캐싱
   const langHskBtn = document.getElementById("lang-hsk-btn");
   const langIeltsBtn = document.getElementById("lang-ielts-btn");
@@ -116,6 +126,63 @@ document.addEventListener("DOMContentLoaded", () => {
   const setupView = document.getElementById("setup-view");
   const quizView = document.getElementById("quiz-view");
   const resultView = document.getElementById("result-view");
+  const studyView = document.getElementById("study-view");
+
+  // 공부 모드 관련 DOM 캐싱
+  const mainModeNav = document.getElementById("main-mode-nav");
+  const navModeStudy = document.getElementById("nav-mode-study");
+  const navModeQuiz = document.getElementById("nav-mode-quiz");
+  const navModeStudyText = document.getElementById("nav-mode-study-text");
+  const navModeQuizText = document.getElementById("nav-mode-quiz-text");
+
+  const studyCatVocab = document.getElementById("study-cat-vocab");
+  const studyCatChengyu = document.getElementById("study-cat-chengyu");
+  const studyCatGrammar = document.getElementById("study-cat-grammar");
+  const studyCatVocabText = document.getElementById("study-cat-vocab-text");
+  const studyCatChengyuText = document.getElementById("study-cat-chengyu-text");
+  const studyCatGrammarText = document.getElementById("study-cat-grammar-text");
+  const studyCatBtns = document.querySelectorAll(".study-cat-btn");
+  const studyDiffFilters = document.querySelectorAll(".study-diff-filter");
+
+  const studyItemCounter = document.getElementById("study-item-counter");
+  const studyAutoplayBtn = document.getElementById("study-autoplay-btn");
+  const studyAutoplayText = document.getElementById("study-autoplay-text");
+  const studyShuffleBtn = document.getElementById("study-shuffle-btn");
+  const studyShuffleText = document.getElementById("study-shuffle-text");
+
+  const flashcard = document.getElementById("flashcard");
+  const cardDiffBadge = document.getElementById("card-diff-badge");
+  const cardCatBadge = document.getElementById("card-cat-badge");
+  const cardFrontAudioBtn = document.getElementById("card-front-audio-btn");
+  const cardBackAudioBtn = document.getElementById("card-back-audio-btn");
+  const cardPrimaryText = document.getElementById("card-primary-text");
+  const cardSecondaryText = document.getElementById("card-secondary-text");
+  const cardPosBadge = document.getElementById("card-pos-badge");
+  const cardFlipPromptText = document.getElementById("card-flip-prompt-text");
+  const cardBackBadge = document.getElementById("card-back-badge");
+  const cardFlipBackPromptText = document.getElementById("card-flip-back-prompt-text");
+
+  const cardMeaningKo = document.getElementById("card-meaning-ko");
+  const cardMeaningEn = document.getElementById("card-meaning-en");
+  const cardMeaningZh = document.getElementById("card-meaning-zh");
+  const cardExampleBox = document.getElementById("card-example-box");
+  const cardExampleOrig = document.getElementById("card-example-orig");
+  const cardExampleTrans = document.getElementById("card-example-trans");
+  const cardGrammarBox = document.getElementById("card-grammar-box");
+  const cardGrammarTitle = document.getElementById("card-grammar-title");
+  const cardGrammarExp = document.getElementById("card-grammar-exp");
+
+  const studyPrevBtn = document.getElementById("study-prev-btn");
+  const studyFlipBtn = document.getElementById("study-flip-btn");
+  const studyNextBtn = document.getElementById("study-next-btn");
+  const studyPrevText = document.getElementById("study-prev-text");
+  const studyFlipText = document.getElementById("study-flip-text");
+  const studyNextText = document.getElementById("study-next-text");
+
+  const bridgeTitle = document.getElementById("bridge-title");
+  const bridgeDesc = document.getElementById("bridge-desc");
+  const bridgeBtnText = document.getElementById("bridge-btn-text");
+  const bridgeStartQuizBtn = document.getElementById("bridge-start-quiz-btn");
 
   const openHistoryBtn = document.getElementById("open-history-btn");
   const viewHistoryBtn = document.getElementById("view-history-btn");
@@ -423,6 +490,24 @@ document.addEventListener("DOMContentLoaded", () => {
       historyPassBadge: "합격",
       historyFailBadge: "복습",
 
+      navModeStudy: "공부 모드 (카드 세트)",
+      navModeQuiz: "실전 퀴즈 모드",
+      studyCatVocab: "필수 어휘",
+      studyCatChengyuHsk: "사자성어(成语)",
+      studyCatChengyuIelts: "숙어 및 관용구(Idioms)",
+      studyCatGrammar: "핵심 문법 & 구문",
+      studyFlipPrompt: "클릭하여 뜻 & 예문 확인",
+      studyFlipBackPrompt: "클릭하여 앞면으로 돌아가기",
+      studyAutoplayOn: "자동 넘김 정지",
+      studyAutoplayOff: "자동 넘김",
+      studyPrevBtn: "이전 카드",
+      studyNextBtn: "다음 카드",
+      studyFlipBtn: "카드 뒤집기",
+      studyBridgeTitle: "충분히 공부하셨나요? 바로 실전 퀴즈로 테스트해보세요!",
+      studyBridgeDesc: "공부한 내용을 즉시 퀴즈로 풀며 스마트 반복 학습(SRS)에 기록할 수 있습니다.",
+      studyBridgeBtn: "이 모드로 퀴즈 풀기",
+      grammarBoxTitle: "📌 문법 공식 및 쓰기 팁",
+
       alertNoQuestions: "출제할 문제가 없습니다. 진도 초기화를 통해 마스터한 단어를 다시 연습해 보세요.",
       confirmQuit: "현재 퀴즈를 중단하고 메인 메뉴로 돌아갈까요?",
       confirmResetProgress: (langName) => `${langName}의 마스터 및 오답 기록을 초기화하시겠습니까?`,
@@ -603,6 +688,24 @@ document.addEventListener("DOMContentLoaded", () => {
       emptyHistory: "暂无学习记录。<br>快去开始第一次测验吧！💪",
       historyPassBadge: "及格",
       historyFailBadge: "需复习",
+
+      navModeStudy: "学习模式 (单词卡片)",
+      navModeQuiz: "实战测验模式",
+      studyCatVocab: "核心词汇",
+      studyCatChengyuHsk: "成语典故",
+      studyCatChengyuIelts: "高分习语 (Idioms)",
+      studyCatGrammar: "核心语法与句型",
+      studyFlipPrompt: "点击查看释义与例句",
+      studyFlipBackPrompt: "点击返回卡片正面",
+      studyAutoplayOn: "停止自动播放",
+      studyAutoplayOff: "自动播放",
+      studyPrevBtn: "上一张",
+      studyNextBtn: "下一张",
+      studyFlipBtn: "翻转卡片",
+      studyBridgeTitle: "准备充分了吗？立即通过实战测验检验成效！",
+      studyBridgeDesc: "学完后即刻进行互动测验，系统将自动记录并纳入间隔重复(SRS)算法。",
+      studyBridgeBtn: "开始本单元测验",
+      grammarBoxTitle: "📌 核心语法公式与写作要点",
 
       alertNoQuestions: "没有可出的题目。请点击重置进度以重新练习已掌握的题目。",
       confirmQuit: "确定要退出当前测验并返回主菜单吗？",
@@ -785,6 +888,24 @@ document.addEventListener("DOMContentLoaded", () => {
       historyPassBadge: "Passed",
       historyFailBadge: "Review",
 
+      navModeStudy: "Study Mode (Flashcards)",
+      navModeQuiz: "Quiz Mode (Practice)",
+      studyCatVocab: "Vocabulary",
+      studyCatChengyuHsk: "Idioms (Chengyu)",
+      studyCatChengyuIelts: "Idioms & Phrases",
+      studyCatGrammar: "Core Grammar & Patterns",
+      studyFlipPrompt: "Click to reveal meaning & examples",
+      studyFlipBackPrompt: "Click to return to front",
+      studyAutoplayOn: "Pause Auto Play",
+      studyAutoplayOff: "Auto Play",
+      studyPrevBtn: "Previous Card",
+      studyNextBtn: "Next Card",
+      studyFlipBtn: "Flip Card",
+      studyBridgeTitle: "Ready to test your knowledge? Take the quiz right now!",
+      studyBridgeDesc: "Reinforce what you studied with instant practice and SRS tracking.",
+      studyBridgeBtn: "Take Quiz on this Topic",
+      grammarBoxTitle: "📌 Grammar Formulas & Writing Tips",
+
       alertNoQuestions: "No questions available. Please reset progress to practice mastered items again.",
       confirmQuit: "Do you want to quit the current quiz and return to the main menu?",
       confirmResetProgress: (langName) => `Are you sure you want to reset mastery and review progress for ${langName}?`,
@@ -966,6 +1087,28 @@ document.addEventListener("DOMContentLoaded", () => {
     if (srsNewLabel) srsNewLabel.textContent = t.srsNew;
 
     // 5. 모드, 문항수, 난이도 선택 섹션 타이틀 및 버튼들
+    if (navModeStudyText) navModeStudyText.textContent = t.navModeStudy;
+    if (navModeQuizText) navModeQuizText.textContent = t.navModeQuiz;
+    if (studyCatVocabText) studyCatVocabText.textContent = t.studyCatVocab;
+    if (studyCatChengyuText) {
+      studyCatChengyuText.textContent = (currentLanguage === "hsk")
+        ? t.studyCatChengyuHsk
+        : t.studyCatChengyuIelts;
+    }
+    if (studyCatGrammarText) studyCatGrammarText.textContent = t.studyCatGrammar;
+    if (cardFlipPromptText) cardFlipPromptText.textContent = t.studyFlipPrompt;
+    if (cardFlipBackPromptText) cardFlipBackPromptText.textContent = t.studyFlipBackPrompt;
+    if (studyAutoplayText) {
+      studyAutoplayText.textContent = isStudyAutoplay ? t.studyAutoplayOn : t.studyAutoplayOff;
+    }
+    if (studyPrevText) studyPrevText.textContent = t.studyPrevBtn;
+    if (studyNextText) studyNextText.textContent = t.studyNextBtn;
+    if (studyFlipText) studyFlipText.textContent = t.studyFlipBtn;
+    if (bridgeTitle) bridgeTitle.textContent = t.studyBridgeTitle;
+    if (bridgeDesc) bridgeDesc.textContent = t.studyBridgeDesc;
+    if (bridgeBtnText) bridgeBtnText.textContent = t.studyBridgeBtn;
+    if (cardGrammarTitle) cardGrammarTitle.textContent = t.grammarBoxTitle;
+
     if (sectionModeTitle) sectionModeTitle.textContent = t.sectionMode;
     if (sectionCountTitle) sectionCountTitle.textContent = t.sectionCount;
     if (sectionDiffTitle) sectionDiffTitle.textContent = t.sectionDiff;
@@ -2528,16 +2671,296 @@ document.addEventListener("DOMContentLoaded", () => {
     if (viewId !== "quiz") {
       stopQuestionTimer(false);
     }
+    if (viewId !== "study") {
+      stopStudyAutoplay();
+    }
     setupView.classList.remove("active");
     quizView.classList.remove("active");
     resultView.classList.remove("active");
+    if (studyView) studyView.classList.remove("active");
 
     if (viewId === "setup") {
+      activeNavTab = "quiz";
+      updateNavTabsUI();
       updateSrsDashboard();
       setupView.classList.add("active");
     }
-    if (viewId === "quiz") quizView.classList.add("active");
-    if (viewId === "result") resultView.classList.add("active");
+    if (viewId === "quiz") {
+      activeNavTab = "quiz";
+      updateNavTabsUI();
+      quizView.classList.add("active");
+    }
+    if (viewId === "result") {
+      activeNavTab = "quiz";
+      updateNavTabsUI();
+      resultView.classList.add("active");
+    }
+    if (viewId === "study") {
+      activeNavTab = "study";
+      updateNavTabsUI();
+      if (studyView) studyView.classList.add("active");
+      loadStudyItems();
+    }
+  }
+
+  function updateNavTabsUI() {
+    if (navModeStudy && navModeQuiz) {
+      if (activeNavTab === "study") {
+        navModeStudy.classList.add("active");
+        navModeQuiz.classList.remove("active");
+      } else {
+        navModeQuiz.classList.add("active");
+        navModeStudy.classList.remove("active");
+      }
+    }
+  }
+
+  // ==========================================
+  // 공부 모드 (Study & Flashcard) 로직
+  // ==========================================
+
+  // 백엔드 API 우선 호출 (실패 시 프론트엔드 내장 데이터 동기 폴백)
+  async function fetchStudyItemsFromApi(subject, mode, diff) {
+    try {
+      const url = `/api/study/items?subject=${encodeURIComponent(subject)}&mode=${encodeURIComponent(mode)}&diff=${encodeURIComponent(diff)}`;
+      const res = await fetch(url);
+      if (res.ok) {
+        const json = await res.json();
+        if (json && Array.isArray(json.items) && json.items.length > 0) {
+          console.log(`[Study API] Loaded ${json.items.length} items from backend (${url})`);
+          return json.items;
+        }
+      }
+    } catch (e) {
+      // 프론트엔드 로컬 데이터로 원활하게 자동 폴백
+    }
+
+    // 폴백: 로컬 hskData / ieltsData 사용
+    const dataset = (subject === "hsk") ? hskData : ieltsData;
+    let list = [];
+    if (mode === "vocab") list = dataset.vocab || [];
+    else if (mode === "chengyu") list = (subject === "hsk") ? (dataset.chengyu || []) : (dataset.idioms || []);
+    else if (mode === "grammar") list = dataset.grammar || [];
+
+    if (diff && diff !== "all") {
+      list = list.filter(item => item.difficulty === diff);
+    }
+    return list;
+  }
+
+  async function loadStudyItems() {
+    stopListeningAudio();
+    isCardFlipped = false;
+    if (flashcard) flashcard.classList.remove("flipped");
+
+    const items = await fetchStudyItemsFromApi(currentLanguage, studyCategory, studyDifficulty);
+    studyItems = items ? [...items] : [];
+    studyCurrentIndex = 0;
+    renderCurrentStudyCard();
+  }
+
+  function renderCurrentStudyCard() {
+    if (!studyItems || studyItems.length === 0) {
+      if (studyItemCounter) studyItemCounter.textContent = "0 / 0";
+      if (cardPrimaryText) cardPrimaryText.textContent = "-";
+      if (cardSecondaryText) cardSecondaryText.textContent = "";
+      if (cardPosBadge) cardPosBadge.style.display = "none";
+      if (cardMeaningKo) cardMeaningKo.textContent = "표시할 데이터가 없습니다.";
+      if (cardMeaningEn) cardMeaningEn.textContent = "-";
+      if (cardMeaningZh) cardMeaningZh.textContent = "-";
+      if (cardExampleBox) cardExampleBox.style.display = "none";
+      if (cardGrammarBox) cardGrammarBox.style.display = "none";
+      return;
+    }
+
+    if (studyCurrentIndex < 0) studyCurrentIndex = 0;
+    if (studyCurrentIndex >= studyItems.length) studyCurrentIndex = studyItems.length - 1;
+
+    const item = studyItems[studyCurrentIndex];
+    if (studyItemCounter) {
+      studyItemCounter.textContent = `${studyCurrentIndex + 1} / ${studyItems.length}`;
+    }
+
+    // 난이도 배지
+    const diff = item.difficulty || "중";
+    const dInfo = getDiffInfo(diff, currentUiLang);
+    if (cardDiffBadge) {
+      cardDiffBadge.textContent = dInfo.label;
+      cardDiffBadge.className = `card-badge ${dInfo.cls}`;
+    }
+
+    // 과목/카테고리 태그
+    if (cardCatBadge) {
+      const catName = (studyCategory === "vocab")
+        ? (currentLanguage === "hsk" ? "HSK 5급 필수 어휘" : "IELTS 핵심 어휘")
+        : (studyCategory === "chengyu")
+          ? (currentLanguage === "hsk" ? "HSK 5급 사자성어" : "IELTS 필수 관용구")
+          : (currentLanguage === "hsk" ? "HSK 5급 필수 문법" : "IELTS 라이팅 문법");
+      cardCatBadge.textContent = catName;
+    }
+
+    // 앞면 렌더링
+    if (studyCategory === "vocab") {
+      cardPrimaryText.textContent = item.word || "";
+      cardSecondaryText.textContent = (currentLanguage === "hsk") ? (item.pinyin || "") : (item.synonym ? `Synonym: ${item.synonym}` : "");
+      cardSecondaryText.style.display = (cardSecondaryText.textContent ? "block" : "none");
+
+      if (item.pos) {
+        cardPosBadge.style.display = "inline-block";
+        cardPosBadge.textContent = item.pos;
+      } else {
+        cardPosBadge.style.display = "none";
+      }
+    } else if (studyCategory === "chengyu") {
+      cardPrimaryText.textContent = item.chengyu || item.idiom || "";
+      cardSecondaryText.textContent = (currentLanguage === "hsk") ? (item.pinyin || "") : "";
+      cardSecondaryText.style.display = (cardSecondaryText.textContent ? "block" : "none");
+      cardPosBadge.style.display = "inline-block";
+      cardPosBadge.textContent = (currentLanguage === "hsk") ? "사자성어" : "Idiom";
+    } else if (studyCategory === "grammar") {
+      cardPrimaryText.textContent = item.category || "";
+      cardSecondaryText.textContent = item.example || "";
+      cardSecondaryText.style.display = (cardSecondaryText.textContent ? "block" : "none");
+      cardPosBadge.style.display = "inline-block";
+      cardPosBadge.textContent = "핵심 어법";
+    }
+
+    // 뒷면 렌더링: 다국어 뜻 (한국어 / 영어 / 중국어)
+    if (cardMeaningKo) {
+      cardMeaningKo.textContent = item.meaning || item.translation || item.category || "";
+    }
+    if (cardMeaningEn) {
+      cardMeaningEn.textContent = item.meaning_en || item.category_en || item.synonym || "-";
+    }
+    if (cardMeaningZh) {
+      cardMeaningZh.textContent = item.meaning_zh || item.category_zh || item.word || item.chengyu || "-";
+    }
+
+    // 예문 렌더링
+    const origSentence = item.example || item.sentence || "";
+    const transSentence = item.translation || "";
+    if (origSentence) {
+      if (cardExampleBox) cardExampleBox.style.display = "block";
+      if (cardExampleOrig) cardExampleOrig.textContent = origSentence;
+      if (cardExampleTrans) {
+        const trans = (currentUiLang === "en")
+          ? (item.translation_en || transSentence)
+          : (currentUiLang === "zh")
+            ? (item.translation_zh || transSentence)
+            : transSentence;
+        cardExampleTrans.textContent = trans;
+      }
+    } else {
+      if (cardExampleBox) cardExampleBox.style.display = "none";
+    }
+
+    // 문법 공식 / 상세 해설 렌더링
+    if (item.explanation || item.explanation_en || item.explanation_zh) {
+      if (cardGrammarBox) cardGrammarBox.style.display = "block";
+      if (cardGrammarExp) {
+        const exp = (currentUiLang === "en")
+          ? (item.explanation_en || item.explanation)
+          : (currentUiLang === "zh")
+            ? (item.explanation_zh || item.explanation)
+            : (item.explanation || "");
+        cardGrammarExp.textContent = exp;
+      }
+    } else {
+      if (cardGrammarBox) cardGrammarBox.style.display = "none";
+    }
+
+    // 뒤집기 상태 초기화
+    isCardFlipped = false;
+    if (flashcard) flashcard.classList.remove("flipped");
+
+    // 이전/다음 버튼 활성/비활성 처리
+    if (studyPrevBtn) studyPrevBtn.disabled = (studyCurrentIndex === 0);
+    if (studyNextBtn) studyNextBtn.disabled = (studyCurrentIndex >= studyItems.length - 1);
+
+    // 자동 발음 활성화 상태라면 앞면 단어 읽어주기
+    if (autoTTS && activeNavTab === "study") {
+      const speechWord = (studyCategory === "grammar")
+        ? (item.example || item.category || "")
+        : (item.word || item.chengyu || item.idiom || "");
+      if (speechWord) {
+        playAudio(speechWord, cardFrontAudioBtn);
+      }
+    }
+  }
+
+  function toggleCardFlip() {
+    isCardFlipped = !isCardFlipped;
+    if (flashcard) {
+      flashcard.classList.toggle("flipped", isCardFlipped);
+    }
+    if (isCardFlipped && autoTTS && activeNavTab === "study") {
+      const item = studyItems[studyCurrentIndex];
+      if (item && item.example) {
+        playAudio(item.example, cardBackAudioBtn);
+      }
+    }
+  }
+
+  function goPrevStudyCard() {
+    if (studyCurrentIndex > 0) {
+      studyCurrentIndex--;
+      renderCurrentStudyCard();
+    }
+  }
+
+  function goNextStudyCard() {
+    if (studyCurrentIndex < studyItems.length - 1) {
+      studyCurrentIndex++;
+      renderCurrentStudyCard();
+    } else if (isStudyAutoplay) {
+      stopStudyAutoplay();
+    }
+  }
+
+  function shuffleStudyCards() {
+    if (!studyItems || studyItems.length <= 1) return;
+    studyItems = shuffle([...studyItems]);
+    studyCurrentIndex = 0;
+    renderCurrentStudyCard();
+  }
+
+  function toggleStudyAutoplay() {
+    if (isStudyAutoplay) {
+      stopStudyAutoplay();
+    } else {
+      startStudyAutoplay();
+    }
+  }
+
+  function startStudyAutoplay() {
+    isStudyAutoplay = true;
+    const t = I18N[currentUiLang] || I18N.ko;
+    if (studyAutoplayText) studyAutoplayText.textContent = t.studyAutoplayOn;
+    if (studyAutoplayBtn) studyAutoplayBtn.classList.add("active");
+
+    if (studyAutoplayTimer) clearInterval(studyAutoplayTimer);
+    studyAutoplayTimer = setInterval(() => {
+      if (!isCardFlipped) {
+        toggleCardFlip();
+      } else {
+        if (studyCurrentIndex >= studyItems.length - 1) {
+          stopStudyAutoplay();
+        } else {
+          goNextStudyCard();
+        }
+      }
+    }, 3500);
+  }
+
+  function stopStudyAutoplay() {
+    isStudyAutoplay = false;
+    const t = I18N[currentUiLang] || I18N.ko;
+    if (studyAutoplayText) studyAutoplayText.textContent = t.studyAutoplayOff;
+    if (studyAutoplayBtn) studyAutoplayBtn.classList.remove("active");
+    if (studyAutoplayTimer) {
+      clearInterval(studyAutoplayTimer);
+      studyAutoplayTimer = null;
+    }
   }
 
   function startQuiz() {
@@ -3812,6 +4235,110 @@ document.addEventListener("DOMContentLoaded", () => {
       closeHistory();
     }
   });
+
+  // 공부 모드 이벤트 리스너 바인딩
+  if (navModeStudy) {
+    navModeStudy.addEventListener("click", () => {
+      showView("study");
+    });
+  }
+
+  if (navModeQuiz) {
+    navModeQuiz.addEventListener("click", () => {
+      showView("setup");
+    });
+  }
+
+  studyCatBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      studyCatBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      studyCategory = btn.getAttribute("data-study-cat");
+      loadStudyItems();
+    });
+  });
+
+  studyDiffFilters.forEach(btn => {
+    btn.addEventListener("click", () => {
+      studyDiffFilters.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      studyDifficulty = btn.getAttribute("data-diff");
+      loadStudyItems();
+    });
+  });
+
+  if (flashcard) {
+    flashcard.addEventListener("click", (e) => {
+      // 오디오 버튼 클릭 시 플립 트리거 방지
+      if (e.target.closest(".card-audio-btn")) return;
+      toggleCardFlip();
+    });
+  }
+
+  if (studyFlipBtn) studyFlipBtn.addEventListener("click", toggleCardFlip);
+  if (studyPrevBtn) studyPrevBtn.addEventListener("click", goPrevStudyCard);
+  if (studyNextBtn) studyNextBtn.addEventListener("click", goNextStudyCard);
+  if (studyShuffleBtn) studyShuffleBtn.addEventListener("click", shuffleStudyCards);
+  if (studyAutoplayBtn) studyAutoplayBtn.addEventListener("click", toggleStudyAutoplay);
+
+  if (cardFrontAudioBtn) {
+    cardFrontAudioBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const item = studyItems[studyCurrentIndex];
+      if (item) {
+        const text = (studyCategory === "grammar")
+          ? (item.example || item.category || "")
+          : (item.word || item.chengyu || item.idiom || "");
+        if (text) playAudio(text, cardFrontAudioBtn);
+      }
+    });
+  }
+
+  if (cardBackAudioBtn) {
+    cardBackAudioBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const item = studyItems[studyCurrentIndex];
+      if (item) {
+        const text = item.example || item.sentence || item.explanation || "";
+        if (text) playAudio(text, cardBackAudioBtn);
+      }
+    });
+  }
+
+  // 키보드 단축키 지원 (좌우 화살표: 카드 이동, 스페이스: 카드 뒤집기)
+  if (typeof window !== "undefined" && typeof window.addEventListener === "function") {
+    window.addEventListener("keydown", (e) => {
+      if (activeNavTab !== "study") return;
+      if (e.key === "ArrowLeft") {
+        goPrevStudyCard();
+      } else if (e.key === "ArrowRight") {
+        goNextStudyCard();
+      } else if (e.key === " " && e.target === document.body) {
+        e.preventDefault();
+        toggleCardFlip();
+      }
+    });
+  }
+
+  // 바로 퀴즈 풀기 브릿지 버튼
+  if (bridgeStartQuizBtn) {
+    bridgeStartQuizBtn.addEventListener("click", () => {
+      showView("setup");
+      // 현재 공부 중인 카테고리와 매칭되는 퀴즈 모드로 자동 선택
+      if (studyCategory === "vocab") currentMode = "vocab";
+      else if (studyCategory === "chengyu") currentMode = "chengyu";
+      else if (studyCategory === "grammar") currentMode = "grammar";
+
+      if (studyDifficulty && studyDifficulty !== "all") {
+        currentDifficulty = studyDifficulty;
+      }
+      renderModeGrid();
+      diffBtns.forEach(b => {
+        b.classList.toggle("active", b.getAttribute("data-diff") === currentDifficulty);
+      });
+      startQuiz();
+    });
+  }
 
   // 초기화 실행
   loadData().then(() => {
