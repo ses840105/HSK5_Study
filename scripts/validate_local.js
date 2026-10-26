@@ -118,6 +118,10 @@ const cssContent = fs.readFileSync(cssPath, 'utf8');
 const requiredDomIds = [
   'lang-hsk-btn',
   'lang-ielts-btn',
+  'hsk-level-bar',
+  'tier-label-elem',
+  'tier-label-inter',
+  'tier-label-adv',
   'ui-lang-switcher',
   'tts-speed',
   'opt-speed-slow',
@@ -150,8 +154,9 @@ const requiredDomIds = [
   'nav-mode-quiz',
   'study-view',
   'study-cat-vocab',
-  'study-cat-chengyu',
   'study-cat-grammar',
+  'study-cat-listening',
+  'study-cat-chengyu',
   'flashcard-scene',
   'flashcard',
   'card-primary-text',
@@ -440,6 +445,21 @@ function createMockEnvironment() {
     body.appendChild(btn);
   });
 
+  ['1', '2', '3', '4', '5', '6', '7-9'].forEach((lv) => {
+    const btn = new MockElement('button', `hsk-level-tab-${lv}`);
+    btn.classList.add('hsk-level-tab');
+    btn.setAttribute('data-hsk-level', lv);
+    if (lv === '5') btn.classList.add('active');
+    body.appendChild(btn);
+  });
+
+  ['vocab', 'grammar', 'listening', 'chengyu'].forEach((cat) => {
+    const btn = getOrCreateElement(`study-cat-${cat}`, 'button');
+    btn.classList.add('study-cat-btn');
+    btn.setAttribute('data-study-cat', cat);
+    if (cat === 'vocab') btn.classList.add('active');
+  });
+
   const lastSpokenUtterances = [];
 
   class MockSpeechSynthesisUtterance {
@@ -711,6 +731,51 @@ async function runVMHarness() {
       timerApi.stopQuestionTimer(false);
     } else {
       logFail('Missing window.__HSK5_TIMER_TEST__ interface in app.js');
+    }
+
+    // -------------------------------------------------------------------------
+    // Test 8: New HSK 3.0 Multi-Level (1~6, 7-9급) & Vocab/Grammar/Listening Modes
+    // -------------------------------------------------------------------------
+    console.log(colors.bold('\n8. New HSK 3.0 Multi-Level (1~6, 7~9급) & Vocab/Grammar/Listening Study Verification'));
+    const hskLevels = env.windowMock.APP_DATA && env.windowMock.APP_DATA.hskLevels;
+    const expectedLevels = ['1', '2', '3', '4', '5', '6', '7-9'];
+    if (hskLevels && expectedLevels.every((lv) => hskLevels[lv] && Array.isArray(hskLevels[lv].vocab) && Array.isArray(hskLevels[lv].grammar) && Array.isArray(hskLevels[lv].listening))) {
+      logPass('All 7 New HSK 3.0 levels (1, 2, 3, 4, 5, 6, 7-9) loaded with vocab, grammar, and listening datasets');
+    } else {
+      logFail('Missing or incomplete APP_DATA.hskLevels datasets');
+    }
+
+    const levelTabs = env.windowMock.document.querySelectorAll('.hsk-level-tab');
+    const logoBadgeEl = env.elementsById.get('logo-badge');
+    const navStudyBtn = env.elementsById.get('nav-mode-study');
+    const studyListenBtn = env.elementsById.get('study-cat-listening');
+    const cardCatBadgeEl = env.elementsById.get('card-cat-badge');
+
+    // Switch to Level 1, 3, 7-9, and back to 5
+    for (const targetLv of ['1', '3', '7-9', '5']) {
+      const tab = levelTabs.find((b) => b.getAttribute('data-hsk-level') === targetLv);
+      if (tab) {
+        tab.click();
+        await new Promise((r) => setTimeout(r, 15));
+      }
+      if (logoBadgeEl && logoBadgeEl.textContent === `HSK ${targetLv}`) {
+        logPass(`New HSK Level switch verified: HSK ${targetLv} active badge & dataset loaded`);
+      } else {
+        logFail(`Level switch failed for HSK ${targetLv} (badge=${logoBadgeEl ? logoBadgeEl.textContent : 'null'})`);
+      }
+    }
+
+    // Verify Study Mode Listening Category on Level 3
+    const tab3 = levelTabs.find((b) => b.getAttribute('data-hsk-level') === '3');
+    if (tab3) tab3.click();
+    if (navStudyBtn) navStudyBtn.click();
+    await new Promise((r) => setTimeout(r, 20));
+    if (studyListenBtn) studyListenBtn.click();
+    await new Promise((r) => setTimeout(r, 20));
+    if (cardCatBadgeEl && cardCatBadgeEl.textContent.includes('3급') && cardCatBadgeEl.textContent.includes('듣기')) {
+      logPass(`Study Mode Flashcard Listening category verified on New HSK 3급 (${cardCatBadgeEl.textContent})`);
+    } else {
+      logFail(`Study Mode Listening category badge mismatch: ${cardCatBadgeEl ? cardCatBadgeEl.textContent : 'null'}`);
     }
   } else {
     logFail('Missing #start-btn');

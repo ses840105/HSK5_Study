@@ -1,0 +1,1071 @@
+{
+  "vocab": [
+    {
+      "id": "hsk4_v_01",
+      "word": "复杂",
+      "pinyin": "fùzá",
+      "pos": "형용사",
+      "meaning": "복잡하다",
+      "meaning_en": "complex; complicated",
+      "meaning_zh": "复杂",
+      "example": "这个问题比我们最初想象的要复杂得多。",
+      "translation": "이 문제는 우리가 처음에 상상했던 것보다 훨씬 더 복잡하다.",
+      "translation_en": "This issue is much more complicated than we initially imagined.",
+      "translation_zh": "这个问题比我们最初想象的要复杂得多。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_v_02",
+      "word": "准确",
+      "pinyin": "zhǔnquè",
+      "pos": "형용사",
+      "meaning": "정확하다",
+      "meaning_en": "accurate; exact",
+      "meaning_zh": "准确",
+      "example": "做科学实验必须记录准确无误的数据。",
+      "translation": "과학 실험을 할 때는 반드시 정확하고 오류 없는 데이터를 기록해야 한다.",
+      "translation_en": "Scientific experiments require recording accurate data.",
+      "translation_zh": "做科学实验必须记录准确无误的数据。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_v_03",
+      "word": "鼓励",
+      "pinyin": "gǔlì",
+      "pos": "동사/명사",
+      "meaning": "격려하다, 용기를 북돋우다",
+      "meaning_en": "to encourage; encouragement",
+      "meaning_zh": "鼓励",
+      "example": "老师的赞许和鼓励让他重新树立了自信心。",
+      "translation": "선생님의 칭찬과 격려는 그가 다시 자신감을 갖게 해 주었다.",
+      "translation_en": "The teacher's praise and encouragement helped him rebuild his self-confidence.",
+      "translation_zh": "老师的赞许和鼓励让他重新树立了自信心。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_v_04",
+      "word": "坚持",
+      "pinyin": "jiānchí",
+      "pos": "동사",
+      "meaning": "견지하다, 지속하다",
+      "meaning_en": "to persist; to persevere",
+      "meaning_zh": "坚持",
+      "example": "只要认准目标并坚持下去，就一定能看到希望。",
+      "translation": "목표를 확신하고 끝까지 지속한다면 반드시 희망을 볼 수 있다.",
+      "translation_en": "As long as you identify your goal and persist, you will definitely see hope.",
+      "translation_zh": "只要认准目标并坚持下去，就一定能看到希望。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_v_05",
+      "word": "甚至",
+      "pinyin": "shènzhì",
+      "pos": "접속사/부사",
+      "meaning": "심지어, ~조차도",
+      "meaning_en": "even; so far as to",
+      "meaning_zh": "甚至",
+      "example": "他激动得连一句话甚至一个字都说不出来。",
+      "translation": "그는 너무 감격하여 한마디 말 심지어 글자 하나조차 꺼내지 못했다.",
+      "translation_en": "He was so excited that he couldn't even say a word.",
+      "translation_zh": "他激动得连一句话甚至一个字都说不出来。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_v_06",
+      "word": "无论",
+      "pinyin": "wúlùn",
+      "pos": "접속사",
+      "meaning": "~을 막론하고, ~하든 간에",
+      "meaning_en": "regardless of; no matter what",
+      "meaning_zh": "无论",
+      "example": "无论前方的路有多艰难，我们都绝不退缩。",
+      "translation": "앞길이 얼마나 험난하든 간에 우리는 결코 물러서지 않는다.",
+      "translation_en": "No matter how difficult the road ahead is, we will never shrink back.",
+      "translation_zh": "无论前方的路有多艰难，我们都绝不退缩。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_v_07",
+      "word": "究竟",
+      "pinyin": "jiūjìng",
+      "pos": "부사/명사",
+      "meaning": "도대체, 결국",
+      "meaning_en": "after all; exactly",
+      "meaning_zh": "究竟",
+      "example": "你今天心不在焉，究竟发生了什么事？",
+      "translation": "너 오늘 정신이 팔려 있던데, 도대체 무슨 일이 있었던 거야?",
+      "translation_en": "You were so absent-minded today, what on earth happened?",
+      "translation_zh": "你今天心不在焉，究竟发生了什么事？",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_v_08",
+      "word": "尊重",
+      "pinyin": "zūnzhòng",
+      "pos": "동사/명사",
+      "meaning": "존중하다",
+      "meaning_en": "to respect",
+      "meaning_zh": "尊重",
+      "example": "人际交往中尊重他人的文化和选择是第一原则。",
+      "translation": "대인관계에서 타인의 문화와 선택을 존중하는 것은 제1원칙이다.",
+      "translation_en": "Respecting others' culture and choices is the first principle in human interaction.",
+      "translation_zh": "人际交往中尊重他人的文化和选择是第一原则。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_v_09",
+      "word": "拒绝",
+      "pinyin": "jùjué",
+      "pos": "동사",
+      "meaning": "거절하다",
+      "meaning_en": "to refuse; to reject",
+      "meaning_zh": "拒绝",
+      "example": "面对不合规的要求，我们必须学会委婉而坚定地拒绝。",
+      "translation": "규정에 맞지 않는 요구에 직면했을 때 우리는 완곡하면서도 단호하게 거절하는 법을 배워야 한다.",
+      "translation_en": "Faced with improper requests, we must learn to refuse politely yet firmly.",
+      "translation_zh": "面对不合规的要求，我们必须学会委婉而坚定地拒绝。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_v_10",
+      "word": "经验",
+      "pinyin": "jīngyàn",
+      "pos": "명사/동사",
+      "meaning": "경험",
+      "meaning_en": "experience; to experience",
+      "meaning_zh": "经验",
+      "example": "丰富的实战经验是处理突发危机的最有力武器。",
+      "translation": "풍부한 실전 경험은 돌발 위기를 처리하는 가장 강력한 무기이다.",
+      "translation_en": "Rich practical experience is the most powerful weapon in dealing with crises.",
+      "translation_zh": "丰富的实战经验是处理突发危机的最有力武器。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_v_11",
+      "word": "积累",
+      "pinyin": "jīlěi",
+      "pos": "동사/명사",
+      "meaning": "쌓다, 누적하다, 축적",
+      "meaning_en": "to accumulate; accumulation",
+      "meaning_zh": "积累",
+      "example": "语言学习需要日积月累的沉淀，切忌急功近利。",
+      "translation": "언어 학습은 날마다 꾸준히 쌓아가는 축적이 필요하며 성급한 성과 추구를 경계해야 한다.",
+      "translation_en": "Language learning requires steady day-to-day accumulation.",
+      "translation_zh": "语言学习需要日积月累的沉淀，切忌急功近利。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_v_12",
+      "word": "严格",
+      "pinyin": "yángé",
+      "pos": "형용사",
+      "meaning": "엄격하다",
+      "meaning_en": "strict; rigorous",
+      "meaning_zh": "严格",
+      "example": "实验室执行着极其严格的安全防护操作标准。",
+      "translation": "실험실은 지극히 엄격한 안전 방호 작업 기준을 집행하고 있다.",
+      "translation_en": "The laboratory enforces extremely strict safety and operational standards.",
+      "translation_zh": "实验室执行着极其严格的安全防护操作标准。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_v_13",
+      "word": "普遍",
+      "pinyin": "pǔbiàn",
+      "pos": "형용사",
+      "meaning": "보편적이다, 널리 퍼지다",
+      "meaning_en": "universal; widespread",
+      "meaning_zh": "普遍",
+      "example": "智能手机支付在中国社会已经达到了普遍应用的程度。",
+      "translation": "스마트폰 결제는 중국 사회에서 이미 보편적으로 응용되는 수준에 이르렀다.",
+      "translation_en": "Mobile phone payments have reached widespread application in Chinese society.",
+      "translation_zh": "智能手机支付在中国社会已经达到了普遍应用的程度。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk4_v_14",
+      "word": "逐渐",
+      "pinyin": "zhújiàn",
+      "pos": "부사",
+      "meaning": "점차, 서서히",
+      "meaning_en": "gradually; little by little",
+      "meaning_zh": "逐渐",
+      "example": "随着秋季深入，天气逐渐转凉，树叶开始变色。",
+      "translation": "가을이 깊어감에 따라 날씨가 서서히 쌀쌀해지고 나뭇잎이 물들기 시작했다.",
+      "translation_en": "As autumn deepened, the weather gradually turned cool and leaves changed color.",
+      "translation_zh": "随着秋季深入，天气逐渐转凉，树叶开始变色。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk4_v_15",
+      "word": "详细",
+      "pinyin": "xiángxì",
+      "pos": "형용사",
+      "meaning": "상세하다, 자세하다",
+      "meaning_en": "detailed; in-depth",
+      "meaning_zh": "详细",
+      "example": "这份调研报告极其详细地分析了当下的消费者需求。",
+      "translation": "이 조사 보고서는 현재의 소비자 요구를 대단히 상세하게 분석했다.",
+      "translation_en": "This research report analyzed current consumer demands in extreme detail.",
+      "translation_zh": "这份调研报告极其详细地分析了当下的消费者需求。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk4_v_16",
+      "word": "关键",
+      "pinyin": "guānjiàn",
+      "pos": "명사/형용사",
+      "meaning": "핵심, 관건, 결정적이다",
+      "meaning_en": "crucial; key point",
+      "meaning_zh": "关键",
+      "example": "在谈判进入最关键的阶段时，保持冷静是首要前提。",
+      "translation": "협상이 가장 결정적인 단계에 접어들었을 때 냉정을 유지하는 것이 최우선 전제이다.",
+      "translation_en": "Maintaining composure is crucial when negotiations enter the key phase.",
+      "translation_zh": "在谈判进入最关键的阶段时，保持冷静是首要前提。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk4_v_17",
+      "word": "压力",
+      "pinyin": "yālì",
+      "pos": "명사",
+      "meaning": "스트레스, 압박감",
+      "meaning_en": "pressure; stress",
+      "meaning_zh": "压力",
+      "example": "适度的心理压力往往能转化为激发潜能的动力。",
+      "translation": "적당한 심리적 스트레스는 종종 잠재력을 자극하는 동력으로 전환될 수 있다.",
+      "translation_en": "Moderate psychological pressure can often transform into motivation to stimulate potential.",
+      "translation_zh": "适度的心理压力往往能转化为激发潜能的动力。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk4_v_18",
+      "word": "顺利",
+      "pinyin": "shùnlì",
+      "pos": "형용사",
+      "meaning": "순조롭다",
+      "meaning_en": "smooth; successfully",
+      "meaning_zh": "顺利",
+      "example": "新产品发布会举办得非常顺利，获得了媒体的高度评价。",
+      "translation": "신제품 발표회는 매우 순조롭게 개최되어 언론의 높은 평가를 받았다.",
+      "translation_en": "The new product launch was held very smoothly and received high praise from the media.",
+      "translation_zh": "新产品发布会举办得非常顺利，获得了媒体的高度评价。",
+      "difficulty": "상"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk4_g_01",
+      "difficulty": "하",
+      "type": "passive",
+      "category": "피동문 '被자문'",
+      "category_en": "Bei-sentence (Passive Voice)",
+      "category_zh": "‘被’字句（被动句）",
+      "question": "\"지갑을 도둑맞았다 (지갑이 도둑에게 도난당했다)\"의 올바른 被자문은?",
+      "options": [
+        "钱包被小偷偷走了。",
+        "小偷被钱包偷走了。",
+        "钱包偷走被小偷了。",
+        "被小偷钱包偷走了。"
+      ],
+      "answer": 1,
+      "example": "他的钱包不幸被小偷偷走了。",
+      "translation": "그의 지갑은 안타깝게도 도둑에게 도난당했다.",
+      "explanation": "피동문 구조는 [수사(피해자/물건) + 被 + 행위자 + 동사 + 기타성분]입니다.",
+      "explanation_en": "Structure: [Patient + 被 + Agent + Verb + Complement].",
+      "explanation_zh": "受事主语 + 被 + 施事者 + 动词 + 结果补语/趋向补语。"
+    },
+    {
+      "id": "hsk4_g_02",
+      "difficulty": "하",
+      "type": "conjunction",
+      "category": "무조건 복문 '无论...都...'",
+      "category_en": "Unconditional 'wulun...dou...'",
+      "category_zh": "无条件复句‘无论……都……’",
+      "question": "\"어려움이 아무리 크더라도 우리는 극복할 수 있다\"의 알맞은 중국어 표현은?",
+      "options": [
+        "无论困难多大，我们都能克服。",
+        "因为困难很大，所以我们能克服。",
+        "虽然困难很大，我们就能克服。",
+        "即使困难很大，我们不克服。"
+      ],
+      "answer": 1,
+      "example": "无论前方的困难有多大，我们都坚信能够克服。",
+      "translation": "앞길의 어려움이 아무리 크더라도 우리는 극복할 수 있다고 굳게 믿는다.",
+      "explanation": "'无论(不管) A, 都 B'는 어떤 조건이나 전제에도 불구하고 결과가 불변함을 나타냅니다.",
+      "explanation_en": "'无论 A, 都 B' means 'No matter A, (always) B'.",
+      "explanation_zh": "‘无论……都……’表示在任何条件下结果都不会改变。"
+    },
+    {
+      "id": "hsk4_g_03",
+      "difficulty": "하",
+      "type": "emphasis",
+      "category": "강조 구문 '连...都/也...'",
+      "category_en": "Emphatic Structure 'lian...dou/ye...'",
+      "category_zh": "强调句式‘连……都/也……’",
+      "question": "\"그는 너무 바빠서 점심조차 먹지 못했다\"의 올바른 어순은?",
+      "options": [
+        "他忙得连午饭都顾不上吃。",
+        "他连忙得午饭顾不上吃。",
+        "他忙得午饭连都顾不上吃。",
+        "连他忙得都午饭顾不上吃。"
+      ],
+      "answer": 1,
+      "example": "今天工作节奏太快，他忙得连午饭都顾不上吃。",
+      "translation": "오늘 업무 속도가 너무 빨라 그는 바빠서 점심조차 챙겨 먹지 못했다.",
+      "explanation": "'连 A 都/也 B'는 극단적인 예를 들어 그 외의 경우는 말할 것도 없음을 강조합니다.",
+      "explanation_en": "'连 A 都/也 B' highlights an extreme example: 'even A cannot/does B'.",
+      "explanation_zh": "‘连……都/也……’用于引出具有代表性的极端事例以加强语气。"
+    },
+    {
+      "id": "hsk4_g_04",
+      "difficulty": "중",
+      "type": "causal",
+      "category": "기정 인과 복문 '既然...就...'",
+      "category_en": "Cause from Premise 'jiran...jiu...'",
+      "category_zh": "因果复句‘既然……就……’",
+      "question": "\"기왕 결심했으니 끝까지 견지해야 한다\"의 알맞은 문장은?",
+      "options": [
+        "既然做出了决定，就应该坚持到底。",
+        "虽然做出了决定，就应该坚持到底。",
+        "因为做出了决定，但是坚持到底。",
+        "如果做出了决定，而且坚持到底。"
+      ],
+      "answer": 1,
+      "example": "既然大家都赞成，那这项计划就正式实施吧。",
+      "translation": "기왕 모두가 찬성했으니 이 계획을 공식적으로 시행합시다.",
+      "explanation": "'既然 A, 就 B'는 이미 확정된 사실을 전제로 당연한 결론이나 조치를 유도합니다.",
+      "explanation_en": "'既然 A, 就 B' means 'Since A is already the case, then B should follow'.",
+      "explanation_zh": "‘既然……就……’先提出前提或既定事实，然后推导结论。"
+    },
+    {
+      "id": "hsk4_g_05",
+      "difficulty": "중",
+      "type": "adverb",
+      "category": "의문 강조 부사 '究竟'",
+      "category_en": "Emphatic Question Adverb 'jiujing'",
+      "category_zh": "疑问副词‘究竟’",
+      "question": "\"그는 도대체 무슨 뜻으로 한 말일까?\"의 가장 자연스러운 표현은?",
+      "options": [
+        "他这话究竟是什么意思？",
+        "他这话是什么究竟意思？",
+        "究竟他是这话什么意思？",
+        "他这话是什么意思究竟？"
+      ],
+      "answer": 1,
+      "example": "这件事情的真相究竟是怎样的？",
+      "translation": "이 사건의 진상은 도대체 어떠한가?",
+      "explanation": "'究竟'은 의문문에서 의문사 앞에 위치하여 추궁이나 의문의 어기를 크게 강조합니다.",
+      "explanation_en": "'究竟' precedes the question word to intensify the inquiry: 'on earth / exactly'.",
+      "explanation_zh": "副词‘究竟’用于疑问句中以加重追问语气。"
+    },
+    {
+      "id": "hsk4_g_06",
+      "difficulty": "중",
+      "type": "conjunction",
+      "category": "점진 접속사 '甚至'",
+      "category_en": "Progressive Conjunction 'shenzhi'",
+      "category_zh": "递进连词‘甚至’",
+      "question": "\"그는 중국어를 매우 잘해서 중국 신문조차 읽을 수 있다\"의 알맞은 표현은?",
+      "options": [
+        "他的中文很好，甚至能看懂中文报纸。",
+        "他的中文很好，因为能看懂中文报纸。",
+        "他的中文很好，但是能看懂中文报纸。",
+        "甚至他的中文很好，能看懂中文报纸。"
+      ],
+      "answer": 1,
+      "example": "他对中国文化很了解，甚至能背诵很多古诗。",
+      "translation": "그는 중국 문화를 매우 잘 이해하며 심지어 많은 고시를 암송할 수 있다.",
+      "explanation": "'甚至'는 앞 절의 내용보다 한 걸음 더 나아간 극단적인 사실을 제시하여 점진 관계를 나타냅니다.",
+      "explanation_en": "'甚至' introduces an even more striking or extreme fact: 'even / so far as to'.",
+      "explanation_zh": "‘甚至’用于递进复句，提出突出的极端事例。"
+    },
+    {
+      "id": "hsk4_g_07",
+      "difficulty": "상",
+      "type": "concession",
+      "category": "가정 양보 복문 '即使...也...'",
+      "category_en": "Supposition Concession 'jishi...ye...'",
+      "category_zh": "假设让步复句‘即使……也……’",
+      "question": "\"설령 비가 오더라도 우리는 정시에 출발한다\"의 바른 표현은?",
+      "options": [
+        "即使明天下雨，我们也要按时出发。",
+        "无论明天下雨，我们也要按时出发。",
+        "如果明天下雨，但是我们要按时出发。",
+        "虽然明天下雨，因此我们要按时出发。"
+      ],
+      "answer": 1,
+      "example": "即使遇到再大的挫折，我们也不能放弃最初的梦想。",
+      "translation": "설령 더 큰 좌절을 마주하더라도 우리는 처음의 꿈을 포기해선 안 된다.",
+      "explanation": "'即使(哪怕) A, 也 B'는 설령 가상의 불리한 조건이 있더라도 결과는 바뀌지 않음을 나타냅니다.",
+      "explanation_en": "'即使 A, 也 B' sets an extreme concession: 'Even if A, still B'.",
+      "explanation_zh": "‘即使……也……’表示承认某种假设条件，但结论不受影响。"
+    },
+    {
+      "id": "hsk4_g_08",
+      "difficulty": "상",
+      "type": "adverb",
+      "category": "역접 어기 부사 '反而'",
+      "category_en": "Contrary Adverb 'fan'er'",
+      "category_zh": "副词‘反而’表示反常转折",
+      "question": "\"바람이 불자 날씨가 시원해지기는커녕 오히려 더 후덥지근해졌다\"의 알맞은 표현은?",
+      "options": [
+        "起风后天气不仅不凉快，反而更闷热了。",
+        "起风后天气不仅不凉快，而且更凉快了。",
+        "起风后天气虽然不凉快，但是更凉快了。",
+        "起风后天气因为不凉快，所以更凉快了。"
+      ],
+      "answer": 1,
+      "example": "吃了感冒药之后，他不仅没有好转，反而发烧更严重了。",
+      "translation": "감기약을 먹은 후 호전되기는커녕 오히려 열이 더 심하게 났다.",
+      "explanation": "'反而'는 일반적인 상식이나 예상과 정반대의 결과가 나타났을 때 쓰는 부사입니다.",
+      "explanation_en": "'反而' indicates an outcome contrary to expectations: 'on the contrary / instead'.",
+      "explanation_zh": "‘反而’表示事实与预想或常理恰恰相反。"
+    },
+    {
+      "id": "hsk4_g_09",
+      "difficulty": "상",
+      "type": "construction",
+      "category": "점진 격식 '不但...而且...'",
+      "category_en": "Progressive 'budan...erqie...'",
+      "category_zh": "递进句式‘不但……而且……’",
+      "question": "\"그녀는 성격이 활발할 뿐만 아니라 성적도 매우 우수하다\"의 바른 어순은?",
+      "options": [
+        "她不但性格活泼，而且成绩优异。",
+        "她不但成绩优异，所以性格活泼。",
+        "不但她成绩优异，但是性格活泼。",
+        "她虽然性格活泼，而且成绩优异。"
+      ],
+      "answer": 1,
+      "example": "他不但工作认真负责，而且乐于助人。",
+      "translation": "그는 업무에 성실하고 책임감 있을 뿐만 아니라 남을 돕는 것도 즐긴다.",
+      "explanation": "'不但 A, 而且 B'는 앞의 내용에 더하여 범위나 정도가 확장됨을 나타냅니다.",
+      "explanation_en": "'不但 A, 而且 B' means 'not only A, but also B'.",
+      "explanation_zh": "‘不但……而且……’表示在程度或范围上的进一步递进。"
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk4_l_01",
+      "difficulty": "하",
+      "category": "듣기 1부분 (업무 피드백)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "王总，您觉得我今天在客户面前的方案陈述表现得怎么样？"
+        },
+        {
+          "speaker": "女",
+          "text": "整体思路非常清晰，逻辑严密，就是语速稍微有一点儿快。"
+        }
+      ],
+      "question": "女的觉得男的陈述表现有什么需要改进的？",
+      "options": [
+        "语速稍微有点快",
+        "思路不够清晰",
+        "逻辑非常混乱",
+        "没有准备PPT"
+      ],
+      "answer": "语速稍微有点快",
+      "audioText": "男：王总，您觉得我今天在客户面前的方案陈述表现得怎么样？ 女：整体思路非常清晰，逻辑严密，就是语速稍微有一点儿快。 问：女的觉得男的陈述表现有什么需要改进的？",
+      "translation": "남: 왕 총경리님, 오늘 고객 앞에서 제 기획안 발표 어땠나요?\n여: 전반적인 사고 흐름이 매우 명확하고 논리가 치밀했는데, 말의 속도가 조금 빨랐어요.\n질문: 여자는 남자의 발표에서 어떤 점이 개선되어야 한다고 생각하나요?",
+      "tip": "'就是语速稍微有一点儿快'에서 개선점을 캐치합니다."
+    },
+    {
+      "id": "hsk4_l_02",
+      "difficulty": "하",
+      "category": "듣기 1부분 (은행 업무)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "先生您好，办理跨境汇款业务需要出示您的有效身份证件。"
+        },
+        {
+          "speaker": "男",
+          "text": "好的，这是我的护照和纳税证明文件。"
+        }
+      ],
+      "question": "男的正在办理什么业务？",
+      "options": [
+        "跨境汇款",
+        "申请信用卡",
+        "兑换硬币",
+        "挂失银行卡"
+      ],
+      "answer": "跨境汇款",
+      "audioText": "女：先生您好，办理跨境汇款业务需要出示您的有效身份证件。 男：好的，这是我的护照和纳税证明文件。 问：男的正在办理什么业务？",
+      "translation": "여: 손님 안녕하세요, 해외 송금 업무를 처리하시려면 유효 신분증을 제시해 주셔야 합니다.\n남: 네, 여기 제 여권과 납세 증명 서류입니다.\n질문: 남자는 어떤 업무를 처리하고 있나요?",
+      "tip": "'办理跨境汇款业务'에서 업무 명칭을 확인합니다."
+    },
+    {
+      "id": "hsk4_l_03",
+      "difficulty": "하",
+      "category": "듣기 1부분 (소비자 문의)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "我在你们商城购买的这台空气净化器开机后噪音很大，能换一台吗？"
+        },
+        {
+          "speaker": "女",
+          "text": "只要在七天无理由退换期内且包装完好，我们随时可以为您免费更换。"
+        }
+      ],
+      "question": "女人表示什么条件下可以免费更换？",
+      "options": [
+        "七天内且包装完好",
+        "一年以后",
+        "商品损坏无法使用",
+        "必须支付额外手续费"
+      ],
+      "answer": "七天内且包装完好",
+      "audioText": "男：我在你们商城购买的这台空气净化器开机后噪音很大，能换一台吗？ 女：只要在七天无理由退换期内且包装完好，我们随时可以为您免费更换。 问：女人表示什么条件下可以免费更换？",
+      "translation": "남: 귀사 쇼핑몰에서 구매한 공기청정기가 켰을 때 소음이 너무 심한데 교환이 가능한가요?\n여: 7일 이내이고 포장이 온전하다면 언제든 무료로 교환해 드립니다.\n질문: 여자는 어떤 조건에서 무료 교환이 가능하다고 말했나요?",
+      "tip": "'七天无理由退换期内且包装完好' 조건을 파악합니다."
+    },
+    {
+      "id": "hsk4_l_04",
+      "difficulty": "중",
+      "category": "듣기 1부분 (구직 인터뷰 후기)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "听说你昨天去参加了那家著名外企的终面，感觉怎么样？"
+        },
+        {
+          "speaker": "男",
+          "text": "考官提的问题非常专业深刻，不过幸亏我提前做足了功课，整体交流很顺畅。"
+        }
+      ],
+      "question": "男的对昨天的终面感觉如何？",
+      "options": [
+        "准备充分交流很顺畅",
+        "完全答不上来",
+        "考官态度非常恶劣",
+        "打算主动放弃录取"
+      ],
+      "answer": "准备充分交流很顺畅",
+      "audioText": "女：听说你昨天去参加了那家著名外企的终面，感觉怎么样？ 男：考官提的问题非常专业深刻，不过幸亏我提前做足了功课，整体交流很顺畅。 问：男的对昨天的终面感觉如何？",
+      "translation": "여: 어제 그 유명 외자계 기업 최종 면접 봤다던데 어땠어?\n남: 면접관 질문이 매우 전문적이고 깊이 있었지만, 다행히 준비를 철저히 해 가서 전반적으로 소통이 순조로웠어.\n질문: 남자는 어제 최종 면접을 어떻게 느꼈나요?",
+      "tip": "'提前做足了功课，整体交流很顺畅'를 조합합니다."
+    },
+    {
+      "id": "hsk4_l_05",
+      "difficulty": "중",
+      "category": "듣기 1부분 (대학원 진학 상담)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "教授，我想毕业后直接申请攻读人工智能方向的研究生。"
+        },
+        {
+          "speaker": "女",
+          "text": "这个方向前景非常广阔，但需要极强的数学建模和算法编程功底，你现在就要打牢基础。"
+        }
+      ],
+      "question": "教授建议男的现在需要做什么？",
+      "options": [
+        "打牢数学与编程基础",
+        "立刻放弃考研",
+        "先去企业工作十年",
+        "多去国外旅游"
+      ],
+      "answer": "打牢数学与编程基础",
+      "audioText": "男：教授，我想毕业后直接申请攻读人工智能方向的研究生。 女：这个方向前景非常广阔，但需要极强的数学建模和算法编程功底，你现在就要打牢基础。 问：教授建议男的现在需要做什么？",
+      "translation": "남: 교수님, 저는 졸업 후 곧바로 인공지능 분야 대학원에 지원하고 싶습니다.\n여: 이 분야는 전망이 매우 밝지만 탁월한 수학 모델링과 알고리즘 코딩 능력이 필수적이니 지금부터 기초를 탄탄히 다져야 한단다.\n질문: 교수는 남학생에게 지금 무엇을 해야 한다고 조언했나요?",
+      "tip": "'需要极强的数学建模和算法编程功底，你现在就要打牢基础'를 확인합니다."
+    },
+    {
+      "id": "hsk4_l_06",
+      "difficulty": "중",
+      "category": "듣기 1부분 (친환경 자동차 구매)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "你家里最近不是打算换新车吗？决定买燃油车还是纯电动车了？"
+        },
+        {
+          "speaker": "男",
+          "text": "现在市区充电桩越来越普及，而且国家有购车补贴，我们决定买纯电动车。"
+        }
+      ],
+      "question": "男的一家最终决定买什么类型的车？",
+      "options": [
+        "纯电动车",
+        "传统燃油车",
+        "二手燃油车",
+        "摩托车"
+      ],
+      "answer": "纯电动车",
+      "audioText": "女：你家里最近不是打算换新车吗？决定买燃油车还是纯电动车了？ 男：现在市区充电桩越来越普及，而且国家有购车补贴，我们决定买纯电动车。 问：男的一家最终决定买什么类型的车？",
+      "translation": "여: 너희 집 최근에 새 차로 바꾼다지 않았어? 내연기관차 살지 전기차 살지 결정했어?\n남: 시내에 충전소도 점점 보급되고 국가 보조금도 있어서 순수 전기차를 사기로 결정했어.\n질문: 남자의 가족은 최종적으로 어떤 유형의 차를 사기로 했나요?",
+      "tip": "'我们决定买纯电动车'를 직관적으로 청취합니다."
+    },
+    {
+      "id": "hsk4_l_07",
+      "difficulty": "상",
+      "category": "듣기 1부분 (파트너십 비즈니스 협상)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "双方就合同中的售后技术服务条款似乎还存在一些分歧。"
+        },
+        {
+          "speaker": "女",
+          "text": "既然彼此都非常看重长期的战略合作，不如在响应时间和备件价格上各让一步，达成共识。"
+        }
+      ],
+      "question": "女人提议如何解决合作中的分歧？",
+      "options": [
+        "各退一步寻求双赢共识",
+        "直接取消所有合作",
+        "要求对方全盘接受我方条件",
+        "把合同交给第三方仲裁"
+      ],
+      "answer": "各退一步寻求双赢共识",
+      "audioText": "男：双方就合同中的售后技术服务条款似乎还存在一些分歧。 女：既然彼此都非常看重长期的战略合作，不如在响应时间和备件价格上各让一步，达成共识。 问：女人提议如何解决合作中的分歧？",
+      "translation": "남: 양측이 계약서의 AS 기술 서비스 조항을 두고 여전히 이견이 있는 것 같습니다.\n여: 서로 장기적인 전략적 협력을 매우 중시하는 만큼, 응답 시간과 부품 가격에서 서로 한 걸음씩 양보하여 합의를 도출하는 것이 좋겠습니다.\n질문: 여자는 협력 중의 이견을 어떻게 해결하자고 제안했나요?",
+      "tip": "'各让一步，达成共识(서로 한 걸음씩 양보하여 합의 도출)'을 고릅니다."
+    },
+    {
+      "id": "hsk4_l_08",
+      "difficulty": "상",
+      "category": "듣기 1부분 (신기술 도입 평가)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "生产线全面引入工业自动化机器人之后，产能提升了多少？"
+        },
+        {
+          "speaker": "男",
+          "text": "产品的不良率从原来的百分之五骤降到了千分之二，综合生产效率提升了整整三倍。"
+        }
+      ],
+      "question": "引入自动化机器人后带来了什么显著成效？",
+      "options": [
+        "不良率大幅下降且效率提升三倍",
+        "生产成本增加了五倍",
+        "产品完全无法按期交付",
+        "工人数量翻了一番"
+      ],
+      "answer": "不良率大幅下降且效率提升三倍",
+      "audioText": "女：生产线全面引入工业自动化机器人之后，产能提升了多少？ 男：产品的不良率从原来的百分之五骤降到了千分之二，综合生产效率提升了整整三倍。 问：引入自动化机器人后带来了什么显著成效？",
+      "translation": "여: 생산 라인에 산업용 자동화 로봇을 전면 도입한 후 생산능력이 얼마나 향상되었나요?\n남: 제품 불량률이 기존 5%에서 0.2%로 급감했고, 종합 생산 효율은 무려 3배나 올랐습니다.\n질문: 자동화 로봇 도입 후 어떤 괄목할 성과를 거두었나요?",
+      "tip": "'不良率骤降...生产效率提升了三倍'를 파악합니다."
+    },
+    {
+      "id": "hsk4_l_09",
+      "difficulty": "상",
+      "category": "듣기 1부분 (인재 영입 정책)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "市里新出台的高层次人才引进计划包含了哪些核心支持政策？"
+        },
+        {
+          "speaker": "女",
+          "text": "除了提供极具竞争力的科研启动资金，还一揽子解决了住房补贴和子女优质入学问题。"
+        }
+      ],
+      "question": "新的人才引进计划包括什么？",
+      "options": [
+        "科研资金、住房补贴及子女入学",
+        "只提供免费交通卡",
+        "要求所有人才自主创业",
+        "只针对应届本专科生"
+      ],
+      "answer": "科研资金、住房补贴及子女入学",
+      "audioText": "男：市里新出台的高层次人才引进计划包含了哪些核心支持政策？ 女：除了提供极具竞争力的科研启动资金，还一揽子解决了住房补贴和子女优质入学问题。 问：新的人才引进计划包括什么？",
+      "translation": "남: 시에서 새로 발표한 고급 인재 유치 계획에는 어떤 핵심 지원 정책이 포함되어 있나요?\n여: 매우 경쟁력 있는 연구 시작 자금을 지원할 뿐 아니라, 주거 보조금과 자녀 우수 학교 입학 문제까지 일괄 해결해 줍니다.\n질문: 새로운 인재 유치 계획에는 무엇이 포함되나요?",
+      "tip": "'科研启动资金...住房补贴和子女优质入学' 종합 혜택을 선별합니다."
+    }
+  ],
+  "chengyu": [
+    {
+      "id": "hsk4_ch_01",
+      "chengyu": "事半功倍",
+      "pinyin": "shì bàn gōng bèi",
+      "meaning": "일은 절반만 하고도 성과는 배가 되다",
+      "sentence": "掌握了科学的学习方法，往往能收到____的效果。",
+      "example": "掌握了科学的学习方法，往往能收到事半功倍的效果。",
+      "translation": "과학적인 학습 방법을 파악하면 종종 적은 노력으로도 배의 성과를 거둘 수 있다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_ch_02",
+      "chengyu": "志同道合",
+      "pinyin": "zhì tóng dào hé",
+      "meaning": "뜻과 길이 서로 맞아 의기투합하다",
+      "sentence": "他们是一群____的创业青年，充满拼搏激情。",
+      "example": "他们是一群志同道合的创业青年，充满拼搏激情。",
+      "translation": "그들은 뜻을 같이하는 청년 창업가들로서 투지와 열정이 넘친다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_ch_03",
+      "chengyu": "顾名思义",
+      "pinyin": "gù míng sī yì",
+      "meaning": "이름을 보고 그 뜻을 생각하다",
+      "sentence": "“微电影”，____，就是篇幅微型小巧的电影艺术形式。",
+      "example": "“微电影”，顾名思义，就是篇幅微型小巧的电影艺术形式。",
+      "translation": "‘마이크로 무비’는 이름 그대로 러닝타임이 아주 짧고 간결한 영화 예술 형식이다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_ch_04",
+      "chengyu": "名副其实",
+      "pinyin": "míng fù qí shí",
+      "meaning": "이름과 실상이 꼭 들어맞다",
+      "sentence": "这座城市四季如春、繁花似锦，真是一座____的“花城”。",
+      "example": "这座城市四季如春、繁花似锦，真是一座名副其实的“花城”。",
+      "translation": "이 도시는 사계절이 봄 같고 꽃이 만발하여 참으로 명실상부한 ‘꽃의 도시’이다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_ch_05",
+      "chengyu": "塞翁失马",
+      "pinyin": "sài wēng shī mǎ",
+      "meaning": "새옹지마 (인생의 길흉화복은 예측하기 어렵다)",
+      "sentence": "____，焉知非福，眼前暂时的失利或许正是转机的开始。",
+      "example": "塞翁失马，焉知非福，眼前暂时的失利或许正是转机的开始。",
+      "translation": "새옹지마라 하였거늘 어찌 화가 복이 될지 알겠는가, 눈앞의 일시적 실책이 전환점의 시작일지 모른다.",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk4_ch_06",
+      "chengyu": "爱不释手",
+      "pinyin": "ài bù shì shǒu",
+      "meaning": "너무 아끼고 좋아하여 손에서 놓지 못하다",
+      "sentence": "这本书情节引人入胜，让人读得____。",
+      "example": "这本书情节引人入胜，让人读得爱不释手。",
+      "translation": "이 책은 줄거리가 너무 흥미진진하여 손에서 놓을 수 없을 정도로 빠져들게 한다.",
+      "difficulty": "상"
+    }
+  ],
+  "colloc": [
+    {
+      "id": "hsk4_co_01",
+      "collocation": "积累经验",
+      "pinyin": "jīlěi jīngyàn",
+      "verb": "积累 (쌓다)",
+      "noun": "经验 (경험)",
+      "meaning": "경험을 쌓다",
+      "example": "通过实习他在一线踏踏实实地积累了宝贵的工作经验。"
+    },
+    {
+      "id": "hsk4_co_02",
+      "collocation": "克服困难",
+      "pinyin": "kèfú kùnnan",
+      "verb": "克服 (극복하다)",
+      "noun": "困难 (어려움)",
+      "meaning": "어려움을 극복하다",
+      "example": "团队展现出顽强的毅力克服重重困难完成了任务。"
+    },
+    {
+      "id": "hsk4_co_03",
+      "collocation": "坚持原则",
+      "pinyin": "jiānchí yuánzé",
+      "verb": "坚持 (견지하다)",
+      "noun": "原则 (원칙)",
+      "meaning": "원칙을 견지하다",
+      "example": "在处理重大公共利益问题时必须始终坚持公平原则。"
+    },
+    {
+      "id": "hsk4_co_04",
+      "collocation": "承担责任",
+      "pinyin": "chéngdān zérèn",
+      "verb": "承担 (부담하다)",
+      "noun": "责任 (책임)",
+      "meaning": "책임을 지다",
+      "example": "一名优秀的领导者必须在关键时刻勇于承担责任。"
+    },
+    {
+      "id": "hsk4_co_05",
+      "collocation": "表达感谢",
+      "pinyin": "biǎodá gǎnxiè",
+      "verb": "表达 (표현하다)",
+      "noun": "感谢 (감사)",
+      "meaning": "감사를 표현하다",
+      "example": "他向在危难中伸出援手的朋友们表达了由衷的感谢。"
+    },
+    {
+      "id": "hsk4_co_06",
+      "collocation": "树立信心",
+      "pinyin": "shùlì xìnxīn",
+      "verb": "树立 (세우다)",
+      "noun": "信心 (자신감)",
+      "meaning": "자신감을 세우다",
+      "example": "阶段性的微小胜利能够有效帮助初学者树立学习信心。"
+    }
+  ],
+  "cloze": [
+    {
+      "id": "hsk4_cl_01",
+      "difficulty": "하",
+      "sentence": "随着项目复杂度的提高，我们必须制定更加____的时间管理表。",
+      "answer": "严格",
+      "options": [
+        "严格",
+        "便宜",
+        "马虎",
+        "马虎"
+      ],
+      "pinyin": "yángé",
+      "collocation": "严格的管理 (엄격한 관리)",
+      "translation": "프로젝트의 복잡도가 높아짐에 따라 우리는 더욱 엄격한 시간 관리 일정을 수립해야 한다.",
+      "explanation": "기준이나 일정에 엄밀성을 요구할 때 호응하는 형용사는 '严格'입니다."
+    },
+    {
+      "id": "hsk4_cl_02",
+      "difficulty": "하",
+      "sentence": "面对突发状况，我们无论遇到多大阻力都绝不能放弃最初的____。",
+      "answer": "原则",
+      "options": [
+        "原则",
+        "雨伞",
+        "面馆",
+        "门票"
+      ],
+      "pinyin": "yuánzé",
+      "collocation": "坚持原则 (원칙을 고수하다)",
+      "translation": "돌발 상황에 직면하더라도 우리는 아무리 큰 저항을 겪든 처음의 원칙을 결코 포기해선 안 된다.",
+      "explanation": "포기하거나 굽히지 말아야 할 기본 규범은 '原则(원칙)'입니다."
+    },
+    {
+      "id": "hsk4_cl_03",
+      "difficulty": "중",
+      "sentence": "只要方法得当并不断摸索，就能在短时间内收到____的奇效。",
+      "answer": "事半功倍",
+      "options": [
+        "事半功倍",
+        "半途而废",
+        "自言自语",
+        "马马虎虎"
+      ],
+      "pinyin": "shì bàn gōng bèi",
+      "collocation": "事半功倍的效果 (배의 성과)",
+      "translation": "방법이 적절하고 끊임없이 모색한다면 짧은 시간 안에 반의 노력으로 배의 기적 같은 효과를 거둘 수 있다.",
+      "explanation": "효율성이 극대화됨을 칭송하는 사자성어는 '事半功倍'입니다."
+    },
+    {
+      "id": "hsk4_cl_04",
+      "difficulty": "중",
+      "sentence": "年轻人在步入职场初期，不要过分计较薪酬，更重要的是多____实战经验。",
+      "answer": "积累",
+      "options": [
+        "积累",
+        "破坏",
+        "借用",
+        "洗涤"
+      ],
+      "pinyin": "jīlěi",
+      "collocation": "积累经验 (경험을 축적하다)",
+      "translation": "젊은이들은 직장 생활 초기에 보수에 너무 연연하지 말고 실전 경험을 많이 쌓는 것이 더 중요하다.",
+      "explanation": "'경험/지식'을 차곡차곡 쌓아가는 동사는 '积累'입니다."
+    },
+    {
+      "id": "hsk4_cl_05",
+      "difficulty": "상",
+      "sentence": "经过专家团队历时半年的深入考察，这套方案最终得到了全票____。",
+      "answer": "通过",
+      "options": [
+        "通过",
+        "拒绝",
+        "消除",
+        "阻碍"
+      ],
+      "pinyin": "tōngguò",
+      "collocation": "全票通过 (전원 찬성 통과)",
+      "translation": "전문가 팀의 반년에 걸친 심층 고찰 끝에 이 방안은 마침내 전원 찬성으로 통과되었다.",
+      "explanation": "안건이나 방안이 심의를 통과할 때의 표현은 '通过'입니다."
+    },
+    {
+      "id": "hsk4_cl_06",
+      "difficulty": "상",
+      "sentence": "在谈判最____的阶段，沉着冷静往往比咄咄逼人更能化解僵局。",
+      "answer": "关键",
+      "options": [
+        "关键",
+        "普遍",
+        "逐渐",
+        "简单"
+      ],
+      "pinyin": "guānjiàn",
+      "collocation": "关键阶段 (결정적인 단계)",
+      "translation": "협상의 가장 결정적인 단계에서 침착함과 냉정함은 저돌적인 공세보다 교착 상태를 푸는 데 더 효과적이다.",
+      "explanation": "성패를 좌우하는 고비를 나타내는 어휘는 '关键(결정적/핵심)'입니다."
+    }
+  ],
+  "reading": [
+    {
+      "id": "hsk4_r_01",
+      "difficulty": "하",
+      "category": "독해 2부분 (기사/보고서)",
+      "title": "新能源汽车的产业跃升",
+      "passage": "近五年来，以纯电动汽车和插电式混合动力车为代表的新能源汽车在全球范围内迎来爆发式增长。\n动力电池技术的跨越式突破不仅将续航里程普遍提升到了六百公里以上，\n超快充技术的普及更极大缓解了广大车主的充电等待焦虑。\n随着全产业链规模效应的显现，新能源车的购车和全生命周期使用成本逐渐低于传统燃油车。\n绿色低碳出行正从一种前沿概念，真正蜕变为亿万大众触手可及的日常生活常态。",
+      "lineCount": 5,
+      "question": "根据这段话，动力电池技术的突破带来了什么？",
+      "options": [
+        "续航里程普遍提升至六百公里以上",
+        "燃油车销量翻倍增长",
+        "充电时间变得越来越漫长",
+        "汽车制造成本成倍攀升"
+      ],
+      "answer": "续航里程普遍提升至六百公里以上",
+      "keySentence": "将续航里程普遍提升到了六百公里以上",
+      "collocation": "提升续航里程",
+      "explanation": "본문에서 배터리 기술 돌파로 주행 거리가 600km 이상으로 크게 향상되었다고 명시했습니다.",
+      "translation": "최근 5년간 순수 전기차와 플러그인 하이브리드로 대표되는 신에너지 자동차가 전 세계적으로 폭발적인 성장을 맞이했다. 배터리 기술의 획기적 돌파는 주행거리를 보편적으로 600km 이상 끌어올렸을 뿐만 아니라 초급속 충전 기술의 보급으로 차주들의 충전 대기 불안을 크게 완화했다. 전 공급망의 규모의 경제가 나타남에 따라 신에너지차의 구매 및 전 주기 사용 비용은 점차 전통 내연기관차보다 낮아지고 있다. 친환경 저탄소 이동은 최첨단 개념에서 수억 대중이 체감하는 일상생활로 탈바꿈하고 있다."
+    },
+    {
+      "id": "hsk4_r_02",
+      "difficulty": "하",
+      "category": "독해 2부분 (기사/보고서)",
+      "title": "终身学习时代的知识焦虑",
+      "passage": "在人工智能技术日新月异的数字化时代，“终身学习”已不再是一句口号，而是职场人的生存刚需。\n面对浩如烟海的网络资讯与知识付费课程，许多人反而陷入了更为深重的知识焦虑之中。\n教育专家指出，真正的学习绝非走马观花式的资讯囤积，\n而在于构建属于自己的核心底层逻辑，并在实际工作场景中反复锤炼与应用。\n唯有将知识内化为解决实际问题的能力，方能化解焦虑，实现认知升维。",
+      "lineCount": 5,
+      "question": "教育专家认为真正的学习应该怎样？",
+      "options": [
+        "构建核心逻辑并在实践中内化应用",
+        "买完所有知识付费课程",
+        "每天囤积海量未经消化的资讯",
+        "完全拒绝接触人工智能新技术"
+      ],
+      "answer": "构建核心逻辑并在实践中内化应用",
+      "keySentence": "构建属于自己的核心底层逻辑，并在实际工作场景中反复锤炼与应用",
+      "collocation": "知识内化应用",
+      "explanation": "본문에서 진정한 학습은 자신만의 핵심 논리를 구축하고 실천에 내면화하는 것이라고 강조했습니다.",
+      "translation": "인공지능 기술이 하루가 다르게 발전하는 디지털 시대에 ‘평생학습’은 더 이상 구호가 아니라 직장인의 생존 필수요건이다. 방대한 인터넷 정보와 유료 지식 강좌 앞에서 많은 사람들은 오히려 더 깊은 지식 불안에 빠지곤 한다. 교육 전문가들은 진정한 학습이란 겉핥기식 정보 수집이 아니라 자신만의 핵심 저변 논리를 구축하고 실제 업무 현장에서 반복적으로 연마하고 응용하는 데 있다고 지적한다. 지식을 실제 문제를 해결하는 역량으로 내면화해야만 불안을 해소하고 인지적 도약을 이룰 수 있다."
+    },
+    {
+      "id": "hsk4_r_03",
+      "difficulty": "중",
+      "category": "독해 2부분 (기사/보고서)",
+      "title": "城市口袋公园的生态价值",
+      "passage": "“口袋公园”通常是指利用城市中心零星街角、旧建筑拆迁空地打造的小型绿色开放空间。\n这些散布在街巷小道间的小微绿地，面积虽小，却五脏俱全，兼具生态休憩、邻里社交与文化展示功能。\n它们不仅有效增加了高密度核心城区的绿化覆盖率，缓解了热岛效应，\n更为附近社区的老人和儿童提供了步行五分钟即可抵达的高品质户外活动场所。\n精细化的城市微更新，让现代水泥森林重新焕发出生机与温情。",
+      "lineCount": 5,
+      "question": "口袋公园给城市带来了什么好处？",
+      "options": [
+        "增加绿化覆盖率并提供便捷休憩空间",
+        "占用了大量优质工业用地",
+        "导致城市热岛效应进一步加剧",
+        "禁止居民进入活动"
+      ],
+      "answer": "增加绿化覆盖率并提供便捷休憩空间",
+      "keySentence": "有效增加了绿化覆盖率，为社区提供了步行五分钟可达的活动场所",
+      "collocation": "城市微更新",
+      "explanation": "본문에서 포켓 공원이 도심 녹지율을 높이고 주민들에게 도보 5분 거리의 휴식 공간을 제공한다고 했습니다.",
+      "translation": "‘포켓 파크(쌈지공원)’는 도심의 자투리 길모퉁이나 노후 철거 부지를 활용해 조성한 소형 녹색 개방 공간을 일컫는다. 골목길에 흩어진 이 작은 녹지들은 면적은 작지만 알차게 구성되어 생태 휴식, 이웃 간 소통, 문화 전시 기능을 두루 갖추고 있다. 이들은 고밀도 도심의 녹지율을 효과적으로 높여 열섬현상을 완화할 뿐 아니라 인근 노약자 및 아동에게 도보 5분 거리에 있는 고품질 야외 활동 공간을 제공한다. 섬세한 도시 미세 재생은 시멘트 숲에 생기와 온기를 되찾아 주고 있다."
+    },
+    {
+      "id": "hsk4_r_04",
+      "difficulty": "중",
+      "category": "독해 2부분 (기사/보고서)",
+      "title": "情绪价值与现代消费新趋势",
+      "passage": "当代年轻消费者的消费观念正在发生极其深刻的结构性转变。\n相比于过去仅仅看重商品的物理功能和性价比，今天的消费者更愿意为产品所附带的“情绪价值”买单。\n无论是能够带来陪伴感的情感类潮玩、解压治愈系文创，还是强调沉浸感与自我取悦的体验式文旅，\n都折射出大众在快节奏生活中对精神慰藉和心灵共鸣的强烈渴望。\n能够敏锐洞察并满足用户深层心理诉求的品牌，正在市场中抢占制高点。",
+      "lineCount": 5,
+      "question": "当代年轻消费者的消费观念有什么变化？",
+      "options": [
+        "更愿意为产品附带的情绪价值买单",
+        "只看重商品最基本的物理功能",
+        "坚决不买任何文创产品",
+        "完全拒绝参与沉浸式体验"
+      ],
+      "answer": "更愿意为产品附带的情绪价值买单",
+      "keySentence": "更愿意为产品所附带的“情绪价值”买单",
+      "collocation": "情绪价值",
+      "explanation": "본문에서 현대 소비자들이 제품의 정서적 가치(情绪价值)에 기꺼이 지갑을 연다고 명시했습니다.",
+      "translation": "현대 젊은 소비자들의 소비 관념은 매우 깊은 구조적 변화를 겪고 있다. 과거에 제품의 물리적 기능과 가성비만을 중시했던 것과 달리, 오늘날의 소비자들은 제품에 깃든 ‘정서적 가치(감정 가치)’에 기꺼이 대가를 지불한다. 위로와 동반감을 주는 아트토이, 힐링 문구류, 몰입감과 자아 만족을 강조하는 체험형 여행 모두 빠른 일상 속에서 대중이 정신적 위안과 마음의 공명을 강렬히 갈망함을 반영한다. 사용자의 깊은 심리적 요구를 예리하게 포착하는 브랜드가 시장을 선도하고 있다."
+    },
+    {
+      "id": "hsk4_r_05",
+      "difficulty": "상",
+      "category": "독해 2부분 (기사/보고서)",
+      "title": "团队心理安全感的制度构建",
+      "passage": "管理学研究表明，最具创新活力与抗压韧性的团队，其核心竞争力在于“心理安全感”。\n所谓心理安全感，是指团队成员确信团队不会因为自己提出大胆构想、质疑权威或承认失误而予以惩处。\n当领导者主动放低姿态、鼓励多元声音并把犯错视为探索必经阶段时，\n员工便能打破防御性沉默，最大程度激发出超越常规的创造潜能。\n制度化的包容与真诚平等的交流文化，是高绩效团队基业长青的无形护城河。",
+      "lineCount": 5,
+      "question": "根据文章，高绩效团队的核心特征是什么？",
+      "options": [
+        "拥有包容失误的心理安全感",
+        "不允许任何人提出质疑",
+        "严厉惩处每一个微小失误",
+        "完全由一人言堂决策"
+      ],
+      "answer": "拥有包容失误的心理安全感",
+      "keySentence": "最具创新活力与抗压韧性的团队，其核心竞争力在于“心理安全感”",
+      "collocation": "心理安全感",
+      "explanation": "본문에서 팀의 혁신 활력과 회복력의 핵심 경쟁력은 '심리적 안전감(心理安全感)'에 있다고 분석했습니다.",
+      "translation": "경영학 연구에 따르면 가장 높은 혁신 활력과 회복 탄력성을 지닌 팀의 핵심 경쟁력은 ‘심리적 안전감’에 있다. 심리적 안전감이란 팀원이 과감한 구상을 제안하거나 권위에 질문을 던지거나 실수를 인정하더라도 불이익을 받지 않을 것이라 확신하는 심리 상태를 뜻한다. 리더가 자세를 낮추고 다원적인 목소리를 장려하며 실수를 탐색의 필수 과정으로 여길 때, 구성원들은 방어적 침묵을 깨고 창의적 잠재력을 극대화할 수 있다. 제도화된 포용과 평등한 소통 문화는 장기 고성과 팀의 무형의 해자이다."
+    },
+    {
+      "id": "hsk4_r_06",
+      "difficulty": "상",
+      "category": "독해 2부분 (기사/보고서)",
+      "title": "跨文化传播中的共情力",
+      "passage": "在全球化语境下，跨文化国际交流往往面临着语言隔阂与文化背景差异的双重挑战。\n单向度地输出宏大叙事往往难以触动异国受众的心弦，甚至可能引发刻板印象的强化。\n唯有聚焦于全人类共同的情感纽带——如亲情陪伴、对美好生活的追求以及战胜逆境的坚韧，\n通过有温度的微观人物故事引发跨越国界的心灵共情，\n才能打破文化偏见与认知壁垒，构建起持久包容的文明对话桥梁。",
+      "lineCount": 5,
+      "question": "怎样才能有效进行跨文化交流？",
+      "options": [
+        "通过微观故事引发全人类的情感共鸣",
+        "单向灌输宏大叙事",
+        "刻意强化文化刻板印象",
+        "完全不顾及对方的文化感受"
+      ],
+      "answer": "通过微观故事引发全人类的情感共鸣",
+      "keySentence": "通过有温度的微观人物故事引发跨越国界的心灵共情",
+      "collocation": "跨文化共情",
+      "explanation": "본문에서 인간 공통의 감정에 초점을 맞추어 미시적 인물 스토리로 공감을 이끌어내야 한다고 했습니다.",
+      "translation": "세계화 환경 속에서 문화 간 국제 교류는 언어 장벽과 문화적 배경 차이라는 이중 도전에 자주 직면한다. 일방적으로 거대 담론만을 쏟아내는 것은 외국 청중의 심금을 울리기 어렵고 오히려 고정관념을 강화할 위험이 있다. 가족 간의 사랑, 더 나은 삶에 대한 염원, 역경을 이겨내는 끈기 등 인류 공통의 정서적 유대에 초점을 맞추고, 온기 있는 미시적 인물 이야기로 국경을 초월한 정서적 공감을 이끌어낼 때 비로소 문화적 편견과 장벽을 허물고 항구적인 문명 대화의 다리를 놓을 수 있다."
+    }
+  ],
+  "dictation": [
+    {
+      "id": "hsk4_d_01",
+      "sentence": "这个问题比我们最初想象的要复杂得多。",
+      "pinyin": "Zhè ge wèntí bǐ wǒmen zuìchū xiǎngxiàng de yào fùzá de duō.",
+      "translation": "이 문제는 우리가 처음에 생각했던 것보다 훨씬 더 복잡하다.",
+      "keyPoint": "비교문 수식 (比...要复杂得多)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_d_02",
+      "sentence": "钱包在公交车上不幸被小偷偷走了。",
+      "pinyin": "Qiánbāo zài gōngjiāochē shang bùxìng bèi xiǎotōu tōuzǒu le.",
+      "translation": "지갑을 버스 안에서 불행히도 도둑에게 도난당했다.",
+      "keyPoint": "피동문 (被 + 행위자 + 동사)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk4_d_03",
+      "sentence": "无论前方的路有多艰难，我们都绝不退缩。",
+      "pinyin": "Wúlùn qiánfāng de lù yǒu duō jiānnán, wǒmen dōu juébù tuìsuō.",
+      "translation": "앞길이 얼마나 험난하든 간에 우리는 결코 물러서지 않는다.",
+      "keyPoint": "무조건 구문 (无论...都...)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_d_04",
+      "sentence": "掌握了科学的方法，学习往往能收到事半功倍的效果。",
+      "pinyin": "Zhǎngwò le kēxué de fāngfǎ, xuéxí wǎngwǎng néng shōudào shìbàngōngbèi de xiàoguǒ.",
+      "translation": "과학적인 방법을 터득하면 학습은 종종 절반의 노력으로 배의 성과를 거둘 수 있다.",
+      "keyPoint": "성어 응용 (事半功倍的效果)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk4_d_05",
+      "sentence": "即使遇到再大的挫折，我们也不能放弃最初的梦想。",
+      "pinyin": "Jíshǐ yùdào zài dà de cuòzhé, wǒmen yě bù néng fàngqì zuìchū de mèngxiǎng.",
+      "translation": "설령 아무리 큰 좌절을 마주하더라도 우리는 처음의 꿈을 포기해선 안 된다.",
+      "keyPoint": "양보 복문 (即使...也...)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk4_d_06",
+      "sentence": "新方案经过各部门充分讨论后最终获得了全票通过。",
+      "pinyin": "Xīn fāng'àn jīngguò gè bùmén chōngfèn tǎolùn hòu zuìzhōng huòdé le quánpiào tōngguò.",
+      "translation": "새 방안은 각 부서의 충분한 논의를 거쳐 최종적으로 전원 찬성 통과되었다.",
+      "keyPoint": "복합 수식어 (最终获得全票通过)",
+      "difficulty": "상"
+    }
+  ]
+}

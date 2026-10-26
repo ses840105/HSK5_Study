@@ -1,0 +1,1071 @@
+{
+  "vocab": [
+    {
+      "id": "hsk1_v_01",
+      "word": "你好",
+      "pinyin": "nǐhǎo",
+      "pos": "감탄사",
+      "meaning": "안녕하세요",
+      "meaning_en": "hello; hi",
+      "meaning_zh": "你好",
+      "example": "你好！很高兴认识你。",
+      "translation": "안녕하세요! 만나서 반가워요.",
+      "translation_en": "Hello! Glad to meet you.",
+      "translation_zh": "你好！很高兴认识你。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_v_02",
+      "word": "谢谢",
+      "pinyin": "xièxie",
+      "pos": "동사",
+      "meaning": "감사하다, 고맙습니다",
+      "meaning_en": "to thank; thanks",
+      "meaning_zh": "感谢",
+      "example": "太谢谢你了，帮了我大忙。",
+      "translation": "정말 고마워요, 큰 도움이 되었어요.",
+      "translation_en": "Thank you so much, you helped me a lot.",
+      "translation_zh": "太谢谢你了，帮了我大忙。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_v_03",
+      "word": "爸爸",
+      "pinyin": "bàba",
+      "pos": "명사",
+      "meaning": "아빠, 아버지",
+      "meaning_en": "father; dad",
+      "meaning_zh": "爸爸；父亲",
+      "example": "我爸爸是一名医生。",
+      "translation": "우리 아버지는 의사이십니다.",
+      "translation_en": "My father is a doctor.",
+      "translation_zh": "我爸爸是一名医生。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_v_04",
+      "word": "妈妈",
+      "pinyin": "māma",
+      "pos": "명사",
+      "meaning": "엄마, 어머니",
+      "meaning_en": "mother; mom",
+      "meaning_zh": "妈妈；母亲",
+      "example": "妈妈做的菜非常好吃。",
+      "translation": "엄마가 만드신 요리는 매우 맛있다.",
+      "translation_en": "The food mom cooked is very delicious.",
+      "translation_zh": "妈妈做的菜非常好吃。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_v_05",
+      "word": "吃",
+      "pinyin": "chī",
+      "pos": "동사",
+      "meaning": "먹다",
+      "meaning_en": "to eat",
+      "meaning_zh": "吃",
+      "example": "我们一起去吃午饭吧。",
+      "translation": "우리 함께 점심 먹으러 가요.",
+      "translation_en": "Let's go eat lunch together.",
+      "translation_zh": "我们一起去吃午饭吧。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_v_06",
+      "word": "喝",
+      "pinyin": "hē",
+      "pos": "동사",
+      "meaning": "마시다",
+      "meaning_en": "to drink",
+      "meaning_zh": "喝",
+      "example": "你想喝茶还是喝水？",
+      "translation": "차 마실래요, 아니면 물 마실래요?",
+      "translation_en": "Do you want to drink tea or water?",
+      "translation_zh": "你想喝茶还是喝水？",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_v_07",
+      "word": "苹果",
+      "pinyin": "píngguǒ",
+      "pos": "명사",
+      "meaning": "사과",
+      "meaning_en": "apple",
+      "meaning_zh": "苹果",
+      "example": "桌子上有三个红苹果。",
+      "translation": "탁자 위에 빨간 사과 세 개가 있다.",
+      "translation_en": "There are three red apples on the table.",
+      "translation_zh": "桌子上有三个红苹果。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_v_08",
+      "word": "多少",
+      "pinyin": "duōshao",
+      "pos": "대명사",
+      "meaning": "얼마, 몇",
+      "meaning_en": "how many; how much",
+      "meaning_zh": "多少",
+      "example": "请问这本书多少钱？",
+      "translation": "말씀 좀 묻겠습니다, 이 책은 얼마인가요?",
+      "translation_en": "Excuse me, how much is this book?",
+      "translation_zh": "请问这本书多少钱？",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_v_09",
+      "word": "哪儿",
+      "pinyin": "nǎr",
+      "pos": "대명사",
+      "meaning": "어디",
+      "meaning_en": "where",
+      "meaning_zh": "哪里；何处",
+      "example": "你在哪儿工作？",
+      "translation": "당신은 어디에서 일하나요?",
+      "translation_en": "Where do you work?",
+      "translation_zh": "你在哪儿工作？",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_v_10",
+      "word": "睡觉",
+      "pinyin": "shuìjiào",
+      "pos": "동사",
+      "meaning": "잠을 자다",
+      "meaning_en": "to sleep",
+      "meaning_zh": "睡觉",
+      "example": "太晚了，我们快去睡觉吧。",
+      "translation": "너무 늦었으니 어서 자러 가자.",
+      "translation_en": "It's too late, let's go to sleep.",
+      "translation_zh": "太晚了，我们快去睡觉吧。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_v_11",
+      "word": "朋友",
+      "pinyin": "péngyou",
+      "pos": "명사",
+      "meaning": "친구",
+      "meaning_en": "friend",
+      "meaning_zh": "朋友",
+      "example": "他是我的中国朋友。",
+      "translation": "그는 나의 중국인 친구이다.",
+      "translation_en": "He is my Chinese friend.",
+      "translation_zh": "他是我的中国朋友。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_v_12",
+      "word": "医生",
+      "pinyin": "yīshēng",
+      "pos": "명사",
+      "meaning": "의사",
+      "meaning_en": "doctor",
+      "meaning_zh": "医生",
+      "example": "医生让我多喝热水多休息。",
+      "translation": "의사 선생님이 따뜻한 물을 많이 마시고 푹 쉬라고 하셨다.",
+      "translation_en": "The doctor told me to drink more hot water and rest.",
+      "translation_zh": "医生让我多喝热水多休息。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_v_13",
+      "word": "漂亮",
+      "pinyin": "piàoliang",
+      "pos": "형용사",
+      "meaning": "예쁘다, 아름답다",
+      "meaning_en": "pretty; beautiful",
+      "meaning_zh": "漂亮；美丽",
+      "example": "这件衣服真漂亮！",
+      "translation": "이 옷 정말 예쁘네요!",
+      "translation_en": "This piece of clothing is really pretty!",
+      "translation_zh": "这件衣服真漂亮！",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk1_v_14",
+      "word": "高兴",
+      "pinyin": "gāoxìng",
+      "pos": "형용사",
+      "meaning": "기쁘다, 즐겁다",
+      "meaning_en": "happy; glad",
+      "meaning_zh": "高兴；愉快",
+      "example": "今天大家在一起玩得很高兴。",
+      "translation": "오늘 다 함께 모여 즐겁게 놀았다.",
+      "translation_en": "Everyone had a great and happy time playing together today.",
+      "translation_zh": "今天大家在一起玩得很高兴。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk1_v_15",
+      "word": "认识",
+      "pinyin": "rènshi",
+      "pos": "동사",
+      "meaning": "알다, 인식하다",
+      "meaning_en": "to know; to recognize",
+      "meaning_zh": "认识",
+      "example": "很高兴能认识大家。",
+      "translation": "여러분들을 알게 되어 참 기쁩니다.",
+      "translation_en": "Very glad to meet and know everyone.",
+      "translation_zh": "很高兴能认识大家。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk1_v_16",
+      "word": "喜欢",
+      "pinyin": "xǐhuan",
+      "pos": "동사",
+      "meaning": "좋아하다",
+      "meaning_en": "to like",
+      "meaning_zh": "喜欢；喜爱",
+      "example": "我很喜欢学习汉语。",
+      "translation": "나는 중국어 공부하는 것을 매우 좋아한다.",
+      "translation_en": "I like studying Chinese very much.",
+      "translation_zh": "我很喜欢学习汉语。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk1_v_17",
+      "word": "商店",
+      "pinyin": "shāngdiàn",
+      "pos": "명사",
+      "meaning": "가게, 상점",
+      "meaning_en": "shop; store",
+      "meaning_zh": "商店；店铺",
+      "example": "学校旁边有一家很大的商店。",
+      "translation": "학교 옆에 아주 큰 상점이 하나 있다.",
+      "translation_en": "There is a large store next to the school.",
+      "translation_zh": "学校旁边有一家很大的商店。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk1_v_18",
+      "word": "天气",
+      "pinyin": "tiānqì",
+      "pos": "명사",
+      "meaning": "날씨",
+      "meaning_en": "weather",
+      "meaning_zh": "天气",
+      "example": "今天的天气非常好，晴空万里。",
+      "translation": "오늘 날씨가 매우 좋아 맑고 청명하다.",
+      "translation_en": "The weather today is very nice and clear.",
+      "translation_zh": "今天的天气非常好，晴空万里。",
+      "difficulty": "상"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk1_g_01",
+      "difficulty": "하",
+      "type": "basic_sentence",
+      "category": "是자문 (판단문)",
+      "category_en": "Shi-sentence (Judgement)",
+      "category_zh": "是字句（判断句）",
+      "question": "다음 중 올바른 판단문(是자문)은?",
+      "options": [
+        "我是韩国人。",
+        "我是不韩国人。",
+        "我不人是韩国。",
+        "人我韩国是。"
+      ],
+      "answer": 1,
+      "example": "我是韩国人。",
+      "translation": "저는 한국인입니다.",
+      "explanation": "중국어의 판단문은 [주어 + 是 + 명사] 구조이며, 부정은 是 앞에 '不'를 붙여 [不是]로 씁니다.",
+      "explanation_en": "The basic structure is [Subject + 是 + Noun]. Negation precedes 是 as [不是].",
+      "explanation_zh": "基本句式为：主语 + 是 + 宾语，否定形式为：主语 + 不是 + 宾语。"
+    },
+    {
+      "id": "hsk1_g_02",
+      "difficulty": "하",
+      "type": "particle",
+      "category": "의문조사 '吗'",
+      "category_en": "Question Particle 'ma'",
+      "category_zh": "疑问语气词‘吗’",
+      "question": "평서문을 일반의문문으로 바꿀 때 문장 끝에 붙이는 조사는?",
+      "options": [
+        "吗",
+        "呢",
+        "吧",
+        "了"
+      ],
+      "answer": 1,
+      "example": "你是老师吗？",
+      "translation": "당신은 선생님입니까?",
+      "explanation": "평서문 끝에 의문조사 '吗'를 붙이면 '예/아니오'로 답하는 일반의문문이 됩니다.",
+      "explanation_en": "Adding '吗' at the end of a statement turns it into a yes/no question.",
+      "explanation_zh": "在陈述句末尾加上疑问助词‘吗’即可构成是非疑问句。"
+    },
+    {
+      "id": "hsk1_g_03",
+      "difficulty": "하",
+      "type": "particle",
+      "category": "구조조사 '的' (소유/수식)",
+      "category_en": "Structural Particle 'de'",
+      "category_zh": "结构助词‘的’",
+      "question": "다음 중 '나의 책'을 바르게 표현한 것은?",
+      "options": [
+        "我的书",
+        "我了书",
+        "书的我",
+        "我的吗"
+      ],
+      "answer": 1,
+      "example": "这是我的书。",
+      "translation": "이것은 제 책입니다.",
+      "explanation": "명사나 대명사 뒤에 '的'를 붙여 소유나 수식을 나타냅니다. [수식어 + 的 + 중심어]",
+      "explanation_en": "[Modifier + 的 + Noun] expresses possession or modification.",
+      "explanation_zh": "定语 + 的 + 中心语，表示所属或领属关系。"
+    },
+    {
+      "id": "hsk1_g_04",
+      "difficulty": "중",
+      "type": "negation",
+      "category": "부정부사 '不'와 '没'의 구분",
+      "category_en": "Negation 'bu' vs 'mei'",
+      "category_zh": "否定词‘不’与‘没’的区别",
+      "question": "'가지 않았다 (과거/완료 부정)'에 들어갈 알맞은 부정부사는?\n\"昨天我____去学校。\"",
+      "options": [
+        "没",
+        "不",
+        "别",
+        "无"
+      ],
+      "answer": 1,
+      "example": "昨天我没去学校。",
+      "translation": "어제 나는 학교에 가지 않았다.",
+      "explanation": "과거의 동작 미발생이나 완료 부정에는 '没(有)'를 사용하고, 현재/미래의 의지나 습관 부정에는 '不'를 씁니다.",
+      "explanation_en": "'没(有)' negates past actions or completion; '不' negates present/future intentions.",
+      "explanation_zh": "‘没’用于否定过去发生或完成的动作，‘不’否定意愿或经常性动作。"
+    },
+    {
+      "id": "hsk1_g_05",
+      "difficulty": "중",
+      "type": "interrogative",
+      "category": "수량 의문사 '几'와 '多少'",
+      "category_en": "Quantifiers 'ji' vs 'duoshao'",
+      "category_zh": "疑问代词‘几’与‘多少’",
+      "question": "10 이하의 적은 수를 물을 때 주로 사용하는 의문사는?",
+      "options": [
+        "几",
+        "多少",
+        "哪个",
+        "怎么"
+      ],
+      "answer": 1,
+      "example": "你家有几口人？",
+      "translation": "당신의 가족은 몇 명인가요?",
+      "explanation": "'几'는 보통 10 미만의 수량을 물을 때 양사와 함께 쓰고, '多少'는 수량 제한 없이 양사 없이도 쓸 수 있습니다.",
+      "explanation_en": "'几' is used for small numbers (<10) with measure words; '多少' has no number limit.",
+      "explanation_zh": "‘几’通常询问10以内的数字且需带量词，‘多少’无数量限制。"
+    },
+    {
+      "id": "hsk1_g_06",
+      "difficulty": "중",
+      "type": "preposition",
+      "category": "개사 '在' (장소 표현)",
+      "category_en": "Preposition 'zai' (location)",
+      "category_zh": "介词‘在’引出地点",
+      "question": "\"나는 집에서 밥을 먹는다\"의 올바른 어순은?",
+      "options": [
+        "我在家吃饭。",
+        "我吃饭在家。",
+        "在家里我吃。",
+        "我饭吃在家。"
+      ],
+      "answer": 1,
+      "example": "我在家吃饭。",
+      "translation": "나는 집에서 밥을 먹는다.",
+      "explanation": "중국어에서 장소 부사구는 동사 앞에 위치합니다. [주어 + 在+장소 + 동사 + 목적어]",
+      "explanation_en": "Location phrases appear before the main verb: [Subject + 在 Location + Verb + Object].",
+      "explanation_zh": "状语置于谓语动词之前：主语 + 在地点 + 谓语动词 + 宾语。"
+    },
+    {
+      "id": "hsk1_g_07",
+      "difficulty": "상",
+      "type": "verb_series",
+      "category": "연동문 기초 (去+장소+동사)",
+      "category_en": "Pivotal/Serial Verb Sentence",
+      "category_zh": "连动句（去+地点+动作）",
+      "question": "\"상점에 가서 사과를 산다\"의 올바른 중국어 어순은?",
+      "options": [
+        "我去商店买苹果。",
+        "我买苹果去商店。",
+        "去商店我买苹果。",
+        "买苹果去商店我。"
+      ],
+      "answer": 1,
+      "example": "我去商店买苹果。",
+      "translation": "나는 상점에 가서 사과를 산다.",
+      "explanation": "한 주어가 시간 순서대로 일어나는 두 가지 동작을 할 때 연동문을 씁니다. [주어 + V1(去)+장소 + V2(买)+목적어]",
+      "explanation_en": "Serial verb construction follows chronological order: [去 + Place + Do something].",
+      "explanation_zh": "连动句按动作发生的时间先后顺序排列：去/来 + 地点 + 谓语动词。"
+    },
+    {
+      "id": "hsk1_g_08",
+      "difficulty": "상",
+      "type": "modal",
+      "category": "조동사 '想' (희망/의도)",
+      "category_en": "Auxiliary Verb 'xiang'",
+      "category_zh": "能愿动词‘想’",
+      "question": "\"차를 마시고 싶다\"를 표현할 때 적절한 문장은?",
+      "options": [
+        "我想喝茶。",
+        "我喝想茶。",
+        "我想是茶。",
+        "我茶想喝。"
+      ],
+      "answer": 1,
+      "example": "我想喝茶。",
+      "translation": "나는 차를 마시고 싶다.",
+      "explanation": "조동사 '想(~하고 싶다)'은 일반 동사 앞에 위치합니다. [주어 + 想 + 동사 + 목적어]",
+      "explanation_en": "Auxiliary verb '想' precedes the main verb to express desire.",
+      "explanation_zh": "能愿动词‘想’位于主动词前面，表示愿望。"
+    },
+    {
+      "id": "hsk1_g_09",
+      "difficulty": "상",
+      "type": "exclamation",
+      "category": "감탄 고정격식 '太...了'",
+      "category_en": "Structure 'tai...le'",
+      "category_zh": "固定句式‘太……了’",
+      "question": "\"정말 좋다!\"를 나타내는 알맞은 중국어 표현은?",
+      "options": [
+        "太好了！",
+        "太好吗？",
+        "好太了！",
+        "真好吗！"
+      ],
+      "answer": 1,
+      "example": "太好了！",
+      "translation": "정말 좋다!",
+      "explanation": "'太 + 형용사 + 了'는 감탄의 어기를 나타내며 '너무/정말 ~하다'라는 의미입니다.",
+      "explanation_en": "'太 + Adjective + 了' expresses an exclamatory praise or intensity.",
+      "explanation_zh": "‘太 + 形容词 + 了’常用于表示极度赞美或感叹语气。"
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk1_l_01",
+      "difficulty": "하",
+      "category": "듣기 1부분 (기초 인사)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "你好！请问李老师在办公室吗？"
+        },
+        {
+          "speaker": "女",
+          "text": "在的，请进吧。"
+        }
+      ],
+      "question": "李老师在哪儿？",
+      "options": [
+        "在办公室",
+        "在家里",
+        "在医院",
+        "在商店"
+      ],
+      "answer": "在办公室",
+      "audioText": "男：你好！请问李老师在办公室吗？ 女：在的，请进吧。 问：李老师在哪儿？",
+      "translation": "남: 안녕하세요! 이 선생님 사무실에 계신가요?\n여: 네 계십니다, 들어오세요.\n질문: 이 선생님은 어디에 계신가요?",
+      "tip": "'办公室(사무실)'과 '在(있다)'를 직접 듣고 일치하는 보기를 고릅니다."
+    },
+    {
+      "id": "hsk1_l_02",
+      "difficulty": "하",
+      "category": "듣기 1부분 (음식 주문)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "服务员，我想喝一杯热茶。"
+        },
+        {
+          "speaker": "男",
+          "text": "好的，请稍等。"
+        }
+      ],
+      "question": "女人想喝什么？",
+      "options": [
+        "热茶",
+        "凉水",
+        "咖啡",
+        "果汁"
+      ],
+      "answer": "热茶",
+      "audioText": "女：服务员，我想喝一杯热茶。 男：好的，请稍等。 问：女人想喝什么？",
+      "translation": "여: 종업원님, 따뜻한 차 한 잔 마시고 싶어요.\n남: 네, 잠시만 기다려 주세요.\n질문: 여자는 무엇을 마시고 싶어 하나요?",
+      "tip": "'想喝一杯热茶'에서 핵심 단어 '热茶(따뜻한 차)'를 파악합니다."
+    },
+    {
+      "id": "hsk1_l_03",
+      "difficulty": "하",
+      "category": "듣기 1부분 (시간 표현)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "现在几点了？我们该去吃饭了吗？"
+        },
+        {
+          "speaker": "女",
+          "text": "现在正好十二点，走吧。"
+        }
+      ],
+      "question": "现在几点了？",
+      "options": [
+        "十二点",
+        "十一点",
+        "一点",
+        "两点"
+      ],
+      "answer": "十二点",
+      "audioText": "男：现在几点了？我们该去吃饭了吗？ 女：现在正好十二点，走吧。 问：现在几点了？",
+      "translation": "남: 지금 몇 시야? 우리 밥 먹으러 가야 해?\n여: 지금 딱 12시야, 가자.\n질문: 지금 몇 시인가요?",
+      "tip": "'十二点(12시)'를 정확하게 청취합니다."
+    },
+    {
+      "id": "hsk1_l_04",
+      "difficulty": "중",
+      "category": "듣기 1부분 (가격 묻기)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "这个红苹果多少钱一个？"
+        },
+        {
+          "speaker": "男",
+          "text": "三块钱一个，很甜很好吃。"
+        }
+      ],
+      "question": "苹果多少钱一个？",
+      "options": [
+        "三块钱",
+        "两块钱",
+        "五块钱",
+        "十块钱"
+      ],
+      "answer": "三块钱",
+      "audioText": "女：这个红苹果多少钱一个？ 男：三块钱一个，很甜很好吃。 问：苹果多少钱一个？",
+      "translation": "여: 이 빨간 사과 하나에 얼마예요?\n남: 하나에 3위안이에요, 매우 달고 맛있어요.\n질문: 사과는 하나에 얼마인가요?",
+      "tip": "가격 단위 '三块钱(3위안)'을 정확히 포착합니다."
+    },
+    {
+      "id": "hsk1_l_05",
+      "difficulty": "중",
+      "category": "듣기 1부분 (가족 소개)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "照片里的这两个人是谁？"
+        },
+        {
+          "speaker": "女",
+          "text": "左边是我爸爸，右边是我哥哥。"
+        }
+      ],
+      "question": "照片左边的人是谁？",
+      "options": [
+        "女人的爸爸",
+        "女人的哥哥",
+        "女人的老师",
+        "女人的同学"
+      ],
+      "answer": "女人的爸爸",
+      "audioText": "男：照片里的这两个人是谁？ 女：左边是我爸爸，右边是我哥哥。 问：照片左边的人是谁？",
+      "translation": "남: 사진 속의 이 두 사람은 누구야?\n여: 왼쪽은 우리 아빠이고, 오른쪽은 우리 오빠야.\n질문: 사진 왼쪽의 사람은 누구인가요?",
+      "tip": "방위사 '左边(왼쪽)' 뒤에 나온 '爸爸'를 연결합니다."
+    },
+    {
+      "id": "hsk1_l_06",
+      "difficulty": "중",
+      "category": "듣기 1부분 (상점 쇼핑)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "王先生，你去哪儿？"
+        },
+        {
+          "speaker": "男",
+          "text": "我去前面的商店买一些水果。"
+        }
+      ],
+      "question": "男的要去买什么？",
+      "options": [
+        "水果",
+        "衣服",
+        "书本",
+        "电脑"
+      ],
+      "answer": "水果",
+      "audioText": "女：王先生，你去哪儿？ 男：我去前面的商店买一些水果。 问：男的要去买什么？",
+      "translation": "여: 왕 선생님, 어디 가세요?\n남: 저 앞 상점에 가서 과일 좀 사려고요.\n질문: 남자는 무엇을 사러 가나요?",
+      "tip": "'买一些水果'에서 '水果(과일)'를 듣고 고릅니다."
+    },
+    {
+      "id": "hsk1_l_07",
+      "difficulty": "상",
+      "category": "듣기 1부분 (병원 진료)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "医生，我今天觉得身体很不舒服，头很疼。"
+        },
+        {
+          "speaker": "女",
+          "text": "别担心，吃了药多睡一会儿就好了。"
+        }
+      ],
+      "question": "男的怎么了？",
+      "options": [
+        "身体不舒服",
+        "想买新衣服",
+        "想吃苹果",
+        "找不到朋友"
+      ],
+      "answer": "身体不舒服",
+      "audioText": "男：医生，我今天觉得身体很不舒服，头很疼。 女：别担心，吃了药多睡一会儿就好了。 问：男的怎么了？",
+      "translation": "남: 의사 선생님, 오늘 몸이 너무 안 좋고 머리가 많이 아파요.\n여: 걱정 마세요, 약 드시고 좀 더 주무시면 괜찮아질 거예요.\n질문: 남자는 왜 그런가요?",
+      "tip": "'身体很不舒服(몸이 매우 불편하다)' 표현을 파악합니다."
+    },
+    {
+      "id": "hsk1_l_08",
+      "difficulty": "상",
+      "category": "듣기 1부분 (취미 선호)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "明天星期六，你喜欢看电影还是去踢足球？"
+        },
+        {
+          "speaker": "男",
+          "text": "我不太喜欢运动，我们去看电影吧。"
+        }
+      ],
+      "question": "男的明天想做什么？",
+      "options": [
+        "看电影",
+        "踢足球",
+        "去商店",
+        "去医院"
+      ],
+      "answer": "看电影",
+      "audioText": "女：明天星期六，你喜欢看电影还是去踢足球？ 男：我不太喜欢运动，我们去看电影吧。 问：男的明天想做什么？",
+      "translation": "여: 내일 토요일인데, 너 영화 보는 게 좋아 축구 하는 게 좋아?\n남: 난 운동은 별로 안 좋아해, 우리 영화 보러 가자.\n질문: 남자는 내일 무엇을 하고 싶어 하나요?",
+      "tip": "운동을 좋아하지 않는다고 한 뒤 선택한 '看电影(영화 보기)'이 정답입니다."
+    },
+    {
+      "id": "hsk1_l_09",
+      "difficulty": "상",
+      "category": "듣기 1부분 (날씨 약속)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "外面下大雨了，我们今天别去公园了。"
+        },
+        {
+          "speaker": "女",
+          "text": "好的，那我们在家里看书、听音乐吧。"
+        }
+      ],
+      "question": "外面的天气怎么样？",
+      "options": [
+        "下大雨",
+        "是晴天",
+        "很热",
+        "刮大风"
+      ],
+      "answer": "下大雨",
+      "audioText": "男：外面下大雨了，我们今天别去公园了。 女：好的，那我们在家里看书、听音乐吧。 问：外面的天气怎么样？",
+      "translation": "남: 밖에 큰비가 오네, 우리 오늘 공원 가지 말자.\n여: 그래, 그럼 집에서 책 보고 음악 듣자.\n질문: 바깥 날씨는 어떤가요?",
+      "tip": "'外面下大雨了(밖에 큰비가 내린다)'를 듣고 고릅니다."
+    }
+  ],
+  "chengyu": [
+    {
+      "id": "hsk1_ch_01",
+      "chengyu": "一心一意",
+      "pinyin": "yì xīn yí yì",
+      "meaning": "한마음 한뜻으로 오직 하나에만 열중하다",
+      "sentence": "他学习汉语非常认真，总是____。",
+      "example": "他学习汉语非常认真，总是一心一意。",
+      "translation": "그는 중국어를 매우 진지하게 배우며 언제나 한마음으로 집중한다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_ch_02",
+      "chengyu": "自由自在",
+      "pinyin": "zì yóu zì zài",
+      "meaning": "자유자재로 유유자적하다",
+      "sentence": "小鸟在蓝天上____地飞着。",
+      "example": "小鸟在蓝天上自由自在地飞着。",
+      "translation": "작은 새가 푸른 하늘에서 자유자재로 날고 있다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_ch_03",
+      "chengyu": "十全十美",
+      "pinyin": "shí quán shí měi",
+      "meaning": "더없이 완전무결하다",
+      "sentence": "世界上没有____的人，大家都有缺点。",
+      "example": "世界上没有十全十美的人，大家都有缺点。",
+      "translation": "세상에 완전무결한 사람은 없으며 누구나 결점이 있다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_ch_04",
+      "chengyu": "欢天喜地",
+      "pinyin": "huān tiān xǐ dì",
+      "meaning": "하늘과 땅이 춤추듯 대단히 기뻐하다",
+      "sentence": "听到放假的消息，大家____地笑了。",
+      "example": "听到放假的消息，大家欢天喜地地笑了。",
+      "translation": "방학 소식을 듣고 모두가 대단히 기뻐하며 웃었다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_ch_05",
+      "chengyu": "不三不四",
+      "pinyin": "bù sān bú sì",
+      "meaning": "이도 저도 아니다, 불량하다",
+      "sentence": "不要跟那些____的人一起玩。",
+      "example": "不要跟那些不三不四的人一起玩。",
+      "translation": "그런 불량한 사람들과 함께 어울리지 마라.",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk1_ch_06",
+      "chengyu": "一干二净",
+      "pinyin": "yì gān èr jìng",
+      "meaning": "아주 깨끗이, 남김없이",
+      "sentence": "他把桌子上的饭菜吃得____。",
+      "example": "他把桌子上的饭菜吃得一干二净。",
+      "translation": "그는 식탁 위의 음식을 깨끗이 다 먹어 치웠다.",
+      "difficulty": "상"
+    }
+  ],
+  "colloc": [
+    {
+      "id": "hsk1_co_01",
+      "collocation": "喝热水",
+      "pinyin": "hē rèshuǐ",
+      "verb": "喝 (마시다)",
+      "noun": "热水 (따뜻한 물)",
+      "meaning": "따뜻한 물을 마시다",
+      "example": "身体不舒服的时候多喝热水。"
+    },
+    {
+      "id": "hsk1_co_02",
+      "collocation": "吃米饭",
+      "pinyin": "chī mǐfàn",
+      "verb": "吃 (먹다)",
+      "noun": "米饭 (쌀밥)",
+      "meaning": "쌀밥을 먹다",
+      "example": "中国人喜欢吃米饭。"
+    },
+    {
+      "id": "hsk1_co_03",
+      "collocation": "看书",
+      "pinyin": "kàn shū",
+      "verb": "看 (보다/읽다)",
+      "noun": "书 (책)",
+      "meaning": "책을 읽다",
+      "example": "他在图书馆安静地看书。"
+    },
+    {
+      "id": "hsk1_co_04",
+      "collocation": "买苹果",
+      "pinyin": "mǎi píngguǒ",
+      "verb": "买 (사다)",
+      "noun": "苹果 (사과)",
+      "meaning": "사과를 사다",
+      "example": "我去水果店买苹果。"
+    },
+    {
+      "id": "hsk1_co_05",
+      "collocation": "说汉语",
+      "pinyin": "shuō hànyǔ",
+      "verb": "说 (말하다)",
+      "noun": "汉语 (중국어)",
+      "meaning": "중국어를 말하다",
+      "example": "老师鼓励我们多说汉语。"
+    },
+    {
+      "id": "hsk1_co_06",
+      "collocation": "听音乐",
+      "pinyin": "tīng yīnyuè",
+      "verb": "听 (듣다)",
+      "noun": "音乐 (음악)",
+      "meaning": "음악을 듣다",
+      "example": "睡觉前我喜欢听音乐。"
+    }
+  ],
+  "cloze": [
+    {
+      "id": "hsk1_cl_01",
+      "difficulty": "하",
+      "sentence": "我和朋友一起去食堂____午饭。",
+      "answer": "吃",
+      "options": [
+        "吃",
+        "喝",
+        "看",
+        "说"
+      ],
+      "pinyin": "chī",
+      "collocation": "吃饭 (밥을 먹다)",
+      "translation": "나와 친구는 함께 식당에 가서 점심밥을 먹는다.",
+      "explanation": "'밥(午饭)'과 호응하는 동사는 '吃(먹다)'입니다."
+    },
+    {
+      "id": "hsk1_cl_02",
+      "difficulty": "하",
+      "sentence": "请问这件衣服____钱？",
+      "answer": "多少",
+      "options": [
+        "多少",
+        "几",
+        "什么",
+        "怎么"
+      ],
+      "pinyin": "duōshao",
+      "collocation": "多少钱 (얼마인가요)",
+      "translation": "말씀 좀 묻겠습니다, 이 옷은 얼마인가요?",
+      "explanation": "가격을 물을 때 사용하는 정형화된 표현은 '多少钱'입니다."
+    },
+    {
+      "id": "hsk1_cl_03",
+      "difficulty": "중",
+      "sentence": "外面下雨了，你一定要带好____。",
+      "answer": "雨伞",
+      "options": [
+        "雨伞",
+        "手机",
+        "苹果",
+        "电脑"
+      ],
+      "pinyin": "yǔsǎn",
+      "collocation": "带雨伞 (우산을 챙기다)",
+      "translation": "밖에 비가 오니, 너 꼭 우산을 잘 챙겨라.",
+      "explanation": "비가 올 때 챙겨야 할 물건은 '雨伞(우산)'입니다."
+    },
+    {
+      "id": "hsk1_cl_04",
+      "difficulty": "중",
+      "sentence": "他在中国生活了一年，汉语说得非常____。",
+      "answer": "好",
+      "options": [
+        "好",
+        "大",
+        "小",
+        "多"
+      ],
+      "pinyin": "hǎo",
+      "collocation": "说得很好 (말을 매우 잘하다)",
+      "translation": "그는 중국에서 1년 동안 살아서 중국어를 아주 잘한다.",
+      "explanation": "언어 구사 능력이 뛰어남을 나타내는 상태보어는 '好'입니다."
+    },
+    {
+      "id": "hsk1_cl_05",
+      "difficulty": "상",
+      "sentence": "今天大家都聚在一起，感到特别____。",
+      "answer": "高兴",
+      "options": [
+        "高兴",
+        "便宜",
+        "睡觉",
+        "漂亮"
+      ],
+      "pinyin": "gāoxìng",
+      "collocation": "特别高兴 (특별히 기쁘다)",
+      "translation": "오늘 모두 한자리에 모여서 특히 기쁘다.",
+      "explanation": "모여서 느끼는 감정을 나타내는 형용사는 '高兴(기쁘다)'입니다."
+    },
+    {
+      "id": "hsk1_cl_06",
+      "difficulty": "상",
+      "sentence": "我妈妈在医院工作，她是一名优秀的____。",
+      "answer": "医生",
+      "options": [
+        "医生",
+        "学生",
+        "水果",
+        "星期"
+      ],
+      "pinyin": "yīshēng",
+      "collocation": "优秀的医生 (우수한 의사)",
+      "translation": "우리 엄마는 병원에서 일하시며, 훌륭한 의사이시다.",
+      "explanation": "병원에서 일하는 직업을 나타내는 명사는 '医生(의사)'입니다."
+    }
+  ],
+  "reading": [
+    {
+      "id": "hsk1_r_01",
+      "difficulty": "하",
+      "category": "독해 2부분 (기초 일치)",
+      "title": "我的中国朋友",
+      "passage": "我有一个中国朋友，他的名字叫大卫。\n大卫今年二十岁，在北京大学学习英语。\n他很喜欢吃中国菜，也喜欢看中国电影。\n每个周末我们都一起去公园散步聊天。\n有这样一个朋友，我觉得非常高兴。",
+      "lineCount": 5,
+      "question": "根据这段话，大卫在哪儿上学？",
+      "options": [
+        "北京大学",
+        "医院",
+        "商店",
+        "火车站"
+      ],
+      "answer": "北京大学",
+      "keySentence": "大卫今年二十岁，在北京大学学习英语",
+      "collocation": "在北京大学学习",
+      "explanation": "본문 두 번째 줄에서 '在北京大学学习英语'라고 명시되어 있으므로 '北京大学'가 정답입니다.",
+      "translation": "내게는 다위라는 중국인 친구가 있다. 다위는 올해 스무 살이고 베이징대학교에서 영어를 배운다. 그는 중국 요리 먹는 것을 아주 좋아하고 중국 영화 보는 것도 좋아한다. 주말마다 우리는 함께 공원에 가서 산책하고 이야기를 나눈다. 이런 친구가 있어 참 기쁘다."
+    },
+    {
+      "id": "hsk1_r_02",
+      "difficulty": "하",
+      "category": "독해 2부분 (기초 일치)",
+      "title": "周末的生活",
+      "passage": "今天是星期天，天气很晴朗，没有风。\n我和妈妈一起去超市买了很多东西。\n我们买了三个红苹果、两瓶牛奶和一些面包。\n回到家以后，妈妈为全家人做了丰盛的午餐。\n我们一家人坐在一起，过得很开心。",
+      "lineCount": 5,
+      "question": "他们去超市买了什么水果？",
+      "options": [
+        "红苹果",
+        "香蕉",
+        "西瓜",
+        "草莓"
+      ],
+      "answer": "红苹果",
+      "keySentence": "我们买了三个红苹果",
+      "collocation": "买红苹果",
+      "explanation": "본문에서 '三个红苹果(빨간 사과 세 개)'를 샀다고 명시되어 있습니다.",
+      "translation": "오늘은 일요일이다. 날씨가 맑고 바람이 없다. 나와 엄마는 마트에 가서 많은 물건을 샀다. 우리는 빨간 사과 세 개, 우유 두 병과 빵을 좀 샀다. 집에 돌아온 후 엄마는 가족들을 위해 풍성한 점심을 만들어 주셨다. 온 가족이 함께 모여 즐겁게 보냈다."
+    },
+    {
+      "id": "hsk1_r_03",
+      "difficulty": "중",
+      "category": "독해 2부분 (기초 일치)",
+      "title": "学习汉语的乐趣",
+      "passage": "我学习汉语已经三个月了。\n虽然汉字有点儿难写，但是我觉得汉语很有趣。\n我的汉语老师姓王，她每天都热情地教我们发音。\n现在我已经认识了一百多个汉字，也能和中国朋友简单交谈了。\n我希望明年能去中国旅游。",
+      "lineCount": 5,
+      "question": "关于作者，可以知道什么？",
+      "options": [
+        "觉得汉语很有趣",
+        "不认识汉字",
+        "不喜欢王老师",
+        "在中国生活了三年"
+      ],
+      "answer": "觉得汉语很有趣",
+      "keySentence": "但是我觉得汉语很有趣",
+      "collocation": "汉语很有趣",
+      "explanation": "본문에서 '但是我觉得汉语很有趣'라고 언급했으므로 '觉得汉语很有趣'가 정답입니다.",
+      "translation": "나는 중국어를 배운 지 벌써 3개월이 되었다. 비록 한자가 쓰기 좀 어렵지만, 중국어는 매우 흥미롭다고 생각한다. 내 중국어 선생님은 왕 씨인데 매일 열정적으로 우리에게 발음을 가르쳐 주신다. 지금 나는 이미 100개가 넘는 한자를 알게 되었고 중국 친구와 간단한 대화도 나눌 수 있다. 내년에 중국으로 여행 갈 수 있기를 희망한다."
+    },
+    {
+      "id": "hsk1_r_04",
+      "difficulty": "중",
+      "category": "독해 2부분 (기초 일치)",
+      "title": "可爱的小猫",
+      "passage": "我的家里有一只小猫，它的名字叫雪球。\n雪球浑身都是白色的毛，非常漂亮。\n它最喜欢在窗台旁边晒太阳和睡觉。\n每天我放学回到家，它都会跑过来和我玩。\n雪球就像我的家人一样，我非常喜欢它。",
+      "lineCount": 5,
+      "question": "雪球是一只什么动物？",
+      "options": [
+        "小猫",
+        "小狗",
+        "小鸟",
+        "小鱼"
+      ],
+      "answer": "小猫",
+      "keySentence": "我的家里有一只小猫，它的名字叫雪球",
+      "collocation": "一只小猫",
+      "explanation": "본문 첫 문장에서 '有一只小猫(작은 고양이 한 마리가 있다)'라고 하였습니다.",
+      "translation": "우리 집에는 작은 고양이 한 마리가 있는데, 이름은 쉐추(눈뭉치)이다. 쉐추는 온몸이 하얀 털로 덮여 있어 매우 예쁘다. 녀석은 창가 옆에서 햇볕을 쬐고 낮잠 자는 것을 가장 좋아한다. 매일 내가 방과 후 집에 돌아오면 녀석은 달려와 나와 논다. 쉐추는 내 가족 같아서 아주 좋아한다."
+    },
+    {
+      "id": "hsk1_r_05",
+      "difficulty": "상",
+      "category": "독해 2부분 (기초 일치)",
+      "title": "健康的生活习惯",
+      "passage": "保持健康的身体对每个人来说都非常重要。\n每天早晨坚持早起，喝一杯温开水，对肠胃很有好处。\n吃饭要规律，多吃新鲜的蔬菜和水果，少吃太甜太咸的食物。\n晚上不要熬夜，保证八个小时的高质量睡眠。\n每天保持愉快的心情，身体自然就会越来越好。",
+      "lineCount": 5,
+      "question": "为了身体健康，文章建议每天早晨做什么？",
+      "options": [
+        "喝一杯温开水",
+        "吃很多甜食",
+        "很晚才起床",
+        "去商店买衣服"
+      ],
+      "answer": "喝一杯温开水",
+      "keySentence": "喝一杯温开水，对肠胃很有好处",
+      "collocation": "喝一杯温开水",
+      "explanation": "본문에서 아침에 '喝一杯温开水(따뜻한 물 한 잔 마시기)'를 권장하고 있습니다.",
+      "translation": "건강한 신체를 유지하는 것은 누구에게나 매우 중요하다. 매일 아침 일찍 일어나 따뜻한 물 한 잔을 마시는 것은 위장에 매우 좋다. 식사는 규칙적으로 하고 신선한 야채와 과일을 많이 먹으며 너무 달거나 짠 음식은 적게 먹어야 한다. 밤에는 밤을 새우지 말고 8시간의 양질의 수면을 보장해야 한다. 매일 유쾌한 기분을 유지하면 몸은 자연스럽게 좋아질 것이다."
+    },
+    {
+      "id": "hsk1_r_06",
+      "difficulty": "상",
+      "category": "독해 2부분 (기초 일치)",
+      "title": "美丽的北京四季",
+      "passage": "北京是一座历史悠久且充满活力的城市。\n春天的时候，各大公园的花朵盛开，非常漂亮。\n夏天天气比较热，人们喜欢去颐和园划船乘凉。\n秋天是北京最好的季节，天高气爽，树叶变黄。\n冬天虽然寒冷，但下雪后的故宫更是美丽迷人。",
+      "lineCount": 5,
+      "question": "根据这段话，北京最好的季节是哪个？",
+      "options": [
+        "秋天",
+        "春天",
+        "夏天",
+        "冬天"
+      ],
+      "answer": "秋天",
+      "keySentence": "秋天是北京最好的季节",
+      "collocation": "最好的季节",
+      "explanation": "본문에서 '秋天是北京最好的季节(가을은 베이징의 가장 좋은 계절이다)'라고 명시했습니다.",
+      "translation": "베이징은 유구한 역사와 활력이 넘치는 도시이다. 봄에는 주요 공원의 꽃들이 만개하여 매우 예쁘다. 여름에는 날씨가 비교적 더워 사람들은 이화원에 가서 배를 타고 더위를 식힌다. 가을은 베이징에서 가장 좋은 계절로 하늘이 높고 공기가 상쾌하며 나뭇잎이 노랗게 변한다. 겨울은 비록 춥지만 눈 내린 후의 고궁은 더욱 아름답고 매혹적이다."
+    }
+  ],
+  "dictation": [
+    {
+      "id": "hsk1_d_01",
+      "sentence": "你好，很高兴认识你。",
+      "pinyin": "Nǐhǎo, hěn gāoxìng rènshi nǐ.",
+      "translation": "안녕하세요, 만나서 반갑습니다.",
+      "keyPoint": "기초 인사 표현 (你好 + 高兴 + 认识)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_d_02",
+      "sentence": "今天天气非常好。",
+      "pinyin": "Jīntiān tiānqì fēicháng hǎo.",
+      "translation": "오늘 날씨가 매우 좋습니다.",
+      "keyPoint": "날씨 표현 (今天 + 天气 + 很好)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk1_d_03",
+      "sentence": "桌子上有三个红苹果。",
+      "pinyin": "Zhuōzi shang yǒu sān ge hóng píngguǒ.",
+      "translation": "탁자 위에 빨간 사과 세 개가 있습니다.",
+      "keyPoint": "존현문/수량사 (桌子上 + 有 + 苹果)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_d_04",
+      "sentence": "我想去商店买东西。",
+      "pinyin": "Wǒ xiǎng qù shāngdiàn mǎi dōngxi.",
+      "translation": "나는 상점에 가서 물건을 사고 싶습니다.",
+      "keyPoint": "연동문 기초 (想 + 去商店 + 买东西)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk1_d_05",
+      "sentence": "请问这本书多少钱？",
+      "pinyin": "Qǐngwèn zhè běn shū duōshao qián?",
+      "translation": "말씀 좀 묻겠습니다, 이 책은 얼마인가요?",
+      "keyPoint": "가격 문의 (请问 + 多少钱)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk1_d_06",
+      "sentence": "医生让我多喝热水多休息。",
+      "pinyin": "Yīshēng ràng wǒ duō hē rèshuǐ duō xiūxi.",
+      "translation": "의사 선생님이 따뜻한 물을 많이 마시고 푹 쉬라고 하셨습니다.",
+      "keyPoint": "겸어문 기초 (让 + 多喝热水)",
+      "difficulty": "상"
+    }
+  ]
+}

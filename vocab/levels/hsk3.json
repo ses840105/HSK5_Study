@@ -1,0 +1,1071 @@
+{
+  "vocab": [
+    {
+      "id": "hsk3_v_01",
+      "word": "决定",
+      "pinyin": "juédìng",
+      "pos": "동사/명사",
+      "meaning": "결정하다, 결정",
+      "meaning_en": "to decide; decision",
+      "meaning_zh": "决定",
+      "example": "经过深思熟虑，他做出了最后的决定。",
+      "translation": "심사숙고 끝에 그는 최종 결정을 내렸다.",
+      "translation_en": "After careful consideration, he made the final decision.",
+      "translation_zh": "经过深思熟虑，他做出了最后的决定。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_v_02",
+      "word": "解决",
+      "pinyin": "jiějué",
+      "pos": "동사",
+      "meaning": "해결하다",
+      "meaning_en": "to solve; to resolve",
+      "meaning_zh": "解决",
+      "example": "大家齐心协力共同解决了这个难题。",
+      "translation": "모두가 힘을 합쳐 이 난제를 함께 해결했다.",
+      "translation_en": "Everyone worked together to solve this difficult problem.",
+      "translation_zh": "大家齐心协力共同解决了这个难题。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_v_03",
+      "word": "环境",
+      "pinyin": "huánjìng",
+      "pos": "명사",
+      "meaning": "환경",
+      "meaning_en": "environment; surroundings",
+      "meaning_zh": "环境",
+      "example": "保护生态环境是我们每个人的责任。",
+      "translation": "생태 환경을 보호하는 것은 우리 모두의 책임이다.",
+      "translation_en": "Protecting the ecological environment is everyone's responsibility.",
+      "translation_zh": "保护生态环境是我们每个人的责任。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_v_04",
+      "word": "经理",
+      "pinyin": "jīnglǐ",
+      "pos": "명사",
+      "meaning": "매니저, 지배인",
+      "meaning_en": "manager",
+      "meaning_zh": "经理",
+      "example": "李经理正在会议室和客户谈合作。",
+      "translation": "이 매니저는 회의실에서 고객과 협력을 논의하고 있다.",
+      "translation_en": "Manager Li is discussing cooperation with clients in the meeting room.",
+      "translation_zh": "李经理正在会议室和客户谈合作。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_v_05",
+      "word": "参加",
+      "pinyin": "cānjiā",
+      "pos": "동사",
+      "meaning": "참가하다, 참여하다",
+      "meaning_en": "to participate; to attend",
+      "meaning_zh": "参加",
+      "example": "下个月我将参加全国大学生演讲比赛。",
+      "translation": "다음 달 나는 전국 대학생 스피치 대회에 참가할 예정이다.",
+      "translation_en": "Next month I will participate in the national speech competition.",
+      "translation_zh": "下个月我将参加全国大学生演讲比赛。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_v_06",
+      "word": "热情",
+      "pinyin": "rèqíng",
+      "pos": "형용사/명사",
+      "meaning": "열정적이다, 친절하다",
+      "meaning_en": "enthusiastic; warm",
+      "meaning_zh": "热情",
+      "example": "当地居民非常热情，给我们提供了很多指引。",
+      "translation": "현지 주민들이 매우 친절하여 우리에게 많은 안내를 해 주었다.",
+      "translation_en": "Local residents were very enthusiastic and provided us with many directions.",
+      "translation_zh": "当地居民非常热情，给我们提供了很多指引。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_v_07",
+      "word": "遇到",
+      "pinyin": "yùdào",
+      "pos": "동사",
+      "meaning": "마주치다, 겪다",
+      "meaning_en": "to encounter; to run into",
+      "meaning_zh": "遇到",
+      "example": "在学习过程中遇到困难是常有的事。",
+      "translation": "공부하는 과정에서 어려움을 마주치는 것은 흔한 일이다.",
+      "translation_en": "Encountering difficulties during study is common.",
+      "translation_zh": "在学习过程中遇到困难是常有的事。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_v_08",
+      "word": "搬家",
+      "pinyin": "bānjiā",
+      "pos": "동사",
+      "meaning": "이사하다",
+      "meaning_en": "to move house",
+      "meaning_zh": "搬家",
+      "example": "我们打算下个星期六搬到新房子去。",
+      "translation": "우리는 다음 주 토요일에 새집으로 이사할 계획이다.",
+      "translation_en": "We plan to move to the new house next Saturday.",
+      "translation_zh": "我们打算下个星期六搬到新房子去。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_v_09",
+      "word": "照顾",
+      "pinyin": "zhàogù",
+      "pos": "동사",
+      "meaning": "돌보다, 보살피다",
+      "meaning_en": "to look after; to take care of",
+      "meaning_zh": "照顾",
+      "example": "母亲无微不至地照顾着生病的孩子。",
+      "translation": "어머니는 아픈 아이를 지극정성으로 보살피셨다.",
+      "translation_en": "The mother took meticulous care of the sick child.",
+      "translation_zh": "母亲无微不至地照顾着生病的孩子。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_v_10",
+      "word": "方便",
+      "pinyin": "fāngbiàn",
+      "pos": "형용사",
+      "meaning": "편리하다",
+      "meaning_en": "convenient",
+      "meaning_zh": "方便",
+      "example": "住在地铁站附近出行非常方便。",
+      "translation": "지하철역 근처에 살면 이동하기가 매우 편리하다.",
+      "translation_en": "Living near the subway station makes traveling very convenient.",
+      "translation_zh": "住在地铁站附近出行非常方便。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_v_11",
+      "word": "机会",
+      "pinyin": "jīhuì",
+      "pos": "명사",
+      "meaning": "기회",
+      "meaning_en": "opportunity; chance",
+      "meaning_zh": "机会",
+      "example": "这是一个非常宝贵的实习机会，千万别错过。",
+      "translation": "이것은 매우 소중한 인턴 기회이니 절대 놓치지 마라.",
+      "translation_en": "This is a precious internship opportunity, don't miss it.",
+      "translation_zh": "这是一个非常宝贵的实习机会，千万别错过。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_v_12",
+      "word": "习惯",
+      "pinyin": "xíguàn",
+      "pos": "동사/명사",
+      "meaning": "습관, 익숙해지다",
+      "meaning_en": "habit; to get used to",
+      "meaning_zh": "习惯",
+      "example": "经过一个月的努力，我已经习惯了这里的气候。",
+      "translation": "한 달간의 노력 끝에 나는 이미 이곳 기후에 익숙해졌다.",
+      "translation_en": "After a month, I have gotten used to the climate here.",
+      "translation_zh": "经过一个月的努力，我已经习惯了这里的气候。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_v_13",
+      "word": "相信",
+      "pinyin": "xiāngxìn",
+      "pos": "동사",
+      "meaning": "믿다, 신뢰하다",
+      "meaning_en": "to believe; to trust",
+      "meaning_zh": "相信",
+      "example": "只要坚持不懈，我相信你一定能够成功。",
+      "translation": "포기하지 않고 버틴다면 네가 반드시 성공할 것이라 믿는다.",
+      "translation_en": "As long as you persevere, I believe you will succeed.",
+      "translation_zh": "只要坚持不懈，我相信你一定能够成功。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk3_v_14",
+      "word": "突然",
+      "pinyin": "tūrán",
+      "pos": "형용사/부사",
+      "meaning": "갑작스럽다, 갑자기",
+      "meaning_en": "sudden; suddenly",
+      "meaning_zh": "突然",
+      "example": "天空突然下起倾盆大雨，路人纷纷躲避。",
+      "translation": "하늘에서 갑자기 장대비가 쏟아져 행인들이 다투어 피했다.",
+      "translation_en": "Heavy rain suddenly poured from the sky, and passersby ran for shelter.",
+      "translation_zh": "天空突然下起倾盆大雨，路人纷纷躲避。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk3_v_15",
+      "word": "影响",
+      "pinyin": "yǐngxiǎng",
+      "pos": "동사/명사",
+      "meaning": "영향을 주다, 영향",
+      "meaning_en": "to influence; effect",
+      "meaning_zh": "影响",
+      "example": "不良的作息习惯会直接影响工作效率。",
+      "translation": "불규칙한 생활 습관은 업무 효율에 직접적인 영향을 준다.",
+      "translation_en": "Poor sleeping habits directly affect work efficiency.",
+      "translation_zh": "不良的作息习惯会直接影响工作效率。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk3_v_16",
+      "word": "简单",
+      "pinyin": "jiǎndān",
+      "pos": "형용사",
+      "meaning": "간단하다, 단순하다",
+      "meaning_en": "simple; uncomplicated",
+      "meaning_zh": "简单",
+      "example": "这个问题看似简单，实际上隐藏着许多细节。",
+      "translation": "이 문제는 간단해 보이지만 실제로는 많은 디테일이 숨겨져 있다.",
+      "translation_en": "This problem looks simple, but actually hides many details.",
+      "translation_zh": "这个问题看似简单，实际上隐藏着许多细节。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk3_v_17",
+      "word": "检查",
+      "pinyin": "jiǎnchá",
+      "pos": "동사/명사",
+      "meaning": "검사하다, 점검하다",
+      "meaning_en": "to check; to inspect",
+      "meaning_zh": "检查",
+      "example": "交卷前务必仔细检查一遍答案。",
+      "translation": "시험지를 제출하기 전에 반드시 답안을 꼼꼼히 한 번 점검해라.",
+      "translation_en": "Be sure to carefully check your answers before submitting the test.",
+      "translation_zh": "交卷前务必仔细检查一遍答案。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk3_v_18",
+      "word": "奇怪",
+      "pinyin": "qíguài",
+      "pos": "형용사",
+      "meaning": "이상하다, 기이하다",
+      "meaning_en": "strange; odd",
+      "meaning_zh": "奇怪",
+      "example": "他今天一句话也不说，让人觉得很奇怪。",
+      "translation": "그는 오늘 한마디도 하지 않아 사람들을 이상하게 느끼게 했다.",
+      "translation_en": "He didn't say a word today, which felt very strange.",
+      "translation_zh": "他今天一句话也不说，让人觉得很奇怪。",
+      "difficulty": "상"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk3_g_01",
+      "difficulty": "하",
+      "type": "conjunction",
+      "category": "역접 접속사 '虽然...但是...'",
+      "category_en": "Conjunction 'suiran...danshi...'",
+      "category_zh": "转折关联词‘虽然……但是……’",
+      "question": "\"비록 날씨는 춥지만 그는 운동을 견지한다\"의 올바른 중국어 표현은?",
+      "options": [
+        "虽然天气很冷，但是他坚持运动。",
+        "虽然他坚持运动，但是天气很冷。",
+        "因为天气很冷，所以他坚持运动。",
+        "即使天气很冷，但是他坚持运动。"
+      ],
+      "answer": 1,
+      "example": "虽然天气很冷，但是他依然坚持运动。",
+      "translation": "비록 날씨는 춥지만 그는 여전히 운동을 견지한다.",
+      "explanation": "'虽然 A, 但是 B'는 양보와 역접을 나타내는 대표적인 복문 접속사입니다.",
+      "explanation_en": "'虽然 A, 但是 B' expresses contrast: 'Although A, (yet) B'.",
+      "explanation_zh": "‘虽然……但是……’用于连接表示转折关系的复句。"
+    },
+    {
+      "id": "hsk3_g_02",
+      "difficulty": "하",
+      "type": "complement",
+      "category": "상태보어 '得'",
+      "category_en": "State Complement with 'de'",
+      "category_zh": "状态补语‘得’",
+      "question": "\"그는 달리는 것이 매우 빠르다\"의 올바른 어순은?",
+      "options": [
+        "他跑得很快。",
+        "他快跑得很。",
+        "跑得他很快。",
+        "他跑很快得。"
+      ],
+      "answer": 1,
+      "example": "他跑得很快。",
+      "translation": "그는 달리는 것이 매우 빠르다.",
+      "explanation": "동사 뒤에 구조조사 '得'를 쓰고 형용사 술어를 연결하여 동작의 상태나 정도를 묘사합니다. [동사 + 得 + 정도형용사]",
+      "explanation_en": "[Verb + 得 + Adjective] forms a state or degree complement.",
+      "explanation_zh": "动词 + 得 + 形容词，用于评述动作达到的状态或程度。"
+    },
+    {
+      "id": "hsk3_g_03",
+      "difficulty": "하",
+      "type": "special_sentence",
+      "category": "把자문 입문 (처치문)",
+      "category_en": "Basic Ba-sentence",
+      "category_zh": "‘把’字句基础",
+      "question": "\"창문을 닫아라\"의 바른 把자문 표현은?",
+      "options": [
+        "请把窗户关上。",
+        "请关把窗户上。",
+        "请窗户关把上。",
+        "把请窗户关上。"
+      ],
+      "answer": 1,
+      "example": "请把窗户关上。",
+      "translation": "창문을 닫아 주세요.",
+      "explanation": "[주어 + 把 + 목적어 + 동사 + 기타성분(보어/조사)] 구조로 목적어에 가해지는 처치와 결과를 강조합니다.",
+      "explanation_en": "Structure: [Subject + 把 + Object + Verb + Complement].",
+      "explanation_zh": "主语 + 把 + 宾语 + 动词 + 结果补语/趋向补语。"
+    },
+    {
+      "id": "hsk3_g_04",
+      "difficulty": "중",
+      "type": "conjunction",
+      "category": "병렬 접속사 '一边...一边...'",
+      "category_en": "Simultaneous Actions 'yibian...yibian...'",
+      "category_zh": "并列关联词‘一边……一边……’",
+      "question": "\"음악을 들으면서 책을 본다\"의 알맞은 문장은?",
+      "options": [
+        "他一边听音乐，一边看书。",
+        "他一边看书，然后听音乐。",
+        "因为他听音乐，所以看书。",
+        "虽然他听音乐，但是看书。"
+      ],
+      "answer": 1,
+      "example": "他一边听音乐，一边看书。",
+      "translation": "그는 음악을 들으면서 책을 본다.",
+      "explanation": "'一边 A, 一边 B'는 두 가지 동작이 동시에 진행됨을 나타냅니다.",
+      "explanation_en": "'一边 A, 一边 B' indicates doing two actions simultaneously.",
+      "explanation_zh": "‘一边……一边……’表示两个动作同时进行。"
+    },
+    {
+      "id": "hsk3_g_05",
+      "difficulty": "중",
+      "type": "preposition",
+      "category": "구문 '除了...以外'",
+      "category_en": "Except/Besides 'chule...yiwai'",
+      "category_zh": "‘除了……以外’结构",
+      "question": "\"그를 제외하고 모두 참석했다\"의 바른 표현은?",
+      "options": [
+        "除了他以外，大家都参加了。",
+        "大家都除了他以外参加。",
+        "除了大家都参加，以外他。",
+        "他在除了以外，大家都参加。"
+      ],
+      "answer": 1,
+      "example": "除了他以外，大家都按时参加了。",
+      "translation": "그를 제외하고 모두 제시간에 참석했다.",
+      "explanation": "'除了 A 以外, 都/还...' 구조로 제외 또는 추가 포함을 나타냅니다.",
+      "explanation_en": "'除了 A 以外' expresses exception (with 都) or inclusion (with 还).",
+      "explanation_zh": "‘除了……以外’用于表示排除或补充。"
+    },
+    {
+      "id": "hsk3_g_06",
+      "difficulty": "중",
+      "type": "conditional",
+      "category": "조건 복문 '如果...就...'",
+      "category_en": "Conditional 'ruguo...jiu...'",
+      "category_zh": "假设复句‘如果……就……’",
+      "question": "\"만약 내일 비가 오면 우리는 안 간다\"의 올바른 어순은?",
+      "options": [
+        "如果明天下雨，我们就不去了。",
+        "我们就不去如果明天下雨。",
+        "明天下雨如果，就我们不去。",
+        "就如果明天下雨，我们不去。"
+      ],
+      "answer": 1,
+      "example": "如果明天下雨，我们就不去了。",
+      "translation": "만약 내일 비가 오면 우리는 가지 않을 것이다.",
+      "explanation": "'如果(가설 조건) ..., 就(결과) ...' 구조로 가정 복문을 만듭니다.",
+      "explanation_en": "'如果 A, 就 B' sets up a hypothetical condition: 'If A, then B'.",
+      "explanation_zh": "‘如果……就……’用于连接假设与结果。"
+    },
+    {
+      "id": "hsk3_g_07",
+      "difficulty": "상",
+      "type": "progression",
+      "category": "점진 구문 '越...越...'",
+      "category_en": "Progressive 'yue...yue...'",
+      "category_zh": "递进格式‘越……越……’",
+      "question": "\"배울수록 재미있다\"를 나타내는 알맞은 문장은?",
+      "options": [
+        "汉语越学越有趣。",
+        "越学汉语有趣越。",
+        "越汉语学越有趣。",
+        "汉语学越有趣越。"
+      ],
+      "answer": 1,
+      "example": "汉语真是越学越觉得有趣。",
+      "translation": "중국어는 정말 배울수록 더 재미있게 느껴진다.",
+      "explanation": "'越 A 越 B'는 A의 정도 변화에 따라 B의 정도도 비례하여 심화됨을 나타냅니다.",
+      "explanation_en": "'越 A 越 B' means 'the more A, the more B'.",
+      "explanation_zh": "‘越……越……’表示后者的程度随着前者的发展而加深。"
+    },
+    {
+      "id": "hsk3_g_08",
+      "difficulty": "상",
+      "type": "causative",
+      "category": "사동 동사 '使/让/叫'",
+      "category_en": "Causative Verbs 'shi/rang'",
+      "category_zh": "使动与兼语动词‘使/让’",
+      "question": "\"이 소식은 모두를 매우 기쁘게 했다\"의 올바른 어순은?",
+      "options": [
+        "这个消息让大家非常高兴。",
+        "大家让这个消息非常高兴。",
+        "这个消息非常高兴让大家。",
+        "非常高兴让这个消息大家。"
+      ],
+      "answer": 1,
+      "example": "这个好消息让全家人都非常高兴。",
+      "translation": "이 좋은 소식은 온 가족을 매우 기쁘게 했다.",
+      "explanation": "겸어문 사동 구조: [원인 주어 + 使/让 + 대상 + 심리/상태 결과].",
+      "explanation_en": "Causative structure: [Cause + 让/使 + Object + State/Result].",
+      "explanation_zh": "使动兼语句：致使主语 + 使/让 + 兼语 + 形容词/心理动词。"
+    },
+    {
+      "id": "hsk3_g_09",
+      "difficulty": "상",
+      "type": "preposition",
+      "category": "개사 '对' (대상 소개)",
+      "category_en": "Preposition 'dui' (target)",
+      "category_zh": "介词‘对’引出对象",
+      "question": "\"그는 중국 역사에 관심이 많다\"의 바른 중국어 표현은?",
+      "options": [
+        "他对中国历史很感兴趣。",
+        "他很感兴趣对中国历史。",
+        "对中国历史他感兴趣很。",
+        "中国历史他对很感兴趣。"
+      ],
+      "answer": 1,
+      "example": "他对中国历史和文化非常感兴趣。",
+      "translation": "그는 중국 역사와 문화에 매우 관심이 많다.",
+      "explanation": "'对 + 대상 + 감정/태도(很感兴趣)' 구조로 행동이나 관심이 향하는 대상을 이끕니다.",
+      "explanation_en": "'对 + Object + 感兴趣' introduces the object of interest or attitude.",
+      "explanation_zh": "‘对 + 对象 + 感兴趣’，介词短语作状语置于动词词组前。"
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk3_l_01",
+      "difficulty": "하",
+      "category": "듣기 1부분 (이사 집구하기)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "你新租的房子离公司远不远？"
+        },
+        {
+          "speaker": "女",
+          "text": "非常近，走路只需要十分钟，周边环境也很安静。"
+        }
+      ],
+      "question": "女人新租的房子怎么样？",
+      "options": [
+        "离公司近且环境安静",
+        "离公司太远很不方便",
+        "房租太贵租不起",
+        "周围环境非常吵"
+      ],
+      "answer": "离公司近且环境安静",
+      "audioText": "男：你新租的房子离公司远不远？ 女：非常近，走路只需要十分钟，周边环境也很安静。 问：女人新租的房子怎么样？",
+      "translation": "남: 새로 구한 집은 회사에서 멀어, 안 멀어?\n여: 아주 가까워, 걸어서 10분밖에 안 걸리고 주변 환경도 조용해.\n질문: 여자가 새로 구한 집은 어떤가요?",
+      "tip": "'非常近...环境也很安静'의 긍정 평가를 종합합니다."
+    },
+    {
+      "id": "hsk3_l_02",
+      "difficulty": "하",
+      "category": "듣기 1부분 (업무 보고)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "李经理，下周的市场营销方案我已经做好了，请您过目。"
+        },
+        {
+          "speaker": "男",
+          "text": "好的，放我桌上吧，我下午仔细看。"
+        }
+      ],
+      "question": "男的打算什么时候看方案？",
+      "options": [
+        "今天下午",
+        "明天早晨",
+        "下周一",
+        "现在马上看"
+      ],
+      "answer": "今天下午",
+      "audioText": "女：李经理，下周的市场营销方案我已经做好了，请您过目。 男：好的，放我桌上吧，我下午仔细看。 问：男的打算什么时候看方案？",
+      "translation": "여: 이 매니저님, 다음 주 마케팅 기획안 작성 완료했으니 검토해 주십시오.\n남: 좋아요, 제 책상에 두세요, 오후에 꼼꼼히 볼게요.\n질문: 남자는 언제 기획안을 볼 예정인가요?",
+      "tip": "'我下午仔细看'에서 시간 '下午(오후)'를 포착합니다."
+    },
+    {
+      "id": "hsk3_l_03",
+      "difficulty": "하",
+      "category": "듣기 1부분 (식당 예약)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "服务员，今晚七点我们有八位客人用餐，有大包间吗？"
+        },
+        {
+          "speaker": "女",
+          "text": "有的，正好三楼还有一个景观大包间，我给您登记。"
+        }
+      ],
+      "question": "今晚一共有几位客人用餐？",
+      "options": [
+        "八位",
+        "七位",
+        "三位",
+        "十位"
+      ],
+      "answer": "八位",
+      "audioText": "男：服务员，今晚七点我们有八位客人用餐，有大包间吗？ 女：有的，正好三楼还有一个景观大包间，我给您登记。 问：今晚一共有几位客人用餐？",
+      "translation": "남: 직원분, 오늘 저녁 7시에 손님 8명이 식사하는데 큰 룸 있나요?\n여: 네 있습니다, 마침 3층에 전망 좋은 큰 룸이 하나 남아 등록해 드릴게요.\n질문: 오늘 저녁 식사 인원은 총 몇 명인가요?",
+      "tip": "'八位客人(8명의 손님)'에서 인원수를 정확히 파악합니다."
+    },
+    {
+      "id": "hsk3_l_04",
+      "difficulty": "중",
+      "category": "듣기 1부분 (기차표 예매)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "去上海的高铁票买到了吗？几点发车？"
+        },
+        {
+          "speaker": "男",
+          "text": "买到了明天上午九点半的二等座，两个半小时就到。"
+        }
+      ],
+      "question": "去上海的高铁几点发车？",
+      "options": [
+        "上午九点半",
+        "下午两点半",
+        "明天早晨七点",
+        "明天中午十二点"
+      ],
+      "answer": "上午九点半",
+      "audioText": "女：去上海的高铁票买到了吗？几点发车？ 男：买到了明天上午九点半的二等座，两个半小时就到。 问：去上海的高铁几点发车？",
+      "translation": "여: 상하이 가는 고속열차 표 구했어? 몇 시 출발이야?\n남: 내일 오전 9시 반 2등석 구했어, 2시간 반이면 도착해.\n질문: 상하이행 고속열차는 몇 시에 출발하나요?",
+      "tip": "'明天上午九点半'에서 출발 시간을 선별합니다."
+    },
+    {
+      "id": "hsk3_l_05",
+      "difficulty": "중",
+      "category": "듣기 1부분 (분실물 찾기)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "你好，我刚才把一个黑色背包落在出租车后座上了。"
+        },
+        {
+          "speaker": "女",
+          "text": "您记得司机的车牌号或者要发票了吗？我帮您联系客服。"
+        }
+      ],
+      "question": "男的丢了什么东西？",
+      "options": [
+        "黑色背包",
+        "钱包",
+        "手机",
+        "护照"
+      ],
+      "answer": "黑色背包",
+      "audioText": "男：你好，我刚才把一个黑色背包落在出租车后座上了。 女：您记得司机的车牌号或者要发票了吗？我帮您联系客服。 问：男的丢了什么东西？",
+      "translation": "남: 안녕하세요, 방금 검은색 배낭을 택시 뒷좌석에 두고 내렸습니다.\n여: 기사님 차량 번호나 영수증 챙기셨나요? 고객센터 연결 도와드릴게요.\n질문: 남자는 무엇을 잃어버렸나요?",
+      "tip": "'把一个黑色背包落在出租车上'에서 '黑色背包'를 고릅니다."
+    },
+    {
+      "id": "hsk3_l_06",
+      "difficulty": "중",
+      "category": "듣기 1부분 (헬스장 등록)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "这家健身房的年卡现在有优惠活动吗？"
+        },
+        {
+          "speaker": "男",
+          "text": "本周办年卡打八折，还赠送五节专业教练私教课。"
+        }
+      ],
+      "question": "本周办年卡有什么优惠？",
+      "options": [
+        "打八折送私教课",
+        "买一送一",
+        "完全免费",
+        "赠送运动鞋"
+      ],
+      "answer": "打八折送私教课",
+      "audioText": "女：这家健身房的年卡现在有优惠活动吗？ 男：本周办年卡打八折，还赠送五节专业教练私教课。 问：本周办年卡有什么优惠？",
+      "translation": "여: 이 헬스장 연회원권 지금 할인 행사 하나요?\n남: 이번 주에 연회원권 가입하시면 20% 할인(8折)에 전문 PT 5회도 무료 증정합니다.\n질문: 이번 주 연회원권 가입 혜택은 무엇인가요?",
+      "tip": "'打八折(20% 할인)'과 '赠送私教课(PT 무료 증정)'를 파악합니다."
+    },
+    {
+      "id": "hsk3_l_07",
+      "difficulty": "상",
+      "category": "듣기 1부분 (면접 준비 조언)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "我明天要参加一家跨国公司的面试，心里非常紧张。"
+        },
+        {
+          "speaker": "女",
+          "text": "放轻松，提前熟悉公司的业务背景，回答问题保持自信诚恳就好。"
+        }
+      ],
+      "question": "女人给了男的什么建议？",
+      "options": [
+        "熟悉业务背景并保持自信",
+        "推迟面试时间",
+        "放弃这次面试",
+        "多穿一些名牌衣服"
+      ],
+      "answer": "熟悉业务背景并保持自信",
+      "audioText": "男：我明天要参加一家跨国公司的面试，心里非常紧张。 女：放轻松，提前熟悉公司的业务背景，回答问题保持自信诚恳就好。 问：女人给了男的什么建议？",
+      "translation": "남: 나 내일 다국적 기업 면접 보는데 너무 긴장돼.\n여: 긴장 풀어, 사전에 회사 사업 배경을 익혀두고 질문에 답할 때 자신감 있고 성실하게 임하면 돼.\n질문: 여자는 남자에게 어떤 조언을 해 주었나요?",
+      "tip": "'提前熟悉公司的业务背景...保持自信' 조언을 요약합니다."
+    },
+    {
+      "id": "hsk3_l_08",
+      "difficulty": "상",
+      "category": "듣기 1부분 (환경 보호 실천)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "为了支持环保，我们超市从下周一开始不再免费提供塑料袋了。"
+        },
+        {
+          "speaker": "男",
+          "text": "这个举措很好，以后大家出门购物都会自觉自备环保布袋。"
+        }
+      ],
+      "question": "关于这家超市，可以知道什么？",
+      "options": [
+        "不再免费提供塑料袋",
+        "商品全部降价",
+        "下周开始停止营业",
+        "不再卖食品"
+      ],
+      "answer": "不再免费提供塑料袋",
+      "audioText": "女：为了支持环保，我们超市从下周一开始不再免费提供塑料袋了。 男：这个举措很好，以后大家出门购物都会自觉自备环保布袋。 问：关于这家超市，可以知道什么？",
+      "translation": "여: 환경보호를 실천하기 위해 저희 마트는 다음 주 월요일부터 비닐봉지를 무료 제공하지 않기로 했습니다.\n남: 아주 좋은 조치네요, 앞으로 다들 쇼핑할 때 스스로 장바구니를 챙겨 오겠네요.\n질문: 이 마트에 대해 알 수 있는 것은 무엇인가요?",
+      "tip": "'不再免费提供塑料袋(더 이상 비닐봉지 무료 제공 안 함)'를 확인합니다."
+    },
+    {
+      "id": "hsk3_l_09",
+      "difficulty": "상",
+      "category": "듣기 1부분 (시간 관리)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "期末事情太多，我总觉得时间不够用，压力很大。"
+        },
+        {
+          "speaker": "女",
+          "text": "你可以把每天的任务按轻重缓急列一个清单，逐项完成会更高效。"
+        }
+      ],
+      "question": "女人建议男的怎么做？",
+      "options": [
+        "列出任务清单逐项完成",
+        "每天熬夜加班",
+        "放弃所有的期末考试",
+        "出去旅游放松"
+      ],
+      "answer": "列出任务清单逐项完成",
+      "audioText": "男：期末事情太多，我总觉得时间不够用，压力很大。 女：你可以把每天的任务按轻重缓急列一个清单，逐项完成会更高效。 问：女人建议男的怎么做？",
+      "translation": "남: 기말에 할 일이 너무 많아 항상 시간이 부족하다고 느껴지고 스트레스가 커.\n여: 매일 해야 할 일을 중요도에 따라 리스트로 작성해 하나씩 끝내면 훨씬 효율적일 거야.\n질문: 여자는 남자에게 어떻게 하라고 제안했나요?",
+      "tip": "'按轻重缓急列一个清单，逐项完成' 제안을 압축합니다."
+    }
+  ],
+  "chengyu": [
+    {
+      "id": "hsk3_ch_01",
+      "chengyu": "半途而废",
+      "pinyin": "bàn tú ér fèi",
+      "meaning": "중도에 그만두다",
+      "sentence": "既然开始了这项研究，就决不能____。",
+      "example": "既然开始了这项研究，就决不能半途而废。",
+      "translation": "기왕 이 연구를 시작했으니 결코 중도에 포기해선 안 된다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_ch_02",
+      "chengyu": "竭尽全力",
+      "pinyin": "jié jìn quán lì",
+      "meaning": "있는 힘을 다하다, 온 힘을 쏟다",
+      "sentence": "面对这次危机，全体医护人员____抢救病人。",
+      "example": "面对这次危机，全体医护人员竭尽全力抢救病人。",
+      "translation": "이번 위기에 직면하여 의료진 전체가 환자 구명에 온 힘을 다했다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_ch_03",
+      "chengyu": "津津有味",
+      "pinyin": "jīn jīn yǒu wèi",
+      "meaning": "흥미진진하게, 맛깔스럽게",
+      "sentence": "孩子们正围在一起____地听老师讲故事。",
+      "example": "孩子们正围在一起津津有味地听老师讲故事。",
+      "translation": "아이들이 둘러앉아 흥미진진하게 선생님의 이야기를 듣고 있다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_ch_04",
+      "chengyu": "不可思议",
+      "pinyin": "bù kě sī yì",
+      "meaning": "상상할 수 없을 정도로 신기하다",
+      "sentence": "在这么短的时间内完成如此巨大的工程，简直____。",
+      "example": "在这么短的时间内完成如此巨大的工程，简直不可思议。",
+      "translation": "이처럼 짧은 시간에 이토록 거대한 공사를 완성하다니 그야말로 불가사의하다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_ch_05",
+      "chengyu": "恍然大悟",
+      "pinyin": "huǎng rán dà wù",
+      "meaning": "문득 크게 깨닫다",
+      "sentence": "经过老师的点拨，他才____，解开了谜题。",
+      "example": "经过老师的点拨，他才恍然大悟，解开了谜题。",
+      "translation": "선생님의 지도를 받고 나서야 그는 문득 깨닫고 수수께끼를 풀었다.",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk3_ch_06",
+      "chengyu": "守望相助",
+      "pinyin": "shǒu wàng xiāng zhù",
+      "meaning": "이웃끼리 서로 지켜보고 돕다",
+      "sentence": "邻里之间应当____，共同营造和谐社区。",
+      "example": "邻里之间应当守望相助，共同营造和谐社区。",
+      "translation": "이웃끼리는 서로 돕고 지켜주어 조화로운 공동체를 함께 만들어야 한다.",
+      "difficulty": "상"
+    }
+  ],
+  "colloc": [
+    {
+      "id": "hsk3_co_01",
+      "collocation": "保护环境",
+      "pinyin": "bǎohù huánjìng",
+      "verb": "保护 (보호하다)",
+      "noun": "环境 (환경)",
+      "meaning": "환경을 보호하다",
+      "example": "每个人都应该从身边小事做起保护环境。"
+    },
+    {
+      "id": "hsk3_co_02",
+      "collocation": "解决问题",
+      "pinyin": "jiějué wèntí",
+      "verb": "解决 (해결하다)",
+      "noun": "问题 (문제)",
+      "meaning": "문제를 해결하다",
+      "example": "遇到矛盾时要坐下来冷静地解决问题。"
+    },
+    {
+      "id": "hsk3_co_03",
+      "collocation": "做出决定",
+      "pinyin": "zuòchū juédìng",
+      "verb": "做出 (내리다)",
+      "noun": "决定 (결정)",
+      "meaning": "결정을 내리다",
+      "example": "在深思熟虑后他做出了出国深造的决定。"
+    },
+    {
+      "id": "hsk3_co_04",
+      "collocation": "养成习惯",
+      "pinyin": "yǎngchéng xíguàn",
+      "verb": "养成 (기르다)",
+      "noun": "习惯 (습관)",
+      "meaning": "습관을 기르다",
+      "example": "从小养成良好的阅读习惯让人受益终生。"
+    },
+    {
+      "id": "hsk3_co_05",
+      "collocation": "抓住机会",
+      "pinyin": "zhuāzhù jīhuì",
+      "verb": "抓住 (붙잡다)",
+      "noun": "机会 (기회)",
+      "meaning": "기회를 잡다",
+      "example": "年轻人要勇于挑战自我，抓住发展的好机会。"
+    },
+    {
+      "id": "hsk3_co_06",
+      "collocation": "接受检查",
+      "pinyin": "jiēshòu jiǎnchá",
+      "verb": "接受 (받다)",
+      "noun": "检查 (검사)",
+      "meaning": "검사를 받다",
+      "example": "进入考场前请大家自觉配合接受安全检查。"
+    }
+  ],
+  "cloze": [
+    {
+      "id": "hsk3_cl_01",
+      "difficulty": "하",
+      "sentence": "为了大家的身体健康，我们要共同努力____自然环境。",
+      "answer": "保护",
+      "options": [
+        "保护",
+        "决定",
+        "搬家",
+        "遇到"
+      ],
+      "pinyin": "bǎohù",
+      "collocation": "保护环境 (환경을 보호하다)",
+      "translation": "모두의 신체 건강을 위해 우리는 자연환경을 함께 보호해야 한다.",
+      "explanation": "'자연환경'과 호응하는 전형적인 동사는 '保护(보호하다)'입니다."
+    },
+    {
+      "id": "hsk3_cl_02",
+      "difficulty": "하",
+      "sentence": "他在工作中遇到困难从不退缩，总是积极想办法____。",
+      "answer": "解决",
+      "options": [
+        "解决",
+        "相信",
+        "照顾",
+        "介绍"
+      ],
+      "pinyin": "jiějué",
+      "collocation": "解决问题 (문제를 해결하다)",
+      "translation": "그는 업무 중 어려움을 마주쳐도 결코 물러서지 않고 언제나 적극적으로 해결할 방법을 찾는다.",
+      "explanation": "어려움이나 곤란을 타개하는 동사 짝꿍은 '解决(해결하다)'입니다."
+    },
+    {
+      "id": "hsk3_cl_03",
+      "difficulty": "중",
+      "sentence": "这件事情太突然了，我一时间还不知道该怎么____。",
+      "answer": "决定",
+      "options": [
+        "决定",
+        "简单",
+        "奇怪",
+        "热情"
+      ],
+      "pinyin": "juédìng",
+      "collocation": "怎么决定 (어떻게 결정할지)",
+      "translation": "이 일이 너무 갑작스러워 나는 당장 어떻게 결정해야 할지 모르겠다.",
+      "explanation": "선택이나 판단을 내리는 행위를 뜻하는 동사는 '决定'입니다."
+    },
+    {
+      "id": "hsk3_cl_04",
+      "difficulty": "중",
+      "sentence": "只要你坚持努力，就一定能____眼前这些暂时的挫折。",
+      "answer": "克服",
+      "options": [
+        "克服",
+        "影响",
+        "方便",
+        "检查"
+      ],
+      "pinyin": "kèfú",
+      "collocation": "克服挫折 (좌절/어려움을 극복하다)",
+      "translation": "노력을 지속하기만 한다면 눈앞의 이러한 일시적인 좌절을 반드시 극복할 수 있다.",
+      "explanation": "'어려움/좌절'을 이겨내는 표현은 '克服'입니다."
+    },
+    {
+      "id": "hsk3_cl_05",
+      "difficulty": "상",
+      "sentence": "长时间对着手机屏幕会对青少年的视力产生严重的负面____。",
+      "answer": "影响",
+      "options": [
+        "影响",
+        "环境",
+        "机会",
+        "习惯"
+      ],
+      "pinyin": "yǐngxiǎng",
+      "collocation": "负面影响 (부정적 영향)",
+      "translation": "스마트폰 화면을 오래 보는 것은 청소년의 시력에 심각한 부정적 영향을 미친다.",
+      "explanation": "'미치다/발생시키다'와 호응하는 명사는 '影响(영향)'입니다."
+    },
+    {
+      "id": "hsk3_cl_06",
+      "difficulty": "상",
+      "sentence": "出门旅游前一定要仔细____身份证件和车票是否带齐。",
+      "answer": "检查",
+      "options": [
+        "检查",
+        "解决",
+        "相信",
+        "奇怪"
+      ],
+      "pinyin": "jiǎnchá",
+      "collocation": "仔细检查 (꼼꼼히 확인하다)",
+      "translation": "여행을 떠나기 전 신분증과 승차권을 다 챙겼는지 꼼꼼히 점검해야 한다.",
+      "explanation": "물품 소지 여부를 확인하는 행위는 '检查'입니다."
+    }
+  ],
+  "reading": [
+    {
+      "id": "hsk3_r_01",
+      "difficulty": "하",
+      "category": "독해 2부분 (설명문/수필)",
+      "title": "垃圾分类与环境保护",
+      "passage": "随着城市化进程的加快，生活垃圾的处理成为每个社区的重要课题。\n推行生活垃圾分类，不仅能让废纸、塑料和玻璃等资源得到有效回收利用，\n还能大幅减少垃圾填埋场对土地和地下水质造成的污染。\n在日常生活中，只要我们多花一分钟把厨余垃圾和其他垃圾分开放置，\n就能为城市的可持续发展贡献一份实实在在的力量。",
+      "lineCount": 5,
+      "question": "垃圾分类有什么积极作用？",
+      "options": [
+        "资源回收利用且减少环境污染",
+        "增加更多垃圾填埋场",
+        "浪费居民的生活时间",
+        "让城市变得更加拥挤"
+      ],
+      "answer": "资源回收利用且减少环境污染",
+      "keySentence": "不仅能让资源得到有效回收利用，还能大幅减少垃圾填埋场对土地和地下水质造成的污染",
+      "collocation": "回收利用与减少污染",
+      "explanation": "본문에서 자원 회수 이용과 토양·수질 오염 감소 효과를 명확히 제시하고 있습니다.",
+      "translation": "도시화가 가속화됨에 따라 생활 쓰레기 처리는 모든 지역사회의 중요한 과제가 되었다. 생활 쓰레기 분리배출을 시행하면 폐지, 플라스틱, 유리 등의 자원을 효과적으로 재활용할 수 있을 뿐만 아니라 매립지가 토양과 지하수에 미치는 오염을 대폭 줄일 수 있다. 일상에서 우리가 1분만 더 투자해 음식물 쓰레기와 일반 쓰레기를 분리 배출한다면 도시의 지속 가능한 발전에 실질적인 힘을 보탤 수 있다."
+    },
+    {
+      "id": "hsk3_r_02",
+      "difficulty": "하",
+      "category": "독해 2부분 (설명문/수필)",
+      "title": "阅读的力量",
+      "passage": "一本好书就像一位智慧的导师，能跨越时空带给我们深刻的思想启发。\n经常坚持深度阅读的人，不仅词汇量和表达能力更为丰富，\n在面对复杂问题时往往也拥有更加宽广的视野和敏锐的洞察力。\n每天抽出半小时放下手机安静地读几页书，\n日积月累下来，你会发现自己的思维方式发生了惊人的改变。",
+      "lineCount": 5,
+      "question": "根据这段话，经常阅读的人通常怎样？",
+      "options": [
+        "视野更加宽广洞察力更强",
+        "不愿意与他人交流",
+        "完全不会遇到复杂问题",
+        "每天必须花五个小时读书"
+      ],
+      "answer": "视野更加宽广洞察力更强",
+      "keySentence": "在面对复杂问题时往往也拥有更加宽广的视野和敏锐的洞察力",
+      "collocation": "宽广的视野",
+      "explanation": "본문에서 독서를 꾸준히 하는 사람은 더 넓은 시야와 예리한 통찰력을 지닌다고 명시했습니다.",
+      "translation": "좋은 책 한 권은 지혜로운 스승과 같아서 시공간을 초월해 우리에게 깊은 사상적 깨달음을 준다. 꾸준히 깊이 있는 독서를 하는 사람은 어휘력과 표현력이 더 풍부할 뿐만 아니라 복잡한 문제에 직면했을 때 종종 더 넓은 시야와 예리한 통찰력을 지니게 된다. 매일 30분을 내어 스마트폰을 내려놓고 조용히 책 몇 장을 읽으면, 시간이 흐른 뒤 자신의 사고방식이 놀랍게 변했음을 발견하게 될 것이다."
+    },
+    {
+      "id": "hsk3_r_03",
+      "difficulty": "중",
+      "category": "독해 2부분 (설명문/수필)",
+      "title": "如何缓解职场压力",
+      "passage": "现代职场节奏飞快，许多人在高强度的任务面前常常感到心理压力巨大。\n心理专家建议，建立清晰的工作清单和时间边界是缓解焦虑的有效途径。\n工作时全神贯注处理核心任务，休息时彻底断开工作消息，回归个人生活。\n此外，每周进行两到三次适度的体育运动，如游泳或慢跑，\n能够刺激大脑分泌多巴胺，从而有效释放积聚的负面情绪。",
+      "lineCount": 5,
+      "question": "心理专家建议怎样缓解职场压力？",
+      "options": [
+        "建立工作清单并进行适度运动",
+        "每天加班到深夜",
+        "彻底辞职不再工作",
+        "完全不与同事沟通"
+      ],
+      "answer": "建立工作清单并进行适度运动",
+      "keySentence": "建立清晰的工作清单，每周进行适度的体育运动",
+      "collocation": "缓解焦虑的途径",
+      "explanation": "본문에서 업무 목록 수립과 규칙적 운동을 완화 방법으로 제시했습니다.",
+      "translation": "현대 직장의 속도는 매우 빨라 많은 이들이 고강도 업무 앞에서 종종 거대한 심리적 압박감을 느낀다. 심리 전문가들은 명확한 업무 목록과 시간적 경계를 설정하는 것이 불안을 완화하는 효과적인 방법이라고 조언한다. 일할 때는 핵심 과제에 집중하고 쉴 때는 업무 메시지를 완전히 차단해 개인의 삶으로 돌아가야 한다. 아울러 매주 2~3회 수영이나 조깅 같은 적당한 운동을 하면 도파민 분비를 촉진해 쌓인 부정적 감정을 효과적으로 해소할 수 있다."
+    },
+    {
+      "id": "hsk3_r_04",
+      "difficulty": "중",
+      "category": "독해 2부분 (설명문/수필)",
+      "title": "中国的高铁网络",
+      "passage": "在过去的十几年间，中国建成了世界上规模最大、运营速度最高的高速铁路网。\n如今的高铁不仅把各大主要城市之间的旅行时间缩短了半数以上，\n还凭借准点率高、乘坐舒适、换乘便捷等优势赢得了广大旅客的青睐。\n高速铁路的发展不仅便利了人们的探亲访友和商务往来，\n更为区域经济的协同平衡发展注入了强大的推动力。",
+      "lineCount": 5,
+      "question": "关于中国高铁，可以知道什么？",
+      "options": [
+        "缩短了城市旅行时间且准点舒适",
+        "运营速度世界上最慢",
+        "乘客数量越来越少",
+        "只能用于商务往来"
+      ],
+      "answer": "缩短了城市旅行时间且准点舒适",
+      "keySentence": "把旅行时间缩短了半数以上，准点率高且乘坐舒适",
+      "collocation": "缩短旅行时间",
+      "explanation": "본문에서 고속열차가 도시 간 이동 시간을 단축하고 정시성과 편안함을 갖췄다고 설명했습니다.",
+      "translation": "지난 10여 년간 중국은 세계 최대 규모이자 최고 운행 속도를 자랑하는 고속철도망을 구축했다. 오늘날의 고속철도는 주요 대도시 간 여행 시간을 절반 이상 단축했을 뿐만 아니라 높은 정시율, 쾌적한 승차감, 편리한 환승 등의 장점으로 폭넓은 사랑을 받고 있다. 고속철도의 발전은 사람들의 방문과 비즈니스 교류를 편리하게 했을 뿐만 아니라 지역 경제의 균형 발전에 강력한 추진력을 불어넣었다."
+    },
+    {
+      "id": "hsk3_r_05",
+      "difficulty": "상",
+      "category": "독해 2부분 (설명문/수필)",
+      "title": "人际交往中的倾听艺术",
+      "passage": "在人际交往中，很多人往往急于表达自己的观点，却忽略了倾听的重要性。\n事实上，真正高情商的沟通大师首先必定是一名极具耐心的倾听者。\n专注地倾听对方说话，不仅是对他人最基本的尊重与认可，\n更能让你在交流中捕捉到对方未直接说出的真实情绪和潜在需求。\n学会克制插话的冲动，用真诚的眼神和适时的回应倾听，能赢得更深厚的信任。",
+      "lineCount": 5,
+      "question": "根据文章，为什么倾听在交往中很重要？",
+      "options": [
+        "是对他人的尊重并能捕捉潜在需求",
+        "能让人完全不说话",
+        "能强迫他人接受自己的观点",
+        "可以节省交往的时间"
+      ],
+      "answer": "是对他人的尊重并能捕捉潜在需求",
+      "keySentence": "是对他人最基本的尊重，更能捕捉对方未直接说出的真实情绪和潜在需求",
+      "collocation": "倾听的重要性",
+      "explanation": "본문에서 경청은 존중의 표시이자 상대방의 잠재적 욕구를 파악하게 돕는다고 명시했습니다.",
+      "translation": "대인관계에서 많은 사람들은 자신의 관점을 성급히 표현하려다 경청의 중요성을 간과하곤 한다. 사실 진정한 소통의 대가는 무엇보다도 인내심 있는 경청자이다. 상대의 말에 집중해 귀 기울이는 것은 타인에 대한 가장 기본적인 존중과 인정일 뿐 아니라, 상대가 직접 말하지 않은 진정한 감정과 잠재적 요구를 포착할 수 있게 돕는다. 말 끊기를 자제하고 진솔한 눈빛과 적절한 피드백으로 경청하면 더 깊은 신뢰를 얻을 수 있다."
+    },
+    {
+      "id": "hsk3_r_06",
+      "difficulty": "상",
+      "category": "독해 2부분 (설명문/수필)",
+      "title": "智能手机对生活节奏的重塑",
+      "passage": "移动互联网与智能手机的深度普及彻底改变了人类的日常生活图景。\n外卖订餐、移动支付、网约车出行等便捷服务极大地压缩了日常事务的时间成本。\n然而，碎片化信息的无休止推送也把现代人的注意力切割得支离破碎。\n人们在享受科技便捷的同时，也应当有意识地建立数字断联时间，\n避免让手机屏幕侵占真正属于自己思考与深度体验的生活空间。",
+      "lineCount": 5,
+      "question": "作者对智能手机的态度是怎样的？",
+      "options": [
+        "肯定其便捷性但警惕信息碎片化",
+        "主张彻底禁止使用智能手机",
+        "认为智能手机没有任何弊端",
+        "觉得生活没有发生任何改变"
+      ],
+      "answer": "肯定其便捷性但警惕信息碎片化",
+      "keySentence": "在享受科技便捷的同时，也应当有意识地建立数字断联时间",
+      "collocation": "辩证看待科技",
+      "explanation": "본문은 스마트폰의 편리함을 인정하면서도 주의력 분산 위험을 경계할 것을 권고합니다.",
+      "translation": "모바일 인터넷과 스마트폰의 깊은 보급은 인류의 일상생활 풍경을 근본적으로 바꾸어 놓았다. 배달 주문, 모바일 결제, 차량 호출 등 편리한 서비스는 일상 업무의 시간 비용을 극적으로 압축했다. 그러나 끊임없는 파편화된 정보 푸시는 현대인의 주의력을 산산조각 내놓았다. 사람들은 기술의 편리함을 누리는 동시에 의식적으로 디지털 디톡스 시간을 설정하여 스마트폰 화면이 진정한 사색과 깊은 체험의 공간을 침범하지 않도록 해야 한다."
+    }
+  ],
+  "dictation": [
+    {
+      "id": "hsk3_d_01",
+      "sentence": "虽然天气很冷，但是他依然坚持慢跑。",
+      "pinyin": "Suīrán tiānqì hěn lěng, dànshì tā yīrán jiānchí mànpǎo.",
+      "translation": "비록 날씨는 춥지만 그는 여전히 꾸준히 조깅을 한다.",
+      "keyPoint": "역접 접속사 (虽然...但是...)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_d_02",
+      "sentence": "请大家进门前把窗户关上。",
+      "pinyin": "Qǐng dàjiā jìnmén qián bǎ chuānghu guānshang.",
+      "translation": "모두 들어오시기 전에 창문을 닫아 주세요.",
+      "keyPoint": "把자문 기본형 (把 + 窗户 + 关上)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk3_d_03",
+      "sentence": "他一边喝热茶，一边认真看书。",
+      "pinyin": "Tā yìbiān hē rèchá, yìbiān rènzhēn kànshū.",
+      "translation": "그는 따뜻한 차를 마시면서 열심히 책을 읽는다.",
+      "keyPoint": "병렬 구조 (一边...一边...)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_d_04",
+      "sentence": "经过努力，大家终于解决了这个难题。",
+      "pinyin": "Jīngguò nǔlì, dàjiā zhōngyú jiějué le zhè ge nántí.",
+      "translation": "노력 끝에 모두 마침내 이 난제를 해결했다.",
+      "keyPoint": "동목 호응 (解决难题)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk3_d_05",
+      "sentence": "汉语是一门越学越觉得有趣的语言。",
+      "pinyin": "Hànyǔ shì yì mén yuè xué yuè juéde yǒuqù de yǔyán.",
+      "translation": "중국어는 배울수록 더욱 흥미롭게 느껴지는 언어이다.",
+      "keyPoint": "점진 구문 (越...越...)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk3_d_06",
+      "sentence": "这个令人振奋的好消息让全家人都很高兴。",
+      "pinyin": "Zhè ge lìngrén zhènfèn de hǎo xiāoxi ràng quánjiā rén dōu hěn gāoxìng.",
+      "translation": "이 고무적인 좋은 소식은 온 가족을 매우 기쁘게 했다.",
+      "keyPoint": "사동문 (让 + 大家 + 高兴)",
+      "difficulty": "상"
+    }
+  ]
+}

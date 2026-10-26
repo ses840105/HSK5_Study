@@ -1,0 +1,1071 @@
+{
+  "vocab": [
+    {
+      "id": "hsk2_v_01",
+      "word": "准备",
+      "pinyin": "zhǔnbèi",
+      "pos": "동사",
+      "meaning": "준비하다",
+      "meaning_en": "to prepare",
+      "meaning_zh": "准备",
+      "example": "我们正在准备明天的考试。",
+      "translation": "우리는 내일 시험을 준비하고 있다.",
+      "translation_en": "We are preparing for tomorrow's exam.",
+      "translation_zh": "我们正在准备明天的考试。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_v_02",
+      "word": "帮助",
+      "pinyin": "bāngzhù",
+      "pos": "동사/명사",
+      "meaning": "돕다, 도움",
+      "meaning_en": "to help; assistance",
+      "meaning_zh": "帮助",
+      "example": "谢谢你一直以来对我的帮助。",
+      "translation": "그동안 나를 도와줘서 고마워.",
+      "translation_en": "Thank you for helping me all this time.",
+      "translation_zh": "谢谢你一直以来对我的帮助。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_v_03",
+      "word": "运动",
+      "pinyin": "yùndòng",
+      "pos": "동사/명사",
+      "meaning": "운동하다, 운동",
+      "meaning_en": "sports; to exercise",
+      "meaning_zh": "运动",
+      "example": "每天适量运动对身体有好处。",
+      "translation": "매일 적당히 운동하는 것은 건강에 좋다.",
+      "translation_en": "Moderate exercise every day is good for health.",
+      "translation_zh": "每天适量运动对身体有好处。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_v_04",
+      "word": "跑步",
+      "pinyin": "pǎobù",
+      "pos": "동사",
+      "meaning": "달리기하다",
+      "meaning_en": "to run; to jog",
+      "meaning_zh": "跑步",
+      "example": "他每天早晨都去公园跑步。",
+      "translation": "그는 매일 아침 공원에 가서 달리기한다.",
+      "translation_en": "He goes jogging in the park every morning.",
+      "translation_zh": "他每天早晨都去公园跑步。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_v_05",
+      "word": "便宜",
+      "pinyin": "piányi",
+      "pos": "형용사",
+      "meaning": "싸다, 저렴하다",
+      "meaning_en": "cheap; inexpensive",
+      "meaning_zh": "便宜",
+      "example": "这家店的衣服不仅好看而且很便宜。",
+      "translation": "이 가게 옷은 예쁠 뿐만 아니라 매우 싸다.",
+      "translation_en": "Clothes in this store are not only nice but also cheap.",
+      "translation_zh": "这家店的衣服不仅好看而且很便宜。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_v_06",
+      "word": "晴天",
+      "pinyin": "qíngtiān",
+      "pos": "명사",
+      "meaning": "맑은 날",
+      "meaning_en": "sunny day",
+      "meaning_zh": "晴天",
+      "example": "明天是个大晴天，适合去爬山。",
+      "translation": "내일은 맑은 날이라 등산 가기에 알맞다.",
+      "translation_en": "Tomorrow is a sunny day, suitable for hiking.",
+      "translation_zh": "明天是个大晴天，适合去爬山。",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_v_07",
+      "word": "懂",
+      "pinyin": "dǒng",
+      "pos": "동사",
+      "meaning": "이해하다, 알아듣다",
+      "meaning_en": "to understand",
+      "meaning_zh": "懂；明白",
+      "example": "老师说的话你都听懂了吗？",
+      "translation": "선생님께서 하신 말씀 다 알아들었니?",
+      "translation_en": "Did you understand what the teacher said?",
+      "translation_zh": "老师说的话你都听懂了吗？",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_v_08",
+      "word": "介绍",
+      "pinyin": "jièshào",
+      "pos": "동사",
+      "meaning": "소개하다",
+      "meaning_en": "to introduce",
+      "meaning_zh": "介绍",
+      "example": "请让我给你介绍一下这位新同事。",
+      "translation": "이 신입 동료를 소개해 드릴게요.",
+      "translation_en": "Let me introduce this new colleague to you.",
+      "translation_zh": "请让我给你介绍一下这位新同事。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_v_09",
+      "word": "考试",
+      "pinyin": "kǎoshì",
+      "pos": "명사/동사",
+      "meaning": "시험, 시험을 치다",
+      "meaning_en": "exam; to take a test",
+      "meaning_zh": "考试",
+      "example": "下周我们有一场重要的汉语考试。",
+      "translation": "다음 주에 중요한 중국어 시험이 있다.",
+      "translation_en": "We have an important Chinese exam next week.",
+      "translation_zh": "下周我们有一场重要的汉语考试。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_v_10",
+      "word": "旅游",
+      "pinyin": "lǚyóu",
+      "pos": "동사/명사",
+      "meaning": "여행하다, 여행",
+      "meaning_en": "travel; to travel",
+      "meaning_zh": "旅游",
+      "example": "放假的时候我想去云南旅游。",
+      "translation": "방학 때 운남으로 여행을 가고 싶다.",
+      "translation_en": "I want to travel to Yunnan during vacation.",
+      "translation_zh": "放假的时候我想去云南旅游。",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_v_11",
+      "word": "身体",
+      "pinyin": "shēntǐ",
+      "pos": "명사",
+      "meaning": "몸, 신체, 건강",
+      "meaning_en": "body; health",
+      "meaning_zh": "身体",
+      "example": "祝您身体健康，工作顺利！",
+      "translation": "건강하시고 일이 잘 풀리길 바랍니다!",
+      "translation_en": "Wish you good health and smooth work!",
+      "translation_zh": "祝您身体健康，工作顺利！",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_v_12",
+      "word": "欢迎",
+      "pinyin": "huānyíng",
+      "pos": "동사",
+      "meaning": "환영하다",
+      "meaning_en": "to welcome",
+      "meaning_zh": "欢迎",
+      "example": "热烈欢迎新同学加入我们的班级！",
+      "translation": "신입생 여러분의 우리 학급 합류를 열렬히 환영합니다!",
+      "translation_en": "Warmly welcome new classmates joining our class!",
+      "translation_zh": "热烈欢迎新同学加入我们的班级！",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_v_13",
+      "word": "经历",
+      "pinyin": "jīnglì",
+      "pos": "동사/명사",
+      "meaning": "경험하다, 경험",
+      "meaning_en": "to experience; experience",
+      "meaning_zh": "经历",
+      "example": "这次旅行是一次难忘的人生经历。",
+      "translation": "이번 여행은 잊지 못할 인생 경험이었다.",
+      "translation_en": "This trip was an unforgettable life experience.",
+      "translation_zh": "这次旅行是一次难忘的人生经历。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk2_v_14",
+      "word": "借",
+      "pinyin": "jiè",
+      "pos": "동사",
+      "meaning": "빌리다, 빌려주다",
+      "meaning_en": "to borrow; to lend",
+      "meaning_zh": "借",
+      "example": "我想从图书馆借两本中文小说。",
+      "translation": "도서관에서 중국어 소설 두 권을 빌리고 싶다.",
+      "translation_en": "I want to borrow two Chinese novels from the library.",
+      "translation_zh": "我想从图书馆借两本中文小说。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk2_v_15",
+      "word": "经常",
+      "pinyin": "jīngcháng",
+      "pos": "부사",
+      "meaning": "자주, 늘",
+      "meaning_en": "often; frequently",
+      "meaning_zh": "经常；常常",
+      "example": "我们经常在周末聚会聊天。",
+      "translation": "우리는 주말에 자주 모여서 이야기를 나눈다.",
+      "translation_en": "We often get together on weekends to chat.",
+      "translation_zh": "我们经常在周末聚会聊天。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk2_v_16",
+      "word": "宾馆",
+      "pinyin": "bīnguǎn",
+      "pos": "명사",
+      "meaning": "호텔, 여관",
+      "meaning_en": "hotel",
+      "meaning_zh": "宾馆；饭店",
+      "example": "我们提前在网上预订了市中心的宾馆。",
+      "translation": "우리는 시내 중심의 호텔을 인터넷으로 미리 예약했다.",
+      "translation_en": "We booked a hotel in the city center online in advance.",
+      "translation_zh": "我们提前在网上预订了市中心的宾馆。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk2_v_17",
+      "word": "穿",
+      "pinyin": "chuān",
+      "pos": "동사",
+      "meaning": "입다, 신다",
+      "meaning_en": "to wear",
+      "meaning_zh": "穿",
+      "example": "今天天气转凉，出门要多穿点衣服。",
+      "translation": "오늘 날씨가 쌀쌀해졌으니 외출할 때 옷을 든든히 입어라.",
+      "translation_en": "The weather is turning cold today, wear more clothes when going out.",
+      "translation_zh": "今天天气转凉，出门要多穿点衣服。",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk2_v_18",
+      "word": "洗",
+      "pinyin": "xǐ",
+      "pos": "동사",
+      "meaning": "씻다, 빨다",
+      "meaning_en": "to wash",
+      "meaning_zh": "洗",
+      "example": "吃饭前一定要认真洗手。",
+      "translation": "밥 먹기 전에 반드시 손을 깨끗이 씻어야 한다.",
+      "translation_en": "Be sure to wash your hands carefully before meals.",
+      "translation_zh": "吃饭前一定要认真洗手。",
+      "difficulty": "상"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk2_g_01",
+      "difficulty": "하",
+      "type": "comparison",
+      "category": "比자문 비교문 기초",
+      "category_en": "Bi-sentence (Comparison)",
+      "category_zh": "‘比’字句（比较句基础）",
+      "question": "\"형은 나보다 키가 크다\"의 올바른 어순은?",
+      "options": [
+        "哥哥比我高。",
+        "哥哥我比高。",
+        "比哥哥我高。",
+        "哥哥高比我。"
+      ],
+      "answer": 1,
+      "example": "哥哥比我高。",
+      "translation": "형은 나보다 키가 크다.",
+      "explanation": "기본 비교문 구조는 [A + 比 + B + 형용사]입니다.",
+      "explanation_en": "The basic comparison structure is [A + 比 + B + Adjective].",
+      "explanation_zh": "基本比较句格式为：A + 比 + B + 形容词。"
+    },
+    {
+      "id": "hsk2_g_02",
+      "difficulty": "하",
+      "type": "aspect",
+      "category": "동태조사 '了' (동작의 완료)",
+      "category_en": "Aspect Particle 'le' (completion)",
+      "category_zh": "动态助词‘了’表示完成",
+      "question": "\"나는 이미 점심을 먹었다\"의 알맞은 문장은?",
+      "options": [
+        "我已经吃了午饭。",
+        "我吃已经午饭了。",
+        "吃了我已经午饭。",
+        "我已经吃午饭吗。"
+      ],
+      "answer": 1,
+      "example": "我已经吃了午饭。",
+      "translation": "나는 이미 점심을 먹었다.",
+      "explanation": "동사 뒤에 '了'를 붙여 동작이 완료되었음을 나타냅니다. [동사 + 了]",
+      "explanation_en": "Placing '了' directly after the verb expresses completion of an action.",
+      "explanation_zh": "动词后加‘了’表示动作的完成或实现。"
+    },
+    {
+      "id": "hsk2_g_03",
+      "difficulty": "하",
+      "type": "preposition",
+      "category": "개사 '从...到...'",
+      "category_en": "From... to... (Cong... dao...)",
+      "category_zh": "介词短语‘从……到……’",
+      "question": "\"월요일부터 금요일까지\"를 올바르게 표현한 것은?",
+      "options": [
+        "从星期一到星期五",
+        "到星期一从星期五",
+        "从星期五到星期一",
+        "在星期一到星期五"
+      ],
+      "answer": 1,
+      "example": "我从星期一到星期五都要上课。",
+      "translation": "나는 월요일부터 금요일까지 수업이 있다.",
+      "explanation": "'从(기점) ... 到(종점)' 구조로 시간이나 공간의 범위를 나타냅니다.",
+      "explanation_en": "'从 ... 到' marks the starting point and endpoint of time or place.",
+      "explanation_zh": "‘从……到……’用于引出时间或空间的起点与终点。"
+    },
+    {
+      "id": "hsk2_g_04",
+      "difficulty": "중",
+      "type": "modal",
+      "category": "조동사 '会' vs '能'",
+      "category_en": "Modal Verbs 'hui' vs 'neng'",
+      "category_zh": "能愿动词‘会’与‘能’",
+      "question": "학습을 통해 습득한 능력(~할 줄 안다)을 나타내는 조동사는?",
+      "options": [
+        "会",
+        "能",
+        "可以",
+        "要"
+      ],
+      "answer": 1,
+      "example": "我会说一点儿汉语。",
+      "translation": "나는 중국어를 조금 할 줄 안다.",
+      "explanation": "학습이나 훈련을 통해 배워서 할 줄 아는 능력에는 '会'를 씁니다.",
+      "explanation_en": "'会' indicates an acquired ability learned through study or practice.",
+      "explanation_zh": "‘会’表示通过学习或训练获得的能力。"
+    },
+    {
+      "id": "hsk2_g_05",
+      "difficulty": "중",
+      "type": "aspect",
+      "category": "동태조사 '着' (상태의 지속)",
+      "category_en": "Aspect Particle 'zhe' (continuation)",
+      "category_zh": "动态助词‘着’表示状态持续",
+      "question": "\"문이 열려 있다\"를 바르게 표현한 문장은?",
+      "options": [
+        "门开着呢。",
+        "门开了着。",
+        "门看着开。",
+        "门开在着。"
+      ],
+      "answer": 1,
+      "example": "门开着呢。",
+      "translation": "문이 열려 있다.",
+      "explanation": "동사 뒤에 '着'를 붙여 동작의 결과로 생긴 상태가 지속됨을 나타냅니다.",
+      "explanation_en": "Verb + '着' indicates the continuation of an action or static state.",
+      "explanation_zh": "动词后加‘着’表示动作或状态的持续。"
+    },
+    {
+      "id": "hsk2_g_06",
+      "difficulty": "중",
+      "type": "negation",
+      "category": "부정 구문 '还没...呢'",
+      "category_en": "Structure 'hai mei... ne'",
+      "category_zh": "‘还没……呢’结构",
+      "question": "\"아직 밥을 안 먹었다\"를 가장 자연스럽게 표현한 것은?",
+      "options": [
+        "我还没吃饭呢。",
+        "我没还吃饭呢。",
+        "我不吃饭呢还。",
+        "我还饭不吃。"
+      ],
+      "answer": 1,
+      "example": "我还没吃饭呢。",
+      "translation": "나는 아직 밥을 안 먹었다.",
+      "explanation": "'还没 + 동사 + 呢'는 아직 어떤 동작이 발생하거나 완료되지 않았음을 나타냅니다.",
+      "explanation_en": "'还没 + Verb + 呢' expresses that an action has not yet happened.",
+      "explanation_zh": "‘还没……呢’表示某动作尚未完成或实现。"
+    },
+    {
+      "id": "hsk2_g_07",
+      "difficulty": "상",
+      "type": "aspect",
+      "category": "진행형 '正在...呢'",
+      "category_en": "Progressive 'zhengzai...ne'",
+      "category_zh": "进行时态‘正在……呢’",
+      "question": "\"그는 책을 읽고 있는 중이다\"의 올바른 표현은?",
+      "options": [
+        "他正在看书呢。",
+        "他看书正在呢。",
+        "正在他看书了。",
+        "他正看书了。"
+      ],
+      "answer": 1,
+      "example": "他正在看书呢。",
+      "translation": "그는 책을 읽고 있는 중이다.",
+      "explanation": "'正/在/正在 + 동사 + (呢)' 구조로 동작이 진행 중임을 나타냅니다.",
+      "explanation_en": "'正在 + Verb + 呢' marks an action currently in progress.",
+      "explanation_zh": "‘正在……（呢）’表示动作正在进行中。"
+    },
+    {
+      "id": "hsk2_g_08",
+      "difficulty": "상",
+      "type": "imperative",
+      "category": "금지문 '别...了'",
+      "category_en": "Imperative 'bie...le' (prohibition)",
+      "category_zh": "祈使句‘别……了’",
+      "question": "\"말 그만해(말하지 마)!\"를 뜻하는 알맞은 문장은?",
+      "options": [
+        "别说了！",
+        "不说了别！",
+        "没说了！",
+        "别说吗！"
+      ],
+      "answer": 1,
+      "example": "别说了！",
+      "translation": "말 그만해!",
+      "explanation": "'别 + 동사 + (了)'는 상대방의 동작을 만류하거나 금지할 때 씁니다.",
+      "explanation_en": "'别 + Verb + 了' urges someone to stop or refrain from doing something.",
+      "explanation_zh": "‘别……了’用于劝阻对方停止某种动作。"
+    },
+    {
+      "id": "hsk2_g_09",
+      "difficulty": "상",
+      "type": "superlative",
+      "category": "부사 '最' (최상급)",
+      "category_en": "Superlative Adverb 'zui'",
+      "category_zh": "副词‘最’表示最高级",
+      "question": "\"내가 가장 좋아하는 과일\"의 바른 표현은?",
+      "options": [
+        "我最喜欢的水果",
+        "我喜欢最的水果",
+        "最我喜欢的水果",
+        "我水果最喜欢"
+      ],
+      "answer": 1,
+      "example": "这是我最喜欢的水果。",
+      "translation": "이것은 내가 가장 좋아하는 과일이다.",
+      "explanation": "부사 '最(가장)'는 심리동사나 형용사 앞에 위치하여 최상급을 나타냅니다.",
+      "explanation_en": "Adverb '最' precedes adjectives or psychological verbs to form superlatives.",
+      "explanation_zh": "副词‘最’置于形容词或心理动词前，表示最高程度。"
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk2_l_01",
+      "difficulty": "하",
+      "category": "듣기 1부분 (외출 날씨)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "外面下雪了吗？天气冷不冷？"
+        },
+        {
+          "speaker": "女",
+          "text": "没下雪，但是风很大，你多穿点衣服吧。"
+        }
+      ],
+      "question": "外面的天气怎么样？",
+      "options": [
+        "风很大",
+        "下大雪",
+        "特别热",
+        "出太阳"
+      ],
+      "answer": "风很大",
+      "audioText": "男：外面下雪了吗？天气冷不冷？ 女：没下雪，但是风很大，你多穿点衣服吧。 问：外面的天气怎么样？",
+      "translation": "남: 밖에 눈 오니? 날씨 춥니?\n여: 눈은 안 오는데 바람이 엄청 불어, 옷 좀 더 껴입어.\n질문: 바깥 날씨는 어떤가요?",
+      "tip": "'没下雪，但是风很大'에서 핵심 정보 '风很大(바람이 세다)'를 고릅니다."
+    },
+    {
+      "id": "hsk2_l_02",
+      "difficulty": "하",
+      "category": "듣기 1부분 (선물 고르기)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "你看这块手表怎么样？送给爸爸合适吗？"
+        },
+        {
+          "speaker": "男",
+          "text": "样式很大方，爸爸一定会喜欢的。"
+        }
+      ],
+      "question": "他们打算买什么送给爸爸？",
+      "options": [
+        "手表",
+        "衣服",
+        "手机",
+        "自行车"
+      ],
+      "answer": "手表",
+      "audioText": "女：你看这块手表怎么样？送给爸爸合适吗？ 男：样式很大方，爸爸一定会喜欢的。 问：他们打算买什么送给爸爸？",
+      "translation": "여: 이 손목시계 어때 보여? 아빠 선물로 적당할까?\n남: 디자인이 매우 점잖아서 아빠가 분명 좋아하실 거야.\n질문: 그들은 아빠에게 무엇을 사드리려고 하나요?",
+      "tip": "'这块手表(이 시계)'라는 물건 명칭을 청취합니다."
+    },
+    {
+      "id": "hsk2_l_03",
+      "difficulty": "하",
+      "category": "듣기 1부분 (약 복용)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "医生，这个药我该怎么吃呢？"
+        },
+        {
+          "speaker": "女",
+          "text": "一天吃三次，每次吃两片，饭后半小时吃。"
+        }
+      ],
+      "question": "这个药一天吃几次？",
+      "options": [
+        "三次",
+        "一次",
+        "两次",
+        "四次"
+      ],
+      "answer": "三次",
+      "audioText": "男：医生，这个药我该怎么吃呢？ 女：一天吃三次，每次吃两片，饭后半小时吃。 问：这个药一天吃几次？",
+      "translation": "남: 의사 선생님, 이 약은 어떻게 복용해야 하나요?\n여: 하루에 세 번, 한 번에 두 알씩 식후 30분에 드세요.\n질문: 이 약은 하루에 몇 번 먹나요?",
+      "tip": "'一天吃三次'에서 횟수 '三次(세 번)'를 파악합니다."
+    },
+    {
+      "id": "hsk2_l_04",
+      "difficulty": "중",
+      "category": "듣기 1부분 (호텔 체크인)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "你好，我在网上预订了一间双人房。"
+        },
+        {
+          "speaker": "男",
+          "text": "请出示一下您的护照，我帮您办理入住。"
+        }
+      ],
+      "question": "女的预订了什么房间？",
+      "options": [
+        "双人房",
+        "单人房",
+        "大套房",
+        "会议室"
+      ],
+      "answer": "双人房",
+      "audioText": "女：你好，我在网上预订了一间双人房。 男：请出示一下您的护照，我帮您办理入住。 问：女的预订了什么房间？",
+      "translation": "여: 안녕하세요, 인터넷으로 2인실 하나 예약했는데요.\n남: 여권을 보여주시면 체크인 도와드리겠습니다.\n질문: 여자는 어떤 방을 예약했나요?",
+      "tip": "'双人房(2인실/더블룸)'을 포착합니다."
+    },
+    {
+      "id": "hsk2_l_05",
+      "difficulty": "중",
+      "category": "듣기 1부분 (시험 준비)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "明天的汉语考试你复习得怎么样了？"
+        },
+        {
+          "speaker": "女",
+          "text": "生词我都记住了，就是听力还需要多练练。"
+        }
+      ],
+      "question": "女人觉得哪部分还需要多练习？",
+      "options": [
+        "听力",
+        "生词",
+        "汉字",
+        "语法"
+      ],
+      "answer": "听力",
+      "audioText": "男：明天的汉语考试你复习得怎么样了？ 女：生词我都记住了，就是听力还需要多练练。 问：女人觉得哪部分还需要多练习？",
+      "translation": "남: 내일 중국어 시험 복습은 잘 돼가니?\n여: 단어는 다 외웠는데, 듣기를 아직 더 연습해야 해.\n질문: 여자는 어느 부분을 더 연습해야 한다고 생각하나요?",
+      "tip": "'就是听力还需要多练练'에서 '听力(듣기)'를 연결합니다."
+    },
+    {
+      "id": "hsk2_l_06",
+      "difficulty": "중",
+      "category": "듣기 1부분 (운동 습관)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "你最近气色真不错，是怎么保养的？"
+        },
+        {
+          "speaker": "男",
+          "text": "我每天坚持慢跑半小时，身体比以前好多了。"
+        }
+      ],
+      "question": "男的每天坚持做什么运动？",
+      "options": [
+        "慢跑",
+        "游泳",
+        "打篮球",
+        "踢足球"
+      ],
+      "answer": "慢跑",
+      "audioText": "女：你最近气色真不错，是怎么保养的？ 男：我每天坚持慢跑半小时，身体比以前好多了。 问：男的每天坚持做什么运动？",
+      "translation": "여: 너 요즘 안색이 참 좋다, 어떻게 관리한 거야?\n남: 매일 30분씩 조깅을 꾸준히 하니까 예전보다 건강이 훨씬 좋아졌어.\n질문: 남자는 매일 어떤 운동을 꾸준히 하나요?",
+      "tip": "'坚持慢跑半小时'에서 '慢跑(조깅)'를 듣고 고릅니다."
+    },
+    {
+      "id": "hsk2_l_07",
+      "difficulty": "상",
+      "category": "듣기 1부분 (길 찾기)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "请问最近的地铁站在哪里？我走迷路了。"
+        },
+        {
+          "speaker": "女",
+          "text": "你往前走两百米，过马路后向右拐就是了。"
+        }
+      ],
+      "question": "男的该怎么去地铁站？",
+      "options": [
+        "向前走过马路右拐",
+        "向后走左拐",
+        "坐公共汽车",
+        "坐出租车"
+      ],
+      "answer": "向前走过马路右拐",
+      "audioText": "男：请问最近的地铁站在哪里？我走迷路了。 女：你往前走两百米，过马路后向右拐就是了。 问：男的该怎么去地铁站？",
+      "translation": "남: 말씀 좀 묻겠습니다, 가장 가까운 지하철역이 어디인가요? 길을 잃었어요.\n여: 앞으로 200미터 가셔서 길을 건넌 뒤 우회전하시면 바로 나옵니다.\n질문: 남자는 지하철역에 어떻게 가야 하나요?",
+      "tip": "'往前走...过马路后向右拐'의 방향 표현을 조합합니다."
+    },
+    {
+      "id": "hsk2_l_08",
+      "difficulty": "상",
+      "category": "듣기 1부분 (식당 추천)",
+      "dialogue": [
+        {
+          "speaker": "女",
+          "text": "听说学校西门新开了一家面馆，味道怎么样？"
+        },
+        {
+          "speaker": "男",
+          "text": "面条非常地道，而且牛肉分量很足，价格还不贵。"
+        }
+      ],
+      "question": "男的觉得这家面馆怎么样？",
+      "options": [
+        "味道地道价格不贵",
+        "面条太贵不好吃",
+        "环境很吵服务差",
+        "离学校太远"
+      ],
+      "answer": "味道地道价格不贵",
+      "audioText": "女：听说学校西门新开了一家面馆，味道怎么样？ 男：面条非常地道，而且牛肉分量很足，价格还不贵。 问：男的觉得这家面馆怎么样？",
+      "translation": "여: 학교 서문에 국숫집이 새로 열렸다던데 맛이 어때?\n남: 면발이 아주 정통이고 쇠고기 양도 푸짐한데 가격도 안 비싸.\n질문: 남자는 이 국숫집이 어떻다고 생각하나요?",
+      "tip": "'味道非常地道...价格还不贵' 평가를 통합합니다."
+    },
+    {
+      "id": "hsk2_l_09",
+      "difficulty": "상",
+      "category": "듣기 1부분 (휴가 계획)",
+      "dialogue": [
+        {
+          "speaker": "男",
+          "text": "国庆长假快到了，你打算回家乡还是出去旅游？"
+        },
+        {
+          "speaker": "女",
+          "text": "各个景点人都太多，我打算留在宿舍安安静静看书。"
+        }
+      ],
+      "question": "女人国庆假期打算做什么？",
+      "options": [
+        "留在宿舍看书",
+        "去著名景点旅游",
+        "回老家看父母",
+        "去外地出差"
+      ],
+      "answer": "留在宿舍看书",
+      "audioText": "男：国庆长假快到了，你打算回家乡还是出去旅游？ 女：各个景点人都太多，我打算留在宿舍安安静静看书。 问：女人国庆假期打算做什么？",
+      "translation": "남: 국경절 연휴가 다가오는데 고향에 갈 거니 여행 갈 거니?\n여: 관광지마다 사람이 너무 많아서 기숙사에 남아 조용히 책 보려고.\n질문: 여자는 국경절 연휴에 무엇을 하려고 하나요?",
+      "tip": "'留在宿舍安安静静看书'에서 핵심 일정을 파악합니다."
+    }
+  ],
+  "chengyu": [
+    {
+      "id": "hsk2_ch_01",
+      "chengyu": "马马虎虎",
+      "pinyin": "mǎ mǎ hū hū",
+      "meaning": "대충대충 하다, 그럭저럭이다",
+      "sentence": "做事情要认真细致，不能____。",
+      "example": "做事情要认真细致，不能马马虎虎。",
+      "translation": "일을 할 때는 꼼꼼해야지 대충대충 해서는 안 된다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_ch_02",
+      "chengyu": "丰富多彩",
+      "pinyin": "fēng fù duō cǎi",
+      "meaning": "풍부하고 다채롭다",
+      "sentence": "大学里的课外活动真是____。",
+      "example": "大学里的课外活动真是丰富多彩。",
+      "translation": "대학교의 과외 활동은 정말 풍부하고 다채롭다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_ch_03",
+      "chengyu": "迫不及待",
+      "pinyin": "pò bù jí dài",
+      "meaning": "더는 지체할 수 없을 정도로 몹시 조급하다",
+      "sentence": "收到录取通知书后，他____地告诉了父母。",
+      "example": "收到录取通知书后，他迫不及待地告诉了父母。",
+      "translation": "합격 통지서를 받은 후 그는 더 지체할 겨를도 없이 부모님께 알렸다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_ch_04",
+      "chengyu": "七手八脚",
+      "pinyin": "qī shǒu bā jiǎo",
+      "meaning": "여럿이 손발이 어지럽게 일손을 돕다",
+      "sentence": "大家____地帮忙把行李搬上了车。",
+      "example": "大家七手八脚地帮忙把行李搬上了车。",
+      "translation": "모두가 북적대며 짐을 차에 싣는 것을 도왔다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_ch_05",
+      "chengyu": "自言自语",
+      "pinyin": "zì yán zì yǔ",
+      "meaning": "혼잣말을 하다",
+      "sentence": "他一个人坐在角落里____，不知道在想什么。",
+      "example": "他一个人坐在角落里自言自语，不知道在想什么。",
+      "translation": "그는 구석에 홀로 앉아 혼잣말을 하고 있어 무슨 생각을 하는지 알 수 없다.",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk2_ch_06",
+      "chengyu": "丢三落四",
+      "pinyin": "diū sān là sì",
+      "meaning": "이것저것 잘 흘리고 잊어버리다",
+      "sentence": "他性格粗心，出门总是____。",
+      "example": "他性格粗心，出门总是丢三落四。",
+      "translation": "그는 성격이 덜렁대어 외출할 때 늘 물건을 흘리고 다닌다.",
+      "difficulty": "상"
+    }
+  ],
+  "colloc": [
+    {
+      "id": "hsk2_co_01",
+      "collocation": "参加考试",
+      "pinyin": "cānjiā kǎoshì",
+      "verb": "参加 (참가하다)",
+      "noun": "考试 (시험)",
+      "meaning": "시험을 치다",
+      "example": "下周一我要参加汉语水平考试。"
+    },
+    {
+      "id": "hsk2_co_02",
+      "collocation": "提高水平",
+      "pinyin": "tígāo shuǐpíng",
+      "verb": "提高 (높이다)",
+      "noun": "水平 (수준)",
+      "meaning": "수준을 높이다",
+      "example": "多看中文电影能提高听力水平。"
+    },
+    {
+      "id": "hsk2_co_03",
+      "collocation": "保持健康",
+      "pinyin": "bǎochí jiànkāng",
+      "verb": "保持 (유지하다)",
+      "noun": "健康 (건강)",
+      "meaning": "건강을 유지하다",
+      "example": "坚持跑步有助于保持身体健康。"
+    },
+    {
+      "id": "hsk2_co_04",
+      "collocation": "穿新衣服",
+      "pinyin": "chuān xīn yīfu",
+      "verb": "穿 (입다)",
+      "noun": "新衣服 (새 옷)",
+      "meaning": "새 옷을 입다",
+      "example": "过年的时候小孩子们都喜欢穿新衣服。"
+    },
+    {
+      "id": "hsk2_co_05",
+      "collocation": "介绍经验",
+      "pinyin": "jièshào jīngyàn",
+      "verb": "介绍 (소개하다)",
+      "noun": "经验 (경험)",
+      "meaning": "경험을 소개하다",
+      "example": "学长热情地向我们介绍学习经验。"
+    },
+    {
+      "id": "hsk2_co_06",
+      "collocation": "准备行李",
+      "pinyin": "zhǔnbèi xíngli",
+      "verb": "准备 (준비하다)",
+      "noun": "行李 (짐/수하물)",
+      "meaning": "짐을 준비하다",
+      "example": "出发前一天我们认真准备了旅行行李。"
+    }
+  ],
+  "cloze": [
+    {
+      "id": "hsk2_cl_01",
+      "difficulty": "하",
+      "sentence": "下周就要期末考试了，大家都在认真____。",
+      "answer": "准备",
+      "options": [
+        "准备",
+        "介绍",
+        "欢迎",
+        "运动"
+      ],
+      "pinyin": "zhǔnbèi",
+      "collocation": "认真准备 (진지하게 준비하다)",
+      "translation": "다음 주면 기말시험이라 다들 열심히 준비하고 있다.",
+      "explanation": "시험에 대비하는 행위를 나타내는 동사는 '准备(준비하다)'입니다."
+    },
+    {
+      "id": "hsk2_cl_02",
+      "difficulty": "하",
+      "sentence": "今天天气非常晴朗，气温____昨天高了两度。",
+      "answer": "比",
+      "options": [
+        "比",
+        "从",
+        "对",
+        "把"
+      ],
+      "pinyin": "bǐ",
+      "collocation": "比昨天高 (어제보다 높다)",
+      "translation": "오늘 날씨가 매우 맑으며 기온이 어제보다 2도 높다.",
+      "explanation": "두 대상의 기온을 비교하는 개사는 '比'입니다."
+    },
+    {
+      "id": "hsk2_cl_03",
+      "difficulty": "중",
+      "sentence": "老师讲的这道数学题，你真的听____了吗？",
+      "answer": "懂",
+      "options": [
+        "懂",
+        "穿",
+        "借",
+        "洗"
+      ],
+      "pinyin": "dǒng",
+      "collocation": "听懂 (알아듣다/이해하다)",
+      "translation": "선생님께서 설명하신 이 수학 문제, 너 정말 알아들었니?",
+      "explanation": "설명을 듣고 이해함을 나타내는 결과보어는 '懂'입니다."
+    },
+    {
+      "id": "hsk2_cl_04",
+      "difficulty": "중",
+      "sentence": "多听新闻广播有助于____汉语听力能力。",
+      "answer": "提高",
+      "options": [
+        "提高",
+        "经历",
+        "宾馆",
+        "旅游"
+      ],
+      "pinyin": "tígāo",
+      "collocation": "提高能力 (능력을 향상시키다)",
+      "translation": "뉴스 방송을 많이 듣는 것은 중국어 듣기 능력 향상에 도움이 된다.",
+      "explanation": "'수준/능력'을 높인다는 호응 어휘는 '提高'입니다."
+    },
+    {
+      "id": "hsk2_cl_05",
+      "difficulty": "상",
+      "sentence": "周末我和室友____去学校附近的体育馆打羽毛球。",
+      "answer": "经常",
+      "options": [
+        "经常",
+        "便宜",
+        "马虎",
+        "自言"
+      ],
+      "pinyin": "jīngcháng",
+      "collocation": "经常去 (자주 가다)",
+      "translation": "주말에 나와 룸메이트는 학교 근처 체육관에 자주 배드민턴을 치러 간다.",
+      "explanation": "반복되는 행동 빈도를 나타내는 부사는 '经常(자주)'입니다."
+    },
+    {
+      "id": "hsk2_cl_06",
+      "difficulty": "상",
+      "sentence": "这次去西藏支教的经历，让我学到了许多宝贵的人生____。",
+      "answer": "经验",
+      "options": [
+        "经验",
+        "晴天",
+        "运动",
+        "行李"
+      ],
+      "pinyin": "jīngyàn",
+      "collocation": "人生经验 (인생 경험)",
+      "translation": "이번 티베트 교육 봉사 경험은 내게 많은 귀중한 인생 경험을 배우게 해 주었다.",
+      "explanation": "삶을 통해 축적한 지식과 체험을 뜻하는 명사는 '经验'입니다."
+    }
+  ],
+  "reading": [
+    {
+      "id": "hsk2_r_01",
+      "difficulty": "하",
+      "category": "독해 2부분 (일상 대화/안내)",
+      "title": "图书馆借书规定",
+      "passage": "欢迎大家使用学校图书馆。\n图书馆每天早晨八点开门，晚上十点闭馆。\n每位同学凭学生证最多可以借五本书，借期为一个月。\n在图书馆内请保持安静，不要大声喧哗和吃东西。\n希望大家能在这里度过愉快的读书时光。",
+      "lineCount": 5,
+      "question": "每位同学最多可以借几本书？",
+      "options": [
+        "五本",
+        "三本",
+        "十本",
+        "两本"
+      ],
+      "answer": "五本",
+      "keySentence": "最多可以借五本书",
+      "collocation": "借五本书",
+      "explanation": "본문에서 '最多可以借五本书(최대 5권의 책을 빌릴 수 있다)'라고 명시했습니다.",
+      "translation": "학교 도서관을 이용해 주셔서 환영합니다. 도서관은 매일 아침 8시에 열고 밤 10시에 닫습니다. 각 학생은 학생증으로 최대 다섯 권의 책을 빌릴 수 있으며 대출 기간은 한 달입니다. 도서관 내에서는 조용함을 유지해 주시고 큰 소리로 떠들거나 음식을 먹지 마십시오. 여러분 모두 이곳에서 즐거운 독서 시간을 보내시길 바랍니다."
+    },
+    {
+      "id": "hsk2_r_02",
+      "difficulty": "하",
+      "category": "독해 2부분 (일상 대화/안내)",
+      "title": "晨跑的好处",
+      "passage": "坚持早晨跑步是一种极佳的健康生活方式。\n清晨的空气格外清新，公园里的绿树让人心旷神怡。\n慢跑半小时不仅能活动筋骨，还能促进血液循环。\n长期坚持跑步的人，身体免疫力通常比不爱运动的人更好。\n明天早晨，不妨早起半小时，一起去跑步吧！",
+      "lineCount": 5,
+      "question": "根据这段话，坚持跑步有什么好处？",
+      "options": [
+        "身体免疫力更好",
+        "更容易觉得累",
+        "花费更多金钱",
+        "不需要早起"
+      ],
+      "answer": "身体免疫力更好",
+      "keySentence": "长期坚持跑步的人，身体免疫力通常比不爱运动的人更好",
+      "collocation": "身体免疫力更好",
+      "explanation": "본문에서 달리기를 꾸준히 한 사람은 면역력이 더 좋다고 하였습니다.",
+      "translation": "아침 달리기를 꾸준히 하는 것은 아주 훌륭한 건강 생활 방식이다. 이른 아침의 공기는 유난히 상쾌하며 공원의 푸른 나무들은 사람의 마음을 맑게 해 준다. 30분 동안 조깅을 하면 몸을 풀 수 있을 뿐만 아니라 혈액 순환도 촉진한다. 장기적으로 달리기를 꾸준히 한 사람은 보통 운동을 하지 않는 사람보다 신체 면역력이 더 좋다. 내일 아침 30분 일찍 일어나 함께 달리기해 보지 않겠는가!"
+    },
+    {
+      "id": "hsk2_r_03",
+      "difficulty": "중",
+      "category": "독해 2부분 (일상 대화/안내)",
+      "title": "难忘的黄山之旅",
+      "passage": "上个月我和几位留学生朋友一起去了著名的黄山旅游。\n黄山的奇松、怪石和壮丽的云海给我们留下了深刻印象。\n虽然爬山的过程非常辛苦，脚走得很酸，\n但当我们在山顶看到美丽的日出时，大家都觉得这一切非常值得。\n这是一次让人终生难忘的旅行经历。",
+      "lineCount": 5,
+      "question": "作者和朋友们在山顶看到了什么？",
+      "options": [
+        "美丽的日出",
+        "下大雪",
+        "古老的宾馆",
+        "很多人在游泳"
+      ],
+      "answer": "美丽的日出",
+      "keySentence": "当我们在山顶看到美丽的日出时",
+      "collocation": "看到美丽的日出",
+      "explanation": "본문에서 산 정상에서 '美丽的日出(아름다운 일출)'을 보았다고 했습니다.",
+      "translation": "지난달 나와 몇몇 유학생 친구들은 유명한 황산으로 여행을 갔다. 황산의 기이한 소나무, 괴석과 장려한 운해는 우리에게 깊은 인상을 남겼다. 비록 산을 오르는 과정이 매우 힘들고 다리가 아팠지만, 산 정상에서 아름다운 일출을 보았을 때 모두가 이 모든 것이 매우 가치 있다고 느꼈다. 평생 잊지 못할 여행 경험이었다."
+    },
+    {
+      "id": "hsk2_r_04",
+      "difficulty": "중",
+      "category": "독해 2부분 (일상 대화/안내)",
+      "title": "邻里之间的友谊",
+      "passage": "我的隔壁住着一位退休的中学语文老师王奶奶。\n王奶奶性格非常热情开朗，平时经常做一些可口的小点心送给我们。\n每次我遇到不懂的中文古诗，她都会耐心地帮我讲解。\n远亲不如近邻，有王奶奶这样热心的好邻居，\n让一个人在异国他乡留学的我感受到了家的温暖。",
+      "lineCount": 5,
+      "question": "王奶奶以前是一名什么老师？",
+      "options": [
+        "中学语文老师",
+        "大学英语老师",
+        "小学体育老师",
+        "音乐老师"
+      ],
+      "answer": "中学语文老师",
+      "keySentence": "隔壁住着一位退休的中学语文老师王奶奶",
+      "collocation": "中学语文老师",
+      "explanation": "본문 첫 문장에서 '中学语文老师(중학교 국어 선생님)'라고 밝혔습니다.",
+      "translation": "내 옆집에는 은퇴한 중학교 국어 교사 왕 할머니가 사신다. 왕 할머니는 성격이 매우 열정적이고 밝으시며 평소 맛있는 간식을 만들어 우리에게 자주 주신다. 내가 모르는 중국 고시를 마주할 때마다 참을성 있게 해설해 주신다. 먼 친척보다 이웃사촌이 낫다고, 왕 할머니처럼 열성적인 좋은 이웃이 있어 타국에서 혼자 유학하는 내게 가정의 따뜻함을 느끼게 해 준다."
+    },
+    {
+      "id": "hsk2_r_05",
+      "difficulty": "상",
+      "category": "독해 2부분 (일상 대화/안내)",
+      "title": "合理膳食与健康",
+      "passage": "现代营养学强调，平衡膳食是维护身体健康的核心基石。\n在日常饮食中，我们不仅要摄入足够的蛋白质和主食，\n更应该保证每天吃半斤以上的新鲜绿叶蔬菜和适量水果。\n尽量少吃高油高糖的油炸食品，少喝含糖饮料，多喝白开水。\n养成良好的饮食习惯，是预防慢性疾病最经济有效的方法。",
+      "lineCount": 5,
+      "question": "根据文章，怎样吃才是健康的？",
+      "options": [
+        "多吃蔬菜水果少吃油炸食品",
+        "每天只喝含糖饮料",
+        "完全不吃蛋白质和主食",
+        "经常吃高油高糖食品"
+      ],
+      "answer": "多吃蔬菜水果少吃油炸食品",
+      "keySentence": "保证每天吃新鲜绿叶蔬菜，少吃高油高糖的油炸食品",
+      "collocation": "平衡膳食",
+      "explanation": "본문에서 신선한 채소와 과일을 먹고 튀긴 고열량 음식을 줄이라고 강조하고 있습니다.",
+      "translation": "현대 영양학은 균형 잡힌 식사가 신체 건강 유지의 핵심 초석임을 강조한다. 일상 식단에서 우리는 충분한 단백질과 주식을 섭취해야 할 뿐만 아니라 매일 250g 이상의 신선한 녹색 채소와 적당량의 과일을 먹어야 한다. 고기름·고당분의 튀김류 음식을 적게 먹고 당류 음료를 피하며 맹물을 많이 마셔야 한다. 좋은 식습관을 기르는 것이 만성 질환 예방의 가장 경제적이고 효과적인 방법이다."
+    },
+    {
+      "id": "hsk2_r_06",
+      "difficulty": "상",
+      "category": "독해 2부분 (일상 대화/안내)",
+      "title": "中国传统的茶文化",
+      "passage": "茶在中国拥有数千年的悠久历史，是中华传统文化的代表符号之一。\n中国人喝茶不仅是为了解渴，更是为了品味茶香中的宁静与悠闲。\n客人家中来访时，主人往往会泡上一壶上好的热茶以示尊重与欢迎。\n绿茶清新淡雅，红茶醇厚温润，乌龙茶回味悠长。\n在繁忙的生活中静下心来品一杯好茶，能让人身心放松。",
+      "lineCount": 5,
+      "question": "客人来访时，中国主人通常会怎么做？",
+      "options": [
+        "泡上一壶好茶表示欢迎",
+        "请客人喝冰水",
+        "让客人马上离开",
+        "送给客人一块手表"
+      ],
+      "answer": "泡上一壶好茶表示欢迎",
+      "keySentence": "主人往往会泡上一壶上好的热茶以示尊重与欢迎",
+      "collocation": "泡上一壶热茶",
+      "explanation": "본문에서 손님이 오면 주인이 좋은 차 한 주전자를 우려 환영을 표한다고 하였습니다.",
+      "translation": "차는 중국에서 수천 년의 유구한 역사를 지니며 중국 전통문화의 대표 상징 중 하나이다. 중국인이 차를 마시는 것은 갈증 해소뿐 아니라 차 향 속의 평온과 한가로움을 음미하기 위함이다. 손님이 방문했을 때 주인은 흔히 좋은 차를 우려 존중과 환영을 표한다. 녹차는 산뜻하고, 홍차는 그윽하며, 우롱차는 여운이 길다. 바쁜 일상에서 마음을 가라앉히고 차 한 잔을 음미하면 심신이 이완된다."
+    }
+  ],
+  "dictation": [
+    {
+      "id": "hsk2_d_01",
+      "sentence": "哥哥比我高很多。",
+      "pinyin": "Gēge bǐ wǒ gāo hěn duō.",
+      "translation": "형은 나보다 키가 훨씬 크다.",
+      "keyPoint": "비교문 기초 (比 + 형용사)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_d_02",
+      "sentence": "明天我们一起去公园跑步吧。",
+      "pinyin": "Míngtiān wǒmen yìqǐ qù gōngyuán pǎobù ba.",
+      "translation": "내일 우리 함께 공원에 달리기하러 가자.",
+      "keyPoint": "청유문/연동문 (一起 + 去跑步)",
+      "difficulty": "하"
+    },
+    {
+      "id": "hsk2_d_03",
+      "sentence": "我从星期一到星期五都要上课。",
+      "pinyin": "Wǒ cóng xīngqīyī dào xīngqīwǔ dōu yào shàngkè.",
+      "translation": "나는 월요일부터 금요일까지 모두 수업을 들어야 한다.",
+      "keyPoint": "범위 표현 (从...到...)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_d_04",
+      "sentence": "谢谢你一直以来对我的帮助。",
+      "pinyin": "Xièxie nǐ yìzhí yǐlái duì wǒ de bāngzhù.",
+      "translation": "그동안 나를 도와줘서 고마워.",
+      "keyPoint": "감사 표현 (对我的帮助)",
+      "difficulty": "중"
+    },
+    {
+      "id": "hsk2_d_05",
+      "sentence": "他每天坚持慢跑半小时，身体很好。",
+      "pinyin": "Tā měitiān jiānchí mànpǎo bàn xiǎoshí, shēntǐ hěn hǎo.",
+      "translation": "그는 매일 30분씩 꾸준히 조깅을 하여 건강이 아주 좋다.",
+      "keyPoint": "지속 표현 (坚持慢跑)",
+      "difficulty": "상"
+    },
+    {
+      "id": "hsk2_d_06",
+      "sentence": "请让我给你介绍一下这位新朋友。",
+      "pinyin": "Qǐng ràng wǒ gěi nǐ jièshào yíxià zhè wèi xīn péngyou.",
+      "translation": "이 새 친구를 당신에게 소개해 드릴게요.",
+      "keyPoint": "소개 표현 (给你介绍一下)",
+      "difficulty": "상"
+    }
+  ]
+}

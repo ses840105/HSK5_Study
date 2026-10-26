@@ -84,6 +84,32 @@
       </div>
     </header>
 
+    <!-- New HSK 3.0 (3등 9급) 급수 선택 네비게이션 바 -->
+    <div class="hsk-level-bar" id="hsk-level-bar">
+      <div class="hsk-tier-group" data-tier="elementary">
+        <span class="hsk-tier-label" id="tier-label-elem">초등 (기초)</span>
+        <div class="hsk-level-chips">
+          <button type="button" class="hsk-level-tab" data-hsk-level="1">1급</button>
+          <button type="button" class="hsk-level-tab" data-hsk-level="2">2급</button>
+          <button type="button" class="hsk-level-tab" data-hsk-level="3">3급</button>
+        </div>
+      </div>
+      <div class="hsk-tier-group" data-tier="intermediate">
+        <span class="hsk-tier-label" id="tier-label-inter">중등 (실전)</span>
+        <div class="hsk-level-chips">
+          <button type="button" class="hsk-level-tab" data-hsk-level="4">4급</button>
+          <button type="button" class="hsk-level-tab active" data-hsk-level="5">5급</button>
+          <button type="button" class="hsk-level-tab" data-hsk-level="6">6급</button>
+        </div>
+      </div>
+      <div class="hsk-tier-group" data-tier="advanced">
+        <span class="hsk-tier-label" id="tier-label-adv">고등 (심화)</span>
+        <div class="hsk-level-chips">
+          <button type="button" class="hsk-level-tab" data-hsk-level="7-9">7~9급</button>
+        </div>
+      </div>
+    </div>
+
     <!-- 상단 대분류 모드 탭 (학습 모드 / 퀴즈 모드) -->
     <nav class="main-mode-nav" id="main-mode-nav">
       <button id="nav-mode-study" class="main-mode-tab" data-nav-mode="study">
@@ -136,15 +162,23 @@
         <div class="mode-card active" data-mode="vocab">
           <div class="mode-icon">🎯</div>
           <div class="mode-info">
-            <div class="mode-name">필수 어휘 퀴즈</div>
+            <div class="mode-name">필수 어휘 퀴즈 <span class="mode-count-badge" id="count-badge-vocab">103단어</span></div>
             <div class="mode-desc">한자/병음 ➔ 한국어 뜻 및 핵심 예문</div>
+          </div>
+        </div>
+
+        <div class="mode-card" data-mode="grammar">
+          <div class="mode-icon">📑</div>
+          <div class="mode-info">
+            <div class="mode-name">필수 문법 & 어순 배열 <span class="mode-count-badge" id="count-badge-grammar">22문법</span></div>
+            <div class="mode-desc">把/被자문, 존현문, 접속사 공식 및 쓰기</div>
           </div>
         </div>
 
         <div class="mode-card" data-mode="listening">
           <div class="mode-icon">🎧</div>
           <div class="mode-info">
-            <div class="mode-name">실전 듣기(听力) 퀴즈</div>
+            <div class="mode-name">실전 듣기(听力) 퀴즈 <span class="mode-count-badge" id="count-badge-listening">18대화</span></div>
             <div class="mode-desc">남녀 2마디 대화 & 단문 청취 후 질문 풀이</div>
           </div>
         </div>
@@ -170,14 +204,6 @@
           <div class="mode-info">
             <div class="mode-name">독해 2·3부분 장문 독해</div>
             <div class="mode-desc">하(5~10줄)·중(10~20줄)·상(20~30줄) 기출 지문 읽고 보기 맞추기</div>
-          </div>
-        </div>
-
-        <div class="mode-card" data-mode="grammar">
-          <div class="mode-icon">📑</div>
-          <div class="mode-info">
-            <div class="mode-name">필수 문법 & 어순 배열</div>
-            <div class="mode-desc">把/被자문, 존현문, 접속사 공식 및 쓰기</div>
           </div>
         </div>
 
@@ -520,11 +546,14 @@
           <button class="study-cat-btn active" data-study-cat="vocab" id="study-cat-vocab">
             <span>📚</span> <span id="study-cat-vocab-text">필수 어휘</span>
           </button>
-          <button class="study-cat-btn" data-study-cat="chengyu" id="study-cat-chengyu">
-            <span>🀄</span> <span id="study-cat-chengyu-text">사자성어 / 관용구</span>
-          </button>
           <button class="study-cat-btn" data-study-cat="grammar" id="study-cat-grammar">
             <span>📐</span> <span id="study-cat-grammar-text">핵심 문법</span>
+          </button>
+          <button class="study-cat-btn" data-study-cat="listening" id="study-cat-listening">
+            <span>🎧</span> <span id="study-cat-listening-text">실전 듣기 (听力)</span>
+          </button>
+          <button class="study-cat-btn" data-study-cat="chengyu" id="study-cat-chengyu">
+            <span>🀄</span> <span id="study-cat-chengyu-text">사자성어 / 관용구</span>
           </button>
         </div>
 

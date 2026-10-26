@@ -3,6 +3,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   // 데이터 저장소
   let currentLanguage = "hsk"; // "hsk" | "ielts"
+  let currentHskLevel = localStorage.getItem("preferred_hsk_level") || "5";
+  let hskLevelsData = (typeof window !== "undefined" && (window.APP_DATA?.hskLevels || window.HSK_LEVELS_DATA)) || null;
 
   let hskData = { vocab: [], colloc: [], chengyu: [], cloze: [], grammar: [], listening: [], dictation: [], reading: [] };
   let ieltsData = { vocab: [], listening: [], idioms: [], cloze: [], grammar: [], dictation: [], reading: [] };
@@ -130,17 +132,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 공부 모드 관련 DOM 캐싱
   const mainModeNav = document.getElementById("main-mode-nav");
+  const hskLevelBar = document.getElementById("hsk-level-bar");
+  const hskLevelTabs = document.querySelectorAll(".hsk-level-tab");
+  const tierLabelElem = document.getElementById("tier-label-elem");
+  const tierLabelInter = document.getElementById("tier-label-inter");
+  const tierLabelAdv = document.getElementById("tier-label-adv");
+
   const navModeStudy = document.getElementById("nav-mode-study");
   const navModeQuiz = document.getElementById("nav-mode-quiz");
   const navModeStudyText = document.getElementById("nav-mode-study-text");
   const navModeQuizText = document.getElementById("nav-mode-quiz-text");
 
   const studyCatVocab = document.getElementById("study-cat-vocab");
-  const studyCatChengyu = document.getElementById("study-cat-chengyu");
   const studyCatGrammar = document.getElementById("study-cat-grammar");
+  const studyCatListening = document.getElementById("study-cat-listening");
+  const studyCatChengyu = document.getElementById("study-cat-chengyu");
   const studyCatVocabText = document.getElementById("study-cat-vocab-text");
-  const studyCatChengyuText = document.getElementById("study-cat-chengyu-text");
   const studyCatGrammarText = document.getElementById("study-cat-grammar-text");
+  const studyCatListeningText = document.getElementById("study-cat-listening-text");
+  const studyCatChengyuText = document.getElementById("study-cat-chengyu-text");
   const studyCatBtns = document.querySelectorAll(".study-cat-btn");
   const studyDiffFilters = document.querySelectorAll(".study-diff-filter");
 
@@ -370,16 +380,16 @@ document.addEventListener("DOMContentLoaded", () => {
       logoutTitle: "로그아웃",
 
       hsk: {
-        title: "HSK 5급 스마트 퀴즈",
-        introTitle: "실전 HSK 5급 학습 모드를 선택하세요",
-        introDesc: "어휘 암기, 사자성어 문맥 완성, 독해 1부분 搭配 배합, 필수 문법, 그리고 실전 듣기(听力)까지 원어민 음성으로 정복하세요.",
+        title: "HSK 스마트 퀴즈",
+        introTitle: "실전 HSK 학습 모드를 선택하세요",
+        introDesc: "어휘 암기, 필수 문법, 실전 듣기(听力), 사자성어 문맥 완성, 독해 1부분 搭配 배합까지 원어민 음성으로 정복하세요.",
         modes: {
           vocab: { name: "필수 어휘 퀴즈", desc: "한자/병음 ➔ 한국어 뜻 및 핵심 예문" },
+          grammar: { name: "필수 문법 & 어순 배열", desc: "把/被자문, 존현문, 접속사 공식 및 쓰기" },
           listening: { name: "실전 듣기(听力) 퀴즈", desc: "남녀 2마디 대화 & 단문 청취 후 질문 풀이" },
           chengyu: { name: "사자성어(成语) 퀴즈", desc: "문맥 빈칸 채우기 & 빈출 30선 의미 파악" },
           cloze: { name: "독해 1부분 실전 빈칸", desc: "3초 컷! 고정 짝꿍 호응(搭配) 훈련" },
           reading: { name: "독해 2·3부분 장문 독해", desc: "하(5~10줄)·중(10~20줄)·상(20~30줄) 기출 지문 읽고 보기 맞추기" },
-          grammar: { name: "필수 문법 & 어순 배열", desc: "把/被자문, 존현문, 접속사 공식 및 쓰기" },
           dictation: { name: "말하기 딕테이션 (口语)", desc: "원어민 문장 듣고 똑같이 말하기 & 틀린 글자 정밀 비교" },
           mixed: { name: "종합 실전 모의고사", desc: "듣기, 어휘, 성어, 빈칸, 문법, 말하기 통합 출제" }
         }
@@ -395,11 +405,11 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         modes: {
           vocab: { name: "IELTS 핵심 어휘", desc: "Band 5.0 기초부터 Band 8.0 아카데믹 필수 어휘 & 유의어" },
+          grammar: { name: "라이팅 필수 문법 & 구문", desc: "기초 시제/수동태부터 Band 7+ 도치·분사구문까지" },
           listening: { name: "실전 리스닝(Listening)", desc: "Section 1 일상 대화부터 Section 4 학술 강의 청취" },
           chengyu: { name: "숙어 및 관용구(Idioms)", desc: "스피킹 & 라이팅 점수 부스팅 필수 관용 표현" },
           cloze: { name: "리딩 Collocation 빈칸", desc: "Band 점수대별 빈출 고정 어휘 배합(연어) 완성" },
           reading: { name: "리딩 장문 독해 (Reading)", desc: "하(5~10줄)·중(10~20줄)·상(20~30줄) 기출 지문 및 패러프레이징 추론" },
-          grammar: { name: "라이팅 필수 문법 & 구문", desc: "기초 시제/수동태부터 Band 7+ 도치·분사구문까지" },
           dictation: { name: "스피킹 딕테이션 (Speaking)", desc: "Band 5.0 / 5.5~6.5 / 6.5~8.0 문장 듣고 따라 말하기" },
           mixed: { name: "종합 실전 모의고사", desc: "리스닝, 어휘, 숙어, 콜로케이션, 문법, 스피킹 통합 출제" }
         }
@@ -493,9 +503,13 @@ document.addEventListener("DOMContentLoaded", () => {
       navModeStudy: "공부 모드 (카드 세트)",
       navModeQuiz: "실전 퀴즈 모드",
       studyCatVocab: "필수 어휘",
+      studyCatGrammar: "핵심 문법 & 구문",
+      studyCatListening: "실전 듣기 (听力)",
       studyCatChengyuHsk: "사자성어(成语)",
       studyCatChengyuIelts: "숙어 및 관용구(Idioms)",
-      studyCatGrammar: "핵심 문법 & 구문",
+      tierElem: "초등 (기초)",
+      tierInter: "중등 (실전)",
+      tierAdv: "고등 (심화)",
       studyFlipPrompt: "클릭하여 뜻 & 예문 확인",
       studyFlipBackPrompt: "클릭하여 앞면으로 돌아가기",
       studyAutoplayOn: "자동 넘김 정지",
@@ -569,16 +583,16 @@ document.addEventListener("DOMContentLoaded", () => {
       logoutTitle: "退出登录",
 
       hsk: {
-        title: "HSK 5级智能测试",
-        introTitle: "请选择 HSK 5级实战学习模式",
-        introDesc: "词汇背诵、成语语境填空、阅读第一部分搭配、必备语法及实战听力，通过纯正发音全面掌握。",
+        title: "HSK 智能测试",
+        introTitle: "请选择 HSK 实战学习模式",
+        introDesc: "词汇背诵、必备语法、实战听力、常用成语、阅读第一部分搭配，通过纯正发音全面掌握。",
         modes: {
           vocab: { name: "核心词汇测验", desc: "汉字/拼音 ➔ 释义与核心例句" },
+          grammar: { name: "必备语法与语序", desc: "把/被字句、存现句、关联词及句型排序" },
           listening: { name: "实战听力测验", desc: "男女日常对话与短文听力问答训练" },
           chengyu: { name: "常用成语测验", desc: "语境选词填空与高频30成语含义掌握" },
           cloze: { name: "阅读第一部分填空", desc: "3秒速答！高频固定搭配强化训练" },
           reading: { name: "阅读二·三部分长文理解", desc: "初(5~10行)·中(10~20行)·高(20~30行)真题长文阅读与选项匹配" },
-          grammar: { name: "必备语法与语序", desc: "把/被字句、存现句、关联词及句型排序" },
           dictation: { name: "口语听写跟读", desc: "听母语原音跟读句子，智能比对发音与错字" },
           mixed: { name: "综合全真模拟考试", desc: "听力、词汇、成语、填空、语法、口语全方位模拟" }
         }
@@ -594,11 +608,11 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         modes: {
           vocab: { name: "雅思核心词汇", desc: "Band 5.0~8.0 分级学术必备词汇与同义替换" },
+          grammar: { name: "写作高分语法句型", desc: "基础句型至倒装、虚拟、分词等高分复合句" },
           listening: { name: "实战听力训练", desc: "日常对话与学术讲座听力理解及问答" },
           chengyu: { name: "高分习语与短语", desc: "口语与写作提分必备地道惯用表达" },
           cloze: { name: "阅读搭配填空", desc: "学术高频固定词汇搭配 (Collocations)" },
           reading: { name: "雅思阅读长文理解 (Reading)", desc: "5~10行 / 10~20行 / 20~30行真题长文精读与同义替换解题" },
-          grammar: { name: "写作高分语法句型", desc: "基础句型至倒装、虚拟、分词等高分复合句" },
           dictation: { name: "口语听写跟读 (Speaking)", desc: "按 Band 5.0 / 5.5~6.5 / 6.5~8.0 听原音跟读句子" },
           mixed: { name: "综合全真模拟考试", desc: "听力、词汇、习语、搭配、语法、口语全方位模拟" }
         }
@@ -692,9 +706,13 @@ document.addEventListener("DOMContentLoaded", () => {
       navModeStudy: "学习模式 (单词卡片)",
       navModeQuiz: "实战测验模式",
       studyCatVocab: "核心词汇",
+      studyCatGrammar: "核心语法与句型",
+      studyCatListening: "实战听力 (听力)",
       studyCatChengyuHsk: "成语典故",
       studyCatChengyuIelts: "高分习语 (Idioms)",
-      studyCatGrammar: "核心语法与句型",
+      tierElem: "初等 (基础)",
+      tierInter: "中等 (实战)",
+      tierAdv: "高等 (高级)",
       studyFlipPrompt: "点击查看释义与例句",
       studyFlipBackPrompt: "点击返回卡片正面",
       studyAutoplayOn: "停止自动播放",
@@ -768,16 +786,16 @@ document.addEventListener("DOMContentLoaded", () => {
       logoutTitle: "Log Out",
 
       hsk: {
-        title: "HSK Level 5 Smart Quiz",
-        introTitle: "Select HSK Level 5 Study Mode",
-        introDesc: "Conquer core vocabulary, contextual idioms, reading collocations, essential grammar, and real listening with authentic native pronunciation.",
+        title: "HSK Smart Quiz",
+        introTitle: "Select HSK Study Mode",
+        introDesc: "Conquer core vocabulary, essential grammar, real listening, contextual idioms, and reading collocations with authentic native pronunciation.",
         modes: {
           vocab: { name: "Core Vocabulary", desc: "Hanzi/Pinyin ➔ Definition & practical examples" },
+          grammar: { name: "Grammar & Word Order", desc: "Ba/Bei sentences, existential verbs & syntax" },
           listening: { name: "Listening Practice", desc: "Dialogue & passage comprehension questions" },
-          chengyu: { name: "Four-Character Idioms", desc: "Contextual cloze & essential top 30 idioms" },
+          chengyu: { name: "Four-Character Idioms", desc: "Contextual cloze & essential idioms" },
           cloze: { name: "Reading Part 1 Cloze", desc: "Quick answer! Standard collocations training" },
           reading: { name: "Reading Part 2 & 3 Passages", desc: "Graded passages (5-10 / 10-20 / 20-30 lines) & comprehension" },
-          grammar: { name: "Grammar & Word Order", desc: "Ba/Bei sentences, existential verbs & syntax" },
           dictation: { name: "Speaking Dictation", desc: "Listen & repeat Chinese sentences with character diff" },
           mixed: { name: "Comprehensive Mock Exam", desc: "Full simulation covering all sections" }
         }
@@ -788,11 +806,11 @@ document.addEventListener("DOMContentLoaded", () => {
         introDesc: "Master IELTS across graded difficulty levels: Easy (Band 5.0), Medium (Band 5.5~6.5), and Hard (Band 6.5~8.0) across vocab, listening, idioms, cloze, grammar, and speaking dictation.",
         modes: {
           vocab: { name: "IELTS Core Vocab", desc: "Band 5.0 / 5.5~6.5 / 6.5~8.0 graded vocabulary & examples" },
+          grammar: { name: "Writing Grammar & Syntax", desc: "Band 5.0 basics to Band 6.5~8.0 inversion & conditionals" },
           listening: { name: "Listening Practice", desc: "Section 1~4 conversations & lectures by Band level" },
           chengyu: { name: "Idioms & Phrases", desc: "Band 5.0~8.0 natural expressions for Speaking & Writing" },
           cloze: { name: "Collocation Cloze", desc: "Band-graded frequent fixed collocations" },
           reading: { name: "IELTS Reading Passages", desc: "Graded passages (5-10 / 10-20 / 20-30 lines) & paraphrasing" },
-          grammar: { name: "Writing Grammar & Syntax", desc: "Band 5.0 basics to Band 6.5~8.0 inversion & conditionals" },
           dictation: { name: "Speaking Dictation", desc: "Band 5.0 / 5.5~6.5 / 6.5~8.0 speaking & listening dictation" },
           mixed: { name: "Comprehensive Mock Exam", desc: "All-in-one test covering listening, vocab, grammar & speaking" }
         },
@@ -891,9 +909,13 @@ document.addEventListener("DOMContentLoaded", () => {
       navModeStudy: "Study Mode (Flashcards)",
       navModeQuiz: "Quiz Mode (Practice)",
       studyCatVocab: "Vocabulary",
+      studyCatGrammar: "Core Grammar & Patterns",
+      studyCatListening: "Listening (听力)",
       studyCatChengyuHsk: "Idioms (Chengyu)",
       studyCatChengyuIelts: "Idioms & Phrases",
-      studyCatGrammar: "Core Grammar & Patterns",
+      tierElem: "Elementary",
+      tierInter: "Intermediate",
+      tierAdv: "Advanced",
       studyFlipPrompt: "Click to reveal meaning & examples",
       studyFlipBackPrompt: "Click to return to front",
       studyAutoplayOn: "Pause Auto Play",
@@ -925,7 +947,7 @@ document.addEventListener("DOMContentLoaded", () => {
       signupBtn: "Sign Up",
       authHaveAccount: "Already have an account? ",
       authGoLogin: "Log In",
-      footerTitle: "HSK Level 5 & IELTS Multilingual Smart Learning",
+      footerTitle: "New HSK 3.0 & IELTS Multilingual Smart Learning",
       footerDesc: "Powered by Web Speech API Native Audio",
 
       prompts: {
@@ -949,15 +971,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
+  function getHskLevelLabel(level, uiLang) {
+    const lv = String(level || currentHskLevel || "5");
+    const lang = uiLang || currentUiLang || "ko";
+    if (lang === "zh") {
+      return lv === "7-9" ? "7~9级" : `${lv}级`;
+    }
+    if (lang === "en") {
+      return lv === "7-9" ? "Lv. 7-9" : `Level ${lv}`;
+    }
+    return lv === "7-9" ? "7~9급" : `${lv}급`;
+  }
+
   function getSubjectConfig(subject, uiLang) {
     const lang = uiLang || currentUiLang || "ko";
     const t = I18N[lang] || I18N.ko;
     const sub = (subject === "ielts") ? "ielts" : "hsk";
     const conf = t[sub];
-    const badges = { hsk: "HSK 5", ielts: "IELTS" };
+    const lvLabel = getHskLevelLabel(currentHskLevel, lang);
+    const badges = { hsk: `HSK ${currentHskLevel}`, ielts: "IELTS" };
     const icons = {
-      hsk: { vocab: "🎯", listening: "🎧", chengyu: "🀄", cloze: "🔗", reading: "📖", grammar: "📑", dictation: "🎙️", mixed: "🎲" },
-      ielts: { vocab: "🎯", listening: "🎧", chengyu: "💡", cloze: "🔗", reading: "📖", grammar: "📑", dictation: "🎙️", mixed: "🎲" }
+      hsk: { vocab: "🎯", grammar: "📑", listening: "🎧", chengyu: "🀄", cloze: "🔗", reading: "📖", dictation: "🎙️", mixed: "🎲" },
+      ielts: { vocab: "🎯", grammar: "📑", listening: "🎧", chengyu: "💡", cloze: "🔗", reading: "📖", dictation: "🎙️", mixed: "🎲" }
     };
     const modes = {};
     if (conf && conf.modes) {
@@ -969,10 +1004,26 @@ document.addEventListener("DOMContentLoaded", () => {
         };
       });
     }
+
+    let dynTitle = conf ? conf.title : "스마트 퀴즈";
+    let dynIntroTitle = conf ? conf.introTitle : "";
+    if (sub === "hsk") {
+      if (lang === "zh") {
+        dynTitle = `新 HSK ${lvLabel} 智能测试`;
+        dynIntroTitle = `请选择 新 HSK ${lvLabel} 实战学习模式`;
+      } else if (lang === "en") {
+        dynTitle = `New HSK ${lvLabel} Smart Quiz`;
+        dynIntroTitle = `Select New HSK ${lvLabel} Study Mode`;
+      } else {
+        dynTitle = `신 HSK ${lvLabel} 스마트 퀴즈`;
+        dynIntroTitle = `실전 신 HSK ${lvLabel} 학습 모드를 선택하세요`;
+      }
+    }
+
     return {
-      title: conf ? conf.title : "스마트 퀴즈",
+      title: dynTitle,
       badge: badges[sub] || "QUIZ",
-      introTitle: conf ? conf.introTitle : "",
+      introTitle: dynIntroTitle,
       introDesc: conf ? conf.introDesc : "",
       modes: modes
     };
@@ -1049,9 +1100,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // 2. 과목 스위처 탭 텍스트
-    if (tabHskText) tabHskText.textContent = t.subjectHsk;
+    // 2. 과목 스위처 탭 텍스트 및 신 HSK 급수 바 라벨
+    const lvLabel = getHskLevelLabel(currentHskLevel, currentUiLang);
+    if (tabHskText) tabHskText.textContent = `HSK ${lvLabel}`;
     if (tabIeltsText) tabIeltsText.textContent = t.subjectIelts;
+
+    if (tierLabelElem && t.tierElem) tierLabelElem.textContent = t.tierElem;
+    if (tierLabelInter && t.tierInter) tierLabelInter.textContent = t.tierInter;
+    if (tierLabelAdv && t.tierAdv) tierLabelAdv.textContent = t.tierAdv;
+    if (hskLevelTabs && hskLevelTabs.length > 0) {
+      hskLevelTabs.forEach(btn => {
+        const lv = btn.getAttribute("data-hsk-level");
+        btn.textContent = getHskLevelLabel(lv, currentUiLang);
+        btn.classList.toggle("active", lv === currentHskLevel);
+      });
+    }
 
     // 3. 헤더 및 소개 정보
     const conf = getSubjectConfig(currentLanguage, currentUiLang);
@@ -1090,12 +1153,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (navModeStudyText) navModeStudyText.textContent = t.navModeStudy;
     if (navModeQuizText) navModeQuizText.textContent = t.navModeQuiz;
     if (studyCatVocabText) studyCatVocabText.textContent = t.studyCatVocab;
+    if (studyCatGrammarText) studyCatGrammarText.textContent = t.studyCatGrammar;
+    if (studyCatListeningText && t.studyCatListening) studyCatListeningText.textContent = t.studyCatListening;
     if (studyCatChengyuText) {
       studyCatChengyuText.textContent = (currentLanguage === "hsk")
         ? t.studyCatChengyuHsk
         : t.studyCatChengyuIelts;
     }
-    if (studyCatGrammarText) studyCatGrammarText.textContent = t.studyCatGrammar;
     if (cardFlipPromptText) cardFlipPromptText.textContent = t.studyFlipPrompt;
     if (cardFlipBackPromptText) cardFlipBackPromptText.textContent = t.studyFlipBackPrompt;
     if (studyAutoplayText) {
@@ -1198,7 +1262,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 8. 학습 기록 모달
-    if (historyModalTitle) historyModalTitle.textContent = (currentLanguage === "hsk") ? t.historyTitleHsk : t.historyTitleIelts;
+    const dynHistoryTitleHsk = (currentUiLang === "zh")
+      ? `我的 新 HSK ${lvLabel} 学习记录`
+      : (currentUiLang === "en")
+        ? `My New HSK ${lvLabel} Study History`
+        : `나의 신 HSK ${lvLabel} 학습 기록`;
+    if (historyModalTitle) historyModalTitle.textContent = (currentLanguage === "hsk") ? dynHistoryTitleHsk : t.historyTitleIelts;
     if (statTotalLabel) statTotalLabel.textContent = t.statTotal;
     if (statAvgLabel) statAvgLabel.textContent = t.statAvg;
     if (statPassLabel) statPassLabel.textContent = t.statPass;
@@ -1239,12 +1308,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. JSON 데이터 비동기 로딩 (전역 번들 우선 사용 -> fetch 폴백)
   async function loadData() {
     if (window.APP_DATA) {
-      hskData = window.APP_DATA.hsk || {};
+      hskLevelsData = window.APP_DATA.hskLevels || window.HSK_LEVELS_DATA || null;
+      hskData = (hskLevelsData && hskLevelsData[currentHskLevel]) || window.APP_DATA.hsk || {};
       ieltsData = window.APP_DATA.ielts || {};
-      console.log("다국어 통합 번들 데이터 로딩 완료! (HSK & IELTS)");
+      console.log("다국어 통합 번들 데이터 로딩 완료! (New HSK 3.0 & IELTS)");
       return;
     }
-    if (window.HSK5_DATA) {
+    if (window.HSK_LEVELS_DATA && window.HSK_LEVELS_DATA[currentHskLevel]) {
+      hskLevelsData = window.HSK_LEVELS_DATA;
+      hskData = hskLevelsData[currentHskLevel];
+    } else if (window.HSK5_DATA) {
       hskData = window.HSK5_DATA;
     }
 
@@ -1284,11 +1357,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  function getCurrentMasteryPrefix() {
+    if (currentLanguage === "hsk") {
+      return currentHskLevel === "5" ? "hsk_" : `hsk${currentHskLevel}_`;
+    }
+    return `${currentLanguage}_`;
+  }
+
   function getItemKey(lang, item) {
     if (!item) return "";
     const mainId = item.id || item.word || item.chengyu || item.idiom ||
                    (item.question ? item.question.slice(0, 18) : "") ||
                    (item.sentence ? item.sentence.slice(0, 18) : "");
+    if (lang === "hsk" && currentHskLevel !== "5") {
+      return `hsk${currentHskLevel}_${mainId}`;
+    }
     return `${lang}_${mainId}`;
   }
 
@@ -1339,7 +1422,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let mastered = 0;
     let review = 0;
-    const prefix = `${currentLanguage}_`;
+    const prefix = getCurrentMasteryPrefix();
 
     Object.keys(mastery).forEach(k => {
       if (k.startsWith(prefix)) {
@@ -1356,9 +1439,8 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function resetCurrentLangProgress() {
-    const t = I18N[currentUiLang] || I18N.ko;
     const mastery = getMasteryState();
-    const prefix = `${currentLanguage}_`;
+    const prefix = getCurrentMasteryPrefix();
     Object.keys(mastery).forEach(k => {
       if (k.startsWith(prefix)) {
         delete mastery[k];
@@ -1454,6 +1536,47 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // 신 HSK 3.0 급수 선택 핸들러
+  function setHskLevel(level) {
+    const lv = String(level || "5");
+    currentHskLevel = lv;
+    localStorage.setItem("preferred_hsk_level", lv);
+    stopListeningAudio();
+
+    if (hskLevelsData && hskLevelsData[lv]) {
+      hskData = hskLevelsData[lv];
+    } else if (window.APP_DATA && window.APP_DATA.hskLevels && window.APP_DATA.hskLevels[lv]) {
+      hskLevelsData = window.APP_DATA.hskLevels;
+      hskData = hskLevelsData[lv];
+    } else if (window.APP_DATA && window.APP_DATA.hsk) {
+      hskData = window.APP_DATA.hsk;
+    }
+
+    if (hskLevelTabs && hskLevelTabs.length > 0) {
+      hskLevelTabs.forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-hsk-level") === lv);
+      });
+    }
+
+    if (currentLanguage !== "hsk") {
+      currentLanguage = "hsk";
+      langIeltsBtn.classList.remove("active");
+      langHskBtn.classList.add("active");
+      document.body.classList.remove("theme-ielts");
+      logoBadge.className = "logo-badge";
+      if (hskLevelBar) hskLevelBar.style.display = "flex";
+    }
+
+    applyUiLanguage(currentUiLang);
+    updateSrsDashboard();
+
+    if (activeNavTab === "study") {
+      loadStudyItems();
+    } else if ((quizView && quizView.classList.contains("active")) || (resultView && resultView.classList.contains("active"))) {
+      showView("setup");
+    }
+  }
+
   // 과목 전환 핸들러
   function setLanguage(lang) {
     currentLanguage = lang;
@@ -1464,16 +1587,43 @@ document.addEventListener("DOMContentLoaded", () => {
       langIeltsBtn.classList.add("active");
       document.body.classList.add("theme-ielts");
       logoBadge.className = "logo-badge ielts";
+      if (hskLevelBar) hskLevelBar.style.display = "none";
     } else {
       langIeltsBtn.classList.remove("active");
       langHskBtn.classList.add("active");
       document.body.classList.remove("theme-ielts");
       logoBadge.className = "logo-badge";
+      if (hskLevelBar) hskLevelBar.style.display = "flex";
+      if (hskLevelsData && hskLevelsData[currentHskLevel]) {
+        hskData = hskLevelsData[currentHskLevel];
+      }
     }
 
     applyUiLanguage(currentUiLang);
     updateSrsDashboard();
-    showView("setup");
+    if (activeNavTab === "study") {
+      showView("study");
+    } else {
+      showView("setup");
+    }
+  }
+
+  function getModeBadgeText(key) {
+    const ds = (currentLanguage === "hsk") ? hskData : ieltsData;
+    const u = currentUiLang || "ko";
+    if (key === "vocab") {
+      const cnt = (ds && ds.vocab) ? ds.vocab.length : 0;
+      return u === "zh" ? `${cnt}词` : (u === "en" ? `${cnt} words` : `${cnt}단어`);
+    }
+    if (key === "grammar") {
+      const cnt = (ds && ds.grammar) ? ds.grammar.length : 0;
+      return u === "zh" ? `${cnt}语法` : (u === "en" ? `${cnt} rules` : `${cnt}문법`);
+    }
+    if (key === "listening") {
+      const cnt = (ds && ds.listening) ? ds.listening.length : 0;
+      return u === "zh" ? `${cnt}对话` : (u === "en" ? `${cnt} dialogues` : `${cnt}대화`);
+    }
+    return "";
   }
 
   function renderModeGrid() {
@@ -1481,14 +1631,18 @@ document.addEventListener("DOMContentLoaded", () => {
     modeGrid.innerHTML = "";
     Object.keys(modes).forEach((key) => {
       const m = modes[key];
+      const badgeTxt = getModeBadgeText(key);
+      const badgeHtml = badgeTxt
+        ? ` <span class="mode-count-badge" id="count-badge-${key}">${escapeHtml(badgeTxt)}</span>`
+        : "";
       const card = document.createElement("div");
       card.className = `mode-card ${key === currentMode ? "active" : ""}`;
       card.setAttribute("data-mode", key);
       card.innerHTML = `
         <div class="mode-icon">${m.icon}</div>
         <div class="mode-info">
-          <div class="mode-name">${m.name}</div>
-          <div class="mode-desc">${m.desc}</div>
+          <div class="mode-name">${escapeHtml(m.name)}${badgeHtml}</div>
+          <div class="mode-desc">${escapeHtml(m.desc)}</div>
         </div>
       `;
       card.addEventListener("click", () => {
@@ -2739,8 +2893,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const dataset = (subject === "hsk") ? hskData : ieltsData;
     let list = [];
     if (mode === "vocab") list = dataset.vocab || [];
-    else if (mode === "chengyu") list = (subject === "hsk") ? (dataset.chengyu || []) : (dataset.idioms || []);
     else if (mode === "grammar") list = dataset.grammar || [];
+    else if (mode === "listening") list = dataset.listening || [];
+    else if (mode === "chengyu") list = (subject === "hsk") ? (dataset.chengyu || []) : (dataset.idioms || []);
 
     if (diff && diff !== "all") {
       list = list.filter(item => item.difficulty === diff);
@@ -2757,6 +2912,14 @@ document.addEventListener("DOMContentLoaded", () => {
     studyItems = items ? [...items] : [];
     studyCurrentIndex = 0;
     renderCurrentStudyCard();
+  }
+
+  function getListeningDialogueText(item) {
+    if (!item) return "";
+    if (item.dialogue && Array.isArray(item.dialogue) && item.dialogue.length > 0) {
+      return item.dialogue.map(d => `${d.speaker}: ${d.text}`).join("  ");
+    }
+    return item.audioText || item.question || "";
   }
 
   function renderCurrentStudyCard() {
@@ -2790,12 +2953,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 과목/카테고리 태그
+    const lvKo = getHskLevelLabel(currentHskLevel, "ko");
     if (cardCatBadge) {
-      const catName = (studyCategory === "vocab")
-        ? (currentLanguage === "hsk" ? "HSK 5급 필수 어휘" : "IELTS 핵심 어휘")
-        : (studyCategory === "chengyu")
-          ? (currentLanguage === "hsk" ? "HSK 5급 사자성어" : "IELTS 필수 관용구")
-          : (currentLanguage === "hsk" ? "HSK 5급 필수 문법" : "IELTS 라이팅 문법");
+      let catName = "";
+      if (studyCategory === "vocab") {
+        catName = (currentLanguage === "hsk") ? `신 HSK ${lvKo} 필수 어휘` : "IELTS 핵심 어휘";
+      } else if (studyCategory === "grammar") {
+        catName = (currentLanguage === "hsk") ? `신 HSK ${lvKo} 필수 문법` : "IELTS 라이팅 문법";
+      } else if (studyCategory === "listening") {
+        catName = (currentLanguage === "hsk") ? `신 HSK ${lvKo} 실전 듣기` : "IELTS 실전 리스닝";
+      } else {
+        catName = (currentLanguage === "hsk") ? `신 HSK ${lvKo} 사자성어` : "IELTS 필수 관용구";
+      }
       cardCatBadge.textContent = catName;
     }
 
@@ -2819,54 +2988,79 @@ document.addEventListener("DOMContentLoaded", () => {
       cardPosBadge.textContent = (currentLanguage === "hsk") ? "사자성어" : "Idiom";
     } else if (studyCategory === "grammar") {
       cardPrimaryText.textContent = item.category || "";
-      cardSecondaryText.textContent = item.example || "";
+      cardSecondaryText.textContent = item.example || item.question || "";
       cardSecondaryText.style.display = (cardSecondaryText.textContent ? "block" : "none");
       cardPosBadge.style.display = "inline-block";
       cardPosBadge.textContent = "핵심 어법";
+    } else if (studyCategory === "listening") {
+      const dlgText = getListeningDialogueText(item);
+      cardPrimaryText.textContent = item.question || dlgText;
+      cardSecondaryText.textContent = dlgText;
+      cardSecondaryText.style.display = (cardSecondaryText.textContent ? "block" : "none");
+      cardPosBadge.style.display = "inline-block";
+      cardPosBadge.textContent = item.category || "실전 듣기";
     }
 
     // 뒷면 렌더링: 다국어 뜻 (한국어 / 영어 / 중국어)
-    if (cardMeaningKo) {
-      cardMeaningKo.textContent = item.meaning || item.translation || item.category || "";
-    }
-    if (cardMeaningEn) {
-      cardMeaningEn.textContent = item.meaning_en || item.category_en || item.synonym || "-";
-    }
-    if (cardMeaningZh) {
-      cardMeaningZh.textContent = item.meaning_zh || item.category_zh || item.word || item.chengyu || "-";
-    }
+    if (studyCategory === "listening") {
+      const dlgText = getListeningDialogueText(item);
+      if (cardMeaningKo) cardMeaningKo.textContent = `정답: ${item.answer || "-"}`;
+      if (cardMeaningEn) cardMeaningEn.textContent = item.translation || "-";
+      if (cardMeaningZh) cardMeaningZh.textContent = dlgText || "-";
 
-    // 예문 렌더링
-    const origSentence = item.example || item.sentence || "";
-    const transSentence = item.translation || "";
-    if (origSentence) {
       if (cardExampleBox) cardExampleBox.style.display = "block";
-      if (cardExampleOrig) cardExampleOrig.textContent = origSentence;
-      if (cardExampleTrans) {
-        const trans = (currentUiLang === "en")
-          ? (item.translation_en || transSentence)
-          : (currentUiLang === "zh")
-            ? (item.translation_zh || transSentence)
-            : transSentence;
-        cardExampleTrans.textContent = trans;
-      }
-    } else {
-      if (cardExampleBox) cardExampleBox.style.display = "none";
-    }
+      if (cardExampleOrig) cardExampleOrig.textContent = dlgText;
+      if (cardExampleTrans) cardExampleTrans.textContent = item.translation || "";
 
-    // 문법 공식 / 상세 해설 렌더링
-    if (item.explanation || item.explanation_en || item.explanation_zh) {
-      if (cardGrammarBox) cardGrammarBox.style.display = "block";
-      if (cardGrammarExp) {
-        const exp = (currentUiLang === "en")
-          ? (item.explanation_en || item.explanation)
-          : (currentUiLang === "zh")
-            ? (item.explanation_zh || item.explanation)
-            : (item.explanation || "");
-        cardGrammarExp.textContent = exp;
+      if (item.tip) {
+        if (cardGrammarBox) cardGrammarBox.style.display = "block";
+        if (cardGrammarExp) cardGrammarExp.textContent = item.tip;
+      } else {
+        if (cardGrammarBox) cardGrammarBox.style.display = "none";
       }
     } else {
-      if (cardGrammarBox) cardGrammarBox.style.display = "none";
+      if (cardMeaningKo) {
+        cardMeaningKo.textContent = item.meaning || item.translation || item.category || "";
+      }
+      if (cardMeaningEn) {
+        cardMeaningEn.textContent = item.meaning_en || item.category_en || item.synonym || "-";
+      }
+      if (cardMeaningZh) {
+        cardMeaningZh.textContent = item.meaning_zh || item.category_zh || item.word || item.chengyu || "-";
+      }
+
+      // 예문 렌더링
+      const origSentence = item.example || item.sentence || "";
+      const transSentence = item.translation || "";
+      if (origSentence) {
+        if (cardExampleBox) cardExampleBox.style.display = "block";
+        if (cardExampleOrig) cardExampleOrig.textContent = origSentence;
+        if (cardExampleTrans) {
+          const trans = (currentUiLang === "en")
+            ? (item.translation_en || transSentence)
+            : (currentUiLang === "zh")
+              ? (item.translation_zh || transSentence)
+              : transSentence;
+          cardExampleTrans.textContent = trans;
+        }
+      } else {
+        if (cardExampleBox) cardExampleBox.style.display = "none";
+      }
+
+      // 문법 공식 / 상세 해설 렌더링
+      if (item.explanation || item.explanation_en || item.explanation_zh) {
+        if (cardGrammarBox) cardGrammarBox.style.display = "block";
+        if (cardGrammarExp) {
+          const exp = (currentUiLang === "en")
+            ? (item.explanation_en || item.explanation)
+            : (currentUiLang === "zh")
+              ? (item.explanation_zh || item.explanation)
+              : (item.explanation || "");
+          cardGrammarExp.textContent = exp;
+        }
+      } else {
+        if (cardGrammarBox) cardGrammarBox.style.display = "none";
+      }
     }
 
     // 뒤집기 상태 초기화
@@ -2879,9 +3073,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 자동 발음 활성화 상태라면 앞면 단어 읽어주기
     if (autoTTS && activeNavTab === "study") {
-      const speechWord = (studyCategory === "grammar")
-        ? (item.example || item.category || "")
-        : (item.word || item.chengyu || item.idiom || "");
+      let speechWord = "";
+      if (studyCategory === "grammar") {
+        speechWord = item.example || item.category || "";
+      } else if (studyCategory === "listening") {
+        speechWord = getListeningDialogueText(item);
+      } else {
+        speechWord = item.word || item.chengyu || item.idiom || "";
+      }
       if (speechWord) {
         playAudio(speechWord, cardFrontAudioBtn);
       }
@@ -2895,8 +3094,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (isCardFlipped && autoTTS && activeNavTab === "study") {
       const item = studyItems[studyCurrentIndex];
-      if (item && item.example) {
-        playAudio(item.example, cardBackAudioBtn);
+      if (item) {
+        const backSpeech = (studyCategory === "listening")
+          ? (item.question || getListeningDialogueText(item))
+          : (item.example || "");
+        if (backSpeech) {
+          playAudio(backSpeech, cardBackAudioBtn);
+        }
       }
     }
   }
@@ -3996,6 +4200,17 @@ document.addEventListener("DOMContentLoaded", () => {
   langHskBtn.addEventListener("click", () => setLanguage("hsk"));
   langIeltsBtn.addEventListener("click", () => setLanguage("ielts"));
 
+  if (hskLevelTabs && hskLevelTabs.length > 0) {
+    hskLevelTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        const selectedLv = tab.getAttribute("data-hsk-level");
+        if (selectedLv) {
+          setHskLevel(selectedLv);
+        }
+      });
+    });
+  }
+
   uiLangTabs.forEach(tab => {
     tab.addEventListener("click", () => {
       const selected = tab.getAttribute("data-ui-lang");
@@ -4286,9 +4501,14 @@ document.addEventListener("DOMContentLoaded", () => {
       e.stopPropagation();
       const item = studyItems[studyCurrentIndex];
       if (item) {
-        const text = (studyCategory === "grammar")
-          ? (item.example || item.category || "")
-          : (item.word || item.chengyu || item.idiom || "");
+        let text = "";
+        if (studyCategory === "grammar") {
+          text = item.example || item.category || "";
+        } else if (studyCategory === "listening") {
+          text = getListeningDialogueText(item);
+        } else {
+          text = item.word || item.chengyu || item.idiom || "";
+        }
         if (text) playAudio(text, cardFrontAudioBtn);
       }
     });
@@ -4299,7 +4519,9 @@ document.addEventListener("DOMContentLoaded", () => {
       e.stopPropagation();
       const item = studyItems[studyCurrentIndex];
       if (item) {
-        const text = item.example || item.sentence || item.explanation || "";
+        const text = (studyCategory === "listening")
+          ? (item.question || getListeningDialogueText(item))
+          : (item.example || item.sentence || item.explanation || "");
         if (text) playAudio(text, cardBackAudioBtn);
       }
     });
@@ -4326,8 +4548,9 @@ document.addEventListener("DOMContentLoaded", () => {
       showView("setup");
       // 현재 공부 중인 카테고리와 매칭되는 퀴즈 모드로 자동 선택
       if (studyCategory === "vocab") currentMode = "vocab";
-      else if (studyCategory === "chengyu") currentMode = "chengyu";
       else if (studyCategory === "grammar") currentMode = "grammar";
+      else if (studyCategory === "listening") currentMode = "listening";
+      else if (studyCategory === "chengyu") currentMode = "chengyu";
 
       if (studyDifficulty && studyDifficulty !== "all") {
         currentDifficulty = studyDifficulty;
