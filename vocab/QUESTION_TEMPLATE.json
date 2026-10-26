@@ -1,0 +1,65 @@
+{
+  "_guide": "이 파일은 문제 및 해설 추가용 표준 JSON 템플릿입니다. 원하는 영역(vocab, grammar, listening 등)의 항목을 복사하여 vocab/custom_questions.json 또는 vocab/levels/hsk{급수}.json에 추가하거나, 웹 화면 상단 [📦 문제 JSON] 버튼에서 바로 업로드/붙여넣기 하세요.",
+  "level": "3",
+  "vocab": [
+    {
+      "id": "custom_v_001",
+      "word": "周末",
+      "pinyin": "zhōumò",
+      "pos": "명사",
+      "meaning": "주말",
+      "meaning_en": "weekend",
+      "meaning_zh": "周末",
+      "example": "这个周末你有什么打算？",
+      "translation": "이번 주말에 어떤 계획이 있나요?",
+      "translation_en": "What plans do you have for this weekend?",
+      "translation_zh": "这个周末你有什么打算？",
+      "collocation": "过周末 (주말을 보내다) / 周末愉快 (즐거운 주말)",
+      "explanation": "신 HSK 3급 핵심 시간 명사로, 동사 过(보내다)나 명사 打算(계획)과 자주 호응합니다.",
+      "difficulty": "하"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "custom_g_001",
+      "difficulty": "중",
+      "type": "conjunction",
+      "category": "一邊…一邊… (동시 동작)",
+      "category_en": "Simultaneous Actions (一边...一边...)",
+      "category_zh": "并列复句（一边……一边……）",
+      "question": "다음 중 두 동작이 동시에 진행됨을 나타내는 올바른 문장은?",
+      "options": [
+        "他一边听音乐，一边做作业。",
+        "他一边听音乐，因为做作业。",
+        "他听音乐一边，做作业一边。",
+        "一边他听音乐，做作业。"
+      ],
+      "answer": 1,
+      "example": "他一边听音乐，一边做作业。",
+      "translation": "그는 음악을 들으면서 숙제를 한다.",
+      "explanation": "[주어 + 一边 + 동사1 + 一边 + 동사2] 구조로 두 동작을 동시에 수행함을 나타냅니다. (answer는 1~4번 번호 또는 정답 문자열 모두 지원)"
+    }
+  ],
+  "listening": [
+    {
+      "id": "custom_l_001",
+      "difficulty": "중",
+      "category": "일상 계획과 약속",
+      "dialogue": [
+        { "speaker": "남", "text": "明天上午九点我们在图书馆门口见面，怎么样？" },
+        { "speaker": "여", "text": "九点太早了，改到十点吧。" }
+      ],
+      "question": "他们明天几点见面？",
+      "options": [
+        "上午十点",
+        "上午九点",
+        "下午两点",
+        "晚上八点"
+      ],
+      "answer": "上午十点",
+      "audioText": "男：明天上午九点我们在图书馆门口见面，怎么样？ 女：九点太早了，改到十点吧。 问：他们明天几点见面？",
+      "translation": "남: 내일 오전 9시에 도서관 입구에서 만나는 거 어때? / 여: 9시는 너무 이르니 10시로 바꾸자. / 질문: 그들은 내일 몇 시에 만나는가?",
+      "tip": "시간 변경 표현 '改到 + 시간(…로 변경하다)'이 나오면 뒤에 제시된 시간이 정답입니다."
+    }
+  ]
+}

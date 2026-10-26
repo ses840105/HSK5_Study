@@ -209,6 +209,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const statPassLabel = document.getElementById("stat-pass-label");
   const historyListHeaderTitle = document.getElementById("history-list-header-title");
 
+  // 문제·해설 JSON 분리 업데이트 모달 DOM 캐싱
+  const openJsonBtn = document.getElementById("open-json-btn");
+  const jsonModal = document.getElementById("json-modal");
+  const closeJsonBtn = document.getElementById("close-json-btn");
+  const reloadJsonBtn = document.getElementById("reload-json-btn");
+  const downloadTemplateBtn = document.getElementById("download-template-btn");
+  const exportLevelJsonBtn = document.getElementById("export-level-json-btn");
+  const jsonTargetLevel = document.getElementById("json-target-level");
+  const jsonTargetMode = document.getElementById("json-target-mode");
+  const jsonFileInput = document.getElementById("json-file-input");
+  const jsonPasteInput = document.getElementById("json-paste-input");
+  const clearCustomJsonBtn = document.getElementById("clear-custom-json-btn");
+  const applyJsonBtn = document.getElementById("apply-json-btn");
+  const jsonModalStatus = document.getElementById("json-modal-status");
+
   const autoTtsToggle = document.getElementById("auto-tts-toggle");
   const ttsSpeedSelect = document.getElementById("tts-speed");
   const ttsVoiceSelect = document.getElementById("tts-voice-select");
@@ -1305,45 +1320,202 @@ document.addEventListener("DOMContentLoaded", () => {
     applyUiLanguage(uiLang);
   }
 
-  // 1. JSON 데이터 비동기 로딩 (전역 번들 우선 사용 -> fetch 폴백)
-  async function loadData() {
-    if (window.APP_DATA) {
-      hskLevelsData = window.APP_DATA.hskLevels || window.HSK_LEVELS_DATA || null;
-      hskData = (hskLevelsData && hskLevelsData[currentHskLevel]) || window.APP_DATA.hsk || {};
-      ieltsData = window.APP_DATA.ielts || {};
-      console.log("다국어 통합 번들 데이터 로딩 완료! (New HSK 3.0 & IELTS)");
-      return;
-    }
-    if (window.HSK_LEVELS_DATA && window.HSK_LEVELS_DATA[currentHskLevel]) {
-      hskLevelsData = window.HSK_LEVELS_DATA;
-      hskData = hskLevelsData[currentHskLevel];
-    } else if (window.HSK5_DATA) {
-      hskData = window.HSK5_DATA;
-    }
+  // 1. JSON 분리 아키텍처: 런타임 JSON 핫로드 및 ID 기준 자동 병합(Upsert) 엔진
+  const CUSTOM_JSON_STORAGE_KEY = "polyglot_custom_json_patch";
 
+  function getItemUniqueKey(it) {
+    if (!it || typeof it !== "object") return "";
+    return String(it.id || it.word || it.chengyu || it.idiom || it.question || it.sentence || "").trim();
+  }
+
+  function mergeItemLists(baseList = [], patchList = []) {
+    if (!Array.isArray(patchList) || patchList.length === 0) {
+      return Array.isArray(baseList) ? [...baseList] : [];
+    }
+    const result = Array.isArray(baseList) ? [...baseList] : [];
+    const idxMap = new Map();
+    result.forEach((it, idx) => {
+      const k = getItemUniqueKey(it);
+      if (k) idxMap.set(k, idx);
+    });
+    patchList.forEach((it) => {
+      if (!it || typeof it !== "object") return;
+      const k = getItemUniqueKey(it);
+      if (k && idxMap.has(k)) {
+        result[idxMap.get(k)] = { ...result[idxMap.get(k)], ...it };
+      } else {
+        if (k) idxMap.set(k, result.length);
+        result.push(it);
+      }
+    });
+    return result;
+  }
+
+  function mergeDatasetObj(baseObj = {}, patchObj = {}) {
+    if (!patchObj || typeof patchObj !== "object") return baseObj;
+    const merged = { ...baseObj };
+    const modeKeys = ["vocab", "grammar", "listening", "chengyu", "idioms", "colloc", "cloze", "reading", "dictation"];
+    modeKeys.forEach((mk) => {
+      if (Array.isArray(patchObj[mk])) {
+        merged[mk] = mergeItemLists(merged[mk] || [], patchObj[mk]);
+      }
+    });
+    return merged;
+  }
+
+  function getSavedCustomJsonPatch() {
     try {
-      const [hv, hc, hch, hcl, hg, hl, hd, hrd, iv, il, ii, ic, ig, idic, ird] = await Promise.all([
-        fetch("vocab/hsk5_core_vocabulary.json").then(r => r.json()).catch(() => []),
-        fetch("vocab/hsk5_collocations.json").then(r => r.json()).catch(() => []),
-        fetch("vocab/hsk5_chengyu.json").then(r => r.json()).catch(() => []),
-        fetch("vocab/hsk5_cloze.json").then(r => r.json()).catch(() => []),
-        fetch("vocab/hsk5_grammar.json").then(r => r.json()).catch(() => []),
-        fetch("vocab/hsk5_listening.json").then(r => r.json()).catch(() => []),
-        fetch("vocab/hsk5_dictation.json").then(r => r.json()).catch(() => []),
-        fetch("vocab/hsk5_reading.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_vocab.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_listening.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_idioms.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_cloze.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_grammar.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_dictation.json").then(r => r.json()).catch(() => []),
-        fetch("ielts/ielts_reading.json").then(r => r.json()).catch(() => [])
+      const raw = localStorage.getItem(CUSTOM_JSON_STORAGE_KEY);
+      return raw ? JSON.parse(raw) : { hskLevels: {}, ielts: {} };
+    } catch (e) {
+      return { hskLevels: {}, ielts: {} };
+    }
+  }
+
+  function applySavedCustomJsonPatch() {
+    const saved = getSavedCustomJsonPatch();
+    if (saved && saved.hskLevels && hskLevelsData) {
+      Object.keys(saved.hskLevels).forEach((lv) => {
+        if (hskLevelsData[lv]) {
+          hskLevelsData[lv] = mergeDatasetObj(hskLevelsData[lv], saved.hskLevels[lv]);
+        }
+      });
+    }
+    if (saved && saved.ielts) {
+      ieltsData = mergeDatasetObj(ieltsData, saved.ielts);
+    }
+    if (hskLevelsData && hskLevelsData[currentHskLevel]) {
+      hskData = hskLevelsData[currentHskLevel];
+    }
+  }
+
+  async function fetchJsonSafe(pathUrl) {
+    if (typeof fetch !== "function") return null;
+    try {
+      const sep = pathUrl.includes("?") ? "&" : "?";
+      const res = await fetch(`${pathUrl}${sep}cb=${Date.now()}`, { cache: "no-store" });
+      if (!res || !res.ok) return null;
+      return await res.json();
+    } catch (e) {
+      return null;
+    }
+  }
+
+  async function syncExternalJsonFiles() {
+    if (typeof fetch !== "function") return false;
+    try {
+      const levelKeys = ["1", "2", "3", "4", "5", "6", "7-9"];
+      const levelPromises = levelKeys.map((lv) => fetchJsonSafe(`vocab/levels/hsk${lv}.json`));
+      const [
+        lv1, lv2, lv3, lv4, lv5, lv6, lv79,
+        hv, hc, hch, hcl, hg, hl, hd, hrd,
+        iv, il, ii, ic, ig, idic, ird,
+        customJson
+      ] = await Promise.all([
+        ...levelPromises,
+        fetchJsonSafe("vocab/hsk5_core_vocabulary.json"),
+        fetchJsonSafe("vocab/hsk5_collocations.json"),
+        fetchJsonSafe("vocab/hsk5_chengyu.json"),
+        fetchJsonSafe("vocab/hsk5_cloze.json"),
+        fetchJsonSafe("vocab/hsk5_grammar.json"),
+        fetchJsonSafe("vocab/hsk5_listening.json"),
+        fetchJsonSafe("vocab/hsk5_dictation.json"),
+        fetchJsonSafe("vocab/hsk5_reading.json"),
+        fetchJsonSafe("ielts/ielts_vocab.json"),
+        fetchJsonSafe("ielts/ielts_listening.json"),
+        fetchJsonSafe("ielts/ielts_idioms.json"),
+        fetchJsonSafe("ielts/ielts_cloze.json"),
+        fetchJsonSafe("ielts/ielts_grammar.json"),
+        fetchJsonSafe("ielts/ielts_dictation.json"),
+        fetchJsonSafe("ielts/ielts_reading.json"),
+        fetchJsonSafe("vocab/custom_questions.json")
       ]);
 
-      hskData = { vocab: hv, colloc: hc, chengyu: hch, cloze: hcl, grammar: hg, listening: hl, dictation: hd, reading: hrd };
-      ieltsData = { vocab: iv, listening: il, idioms: ii, cloze: ic, grammar: ig, dictation: idic, reading: ird };
+      if (!hskLevelsData) hskLevelsData = {};
+      const fetchedLevels = { "1": lv1, "2": lv2, "3": lv3, "4": lv4, "5": lv5, "6": lv6, "7-9": lv79 };
+      Object.keys(fetchedLevels).forEach((lv) => {
+        if (fetchedLevels[lv]) {
+          hskLevelsData[lv] = mergeDatasetObj(hskLevelsData[lv] || {}, fetchedLevels[lv]);
+        }
+      });
+
+      const hsk5Individual = {};
+      if (Array.isArray(hv)) hsk5Individual.vocab = hv;
+      if (Array.isArray(hc)) hsk5Individual.colloc = hc;
+      if (Array.isArray(hch)) hsk5Individual.chengyu = hch;
+      if (Array.isArray(hcl)) hsk5Individual.cloze = hcl;
+      if (Array.isArray(hg)) hsk5Individual.grammar = hg;
+      if (Array.isArray(hl)) hsk5Individual.listening = hl;
+      if (Array.isArray(hd)) hsk5Individual.dictation = hd;
+      if (Array.isArray(hrd)) hsk5Individual.reading = hrd;
+      if (Object.keys(hsk5Individual).length > 0) {
+        hskLevelsData["5"] = mergeDatasetObj(hskLevelsData["5"] || {}, hsk5Individual);
+      }
+
+      const ieltsIndividual = {};
+      if (Array.isArray(iv)) ieltsIndividual.vocab = iv;
+      if (Array.isArray(il)) ieltsIndividual.listening = il;
+      if (Array.isArray(ii)) ieltsIndividual.idioms = ii;
+      if (Array.isArray(ic)) ieltsIndividual.cloze = ic;
+      if (Array.isArray(ig)) ieltsIndividual.grammar = ig;
+      if (Array.isArray(idic)) ieltsIndividual.dictation = idic;
+      if (Array.isArray(ird)) ieltsIndividual.reading = ird;
+      if (Object.keys(ieltsIndividual).length > 0) {
+        ieltsData = mergeDatasetObj(ieltsData || {}, ieltsIndividual);
+      }
+
+      if (customJson && typeof customJson === "object") {
+        if (customJson.hskLevels) {
+          Object.keys(customJson.hskLevels).forEach((lv) => {
+            if (hskLevelsData[lv]) {
+              hskLevelsData[lv] = mergeDatasetObj(hskLevelsData[lv], customJson.hskLevels[lv]);
+            }
+          });
+        }
+        if (customJson.ielts) {
+          ieltsData = mergeDatasetObj(ieltsData, customJson.ielts);
+        }
+      }
+
+      applySavedCustomJsonPatch();
+      if (hskLevelsData[currentHskLevel]) {
+        hskData = hskLevelsData[currentHskLevel];
+      }
+      if (window.APP_DATA) {
+        window.APP_DATA.hskLevels = hskLevelsData;
+        window.APP_DATA.hsk = hskLevelsData["5"] || hskData;
+        window.APP_DATA.ielts = ieltsData;
+      }
+      return true;
     } catch (err) {
-      console.error("데이터 로딩 중 오류 발생:", err);
+      return false;
+    }
+  }
+
+  async function loadData(forceFetch = false) {
+    if (window.APP_DATA) {
+      // 딥카피로 베이스라인 초기화 후 JSON 패치 적용
+      hskLevelsData = JSON.parse(JSON.stringify(window.APP_DATA.hskLevels || window.HSK_LEVELS_DATA || {}));
+      ieltsData = JSON.parse(JSON.stringify(window.APP_DATA.ielts || {}));
+      if (!hskLevelsData["5"] && window.APP_DATA.hsk) {
+        hskLevelsData["5"] = JSON.parse(JSON.stringify(window.APP_DATA.hsk));
+      }
+      applySavedCustomJsonPatch();
+      hskData = (hskLevelsData && hskLevelsData[currentHskLevel]) || window.APP_DATA.hsk || {};
+    } else if (window.HSK_LEVELS_DATA) {
+      hskLevelsData = JSON.parse(JSON.stringify(window.HSK_LEVELS_DATA));
+      applySavedCustomJsonPatch();
+      hskData = hskLevelsData[currentHskLevel] || {};
+    } else if (window.HSK5_DATA) {
+      hskData = JSON.parse(JSON.stringify(window.HSK5_DATA));
+    }
+
+    // 소프트웨어 재빌드 없이 외부 .json 파일 변경분이 있으면 실시간 병합
+    await syncExternalJsonFiles();
+    if (forceFetch) {
+      renderModeGrid();
+      updateSrsDashboard();
+      if (activeNavTab === "study") loadStudyItems();
     }
   }
 
@@ -2010,9 +2182,23 @@ document.addEventListener("DOMContentLoaded", () => {
     return selected;
   }
 
-  // 6. 문제 생성 엔진 (HSK & IELTS 다국어 분기 - 정답 노출 완벽 차단)
+  function resolveGrammarAnswer(item) {
+    if (!item || !Array.isArray(item.options)) return "";
+    if (typeof item.answer === "string" && item.options.includes(item.answer)) {
+      return item.answer;
+    }
+    const num = Number(item.answer);
+    if (!Number.isNaN(num)) {
+      if (num >= 1 && num <= item.options.length) return item.options[num - 1];
+      if (num === 0 && item.options.length > 0) return item.options[0];
+    }
+    return item.options[0] || "";
+  }
+
+  // 6. 문제 생성 엔진 (HSK & IELTS 다국어 분기 - 정답 노출 완벽 차단 + JSON 해설 100% 연동)
   function buildQuestions(lang, mode, count, diff) {
     let rawItems = [];
+    const lvKo = getHskLevelLabel(currentHskLevel, "ko");
 
     if (lang === "hsk") {
       if (mode === "vocab") {
@@ -2023,6 +2209,8 @@ document.addEventListener("DOMContentLoaded", () => {
           const exampleTranslation = item.translation
             ? `${item.translation} (뜻: ${item.meaning})`
             : `[뜻] ${item.meaning}`;
+          const itemColloc = item.collocation || `단어: ${item.word} [${item.pinyin}] - ${item.pos || "어휘"}`;
+          const itemDetail = item.explanation || item.detail || item.tip || `신 HSK ${lvKo} 필수 빈출 어휘입니다. 예문과 함께 기억해 두세요.`;
 
           if (isReverse) {
             const wrongPool = hskData.vocab.filter(v => v.word !== item.word).map(v => v.word);
@@ -2043,8 +2231,8 @@ document.addEventListener("DOMContentLoaded", () => {
               prompt: "제시된 뜻을 가진 중국어 단어를 고르세요.",
               options: options,
               answer: item.word,
-              collocation: `단어: ${item.word} [${item.pinyin}] - ${item.pos}`,
-              detail: "HSK 5급 필수 빈출 어휘입니다.",
+              collocation: itemColloc,
+              detail: itemDetail,
               exampleCn: item.example || item.word,
               exampleKr: exampleTranslation
             });
@@ -2064,8 +2252,8 @@ document.addEventListener("DOMContentLoaded", () => {
               prompt: "다음 한자 단어의 올바른 한국어 뜻을 고르세요.",
               options: options,
               answer: item.meaning,
-              collocation: `단어: ${item.word} [${item.pinyin}] - ${item.pos}`,
-              detail: "HSK 5급 필수 빈출 어휘입니다. 예문과 함께 기억해 두세요.",
+              collocation: itemColloc,
+              detail: itemDetail,
               exampleCn: item.example || item.word,
               exampleKr: exampleTranslation
             });
@@ -2090,8 +2278,8 @@ document.addEventListener("DOMContentLoaded", () => {
             answer: item.answer,
             dialogue: item.dialogue,
             questionText: item.question,
-            collocation: `출제 영역: ${item.category}`,
-            detail: item.tip,
+            collocation: item.collocation || `출제 영역: ${item.category}`,
+            detail: item.tip || item.explanation || item.detail || "",
             translation: item.translation,
             exampleCn: item.audioText,
             exampleKr: item.translation
@@ -2105,6 +2293,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const fullExampleKr = item.translation
             ? `${item.translation} (성어 뜻: ${item.meaning})`
             : `[성어 의미] ${item.meaning}`;
+          const chengyuDetail = item.explanation || item.detail || `의미: ${item.meaning} (신 HSK ${lvKo} 필수 성어)`;
 
           if (isCloze && item.sentence) {
             const wrongPool = hskData.chengyu.filter(c => c.chengyu !== item.chengyu).map(c => `${c.chengyu} (${c.pinyin})`);
@@ -2127,8 +2316,8 @@ document.addEventListener("DOMContentLoaded", () => {
               prompt: "문맥의 빈칸 [ ____ ] 에 가장 어울리는 사자성어를 고르세요.",
               options: options,
               answer: correctVal,
-              collocation: `성어 배합: ${item.chengyu} [${item.pinyin}]`,
-              detail: `의미: ${item.meaning} (HSK 5급 가산점 필수 성어)`,
+              collocation: item.collocation || `성어 배합: ${item.chengyu} [${item.pinyin}]`,
+              detail: chengyuDetail,
               exampleCn: fullExampleCn,
               exampleKr: fullExampleKr
             };
@@ -2148,8 +2337,8 @@ document.addEventListener("DOMContentLoaded", () => {
               prompt: "다음 사자성어의 한국어 의미로 알맞은 것을 고르세요.",
               options: options,
               answer: item.meaning,
-              collocation: `성어: ${item.chengyu} [${item.pinyin}]`,
-              detail: "5급 초빈출 30대 사자성어입니다.",
+              collocation: item.collocation || `성어: ${item.chengyu} [${item.pinyin}]`,
+              detail: chengyuDetail,
               exampleCn: fullExampleCn,
               exampleKr: fullExampleKr
             };
@@ -2183,7 +2372,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (mode === "grammar") {
         const filtered = filterByDifficultyAndSrs(hskData.grammar, diff, count);
         rawItems = filtered.map(item => {
-          const correctVal = item.options[item.answer - 1];
+          const correctVal = resolveGrammarAnswer(item);
           const modelSentence = item.example || correctVal;
           const modelTranslation = item.translation || `${item.category} 공식이 적용된 모범 문장입니다.`;
           return {
@@ -2201,8 +2390,8 @@ document.addEventListener("DOMContentLoaded", () => {
             prompt: "문법 규칙과 어순에 맞는 가장 올바른 보기를 고르세요.",
             options: shuffle([...item.options]),
             answer: correctVal,
-            collocation: `핵심 문법: ${item.category}`,
-            detail: item.explanation,
+            collocation: item.collocation || `핵심 문법: ${item.category}`,
+            detail: item.explanation || item.detail || "",
             exampleCn: modelSentence,
             exampleKr: modelTranslation
           };
@@ -4450,6 +4639,277 @@ document.addEventListener("DOMContentLoaded", () => {
       closeHistory();
     }
   });
+
+  // ==========================================
+  // 8-B. 문제·해설 JSON 분리 업데이트 모달 및 API
+  // ==========================================
+  function setJsonModalStatus(msg, isError = false) {
+    if (!jsonModalStatus) return;
+    jsonModalStatus.textContent = msg || "";
+    jsonModalStatus.classList.toggle("error", Boolean(isError));
+  }
+
+  function openJsonModal() {
+    if (!jsonModal) return;
+    setJsonModalStatus("");
+    jsonModal.classList.remove("hidden");
+  }
+
+  function closeJsonModal() {
+    if (!jsonModal) return;
+    jsonModal.classList.add("hidden");
+  }
+
+  function detectItemMode(item) {
+    if (!item || typeof item !== "object") return "vocab";
+    if (Array.isArray(item.dialogue) || item.audioText || item.tip) return "listening";
+    if (item.chengyu) return "chengyu";
+    if (item.idiom) return "idioms";
+    if (item.passage && item.question) return "reading";
+    if (item.question && Array.isArray(item.options)) return "grammar";
+    if (item.sentence && Array.isArray(item.options)) return "cloze";
+    if (item.sentence && !Array.isArray(item.options)) return "dictation";
+    return "vocab";
+  }
+
+  function applyCustomJsonPayload(rawPayload, targetLevelOpt = "auto", targetModeOpt = "auto") {
+    const parsed = (typeof rawPayload === "string") ? JSON.parse(rawPayload) : rawPayload;
+    if (!parsed || typeof parsed !== "object") {
+      throw new Error("유효한 JSON 객체 또는 배열이 아닙니다.");
+    }
+
+    const saved = getSavedCustomJsonPatch();
+    if (!saved.hskLevels) saved.hskLevels = {};
+    if (!saved.ielts) saved.ielts = {};
+
+    const resolvedLevel = (targetLevelOpt && targetLevelOpt !== "auto")
+      ? String(targetLevelOpt)
+      : String(parsed.level || (currentLanguage === "ielts" ? "ielts" : currentHskLevel));
+
+    let addedCount = 0;
+    const countItemsInObj = (obj) => Object.values(obj || {}).reduce((acc, arr) => acc + (Array.isArray(arr) ? arr.length : 0), 0);
+
+    if (Array.isArray(parsed)) {
+      const grouped = {};
+      parsed.forEach((it) => {
+        if (!it || typeof it !== "object") return;
+        const m = (targetModeOpt && targetModeOpt !== "auto") ? targetModeOpt : detectItemMode(it);
+        const normMode = (resolvedLevel === "ielts" && m === "chengyu") ? "idioms" : m;
+        if (!grouped[normMode]) grouped[normMode] = [];
+        grouped[normMode].push(it);
+        addedCount++;
+      });
+      if (resolvedLevel === "ielts") {
+        saved.ielts = mergeDatasetObj(saved.ielts, grouped);
+      } else {
+        saved.hskLevels[resolvedLevel] = mergeDatasetObj(saved.hskLevels[resolvedLevel] || {}, grouped);
+      }
+    } else if (parsed.hskLevels || parsed.ielts) {
+      if (parsed.hskLevels) {
+        Object.keys(parsed.hskLevels).forEach((lv) => {
+          saved.hskLevels[lv] = mergeDatasetObj(saved.hskLevels[lv] || {}, parsed.hskLevels[lv]);
+          addedCount += countItemsInObj(parsed.hskLevels[lv]);
+        });
+      }
+      if (parsed.ielts) {
+        saved.ielts = mergeDatasetObj(saved.ielts, parsed.ielts);
+        addedCount += countItemsInObj(parsed.ielts);
+      }
+    } else if (parsed.vocab || parsed.grammar || parsed.listening || parsed.chengyu || parsed.idioms || parsed.cloze || parsed.reading || parsed.dictation) {
+      if (resolvedLevel === "ielts") {
+        saved.ielts = mergeDatasetObj(saved.ielts, parsed);
+      } else {
+        saved.hskLevels[resolvedLevel] = mergeDatasetObj(saved.hskLevels[resolvedLevel] || {}, parsed);
+      }
+      addedCount += countItemsInObj(parsed);
+    } else {
+      // 단일 문항 객체인 경우
+      const m = (targetModeOpt && targetModeOpt !== "auto") ? targetModeOpt : detectItemMode(parsed);
+      const normMode = (resolvedLevel === "ielts" && m === "chengyu") ? "idioms" : m;
+      const singlePatch = { [normMode]: [parsed] };
+      if (resolvedLevel === "ielts") {
+        saved.ielts = mergeDatasetObj(saved.ielts, singlePatch);
+      } else {
+        saved.hskLevels[resolvedLevel] = mergeDatasetObj(saved.hskLevels[resolvedLevel] || {}, singlePatch);
+      }
+      addedCount = 1;
+    }
+
+    localStorage.setItem(CUSTOM_JSON_STORAGE_KEY, JSON.stringify(saved));
+    applySavedCustomJsonPatch();
+    if (window.APP_DATA) {
+      window.APP_DATA.hskLevels = hskLevelsData;
+      window.APP_DATA.hsk = hskLevelsData["5"] || hskData;
+      window.APP_DATA.ielts = ieltsData;
+    }
+    renderModeGrid();
+    updateSrsDashboard();
+    if (activeNavTab === "study") loadStudyItems();
+    return { addedCount, resolvedLevel };
+  }
+
+  function clearCustomJsonPatches() {
+    localStorage.removeItem(CUSTOM_JSON_STORAGE_KEY);
+    return loadData(true);
+  }
+
+  function triggerJsonDownload(filename, dataObj) {
+    if (typeof Blob === "undefined" || typeof URL === "undefined") return;
+    const blob = new Blob([JSON.stringify(dataObj, null, 2)], { type: "application/json;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  window.__HSK_JSON_LOADER__ = {
+    reloadJsonFromServer: () => loadData(true),
+    applyCustomJsonPayload,
+    clearCustomJsonPatches,
+    mergeDatasetObj,
+    getActiveLevelDataset: (lv) => (lv && hskLevelsData && hskLevelsData[lv]) ? hskLevelsData[lv] : hskData
+  };
+
+  if (openJsonBtn) openJsonBtn.addEventListener("click", openJsonModal);
+  if (closeJsonBtn) closeJsonBtn.addEventListener("click", closeJsonModal);
+  if (jsonModal) {
+    jsonModal.addEventListener("click", (e) => {
+      if (e.target === jsonModal) closeJsonModal();
+    });
+  }
+
+  if (reloadJsonBtn) {
+    reloadJsonBtn.addEventListener("click", async () => {
+      setJsonModalStatus("⏳ 서버/폴더의 최신 JSON 파일을 다시 불러오는 중...");
+      await loadData(true);
+      setJsonModalStatus(`✅ 최신 JSON 데이터 동기화 완료! (현재 급수: 어휘 ${hskData.vocab?.length || 0} / 문법 ${hskData.grammar?.length || 0} / 듣기 ${hskData.listening?.length || 0})`);
+    });
+  }
+
+  if (downloadTemplateBtn) {
+    downloadTemplateBtn.addEventListener("click", () => {
+      const sampleTemplate = {
+        level: currentHskLevel,
+        vocab: [
+          {
+            id: `custom_hsk${currentHskLevel}_v_01`,
+            word: "周末",
+            pinyin: "zhōumò",
+            pos: "명사",
+            meaning: "주말",
+            meaning_en: "weekend",
+            meaning_zh: "周末",
+            example: "这个周末你有什么打算？",
+            translation: "이번 주말에 어떤 계획이 있나요?",
+            collocation: "过周末 (주말을 보내다)",
+            explanation: "신 HSK 필수 어휘 해설을 여기에 작성하면 오답노트 및 해설창에 즉시 표시됩니다.",
+            difficulty: "하"
+          }
+        ],
+        grammar: [
+          {
+            id: `custom_hsk${currentHskLevel}_g_01`,
+            difficulty: "중",
+            type: "conjunction",
+            category: "一边…一边… (동시 동작)",
+            question: "다음 중 두 동작이 동시에 진행됨을 나타내는 올바른 문장은?",
+            options: [
+              "他一边听音乐，一边做作业。",
+              "他一边听音乐，因为做作业。",
+              "他听音乐一边，做作业一边。",
+              "一边他听音乐，做作业。"
+            ],
+            answer: 1,
+            example: "他一边听音乐，一边做作业。",
+            translation: "그는 음악을 들으면서 숙제를 한다.",
+            explanation: "[주어 + 一边 + 동사1 + 一边 + 동사2] 구조로 두 동작의 동시 진행을 나타냅니다."
+          }
+        ],
+        listening: [
+          {
+            id: `custom_hsk${currentHskLevel}_l_01`,
+            difficulty: "중",
+            category: "일상 약속",
+            dialogue: [
+              { speaker: "남", text: "明天上午九点我们在图书馆门口见面，怎么样？" },
+              { speaker: "여", text: "九点太早了，改到十点吧。" }
+            ],
+            question: "他们明天几点见面？",
+            options: ["上午十点", "上午九点", "下午两点", "晚上八点"],
+            answer: "上午十点",
+            audioText: "男：明天上午九点我们在图书馆门口见面，怎么样？ 女：九点太早了，改到十点吧。 问：他们明天几点见面？",
+            translation: "남: 내일 오전 9시에 도서관 입구에서 만날까? / 여: 9시는 너무 이르니 10시로 바꾸자.",
+            tip: "'改到 + 시간(…로 변경하다)' 뒤의 시간이 최종 약속 시간입니다."
+          }
+        ]
+      };
+      triggerJsonDownload(`hsk${currentHskLevel}_question_template.json`, sampleTemplate);
+      setJsonModalStatus("📥 표준 문제·해설 JSON 템플릿이 다운로드되었습니다.");
+    });
+  }
+
+  if (exportLevelJsonBtn) {
+    exportLevelJsonBtn.addEventListener("click", () => {
+      if (currentLanguage === "ielts") {
+        triggerJsonDownload("ielts_Export.json", ieltsData);
+        setJsonModalStatus("📤 현재 IELTS 전체 JSON 데이터가 다운로드되었습니다.");
+      } else {
+        triggerJsonDownload(`hsk${currentHskLevel}.json`, hskData);
+        setJsonModalStatus(`📤 신 HSK ${getHskLevelLabel(currentHskLevel, "ko")} JSON 데이터(hsk${currentHskLevel}.json)가 다운로드되었습니다.`);
+      }
+    });
+  }
+
+  if (jsonFileInput) {
+    jsonFileInput.addEventListener("change", (e) => {
+      const file = e.target.files && e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (ev) => {
+        const content = String(ev.target.result || "");
+        if (jsonPasteInput) jsonPasteInput.value = content;
+        try {
+          const lvOpt = jsonTargetLevel ? jsonTargetLevel.value : "auto";
+          const mdOpt = jsonTargetMode ? jsonTargetMode.value : "auto";
+          const res = applyCustomJsonPayload(content, lvOpt, mdOpt);
+          setJsonModalStatus(`🎉 [${file.name}] 파일에서 ${res.addedCount}개 문항/해설이 (${res.resolvedLevel === "ielts" ? "IELTS" : "HSK " + res.resolvedLevel + "급"})에 즉시 반영되었습니다!`);
+        } catch (err) {
+          setJsonModalStatus(`❌ JSON 파싱 오류: ${err.message}`, true);
+        }
+      };
+      reader.readAsText(file, "utf-8");
+    });
+  }
+
+  if (applyJsonBtn) {
+    applyJsonBtn.addEventListener("click", () => {
+      const raw = jsonPasteInput ? jsonPasteInput.value.trim() : "";
+      if (!raw) {
+        setJsonModalStatus("⚠️ 반영할 JSON 텍스트를 입력하거나 JSON 파일을 선택해 주세요.", true);
+        return;
+      }
+      try {
+        const lvOpt = jsonTargetLevel ? jsonTargetLevel.value : "auto";
+        const mdOpt = jsonTargetMode ? jsonTargetMode.value : "auto";
+        const res = applyCustomJsonPayload(raw, lvOpt, mdOpt);
+        setJsonModalStatus(`🎉 ${res.addedCount}개 문항 및 해설이 (${res.resolvedLevel === "ielts" ? "IELTS" : "HSK " + res.resolvedLevel + "급"})에 즉시 업데이트되었습니다!`);
+      } catch (err) {
+        setJsonModalStatus(`❌ JSON 형식 오류: ${err.message}`, true);
+      }
+    });
+  }
+
+  if (clearCustomJsonBtn) {
+    clearCustomJsonBtn.addEventListener("click", async () => {
+      await clearCustomJsonPatches();
+      if (jsonPasteInput) jsonPasteInput.value = "";
+      setJsonModalStatus("🔄 브라우저에 임시 추가된 JSON 패치가 초기화되고 기본 JSON 상태로 복구되었습니다.");
+    });
+  }
 
   // 공부 모드 이벤트 리스너 바인딩
   if (navModeStudy) {

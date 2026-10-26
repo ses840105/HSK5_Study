@@ -96,7 +96,7 @@ async function verifyLiveSite() {
       vocabDataJs = await fetchAssetWithFallback('vocab_data.js');
 
       // Check if the latest build is live
-      const hasLatestFeatures = html.includes('hsk-level-bar') && html.includes('study-cat-listening') && appJs.includes('setHskLevel');
+      const hasLatestFeatures = html.includes('hsk-level-bar') && html.includes('json-modal') && appJs.includes('__HSK_JSON_LOADER__');
       if (hasLatestFeatures) {
         console.log(colors.green('OK! (Latest deployment detected)'));
         break;
@@ -120,6 +120,7 @@ async function verifyLiveSite() {
     { name: 'Per-question timer & timeout hint (#quiz-timer-badge, #timer-hint-box)', test: () => html.includes('quiz-timer-badge') && html.includes('timer-hint-box') && appJs.includes('TIME_LIMIT_MAP') },
     { name: 'New HSK 3.0 Level Selector Bar (#hsk-level-bar, 1~6 & 7~9급)', test: () => html.includes('hsk-level-bar') && html.includes('data-hsk-level="7-9"') && appJs.includes('setHskLevel') },
     { name: 'Level-by-Level Vocab/Grammar/Listening Study Modes (#study-cat-listening)', test: () => html.includes('study-cat-listening') && vocabDataJs.includes('hskLevels') },
+    { name: 'Decoupled JSON Hot-Update Manager (#json-modal, __HSK_JSON_LOADER__)', test: () => html.includes('json-modal') && html.includes('open-json-btn') && appJs.includes('__HSK_JSON_LOADER__') },
     { name: 'IELTS English subject switcher', test: () => html.includes('lang-ielts-btn') && html.includes('IELTS 영어') },
     { name: 'HSK subject switcher', test: () => html.includes('lang-hsk-btn') && html.includes('HSK 5급') },
     { name: 'Start Quiz button (#start-btn)', test: () => html.includes('id="start-btn"') && html.includes('퀴즈 시작하기') },

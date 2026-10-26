@@ -67,8 +67,8 @@ jsFiles.forEach((file) => {
 // -----------------------------------------------------------------------------
 // Test 2: JSON Datasets Schema Integrity
 // -----------------------------------------------------------------------------
-console.log(colors.bold('\n2. JSON Dataset Integrity (vocab/*.json & ielts/*.json)'));
-const dataDirs = ['vocab', 'ielts'];
+console.log(colors.bold('\n2. JSON Dataset Integrity (vocab/*.json, vocab/levels/*.json & ielts/*.json)'));
+const dataDirs = ['vocab', 'vocab/levels', 'ielts'];
 let totalJsonCount = 0;
 let totalItemCount = 0;
 
@@ -85,19 +85,36 @@ dataDirs.forEach((dir) => {
     try {
       const content = fs.readFileSync(fullPath, 'utf8');
       const parsed = JSON.parse(content);
-      if (!Array.isArray(parsed)) {
-        throw new Error('Root element must be a JSON array');
+      if (Array.isArray(parsed)) {
+        if (parsed.length === 0) {
+          throw new Error('Dataset array is empty');
+        }
+        const sample = parsed[0];
+        if (!sample.id && !sample.chinese && !sample.word && !sample.question && !sample.dialogue) {
+          throw new Error('Items missing essential question/word attributes');
+        }
+        totalItemCount += parsed.length;
+        logPass(`Valid array schema: ${dir}/${f} (${parsed.length} entries)`);
+      } else if (parsed && typeof parsed === 'object') {
+        // Object schema for level packs (vocab/levels/hsk*.json), custom_questions.json, or QUESTION_TEMPLATE.json
+        let subCount = 0;
+        ['vocab', 'grammar', 'listening', 'chengyu', 'idioms', 'cloze', 'reading', 'dictation'].forEach((k) => {
+          if (Array.isArray(parsed[k])) subCount += parsed[k].length;
+        });
+        if (parsed.hskLevels && typeof parsed.hskLevels === 'object') {
+          Object.values(parsed.hskLevels).forEach((lvObj) => {
+            if (lvObj && typeof lvObj === 'object') {
+              ['vocab', 'grammar', 'listening', 'chengyu', 'cloze'].forEach((k) => {
+                if (Array.isArray(lvObj[k])) subCount += lvObj[k].length;
+              });
+            }
+          });
+        }
+        totalItemCount += subCount;
+        logPass(`Valid object schema: ${dir}/${f} (${subCount} modular entries)`);
+      } else {
+        throw new Error('Root element must be a JSON array or structured dataset object');
       }
-      if (parsed.length === 0) {
-        throw new Error('Dataset array is empty');
-      }
-      // Check first item for basic schema
-      const sample = parsed[0];
-      if (!sample.id && !sample.chinese && !sample.word && !sample.question && !sample.dialogue) {
-        throw new Error('Items missing essential question/word attributes');
-      }
-      totalItemCount += parsed.length;
-      logPass(`Valid schema: ${dir}/${f} (${parsed.length} entries)`);
     } catch (err) {
       logFail(`Invalid JSON in ${dir}/${f}`, err.message);
     }
@@ -167,7 +184,11 @@ const requiredDomIds = [
   'study-prev-btn',
   'study-flip-btn',
   'study-next-btn',
-  'bridge-start-quiz-btn'
+  'bridge-start-quiz-btn',
+  'open-json-btn',
+  'json-modal',
+  'reload-json-btn',
+  'apply-json-btn'
 ];
 
 requiredDomIds.forEach((id) => {
@@ -776,6 +797,37 @@ async function runVMHarness() {
       logPass(`Study Mode Flashcard Listening category verified on New HSK 3급 (${cardCatBadgeEl.textContent})`);
     } else {
       logFail(`Study Mode Listening category badge mismatch: ${cardCatBadgeEl ? cardCatBadgeEl.textContent : 'null'}`);
+    }
+
+    // -------------------------------------------------------------------------
+    // Test 9: Decoupled JSON Question & Explanation Hot-Update Verification
+    // -------------------------------------------------------------------------
+    console.log(colors.bold('\n9. Decoupled JSON Question & Explanation Hot-Update Verification'));
+    const jsonLoader = env.windowMock.__HSK_JSON_LOADER__;
+    if (jsonLoader && typeof jsonLoader.applyCustomJsonPayload === 'function') {
+      const beforeCount = env.windowMock.APP_DATA.hskLevels['3'].grammar.length;
+      const customGrammarItem = {
+        id: 99301,
+        pattern: '越 A 越 B (심화)',
+        meaning: 'A할수록 더욱 B하다',
+        question: '雨 ( ___ ) 下越大。',
+        options: ['越', '更', '最', '太'],
+        answer: 1,
+        explanation: 'JSON 핫업데이트 테스트 해설: 越 A 越 B 구문은 앞의 조건이 심해질수록 뒤의 정도도 깊어짐을 뜻합니다.',
+        tip: '소프트웨어 수정 없이 JSON만으로 해설과 팁을 즉시 업데이트할 수 있습니다.'
+      };
+      const patchResult = jsonLoader.applyCustomJsonPayload([customGrammarItem], '3', 'grammar');
+      const addedCount = patchResult && typeof patchResult === 'object' ? patchResult.addedCount : patchResult;
+      const afterDataset = jsonLoader.getActiveLevelDataset('3');
+      const injected = afterDataset && afterDataset.grammar && afterDataset.grammar.find((g) => g.id === 99301);
+      if (addedCount === 1 && afterDataset.grammar.length === beforeCount + 1 && injected && injected.explanation.includes('JSON 핫업데이트 테스트 해설')) {
+        logPass('Hot-loaded new grammar question + custom explanation purely via JSON without software modification');
+      } else {
+        logFail('Failed to hot-load custom JSON question/explanation into HSK Level 3 dataset');
+      }
+      jsonLoader.clearCustomJsonPatches();
+    } else {
+      logFail('Missing window.__HSK_JSON_LOADER__ interface in app.js');
     }
   } else {
     logFail('Missing #start-btn');

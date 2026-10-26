@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "description": "소프트웨어(app.js/index.html) 수정이나 재빌드 없이 문제와 해설만 추가·업데이트하는 전용 JSON 파일입니다. 아래 hskLevels(1~7-9급) 또는 ielts의 각 영역 배열(vocab, grammar, listening, chengyu, cloze, reading, dictation)에 문항 객체를 추가하면 웹앱 실행 및 [JSON 새로고침] 시 자동 병합됩니다. 기존 ID와 동일한 ID를 넣으면 해설/문제가 덮어쓰기(업데이트)됩니다.",
+  "hskLevels": {
+    "1": { "vocab": [], "grammar": [], "listening": [], "chengyu": [], "cloze": [], "reading": [], "dictation": [] },
+    "2": { "vocab": [], "grammar": [], "listening": [], "chengyu": [], "cloze": [], "reading": [], "dictation": [] },
+    "3": { "vocab": [], "grammar": [], "listening": [], "chengyu": [], "cloze": [], "reading": [], "dictation": [] },
+    "4": { "vocab": [], "grammar": [], "listening": [], "chengyu": [], "cloze": [], "reading": [], "dictation": [] },
+    "5": { "vocab": [], "grammar": [], "listening": [], "chengyu": [], "cloze": [], "reading": [], "dictation": [] },
+    "6": { "vocab": [], "grammar": [], "listening": [], "chengyu": [], "cloze": [], "reading": [], "dictation": [] },
+    "7-9": { "vocab": [], "grammar": [], "listening": [], "chengyu": [], "cloze": [], "reading": [], "dictation": [] }
+  },
+  "ielts": {
+    "vocab": [],
+    "grammar": [],
+    "listening": [],
+    "idioms": [],
+    "cloze": [],
+    "reading": [],
+    "dictation": []
+  }
+}

@@ -64,6 +64,10 @@
         <button id="open-history-btn" class="header-action-btn" title="나의 학습 기록 및 성적 리스트 보기">
           📜 학습 기록
         </button>
+        <!-- 문제·해설 JSON 관리 및 핫로드 버튼 -->
+        <button id="open-json-btn" class="header-action-btn" title="소프트웨어 수정 없이 JSON 파일로 문제 및 해설 추가/업데이트">
+          📦 문제 JSON
+        </button>
         <!-- TTS 자동 재생 토글 -->
         <label class="tts-toggle" id="tts-toggle-wrap" title="문제 전환 시 원어민 발음을 자동으로 재생합니다">
           <input type="checkbox" id="auto-tts-toggle" checked>
@@ -700,6 +704,83 @@
         </div>
         <div id="history-list" class="history-list">
           <!-- JS에서 동적 렌더링 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. 문제·해설 JSON 분리 업데이트 모달 팝업 -->
+    <div id="json-modal" class="modal-overlay hidden">
+      <div class="modal-content json-modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span class="modal-icon">📦</span>
+            <h3 id="json-modal-title">문제 &amp; 해설 JSON 분리 업데이트</h3>
+          </div>
+          <button id="close-json-btn" class="modal-close-btn" title="닫기">&times;</button>
+        </div>
+
+        <div class="json-guide-box">
+          <div class="json-guide-title">💡 소프트웨어 수정 없이 문제·해설만 업데이트하는 2가지 방법</div>
+          <ul class="json-guide-list">
+            <li><strong>폴더 JSON 직접 편집</strong>: <code>vocab/custom_questions.json</code> 또는 <code>vocab/levels/hsk1~7-9.json</code> 파일에 문제와 해설(<code>explanation</code>, <code>tip</code>)을 추가한 뒤 아래 <strong>[🔄 서버 JSON 즉시 새로고침]</strong>을 누르면 코드 재빌드 없이 즉시 반영됩니다.</li>
+            <li><strong>브라우저에서 JSON 바로 추가</strong>: 아래에서 <code>.json</code> 파일을 불러오거나 JSON 텍스트를 붙여넣으면 현재 브라우저에 즉시 병합·저장됩니다.</li>
+          </ul>
+        </div>
+
+        <div class="json-toolbar-row">
+          <button id="reload-json-btn" class="action-btn json-reload-btn" type="button">
+            🔄 서버 JSON 즉시 새로고침
+          </button>
+          <button id="download-template-btn" class="header-action-btn" type="button">
+            📥 표준 템플릿(.json) 받기
+          </button>
+          <button id="export-level-json-btn" class="header-action-btn" type="button">
+            📤 현재 급수 JSON 내보내기
+          </button>
+        </div>
+
+        <div class="json-import-section">
+          <div class="json-import-controls">
+            <label class="json-select-label">
+              대상 급수:
+              <select id="json-target-level" class="speed-select">
+                <option value="auto">자동 감지 (현재 급수 우선)</option>
+                <option value="1">신 HSK 1급</option>
+                <option value="2">신 HSK 2급</option>
+                <option value="3">신 HSK 3급</option>
+                <option value="4">신 HSK 4급</option>
+                <option value="5">신 HSK 5급</option>
+                <option value="6">신 HSK 6급</option>
+                <option value="7-9">신 HSK 7~9급</option>
+                <option value="ielts">IELTS 영어</option>
+              </select>
+            </label>
+            <label class="json-select-label">
+              대상 영역:
+              <select id="json-target-mode" class="speed-select">
+                <option value="auto">자동 감지 (vocab/grammar/listening 등)</option>
+                <option value="vocab">단어 (vocab)</option>
+                <option value="grammar">문법 (grammar)</option>
+                <option value="listening">듣기 (listening)</option>
+                <option value="chengyu">사자성어/관용구 (chengyu)</option>
+                <option value="cloze">빈칸 (cloze)</option>
+                <option value="reading">장문독해 (reading)</option>
+                <option value="dictation">딕테이션 (dictation)</option>
+              </select>
+            </label>
+            <label class="header-action-btn json-file-label">
+              📂 JSON 파일 선택
+              <input type="file" id="json-file-input" accept=".json,application/json" style="display: none;">
+            </label>
+          </div>
+
+          <textarea id="json-paste-input" class="json-textarea" rows="7" placeholder='여기에 추가할 문제/해설 JSON을 붙여넣거나 [📂 JSON 파일 선택]으로 불러오세요.&#10;예: { "vocab": [ { "id": "my_v1", "word": "努力", "pinyin": "nǔlì", "pos": "형용사", "meaning": "노력하다", "example": "他学习很努力。", "translation": "그는 공부를 매우 열심히 한다.", "explanation": "동사/형용사 겸용 필수 어휘", "difficulty": "하" } ] }'></textarea>
+
+          <div class="json-bottom-actions">
+            <button id="clear-custom-json-btn" class="danger-text-btn" type="button">브라우저 추가분 초기화</button>
+            <button id="apply-json-btn" class="action-btn" type="button">➕ 문제·해설 JSON 즉시 반영</button>
+          </div>
+          <div id="json-modal-status" class="json-modal-status"></div>
         </div>
       </div>
     </div>
