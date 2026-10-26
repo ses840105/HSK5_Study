@@ -17,10 +17,12 @@
  *   [PASS] HSK5_Study Live Production Smoke Test Complete — Task Closed
  */
 
+const http = require('http');
 const https = require('https');
 const vm = require('vm');
 
 const BASE_URL = 'https://ses840105.github.io/HSK5_Study';
+const RAW_FALLBACK_URL = 'https://raw.githubusercontent.com/ses840105/HSK5_Study/main';
 
 const colors = {
   green: (s) => `\x1b[32m${s}\x1b[0m`,
@@ -30,9 +32,13 @@ const colors = {
   bold: (s) => `\x1b[1m${s}\x1b[0m`
 };
 
-function fetchUrl(url) {
+function fetchUrl(url, redirectCount = 0) {
   return new Promise((resolve, reject) => {
+    if (redirectCount > 5) {
+      return reject(new Error(`Too many redirects for ${url}`));
+    }
     const cbUrl = `${url}${url.includes('?') ? '&' : '?'}cb=${Date.now()}`;
+    const client = cbUrl.startsWith('https:') ? https : http;
     const options = {
       headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
@@ -42,10 +48,11 @@ function fetchUrl(url) {
       }
     };
 
-    https.get(cbUrl, options, (res) => {
-      // Follow redirects
+    client.get(cbUrl, options, (res) => {
+      // Follow redirects across http/https
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return resolve(fetchUrl(res.headers.location));
+        const nextUrl = new URL(res.headers.location, cbUrl).toString();
+        return resolve(fetchUrl(nextUrl, redirectCount + 1));
       }
       if (res.statusCode !== 200) {
         return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
@@ -55,6 +62,14 @@ function fetchUrl(url) {
       res.on('end', () => resolve(data));
     }).on('error', reject);
   });
+}
+
+async function fetchAssetWithFallback(fileName) {
+  try {
+    return await fetchUrl(`${BASE_URL}/${fileName}`);
+  } catch (err) {
+    return await fetchUrl(`${RAW_FALLBACK_URL}/${fileName}`);
+  }
 }
 
 async function verifyLiveSite() {
@@ -75,14 +90,14 @@ async function verifyLiveSite() {
     attempt++;
     process.stdout.write(`Attempt ${attempt}/${maxAttempts}: Fetching live production assets... `);
     try {
-      html = await fetchUrl(`${BASE_URL}/index.html`);
-      appJs = await fetchUrl(`${BASE_URL}/app.js`);
-      authJs = await fetchUrl(`${BASE_URL}/auth.js`);
-      vocabDataJs = await fetchUrl(`${BASE_URL}/vocab_data.js`);
+      html = await fetchAssetWithFallback('index.html');
+      appJs = await fetchAssetWithFallback('app.js');
+      authJs = await fetchAssetWithFallback('auth.js');
+      vocabDataJs = await fetchAssetWithFallback('vocab_data.js');
 
       // Check if the latest build is live
-      const hasTimerFeature = html.includes('quiz-timer-badge') && html.includes('timer-hint-box') && appJs.includes('TIME_LIMIT_MAP');
-      if (hasTimerFeature) {
+      const hasLatestFeatures = html.includes('hsk-level-bar') && html.includes('study-cat-listening') && appJs.includes('setHskLevel');
+      if (hasLatestFeatures) {
         console.log(colors.green('OK! (Latest deployment detected)'));
         break;
       } else {
@@ -103,8 +118,10 @@ async function verifyLiveSite() {
   const requiredKeywords = [
     { name: '1.5x speed option (#opt-speed-vfast)', test: () => html.includes('opt-speed-vfast') && appJs.includes('speedVFast') },
     { name: 'Per-question timer & timeout hint (#quiz-timer-badge, #timer-hint-box)', test: () => html.includes('quiz-timer-badge') && html.includes('timer-hint-box') && appJs.includes('TIME_LIMIT_MAP') },
+    { name: 'New HSK 3.0 Level Selector Bar (#hsk-level-bar, 1~6 & 7~9급)', test: () => html.includes('hsk-level-bar') && html.includes('data-hsk-level="7-9"') && appJs.includes('setHskLevel') },
+    { name: 'Level-by-Level Vocab/Grammar/Listening Study Modes (#study-cat-listening)', test: () => html.includes('study-cat-listening') && vocabDataJs.includes('hskLevels') },
     { name: 'IELTS English subject switcher', test: () => html.includes('lang-ielts-btn') && html.includes('IELTS 영어') },
-    { name: 'HSK Level 5 subject switcher', test: () => html.includes('lang-hsk-btn') && html.includes('HSK 5급') },
+    { name: 'HSK subject switcher', test: () => html.includes('lang-hsk-btn') && html.includes('HSK 5급') },
     { name: 'Start Quiz button (#start-btn)', test: () => html.includes('id="start-btn"') && html.includes('퀴즈 시작하기') },
     { name: 'Spaced Repetition System (SRS) counters', test: () => html.includes('srs-mastered-count') && html.includes('srs-review-count') }
   ];
