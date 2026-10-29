@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🌐 다국어 마스터 퀴즈 (🇨🇳 HSK 5급 & 🇬🇧 IELTS 영어)</title>
+  <title>🌐 다국어 마스터 퀴즈 (🇨🇳 HSK & 🇬🇧 IELTS & 🇯🇵 JLPT)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,6 +47,9 @@
           <button id="lang-ielts-btn" class="lang-tab" data-lang="ielts">
             <span>🇬🇧</span> <span id="tab-ielts-text">IELTS 영어</span>
           </button>
+          <button id="lang-jlpt-btn" class="lang-tab" data-lang="jlpt">
+            <span>🇯🇵</span> <span id="tab-jlpt-text">JLPT 일본어</span>
+          </button>
         </div>
       </div>
       <div class="header-right">
@@ -81,11 +84,12 @@
           <button id="open-json-btn" class="header-action-btn" title="소프트웨어 수정 없이 JSON 파일로 문제 및 해설 추가/업데이트">
             📦 문제 JSON
           </button>
-          <!-- UI 언어 옵션 전환 버튼 (중국어 / 한국어 / 영어) -->
-          <div class="ui-lang-switcher" id="ui-lang-switcher" title="언어 선택 / 语言选择 / Language Setting">
+          <!-- UI 언어 옵션 전환 버튼 (중국어 / 한국어 / 영어 / 일본어) -->
+          <div class="ui-lang-switcher" id="ui-lang-switcher" title="언어 선택 / 语言选择 / Language Setting / 言語設定">
             <button class="ui-lang-tab" data-ui-lang="zh">🇨🇳 中文</button>
             <button class="ui-lang-tab active" data-ui-lang="ko">🇰🇷 한국어</button>
             <button class="ui-lang-tab" data-ui-lang="en">🇬🇧 English</button>
+            <button class="ui-lang-tab" data-ui-lang="ja">🇯🇵 日本語</button>
           </div>
 
           <span id="user-greeting" class="user-greeting"></span>
