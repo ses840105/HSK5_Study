@@ -191,6 +191,17 @@ body.theme-ielts {
   background: #1864ab;
 }
 
+/* JLPT 일본어 전용 테마 액센트 (Japanese Indigo) */
+body.theme-jlpt {
+  --primary: #3b5bdb;
+  --primary-hover: #2b44a8;
+  --primary-light: #dbe4ff;
+}
+
+.logo-badge.jlpt {
+  background: #3b5bdb;
+}
+
 .history-lang-badge {
   font-size: 0.7rem;
   font-weight: 800;
@@ -206,6 +217,11 @@ body.theme-ielts {
 .history-lang-badge.ielts {
   background: #e7f5ff;
   color: #1864ab;
+}
+
+.history-lang-badge.jlpt {
+  background: #dbe4ff;
+  color: #3b5bdb;
 }
 
 .logo-badge {

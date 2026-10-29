@@ -1,0 +1,213 @@
+{
+  "vocab": [
+    {
+      "id": "jlpt_n4_v1",
+      "word": "連絡",
+      "pinyin": "れんらく (renraku)",
+      "pos": "명사·스루동사",
+      "meaning": "연락",
+      "meaning_en": "contact; communication",
+      "meaning_zh": "联系；联络",
+      "example": "駅に着いたら、すぐ連絡してください。",
+      "translation": "역에 도착하면 바로 연락해 주세요.",
+      "collocation": "連絡を取る (연락을 취하다)",
+      "explanation": "비즈니스와 일상 회화 모두에서 최빈출되는 N4 핵심 어휘입니다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "jlpt_n4_v2",
+      "word": "相談",
+      "pinyin": "そうだん (soudan)",
+      "pos": "명사·스루동사",
+      "meaning": "상담, 상의",
+      "meaning_en": "consultation; discussion",
+      "meaning_zh": "商量；咨询",
+      "example": "将来のことについて先生に相談しました。",
+      "translation": "장래 문제에 대해 선생님께 상담했습니다.",
+      "collocation": "先生に相談する (선생님께 상담하다)",
+      "explanation": "상담 대상에는 조사 'に' 또는 'と'를 사용합니다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "jlpt_n4_v3",
+      "word": "習慣",
+      "pinyin": "しゅうかん (shuukan)",
+      "pos": "명사",
+      "meaning": "습관, 관습",
+      "meaning_en": "custom; habit",
+      "meaning_zh": "习惯；风俗",
+      "example": "早起きするのが私の習慣です。",
+      "translation": "일찍 일어나는 것이 제 습관입니다.",
+      "collocation": "習慣を身につける (습관을 기르다)",
+      "explanation": "개인의 버릇이나 사회적 풍습 모두에 쓰입니다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "jlpt_n4_v4",
+      "word": "丁寧",
+      "pinyin": "ていねい (teinei)",
+      "pos": "나형용사",
+      "meaning": "정중함, 꼼꼼함",
+      "meaning_en": "polite; careful",
+      "meaning_zh": "礼貌；仔细",
+      "example": "彼女はいつも丁寧な言葉を使います。",
+      "translation": "그녀는 언제나 정중한 말을 사용합니다.",
+      "collocation": "丁寧に説明する (정중하고 꼼꼼하게 설명하다)",
+      "explanation": "말투가 공손하거나 일처리가 정성스러울 때 모두 사용됩니다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "jlpt_n4_v5",
+      "word": "複雑",
+      "pinyin": "ふくざつ (fukuzatsu)",
+      "pos": "나형용사",
+      "meaning": "복잡함",
+      "meaning_en": "complex; complicated",
+      "meaning_zh": "复杂",
+      "example": "東京の地下鉄の路線はとても複雑です。",
+      "translation": "도쿄 지하철 노선은 매우 복잡합니다.",
+      "collocation": "複雑な問題 (복잡한 문제)",
+      "explanation": "반의어는 簡単(かんたん, 간단함) 또는 単純(たんじゅん, 단순함)입니다.",
+      "difficulty": "상"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "jlpt_n4_g1",
+      "difficulty": "하",
+      "category": "～ようにする (습관적 노력)",
+      "question": "健康のために、毎日野菜を ( ___ ) ようにしています。",
+      "options": [
+        "食べる",
+        "食べた",
+        "食べて",
+        "食べよう"
+      ],
+      "answer": 1,
+      "example": "健康のために、毎日野菜を食べるようにしています。",
+      "translation": "건강을 위해 매일 채소를 먹도록 노력하고 있습니다.",
+      "explanation": "[동사 사전형/ない형 + ようにする]는 습관적으로 '~하도록 노력하다/유의하다'를 뜻합니다."
+    },
+    {
+      "id": "jlpt_n4_g2",
+      "difficulty": "중",
+      "category": "～ようになる (능력·상태의 변화)",
+      "question": "日本に来て半年で、日本語の新聞が ( ___ ) ようになりました。",
+      "options": [
+        "読める",
+        "読んだ",
+        "読んで",
+        "読み"
+      ],
+      "answer": 1,
+      "example": "日本に来て半年で、日本語の新聞が読めるようになりました。",
+      "translation": "일본에 온 지 반년 만에 일본어 신문을 읽을 수 있게 되었습니다.",
+      "explanation": "[가능동사/사전형 + ようになる]는 불가능하던 것이 가능해지거나 새로운 습관이 형성된 변화를 나타냅니다."
+    }
+  ],
+  "listening": [
+    {
+      "id": "jlpt_n4_l1",
+      "difficulty": "중",
+      "category": "교통수단 선택",
+      "dialogue": [
+        {
+          "speaker": "남",
+          "text": "空港までバスで行きますか、電車で行きますか。"
+        },
+        {
+          "speaker": "여",
+          "text": "バスは道が混むかもしれませんから、電車で行きましょう。"
+        }
+      ],
+      "question": "二人は何で空港へ行きますか。",
+      "options": [
+        "電車",
+        "バス",
+        "タクシー",
+        "車"
+      ],
+      "answer": "電車",
+      "audioText": "男：空港までバスで行きますか、電車で行きますか。 女：バスは道が混むかもしれませんから、電車で行きましょう。 質問：二人は何で空港へ行きますか。",
+      "translation": "남: 공항까지 버스로 갈까요, 전철로 갈까요? / 여: 버스는 길이 막힐지도 모르니까 전철로 가요.",
+      "tip": "'道が混む(길이 막히다)' 때문에 버스를 포기하고 전철(電車)을 선택했습니다."
+    }
+  ],
+  "idioms": [
+    {
+      "id": "jlpt_n4_i1",
+      "idiom": "間に合う",
+      "chengyu": "間に合う",
+      "pinyin": "まにあう (ma ni au)",
+      "meaning": "시간에 대다, 늦지 않다",
+      "sentence": "今から走れば、終電に ____ かもしれません。",
+      "example": "今から走れば、終電に間に合うかもしれません。",
+      "translation": "지금부터 뛰면 막차에 늦지 않을지도 모릅니다.",
+      "explanation": "시간이나 기한에 늦지 않을 때 쓰는 필수 표현입니다.",
+      "difficulty": "중"
+    }
+  ],
+  "cloze": [
+    {
+      "id": "jlpt_n4_c1",
+      "difficulty": "중",
+      "sentence": "明日の会議の資料を ____ しておいてください。",
+      "options": [
+        "用意",
+        "見物",
+        "故障",
+        "遠慮"
+      ],
+      "answer": "用意",
+      "pinyin": "ようい (youi)",
+      "collocation": "資料を用意する (자료를 준비하다)",
+      "translation": "내일 회의 자료를 미리 준비해 두세요.",
+      "explanation": "'～ておく(미리 ~해 두다)'와 가장 자연스럽게 호응하는 단어는 用意(준비)입니다."
+    }
+  ],
+  "reading": [
+    {
+      "id": "jlpt_n4_r1",
+      "difficulty": "중",
+      "category": "이메일 독해",
+      "title": "会議室の場所変更について",
+      "passage": "営業部の皆様へ\n明日の午後二時からの会議ですが、エアコンの故障のため、第一会議室から第三会議室に変更になりました。\n時間は変わりませんので、遅れないように集まってください。",
+      "question": "明日の会議はどうなりましたか。",
+      "options": [
+        "場所だけ変わった",
+        "時間だけ変わった",
+        "場所も時間も変わった",
+        "会議が中止になった"
+      ],
+      "answer": "場所だけ変わった",
+      "keySentence": "第一会議室から第三会議室に変更になりました。時間は変わりません",
+      "collocation": "場所変更 (장소 변경)",
+      "translation": "영업부 여러분께. 내일 오후 2시부터 열리는 회의는 에어컨 고장으로 인해 제1회의실에서 제3회의실로 변경되었습니다. 시간은 변함없으니 늦지 않게 모여 주십시오.",
+      "explanation": "회의실 장소만 제1회의실에서 제3회의실로 바뀌었고 시간은 그대로입니다."
+    }
+  ],
+  "dictation": [
+    {
+      "id": "jlpt_n4_d1",
+      "difficulty": "중",
+      "sentence": "駅に着いたら、すぐ電話してください。",
+      "pinyin": "えきについたら、すぐでんわしてください",
+      "keyPoint": "[JLPT N4] 가정·조건 ～たら + ～てください",
+      "translation": "역에 도착하면 바로 전화해 주세요."
+    }
+  ],
+  "chengyu": [
+    {
+      "id": "jlpt_n4_i1",
+      "idiom": "間に合う",
+      "chengyu": "間に合う",
+      "pinyin": "まにあう (ma ni au)",
+      "meaning": "시간에 대다, 늦지 않다",
+      "sentence": "今から走れば、終電に ____ かもしれません。",
+      "example": "今から走れば、終電に間に合うかもしれません。",
+      "translation": "지금부터 뛰면 막차에 늦지 않을지도 모릅니다.",
+      "explanation": "시간이나 기한에 늦지 않을 때 쓰는 필수 표현입니다.",
+      "difficulty": "중"
+    }
+  ]
+}

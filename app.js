@@ -2,12 +2,15 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   // 데이터 저장소
-  let currentLanguage = "hsk"; // "hsk" | "ielts"
+  let currentLanguage = "hsk"; // "hsk" | "ielts" | "jlpt"
   let currentHskLevel = localStorage.getItem("preferred_hsk_level") || "5";
+  let currentJlptLevel = localStorage.getItem("preferred_jlpt_level") || "N2";
   let hskLevelsData = (typeof window !== "undefined" && (window.APP_DATA?.hskLevels || window.HSK_LEVELS_DATA)) || null;
+  let jlptLevelsData = (typeof window !== "undefined" && (window.APP_DATA?.jlptLevels || window.JLPT_LEVELS_DATA)) || null;
 
   let hskData = { vocab: [], colloc: [], chengyu: [], cloze: [], grammar: [], listening: [], dictation: [], reading: [] };
   let ieltsData = { vocab: [], listening: [], idioms: [], cloze: [], grammar: [], dictation: [], reading: [] };
+  let jlptData = { vocab: [], listening: [], idioms: [], chengyu: [], cloze: [], grammar: [], dictation: [], reading: [] };
 
   // 앱 상태
   let currentMode = "vocab";
@@ -86,6 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // DOM 요소 캐싱
   const langHskBtn = document.getElementById("lang-hsk-btn");
   const langIeltsBtn = document.getElementById("lang-ielts-btn");
+  const langJlptBtn = document.getElementById("lang-jlpt-btn");
   const logoBadge = document.getElementById("logo-badge");
   const appTitle = document.getElementById("app-title");
   const introTitle = document.getElementById("intro-title");
@@ -95,6 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const uiLangTabs = document.querySelectorAll(".ui-lang-tab");
   const tabHskText = document.getElementById("tab-hsk-text");
   const tabIeltsText = document.getElementById("tab-ielts-text");
+  const tabJlptText = document.getElementById("tab-jlpt-text");
   const userGreeting = document.getElementById("user-greeting");
   const logoutBtn = document.getElementById("logout-btn");
   const autoTtsLabel = document.getElementById("auto-tts-label");
@@ -133,10 +138,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // 공부 모드 관련 DOM 캐싱
   const mainModeNav = document.getElementById("main-mode-nav");
   const hskLevelBar = document.getElementById("hsk-level-bar");
-  const hskLevelTabs = document.querySelectorAll(".hsk-level-tab");
+  const hskLevelTabs = document.querySelectorAll(".hsk-level-tab:not(.jlpt-level-tab)");
   const tierLabelElem = document.getElementById("tier-label-elem");
   const tierLabelInter = document.getElementById("tier-label-inter");
   const tierLabelAdv = document.getElementById("tier-label-adv");
+  const jlptLevelBar = document.getElementById("jlpt-level-bar");
+  const jlptLevelTabs = document.querySelectorAll(".jlpt-level-tab");
+  const jlptTierElem = document.getElementById("jlpt-tier-elem");
+  const jlptTierInter = document.getElementById("jlpt-tier-inter");
+  const jlptTierAdv = document.getElementById("jlpt-tier-adv");
 
   const navModeStudy = document.getElementById("nav-mode-study");
   const navModeQuiz = document.getElementById("nav-mode-quiz");
@@ -373,12 +383,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const goLogin = document.getElementById("go-login");
 
   // ==========================================
-  // 다국어 i18n 번역 사전 (한국어 / 중국어 / 영어)
+  // 다국어 i18n 번역 사전 (한국어 / 중국어 / 영어 / 일본어)
   // ==========================================
   const I18N = {
     ko: {
       subjectHsk: "HSK 5급",
       subjectIelts: "IELTS 영어",
+      subjectJlpt: "JLPT 일본어",
       greeting: (u) => `${u}님 반갑습니다!`,
       historyBtn: "📜 학습 기록",
       historyBtnTitle: "나의 학습 기록 및 성적 리스트 보기",
@@ -392,6 +403,7 @@ document.addEventListener("DOMContentLoaded", () => {
       voiceSelectTitle: "고음질 원어민 음성 선택",
       voiceAutoZh: "✨ 최적 중국어 음성 (자동)",
       voiceAutoEn: "✨ 미국식(US) 고음질 음성 (자동)",
+      voiceAutoJa: "✨ 최적 일본어 원어민 음성 (자동)",
       logoutTitle: "로그아웃",
 
       hsk: {
@@ -429,6 +441,21 @@ document.addEventListener("DOMContentLoaded", () => {
           mixed: { name: "종합 실전 모의고사", desc: "리스닝, 어휘, 숙어, 콜로케이션, 문법, 스피킹 통합 출제" }
         }
       },
+      jlpt: {
+        title: "JLPT 일본어 스마트 퀴즈",
+        introTitle: "JLPT N5~N1 급수별 일본어 실전 학습 모드를 선택하세요",
+        introDesc: "문자·어휘(文字·語彙), 필수 문법(文法), 실전 청해(聴解), 관용구·속담(慣用句), 연어 빈칸(共起表現), 장문 독해(読解), 말하기 딕테이션까지 일본어 원어민 발음으로 완벽히 정복하세요.",
+        modes: {
+          vocab: { name: "문자·어휘 (文字·語彙)", desc: "한자/히라가나(후리가나) ➔ 한국어 뜻 및 실전 예문" },
+          grammar: { name: "필수 문법 & 경어 (文法)", desc: "조사, 접속표현, 사역·수동, 존경·겸양어 핵심 문형" },
+          listening: { name: "실전 청해 (聴解)", desc: "남녀 일상·비즈니스 대화 청취 후 핵심 질문 풀이" },
+          chengyu: { name: "관용구·속담 (慣用句)", desc: "신체·일상 관용표현 및 사자성어 문맥 완성" },
+          cloze: { name: "연어·빈칸 완성 (共起表現)", desc: "고정 짝꿍 호응(콜로케이션) 및 부사·술어 배합 훈련" },
+          reading: { name: "장문 독해 (読解)", desc: "하(단문)·중(중문)·상(장문 논설문) 지문 읽고 정답 추론" },
+          dictation: { name: "일본어 말하기 딕테이션", desc: "원어민 문장 듣고 똑같이 말하기 & 글자 단위 정밀 비교" },
+          mixed: { name: "JLPT 종합 실전 모의고사", desc: "청해, 어휘, 관용구, 빈칸, 문법, 독해, 말하기 통합 출제" }
+        }
+      },
 
       srsTitle: "스마트 반복 학습 (SRS) 현황",
       srsSubtitle: "맞춘 문제는 자동 졸업(출제 제외), 틀린 문제는 맞출 때까지 다음 시도에 반복 출제됩니다.",
@@ -449,7 +476,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       diffLabels: {
         "하": { label: "🟢 하 (기본)", chip: "하 (기본)", desc: "짧고 명확한 기초 어휘 & 일상 2마디 대화 (문제당 30초)" },
-        "중": { label: "🟡 중 (실전)", chip: "중 (실전)", desc: "5급 표준 문맥, 반전 함정 청취, 빈출 짝꿍 (문제당 1분)" },
+        "중": { label: "🟡 중 (실전)", chip: "중 (실전)", desc: "표준 시험 문맥, 반전 함정 청취, 빈출 짝꿍 (문제당 1분)" },
         "상": { label: "🔴 상 (심화)", chip: "상 (심화)", desc: "길고 복잡한 장문 설명문, 심화 추론 & 어순 (문제당 5분)" }
       },
       diffTimerEasy: "⏱️ 30초",
@@ -483,6 +510,8 @@ document.addEventListener("DOMContentLoaded", () => {
       feedbackWrongHsk: (ans) => `❌ 오답입니다. 정답은 [ ${ans} ] 입니다. (다음 퀴즈에 다시 출제됩니다)`,
       feedbackCorrectIelts: "🎉 Correct! (Mastered & will be excluded next time)",
       feedbackWrongIelts: (ans) => `❌ Incorrect. The answer is [ ${ans} ]. (Added to review list)`,
+      feedbackCorrectJlpt: "🎉 정답입니다! (맞춘 JLPT 문항은 마스터 처리됩니다)",
+      feedbackWrongJlpt: (ans) => `❌ 오답입니다. 정답은 [ ${ans} ] 입니다. (복습 노트에 자동 등록되었습니다)`,
       expCollocLabel: "💡 핵심 搭配/포인트:",
       expDetailLabel: "📌 출제 공략 해설:",
       transcriptTitle: "📜 듣기 원문 녹취록 (대화 스크립트)",
@@ -494,10 +523,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       resultPassHsk: "합격 기준 도달 🏆",
       resultPassIelts: "Band Target Achieved 🏆",
+      resultPassJlpt: "JLPT 합격권 도달 🏆",
       resultFail: "복습 필요 💡",
       resultCompleted: "퀴즈가 완료되었습니다!",
       resultPassMsgHsk: "훌륭합니다! 맞춘 문제는 다음 시도에서 제외되며, 틀린 문제만 모아서 집중 복습할 수 있습니다.",
       resultPassMsgIelts: "Great job! Mastered questions are saved. Review will focus on any mistakes in your next attempt.",
+      resultPassMsgJlpt: "스고이(すごい)! 맞춘 JLPT 문항은 졸업 처리되었으며, 틀린 문항만 집중 복습할 수 있습니다.",
       resultFailMsg: "틀린 문제들은 다음 퀴즈 시도 시 자동으로 다시 출제되니 안심하고 복습하세요!",
       resultDiffPrefix: "난이도: ",
       retryBtn: "다시 풀기 🔄",
@@ -506,6 +537,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       historyTitleHsk: "나의 HSK 5급 학습 기록",
       historyTitleIelts: "나의 IELTS 학습 기록",
+      historyTitleJlpt: "나의 JLPT 일본어 학습 기록",
       statTotal: "총 학습 횟수",
       statAvg: "평균 정답률",
       statPass: "합격(60%↑) 횟수",
@@ -522,6 +554,7 @@ document.addEventListener("DOMContentLoaded", () => {
       studyCatListening: "실전 듣기 (听力)",
       studyCatChengyuHsk: "사자성어(成语)",
       studyCatChengyuIelts: "숙어 및 관용구(Idioms)",
+      studyCatChengyuJlpt: "관용구·속담(慣用句)",
       tierElem: "초등 (기초)",
       tierInter: "중등 (실전)",
       tierAdv: "고등 (심화)",
@@ -556,7 +589,7 @@ document.addEventListener("DOMContentLoaded", () => {
       signupBtn: "회원가입",
       authHaveAccount: "이미 계정이 있으신가요? ",
       authGoLogin: "로그인",
-      footerTitle: "HSK 5급 & IELTS 다국어 스마트 러닝",
+      footerTitle: "HSK 3.0 · IELTS · JLPT 다국어 스마트 러닝",
       footerDesc: "Web Speech API 고음질 원어민 발음 지원",
 
       prompts: {
@@ -575,13 +608,22 @@ document.addEventListener("DOMContentLoaded", () => {
         ielts_idiom_meaning: "Select the correct Korean meaning for this academic idiom:",
         ielts_cloze: "Select the natural academic collocation for the blank:",
         ielts_reading: "지문을 주의 깊게 읽고 가장 알맞은 보기를 고르세요.",
-        ielts_grammar: "Choose the sentence with flawless academic grammar and structure:"
+        ielts_grammar: "Choose the sentence with flawless academic grammar and structure:",
+        jlpt_vocab_reverse: "제시된 뜻을 가진 올바른 일본어 어휘를 고르세요.",
+        jlpt_vocab_meaning: "다음 일본어 어휘의 올바른 한국어 뜻을 고르세요.",
+        jlpt_listening: "🎧 일본어 대화와 질문을 잘 듣고 가장 알맞은 답을 고르세요.",
+        jlpt_idiom_cloze: "문맥의 빈칸 [ ____ ] 에 가장 어울리는 일본어 관용표현을 고르세요.",
+        jlpt_idiom_meaning: "다음 일본어 관용구·속담의 올바른 의미를 고르세요.",
+        jlpt_cloze: "문맥과 자연스러운 일본어 연어(共起表現)를 고려해 빈칸에 들어갈 말을 고르세요.",
+        jlpt_reading: "일본어 지문을 주의 깊게 읽고 질문에 가장 알맞은 보기를 고르세요.",
+        jlpt_grammar: "일본어 문법 규칙과 문맥에 가장 알맞은 문장을 고르세요."
       }
     },
 
     zh: {
       subjectHsk: "HSK 5级",
       subjectIelts: "雅思英语",
+      subjectJlpt: "JLPT 日语",
       greeting: (u) => `欢迎您，${u}！`,
       historyBtn: "📜 学习记录",
       historyBtnTitle: "查看我的学习历史及成绩列表",
@@ -595,6 +637,7 @@ document.addEventListener("DOMContentLoaded", () => {
       voiceSelectTitle: "高清母语语音引擎选择",
       voiceAutoZh: "✨ 最优中文语音 (自动)",
       voiceAutoEn: "✨ 美式英语高清语音 (自动)",
+      voiceAutoJa: "✨ 最优日语母语语音 (自动)",
       logoutTitle: "退出登录",
 
       hsk: {
@@ -630,6 +673,21 @@ document.addEventListener("DOMContentLoaded", () => {
           reading: { name: "雅思阅读长文理解 (Reading)", desc: "5~10行 / 10~20行 / 20~30行真题长文精读与同义替换解题" },
           dictation: { name: "口语听写跟读 (Speaking)", desc: "按 Band 5.0 / 5.5~6.5 / 6.5~8.0 听原音跟读句子" },
           mixed: { name: "综合全真模拟考试", desc: "听力、词汇、习语、搭配、语法、口语全方位模拟" }
+        }
+      },
+      jlpt: {
+        title: "JLPT 日语智能测验",
+        introTitle: "请选择 JLPT N5~N1 日语实战学习模式",
+        introDesc: "涵盖文字词汇、核心语法、实战听解、惯用句、共起搭配、长文读解与口语跟读。",
+        modes: {
+          vocab: { name: "文字·词汇 (文字·語彙)", desc: "汉字/假名读音 ➔ 释义与实用例句" },
+          grammar: { name: "核心语法与敬语 (文法)", desc: "助词、接续表现、使役被动与敬语核心句型" },
+          listening: { name: "实战听解 (聴解)", desc: "男女日常与商务对话听力理解问答" },
+          chengyu: { name: "惯用句与谚语 (慣用句)", desc: "高频日语惯用表达与语境填空" },
+          cloze: { name: "共起搭配填空", desc: "高频固定搭配与副词呼应训练" },
+          reading: { name: "长文读解 (読解)", desc: "短文·中文·长文阅读理解与推理" },
+          dictation: { name: "日语口语跟读", desc: "听日语母语发音跟读句子并逐字比对" },
+          mixed: { name: "JLPT 综合全真模拟", desc: "听解、词汇、惯用句、填空、语法、读解综合测试" }
         }
       },
 
@@ -686,6 +744,8 @@ document.addEventListener("DOMContentLoaded", () => {
       feedbackWrongHsk: (ans) => `❌ 回答错误。正确答案是 [ ${ans} ]。（已加入错题复习本）`,
       feedbackCorrectIelts: "🎉 回答正确！（该题目已标记为掌握，下次练习将排除）",
       feedbackWrongIelts: (ans) => `❌ 回答错误。正确答案是 [ ${ans} ]。（已加入错题复习本）`,
+      feedbackCorrectJlpt: "🎉 回答正确！（该 JLPT 题目已标记为掌握）",
+      feedbackWrongJlpt: (ans) => `❌ 回答错误。正确答案是 [ ${ans} ]。（已加入错题复习本）`,
       expCollocLabel: "💡 核心搭配/要点:",
       expDetailLabel: "📌 考点攻略解析:",
       transcriptTitle: "📜 听力原文文本 (录音脚本)",
@@ -697,10 +757,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       resultPassHsk: "达到及格标准 🏆",
       resultPassIelts: "达到目标成绩 🏆",
+      resultPassJlpt: "达到 JLPT 合格标准 🏆",
       resultFail: "需要复习 💡",
       resultCompleted: "测验已完成！",
       resultPassMsgHsk: "太棒了！答对的题目已牢固掌握，后续测验将重点强化错题。",
       resultPassMsgIelts: "表现优异！掌握的词汇已妥善保存，后续练习将重点针对薄弱点。",
+      resultPassMsgJlpt: "太棒了！已掌握的 JLPT 题目已归档，后续将重点强化错题。",
       resultFailMsg: "答错的题目将在后续测验中自动循环出现，请继续加油复习！",
       resultDiffPrefix: "难度: ",
       retryBtn: "再做一次 🔄",
@@ -709,6 +771,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       historyTitleHsk: "我的 HSK 5级学习记录",
       historyTitleIelts: "我的 雅思 (IELTS) 学习记录",
+      historyTitleJlpt: "我的 JLPT 日语学习记录",
       statTotal: "总学习次数",
       statAvg: "平均正确率",
       statPass: "及格(60%↑)次数",
@@ -725,6 +788,7 @@ document.addEventListener("DOMContentLoaded", () => {
       studyCatListening: "实战听力 (听力)",
       studyCatChengyuHsk: "成语典故",
       studyCatChengyuIelts: "高分习语 (Idioms)",
+      studyCatChengyuJlpt: "日语惯用句 (慣用句)",
       tierElem: "初等 (基础)",
       tierInter: "中等 (实战)",
       tierAdv: "高等 (高级)",
@@ -759,7 +823,7 @@ document.addEventListener("DOMContentLoaded", () => {
       signupBtn: "注册账号",
       authHaveAccount: "已有账号？",
       authGoLogin: "返回登录",
-      footerTitle: "HSK 5级 & 雅思 (IELTS) 多语言智能学习平台",
+      footerTitle: "HSK 3.0 · 雅思 (IELTS) · JLPT 多语言智能学习平台",
       footerDesc: "基于 Web Speech API 提供母语级高清发音",
 
       prompts: {
@@ -778,13 +842,22 @@ document.addEventListener("DOMContentLoaded", () => {
         ielts_idiom_meaning: "请选择该常用英语习语的正确含义：",
         ielts_cloze: "请选择横线处最自然地道的学术固定搭配：",
         ielts_reading: "请仔细阅读上方短文，选出最符合题意的一项：",
-        ielts_grammar: "请选择语法与句型结构最标准规范的句子："
+        ielts_grammar: "请选择语法与句型结构最标准规范的句子：",
+        jlpt_vocab_reverse: "请选择与释义对应的日语词汇：",
+        jlpt_vocab_meaning: "请选择该日语词汇的正确释义：",
+        jlpt_listening: "🎧 请仔细听日语对话与问题，选择最正确的答案：",
+        jlpt_idiom_cloze: "请选择最适合填入 [ ____ ] 的日语惯用句：",
+        jlpt_idiom_meaning: "请选择该日语惯用句的正确含义：",
+        jlpt_cloze: "结合上下文与日语共起搭配，选择最合适的词汇：",
+        jlpt_reading: "请仔细阅读日语短文，选出最符合文意的一项：",
+        jlpt_grammar: "根据日语语法规则，选择最正确的句子："
       }
     },
 
     en: {
       subjectHsk: "HSK Level 5",
       subjectIelts: "IELTS English",
+      subjectJlpt: "JLPT Japanese",
       greeting: (u) => `Welcome, ${u}!`,
       historyBtn: "📜 History",
       historyBtnTitle: "View study history and score reports",
@@ -798,6 +871,7 @@ document.addEventListener("DOMContentLoaded", () => {
       voiceSelectTitle: "High-Quality Native Voice Engine",
       voiceAutoZh: "✨ Optimal Chinese Voice (Auto)",
       voiceAutoEn: "✨ Optimal US English Voice (Auto)",
+      voiceAutoJa: "✨ Optimal Japanese Voice (Auto)",
       logoutTitle: "Log Out",
 
       hsk: {
@@ -833,6 +907,21 @@ document.addEventListener("DOMContentLoaded", () => {
           "하": { label: "🟢 Easy (Band 5.0)", chip: "Easy (Band 5.0)", desc: "Band 5.0 essential daily vocab, Section 1 dialogue & short sentences" },
           "중": { label: "🟡 Medium (Band 5.5~6.5)", chip: "Med (Band 5.5~6.5)", desc: "Band 5.5~6.5 core collocations, Section 2~3 listening & practical grammar" },
           "상": { label: "🔴 Hard (Band 6.5~8.0)", chip: "Hard (Band 6.5~8.0)", desc: "Band 6.5~8.0 advanced academic vocabulary, Section 4 lectures & inversion" }
+        }
+      },
+      jlpt: {
+        title: "JLPT Japanese Smart Quiz",
+        introTitle: "Select JLPT N5~N1 Japanese Study Mode",
+        introDesc: "Master Japanese vocabulary (Kanji/Furigana), grammar patterns, listening comprehension, idioms, collocations, reading passages, and speaking dictation with native Japanese audio.",
+        modes: {
+          vocab: { name: "JLPT Core Vocabulary", desc: "Kanji & Furigana ➔ Meaning & authentic examples" },
+          grammar: { name: "Grammar & Keigo (文法)", desc: "Particles, conjugations, causative/passive & honorifics" },
+          listening: { name: "Listening Practice (聴解)", desc: "Daily & business Japanese dialogues & comprehension" },
+          chengyu: { name: "Japanese Idioms (慣用句)", desc: "Essential Japanese idiomatic expressions & proverbs" },
+          cloze: { name: "Collocation Cloze", desc: "Natural Japanese verb/noun & adverb collocations" },
+          reading: { name: "Reading Passages (読解)", desc: "Short, medium, and long Japanese passages" },
+          dictation: { name: "Japanese Speaking Dictation", desc: "Listen & repeat Japanese sentences with character diff" },
+          mixed: { name: "JLPT Full Mock Exam", desc: "All-in-one JLPT test across all 7 skill areas" }
         }
       },
 
@@ -889,6 +978,8 @@ document.addEventListener("DOMContentLoaded", () => {
       feedbackWrongHsk: (ans) => `❌ Incorrect. The answer is [ ${ans} ]. (Added to review list)`,
       feedbackCorrectIelts: "🎉 Correct! (Marked as mastered and excluded next time)",
       feedbackWrongIelts: (ans) => `❌ Incorrect. The answer is [ ${ans} ]. (Added to review list)`,
+      feedbackCorrectJlpt: "🎉 Correct! (Mastered & saved to JLPT progress)",
+      feedbackWrongJlpt: (ans) => `❌ Incorrect. The answer is [ ${ans} ]. (Added to JLPT review queue)`,
       expCollocLabel: "💡 Key Collocation/Point:",
       expDetailLabel: "📌 Strategy & Analysis:",
       transcriptTitle: "📜 Listening Transcript (Dialogue Script)",
@@ -900,10 +991,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
       resultPassHsk: "Target Achieved 🏆",
       resultPassIelts: "Band Target Achieved 🏆",
+      resultPassJlpt: "JLPT Target Achieved 🏆",
       resultFail: "Needs Review 💡",
       resultCompleted: "Quiz Completed!",
       resultPassMsgHsk: "Great job! Mastered questions are saved. Future reviews will focus on mistakes.",
       resultPassMsgIelts: "Excellent work! Mastered items saved. Focus on incorrect answers next time.",
+      resultPassMsgJlpt: "Subarashii! Mastered JLPT items are saved. Future quizzes will focus on your review queue.",
       resultFailMsg: "Incorrect questions will automatically reappear in future quizzes. Keep practicing!",
       resultDiffPrefix: "Difficulty: ",
       retryBtn: "Retry 🔄",
@@ -912,6 +1005,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       historyTitleHsk: "My HSK Level 5 Study History",
       historyTitleIelts: "My IELTS Study History",
+      historyTitleJlpt: "My JLPT Japanese Study History",
       statTotal: "Total Sessions",
       statAvg: "Average Accuracy",
       statPass: "Passed (60%+) Times",
@@ -928,6 +1022,7 @@ document.addEventListener("DOMContentLoaded", () => {
       studyCatListening: "Listening (听力)",
       studyCatChengyuHsk: "Idioms (Chengyu)",
       studyCatChengyuIelts: "Idioms & Phrases",
+      studyCatChengyuJlpt: "Japanese Idioms (慣用句)",
       tierElem: "Elementary",
       tierInter: "Intermediate",
       tierAdv: "Advanced",
@@ -962,7 +1057,7 @@ document.addEventListener("DOMContentLoaded", () => {
       signupBtn: "Sign Up",
       authHaveAccount: "Already have an account? ",
       authGoLogin: "Log In",
-      footerTitle: "New HSK 3.0 & IELTS Multilingual Smart Learning",
+      footerTitle: "New HSK 3.0 · IELTS · JLPT Multilingual Smart Learning",
       footerDesc: "Powered by Web Speech API Native Audio",
 
       prompts: {
@@ -981,7 +1076,244 @@ document.addEventListener("DOMContentLoaded", () => {
         ielts_idiom_meaning: "Select the correct meaning for this academic idiom:",
         ielts_cloze: "Select the natural academic collocation for the blank:",
         ielts_reading: "Read the passage carefully and select the best answer:",
-        ielts_grammar: "Choose the sentence with flawless grammar and structure:"
+        ielts_grammar: "Choose the sentence with flawless grammar and structure:",
+        jlpt_vocab_reverse: "Select the Japanese word matching the given meaning:",
+        jlpt_vocab_meaning: "Select the correct meaning for this Japanese word:",
+        jlpt_listening: "🎧 Listen carefully to the Japanese dialogue and select the best answer:",
+        jlpt_idiom_cloze: "Choose the Japanese idiom that best fits [ ____ ]:",
+        jlpt_idiom_meaning: "Select the correct meaning of this Japanese idiom:",
+        jlpt_cloze: "Select the natural Japanese collocation for the blank:",
+        jlpt_reading: "Read the Japanese passage carefully and select the best answer:",
+        jlpt_grammar: "Choose the sentence with correct Japanese grammar and structure:"
+      }
+    },
+
+    ja: {
+      subjectHsk: "HSK 5級",
+      subjectIelts: "IELTS 英語",
+      subjectJlpt: "JLPT 日本語",
+      greeting: (u) => `ようこそ、${u}さん！`,
+      historyBtn: "📜 学習履歴",
+      historyBtnTitle: "学習履歴と成績リストを表示",
+      autoTtsLabel: "🔊 自動音声",
+      autoTtsTitle: "問題切り替え時にネイティブ音声を自動再生します",
+      ttsSpeedTitle: "再生速度の調整",
+      speedSlow: "0.8x (ゆっくり)",
+      speedNormal: "1.0x (標準)",
+      speedFast: "1.2x (速い)",
+      speedVFast: "1.5x (とても速い)",
+      voiceSelectTitle: "高音質ネイティブ音声の選択",
+      voiceAutoZh: "✨ 最適な中国語音声 (自動)",
+      voiceAutoEn: "✨ 最適な英語音声 (自動)",
+      voiceAutoJa: "✨ 最適な日本語ネイティブ音声 (自動)",
+      logoutTitle: "ログアウト",
+
+      hsk: {
+        title: "HSK スマートクイズ",
+        introTitle: "HSK 実践学習モードを選択してください",
+        introDesc: "必須語彙、核心文法、実践リスニング、四字熟語、読解コロケーションまでネイティブ音声で完全攻略。",
+        modes: {
+          vocab: { name: "必須語彙クイズ", desc: "漢字/ピンイン ➔ 意味と実用例文" },
+          grammar: { name: "必須文法＆語順整序", desc: "把/被構文、存現文、接続詞と語順ルール" },
+          listening: { name: "実践リスニング(听力)", desc: "男女の対話と短文を聞いて質問に答える" },
+          chengyu: { name: "四字熟語(成語)クイズ", desc: "文脈穴埋め＆頻出成語の意味把握" },
+          cloze: { name: "読解第1部分 穴埋め", desc: "頻出コロケーション(搭配)の瞬発トレーニング" },
+          reading: { name: "読解第2・3部分 長文読解", desc: "初級・中級・上級の長文パッセージ読解" },
+          dictation: { name: "スピーキング・ディクテーション", desc: "ネイティブ音声を聞いて復唱＆文字単位の精密比較" },
+          mixed: { name: "総合実践模擬試験", desc: "リスニング・語彙・成語・文法・読解・発音の総合出題" }
+        }
+      },
+      ielts: {
+        title: "IELTS 英語マスタークイズ",
+        introTitle: "IELTS Band 5.0〜8.0 目標スコア別モードを選択",
+        introDesc: "語彙、リスニング、イディオム、コロケーション、文法、スピーキングをネイティブ発音でマスターしましょう。",
+        modes: {
+          vocab: { name: "IELTS 核心語彙", desc: "Band 5.0〜8.0 アカデミック必須語彙＆類義語" },
+          grammar: { name: "ライティング必須文法", desc: "基礎文型から倒置・分詞構文・仮定法まで" },
+          listening: { name: "実践リスニング", desc: "日常会話から学術講義までの聴解演習" },
+          chengyu: { name: "イディオム＆慣用表現", desc: "スピーキング＆ライティング高得点表現" },
+          cloze: { name: "コロケーション穴埋め", desc: "頻出アカデミック連語(Collocations)完成" },
+          reading: { name: "IELTS 長文読解", desc: "レベル別パッセージ読解＆パラフレーズ推論" },
+          dictation: { name: "スピーキング復唱練習", desc: "英文を聞いて正確に発音＆単語単位で精密比較" },
+          mixed: { name: "総合実践模擬試験", desc: "全パート統合の実践テスト" }
+        }
+      },
+      jlpt: {
+        title: "JLPT 日本語スマートクイズ",
+        introTitle: "JLPT N5〜N1 レベル別の実践学習モードを選択してください",
+        introDesc: "文字・語彙、必須文法・敬語、実践聴解、慣用句・ことわざ、共起表現、長文読解、発音ディクテーションまで網羅。",
+        modes: {
+          vocab: { name: "文字・語彙 (Vocabulary)", desc: "漢字・ふりがな ➔ 意味と実践例文" },
+          grammar: { name: "必須文法・敬語 (Grammar)", desc: "助詞・接続表現・使役受身・尊敬語・謙譲語" },
+          listening: { name: "実践聴解 (Listening)", desc: "日常会話やビジネス対話を聞いて質問に解答" },
+          chengyu: { name: "慣用句・ことわざ (Idioms)", desc: "頻出の慣用表現と文脈穴埋め" },
+          cloze: { name: "共起表現・穴埋め (Cloze)", desc: "自然な日本語コロケーションと副詞の呼応" },
+          reading: { name: "長文読解 (Reading)", desc: "短文・中文・長文パッセージの読解演習" },
+          dictation: { name: "日本語シャドーイング・復唱", desc: "ネイティブ音声を聞いて発話し文字単位で精密判定" },
+          mixed: { name: "JLPT 総合模擬試験", desc: "聴解・語彙・慣用句・文法・読解・発音の総合出題" }
+        }
+      },
+
+      srsTitle: "スマート反復学習 (SRS) 進捗状況",
+      srsSubtitle: "正解した問題は卒業（出題除外）となり、間違えた問題はマスターするまで繰り返し出題されます。",
+      srsResetBtn: "🔄 進捗リセット",
+      srsResetBtnTitle: "現在の科目のマスターおよび復習記録を初期化します",
+      srsMastered: "🎓 マスター済 (正解)",
+      srsReview: "🔁 復習待ち (不正解)",
+      srsNew: "⏳ 未挑戦の問題",
+
+      sectionMode: "1. 学習モード選択",
+      sectionCount: "2. 問題数の選択",
+      sectionDiff: "3. 難易度の選択",
+
+      count5: "5問 (クイック)",
+      count10: "10問 (おすすめ)",
+      count15: "15問 (集中)",
+      countAll: "全問チャレンジ",
+
+      diffLabels: {
+        "하": { label: "🟢 初級 (基本)", chip: "初級 (基本)", desc: "短く明確な基礎語彙＆日常の短い対話 (1問 30秒)" },
+        "중": { label: "🟡 中級 (実践)", chip: "中級 (実践)", desc: "標準レベルの文脈、ひっかけ聴解、頻出連語 (1問 1分)" },
+        "상": { label: "🔴 上級 (応用)", chip: "上級 (応用)", desc: "複雑な長文論説、深い推論＆高度な文法構造 (1問 5分)" }
+      },
+      diffTimerEasy: "⏱️ 30秒",
+      diffTimerMid: "⏱️ 1分",
+      diffTimerHard: "⏱️ 5分",
+      timerBadgeTitle: "制限時間（時間切れでスマートヒントが自動表示されます）",
+      timerHintBadge: "⏰ 制限時間経過・スマートヒント",
+      timerHintLimitInfo: (d, sec) => `難易度 [${d}] の制限時間（${sec === 30 ? "30秒" : sec === 60 ? "1分" : "5分"}）経過 — 下のヒントを参考に解答してください！`,
+
+      startBtn: "クイズ開始 🚀",
+
+      progressText: (cur, total) => `問題 ${cur} / ${total}`,
+      currentScoreLabel: "現在のスコア:",
+      quitBtn: "終了する",
+      audioBtn: "音声を聞く",
+      audioBtnTitle: "ネイティブ発音を再生",
+      srsReviewBadge: "🔁 弱点集中復習",
+      listeningInstruction: "🎧 会話を注意深く聞いて質問に答えてください",
+      listeningSubtext: "(本番試験と同様、問題は音声のみで出題されます)",
+      listeningPlay: "会話を再生",
+      listeningPause: "一時停止",
+      listeningResume: "再開する",
+      listeningReplay: "もう一度聞く",
+      listeningPausedStatus: "⏸️ 一時停止中（「再開する」で続きから再生）",
+      listeningFinishedStatus: "✅ 再生完了！正しい選択肢を選んでください。",
+      listeningRestart: "🔄 最初から",
+      listeningRestartTitle: "会話を最初から再生します",
+      defaultSubPrompt: "次の単語の正しい意味を選んでください：",
+
+      feedbackCorrectHsk: "🎉 正解です！（マスター済として記録されました）",
+      feedbackWrongHsk: (ans) => `❌ 不正解です。正解は [ ${ans} ] です。（復習リストに追加されました）`,
+      feedbackCorrectIelts: "🎉 正解です！（マスター済として記録されました）",
+      feedbackWrongIelts: (ans) => `❌ 不正解です。正解は [ ${ans} ] です。（復習リストに追加されました）`,
+      feedbackCorrectJlpt: "🎉 正解です！（マスター済として記録されました）",
+      feedbackWrongJlpt: (ans) => `❌ 不正解です。正解は [ ${ans} ] です。（復習リストに追加されました）`,
+      expCollocLabel: "💡 重要コロケーション/ポイント:",
+      expDetailLabel: "📌 攻略解説:",
+      transcriptTitle: "📜 リスニングスクリプト (対話原文)",
+      transcriptAudioBtn: "原文をもう一度聞く",
+      transcriptQuestionBadge: "❓ 質問",
+      exampleCardTitle: "📝 実践詳細例文",
+      exampleAudioBtn: "例文を聞く",
+      nextBtn: "次の問題へ ➔",
+
+      resultPassHsk: "合格基準達成 🏆",
+      resultPassIelts: "目標バンド達成 🏆",
+      resultPassJlpt: "JLPT 合格圏達成 🏆",
+      resultFail: "復習が必要 💡",
+      resultCompleted: "クイズ完了！",
+      resultPassMsgHsk: "素晴らしい！正解した問題は保存され、次回は間違えた問題を集中的に復習できます。",
+      resultPassMsgIelts: "素晴らしい！マスターした語彙が記録されました。",
+      resultPassMsgJlpt: "素晴らしい！正解した JLPT 問題はマスター処理されました。",
+      resultFailMsg: "間違えた問題は次回のクイズで自動的に再出題されます。復習を続けましょう！",
+      resultDiffPrefix: "難易度: ",
+      retryBtn: "もう一度挑戦 🔄",
+      viewHistoryBtn: "📜 学習履歴を見る",
+      homeBtn: "メインメニュー 🏠",
+
+      historyTitleHsk: "私の HSK 学習履歴",
+      historyTitleIelts: "私の IELTS 学習履歴",
+      historyTitleJlpt: "私の JLPT 日本語学習履歴",
+      statTotal: "総学習回数",
+      statAvg: "平均正答率",
+      statPass: "合格(60%↑)回数",
+      historyListHeader: "学習履歴リスト",
+      clearHistoryBtn: "履歴をすべて削除",
+      emptyHistory: "まだ学習履歴がありません。<br>最初のクイズに挑戦しましょう！💪",
+      historyPassBadge: "合格",
+      historyFailBadge: "要復習",
+
+      navModeStudy: "学習モード (単語カード)",
+      navModeQuiz: "実践クイズモード",
+      studyCatVocab: "必須語彙",
+      studyCatGrammar: "核心文法＆文型",
+      studyCatListening: "実践聴解 (リスニング)",
+      studyCatChengyuHsk: "四字熟語 (成語)",
+      studyCatChengyuIelts: "イディオム (Idioms)",
+      studyCatChengyuJlpt: "慣用句・ことわざ",
+      tierElem: "初級 (基礎)",
+      tierInter: "中級 (実践)",
+      tierAdv: "上級 (応用)",
+      studyFlipPrompt: "クリックして意味と例文を確認",
+      studyFlipBackPrompt: "クリックして表面に戻る",
+      studyAutoplayOn: "自動めくり停止",
+      studyAutoplayOff: "自動めくり",
+      studyPrevBtn: "前のカード",
+      studyNextBtn: "次のカード",
+      studyFlipBtn: "カードを裏返す",
+      studyBridgeTitle: "学習した内容を今すぐ実践クイズでテストしましょう！",
+      studyBridgeDesc: "学んだ内容をすぐにクイズで解き、スマート反復学習(SRS)に記録できます。",
+      studyBridgeBtn: "このモードでクイズに挑戦",
+      grammarBoxTitle: "📌 文法公式＆ポイント解説",
+
+      alertNoQuestions: "出題できる問題がありません。進捗リセットから再度練習してください。",
+      confirmQuit: "現在のクイズを中断してメインメニューに戻りますか？",
+      confirmResetProgress: (langName) => `${langName} のマスターおよび復習記録をリセットしますか？`,
+      alertResetProgress: "進捗がリセットされました。すべての問題に再挑戦できます。",
+      confirmClearHistory: "すべての学習履歴を削除してもよろしいですか？",
+
+      authWelcome: "👋 ようこそ！",
+      authSubtitle: "学習を続けるにはログインしてください。",
+      authIdPlaceholder: "ユーザーID",
+      authPwPlaceholder: "パスワード",
+      loginBtn: "ログイン",
+      authNoAccount: "アカウントをお持ちでないですか？ ",
+      authGoSignup: "新規登録",
+      signupIdPlaceholder: "新しいユーザーID",
+      signupPwPlaceholder: "パスワード",
+      signupPwConfirmPlaceholder: "パスワード確認",
+      signupBtn: "登録する",
+      authHaveAccount: "すでにアカウントをお持ちですか？ ",
+      authGoLogin: "ログイン",
+      footerTitle: "New HSK 3.0 · IELTS · JLPT 多言語スマートラーニング",
+      footerDesc: "Web Speech API 高音質ネイティブ発音対応",
+
+      prompts: {
+        hsk_vocab_reverse: "提示された意味に合う中国語の単語を選んでください：",
+        hsk_vocab_meaning: "次の中国語単語の正しい意味を選んでください：",
+        hsk_listening: "🎧 対話と質問をよく聞いて、正しい答えを選んでください：",
+        hsk_chengyu_cloze: "文脈の空欄 [ ____ ] に最も適した四字熟語を選んでください：",
+        hsk_chengyu_meaning: "次の四字熟語の正しい意味を選んでください：",
+        hsk_cloze: "文脈とコロケーションを考慮して空欄に入る語を選んでください：",
+        hsk_reading: "本文を注意深く読んで最も適切な選択肢を選んでください：",
+        hsk_grammar: "文法規則と語順に合う最も正しい文を選んでください：",
+        ielts_vocab_reverse: "意味に一致する英単語を選んでください：",
+        ielts_vocab_meaning: "この英単語の正しい意味を選んでください：",
+        ielts_listening: "🎧 音声を注意深く聞いて正しい答えを選んでください：",
+        ielts_idiom_cloze: "空欄 [ ____ ] に最も適したイディオムを選んでください：",
+        ielts_idiom_meaning: "この英語イディオムの正しい意味を選んでください：",
+        ielts_cloze: "空欄に入る自然な英語コロケーションを選んでください：",
+        ielts_reading: "パッセージを読んで最も適切な選択肢を選んでください：",
+        ielts_grammar: "文法と構造が最も適切な英文を選んでください：",
+        jlpt_vocab_reverse: "提示された意味に合う日本語の語彙を選んでください：",
+        jlpt_vocab_meaning: "次の日本語語彙の正しい意味を選んでください：",
+        jlpt_listening: "🎧 日本語の対話と質問をよく聞いて、最も適切な答えを選んでください：",
+        jlpt_idiom_cloze: "文脈の空欄 [ ____ ] に最も適した慣用句を選んでください：",
+        jlpt_idiom_meaning: "次の日本語慣用句・ことわざの正しい意味を選んでください：",
+        jlpt_cloze: "文脈と自然な共起表現を考慮して空欄に入る語を選んでください：",
+        jlpt_reading: "日本語の文章を注意深く読んで最も適切な選択肢を選んでください：",
+        jlpt_grammar: "日本語の文法規則に最も合致する正しい文を選んでください："
       }
     }
   };
@@ -992,6 +1324,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (lang === "zh") {
       return lv === "7-9" ? "7~9级" : `${lv}级`;
     }
+    if (lang === "ja") {
+      return lv === "7-9" ? "7〜9級" : `${lv}級`;
+    }
     if (lang === "en") {
       return lv === "7-9" ? "Lv. 7-9" : `Level ${lv}`;
     }
@@ -1001,13 +1336,18 @@ document.addEventListener("DOMContentLoaded", () => {
   function getSubjectConfig(subject, uiLang) {
     const lang = uiLang || currentUiLang || "ko";
     const t = I18N[lang] || I18N.ko;
-    const sub = (subject === "ielts") ? "ielts" : "hsk";
-    const conf = t[sub];
+    const sub = (subject === "ielts") ? "ielts" : (subject === "jlpt" ? "jlpt" : "hsk");
+    const conf = t[sub] || I18N.ko[sub];
     const lvLabel = getHskLevelLabel(currentHskLevel, lang);
-    const badges = { hsk: `HSK ${currentHskLevel}`, ielts: "IELTS" };
+    const badges = {
+      hsk: `HSK ${currentHskLevel}`,
+      ielts: "IELTS",
+      jlpt: `JLPT ${currentJlptLevel}`
+    };
     const icons = {
       hsk: { vocab: "🎯", grammar: "📑", listening: "🎧", chengyu: "🀄", cloze: "🔗", reading: "📖", dictation: "🎙️", mixed: "🎲" },
-      ielts: { vocab: "🎯", grammar: "📑", listening: "🎧", chengyu: "💡", cloze: "🔗", reading: "📖", dictation: "🎙️", mixed: "🎲" }
+      ielts: { vocab: "🎯", grammar: "📑", listening: "🎧", chengyu: "💡", cloze: "🔗", reading: "📖", dictation: "🎙️", mixed: "🎲" },
+      jlpt: { vocab: "🎯", grammar: "📑", listening: "🎧", chengyu: "🏮", cloze: "🔗", reading: "📖", dictation: "🎙️", mixed: "🎲" }
     };
     const modes = {};
     if (conf && conf.modes) {
@@ -1029,9 +1369,26 @@ document.addEventListener("DOMContentLoaded", () => {
       } else if (lang === "en") {
         dynTitle = `New HSK ${lvLabel} Smart Quiz`;
         dynIntroTitle = `Select New HSK ${lvLabel} Study Mode`;
+      } else if (lang === "ja") {
+        dynTitle = `新 HSK ${lvLabel} スマートクイズ`;
+        dynIntroTitle = `新 HSK ${lvLabel} 実践学習モードを選択してください`;
       } else {
         dynTitle = `신 HSK ${lvLabel} 스마트 퀴즈`;
         dynIntroTitle = `실전 신 HSK ${lvLabel} 학습 모드를 선택하세요`;
+      }
+    } else if (sub === "jlpt") {
+      if (lang === "zh") {
+        dynTitle = `JLPT ${currentJlptLevel} 日语智能测验`;
+        dynIntroTitle = `请选择 JLPT ${currentJlptLevel} 实战学习模式`;
+      } else if (lang === "en") {
+        dynTitle = `JLPT ${currentJlptLevel} Japanese Smart Quiz`;
+        dynIntroTitle = `Select JLPT ${currentJlptLevel} Study Mode`;
+      } else if (lang === "ja") {
+        dynTitle = `JLPT ${currentJlptLevel} 日本語スマートクイズ`;
+        dynIntroTitle = `JLPT ${currentJlptLevel} 実践学習モードを選択してください`;
+      } else {
+        dynTitle = `JLPT ${currentJlptLevel} 일본어 스마트 퀴즈`;
+        dynIntroTitle = `실전 JLPT ${currentJlptLevel} 학습 모드를 선택하세요`;
       }
     }
 
@@ -1046,7 +1403,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const modeConfigs = {
     get hsk() { return getSubjectConfig("hsk", currentUiLang); },
-    get ielts() { return getSubjectConfig("ielts", currentUiLang); }
+    get ielts() { return getSubjectConfig("ielts", currentUiLang); },
+    get jlpt() { return getSubjectConfig("jlpt", currentUiLang); }
   };
 
   function getDiffInfo(diff, uiLang) {
@@ -1115,19 +1473,31 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // 2. 과목 스위처 탭 텍스트 및 신 HSK 급수 바 라벨
+    // 2. 과목 스위처 탭 텍스트 및 신 HSK 급수 바 / JLPT 급수 바 라벨
     const lvLabel = getHskLevelLabel(currentHskLevel, currentUiLang);
     if (tabHskText) tabHskText.textContent = `HSK ${lvLabel}`;
     if (tabIeltsText) tabIeltsText.textContent = t.subjectIelts;
+    if (tabJlptText) tabJlptText.textContent = `${t.subjectJlpt || "JLPT 일본어"} (${currentJlptLevel})`;
 
     if (tierLabelElem && t.tierElem) tierLabelElem.textContent = t.tierElem;
     if (tierLabelInter && t.tierInter) tierLabelInter.textContent = t.tierInter;
     if (tierLabelAdv && t.tierAdv) tierLabelAdv.textContent = t.tierAdv;
+    if (jlptTierElem && t.tierElem) jlptTierElem.textContent = t.tierElem;
+    if (jlptTierInter && t.tierInter) jlptTierInter.textContent = t.tierInter;
+    if (jlptTierAdv && t.tierAdv) jlptTierAdv.textContent = t.tierAdv;
+
     if (hskLevelTabs && hskLevelTabs.length > 0) {
       hskLevelTabs.forEach(btn => {
         const lv = btn.getAttribute("data-hsk-level");
         btn.textContent = getHskLevelLabel(lv, currentUiLang);
         btn.classList.toggle("active", lv === currentHskLevel);
+      });
+    }
+    if (jlptLevelTabs && jlptLevelTabs.length > 0) {
+      jlptLevelTabs.forEach(btn => {
+        const lv = btn.getAttribute("data-jlpt-level");
+        btn.textContent = lv;
+        btn.classList.toggle("active", lv === currentJlptLevel);
       });
     }
 
@@ -1173,7 +1543,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (studyCatChengyuText) {
       studyCatChengyuText.textContent = (currentLanguage === "hsk")
         ? t.studyCatChengyuHsk
-        : t.studyCatChengyuIelts;
+        : (currentLanguage === "jlpt" ? (t.studyCatChengyuJlpt || "관용구·속담(慣用句)") : t.studyCatChengyuIelts);
     }
     if (cardFlipPromptText) cardFlipPromptText.textContent = t.studyFlipPrompt;
     if (cardFlipBackPromptText) cardFlipBackPromptText.textContent = t.studyFlipBackPrompt;
@@ -1268,8 +1638,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const curDInfo = getDiffInfo(currentDifficulty, currentUiLang);
       if (resultDiffBadge) resultDiffBadge.textContent = `${t.resultDiffPrefix}${curDInfo.label}`;
       if (isPass) {
-        if (resultBadge) resultBadge.textContent = (currentLanguage === "hsk") ? t.resultPassHsk : t.resultPassIelts;
-        if (resultMessage) resultMessage.textContent = (currentLanguage === "hsk") ? t.resultPassMsgHsk : t.resultPassMsgIelts;
+        if (resultBadge) {
+          resultBadge.textContent = (currentLanguage === "hsk")
+            ? t.resultPassHsk
+            : (currentLanguage === "jlpt" ? (t.resultPassJlpt || t.resultPassHsk) : t.resultPassIelts);
+        }
+        if (resultMessage) {
+          resultMessage.textContent = (currentLanguage === "hsk")
+            ? t.resultPassMsgHsk
+            : (currentLanguage === "jlpt" ? (t.resultPassMsgJlpt || t.resultPassMsgHsk) : t.resultPassMsgIelts);
+        }
       } else {
         if (resultBadge) resultBadge.textContent = t.resultFail;
         if (resultMessage) resultMessage.textContent = t.resultFailMsg;
@@ -1281,8 +1659,21 @@ document.addEventListener("DOMContentLoaded", () => {
       ? `我的 新 HSK ${lvLabel} 学习记录`
       : (currentUiLang === "en")
         ? `My New HSK ${lvLabel} Study History`
-        : `나의 신 HSK ${lvLabel} 학습 기록`;
-    if (historyModalTitle) historyModalTitle.textContent = (currentLanguage === "hsk") ? dynHistoryTitleHsk : t.historyTitleIelts;
+        : (currentUiLang === "ja")
+          ? `私の 新 HSK ${lvLabel} 学習履歴`
+          : `나의 신 HSK ${lvLabel} 학습 기록`;
+    const dynHistoryTitleJlpt = (currentUiLang === "zh")
+      ? `我的 JLPT ${currentJlptLevel} 学习记录`
+      : (currentUiLang === "en")
+        ? `My JLPT ${currentJlptLevel} Study History`
+        : (currentUiLang === "ja")
+          ? `私の JLPT ${currentJlptLevel} 学習履歴`
+          : `나의 JLPT ${currentJlptLevel} 일본어 학습 기록`;
+    if (historyModalTitle) {
+      historyModalTitle.textContent = (currentLanguage === "hsk")
+        ? dynHistoryTitleHsk
+        : (currentLanguage === "jlpt" ? dynHistoryTitleJlpt : t.historyTitleIelts);
+    }
     if (statTotalLabel) statTotalLabel.textContent = t.statTotal;
     if (statAvgLabel) statAvgLabel.textContent = t.statAvg;
     if (statPassLabel) statPassLabel.textContent = t.statPass;
@@ -1366,9 +1757,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function getSavedCustomJsonPatch() {
     try {
       const raw = localStorage.getItem(CUSTOM_JSON_STORAGE_KEY);
-      return raw ? JSON.parse(raw) : { hskLevels: {}, ielts: {} };
+      return raw ? JSON.parse(raw) : { hskLevels: {}, ielts: {}, jlptLevels: {} };
     } catch (e) {
-      return { hskLevels: {}, ielts: {} };
+      return { hskLevels: {}, ielts: {}, jlptLevels: {} };
     }
   }
 
@@ -1384,8 +1775,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (saved && saved.ielts) {
       ieltsData = mergeDatasetObj(ieltsData, saved.ielts);
     }
+    if (saved && saved.jlptLevels && jlptLevelsData) {
+      Object.keys(saved.jlptLevels).forEach((lv) => {
+        if (jlptLevelsData[lv]) {
+          jlptLevelsData[lv] = mergeDatasetObj(jlptLevelsData[lv], saved.jlptLevels[lv]);
+        }
+      });
+    }
     if (hskLevelsData && hskLevelsData[currentHskLevel]) {
       hskData = hskLevelsData[currentHskLevel];
+    }
+    if (jlptLevelsData && jlptLevelsData[currentJlptLevel]) {
+      jlptData = jlptLevelsData[currentJlptLevel];
     }
   }
 
@@ -1406,13 +1807,17 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const levelKeys = ["1", "2", "3", "4", "5", "6", "7-9"];
       const levelPromises = levelKeys.map((lv) => fetchJsonSafe(`vocab/levels/hsk${lv}.json`));
+      const jlptKeys = ["N5", "N4", "N3", "N2", "N1"];
+      const jlptPromises = jlptKeys.map((lv) => fetchJsonSafe(`jlpt/levels/jlpt_${lv.toLowerCase()}.json`));
       const [
         lv1, lv2, lv3, lv4, lv5, lv6, lv79,
+        jN5, jN4, jN3, jN2, jN1,
         hv, hc, hch, hcl, hg, hl, hd, hrd,
         iv, il, ii, ic, ig, idic, ird,
         customJson
       ] = await Promise.all([
         ...levelPromises,
+        ...jlptPromises,
         fetchJsonSafe("vocab/hsk5_core_vocabulary.json"),
         fetchJsonSafe("vocab/hsk5_collocations.json"),
         fetchJsonSafe("vocab/hsk5_chengyu.json"),
@@ -1436,6 +1841,14 @@ document.addEventListener("DOMContentLoaded", () => {
       Object.keys(fetchedLevels).forEach((lv) => {
         if (fetchedLevels[lv]) {
           hskLevelsData[lv] = mergeDatasetObj(hskLevelsData[lv] || {}, fetchedLevels[lv]);
+        }
+      });
+
+      if (!jlptLevelsData) jlptLevelsData = {};
+      const fetchedJlpt = { N5: jN5, N4: jN4, N3: jN3, N2: jN2, N1: jN1 };
+      Object.keys(fetchedJlpt).forEach((lv) => {
+        if (fetchedJlpt[lv]) {
+          jlptLevelsData[lv] = mergeDatasetObj(jlptLevelsData[lv] || {}, fetchedJlpt[lv]);
         }
       });
 
@@ -1475,16 +1888,28 @@ document.addEventListener("DOMContentLoaded", () => {
         if (customJson.ielts) {
           ieltsData = mergeDatasetObj(ieltsData, customJson.ielts);
         }
+        if (customJson.jlptLevels) {
+          Object.keys(customJson.jlptLevels).forEach((lv) => {
+            if (jlptLevelsData[lv]) {
+              jlptLevelsData[lv] = mergeDatasetObj(jlptLevelsData[lv], customJson.jlptLevels[lv]);
+            }
+          });
+        }
       }
 
       applySavedCustomJsonPatch();
       if (hskLevelsData[currentHskLevel]) {
         hskData = hskLevelsData[currentHskLevel];
       }
+      if (jlptLevelsData[currentJlptLevel]) {
+        jlptData = jlptLevelsData[currentJlptLevel];
+      }
       if (window.APP_DATA) {
         window.APP_DATA.hskLevels = hskLevelsData;
         window.APP_DATA.hsk = hskLevelsData["5"] || hskData;
         window.APP_DATA.ielts = ieltsData;
+        window.APP_DATA.jlptLevels = jlptLevelsData;
+        window.APP_DATA.jlpt = jlptLevelsData["N2"] || jlptData;
       }
       return true;
     } catch (err) {
@@ -1497,15 +1922,24 @@ document.addEventListener("DOMContentLoaded", () => {
       // 딥카피로 베이스라인 초기화 후 JSON 패치 적용
       hskLevelsData = JSON.parse(JSON.stringify(window.APP_DATA.hskLevels || window.HSK_LEVELS_DATA || {}));
       ieltsData = JSON.parse(JSON.stringify(window.APP_DATA.ielts || {}));
+      jlptLevelsData = JSON.parse(JSON.stringify(window.APP_DATA.jlptLevels || window.JLPT_LEVELS_DATA || {}));
       if (!hskLevelsData["5"] && window.APP_DATA.hsk) {
         hskLevelsData["5"] = JSON.parse(JSON.stringify(window.APP_DATA.hsk));
       }
+      if (!jlptLevelsData["N2"] && window.APP_DATA.jlpt) {
+        jlptLevelsData["N2"] = JSON.parse(JSON.stringify(window.APP_DATA.jlpt));
+      }
       applySavedCustomJsonPatch();
       hskData = (hskLevelsData && hskLevelsData[currentHskLevel]) || window.APP_DATA.hsk || {};
+      jlptData = (jlptLevelsData && jlptLevelsData[currentJlptLevel]) || window.APP_DATA.jlpt || {};
     } else if (window.HSK_LEVELS_DATA) {
       hskLevelsData = JSON.parse(JSON.stringify(window.HSK_LEVELS_DATA));
+      if (window.JLPT_LEVELS_DATA) {
+        jlptLevelsData = JSON.parse(JSON.stringify(window.JLPT_LEVELS_DATA));
+      }
       applySavedCustomJsonPatch();
       hskData = hskLevelsData[currentHskLevel] || {};
+      jlptData = (jlptLevelsData && jlptLevelsData[currentJlptLevel]) || {};
     } else if (window.HSK5_DATA) {
       hskData = JSON.parse(JSON.stringify(window.HSK5_DATA));
     }
@@ -1533,6 +1967,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (currentLanguage === "hsk") {
       return currentHskLevel === "5" ? "hsk_" : `hsk${currentHskLevel}_`;
     }
+    if (currentLanguage === "jlpt") {
+      return `jlpt_${currentJlptLevel}_`;
+    }
     return `${currentLanguage}_`;
   }
 
@@ -1543,6 +1980,9 @@ document.addEventListener("DOMContentLoaded", () => {
                    (item.sentence ? item.sentence.slice(0, 18) : "");
     if (lang === "hsk" && currentHskLevel !== "5") {
       return `hsk${currentHskLevel}_${mainId}`;
+    }
+    if (lang === "jlpt") {
+      return `jlpt_${currentJlptLevel}_${mainId}`;
     }
     return `${lang}_${mainId}`;
   }
@@ -1582,6 +2022,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         (hskData.reading?.length || 0) +
                         (hskData.grammar?.length || 0) +
                         (hskData.dictation?.length || 0);
+    } else if (currentLanguage === "jlpt") {
+      totalItemsCount = (jlptData.vocab?.length || 0) +
+                        (jlptData.listening?.length || 0) +
+                        ((jlptData.idioms || jlptData.chengyu)?.length || 0) +
+                        (jlptData.cloze?.length || 0) +
+                        (jlptData.reading?.length || 0) +
+                        (jlptData.grammar?.length || 0) +
+                        (jlptData.dictation?.length || 0);
     } else {
       totalItemsCount = (ieltsData.vocab?.length || 0) +
                         (ieltsData.listening?.length || 0) +
@@ -1654,6 +2102,36 @@ document.addEventListener("DOMContentLoaded", () => {
           if (v.name.includes("Google")) label = "Google 번역기 음성 (고음질)";
           else if (v.name.includes("Tingting")) label = "Apple Tingting (원어민 婷婷)";
           else if (v.name.includes("Mei-Jia")) label = "Apple Mei-Jia (미가)";
+          opt.textContent = label;
+          ttsVoiceSelect.appendChild(opt);
+        });
+      }
+    } else if (currentLanguage === "jlpt") {
+      const jaVoices = allVoices.filter(v =>
+        v.lang === "ja-JP" || v.lang === "ja_JP" || v.lang.startsWith("ja")
+      );
+
+      function jaScore(v) {
+        const name = v.name.toLowerCase();
+        if (name.includes("google")) return 100;
+        if (name.includes("enhanced") || name.includes("premium")) return 95;
+        if (name.includes("kyoko") || name.includes("otoya")) return 90;
+        if (name.includes("hattori") || name.includes("o-ren")) return 80;
+        return 20;
+      }
+
+      jaVoices.sort((a, b) => jaScore(b) - jaScore(a));
+      availableVoices = jaVoices;
+
+      if (ttsVoiceSelect) {
+        ttsVoiceSelect.innerHTML = `<option value="auto">${t.voiceAutoJa || "✨ 최적 일본어 원어민 음성 (자동)"}</option>`;
+        jaVoices.forEach(v => {
+          const opt = document.createElement("option");
+          opt.value = v.voiceURI || v.name;
+          let label = v.name;
+          if (v.name.includes("Google")) label = "Google 日本語 (고음질)";
+          else if (v.name.includes("Kyoko")) label = "Apple Kyoko (일본어 여성 원어민)";
+          else if (v.name.includes("Otoya")) label = "Apple Otoya (일본어 남성 원어민)";
           opt.textContent = label;
           ttsVoiceSelect.appendChild(opt);
         });
@@ -1732,11 +2210,57 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentLanguage !== "hsk") {
       currentLanguage = "hsk";
-      langIeltsBtn.classList.remove("active");
-      langHskBtn.classList.add("active");
-      document.body.classList.remove("theme-ielts");
+      if (langIeltsBtn) langIeltsBtn.classList.remove("active");
+      if (langJlptBtn) langJlptBtn.classList.remove("active");
+      if (langHskBtn) langHskBtn.classList.add("active");
+      document.body.classList.remove("theme-ielts", "theme-jlpt");
       logoBadge.className = "logo-badge";
       if (hskLevelBar) hskLevelBar.style.display = "flex";
+      if (jlptLevelBar) jlptLevelBar.style.display = "none";
+    }
+
+    applyUiLanguage(currentUiLang);
+    updateSrsDashboard();
+
+    if (activeNavTab === "study") {
+      loadStudyItems();
+    } else if ((quizView && quizView.classList.contains("active")) || (resultView && resultView.classList.contains("active"))) {
+      showView("setup");
+    }
+  }
+
+  // JLPT 급수 선택 핸들러 (N5 ~ N1)
+  function setJlptLevel(level) {
+    const lv = String(level || "N2").toUpperCase();
+    currentJlptLevel = lv;
+    localStorage.setItem("preferred_jlpt_level", lv);
+    stopListeningAudio();
+
+    if (jlptLevelsData && jlptLevelsData[lv]) {
+      jlptData = jlptLevelsData[lv];
+    } else if (window.APP_DATA && window.APP_DATA.jlptLevels && window.APP_DATA.jlptLevels[lv]) {
+      jlptLevelsData = window.APP_DATA.jlptLevels;
+      jlptData = jlptLevelsData[lv];
+    } else if (window.APP_DATA && window.APP_DATA.jlpt) {
+      jlptData = window.APP_DATA.jlpt;
+    }
+
+    if (jlptLevelTabs && jlptLevelTabs.length > 0) {
+      jlptLevelTabs.forEach(btn => {
+        btn.classList.toggle("active", btn.getAttribute("data-jlpt-level") === lv);
+      });
+    }
+
+    if (currentLanguage !== "jlpt") {
+      currentLanguage = "jlpt";
+      if (langHskBtn) langHskBtn.classList.remove("active");
+      if (langIeltsBtn) langIeltsBtn.classList.remove("active");
+      if (langJlptBtn) langJlptBtn.classList.add("active");
+      document.body.classList.remove("theme-ielts");
+      document.body.classList.add("theme-jlpt");
+      logoBadge.className = "logo-badge jlpt";
+      if (hskLevelBar) hskLevelBar.style.display = "none";
+      if (jlptLevelBar) jlptLevelBar.style.display = "flex";
     }
 
     applyUiLanguage(currentUiLang);
@@ -1755,17 +2279,34 @@ document.addEventListener("DOMContentLoaded", () => {
     stopListeningAudio();
 
     if (lang === "ielts") {
-      langHskBtn.classList.remove("active");
-      langIeltsBtn.classList.add("active");
+      if (langHskBtn) langHskBtn.classList.remove("active");
+      if (langJlptBtn) langJlptBtn.classList.remove("active");
+      if (langIeltsBtn) langIeltsBtn.classList.add("active");
+      document.body.classList.remove("theme-jlpt");
       document.body.classList.add("theme-ielts");
       logoBadge.className = "logo-badge ielts";
       if (hskLevelBar) hskLevelBar.style.display = "none";
-    } else {
-      langIeltsBtn.classList.remove("active");
-      langHskBtn.classList.add("active");
+      if (jlptLevelBar) jlptLevelBar.style.display = "none";
+    } else if (lang === "jlpt") {
+      if (langHskBtn) langHskBtn.classList.remove("active");
+      if (langIeltsBtn) langIeltsBtn.classList.remove("active");
+      if (langJlptBtn) langJlptBtn.classList.add("active");
       document.body.classList.remove("theme-ielts");
+      document.body.classList.add("theme-jlpt");
+      logoBadge.className = "logo-badge jlpt";
+      if (hskLevelBar) hskLevelBar.style.display = "none";
+      if (jlptLevelBar) jlptLevelBar.style.display = "flex";
+      if (jlptLevelsData && jlptLevelsData[currentJlptLevel]) {
+        jlptData = jlptLevelsData[currentJlptLevel];
+      }
+    } else {
+      if (langIeltsBtn) langIeltsBtn.classList.remove("active");
+      if (langJlptBtn) langJlptBtn.classList.remove("active");
+      if (langHskBtn) langHskBtn.classList.add("active");
+      document.body.classList.remove("theme-ielts", "theme-jlpt");
       logoBadge.className = "logo-badge";
       if (hskLevelBar) hskLevelBar.style.display = "flex";
+      if (jlptLevelBar) jlptLevelBar.style.display = "none";
       if (hskLevelsData && hskLevelsData[currentHskLevel]) {
         hskData = hskLevelsData[currentHskLevel];
       }
@@ -1781,19 +2322,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function getModeBadgeText(key) {
-    const ds = (currentLanguage === "hsk") ? hskData : ieltsData;
+    const ds = (currentLanguage === "hsk")
+      ? hskData
+      : (currentLanguage === "jlpt" ? jlptData : ieltsData);
     const u = currentUiLang || "ko";
     if (key === "vocab") {
       const cnt = (ds && ds.vocab) ? ds.vocab.length : 0;
-      return u === "zh" ? `${cnt}词` : (u === "en" ? `${cnt} words` : `${cnt}단어`);
+      return u === "zh" ? `${cnt}词` : (u === "en" ? `${cnt} words` : (u === "ja" ? `${cnt}語` : `${cnt}단어`));
     }
     if (key === "grammar") {
       const cnt = (ds && ds.grammar) ? ds.grammar.length : 0;
-      return u === "zh" ? `${cnt}语法` : (u === "en" ? `${cnt} rules` : `${cnt}문법`);
+      return u === "zh" ? `${cnt}语法` : (u === "en" ? `${cnt} rules` : (u === "ja" ? `${cnt}文法` : `${cnt}문법`));
     }
     if (key === "listening") {
       const cnt = (ds && ds.listening) ? ds.listening.length : 0;
-      return u === "zh" ? `${cnt}对话` : (u === "en" ? `${cnt} dialogues` : `${cnt}대화`);
+      return u === "zh" ? `${cnt}对话` : (u === "en" ? `${cnt} dialogues` : (u === "ja" ? `${cnt}対話` : `${cnt}대화`));
     }
     return "";
   }
@@ -1840,11 +2383,17 @@ document.addEventListener("DOMContentLoaded", () => {
     stopListeningAudio();
     const mySession = ++speechSessionId;
 
-    const cleanText = text.replace(/____|\[\s*____\s*\]|【|】/g, " ").trim();
+    let cleanText = text.replace(/____|\[\s*____\s*\]|【|】/g, " ").trim();
+    if (currentLanguage === "jlpt") {
+      // 일본어 TTS 시 로마자 병기 괄호 "(romaji)" 제거하여 순수 일본어 발음만 읽도록 정리
+      cleanText = cleanText.replace(/\([a-zA-Z\s'-]+\)/g, "").trim();
+    }
     if (!cleanText) return;
 
     const utterance = new SpeechSynthesisUtterance(cleanText);
-    utterance.lang = (currentLanguage === "hsk") ? "zh-CN" : "en-US";
+    utterance.lang = (currentLanguage === "hsk")
+      ? "zh-CN"
+      : (currentLanguage === "jlpt" ? "ja-JP" : "en-US");
     utterance.rate = customRate || ttsSpeed;
     if (selectedVoice) utterance.voice = selectedVoice;
 
@@ -1951,8 +2500,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     if (q.questionText) {
       listeningSegments.push({
-        role: (currentLanguage === "hsk" ? "질문" : "Question"),
-        text: (currentLanguage === "hsk" ? "问题：" : "Question: ") + q.questionText
+        role: (currentLanguage === "hsk" ? "질문" : (currentLanguage === "jlpt" ? "질문" : "Question")),
+        text: (currentLanguage === "hsk" ? "问题：" : (currentLanguage === "jlpt" ? "質問：" : "Question: ")) + q.questionText
       });
     }
 
@@ -1990,7 +2539,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const seg = listeningSegments[currentSegmentIdx];
-    const roleLabel = (currentLanguage === "hsk") ? `${seg.role} 청취 중...` : `Listening to ${seg.role}...`;
+    const roleLabel = (currentLanguage === "hsk" || currentLanguage === "jlpt")
+      ? `${seg.role} 청취 중...`
+      : `Listening to ${seg.role}...`;
     listeningStatusText.textContent = `🎧 ${roleLabel} (${currentSegmentIdx + 1}/${listeningSegments.length})`;
 
     if (!("speechSynthesis" in window)) {
@@ -2000,7 +2551,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const utterance = new SpeechSynthesisUtterance(seg.text);
-    utterance.lang = (currentLanguage === "hsk") ? "zh-CN" : "en-US";
+    utterance.lang = (currentLanguage === "hsk")
+      ? "zh-CN"
+      : (currentLanguage === "jlpt" ? "ja-JP" : "en-US");
     utterance.rate = ttsSpeed;
     if (selectedVoice) utterance.voice = selectedVoice;
 
@@ -2717,6 +3270,264 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
+    if (lang === "jlpt") {
+      const ds = jlptData || {};
+      const idiomPool = ds.idioms || ds.chengyu || [];
+      if (mode === "vocab") {
+        const filtered = filterByDifficultyAndSrs(ds.vocab || [], diff, count);
+        let items = [];
+        filtered.forEach(item => {
+          const isReverse = Math.random() < 0.5;
+          const exampleTranslation = item.translation
+            ? `${item.translation} (뜻: ${item.meaning})`
+            : `[뜻] ${item.meaning}`;
+          const itemColloc = item.collocation || `어휘: ${item.word} [${item.pinyin || ""}] - ${item.pos || "단어"}`;
+          const itemDetail = item.explanation || item.detail || item.tip || `JLPT ${currentJlptLevel} 필수 어휘입니다. 후리가나 발음 및 예문과 함께 기억해 두세요.`;
+
+          if (isReverse) {
+            const wrongPool = (ds.vocab || []).filter(v => v.word !== item.word).map(v => v.word);
+            const options = shuffle([item.word, ...sampleArray(wrongPool, 3)]);
+            items.push({
+              type: "vocab",
+              rawItem: item,
+              isReview: Boolean(item._isReview),
+              difficulty: item.difficulty || diff,
+              category: `JLPT ${currentJlptLevel} 문자·어휘 (${item.pos || "단어"}) [뜻➔일본어]`,
+              chinese: item.meaning,
+              pinyin: "",
+              speechText: "",
+              postAnswerSpeechText: item.word,
+              postAnswerPinyin: `${item.word} [${item.pinyin || ""}]`,
+              promptKey: "jlpt_vocab_reverse",
+              prompt: "제시된 뜻을 가진 올바른 일본어 어휘를 고르세요.",
+              options: options,
+              answer: item.word,
+              collocation: itemColloc,
+              detail: itemDetail,
+              exampleCn: item.example || item.word,
+              exampleKr: exampleTranslation
+            });
+          } else {
+            const wrongPool = (ds.vocab || []).filter(v => v.meaning !== item.meaning).map(v => v.meaning);
+            const options = shuffle([item.meaning, ...sampleArray(wrongPool, 3)]);
+            items.push({
+              type: "vocab",
+              rawItem: item,
+              isReview: Boolean(item._isReview),
+              difficulty: item.difficulty || diff,
+              category: `JLPT ${currentJlptLevel} 문자·어휘 (${item.pos || "단어"})`,
+              chinese: item.word,
+              pinyin: item.pinyin || "",
+              speechText: item.word,
+              promptKey: "jlpt_vocab_meaning",
+              prompt: "다음 일본어 어휘의 올바른 한국어 뜻을 고르세요.",
+              options: options,
+              answer: item.meaning,
+              collocation: itemColloc,
+              detail: itemDetail,
+              exampleCn: item.example || item.word,
+              exampleKr: exampleTranslation
+            });
+          }
+        });
+        rawItems = items;
+      } else if (mode === "listening") {
+        const filtered = filterByDifficultyAndSrs(ds.listening || [], diff, count);
+        rawItems = filtered.map(item => {
+          return {
+            type: "listening",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: `JLPT ${currentJlptLevel} 청해 (${item.category || "실전 대화"})`,
+            chinese: item.question,
+            pinyin: "",
+            speechText: item.audioText,
+            promptKey: "jlpt_listening",
+            prompt: "🎧 일본어 대화와 질문을 잘 듣고 가장 알맞은 답을 고르세요.",
+            options: shuffle([...(item.options || [])]),
+            answer: item.answer,
+            dialogue: item.dialogue,
+            questionText: item.question,
+            collocation: item.collocation || `청해 영역: ${item.category || "일상·비즈니스 회화"}`,
+            detail: item.tip || item.explanation || "",
+            translation: item.translation,
+            exampleCn: item.audioText,
+            exampleKr: item.translation
+          };
+        });
+      } else if (mode === "chengyu") {
+        const filtered = filterByDifficultyAndSrs(idiomPool, diff, count);
+        rawItems = filtered.map((item, idx) => {
+          const expr = item.idiom || item.chengyu || item.word || "";
+          const isCloze = (idx % 2 === 0);
+          const fullExampleCn = item.example || (item.sentence ? item.sentence.replace("____", expr) : expr);
+          if (isCloze && item.sentence) {
+            const wrongPool = idiomPool.filter(c => (c.idiom || c.chengyu) !== expr).map(c => c.idiom || c.chengyu);
+            const options = shuffle([expr, ...sampleArray(wrongPool, 3)]);
+            return {
+              type: "chengyu_cloze",
+              rawItem: item,
+              isReview: Boolean(item._isReview),
+              difficulty: item.difficulty || diff,
+              category: `JLPT ${currentJlptLevel} 관용구·속담 (문맥 빈칸)`,
+              chinese: item.sentence,
+              pinyin: "",
+              postAnswerPinyin: `${expr} [${item.pinyin || ""}]`,
+              speechText: item.sentence,
+              postAnswerSpeechText: fullExampleCn,
+              promptKey: "jlpt_idiom_cloze",
+              prompt: "문맥의 빈칸 [ ____ ] 에 가장 어울리는 일본어 관용표현을 고르세요.",
+              options: options,
+              answer: expr,
+              collocation: `관용표현: ${expr} (${item.pinyin || ""})`,
+              detail: item.explanation || `의미: ${item.meaning} (JLPT 필수 관용표현)`,
+              exampleCn: fullExampleCn,
+              exampleKr: item.translation || `의미: ${item.meaning}`
+            };
+          } else {
+            const wrongPool = idiomPool.filter(c => c.meaning !== item.meaning).map(c => c.meaning);
+            const options = shuffle([item.meaning, ...sampleArray(wrongPool, 3)]);
+            return {
+              type: "chengyu_meaning",
+              rawItem: item,
+              isReview: Boolean(item._isReview),
+              difficulty: item.difficulty || diff,
+              category: `JLPT ${currentJlptLevel} 관용구·속담 (의미 파악)`,
+              chinese: expr,
+              pinyin: item.pinyin || "",
+              speechText: expr,
+              promptKey: "jlpt_idiom_meaning",
+              prompt: "다음 일본어 관용구·속담의 올바른 의미를 고르세요.",
+              options: options,
+              answer: item.meaning,
+              collocation: `관용표현: ${expr} (${item.pinyin || ""})`,
+              detail: item.explanation || `JLPT 빈출 관용표현입니다.`,
+              exampleCn: fullExampleCn,
+              exampleKr: item.translation || item.meaning
+            };
+          }
+        });
+      } else if (mode === "cloze") {
+        const filtered = filterByDifficultyAndSrs(ds.cloze || [], diff, count);
+        rawItems = filtered.map(item => {
+          const fullSentence = item.sentence.replace("____", item.answer);
+          return {
+            type: "cloze",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: `JLPT ${currentJlptLevel} 연어·빈칸 완성 (共起表現)`,
+            chinese: item.sentence,
+            pinyin: "",
+            postAnswerPinyin: `연어: ${item.collocation || item.answer}`,
+            speechText: item.sentence,
+            postAnswerSpeechText: fullSentence,
+            promptKey: "jlpt_cloze",
+            prompt: "문맥과 자연스러운 일본어 연어(共起表現)를 고려해 빈칸에 들어갈 말을 고르세요.",
+            options: shuffle([...(item.options || [])]),
+            answer: item.answer,
+            collocation: item.collocation,
+            detail: item.explanation,
+            exampleCn: fullSentence,
+            exampleKr: item.translation
+          };
+        });
+      } else if (mode === "grammar") {
+        const filtered = filterByDifficultyAndSrs(ds.grammar || [], diff, count);
+        rawItems = filtered.map(item => {
+          const correctVal = resolveGrammarAnswer(item);
+          const modelSentence = item.example || correctVal;
+          const modelTranslation = item.translation || `${item.category} 문형이 적용된 모범 문장입니다.`;
+          return {
+            type: "grammar",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: `JLPT ${currentJlptLevel} 문법: ${item.category}`,
+            chinese: item.question,
+            pinyin: "",
+            speechText: "",
+            postAnswerSpeechText: modelSentence,
+            promptKey: "jlpt_grammar",
+            prompt: "일본어 문법 규칙과 문맥에 가장 알맞은 문장을 고르세요.",
+            options: shuffle([...(item.options || [])]),
+            answer: correctVal,
+            collocation: `핵심 문형: ${item.category}`,
+            detail: item.explanation || "",
+            exampleCn: modelSentence,
+            exampleKr: modelTranslation
+          };
+        });
+      } else if (mode === "reading") {
+        const filtered = filterByDifficultyAndSrs(ds.reading || [], diff, count);
+        rawItems = filtered.map(item => {
+          return {
+            type: "reading",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: item.category || `JLPT ${currentJlptLevel} 독해`,
+            title: item.title,
+            passage: item.passage,
+            lineCount: item.lineCount || item.passage.split("\n").length,
+            chinese: item.question,
+            pinyin: "",
+            speechText: item.passage,
+            questionText: item.question,
+            promptKey: "jlpt_reading",
+            prompt: "일본어 지문을 주의 깊게 읽고 질문에 가장 알맞은 보기를 고르세요.",
+            options: shuffle([...(item.options || [])]),
+            answer: item.answer,
+            keySentence: item.keySentence,
+            collocation: item.collocation,
+            detail: item.explanation,
+            translation: item.translation,
+            exampleCn: `[지문 핵심 단서]\n${item.keySentence || item.title}`,
+            exampleKr: item.translation
+          };
+        });
+      } else if (mode === "dictation") {
+        const pool = (ds.dictation && ds.dictation.length > 0) ? ds.dictation : (ds.vocab || []);
+        const filtered = filterByDifficultyAndSrs(pool, diff, count);
+        rawItems = filtered.map(item => {
+          const targetSentence = item.sentence || item.example || item.word;
+          const phonetics = item.phonetics || item.pinyin || item.keyPoint || "";
+          const translation = item.translation || item.meaning || "";
+          return {
+            type: "dictation",
+            rawItem: item,
+            isReview: Boolean(item._isReview),
+            difficulty: item.difficulty || diff,
+            category: `🎙️ JLPT ${currentJlptLevel} 일본어 말하기 딕테이션`,
+            chinese: targetSentence,
+            pinyin: phonetics,
+            translation: translation,
+            speechText: targetSentence,
+            options: [],
+            answer: targetSentence,
+            collocation: `핵심 표현: ${item.keyPoint || phonetics || targetSentence}`,
+            detail: `발음 가이드: ${phonetics} — 일본어 원어민 억양과 박자(모라)를 듣고 똑같이 따라 말해 보세요.`,
+            exampleCn: targetSentence,
+            exampleKr: translation
+          };
+        });
+      } else if (mode === "mixed") {
+        const perMode = (count === "all") ? "all" : Math.max(2, Math.ceil(count / 7) + 1);
+        const l = buildQuestions("jlpt", "listening", perMode, diff);
+        const v = buildQuestions("jlpt", "vocab", perMode, diff);
+        const id = buildQuestions("jlpt", "chengyu", perMode, diff);
+        const cl = buildQuestions("jlpt", "cloze", perMode, diff);
+        const r = buildQuestions("jlpt", "reading", perMode, diff);
+        const g = buildQuestions("jlpt", "grammar", perMode, diff);
+        const d = buildQuestions("jlpt", "dictation", perMode, diff);
+        const combined = [...l, ...v, ...id, ...cl, ...r, ...g, ...d];
+        const rev = shuffle(combined.filter(q => q.isReview));
+        const rest = shuffle(combined.filter(q => !q.isReview));
+        rawItems = [...rev, ...rest];
+      }
+    }
+
     if (count !== "all" && rawItems.length > count) {
       rawItems = rawItems.slice(0, count);
     }
@@ -3078,13 +3889,19 @@ document.addEventListener("DOMContentLoaded", () => {
       // 프론트엔드 로컬 데이터로 원활하게 자동 폴백
     }
 
-    // 폴백: 로컬 hskData / ieltsData 사용
-    const dataset = (subject === "hsk") ? hskData : ieltsData;
+    // 폴백: 로컬 hskData / ieltsData / jlptData 사용
+    const dataset = (subject === "hsk")
+      ? hskData
+      : (subject === "jlpt" ? jlptData : ieltsData);
     let list = [];
     if (mode === "vocab") list = dataset.vocab || [];
     else if (mode === "grammar") list = dataset.grammar || [];
     else if (mode === "listening") list = dataset.listening || [];
-    else if (mode === "chengyu") list = (subject === "hsk") ? (dataset.chengyu || []) : (dataset.idioms || []);
+    else if (mode === "chengyu") {
+      list = (subject === "hsk")
+        ? (dataset.chengyu || [])
+        : (dataset.idioms || dataset.chengyu || []);
+    }
 
     if (diff && diff !== "all") {
       list = list.filter(item => item.difficulty === diff);
@@ -3146,13 +3963,21 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cardCatBadge) {
       let catName = "";
       if (studyCategory === "vocab") {
-        catName = (currentLanguage === "hsk") ? `신 HSK ${lvKo} 필수 어휘` : "IELTS 핵심 어휘";
+        catName = (currentLanguage === "hsk")
+          ? `신 HSK ${lvKo} 필수 어휘`
+          : (currentLanguage === "jlpt" ? `JLPT ${currentJlptLevel} 문자·어휘` : "IELTS 핵심 어휘");
       } else if (studyCategory === "grammar") {
-        catName = (currentLanguage === "hsk") ? `신 HSK ${lvKo} 필수 문법` : "IELTS 라이팅 문법";
+        catName = (currentLanguage === "hsk")
+          ? `신 HSK ${lvKo} 필수 문법`
+          : (currentLanguage === "jlpt" ? `JLPT ${currentJlptLevel} 필수 문법` : "IELTS 라이팅 문법");
       } else if (studyCategory === "listening") {
-        catName = (currentLanguage === "hsk") ? `신 HSK ${lvKo} 실전 듣기` : "IELTS 실전 리스닝";
+        catName = (currentLanguage === "hsk")
+          ? `신 HSK ${lvKo} 실전 듣기`
+          : (currentLanguage === "jlpt" ? `JLPT ${currentJlptLevel} 실전 청해` : "IELTS 실전 리스닝");
       } else {
-        catName = (currentLanguage === "hsk") ? `신 HSK ${lvKo} 사자성어` : "IELTS 필수 관용구";
+        catName = (currentLanguage === "hsk")
+          ? `신 HSK ${lvKo} 사자성어`
+          : (currentLanguage === "jlpt" ? `JLPT ${currentJlptLevel} 관용구·속담` : "IELTS 필수 관용구");
       }
       cardCatBadge.textContent = catName;
     }
@@ -3160,7 +3985,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // 앞면 렌더링
     if (studyCategory === "vocab") {
       cardPrimaryText.textContent = item.word || "";
-      cardSecondaryText.textContent = (currentLanguage === "hsk") ? (item.pinyin || "") : (item.synonym ? `Synonym: ${item.synonym}` : "");
+      cardSecondaryText.textContent = (currentLanguage === "hsk" || currentLanguage === "jlpt")
+        ? (item.pinyin || "")
+        : (item.synonym ? `Synonym: ${item.synonym}` : "");
       cardSecondaryText.style.display = (cardSecondaryText.textContent ? "block" : "none");
 
       if (item.pos) {
@@ -3171,10 +3998,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } else if (studyCategory === "chengyu") {
       cardPrimaryText.textContent = item.chengyu || item.idiom || "";
-      cardSecondaryText.textContent = (currentLanguage === "hsk") ? (item.pinyin || "") : "";
+      cardSecondaryText.textContent = (currentLanguage === "hsk" || currentLanguage === "jlpt") ? (item.pinyin || "") : "";
       cardSecondaryText.style.display = (cardSecondaryText.textContent ? "block" : "none");
       cardPosBadge.style.display = "inline-block";
-      cardPosBadge.textContent = (currentLanguage === "hsk") ? "사자성어" : "Idiom";
+      cardPosBadge.textContent = (currentLanguage === "hsk")
+        ? "사자성어"
+        : (currentLanguage === "jlpt" ? "관용구·속담" : "Idiom");
     } else if (studyCategory === "grammar") {
       cardPrimaryText.textContent = item.category || "";
       cardSecondaryText.textContent = item.example || item.question || "";
@@ -3505,12 +4334,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const threshold = getDictationPassThreshold(qDiff);
     const rawSentence = q.chinese || "";
 
-    if (currentLanguage === "hsk") {
-      const cleanChars = Array.from(rawSentence.replace(/[，。！？、；：“”‘’（）().,!?;:"'\s]+/g, ""));
+    if (currentLanguage === "hsk" || currentLanguage === "jlpt") {
+      const cleanChars = Array.from(rawSentence.replace(/[，。！？、；：“”‘’「」『』（）().,!?;:"'\s]+/g, ""));
       const len = cleanChars.length;
       const rawKeyPoint = (q.rawItem && q.rawItem.keyPoint) ? q.rawItem.keyPoint : "";
       const tagMatch = rawKeyPoint.match(/^\[[^\]]+\]/);
-      const examTag = tagMatch ? tagMatch[0] : "[HSK 5급 기출]";
+      const examTag = tagMatch ? tagMatch[0] : (currentLanguage === "jlpt" ? `[JLPT ${currentJlptLevel}]` : "[HSK 5급 기출]");
       if (qDiff === "하") {
         const revealCount = Math.min(2, Math.max(1, Math.floor(len / 3)));
         const prefix = cleanChars.slice(0, revealCount).join("");
@@ -3568,7 +4397,9 @@ document.addEventListener("DOMContentLoaded", () => {
       dictationInput.value = "";
       dictationInput.placeholder = (currentLanguage === "hsk")
         ? "🎤 마이크로 중국어 문장을 말하면 여기에 자동 입력됩니다 (직접 타이핑도 가능)"
-        : "🎤 Speak the English sentence into your mic or type it here";
+        : (currentLanguage === "jlpt"
+          ? "🎤 마이크로 일본어 문장을 말하면 여기에 자동 입력됩니다 (직접 타이핑도 가능)"
+          : "🎤 Speak the English sentence into your mic or type it here");
     }
     if (dictationMeaningLine) {
       dictationMeaningLine.textContent = `🇰🇷 의미: ${q.translation || "-"}`;
@@ -3586,8 +4417,8 @@ document.addEventListener("DOMContentLoaded", () => {
       dictationHintBox.classList.add("hidden");
     }
     if (dictationHintLabel) {
-      dictationHintLabel.textContent = (currentLanguage === "hsk")
-        ? "원문/병음 힌트 보기"
+      dictationHintLabel.textContent = (currentLanguage === "hsk" || currentLanguage === "jlpt")
+        ? "원문/발음 힌트 보기"
         : "영문 스크립트 힌트 보기";
     }
     if (dictationDiffCard) {
@@ -3606,7 +4437,9 @@ document.addEventListener("DOMContentLoaded", () => {
       dictationMicStatus.textContent = customStatus || (
         currentLanguage === "hsk"
           ? "🔴 듣고 있습니다... 중국어 문장을 또박또박 말해보세요!"
-          : "🔴 Listening... Speak the English sentence clearly!"
+          : (currentLanguage === "jlpt"
+            ? "🔴 듣고 있습니다... 일본어 문장을 또박또박 말해보세요!"
+            : "🔴 Listening... Speak the English sentence clearly!")
       );
     } else {
       dictationMicBtn.classList.remove("recording");
@@ -3639,7 +4472,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (e) {}
 
     speechRecognition = new SpeechRec();
-    speechRecognition.lang = (currentLanguage === "hsk") ? "zh-CN" : "en-US";
+    speechRecognition.lang = (currentLanguage === "hsk")
+      ? "zh-CN"
+      : (currentLanguage === "jlpt" ? "ja-JP" : "en-US");
     speechRecognition.interimResults = true;
     speechRecognition.continuous = true;
     speechRecognition.maxAlternatives = 1;
@@ -3726,16 +4561,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // 중국어(글자 단위) 및 영어(단어 단위) LCS 정밀 비교 알고리즘
+  // 중국어/일본어(글자 단위) 및 영어(단어 단위) LCS 정밀 비교 알고리즘
   function computeDictationDiff(targetStr, spokenStr, lang, difficulty) {
     const passThreshold = getDictationPassThreshold(difficulty || currentDifficulty || "하");
 
-    if (lang === "hsk") {
-      const cleanPunct = (s) => (s || "").replace(/[，。！？、；：“”‘’（）().,!?;:"'\s]+/g, "");
+    if (lang === "hsk" || lang === "jlpt") {
+      const cleanPunct = (s) => (s || "").replace(/[，。！？、；：“”‘’「」『』（）().,!?;:"'\s]+/g, "");
       const normTarget = cleanPunct(targetStr);
       let normSpoken = cleanPunct(spokenStr);
 
-      // 중국어 음성인식기 숫자(2 -> 两/二 등) 스마트 정규화
+      // 숫자(2 -> 两/二 등) 스마트 정규화
       const numMap = [
         ["2", normTarget.includes("两") ? "两" : "二"],
         ["1", "一"], ["3", "三"], ["4", "四"], ["5", "五"],
@@ -4110,14 +4945,14 @@ document.addEventListener("DOMContentLoaded", () => {
       selectedBtn.classList.add("correct");
       feedbackBanner.textContent = (currentLanguage === "hsk")
         ? t.feedbackCorrectHsk
-        : t.feedbackCorrectIelts;
+        : (currentLanguage === "jlpt" ? (t.feedbackCorrectJlpt || t.feedbackCorrectHsk) : t.feedbackCorrectIelts);
       feedbackBanner.className = "feedback-banner correct";
     } else {
       playWrongSound();
       selectedBtn.classList.add("wrong");
       feedbackBanner.textContent = (currentLanguage === "hsk")
         ? t.feedbackWrongHsk(q.answer)
-        : t.feedbackWrongIelts(q.answer);
+        : (currentLanguage === "jlpt" ? (t.feedbackWrongJlpt ? t.feedbackWrongJlpt(q.answer) : t.feedbackWrongHsk(q.answer)) : t.feedbackWrongIelts(q.answer));
       feedbackBanner.className = "feedback-banner wrong";
 
       const allBtns = optionsList.querySelectorAll(".option-btn");
@@ -4197,7 +5032,7 @@ document.addEventListener("DOMContentLoaded", () => {
       standardExampleCard.classList.remove("hidden");
 
       if (q.type === "reading") {
-        exampleCardTitle.textContent = (currentLanguage === "hsk")
+        exampleCardTitle.textContent = (currentLanguage === "hsk" || currentLanguage === "jlpt")
           ? "📖 지문 핵심 단서 및 전문 한국어 번역"
           : "📖 Passage Key Clue & Full Translation";
       } else {
@@ -4239,11 +5074,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (isPass) {
-      resultBadge.textContent = (currentLanguage === "hsk") ? t.resultPassHsk : t.resultPassIelts;
+      resultBadge.textContent = (currentLanguage === "hsk")
+        ? t.resultPassHsk
+        : (currentLanguage === "jlpt" ? (t.resultPassJlpt || t.resultPassHsk) : t.resultPassIelts);
       resultBadge.className = "result-badge pass";
       resultMessage.textContent = (currentLanguage === "hsk")
         ? t.resultPassMsgHsk
-        : t.resultPassMsgIelts;
+        : (currentLanguage === "jlpt" ? (t.resultPassMsgJlpt || t.resultPassMsgHsk) : t.resultPassMsgIelts);
     } else {
       resultBadge.textContent = t.resultFail;
       resultBadge.className = "result-badge fail";
@@ -4307,7 +5144,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const t = I18N[currentUiLang] || I18N.ko;
 
     if (historyModalTitle) {
-      historyModalTitle.textContent = (currentLanguage === "hsk") ? t.historyTitleHsk : t.historyTitleIelts;
+      historyModalTitle.textContent = (currentLanguage === "hsk")
+        ? t.historyTitleHsk
+        : (currentLanguage === "jlpt" ? (t.historyTitleJlpt || "나의 JLPT 일본어 학습 기록") : t.historyTitleIelts);
     }
 
     const totalCount = history.length;
@@ -4332,7 +5171,8 @@ document.addEventListener("DOMContentLoaded", () => {
     history.forEach(item => {
       const diffVal = item.difficulty || "중";
       const dInfo = getDiffInfo(diffVal, currentUiLang);
-      const isIelts = (item.language === "ielts");
+      const langClass = item.language === "ielts" ? "ielts" : (item.language === "jlpt" ? "jlpt" : "hsk");
+      const langLabel = item.language === "ielts" ? "🇬🇧 IELTS" : (item.language === "jlpt" ? "🇯🇵 JLPT" : "🇨🇳 HSK");
       const passText = item.isPass ? t.historyPassBadge : t.historyFailBadge;
 
       let displayModeName = item.modeName;
@@ -4348,7 +5188,7 @@ document.addEventListener("DOMContentLoaded", () => {
       itemEl.innerHTML = `
         <div class="history-item-left">
           <div class="history-mode-line">
-            <span class="history-lang-badge ${isIelts ? 'ielts' : 'hsk'}">${isIelts ? '🇬🇧 IELTS' : '🇨🇳 HSK'}</span>
+            <span class="history-lang-badge ${langClass}">${langLabel}</span>
             <span class="history-mode-tag">${item.modeIcon} ${escapeHtml(displayModeName)}</span>
             <span class="history-diff-badge ${dInfo.cls}">${dInfo.chip}</span>
           </div>
@@ -4388,6 +5228,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // 9. 이벤트 바인딩
   langHskBtn.addEventListener("click", () => setLanguage("hsk"));
   langIeltsBtn.addEventListener("click", () => setLanguage("ielts"));
+  if (langJlptBtn) {
+    langJlptBtn.addEventListener("click", () => setLanguage("jlpt"));
+  }
 
   if (hskLevelTabs && hskLevelTabs.length > 0) {
     hskLevelTabs.forEach(tab => {
@@ -4395,6 +5238,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const selectedLv = tab.getAttribute("data-hsk-level");
         if (selectedLv) {
           setHskLevel(selectedLv);
+        }
+      });
+    });
+  }
+
+  if (jlptLevelTabs && jlptLevelTabs.length > 0) {
+    jlptLevelTabs.forEach(tab => {
+      tab.addEventListener("click", () => {
+        const selectedLv = tab.getAttribute("data-jlpt-level");
+        if (selectedLv) {
+          setJlptLevel(selectedLv);
         }
       });
     });
@@ -4681,10 +5535,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const saved = getSavedCustomJsonPatch();
     if (!saved.hskLevels) saved.hskLevels = {};
     if (!saved.ielts) saved.ielts = {};
+    if (!saved.jlptLevels) saved.jlptLevels = {};
 
-    const resolvedLevel = (targetLevelOpt && targetLevelOpt !== "auto")
+    const rawLv = (targetLevelOpt && targetLevelOpt !== "auto")
       ? String(targetLevelOpt)
-      : String(parsed.level || (currentLanguage === "ielts" ? "ielts" : currentHskLevel));
+      : String(parsed.level || (currentLanguage === "ielts" ? "ielts" : (currentLanguage === "jlpt" ? currentJlptLevel : currentHskLevel)));
+    const resolvedLevel = (rawLv === "jlpt") ? currentJlptLevel : rawLv;
+    const isJlptLv = /^N[1-5]$/i.test(resolvedLevel);
 
     let addedCount = 0;
     const countItemsInObj = (obj) => Object.values(obj || {}).reduce((acc, arr) => acc + (Array.isArray(arr) ? arr.length : 0), 0);
@@ -4694,17 +5551,20 @@ document.addEventListener("DOMContentLoaded", () => {
       parsed.forEach((it) => {
         if (!it || typeof it !== "object") return;
         const m = (targetModeOpt && targetModeOpt !== "auto") ? targetModeOpt : detectItemMode(it);
-        const normMode = (resolvedLevel === "ielts" && m === "chengyu") ? "idioms" : m;
+        const normMode = ((resolvedLevel === "ielts" || isJlptLv) && m === "chengyu") ? "idioms" : m;
         if (!grouped[normMode]) grouped[normMode] = [];
         grouped[normMode].push(it);
         addedCount++;
       });
       if (resolvedLevel === "ielts") {
         saved.ielts = mergeDatasetObj(saved.ielts, grouped);
+      } else if (isJlptLv) {
+        const jLv = resolvedLevel.toUpperCase();
+        saved.jlptLevels[jLv] = mergeDatasetObj(saved.jlptLevels[jLv] || {}, grouped);
       } else {
         saved.hskLevels[resolvedLevel] = mergeDatasetObj(saved.hskLevels[resolvedLevel] || {}, grouped);
       }
-    } else if (parsed.hskLevels || parsed.ielts) {
+    } else if (parsed.hskLevels || parsed.ielts || parsed.jlptLevels) {
       if (parsed.hskLevels) {
         Object.keys(parsed.hskLevels).forEach((lv) => {
           saved.hskLevels[lv] = mergeDatasetObj(saved.hskLevels[lv] || {}, parsed.hskLevels[lv]);
@@ -4715,9 +5575,18 @@ document.addEventListener("DOMContentLoaded", () => {
         saved.ielts = mergeDatasetObj(saved.ielts, parsed.ielts);
         addedCount += countItemsInObj(parsed.ielts);
       }
+      if (parsed.jlptLevels) {
+        Object.keys(parsed.jlptLevels).forEach((lv) => {
+          saved.jlptLevels[lv] = mergeDatasetObj(saved.jlptLevels[lv] || {}, parsed.jlptLevels[lv]);
+          addedCount += countItemsInObj(parsed.jlptLevels[lv]);
+        });
+      }
     } else if (parsed.vocab || parsed.grammar || parsed.listening || parsed.chengyu || parsed.idioms || parsed.cloze || parsed.reading || parsed.dictation) {
       if (resolvedLevel === "ielts") {
         saved.ielts = mergeDatasetObj(saved.ielts, parsed);
+      } else if (isJlptLv) {
+        const jLv = resolvedLevel.toUpperCase();
+        saved.jlptLevels[jLv] = mergeDatasetObj(saved.jlptLevels[jLv] || {}, parsed);
       } else {
         saved.hskLevels[resolvedLevel] = mergeDatasetObj(saved.hskLevels[resolvedLevel] || {}, parsed);
       }
@@ -4725,10 +5594,13 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       // 단일 문항 객체인 경우
       const m = (targetModeOpt && targetModeOpt !== "auto") ? targetModeOpt : detectItemMode(parsed);
-      const normMode = (resolvedLevel === "ielts" && m === "chengyu") ? "idioms" : m;
+      const normMode = ((resolvedLevel === "ielts" || isJlptLv) && m === "chengyu") ? "idioms" : m;
       const singlePatch = { [normMode]: [parsed] };
       if (resolvedLevel === "ielts") {
         saved.ielts = mergeDatasetObj(saved.ielts, singlePatch);
+      } else if (isJlptLv) {
+        const jLv = resolvedLevel.toUpperCase();
+        saved.jlptLevels[jLv] = mergeDatasetObj(saved.jlptLevels[jLv] || {}, singlePatch);
       } else {
         saved.hskLevels[resolvedLevel] = mergeDatasetObj(saved.hskLevels[resolvedLevel] || {}, singlePatch);
       }
@@ -4741,6 +5613,8 @@ document.addEventListener("DOMContentLoaded", () => {
       window.APP_DATA.hskLevels = hskLevelsData;
       window.APP_DATA.hsk = hskLevelsData["5"] || hskData;
       window.APP_DATA.ielts = ieltsData;
+      window.APP_DATA.jlptLevels = jlptLevelsData;
+      window.APP_DATA.jlpt = jlptLevelsData["N2"] || jlptData;
     }
     renderModeGrid();
     updateSrsDashboard();

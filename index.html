@@ -124,6 +124,30 @@
       </div>
     </div>
 
+    <!-- JLPT 일본어 능력시험 (N5~N1) 급수 선택 네비게이션 바 -->
+    <div class="hsk-level-bar jlpt-level-bar" id="jlpt-level-bar" style="display: none;">
+      <div class="hsk-tier-group" data-tier="jlpt-basic">
+        <span class="hsk-tier-label" id="jlpt-tier-elem">기초 (입문)</span>
+        <div class="hsk-level-chips">
+          <button type="button" class="jlpt-level-tab hsk-level-tab" data-jlpt-level="N5">N5</button>
+          <button type="button" class="jlpt-level-tab hsk-level-tab" data-jlpt-level="N4">N4</button>
+        </div>
+      </div>
+      <div class="hsk-tier-group" data-tier="jlpt-inter">
+        <span class="hsk-tier-label" id="jlpt-tier-inter">실전 (비즈니스)</span>
+        <div class="hsk-level-chips">
+          <button type="button" class="jlpt-level-tab hsk-level-tab" data-jlpt-level="N3">N3</button>
+          <button type="button" class="jlpt-level-tab hsk-level-tab active" data-jlpt-level="N2">N2</button>
+        </div>
+      </div>
+      <div class="hsk-tier-group" data-tier="jlpt-adv">
+        <span class="hsk-tier-label" id="jlpt-tier-adv">마스터 (최상급)</span>
+        <div class="hsk-level-chips">
+          <button type="button" class="jlpt-level-tab hsk-level-tab" data-jlpt-level="N1">N1</button>
+        </div>
+      </div>
+    </div>
+
     <!-- 상단 대분류 모드 탭 (학습 모드 / 퀴즈 모드) -->
     <nav class="main-mode-nav" id="main-mode-nav">
       <button id="nav-mode-study" class="main-mode-tab" data-nav-mode="study">
@@ -763,6 +787,12 @@
                 <option value="6">신 HSK 6급</option>
                 <option value="7-9">신 HSK 7~9급</option>
                 <option value="ielts">IELTS 영어</option>
+                <option value="jlpt">JLPT 일본어 (전체/현재 급수)</option>
+                <option value="N5">JLPT N5</option>
+                <option value="N4">JLPT N4</option>
+                <option value="N3">JLPT N3</option>
+                <option value="N2">JLPT N2</option>
+                <option value="N1">JLPT N1</option>
               </select>
             </label>
             <label class="json-select-label">

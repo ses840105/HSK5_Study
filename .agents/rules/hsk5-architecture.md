@@ -41,3 +41,7 @@ In this project (`/Users/essim/Desktop/HSK5_Study`), all development, feature en
     ```
 - **Audio Rule**:
   - Never execute standalone audio alerts (`afplay Glass.aiff` / `Sosumi.aiff`) inside subagents; only the top-level coordinator plays the final notification upon full completion.
+- **Unrestricted Read Authority & Zero Questions**:
+  - 모든 에이전트는 프로젝트 및 시스템 내 모든 파일/디렉토리에 대해 **100% Read 권한**을 보유하며, 파일 읽기 시 사용자에게 권한이나 확인을 묻지 않고 즉시 실행합니다.
+- **Execution Time Reporting**:
+  - 모든 명령어 및 작업 수행 시 소요 시간(`⏱️ 수행 시간: X.XXs`)을 항상 함께 명시하여 출력합니다.

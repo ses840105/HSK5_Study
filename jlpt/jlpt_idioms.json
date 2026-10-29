@@ -1,0 +1,110 @@
+[
+  {
+    "id": "jlpt_n2_i1",
+    "idiom": "試行錯誤",
+    "chengyu": "試行錯誤",
+    "pinyin": "しこうさくご (shikou sakugo)",
+    "meaning": "시행착오",
+    "sentence": "何度も ____ を繰り返して、ついに新製品を完成させた。",
+    "example": "何度も試行錯誤を繰り返して、ついに新製品を完成させた。",
+    "translation": "몇 번이나 시행착오를 거듭하여 마침내 신제품을 완성했다.",
+    "explanation": "여러 번 실패를 거듭하며 해결책을 찾아가는 과정을 뜻하는 N2 필수 사자숙어입니다.",
+    "difficulty": "하"
+  },
+  {
+    "id": "jlpt_n2_i2",
+    "idiom": "一石二鳥",
+    "chengyu": "一石二鳥",
+    "pinyin": "いっせきにちょう (isseki nichou)",
+    "meaning": "일석이조",
+    "sentence": "自転車通勤は運動にもなり交通費も浮くので、まさに ____ だ。",
+    "example": "自転車通勤は運動にもなり交通費も浮くので、まさに一石二鳥だ。",
+    "translation": "자전거 통근은 운동도 되고 교통비도 절약되니야말로 일석이조다.",
+    "explanation": "하나의 행동으로 두 가지 이익을 동시에 얻는다는 뜻입니다.",
+    "difficulty": "중"
+  },
+  {
+    "id": "jlpt_n2_i3",
+    "idiom": "耳が痛い",
+    "chengyu": "耳が痛い",
+    "pinyin": "みみがいたい (mimi ga itai)",
+    "meaning": "(약점을 찔려) 듣기 거북하다, 뜨끔하다",
+    "sentence": "母の忠告はもっともなので、聞くたびに ____。",
+    "example": "母の忠告はもっともなので、聞くたびに耳が痛い。",
+    "translation": "어머니의 충고는 지당해서 들을 때마다 뜨끔하다.",
+    "explanation": "자신의 약점이나 잘못을 지적받아 마음이 찔릴 때 쓰는 대표 신체 관용구입니다.",
+    "difficulty": "상"
+  },
+  {
+    "id": "jlpt_n3_i1",
+    "idiom": "頭が痛い",
+    "chengyu": "頭が痛い",
+    "pinyin": "あたまがいたい (atama ga itai)",
+    "meaning": "골치가 아프다, 고민스럽다",
+    "sentence": "最近、売上が減っていて ____ 問題が多い。",
+    "example": "最近、売上が減っていて頭が痛い問題が多い。",
+    "translation": "최근 매출이 줄어들어 골치 아픈 문제가 많다.",
+    "explanation": "실제 두통뿐만 아니라 걱정거리로 골머리를 앓을 때 쓰는 관용구입니다.",
+    "difficulty": "중"
+  },
+  {
+    "id": "jlpt_n3_i2",
+    "idiom": "目が回る",
+    "chengyu": "目が回る",
+    "pinyin": "めがまわる (me ga mawaru)",
+    "meaning": "눈코 뜰 새 없이 바쁘다",
+    "sentence": "年末は ____ ほど忙しい毎日が続きます。",
+    "example": "年末は目が回るほど忙しい毎日が続きます。",
+    "translation": "연말은 눈코 뜰 새 없이 바쁜 매일이 이어집니다.",
+    "explanation": "'目が回るほど忙しい(어지러울 정도로 바쁘다)' 형태로 자주 출제됩니다.",
+    "difficulty": "상"
+  },
+  {
+    "id": "jlpt_n1_i1",
+    "idiom": "暗中模索",
+    "chengyu": "暗中模索",
+    "pinyin": "あんちゅうもさく (anchuu mosaku)",
+    "meaning": "암중모색 (단서 없이 어둠 속에서 방법을 찾음)",
+    "sentence": "前例のないプロジェクトで、最初は ____ の状態だった。",
+    "example": "前例のないプロジェクトで、最初は暗中模索の状態だった。",
+    "translation": "전례 없는 프로젝트라 처음에는 암중모색 상태였다.",
+    "explanation": "단서나 선례가 없는 상태에서 여러모로 해결책을 찾아 나가는 것을 뜻합니다.",
+    "difficulty": "상"
+  },
+  {
+    "id": "jlpt_n4_i1",
+    "idiom": "間に合う",
+    "chengyu": "間に合う",
+    "pinyin": "まにあう (ma ni au)",
+    "meaning": "시간에 대다, 늦지 않다",
+    "sentence": "今から走れば、終電に ____ かもしれません。",
+    "example": "今から走れば、終電に間に合うかもしれません。",
+    "translation": "지금부터 뛰면 막차에 늦지 않을지도 모릅니다.",
+    "explanation": "시간이나 기한에 늦지 않을 때 쓰는 필수 표현입니다.",
+    "difficulty": "중"
+  },
+  {
+    "id": "jlpt_n5_i1",
+    "idiom": "気がつく",
+    "chengyu": "気がつく",
+    "pinyin": "きがつく (ki ga tsuku)",
+    "meaning": "눈치채다, 깨닫다",
+    "sentence": "忘れ物に ____ すぐ家へ戻りました。",
+    "example": "忘れ物に気がついてすぐ家へ戻りました。",
+    "translation": "놓고 온 물건을 깨닫고 바로 집으로 돌아갔습니다.",
+    "explanation": "'気(기분/정신)'를 활용한 기초 필수 관용구입니다.",
+    "difficulty": "하"
+  },
+  {
+    "id": "jlpt_n5_i2",
+    "idiom": "口に合う",
+    "chengyu": "口に合う",
+    "pinyin": "くちにあう (kuchi ni au)",
+    "meaning": "입맛에 맞다",
+    "sentence": "日本の料理はあなたの ____ か。",
+    "example": "日本の料理はあなたの口に合いますか。",
+    "translation": "일본 요리는 당신 입맛에 맞습니까?",
+    "explanation": "음식이나 취향이 맞을 때 쓰는 자연스러운 회화 관용표현입니다.",
+    "difficulty": "중"
+  }
+]

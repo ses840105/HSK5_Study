@@ -67,8 +67,8 @@ jsFiles.forEach((file) => {
 // -----------------------------------------------------------------------------
 // Test 2: JSON Datasets Schema Integrity
 // -----------------------------------------------------------------------------
-console.log(colors.bold('\n2. JSON Dataset Integrity (vocab/*.json, vocab/levels/*.json & ielts/*.json)'));
-const dataDirs = ['vocab', 'vocab/levels', 'ielts'];
+console.log(colors.bold('\n2. JSON Dataset Integrity (vocab/*.json, vocab/levels/*.json, ielts/*.json, jlpt/*.json & jlpt/levels/*.json)'));
+const dataDirs = ['vocab', 'vocab/levels', 'ielts', 'jlpt', 'jlpt/levels'];
 let totalJsonCount = 0;
 let totalItemCount = 0;
 
@@ -135,10 +135,15 @@ const cssContent = fs.readFileSync(cssPath, 'utf8');
 const requiredDomIds = [
   'lang-hsk-btn',
   'lang-ielts-btn',
+  'lang-jlpt-btn',
   'hsk-level-bar',
+  'jlpt-level-bar',
   'tier-label-elem',
   'tier-label-inter',
   'tier-label-adv',
+  'jlpt-tier-elem',
+  'jlpt-tier-inter',
+  'jlpt-tier-adv',
   'ui-lang-switcher',
   'tts-speed',
   'opt-speed-slow',
@@ -384,7 +389,9 @@ function createMockEnvironment() {
         if (!node || !node.children) return;
         for (const child of node.children) {
           let match = false;
-          if (sel.startsWith('#') && child.id === sel.slice(1)) match = true;
+          if (sel === '.hsk-level-tab:not(.jlpt-level-tab)') {
+            match = child.classList.contains('hsk-level-tab') && !child.classList.contains('jlpt-level-tab');
+          } else if (sel.startsWith('#') && child.id === sel.slice(1)) match = true;
           else if (sel.startsWith('.') && child.classList.contains(sel.slice(1))) match = true;
           else if (child.tagName.toLowerCase() === sel.toLowerCase()) match = true;
           else if (sel.includes('[data-diff=')) {
@@ -474,6 +481,22 @@ function createMockEnvironment() {
     body.appendChild(btn);
   });
 
+  ['N5', 'N4', 'N3', 'N2', 'N1'].forEach((lv) => {
+    const btn = new MockElement('button', `jlpt-level-tab-${lv}`);
+    btn.classList.add('jlpt-level-tab');
+    btn.setAttribute('data-jlpt-level', lv);
+    if (lv === 'N2') btn.classList.add('active');
+    body.appendChild(btn);
+  });
+
+  ['zh', 'ko', 'en', 'ja'].forEach((u) => {
+    const btn = new MockElement('button', `ui-lang-tab-${u}`);
+    btn.classList.add('ui-lang-tab');
+    btn.setAttribute('data-ui-lang', u);
+    if (u === 'ko') btn.classList.add('active');
+    body.appendChild(btn);
+  });
+
   ['vocab', 'grammar', 'listening', 'chengyu'].forEach((cat) => {
     const btn = getOrCreateElement(`study-cat-${cat}`, 'button');
     btn.classList.add('study-cat-btn');
@@ -504,7 +527,8 @@ function createMockEnvironment() {
     cancel: () => {},
     getVoices: () => [
       { name: 'Tingting', lang: 'zh-CN' },
-      { name: 'Samantha', lang: 'en-US' }
+      { name: 'Samantha', lang: 'en-US' },
+      { name: 'Kyoko', lang: 'ja-JP' }
     ],
     onvoiceschanged: null
   };
@@ -828,6 +852,144 @@ async function runVMHarness() {
       jsonLoader.clearCustomJsonPatches();
     } else {
       logFail('Missing window.__HSK_JSON_LOADER__ interface in app.js');
+    }
+
+    // -------------------------------------------------------------------------
+    // Test 10: JLPT Japanese Subject (N5~N1), Study Mode Flashcards, 5-Question Quiz, Japanese TTS (`ja-JP`), & Japanese UI (`ja`) Verification
+    // -------------------------------------------------------------------------
+    console.log(colors.bold('\n10. JLPT Japanese Subject (N5~N1), Study Mode, Quiz, TTS (ja-JP) & Japanese UI (ja) Verification'));
+    const jlptLevels = env.windowMock.APP_DATA && env.windowMock.APP_DATA.jlptLevels;
+    const expectedJlptLevels = ['N5', 'N4', 'N3', 'N2', 'N1'];
+    if (
+      jlptLevels &&
+      expectedJlptLevels.every(
+        (lv) =>
+          jlptLevels[lv] &&
+          Array.isArray(jlptLevels[lv].vocab) &&
+          Array.isArray(jlptLevels[lv].grammar) &&
+          Array.isArray(jlptLevels[lv].listening) &&
+          Array.isArray(jlptLevels[lv].idioms) &&
+          Array.isArray(jlptLevels[lv].cloze) &&
+          Array.isArray(jlptLevels[lv].reading) &&
+          Array.isArray(jlptLevels[lv].dictation)
+      )
+    ) {
+      logPass('All 5 JLPT levels (N5, N4, N3, N2, N1) loaded with full 7-part datasets (vocab, grammar, listening, idioms, cloze, reading, dictation)');
+    } else {
+      logFail('Missing or incomplete APP_DATA.jlptLevels datasets');
+    }
+
+    const langJlptBtn = env.elementsById.get('lang-jlpt-btn');
+    const jlptLevelTabs = env.windowMock.document.querySelectorAll('.jlpt-level-tab');
+    const navQuizBtn = env.elementsById.get('nav-mode-quiz');
+    const studyVocabBtn = env.elementsById.get('study-cat-vocab');
+    const studyChengyuBtn = env.elementsById.get('study-cat-chengyu');
+
+    if (langJlptBtn) {
+      langJlptBtn.click();
+      await new Promise((r) => setTimeout(r, 20));
+      if (logoBadgeEl && logoBadgeEl.textContent === 'JLPT N2') {
+        logPass('Switched subject to JLPT Japanese (#lang-jlpt-btn) -> Badge: JLPT N2');
+      } else {
+        logFail(`Failed switching to JLPT subject (badge=${logoBadgeEl ? logoBadgeEl.textContent : 'null'})`);
+      }
+
+      // Test switching across JLPT levels N5, N3, N1, and back to N2
+      for (const jLv of ['N5', 'N3', 'N1', 'N2']) {
+        const jTab = jlptLevelTabs.find((b) => b.getAttribute('data-jlpt-level') === jLv);
+        if (jTab) {
+          jTab.click();
+          await new Promise((r) => setTimeout(r, 15));
+        }
+        if (logoBadgeEl && logoBadgeEl.textContent === `JLPT ${jLv}`) {
+          logPass(`JLPT Level switch verified: JLPT ${jLv} active badge & dataset loaded`);
+        } else {
+          logFail(`JLPT Level switch failed for ${jLv} (badge=${logoBadgeEl ? logoBadgeEl.textContent : 'null'})`);
+        }
+      }
+
+      // Verify Study Mode Flashcard on JLPT N2 (Vocab & Idioms/慣用句)
+      if (navStudyBtn) navStudyBtn.click();
+      await new Promise((r) => setTimeout(r, 20));
+      if (studyVocabBtn) studyVocabBtn.click();
+      await new Promise((r) => setTimeout(r, 20));
+      const cardPrimaryEl = env.elementsById.get('card-primary-text');
+      const cardSecondaryEl = env.elementsById.get('card-secondary-text');
+      if (
+        cardCatBadgeEl &&
+        cardCatBadgeEl.textContent.includes('JLPT N2') &&
+        cardPrimaryEl &&
+        cardPrimaryEl.textContent.length > 0 &&
+        cardSecondaryEl &&
+        cardSecondaryEl.textContent.length > 0
+      ) {
+        logPass(`JLPT Study Mode Flashcard (문자·어휘) verified: ${cardPrimaryEl.textContent} [${cardSecondaryEl.textContent}]`);
+      } else {
+        logFail('JLPT Study Mode Flashcard failed to render Japanese vocabulary & furigana');
+      }
+
+      if (studyChengyuBtn) studyChengyuBtn.click();
+      await new Promise((r) => setTimeout(r, 20));
+      if (cardCatBadgeEl && cardCatBadgeEl.textContent.includes('JLPT N2') && cardCatBadgeEl.textContent.includes('관용구')) {
+        logPass(`JLPT Study Mode Flashcard (관용구·속담) verified: ${cardPrimaryEl ? cardPrimaryEl.textContent : ''}`);
+      } else {
+        logFail('JLPT Study Mode Flashcard failed to render Japanese idioms (慣用句)');
+      }
+
+      // Switch to Quiz Mode and run a 5-question JLPT N2 Quiz + verify Japanese TTS (`ja-JP`)
+      if (navQuizBtn) navQuizBtn.click();
+      await new Promise((r) => setTimeout(r, 20));
+      env.lastSpokenUtterances.length = 0;
+      startBtn.click();
+      await new Promise((r) => setTimeout(r, 30));
+
+      for (let q = 1; q <= 5; q++) {
+        if (optionsList.children.length > 0) {
+          optionsList.children[0].click();
+          await new Promise((r) => setTimeout(r, 15));
+        }
+        if (q === 1 && ttsBtn) {
+          env.lastSpokenUtterances.length = 0;
+          ttsBtn.click();
+          await new Promise((r) => setTimeout(r, 15));
+          const jaUtterance = env.lastSpokenUtterances[env.lastSpokenUtterances.length - 1];
+          if (jaUtterance && jaUtterance.lang === 'ja-JP') {
+            logPass(`JLPT Native Japanese TTS verified: utterance.lang === "ja-JP" (text="${jaUtterance.text}")`);
+          } else {
+            logFail(`JLPT TTS language mismatch: ${jaUtterance ? jaUtterance.lang : 'no utterance'}`);
+          }
+        }
+        if (q < 5 && nextBtn) {
+          nextBtn.click();
+          await new Promise((r) => setTimeout(r, 15));
+        }
+      }
+
+      const jlptMasteryData = masteryKey ? JSON.parse(env.localStorage.getItem(masteryKey)) : {};
+      const jlptEntries = Object.keys(jlptMasteryData).filter((k) => k.startsWith('jlpt_N2_'));
+      if (jlptEntries.length > 0) {
+        logPass(`JLPT 5-Question Quiz & SRS persistence verified (${jlptEntries.length} jlpt_N2_* items recorded)`);
+      } else {
+        logFail('No jlpt_N2_* SRS records found after JLPT 5-question quiz');
+      }
+
+      // Verify Japanese UI Language (`data-ui-lang="ja"`)
+      const uiLangTabs = env.windowMock.document.querySelectorAll('.ui-lang-tab');
+      const jaUiTab = uiLangTabs.find((b) => b.getAttribute('data-ui-lang') === 'ja');
+      const appTitleEl = env.elementsById.get('app-title');
+      if (jaUiTab) {
+        jaUiTab.click();
+        await new Promise((r) => setTimeout(r, 20));
+        if (appTitleEl && appTitleEl.textContent.includes('JLPT') && appTitleEl.textContent.includes('スマートクイズ')) {
+          logPass(`Japanese UI language (🇯🇵 日本語) verified: "${appTitleEl.textContent}"`);
+        } else {
+          logFail(`Japanese UI language title mismatch: "${appTitleEl ? appTitleEl.textContent : 'null'}"`);
+        }
+      } else {
+        logFail('Missing .ui-lang-tab[data-ui-lang="ja"]');
+      }
+    } else {
+      logFail('Missing #lang-jlpt-btn element');
     }
   } else {
     logFail('Missing #start-btn');

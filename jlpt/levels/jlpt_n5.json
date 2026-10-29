@@ -1,0 +1,293 @@
+{
+  "vocab": [
+    {
+      "id": "jlpt_n5_v1",
+      "word": "約束",
+      "pinyin": "やくそく (yakusoku)",
+      "pos": "명사·스루동사",
+      "meaning": "약속",
+      "meaning_en": "promise; appointment",
+      "meaning_zh": "约定；诺言",
+      "example": "友達と映画を見る約束をしました。",
+      "translation": "친구와 영화를 보기로 약속했습니다.",
+      "collocation": "約束を守る (약속을 지키다)",
+      "explanation": "JLPT N5 필수 명사/동사로 '約束を守る(약속을 지키다)', '約束を破る(약속을 어기다)'로 자주 출제됩니다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "jlpt_n5_v2",
+      "word": "準備",
+      "pinyin": "じゅんび (junbi)",
+      "pos": "명사·스루동사",
+      "meaning": "준비",
+      "meaning_en": "preparation",
+      "meaning_zh": "准备",
+      "example": "旅行の準備はもう終わりましたか。",
+      "translation": "여행 준비는 벌써 끝났습니까?",
+      "collocation": "準備をする (준비를 하다)",
+      "explanation": "출발이나 시험 전에 미리 갖추는 준비를 뜻합니다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "jlpt_n5_v3",
+      "word": "便利",
+      "pinyin": "べんり (benri)",
+      "pos": "나형용사",
+      "meaning": "편리함, 편리하다",
+      "meaning_en": "convenient; handy",
+      "meaning_zh": "方便；便利",
+      "example": "この駅の近くはとても便利です。",
+      "translation": "이 역 근처는 매우 편리합니다.",
+      "collocation": "便利な生活 (편리한 생활)",
+      "explanation": "명사를 수식할 때 '便利な + 명사' 형태를 취하는 대표 나형용사입니다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "jlpt_n5_v4",
+      "word": "図書館",
+      "pinyin": "としょかん (toshokan)",
+      "pos": "명사",
+      "meaning": "도서관",
+      "meaning_en": "library",
+      "meaning_zh": "图书馆",
+      "example": "毎日図書館で日本語を勉強します。",
+      "translation": "매일 도서관에서 일본어를 공부합니다.",
+      "collocation": "図書館で本を借りる (도서관에서 책을 빌리다)",
+      "explanation": "장소 조사는 동작이 일어나는 곳이므로 'で'를 사용합니다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "jlpt_n5_v5",
+      "word": "大切",
+      "pinyin": "たいせつ (taisetsu)",
+      "pos": "나형용사",
+      "meaning": "소중함, 중요하다",
+      "meaning_en": "important; precious",
+      "meaning_zh": "重要；珍贵",
+      "example": "健康は何보다も大切です。",
+      "translation": "건강은 무엇보다도 소중합니다.",
+      "collocation": "時間を大切にする (시간을 소중히 하다)",
+      "explanation": "'大切にする(소중히 여기다)' 구문으로 빈출됩니다.",
+      "difficulty": "중"
+    },
+    {
+      "id": "jlpt_n5_v6",
+      "word": "経験",
+      "pinyin": "けいけん (keiken)",
+      "pos": "명사·스루동사",
+      "meaning": "경험",
+      "meaning_en": "experience",
+      "meaning_zh": "经验；经历",
+      "example": "日本でいい経験をたくさんしました。",
+      "translation": "일본에서 좋은 경험을 많이 했습니다.",
+      "collocation": "経験を積む (경험을 쌓다)",
+      "explanation": "N5~N4 독해 및 청해 기본 어휘입니다.",
+      "difficulty": "상"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "jlpt_n5_g1",
+      "difficulty": "하",
+      "category": "～てください (정중한 요청)",
+      "question": "ここに名前と住所を ( ___ ) ください。",
+      "options": [
+        "書いて",
+        "書いた",
+        "書く",
+        "書き"
+      ],
+      "answer": 1,
+      "example": "ここに名前と住所を書いてください。",
+      "translation": "여기에 이름과 주소를 적어 주세요.",
+      "explanation": "동사 て형 + ください는 상대방에게 정중하게 부탁하거나 지시할 때 사용합니다. 書く의 て형은 書いて입니다."
+    },
+    {
+      "id": "jlpt_n5_g2",
+      "difficulty": "중",
+      "category": "～たことがあります (경험 표현)",
+      "question": "私は一度だけ北海道へ ( ___ ) ことがあります。",
+      "options": [
+        "行った",
+        "行く",
+        "行って",
+        "行き"
+      ],
+      "answer": 1,
+      "example": "私は一度だけ北海道へ行ったことがあります。",
+      "translation": "나는 한 번만 홋카이도에 가 본 적이 있습니다.",
+      "explanation": "과거의 경험을 나타낼 때는 [동사 た형 + ことがあります]를 사용합니다. 行く의 불규칙 음편형 行った에 유의하세요."
+    },
+    {
+      "id": "jlpt_n5_g3",
+      "difficulty": "상",
+      "category": "～ないでください (금지 요청)",
+      "question": "美術館の中では写真を ( ___ ) ください。",
+      "options": [
+        "撮らないで",
+        "撮らなくて",
+        "撮らない",
+        "撮らず"
+      ],
+      "answer": 1,
+      "example": "美術館の中では写真を撮らないでください。",
+      "translation": "미술관 안에서는 사진을 찍지 말아 주세요.",
+      "explanation": "[동사 ない형 + でください]는 '~하지 말아 주세요'라는 정중한 금지 표현입니다."
+    }
+  ],
+  "listening": [
+    {
+      "id": "jlpt_n5_l1",
+      "difficulty": "하",
+      "category": "약속 시간 확인",
+      "dialogue": [
+        {
+          "speaker": "남",
+          "text": "明日のパーティーは何時からですか。"
+        },
+        {
+          "speaker": "여",
+          "text": "午後六時からです。五時五十分には来てくださいね。"
+        }
+      ],
+      "question": "男の人は何時までに来なければなりませんか。",
+      "options": [
+        "5時50分",
+        "6時00分",
+        "6時10分",
+        "5時30分"
+      ],
+      "answer": "5時50分",
+      "audioText": "男：明日のパーティーは何時からですか。 女：午後六時からです。五時五十分には来てくださいね。 質問：男の人は何時までに来なければなりませんか。",
+      "translation": "남: 내일 파티는 몇 시부터입니까? / 여: 오후 6시부터입니다. 5시 50분에는 와 주세요.",
+      "tip": "파티 시작 시각(6시)과 실제로 도착해야 하는 시각(5시 50분)을 구분하는 전형적인 N5 청해 문제입니다."
+    },
+    {
+      "id": "jlpt_n5_l2",
+      "difficulty": "중",
+      "category": "물건 위치 파악",
+      "dialogue": [
+        {
+          "speaker": "여",
+          "text": "すみません、私の眼鏡を知りませんか。"
+        },
+        {
+          "speaker": "남",
+          "text": "さっきテレビの上で見ましたよ。"
+        }
+      ],
+      "question": "眼鏡はどこにありますか。",
+      "options": [
+        "テレビの上",
+        "机の上",
+        "かばんの中",
+        "椅子の下"
+      ],
+      "answer": "テレビの上",
+      "audioText": "女：すみません、私の眼鏡を知りませんか。 男：さっきテレビの上で見ましたよ。 質問：眼鏡はどこにありますか。",
+      "translation": "여: 저기요, 제 안경 못 보셨나요? / 남: 아까 텔레비전 위에서 봤어요.",
+      "tip": "위치 명사 上(위), 下(아래), 中(안), 隣(옆)을 정확히 청취하세요."
+    }
+  ],
+  "idioms": [
+    {
+      "id": "jlpt_n5_i1",
+      "idiom": "気がつく",
+      "chengyu": "気がつく",
+      "pinyin": "きがつく (ki ga tsuku)",
+      "meaning": "눈치채다, 깨닫다",
+      "sentence": "忘れ物に ____ すぐ家へ戻りました。",
+      "example": "忘れ物に気がついてすぐ家へ戻りました。",
+      "translation": "놓고 온 물건을 깨닫고 바로 집으로 돌아갔습니다.",
+      "explanation": "'気(기분/정신)'를 활용한 기초 필수 관용구입니다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "jlpt_n5_i2",
+      "idiom": "口に合う",
+      "chengyu": "口に合う",
+      "pinyin": "くちにあう (kuchi ni au)",
+      "meaning": "입맛에 맞다",
+      "sentence": "日本の料理はあなたの ____ か。",
+      "example": "日本の料理はあなたの口に合いますか。",
+      "translation": "일본 요리는 당신 입맛에 맞습니까?",
+      "explanation": "음식이나 취향이 맞을 때 쓰는 자연스러운 회화 관용표현입니다.",
+      "difficulty": "중"
+    }
+  ],
+  "cloze": [
+    {
+      "id": "jlpt_n5_c1",
+      "difficulty": "하",
+      "sentence": "毎朝、公園を ____ してから会社へ行きます。",
+      "options": [
+        "散歩",
+        "勉強",
+        "洗濯",
+        "掃除"
+      ],
+      "answer": "散歩",
+      "pinyin": "さんぽ (sanpo)",
+      "collocation": "公園を散歩する (공원을 산책하다)",
+      "translation": "매일 아침 공원을 산책하고 나서 회사에 갑니다.",
+      "explanation": "이동의 경유지·장소를 나타내는 조사 'を'와 결합하는 대표 동사는 '散歩する'입니다."
+    }
+  ],
+  "reading": [
+    {
+      "id": "jlpt_n5_r1",
+      "difficulty": "하",
+      "category": "안내문 독해",
+      "title": "図書館のお知らせ",
+      "passage": "来週の月曜日から水曜日まで、図書館の工事があります。\nそのため、本を借りることができません。\n木曜日からはいつも通り午前九時から開きます。",
+      "question": "いつから本を借りることができますか。",
+      "options": [
+        "木曜日から",
+        "月曜日から",
+        "火曜日から",
+        "水曜日から"
+      ],
+      "answer": "木曜日から",
+      "keySentence": "木曜日からはいつも通り午前九時から開きます。",
+      "collocation": "本を借りる (책을 빌리다)",
+      "translation": "다음 주 월요일부터 수요일까지 도서관 공사가 있습니다. 그 때문에 책을 빌릴 수 없습니다. 목요일부터는 평소대로 오전 9시부터 엽니다.",
+      "explanation": "월~수요일은 공사 기간이며 목요일(木曜日)부터 정상 운영됩니다."
+    }
+  ],
+  "dictation": [
+    {
+      "id": "jlpt_n5_d1",
+      "difficulty": "하",
+      "sentence": "日本語の勉強はとても楽しいです。",
+      "pinyin": "にほんごのべんきょうはとてもたのしいです",
+      "keyPoint": "[JLPT N5] 조사 の·は 및 い형용사 정중형",
+      "translation": "일본어 공부는 매우 즐겁습니다."
+    }
+  ],
+  "chengyu": [
+    {
+      "id": "jlpt_n5_i1",
+      "idiom": "気がつく",
+      "chengyu": "気がつく",
+      "pinyin": "きがつく (ki ga tsuku)",
+      "meaning": "눈치채다, 깨닫다",
+      "sentence": "忘れ物に ____ すぐ家へ戻りました。",
+      "example": "忘れ物に気がついてすぐ家へ戻りました。",
+      "translation": "놓고 온 물건을 깨닫고 바로 집으로 돌아갔습니다.",
+      "explanation": "'気(기분/정신)'를 활용한 기초 필수 관용구입니다.",
+      "difficulty": "하"
+    },
+    {
+      "id": "jlpt_n5_i2",
+      "idiom": "口に合う",
+      "chengyu": "口に合う",
+      "pinyin": "くちにあう (kuchi ni au)",
+      "meaning": "입맛에 맞다",
+      "sentence": "日本の料理はあなたの ____ か。",
+      "example": "日本の料理はあなたの口に合いますか。",
+      "translation": "일본 요리는 당신 입맛에 맞습니까?",
+      "explanation": "음식이나 취향이 맞을 때 쓰는 자연스러운 회화 관용표현입니다.",
+      "difficulty": "중"
+    }
+  ]
+}
